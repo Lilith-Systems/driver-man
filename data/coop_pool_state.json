@@ -1,8 +1,8 @@
 {
-  "treasury_balance_usd": 412.5,
-  "total_drivers": 55,
-  "total_deliveries_processed": 5,
-  "last_tx_timestamp": 1718841600,
+  "treasury_balance_usd": 453.51,
+  "total_drivers": 57,
+  "total_deliveries_processed": 9,
+  "last_tx_timestamp": 1782045953,
   "manifesto": {
     "delivery_fee": 4.99,
     "driver_payout": 3.5,
@@ -14,8 +14,8 @@
   "llc": "Lilith Systems LLC",
   "coop": "The Driver Man Co-Op",
   "symbiosis": "Polsia + Fish_Cerebellum(Ouroboros) + GTC_MSN_mods + Gemini/gws CLI pulls",
-  "updated_via": "symbiosis_data_bridge + cerebellum",
-  "last_updated": "2026-06-21T07:43:35Z",
-  "last_data_bridge": "2026-06-21T07:43:35Z",
-  "last_tx": 1782040218
+  "updated_via": "gemini + gws pulls + symbiosis_data_bridge",
+  "last_updated": "2026-06-21T07:45:53Z",
+  "last_data_bridge": "2026-06-21T07:45:53Z",
+  "last_tx": 1782045953
 }
