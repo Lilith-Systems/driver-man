@@ -3,6 +3,8 @@ import os
 import json
 import logging
 import sqlite3
+import asyncio
+import aiohttp
 from datetime import datetime
 
 # Set up logging for Lilith Business Network
@@ -38,7 +40,7 @@ class LilithBusinessSync:
             ''')
         logging.info("Business Metrics table verified in golem_diary.db")
 
-    def authenticate_google_workspace(self):
+    async def authenticate_google_workspace(self, session: aiohttp.ClientSession):
         """Stub for Google OAuth2 Authentication."""
         if not os.path.exists(CREDENTIALS_FILE):
             logging.warning("Google credentials not found. Generating template...")
@@ -48,12 +50,17 @@ class LilithBusinessSync:
             logging.info(f"Please fill out {CREDENTIALS_FILE} to sync live Google data.")
             return False
         
+        # Simulate non-blocking network I/O authentication
+        await asyncio.sleep(0.1)
         logging.info("Google Workspace authentication simulated successfully.")
         return True
 
-    def sync_the_driver_man(self):
+    async def sync_the_driver_man(self, session: aiohttp.ClientSession):
         """Pull delivery metrics, reviews, and route data for The Driver Man."""
         logging.info("Syncing [The Driver Man] Google Business Profile...")
+        
+        # Simulate non-blocking network I/O
+        await asyncio.sleep(0.5)
         
         # Simulated data payload from Google Business APIs
         payload = {
@@ -65,11 +72,17 @@ class LilithBusinessSync:
         
         self.accounts["The Driver Man"]["metrics"] = payload
         self.accounts["The Driver Man"]["status"] = "Synced"
-        self._log_metrics("The Driver Man", payload)
         
-    def sync_lilith_systems_llc(self):
+        # Run SQLite blocking DB commit in the default executor to prevent event loop blocking
+        loop = asyncio.get_running_loop()
+        await loop.run_in_executor(None, self._log_metrics, "The Driver Man", payload)
+        
+    async def sync_lilith_systems_llc(self, session: aiohttp.ClientSession):
         """Pull B2B AI consulting metrics and infrastructure status."""
         logging.info("Syncing [Lilith Systems LLC] Google Business Profile...")
+        
+        # Simulate non-blocking network I/O
+        await asyncio.sleep(0.5)
         
         # Simulated data payload from Google Business APIs
         payload = {
@@ -81,7 +94,10 @@ class LilithBusinessSync:
         
         self.accounts["Lilith Systems LLC"]["metrics"] = payload
         self.accounts["Lilith Systems LLC"]["status"] = "Synced"
-        self._log_metrics("Lilith Systems LLC", payload)
+        
+        # Run SQLite blocking DB commit in the default executor to prevent event loop blocking
+        loop = asyncio.get_running_loop()
+        await loop.run_in_executor(None, self._log_metrics, "Lilith Systems LLC", payload)
 
     def _log_metrics(self, entity, metrics):
         """Write the synced data directly into Lilith's persistent RAM-staged memory."""
@@ -93,16 +109,20 @@ class LilithBusinessSync:
             )
         logging.info(f"Metrics for {entity} successfully committed to Golem Diary.")
 
-    def run_sync_loop(self):
-        if self.authenticate_google_workspace():
-            self.sync_the_driver_man()
-            self.sync_lilith_systems_llc()
-            
-            logging.info("================ SYNC COMPLETE ================")
-            print(json.dumps(self.accounts, indent=4))
-        else:
-            logging.error("Sync aborted. Waiting for valid Google OAuth credentials.")
+    async def run_sync_loop(self):
+        async with aiohttp.ClientSession() as session:
+            if await self.authenticate_google_workspace(session):
+                # Run syncs concurrently
+                await asyncio.gather(
+                    self.sync_the_driver_man(session),
+                    self.sync_lilith_systems_llc(session)
+                )
+                
+                logging.info("================ SYNC COMPLETE ================")
+                print(json.dumps(self.accounts, indent=4))
+            else:
+                logging.error("Sync aborted. Waiting for valid Google OAuth credentials.")
 
 if __name__ == "__main__":
     sync_agent = LilithBusinessSync()
-    sync_agent.run_sync_loop()
+    asyncio.run(sync_agent.run_sync_loop())
