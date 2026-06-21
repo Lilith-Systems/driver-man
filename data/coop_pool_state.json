@@ -2,7 +2,7 @@
   "treasury_balance_usd": 650.25,
   "total_drivers": 64,
   "total_deliveries_processed": 19,
-  "last_tx_timestamp": 1782046915,
+  "last_tx_timestamp": 1782047050,
   "manifesto": {
     "delivery_fee": 4.99,
     "driver_payout": 3.5,
@@ -15,7 +15,7 @@
   "coop": "The Driver Man Co-Op",
   "symbiosis": "Polsia + Fish_Cerebellum(Ouroboros) + GTC_MSN_mods + Gemini/gws CLI pulls",
   "updated_via": "gemini + gws pulls + symbiosis_data_bridge",
-  "last_updated": "2026-06-21T08:01:55Z",
-  "last_data_bridge": "2026-06-21T08:01:55Z",
-  "last_tx": 1782046915
+  "last_updated": "2026-06-21T08:04:10Z",
+  "last_data_bridge": "2026-06-21T08:04:10Z",
+  "last_tx": 1782047050
 }
