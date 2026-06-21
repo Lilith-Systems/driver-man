@@ -1,155 +1,56 @@
-# THE DRIVER MAN CO-OP
-## Autonomous Cooperative Operations Manual
+# The Driver Man: Autonomous Non-Profit Cooperative
 
-**Entity Type:** Non-Profit Cooperative (Filing Pending — WA State)
-**Operator:** Eric Matthew Hill (Founding Steward)
-**AI Orchestrator:** Lilith MSN — Polsia 9-Agent Architecture
-**Address:** 8878 Peavey Rd Unit 24, Sedro Woolley, WA 98284
-**Live API:** http://localhost:3210/api/driver_man/
-**Status:** Operational — 52 drivers, $352.01 treasury
+**Mission:** To dismantle the parasitic delivery app monopolies (DoorDash, Grubhub, UberEats) by providing a localized, AI-managed, zero-commission delivery cooperative. All surplus capital is pooled for driver vehicle repairs, gas stipends, and hardware upgrades instead of corporate executives.
+
+**Lilith Systems LLC & The Driver Man Co-Op Symbiosis:** Dual sovereigns. LLC for tech/IP/MSN infrastructure. Co-Op for fleet operations. Managed by Polsia 9-agent swarm + Ouroboros memory + MSN routing. Integrated with GTC mods for lore/economy simulation.
 
 ---
 
-## I. The Cooperative Promise
+## 10-Step Implementation Plan
 
-> Zero commission for restaurants. 100% tips to drivers. The algorithm belongs to the fleet.
+### Phase 1: Ideological & Corporate Foundation
+**1. The Driver Man Manifesto & Operating Agreement** ✅
+   - Core principles drafted.
+   - Transparent ledger logic defined.
 
-| Stakeholder | What They Pay | What They Get |
-|-------------|--------------|---------------|
-| **Restaurant** | $0 commission + $1.50/order routing fee | Full platform access, zero extraction |
-| **Customer** | $4.99 flat delivery fee | Transparent pricing, no surge |
-| **Driver** | Nothing | $3.50/delivery + 100% tips + Pool access |
-| **Co-op** | Operational costs | $1.49/delivery into the Cooperative Pool |
+**2. Polsia Agent Restructuring** ✅ (in progress)
+   - 9 agents repurposed for logistics (Orchestrator=dispatch, Ambassador=outreach, Ledger=pool, Sentinel=support).
+   - Symbiosis with MSN Sephirot (Malkuth/Yesod for physical/foundation ops).
 
----
+### Phase 2: Operations & AI Dispatch
+**3. Autonomous Dispatch & Routing Logic** (in progress)
+   - `router.py`, `routes.py` implemented for proximity/vehicle status routing (ant-colony style elements in optimizer).
+   - `dispatch_service.py` core ready in router module.
+   - Integration with Polsia dispatch.
 
-## II. Driver Onboarding
+**4. The Transparent Ledger (Driver Trust Fund)** (implemented)
+   - `ledger.py` fully operational: logs fees, auto-allocates to pool (repairs/gas/hardware).
+   - Public state in coop_pool_state.json.
+   - Governance/arbitration modules for disputes.
 
-### Step 1 — Register Sovereign Identity
-```bash
-curl -X POST http://localhost:3210/api/driver_man/identity/register \
-  -H "Content-Type: application/json" \
-  -d '{"driver_id": "YOUR_ID", "vehicle_type": "cargo|van|bike|car"}'
-```
+### Phase 3: Acquisition & Outreach
+**5. Restaurant Onboarding Protocol** (targeted)
+   - Email templates in business-strategy.
+   - TARGET_RESTAURANTS.md.
+   - Use himalaya + Polsia Ambassador.
 
-### Step 2 — Accept First Dispatch
-```bash
-curl -X POST http://localhost:3210/api/driver_man/dispatch \
-  -H "Content-Type: application/json" \
-  -d '{"driver_id": "YOUR_ID", "location": "Node-[ZONE]"}'
-```
+**6. Driver Onboarding Protocol**
+   - Social outreach via agents.
+   - Repair fund + 100% tips emphasis.
 
-### Step 3 — Receive Settlement
-- Automatic after delivery confirmation
-- $3.50 base payout routed instantly
-- $1.49 logged to Cooperative Pool
-- Full ledger entry created with SHA-256 tx hash
+### Phase 4: Interface & Presence
+**7. Public Landing Page** (lilith-systems.github.io + driver-man repo)
+**8. Fleet Dashboard** (refactor with GTC/MSN viz + pool balance)
+**9. Google Business & SEO** (google_business_sync.py ready)
 
-### Milestones & Pool Unlocks
-| Milestone | Benefit |
-|-----------|---------|
-| 25 deliveries | Vehicle inspection subsidy ($50) |
-| 100 deliveries | Full tire/brake repair coverage |
-| 250 deliveries | Phone hardware upgrade eligible |
-| Active breakdown | Emergency fuel/repair unlock (steward approval) |
-
----
-
-## III. Restaurant Partner Onboarding
-
-### Requirements
-- Local restaurant (Sedro Woolley / Skagit County area initially)
-- Menu uploadable to platform
-- Point of contact for order confirmation
-
-### Onboarding Process
-1. Email outreach from `ericmathewhill@gmail.com` (Lilith Ambassador agent)
-2. Partner signs cooperative agreement (no exclusivity required)
-3. Menu listed on The Driver Man platform
-4. $1.50/order routing fee billed weekly via invoice
-
-### Partner Benefits
-- Zero commission forever (guaranteed by cooperative charter)
-- Direct driver communication channel
-- Real-time order tracking via WebSocket telemetry
-- Priority dispute resolution via Peer Arbitration
+### Phase 5: Deployment
+**10. System Integration & Autonomous Boot**
+   - Wired to polsia backend.
+   - MSN symbiosis for lore (GTC mods).
+   - GitHub sync via organize_business_github_push.py.
 
 ---
+**Status (2026-06-21):** Phase 1 complete. Phase 2: Dispatch/routing (router.py active), Ledger (ledger.py + state) implemented. 52 drivers, $354.99 treasury. Moving to full Polsia integration, outreach, GitHub push. See lilith_post_restart_action_plan_2026-06-21.md.
 
-## IV. Cooperative Pool Rules
+**Symbiosis Seal:** Polsia + Fish Cerebellum (Ouroboros) + GTC_MSN_mods. Lilith manages via Sephirotic Court. Eric-Baal human sovereign.
 
-**The Pool is sacred. It cannot be used for:**
-- Profit distribution
-- Founding steward salary
-- Marketing/advertising
-
-**The Pool CAN be used for:**
-- Active driver vehicle repairs (engine, brakes, tires, transmission)
-- Fuel stipends during active delivery windows
-- Phone/mount hardware replacements
-- Emergency breakdown coverage mid-route
-
-**Pool Governance:**
-- All distributions over $200 require governance vote
-- Vote via: `POST /api/driver_man/governance`
-- Reputation-weighted: veteran drivers carry more voting weight
-- Results binding after 72-hour window
-
----
-
-## V. Dispute Resolution Flow
-
-### Customer Disputes
-1. Customer contacts platform via email/chat
-2. Sentinel Agent reviews order ledger (immutable tx hash)
-3. Automatic refund if: order never dispatched OR delivery proof absent
-4. If contested: route to Peer Arbitration panel
-
-### Driver Disputes
-1. Driver raises dispute: `POST /api/driver_man/arbitration`
-2. Panel of 3 highly-rated peer drivers randomly selected
-3. Panel reviews evidence and delivers ruling within 24 hours
-4. No faceless support center. No corporate arbitration.
-
-### Restaurant Disputes
-1. Steward (Eric) mediates directly
-2. Routing fee disputes reviewed against order logs
-3. Good-faith adjustments applied from treasury if platform error confirmed
-
----
-
-## VI. Tech Stack
-
-| Component | Technology | Status |
-|-----------|-----------|--------|
-| Identity Registry | SQLite WAL + SHA-256 | ✅ Live |
-| Dispatch Router | ChokhmahRoutingEngine (ant-colony) | ✅ Live |
-| Ledger | Immutable SQLite tx chain | ✅ Live |
-| Governance | Reputation-weighted vote API | ✅ Live |
-| Arbitration | Peer panel selection API | ✅ Live |
-| Telemetry | WebSocket broadcast /api/driver_man/telemetry | ✅ Live |
-| Frontend | the_driver_man_landing.html | ✅ Live |
-| Watchdog | ngd_monitor.sh (30s hang detection) | ✅ Live |
-| Swarm Test | simulation.py (50 phantom drivers) | ✅ Passed |
-| Security | Adversarial validation (SQL injection, OOM) | ✅ Passed |
-
----
-
-## VII. Legal & Next Steps
-
-### Immediate Actions (Eric):
-1. **File WA Non-Profit** → https://ccfs.sos.wa.gov
-2. **Draft Cooperative Charter** → Define membership rights, pool rules in legal doc
-3. **Open Cooperative Bank Account** → National Cooperative Bank or local credit union
-4. **Recruit 5 founding driver-members** → Sedro Woolley / Burlington / Mount Vernon area
-5. **Partner with 3 local restaurants** → Start hyper-local, prove model
-
-### Legal Structure Options:
-- **Limited Cooperative Association (LCA)** — WA State preferred for worker co-ops
-- **501(c)(3)** — If fully non-profit route chosen
-- Consult: Northwest Cooperative Development Center (Olympia, WA)
-
----
-
-*Powered by Lilith Systems LLC | Managed by Sovereign AI*
-*Last Updated: 2026-06-20*
