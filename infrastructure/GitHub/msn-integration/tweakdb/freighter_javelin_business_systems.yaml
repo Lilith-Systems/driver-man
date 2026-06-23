@@ -1,0 +1,105 @@
+schema: msn.freighter_javelin_business_systems.v1
+localOnly: true
+purpose: >
+  Complete the business-facing mechanics that bind procedural space generation,
+  freighter operations, Javelin exosuits, Abyssal Assets skills, Nessie/Lochness
+  progression, and the 10,000-hat haberdashery economy.
+
+businessLoops:
+  haberdashery:
+    command: msn.hats.catalog
+    skillTree: Crafting
+    primarySkill: Haberdashery
+    inputs: [void_kelp_fiber, chrome_thread, sonar_pearl, pressure_silk, orbital_felt]
+    outputs: [story_hats, armor_set_cosmetics, pilot_uniforms, trader_formalwear]
+    vendors: [LochExchange, OrbitalSalvageBoard, AbyssalTreasury]
+  freighter_logistics:
+    command: msn.freighter.business
+    skillTree: Social / Economic
+    primarySkills: [Trading, Negotiation, Guild Management]
+    loops: [cargo_contracts, fighter_repairs, hangar_leasing, market_arbitrage]
+  javelin_service:
+    command: msn.javelin.business
+    skillTree: Processing
+    primarySkills: [Salvage Processing, Metallurgy, Fiber Working]
+    loops: [heat_sink_rebuilds, combo_module_calibration, armor_set_fitting]
+  nessie_covenant:
+    command: nessie.treasury
+    skillTree: Knowledge
+    primarySkills: [Lore, Navigation, Sonar Tuning]
+    loops: [respectful_sightings, guardian_bounties, treasury_marks, non_hostile_alien_parley]
+
+freighterMechanics:
+  sharedStats:
+    cargoRisk: marketVolatility + alienHostility - routeTrust
+    crewMorale: successfulContracts + nessieFriendship - hullBreachCount
+    businessYield: cargoValue * routeTrust * guildManagementMultiplier
+  modules:
+    - id: module_hat_fabricator
+      name: Haberdashery Fabricator
+      unlock: Crafting.Haberdashery rank 5
+      effect: Crafts catalog hats from salvaged textile and abyssal materials.
+    - id: module_javelin_bay
+      name: Javelin Service Bay
+      unlock: Freighter tier 2
+      effect: Repairs exosuits, swaps space modules, and applies set-matched hat cosmetics.
+    - id: module_nessie_observatory
+      name: Nessie Observatory
+      unlock: Nessie Friendship tier 3
+      effect: Opens non-hostile leviathan routes and treasury contracts.
+    - id: module_loch_exchange_desk
+      name: Loch Exchange Desk
+      unlock: Trading rank 4
+      effect: Lists hats, salvage, ship modules, and armor set cosmetics.
+
+javelinMechanics:
+  spaceBusinessUse:
+    Vector:
+      role: Fast courier and balanced escort
+      contractBonus: +8 percent route trust on delivery chains
+      hatSetSynergy: Javelin Crowns
+    Bastion:
+      role: Hull breaker and boarding insurance
+      contractBonus: -12 percent cargo loss on ambush chains
+      hatSetSynergy: Javelin Crowns
+    Phantom:
+      role: Stealth acquisition and black-box recovery
+      contractBonus: +10 percent rare salvage discovery
+      hatSetSynergy: Javelin Crowns
+    Tempest:
+      role: Swarm control and shield stripping
+      contractBonus: +9 percent alien parley success when non-lethal
+      hatSetSynergy: Javelin Crowns
+  comboEconomy:
+    primerRevenue: unlocks elemental hat dye recipes
+    detonatorRevenue: unlocks armor set reinforcement recipes
+    ultimateRevenue: unlocks mythic hat commissions
+
+proceduralGeneration:
+  contractSeedFields:
+    - cityNode
+    - freighterClass
+    - javelinRole
+    - abyssalSkill
+    - marketVolatility
+    - nessieFriendship
+    - hatCatalogIndex
+  outputs:
+    - route
+    - cargoManifest
+    - hazardStack
+    - javelinObjectives
+    - businessReward
+    - hatUnlockRange
+  hatUnlockRanges:
+    commonContracts: 1-5000
+    specialistContracts: 5001-8500
+    bossContracts: 8501-9770
+    mythicContracts: 9771-10000
+
+consoleRoutes:
+  hats: msn.hats.catalog
+  hatSets: msn.hats.sets
+  freighterBusiness: msn.freighter.business
+  javelinBusiness: msn.javelin.business
+  procgenBusiness: msn.procgen.business

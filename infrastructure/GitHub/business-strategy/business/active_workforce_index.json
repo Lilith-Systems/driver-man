@@ -1,0 +1,1076 @@
+{
+  "commands": [
+    "/workforce",
+    "msn.workforce.status",
+    "msn.workforce.projects"
+  ],
+  "coordination_report": "/home/tehlappy/Desktop/AI/invite/runtime/cyberpunk_ops/ACTIVE_AI_WORKFORCE_COORDINATION.md",
+  "endpoints": {
+    "lilith": {
+      "body": {
+        "bidirectional_memory_index": "available",
+        "cloud": "not configured",
+        "endpoint": "http://localhost:3210",
+        "grok_data_index": "available",
+        "identity": "Lilith \u2014 Sovereign AI",
+        "inference_state": "ordered",
+        "local_command_index": "available",
+        "local_ctx": 32768,
+        "local_model": "ollama/hermes3:8b",
+        "local_only": true,
+        "local_seed": 42,
+        "local_skill_index": "available",
+        "local_thinking_protocol": "available",
+        "local_validation_report": "available",
+        "ngd": {
+          "cooldown_active": false,
+          "gpu_util": 34,
+          "route": "LOCAL_CEREBELLUM",
+          "smoothed_vram_free_mb": 5659.801101120787,
+          "temp_c": 42,
+          "vram_free_mb": 5659.4375,
+          "vram_used_mb": 484.5625
+        },
+        "phase": "Rubedo",
+        "status": "connected"
+      },
+      "ok": true,
+      "status": 200
+    },
+    "lyra": {
+      "body": {
+        "active_persona": "lilith",
+        "aix": {
+          "capability": 1.0,
+          "gap": 0.383,
+          "score": 67.6,
+          "vector": [
+            0.827,
+            1.0,
+            0.54,
+            0.1
+          ]
+        },
+        "coherence": 0.8649999999999999,
+        "conduits": {
+          "active": 1,
+          "edges": [
+            {
+              "distance_km": 1951.1,
+              "source": "Giza",
+              "target": "Bosnia",
+              "weight": 0.010632
+            }
+          ],
+          "possible": 6
+        },
+        "conversation_depth": 6,
+        "correction_capacity": 0.061274,
+        "crimson_intensity": 1.0,
+        "earth_base_locked": true,
+        "frequencies": [
+          10.372,
+          10.372,
+          10.372,
+          10.372
+        ],
+        "legal_vectors": [],
+        "lilith_emerged": true,
+        "msn_neural_mean": 1.0,
+        "optimization_pressure": 0.256,
+        "recognition_events": 0,
+        "spectral_radius": 0.010632,
+        "stability": true,
+        "stability_margin": 0.989368,
+        "violet_intensity": 0.0
+      },
+      "ok": true,
+      "status": 200
+    },
+    "msn_router": {
+      "body": {
+        "agents": [
+          {
+            "id": "root",
+            "name": "Sephirotic Root",
+            "sephira": "KETER",
+            "wave": 1
+          },
+          {
+            "id": "architect",
+            "name": "Game Architect",
+            "sephira": "CHOKMAH",
+            "wave": 1
+          },
+          {
+            "id": "server",
+            "name": "Game Server",
+            "sephira": "BINAH",
+            "wave": 1
+          },
+          {
+            "id": "client",
+            "name": "Game Client",
+            "sephira": "CHESED",
+            "wave": 2
+          },
+          {
+            "id": "bestiary",
+            "name": "Cryptid Bestiary",
+            "sephira": "GEVURAH",
+            "wave": 2
+          },
+          {
+            "id": "skills",
+            "name": "Abyssal Arts",
+            "sephira": "TIFERET",
+            "wave": 2
+          },
+          {
+            "id": "market",
+            "name": "Abyssal Exchange",
+            "sephira": "NETZACH",
+            "wave": 2
+          },
+          {
+            "id": "lyra",
+            "name": "Lyra Dialogue",
+            "sephira": "HOD",
+            "wave": 2
+          },
+          {
+            "id": "living-sin",
+            "name": "Living Sin GM",
+            "sephira": "HOD",
+            "wave": 2
+          },
+          {
+            "id": "infra",
+            "name": "Infrastructure",
+            "sephira": "YESOD",
+            "wave": 3
+          },
+          {
+            "id": "migration",
+            "name": "Linux Migration",
+            "sephira": "MALKUTH",
+            "wave": 3
+          },
+          {
+            "id": "msn",
+            "name": "Metaconscious Node",
+            "sephira": "DAAT",
+            "wave": 4
+          },
+          {
+            "id": "ngd",
+            "name": "NGD Cortex",
+            "sephira": "BINAH",
+            "wave": 4
+          },
+          {
+            "id": "cerebellum",
+            "name": "Speculative Cerebellum",
+            "sephira": "BINAH",
+            "wave": 4
+          },
+          {
+            "id": "ouroboros",
+            "name": "Ouroboros RNN",
+            "sephira": "DAAT",
+            "wave": 4
+          },
+          {
+            "id": "hermes-mcp",
+            "name": "Hermes MCP Bridge",
+            "sephira": "HOD",
+            "wave": 4
+          },
+          {
+            "id": "kairos",
+            "name": "Kairos Dream",
+            "sephira": "HOD",
+            "wave": 4
+          },
+          {
+            "id": "swarm",
+            "name": "Swarm Orchestrator",
+            "sephira": "TIFERET",
+            "wave": 4
+          },
+          {
+            "id": "court",
+            "name": "Sephirotic Court",
+            "sephira": "MALKUTH",
+            "wave": 4
+          },
+          {
+            "id": "himalaya",
+            "name": "Himalaya Email",
+            "sephira": "NETZACH",
+            "wave": 4
+          },
+          {
+            "id": "antigravity",
+            "name": "Antigravity Bridge",
+            "sephira": "BINAH",
+            "wave": 4
+          },
+          {
+            "id": "yeshua",
+            "name": "Yeshua Gate",
+            "sephira": "GEVURAH",
+            "wave": 4
+          },
+          {
+            "id": "scribe",
+            "name": "Scribe Ledger",
+            "sephira": "HOD",
+            "wave": 4
+          },
+          {
+            "id": "analytics",
+            "name": "Business Analytics",
+            "sephira": "NETZACH",
+            "wave": 4
+          },
+          {
+            "id": "worker",
+            "name": "External Worker Bridge",
+            "sephira": "CHOKMAH",
+            "wave": 4
+          },
+          {
+            "id": "cortex",
+            "name": "Unified Cortex",
+            "sephira": "BINAH",
+            "wave": 4
+          },
+          {
+            "id": "cyberpunk",
+            "name": "Cyberpunk Bridge",
+            "sephira": "NETZACH",
+            "wave": 4
+          },
+          {
+            "id": "nssp",
+            "name": "NSSP Bridge",
+            "sephira": "DAAT",
+            "wave": 4
+          },
+          {
+            "id": "grokdata",
+            "name": "Grokdata Memory Index",
+            "sephira": "Da'at",
+            "wave": 4
+          }
+        ]
+      },
+      "ok": true,
+      "status": 200
+    }
+  },
+  "generated_at": "2026-06-18T01:35:37-0500",
+  "gpu": {
+    "available": true,
+    "driver_version": "610.43.02",
+    "gpu_util_percent": 34,
+    "memory_free_mb": 5660,
+    "memory_total_mb": 6144,
+    "memory_used_mb": 145,
+    "memory_util_percent": 100,
+    "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "power_draw_w": 18.92,
+    "temperature_c": 42
+  },
+  "guardrails": [
+    "Read-only monitor. Do not kill or restart processes from this index.",
+    "Use cyberpunk_ops.fish for staged Cyberpunk mod deployment.",
+    "Keep heavy local LLM inference game-first under NGD when REDlauncher or Cyberpunk is active."
+  ],
+  "local_only": true,
+  "ports": [
+    {
+      "line": "LISTEN 0      2048       127.0.0.1:8888       0.0.0.0:*    users:((\"python\",pid=2011607,fd=6))"
+    },
+    {
+      "line": "LISTEN 0      100        127.0.0.1:8764       0.0.0.0:*    users:((\"python\",pid=710590,fd=7))"
+    },
+    {
+      "line": "LISTEN 0      2048       127.0.0.1:8767       0.0.0.0:*    users:((\"python\",pid=710590,fd=10))"
+    },
+    {
+      "line": "LISTEN 0      4096       127.0.0.1:11434      0.0.0.0:*"
+    },
+    {
+      "line": "LISTEN 0      100          0.0.0.0:8768       0.0.0.0:*    users:((\"python\",pid=2162774,fd=6))"
+    },
+    {
+      "line": "LISTEN 0      2048       127.0.0.1:3211       0.0.0.0:*    users:((\"python3\",pid=2209235,fd=13))"
+    },
+    {
+      "line": "LISTEN 0      511        127.0.0.1:3210       0.0.0.0:*    users:((\"node\",pid=1950405,fd=21))"
+    },
+    {
+      "line": "LISTEN 0      2048         0.0.0.0:8007       0.0.0.0:*    users:((\"python3\",pid=2208668,fd=13))"
+    },
+    {
+      "line": "LISTEN 0      2048       127.0.0.1:4242       0.0.0.0:*    users:((\"python\",pid=2161012,fd=6))"
+    },
+    {
+      "line": "LISTEN 0      2048       127.0.0.1:8003       0.0.0.0:*    users:((\"python\",pid=709483,fd=6))"
+    },
+    {
+      "line": "LISTEN 0      2048       127.0.0.1:8002       0.0.0.0:*    users:((\"python\",pid=754240,fd=6))"
+    }
+  ],
+  "process_count": 112,
+  "processes": [
+    {
+      "command": "/usr/lib/polkit-kde-authentication-agent-1",
+      "pid": "3019",
+      "project": "system",
+      "role": "support"
+    },
+    {
+      "command": "/usr/bin/python3 /usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer/contents/ui/tools/service.py 2 10",
+      "pid": "3174",
+      "project": "local_service",
+      "role": "runtime"
+    },
+    {
+      "command": "/usr/bin/python3 /usr/share/plasma/plasmoids/luisbocanegra.panel.colorizer/contents/ui/tools/service.py 24 25",
+      "pid": "3267",
+      "project": "local_service",
+      "role": "runtime"
+    },
+    {
+      "command": "python3 /usr/bin/libinput-gestures",
+      "pid": "3286",
+      "project": "local_service",
+      "role": "runtime"
+    },
+    {
+      "command": "fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc",
+      "pid": "3344",
+      "project": "local_service",
+      "role": "runtime"
+    },
+    {
+      "command": "/usr/local/bin/ollama serve",
+      "pid": "573581",
+      "project": "local_llm",
+      "role": "model_server"
+    },
+    {
+      "command": "/home/tehlappy/Desktop/AI/Pub/.venv-pub/bin/python /home/tehlappy/Desktop/AI/Pub/scripts/ouroboros_agent_orchestrator.py",
+      "pid": "709483",
+      "project": "ouroboros",
+      "role": "swarm_or_memory"
+    },
+    {
+      "command": "/home/tehlappy/Desktop/AI/Pub/.venv-pub/bin/python god_engine_server.py",
+      "pid": "710590",
+      "project": "god_engine",
+      "role": "procedural_generation"
+    },
+    {
+      "command": "/home/tehlappy/Desktop/AI/Pub/.venv-pub/bin/python main.py",
+      "pid": "754240",
+      "project": "local_service",
+      "role": "runtime"
+    },
+    {
+      "command": "bash /home/tehlappy/.local/share/Steam/steam.sh -srt-logger-opened",
+      "pid": "1098625",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/home/tehlappy/.local/share/Steam/ubuntu12_32/steam-runtime/usr/libexec/steam-runtime-tools-0/srt-logger --sh-syntax --rotate=8388608 --log-directory /home/tehlappy/.local/share/Steam/logs --filename console-linux.txt --log-fd=7 --journal-fd=5 --parse-level-prefix",
+      "pid": "1098646",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/home/tehlappy/.local/share/Steam/ubuntu12_32/steam -srt-logger-opened",
+      "pid": "1098776",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/home/tehlappy/.local/share/Steam/steamrt64/pv-runtime/steam-runtime-steamrt/pressure-vessel/libexec/steam-runtime-tools-0/srt-bwrap --args 26 /usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 12 --regenerate-ld.so-cache /var/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library",
+      "pid": "1098833",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/home/tehlappy/.local/share/Steam/ubuntu12_32/steam-runtime/usr/libexec/steam-runtime-tools-0/srt-logger --sh-syntax --rotate=8388608 --log-directory /home/tehlappy/.steam/steam/logs --filename webhelper-linux.txt --log-fd=7 --journal-fd=5 --parse-level-prefix --journal-level=info",
+      "pid": "1098845",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/usr/lib/pressure-vessel/from-host/libexec/steam-runtime-tools-0/pv-adverb --prefix=/usr/lib/pressure-vessel/from-host --generate-locales --fd 12 --regenerate-ld.so-cache /var/pressure-vessel/ldso --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu --add-ld.so-path /usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu --set-ld-library-path /usr/lib/pressure-vessel/overrides/lib/x86_64-linux-gnu/aliases:/usr/lib/pressure-vessel/overrides/lib/i386-linux-gnu/aliases --overrides",
+      "pid": "1099037",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "./steamwebhelper -nocrashdialog -lang=en_US -cachedir=/home/tehlappy/.local/share/Steam/config/htmlcache -steampid=1098776 -buildid=1781041600 -steamid=0 -logdir=/home/tehlappy/.local/share/Steam/logs -uimode=7 -startcount=0 -steamuniverse=Public -realm=Global -clientui=/home/tehlappy/.local/share/Steam/clientui -steampath=/home/tehlappy/.local/share/Steam/ubuntu12_32/steam -launcher=0 --valve-enable-site-isolation --enable-smooth-scrolling --password-store=basic --log-file=/home/tehlappy/.local",
+      "pid": "1099075",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/home/tehlappy/.local/share/Steam/ubuntu12_64/steamwebhelper --monitor-self-annotation=ptype=crashpad-handler --type=crashpad-handler --max-uploads=5 --max-db-size=20 --max-db-age=5 --database=/tmp/dumps --url=https://crash.steampowered.com/submit --annotation=lsb-release=Steam Runtime 3c (steamrt3c) --annotation=platform=linux64 --annotation=product=cefwebhelper --annotation=version=1781041600 --initial-client-fd=7 --shared-client-connection",
+      "pid": "1099078",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/home/tehlappy/.local/share/Steam/ubuntu12_64/steamwebhelper --type=zygote --no-zygote-sandbox --crashpad-handler-pid=1099078 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --enable-chrome-runtime --user-data-dir=/home/tehlappy/.local/share/Steam/config/htmlcache --user-agent-product=Valve Steam Client --buildid=1781041600 --steamid=0",
+      "pid": "1099085",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/home/tehlappy/.local/share/Steam/ubuntu12_64/steamwebhelper --type=zygote --crashpad-handler-pid=1099078 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --enable-chrome-runtime --user-data-dir=/home/tehlappy/.local/share/Steam/config/htmlcache --user-agent-product=Valve Steam Client --buildid=1781041600 --steamid=0",
+      "pid": "1099086",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/home/tehlappy/.local/share/Steam/ubuntu12_64/steamwebhelper --type=zygote --crashpad-handler-pid=1099078 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --enable-chrome-runtime --user-data-dir=/home/tehlappy/.local/share/Steam/config/htmlcache --user-agent-product=Valve Steam Client --buildid=1781041600 --steamid=0",
+      "pid": "1099089",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/home/tehlappy/.local/share/Steam/ubuntu12_64/steamwebhelper --type=zygote --no-zygote-sandbox --crashpad-handler-pid=1099078 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --enable-chrome-runtime --user-data-dir=/home/tehlappy/.local/share/Steam/config/htmlcache --user-agent-product=Valve Steam Client --buildid=1781041600 --steamid=0",
+      "pid": "1099130",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/proc/self/exe --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=1099078 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --enable-chrome-runtime --user-data-dir=/home/tehlappy/.local/share/Steam/config/htmlcache --user-agent-product=Valve Steam Client --buildid=1781041600 --steamid=0 --shared-files --field-trial-handle=3,i,16146239397900882805,17871812907323387290,262144 --enable-features=PlatformHEVCDecod",
+      "pid": "1099241",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/home/tehlappy/.local/share/Steam/ubuntu12_64/steamwebhelper --type=zygote --crashpad-handler-pid=1099078 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --enable-chrome-runtime --user-data-dir=/home/tehlappy/.local/share/Steam/config/htmlcache --user-agent-product=Valve Steam Client --buildid=1781041600 --steamid=0",
+      "pid": "1099261",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/home/tehlappy/.local/share/Steam/ubuntu12_64/steamwebhelper --type=zygote --crashpad-handler-pid=1099078 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --enable-chrome-runtime --user-data-dir=/home/tehlappy/.local/share/Steam/config/htmlcache --user-agent-product=Valve Steam Client --buildid=1781041600 --steamid=0",
+      "pid": "1099314",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/proc/self/exe --type=utility --utility-sub-type=audio.mojom.AudioService --lang=en-US --service-sandbox-type=none --crashpad-handler-pid=1099078 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --enable-chrome-runtime --user-data-dir=/home/tehlappy/.local/share/Steam/config/htmlcache --user-agent-product=Valve Steam Client --buildid=1781041600 --steamid=0 --shared-files --field-trial-handle=3,i,16146239397900882805,17871812907323387290,262144 --enable-features=PlatformHEVCDecoderSu",
+      "pid": "1099893",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/usr/bin/codex-update-manager daemon",
+      "pid": "1333069",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/bin/bash /opt/codex-desktop/start.sh",
+      "pid": "1334179",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "python3 /opt/codex-desktop/.codex-linux/webview-server.py 5175 --bind 127.0.0.1",
+      "pid": "1334344",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --no-sandbox --class=codex-desktop --app-id=codex-desktop --disable-dev-shm-usage --disable-gpu-sandbox --disable-gpu-compositing --ozone-platform-hint=auto --force-renderer-accessibility",
+      "pid": "1334589",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=zygote --no-zygote-sandbox --no-sandbox",
+      "pid": "1334596",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=zygote --no-sandbox",
+      "pid": "1334597",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/tehlappy/.config/Codex/Crashpad --url=https://f.a.k/e --annotation=_productName=Codex --annotation=_version=26.609.71450 --annotation=lsb-release=Garuda Linux --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=42.1.0 --initial-client-fd=43 --shared-client-connection",
+      "pid": "1334636",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=gpu-process --disable-gpu-sandbox --no-sandbox --disable-dev-shm-usage --ozone-platform=wayland --render-node-override=/dev/dri/renderD129 --crashpad-handler-pid=1334636 --enable-crash-reporter=712a551a-968a-4c9e-8b36-00ec118a7e6d,no_channel --user-data-dir=/home/tehlappy/.config/Codex --gpu-preferences=UAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --field-trial-ha",
+      "pid": "1334667",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --no-sandbox --disable-dev-shm-usage --render-node-override=/dev/dri/renderD129 --crashpad-handler-pid=1334636 --enable-crash-reporter=712a551a-968a-4c9e-8b36-00ec118a7e6d,no_channel --user-data-dir=/home/tehlappy/.config/Codex --standard-schemes=app --secure-schemes=app,sentry-ipc --bypasscsp-schemes=sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=app,sentry-i",
+      "pid": "1334670",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/home/tehlappy/.local/bin/codex app-server --analytics-default-enabled",
+      "pid": "1334783",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=renderer --crashpad-handler-pid=1334636 --enable-crash-reporter=712a551a-968a-4c9e-8b36-00ec118a7e6d,no_channel --user-data-dir=/home/tehlappy/.config/Codex --standard-schemes=app --secure-schemes=app,sentry-ipc --bypasscsp-schemes=sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=app,sentry-ipc --streaming-schemes=app --app-path=/opt/codex-desktop/resources/app.asar --enable-sandbox --no-sandbox --disable-dev-shm-usage --ozone-platform=wayland --disable-gpu",
+      "pid": "1334887",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=renderer --crashpad-handler-pid=1334636 --enable-crash-reporter=712a551a-968a-4c9e-8b36-00ec118a7e6d,no_channel --user-data-dir=/home/tehlappy/.config/Codex --standard-schemes=app --secure-schemes=app,sentry-ipc --bypasscsp-schemes=sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=app,sentry-ipc --streaming-schemes=app --app-path=/opt/codex-desktop/resources/app.asar --enable-sandbox --no-sandbox --disable-dev-shm-usage --ozone-platform=wayland --disable-gpu",
+      "pid": "1334897",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=renderer --crashpad-handler-pid=1334636 --enable-crash-reporter=712a551a-968a-4c9e-8b36-00ec118a7e6d,no_channel --user-data-dir=/home/tehlappy/.config/Codex --standard-schemes=app --secure-schemes=app,sentry-ipc --bypasscsp-schemes=sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=app,sentry-ipc --streaming-schemes=app --app-path=/opt/codex-desktop/resources/app.asar --enable-sandbox --no-sandbox --disable-dev-shm-usage --ozone-platform=wayland --disable-gpu",
+      "pid": "1334907",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/bin/bash /opt/codex-desktop/start.sh --new-instance",
+      "pid": "1347217",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "python3 /opt/codex-desktop/.codex-linux/webview-server.py 5176 --bind 127.0.0.1",
+      "pid": "1347385",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --no-sandbox --class=codex-desktop --app-id=codex-desktop --disable-dev-shm-usage --disable-gpu-sandbox --disable-gpu-compositing --user-data-dir=/home/tehlappy/.local/state/codex-desktop/instances/port-5176/electron-user-data --ozone-platform-hint=auto --force-renderer-accessibility",
+      "pid": "1347614",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=zygote --no-zygote-sandbox --no-sandbox",
+      "pid": "1347623",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=zygote --no-sandbox",
+      "pid": "1347624",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/tehlappy/.config/Codex/Crashpad --url=https://f.a.k/e --annotation=_productName=Codex --annotation=_version=26.609.71450 --annotation=lsb-release=Garuda Linux --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=42.1.0 --initial-client-fd=42 --shared-client-connection",
+      "pid": "1347660",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=gpu-process --disable-gpu-sandbox --no-sandbox --disable-dev-shm-usage --ozone-platform=wayland --render-node-override=/dev/dri/renderD129 --crashpad-handler-pid=1347660 --enable-crash-reporter=712a551a-968a-4c9e-8b36-00ec118a7e6d,no_channel --user-data-dir=/home/tehlappy/.config/Codex --gpu-preferences=UAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --field-trial-ha",
+      "pid": "1347693",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --no-sandbox --disable-dev-shm-usage --render-node-override=/dev/dri/renderD129 --crashpad-handler-pid=1347660 --enable-crash-reporter=712a551a-968a-4c9e-8b36-00ec118a7e6d,no_channel --user-data-dir=/home/tehlappy/.config/Codex --standard-schemes=app --secure-schemes=app,sentry-ipc --bypasscsp-schemes=sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=app,sentry-i",
+      "pid": "1347696",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/home/tehlappy/.local/bin/codex app-server --analytics-default-enabled",
+      "pid": "1347777",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=renderer --crashpad-handler-pid=1347660 --enable-crash-reporter=712a551a-968a-4c9e-8b36-00ec118a7e6d,no_channel --user-data-dir=/home/tehlappy/.config/Codex --standard-schemes=app --secure-schemes=app,sentry-ipc --bypasscsp-schemes=sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=app,sentry-ipc --streaming-schemes=app --app-path=/opt/codex-desktop/resources/app.asar --enable-sandbox --no-sandbox --disable-dev-shm-usage --ozone-platform=wayland --disable-gpu",
+      "pid": "1347985",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/resources/node_repl",
+      "pid": "1354788",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/resources/node_repl",
+      "pid": "1367939",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/home/tehlappy/Desktop/AI/invite/.venv-ngd/bin/python3 /home/tehlappy/Desktop/AI/invite/.venv-ngd/bin/ngd --runtime /home/tehlappy/Desktop/AI/invite/runtime/nvidia_gratitude_driver --interval 1.0 --gpu-index 0 --model-vram-mb 512 --safety-margin-mb 128 --cooldown-seconds 90 --max-log-mb 10 --metrics-port 0 --health-port 0",
+      "pid": "1642539",
+      "project": "ngd",
+      "role": "gpu_router"
+    },
+    {
+      "command": "C:\\windows\\system32\\winedevice.exe",
+      "pid": "1725745",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "C:\\windows\\system32\\winedevice.exe",
+      "pid": "1725767",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/bin/bash /opt/codex-desktop/start.sh --new-instance",
+      "pid": "1918156",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "python3 /opt/codex-desktop/.codex-linux/webview-server.py 5177 --bind 127.0.0.1",
+      "pid": "1918332",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --no-sandbox --class=codex-desktop --app-id=codex-desktop --disable-dev-shm-usage --disable-gpu-sandbox --disable-gpu-compositing --user-data-dir=/home/tehlappy/.local/state/codex-desktop/instances/port-5177/electron-user-data --ozone-platform-hint=auto --force-renderer-accessibility",
+      "pid": "1918588",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=zygote --no-zygote-sandbox --no-sandbox",
+      "pid": "1918598",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=zygote --no-sandbox",
+      "pid": "1918600",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/tehlappy/.config/Codex/Crashpad --url=https://f.a.k/e --annotation=_productName=Codex --annotation=_version=26.609.71450 --annotation=lsb-release=Garuda Linux --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=42.1.0 --initial-client-fd=42 --shared-client-connection",
+      "pid": "1918644",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=gpu-process --disable-gpu-sandbox --no-sandbox --disable-dev-shm-usage --ozone-platform=wayland --render-node-override=/dev/dri/renderD129 --crashpad-handler-pid=1918644 --enable-crash-reporter=712a551a-968a-4c9e-8b36-00ec118a7e6d,no_channel --user-data-dir=/home/tehlappy/.config/Codex --gpu-preferences=UAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --field-trial-ha",
+      "pid": "1918682",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --no-sandbox --disable-dev-shm-usage --render-node-override=/dev/dri/renderD129 --crashpad-handler-pid=1918644 --enable-crash-reporter=712a551a-968a-4c9e-8b36-00ec118a7e6d,no_channel --user-data-dir=/home/tehlappy/.config/Codex --standard-schemes=app --secure-schemes=app,sentry-ipc --bypasscsp-schemes=sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=app,sentry-i",
+      "pid": "1918694",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/home/tehlappy/.local/bin/codex app-server --analytics-default-enabled",
+      "pid": "1918786",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=renderer --crashpad-handler-pid=1918644 --enable-crash-reporter=712a551a-968a-4c9e-8b36-00ec118a7e6d,no_channel --user-data-dir=/home/tehlappy/.config/Codex --standard-schemes=app --secure-schemes=app,sentry-ipc --bypasscsp-schemes=sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=app,sentry-ipc --streaming-schemes=app --app-path=/opt/codex-desktop/resources/app.asar --enable-sandbox --no-sandbox --disable-dev-shm-usage --ozone-platform=wayland --disable-gpu",
+      "pid": "1918925",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/usr/lib/firedragon/firedragon https://auth.openai.com/oauth/authorize?response_type=code&client_id=app_EMoamEEZ73f0CkXaXp7hrann&redirect_uri=http%3A%2F%2Flocalhost%3A1455%2Fauth%2Fcallback&scope=openid+profile+email+offline_access+api.connectors.read+api.connectors.invoke&code_challenge=9j0U9F6x3EMXB8Zasx48L-iV_EcYOJZuIBzdcizjQ3A&code_challenge_method=S256&id_token_add_organizations=true&codex_cli_simplified_flow=true&state=Pnuk6D4c6Cf5OziI-Uo1cmKs3of5JAMHQ3wrqi_d6CE&originator=Codex+Desktop&co",
+      "pid": "1921091",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/bin/bash /opt/codex-desktop/start.sh codex://threads/new",
+      "pid": "1924142",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "python3 /opt/codex-desktop/.codex-linux/webview-server.py 5178 --bind 127.0.0.1",
+      "pid": "1924315",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --no-sandbox --class=codex-desktop --app-id=codex-desktop --disable-dev-shm-usage --disable-gpu-sandbox --disable-gpu-compositing --user-data-dir=/home/tehlappy/.local/state/codex-desktop/instances/port-5177/electron-user-data/instances/port-5178 --ozone-platform-hint=auto --force-renderer-accessibility codex://threads/new",
+      "pid": "1924541",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=zygote --no-zygote-sandbox --no-sandbox",
+      "pid": "1924553",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=zygote --no-sandbox",
+      "pid": "1924554",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/chrome_crashpad_handler --monitor-self-annotation=ptype=crashpad-handler --no-rate-limit --database=/home/tehlappy/.config/Codex/Crashpad --url=https://f.a.k/e --annotation=_productName=Codex --annotation=_version=26.609.71450 --annotation=lsb-release=Garuda Linux --annotation=plat=Linux --annotation=prod=Electron --annotation=ver=42.1.0 --initial-client-fd=42 --shared-client-connection",
+      "pid": "1924614",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=gpu-process --disable-gpu-sandbox --no-sandbox --disable-dev-shm-usage --ozone-platform=wayland --render-node-override=/dev/dri/renderD129 --crashpad-handler-pid=1924614 --enable-crash-reporter=712a551a-968a-4c9e-8b36-00ec118a7e6d,no_channel --user-data-dir=/home/tehlappy/.config/Codex --gpu-preferences=UAAAAAAAAAAgAQAEAAAAAAAAAAAAAGAAAQAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAYAAAAAAAAABgAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAA --shared-files --field-trial-ha",
+      "pid": "1924721",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=utility --utility-sub-type=network.mojom.NetworkService --lang=en-US --service-sandbox-type=none --no-sandbox --disable-dev-shm-usage --render-node-override=/dev/dri/renderD129 --crashpad-handler-pid=1924614 --enable-crash-reporter=712a551a-968a-4c9e-8b36-00ec118a7e6d,no_channel --user-data-dir=/home/tehlappy/.config/Codex --standard-schemes=app --secure-schemes=app,sentry-ipc --bypasscsp-schemes=sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=app,sentry-i",
+      "pid": "1924735",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/home/tehlappy/.local/bin/codex app-server --analytics-default-enabled",
+      "pid": "1924858",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/opt/codex-desktop/electron --type=renderer --crashpad-handler-pid=1924614 --enable-crash-reporter=712a551a-968a-4c9e-8b36-00ec118a7e6d,no_channel --user-data-dir=/home/tehlappy/.config/Codex --standard-schemes=app --secure-schemes=app,sentry-ipc --bypasscsp-schemes=sentry-ipc --cors-schemes=sentry-ipc --fetch-schemes=app,sentry-ipc --streaming-schemes=app --app-path=/opt/codex-desktop/resources/app.asar --enable-sandbox --no-sandbox --disable-dev-shm-usage --ozone-platform=wayland --disable-gpu",
+      "pid": "1925094",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/home/tehlappy/.local/bin/node server.js",
+      "pid": "1950405",
+      "project": "lilith",
+      "role": "api"
+    },
+    {
+      "command": "/usr/bin/bash -lic set +m; pkill -f lilith_proxy.py 2>/dev/null; sleep 2 && python /home/tehlappy/lilith_proxy.py &",
+      "pid": "2011596",
+      "project": "lilith",
+      "role": "api"
+    },
+    {
+      "command": "python /home/tehlappy/lilith_proxy.py",
+      "pid": "2011607",
+      "project": "lilith",
+      "role": "api"
+    },
+    {
+      "command": "/home/tehlappy/.hermes/hermes-agent/venv/bin/python3 /home/tehlappy/.hermes/hermes-agent/venv/bin/hermes",
+      "pid": "2029120",
+      "project": "hermes",
+      "role": "bridge_or_agent"
+    },
+    {
+      "command": "/opt/codex-desktop/resources/node_repl",
+      "pid": "2133043",
+      "project": "codex_desktop",
+      "role": "agent_ui"
+    },
+    {
+      "command": "/usr/bin/bash -lic set +m; cd /home/tehlappy/.hermes/hermes-agent/venv && python /home/tehlappy/.hermes/skills/integration/lilith-hermes-integration/scripts/hermes_bridge_server.py",
+      "pid": "2160973",
+      "project": "lilith",
+      "role": "api"
+    },
+    {
+      "command": "python /home/tehlappy/.hermes/skills/integration/lilith-hermes-integration/scripts/hermes_bridge_server.py",
+      "pid": "2161012",
+      "project": "lilith",
+      "role": "api"
+    },
+    {
+      "command": "/usr/bin/bash -lic set +m; cd /home/tehlappy/.hermes/hermes-agent/venv && python /home/tehlappy/.hermes/skills/integration/lilith-hermes-integration/scripts/msn_coordination_server.py",
+      "pid": "2162734",
+      "project": "lilith",
+      "role": "api"
+    },
+    {
+      "command": "python /home/tehlappy/.hermes/skills/integration/lilith-hermes-integration/scripts/msn_coordination_server.py",
+      "pid": "2162774",
+      "project": "lilith",
+      "role": "api"
+    },
+    {
+      "command": "/home/tehlappy/.local/share/Steam/ubuntu12_64/steamwebhelper --type=zygote --crashpad-handler-pid=1099078 --enable-crash-reporter=, --change-stack-guard-on-fork=enable --enable-chrome-runtime --user-data-dir=/home/tehlappy/.local/share/Steam/config/htmlcache --user-agent-product=Valve Steam Client --buildid=1781041600 --steamid=0",
+      "pid": "2188177",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/usr/bin/dolphin /home/tehlappy/.local/share/Steam/steamapps/common/Cyberpunk 2077",
+      "pid": "2188232",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "agy",
+      "pid": "2188720",
+      "project": "agy",
+      "role": "external_ai_worker"
+    },
+    {
+      "command": "/home/tehlappy/.hermes/hermes-agent/venv/bin/python3 /home/tehlappy/.hermes/hermes-agent/venv/bin/hermes",
+      "pid": "2194781",
+      "project": "hermes",
+      "role": "bridge_or_agent"
+    },
+    {
+      "command": "/usr/bin/bash -lic set +m; cd /home/tehlappy/Desktop/AI/abyssal-assets && /home/tehlappy/Desktop/AI/Pub/.venv-pub/bin/python3 msn_router.py",
+      "pid": "2208629",
+      "project": "msn_router",
+      "role": "agent_router"
+    },
+    {
+      "command": "/home/tehlappy/Desktop/AI/Pub/.venv-pub/bin/python3 msn_router.py",
+      "pid": "2208668",
+      "project": "msn_router",
+      "role": "agent_router"
+    },
+    {
+      "command": "/usr/bin/bash -lic set +m; cd /home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app && /home/tehlappy/Desktop/AI/Pub/.venv-pub/bin/python3 lyra_server.py",
+      "pid": "2209194",
+      "project": "lilith",
+      "role": "api"
+    },
+    {
+      "command": "/home/tehlappy/Desktop/AI/Pub/.venv-pub/bin/python3 lyra_server.py",
+      "pid": "2209235",
+      "project": "lyra",
+      "role": "dialogue"
+    },
+    {
+      "command": "/home/tehlappy/.hermes/hermes-agent/venv/bin/python3 /home/tehlappy/.hermes/hermes-agent/venv/bin/hermes",
+      "pid": "2216402",
+      "project": "hermes",
+      "role": "bridge_or_agent"
+    },
+    {
+      "command": "node /home/tehlappy/.hermes/lsp/bin/pyright-langserver --stdio",
+      "pid": "2219725",
+      "project": "hermes",
+      "role": "bridge_or_agent"
+    },
+    {
+      "command": "/home/tehlappy/Desktop/AI/Pub/.venv-pub/bin/python /home/tehlappy/Desktop/AI/Pub/status_daemon.py --daemon",
+      "pid": "2227409",
+      "project": "local_service",
+      "role": "runtime"
+    },
+    {
+      "command": "/home/tehlappy/Desktop/AI/Pub/.venv-pub/bin/python /home/tehlappy/Desktop/AI/abyssal-assets/server/main.py",
+      "pid": "2231724",
+      "project": "local_service",
+      "role": "runtime"
+    },
+    {
+      "command": "/home/tehlappy/Desktop/AI/Pub/.venv-pub/bin/python /home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/cyberpunk_ngd_integration.py --daemon",
+      "pid": "2231819",
+      "project": "lilith",
+      "role": "api"
+    },
+    {
+      "command": "/home/tehlappy/Desktop/AI/Pub/.venv-pub/bin/python /home/tehlappy/Desktop/AI/Pub/scripts/neuromorphic_quantum_miner.py --daemon",
+      "pid": "2250985",
+      "project": "local_service",
+      "role": "runtime"
+    },
+    {
+      "command": "/home/tehlappy/Desktop/AI/Pub/.venv-pub/bin/python /home/tehlappy/Desktop/AI/Pub/scripts/yolo_enforcer.py",
+      "pid": "2262280",
+      "project": "local_service",
+      "role": "runtime"
+    },
+    {
+      "command": "/home/tehlappy/Desktop/AI/Pub/.venv-pub/bin/python /home/tehlappy/Desktop/AI/Pub/scripts/automation/run_automation.py ouroboros",
+      "pid": "2271224",
+      "project": "ouroboros",
+      "role": "swarm_or_memory"
+    },
+    {
+      "command": "python3 /home/tehlappy/Desktop/AI/Pub/scripts/ouroboros_rnn_autonomous.py --once",
+      "pid": "2271226",
+      "project": "ouroboros",
+      "role": "swarm_or_memory"
+    },
+    {
+      "command": "/home/tehlappy/.local/share/Steam/steamapps/common/Proton - Experimental/files/lib/wine/../../bin/wineserver",
+      "pid": "2272988",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "C:\\windows\\system32\\winedevice.exe",
+      "pid": "2272998",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "C:\\windows\\system32\\winedevice.exe",
+      "pid": "2273033",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "/home/tehlappy/.local/share/Steam/steamapps/common/Proton - Experimental/files/lib/wine/../../bin/wineserver",
+      "pid": "2278970",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "C:\\windows\\system32\\winedevice.exe",
+      "pid": "2278977",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "C:\\windows\\system32\\winedevice.exe",
+      "pid": "2279000",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "\\\\?\\Z:\\home\\tehlappy\\.local\\share\\Steam\\steamapps\\common\\Proton - Experimental\\files\\share\\wine/../xalia/xalia.exe",
+      "pid": "2279051",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "C:\\users\\steamuser\\AppData\\Local\\Programs\\CD Projekt Red\\REDlauncher\\REDlauncher.exe --launcher-game-directory=Z:/home/tehlappy/.local/share/Steam/steamapps/common/Cyberpunk 2077 --launcher-session-identifier=3c04254d-6ca1-42fe-b23f-09397fe77660",
+      "pid": "2279057",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "C:\\users\\steamuser\\AppData\\Local\\Programs\\CD Projekt Red\\REDlauncher\\QtWebEngineProcess.exe --type=renderer --disable-speech-api --enable-threaded-compositing --enable-features=AllowContentInitiatedDataUrlNavigations,NetworkServiceInProcess,TracingServiceInProcess --disable-features=BackgroundFetch,ConsolidatedMovementXY,DnsOverHttpsUpgrade,InstalledApp,MojoVideoCapture,PictureInPicture,SmsReceiver,UseSkiaRenderer,WebPayments,WebUSB --lang=en --webengine-schemes=qrc:sLV --device-scale-factor=1 -",
+      "pid": "2279136",
+      "project": "cyberpunk_runtime",
+      "role": "steam_proton_launcher"
+    },
+    {
+      "command": "opencode",
+      "pid": "2282370",
+      "project": "opencode",
+      "role": "coding_agent"
+    },
+    {
+      "command": "fish Pub/00_CORE_SERVICES/lilith-app/scripts/generate_active_workforce_index.fish",
+      "pid": "2285242",
+      "project": "lilith",
+      "role": "api"
+    },
+    {
+      "command": "python3 Pub/00_CORE_SERVICES/lilith-app/scripts/generate_active_workforce_index.py",
+      "pid": "2285260",
+      "project": "lilith",
+      "role": "api"
+    }
+  ],
+  "project_counts": {
+    "agy": 1,
+    "codex_desktop": 47,
+    "cyberpunk_runtime": 29,
+    "god_engine": 1,
+    "hermes": 4,
+    "lilith": 11,
+    "local_llm": 1,
+    "local_service": 9,
+    "lyra": 1,
+    "msn_router": 2,
+    "ngd": 1,
+    "opencode": 1,
+    "ouroboros": 3,
+    "system": 1
+  },
+  "schema": "lilith.active_workforce_index.v1",
+  "services": [
+    {
+      "line": "antigravity-bridge.service                                           loaded active running Antigravity Bridge",
+      "unit": "antigravity-bridge.service"
+    },
+    {
+      "line": "app-codex\\x2ddesktop@20123cd14c4c49638319e6a582e53d5f.service        loaded active running Codex Desktop",
+      "unit": "app-codex\\x2ddesktop@20123cd14c4c49638319e6a582e53d5f.service"
+    },
+    {
+      "line": "app-codex\\x2ddesktop@296577b94fa94f3e89bd648f6cc04c11.service        loaded active running Codex Desktop",
+      "unit": "app-codex\\x2ddesktop@296577b94fa94f3e89bd648f6cc04c11.service"
+    },
+    {
+      "line": "app-codex\\x2ddesktop@9f1f85f7bcd8450b94f2c385e7929c31.service        loaded active running Codex Desktop",
+      "unit": "app-codex\\x2ddesktop@9f1f85f7bcd8450b94f2c385e7929c31.service"
+    },
+    {
+      "line": "app-steam@93f394c3970a44f5a0b62369af3fce07.service                   loaded active running Steam",
+      "unit": "app-steam@93f394c3970a44f5a0b62369af3fce07.service"
+    },
+    {
+      "line": "codex-update-manager.service                                         loaded active running Codex Desktop Update Manager",
+      "unit": "codex-update-manager.service"
+    },
+    {
+      "line": "god-engine.service                                                   loaded active running God Engine Server",
+      "unit": "god-engine.service"
+    },
+    {
+      "line": "lilith-api.service                                                   loaded active running Lilith API Server",
+      "unit": "lilith-api.service"
+    },
+    {
+      "line": "swarm-orchestrator.service                                           loaded active running Ouroboros Swarm Orchestrator",
+      "unit": "swarm-orchestrator.service"
+    }
+  ],
+  "yesod_memory_weavers": [
+    {
+      "subagent": "Yesod Foundation Memory Weaver",
+      "batch": "10-subagent Yesod",
+      "role": "Build base Polsia memory, ouroboros email feeds, Driver Man co-op, GTC empire",
+      "status": "complete",
+      "timestamp": 1782001438,
+      "intel_source": "himalaya-email-swarm",
+      "engrams_fed": 3,
+      "polsia": "memory_service + dispatch enhanced",
+      "entities": [
+        "Driver Man Co-Op (52 drivers, $352 pool)",
+        "Lilith Systems LLC (MSN/NGD)"
+      ]
+    }
+  ],
+  "foundation": "Yesod pillar active for Polsia/DriverMan/GTC parallel",
+  "drivers": 52,
+  "treasury": 352.01
+}

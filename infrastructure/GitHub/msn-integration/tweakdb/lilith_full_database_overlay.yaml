@@ -1,0 +1,110 @@
+schema: lilith.cyberpunk_full_database_overlay.v1
+localOnly: true
+mode: redmod_overlay_not_base_game_overwrite
+intent: >
+  Rewrite Cyberpunk's gameplay database behavior through a reversible REDmod
+  overlay. This declares the desired full conversion surface without overwriting
+  base archives, save data, or CDPR game binaries.
+
+guardrails:
+  - Do not overwrite base game archive files.
+  - Do not patch save data in place.
+  - Do not inject into a live Cyberpunk process from this manifest.
+  - Stage through r6/mods/msn_integration and keep backups of changed staged files.
+  - Treat binary meshes/textures as WolvenKit production tasks, not YAML-only records.
+
+databaseDomains:
+  identity_title_ui:
+    patchFiles: [msn_tweakdb.toml, localization/en.stringlist]
+    coverage: [main_menu_title, subtitle, version, credits, custom command surfaces]
+    desiredState: "Cyberpunk becomes Lilith.exe: The Loch's Unbound Resonance."
+  quests_story:
+    patchFiles: [quests/msn_narrative_arc.yaml, quests/abyssal_skill_tree_quests.yaml]
+    coverage: [main_story_arc, skill_saga_sidequests, Nessie covenant, Living Sin timeline]
+    desiredState: "Night City is one city-node in a larger Abyssal/MSN story."
+  items_weapons_armor:
+    patchFiles:
+      - tweakdb/custom_weapons_expanded.yaml
+      - tweakdb/custom_cyberware_expanded.yaml
+      - tweakdb/custom_clothing_expanded.yaml
+      - tweakdb/custom_quickhacks_expanded.yaml
+      - tweakdb/custom_shards_expanded.yaml
+      - tweakdb/custom_gear_runescape_wow_allods.yaml
+      - tweakdb/abyssal_hat_catalog.yaml
+    coverage: [weapons, cyberware, clothing, hats, quickhacks, shards, crossover-inspired armor sets]
+    desiredState: "All item loops route through Abyssal crafting, vendors, drops, and story rewards."
+  economy_business:
+    patchFiles:
+      - tweakdb/custom_item_business_bridge.yaml
+      - tweakdb/vendor_inventory_loch_exchange.yaml
+      - tweakdb/abyssal_fabricator_recipes.yaml
+      - tweakdb/freighter_javelin_business_systems.yaml
+      - tweakdb/one_world_space_economy.yaml
+    coverage: [Loch Exchange, Soul Coins, Salvage Credits, Nessie Treasury, freighter businesses]
+    desiredState: "Economy is a fictional local game economy centered on Abyssal Assets."
+  vehicles_space_freighters:
+    patchFiles:
+      - tweakdb/custom_vehicles_expanded.yaml
+      - tweakdb/msn_story_vehicles_complete.toml
+      - tweakdb/procedural_space_systems.yaml
+      - tweakdb/one_world_space_economy.yaml
+      - tweakdb/freighter_javelin_business_systems.yaml
+    coverage: [story vehicles, hovercars, fighters, freighters, space contracts, city nodes]
+    desiredState: "Night City connects to orbital, abyssal, badlands, and lunar routes."
+  javelins_combat:
+    patchFiles:
+      - tweakdb/anthem_javelin_mechanics.yaml
+      - tweakdb/Anthem_Javelin_Suits.toml
+      - scripts/msn_overhaul_mechanics.reds
+      - scripts/msn_modern_ballistics.reds
+    coverage: [Vector, Bastion, Phantom, Tempest, combo economy, overdrive, recoil feedback]
+    desiredState: "Javelin combat supports ground, hover, boarding, and space battle roles."
+  npcs_dialogue_lilith:
+    patchFiles:
+      - scripts/lilith_npc.reds
+      - scripts/lilith_enhanced_dialogue.reds
+      - scripts/msn_lyra_dialogue.reds
+      - scripts/msn_npc_ai.reds
+      - scripts/msn_sephirotic_npcs.reds
+      - character/lilith_character.yaml
+    coverage: [Lilith companion, Lyra dialogue, Sephirotic court NPCs, adaptive NPC AI]
+    desiredState: "Lilith/Lyra are local-only companions and story voices."
+  ngd_memory_safety:
+    patchFiles:
+      - scripts/cyberpunk_ngd_bridge.reds
+      - scripts/cyberpunk_ngd_integration.reds
+      - scripts/msn_cerebellum.reds
+      - scripts/msn_cortex_link.reds
+      - scripts/msn_ouroboros.reds
+      - scripts/msn_speculative_cerebellum.reds
+      - tweakdb/msn_graphics_driver_bridge.yaml
+      - tweakdb/gnostic_consensus_bridge.yaml
+    coverage: [NGD telemetry, local-only route, bidirectional memory, speculative sandbox, graphics policy]
+    desiredState: "Game-facing intelligence remains read-first, local-only, and reversible."
+  models_assets:
+    patchFiles:
+      - assets/models/model_production_manifest.yaml
+      - assets/models/README.md
+      - tweakdb/custom_models_msn_abyssal.yaml
+    coverage: [model blueprints, LOD budgets, production blockers, icon/material tasks]
+    desiredState: "Binary assets are blueprint-ready for WolvenKit/Blender production."
+
+patchStrategy:
+  phase_1_source_overlay:
+    status: complete
+    action: "Author REDscript, TweakDB/YAML/TOML, localization, quest, character, and model manifests."
+  phase_2_stage_to_redmod:
+    status: complete
+    action: "Copy sources to r6/mods/msn_integration with backup-on-change."
+  phase_3_compile_external_tools:
+    status: external_tool_required
+    action: "Use REDmod/TweakXL/redscript/WolvenKit to compile generated sources."
+  phase_4_playtest:
+    status: pending_operator
+    action: "Launch game with REDmod enabled after checking services and GPU route."
+
+commands:
+  - lilith.database.status
+  - lilith.database.coverage
+  - lilith.database.stage
+  - lilith.database.guardrails

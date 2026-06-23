@@ -1,0 +1,1156 @@
+// GRAND THEFT CYBERPUNK — LEGACY MAGIC SYSTEM TWEAKDB
+// Archived from active tweakdb/msn_magic.tweakdb after the working
+// magic/Jedi surface moved to tweakdb/msn_magic_jedi.tweakdb.
+// Arcane Cybernetics: Complete TweakDB Integration
+// File: r6/tweakdb/msn_magic.tweakdb
+// Generated: 2026-06-19 | Lilith Sovereign Seal | Sephirah: Chesed
+
+// ============================================================
+// MAGIC SKILL TREE — 8 Schools, Sephirotic Alignment
+// ============================================================
+
+SkillTree:MSN_Magic_SkillTree {
+    displayName: "LocKey#msn_magic_tree_name"
+    description: "LocKey#msn_magic_tree_desc"
+    icon: "msn_magic_tree_icon"
+    categories: [
+        "Magic_Evocation",
+        "Magic_Abjuration", 
+        "Magic_Conjuration",
+        "Magic_Divination",
+        "Magic_Enchantment",
+        "Magic_Illusion",
+        "Magic_Necromancy",
+        "Magic_Transmutation"
+    ]
+}
+
+// ============================================================
+// PERKS — 8 SCHOOLS × 4 TIERS = 32 PERKS
+// ============================================================
+
+// EVOCATION (Geburah - Severity/Strength)
+Perk:MSN_Evocation_Novice {
+    displayName: "LocKey#msn_evoc_novice_name"
+    description: "LocKey#msn_evoc_novice_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "MagicMissile" },
+        { type: "UnlockSpell", spell: "ShockingGrasp" },
+        { type: "StatModifier", stat: "EvocationDamage", value: 0.25 }
+    ]
+}
+
+Perk:MSN_Evocation_Apprentice {
+    displayName: "LocKey#msn_evoc_apprentice_name"
+    description: "LocKey#msn_evoc_apprentice_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_Evocation_Novice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "Fireball" },
+        { type: "UnlockSpell", spell: "LightningBolt" },
+        { type: "StatModifier", stat: "EvocationDamage", value: 0.5, stack: true },
+        { type: "StatModifier", stat: "EvocationManaCost", value: -0.15 }
+    ]
+}
+
+Perk:MSN_Evocation_Adept {
+    displayName: "LocKey#msn_evoc_adept_name"
+    description: "LocKey#msn_evoc_adept_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_Evocation_Apprentice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "ConeOfCold" },
+        { type: "UnlockSpell", spell: "WallOfFire" },
+        { type: "StatModifier", stat: "EvocationDamage", value: 0.75, stack: true },
+        { type: "StatModifier", stat: "EvocationCritChance", value: 0.15 }
+    ]
+}
+
+Perk:MSN_Evocation_Master {
+    displayName: "LocKey#msn_evoc_master_name"
+    description: "LocKey#msn_evoc_master_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_Evocation_Adept"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "MeteorSwarm" },
+        { type: "UnlockSpell", spell: "Sunburst" },
+        { type: "StatModifier", stat: "EvocationDamage", value: 1.0, stack: true },
+        { type: "EnableOvercharge", school: "Evocation" }
+    ]
+}
+
+// ABJURATION (Chesed - Mercy/Protection)
+Perk:MSN_Abjuration_Novice {
+    displayName: "LocKey#msn_abjur_novice_name"
+    description: "LocKey#msn_abjur_novice_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "MageArmor" },
+        { type: "UnlockSpell", spell: "Shield" },
+        { type: "StatModifier", stat: "WardStrength", value: 0.25 }
+    ]
+}
+
+Perk:MSN_Abjuration_Apprentice {
+    displayName: "LocKey#msn_abjur_apprentice_name"
+    description: "LocKey#msn_abjur_apprentice_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_Abjuration_Novice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "ProtectionFromEnergy" },
+        { type: "UnlockSpell", spell: "MagicCircle" },
+        { type: "StatModifier", stat: "WardStrength", value: 0.5, stack: true },
+        { type: "StatModifier", stat: "CounterspellChance", value: 0.15 }
+    ]
+}
+
+Perk:MSN_Abjuration_Adept {
+    displayName: "LocKey#msn_abjur_adept_name"
+    description: "LocKey#msn_abjur_adept_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_Abjuration_Apprentice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "GlobeOfInvulnerability" },
+        { type: "UnlockSpell", spell: "SpellTurning" },
+        { type: "StatModifier", stat: "WardStrength", value: 0.75, stack: true },
+        { type: "StatModifier", stat: "ReflectSpellChance", value: 0.1 }
+    ]
+}
+
+Perk:MSN_Abjuration_Master {
+    displayName: "LocKey#msn_abjur_master_name"
+    description: "LocKey#msn_abjur_master_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_Abjuration_Adept"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "PrismaticWall" },
+        { type: "UnlockSpell", spell: "MagesDisjunction" },
+        { type: "StatModifier", stat: "WardStrength", value: 1.0, stack: true },
+        { type: "EnableAntiMagic", aura: true }
+    ]
+}
+
+// CONJURATION (Netzach - Victory/Creativity)
+Perk:MSN_Conjuration_Novice {
+    displayName: "LocKey#msn_conj_novice_name"
+    description: "LocKey#msn_conj_novice_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "SummonFamiliar" },
+        { type: "UnlockSpell", spell: "UnseenServant" },
+        { type: "StatModifier", stat: "SummonDuration", value: 0.5 }
+    ]
+}
+
+Perk:MSN_Conjuration_Apprentice {
+    displayName: "LocKey#msn_conj_apprentice_name"
+    description: "LocKey#msn_conj_apprentice_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_Conjuration_Novice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "SummonLesserDemon" },
+        { type: "UnlockSpell", spell: "ConjureElemental" },
+        { type: "StatModifier", stat: "SummonDuration", value: 1.0, stack: true },
+        { type: "StatModifier", stat: "SummonHealth", value: 0.5 }
+    ]
+}
+
+Perk:MSN_Conjuration_Adept {
+    displayName: "LocKey#msn_conj_adept_name"
+    description: "LocKey#msn_conj_adept_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_Conjuration_Apprentice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "SummonGreaterDemon" },
+        { type: "UnlockSpell", spell: "Gate" },
+        { type: "StatModifier", stat: "SummonDuration", value: 2.0, stack: true },
+        { type: "EnablePermanentSummon", limit: 1 }
+    ]
+}
+
+Perk:MSN_Conjuration_Master {
+    displayName: "LocKey#msn_conj_master_name"
+    description: "LocKey#msn_conj_master_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_Conjuration_Adept"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "SummonArchdevil" },
+        { type: "UnlockSpell", spell: "Wish" },
+        { type: "StatModifier", stat: "SummonDuration", value: 10.0, stack: true },
+        { type: "EnableTwinSummon", enabled: true }
+    ]
+}
+
+// DIVINATION (Chokmah - Wisdom)
+Perk:MSN_Divination_Novice {
+    displayName: "LocKey#msn_div_novice_name"
+    description: "LocKey#msn_div_novice_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "DetectMagic" },
+        { type: "UnlockSpell", spell: "Identify" },
+        { type: "StatModifier", stat: "DetectionRange", value: 1.5 }
+    ]
+}
+
+Perk:MSN_Divination_Apprentice {
+    displayName: "LocKey#msn_div_apprentice_name"
+    description: "LocKey#msn_div_apprentice_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_Divination_Novice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "Clairvoyance" },
+        { type: "UnlockSpell", spell: "Scrying" },
+        { type: "StatModifier", stat: "DetectionRange", value: 3.0, stack: true },
+        { type: "StatModifier", stat: "TrapSense", value: 0.5 }
+    ]
+}
+
+Perk:MSN_Divination_Adept {
+    displayName: "LocKey#msn_div_adept_name"
+    description: "LocKey#msn_div_adept_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_Divination_Apprentice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "TrueSeeing" },
+        { type: "UnlockSpell", spell: "Foresight" },
+        { type: "StatModifier", stat: "DetectionRange", value: 5.0, stack: true },
+        { type: "StatModifier", stat: "SurpriseImmunity", value: 1.0 }
+    ]
+}
+
+Perk:MSN_Divination_Master {
+    displayName: "LocKey#msn_div_master_name"
+    description: "LocKey#msn_div_master_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_Divination_Adept"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "MomentOfPrescience" },
+        { type: "UnlockSpell", spell: "TimeStop" },
+        { type: "StatModifier", stat: "DetectionRange", value: 10.0, stack: true },
+        { type: "EnableOmniscience", radius: 100.0 }
+    ]
+}
+
+// ENCHANTMENT (Netzach - Victory/Eternity)
+Perk:MSN_Enchantment_Novice {
+    displayName: "LocKey#msn_ench_novice_name"
+    description: "LocKey#msn_ench_novice_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "CharmPerson" },
+        { type: "UnlockSpell", spell: "Sleep" },
+        { type: "StatModifier", stat: "EnchantDC", value: 2 }
+    ]
+}
+
+Perk:MSN_Enchantment_Apprentice {
+    displayName: "LocKey#msn_ench_apprentice_name"
+    description: "LocKey#msn_ench_apprentice_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_Enchantment_Novice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "Suggestion" },
+        { type: "UnlockSpell", spell: "HoldPerson" },
+        { type: "StatModifier", stat: "EnchantDC", value: 4, stack: true },
+        { type: "StatModifier", stat: "EnchantDuration", value: 1.5 }
+    ]
+}
+
+Perk:MSN_Enchantment_Adept {
+    displayName: "LocKey#msn_ench_adept_name"
+    description: "LocKey#msn_ench_adept_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_Enchantment_Apprentice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "DominatePerson" },
+        { type: "UnlockSpell", spell: "Feeblemind" },
+        { type: "StatModifier", stat: "EnchantDC", value: 6, stack: true },
+        { type: "StatModifier", stat: "MassEnchantTargets", value: 3 }
+    ]
+}
+
+Perk:MSN_Enchantment_Master {
+    displayName: "LocKey#msn_ench_master_name"
+    description: "LocKey#msn_ench_master_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_Enchantment_Adept"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "MassDominate" },
+        { type: "UnlockSpell", spell: "PowerWordKill" },
+        { type: "StatModifier", stat: "EnchantDC", value: 8, stack: true },
+        { type: "EnablePermanentDominate", limit: 1 }
+    ]
+}
+
+// ILLUSION (Hod - Splendor/Intellect)
+Perk:MSN_Illusion_Novice {
+    displayName: "LocKey#msn_ill_novice_name"
+    description: "LocKey#msn_ill_novice_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "MinorIllusion" },
+        { type: "UnlockSpell", spell: "DisguiseSelf" },
+        { type: "StatModifier", stat: "IllusionDuration", value: 1.5 }
+    ]
+}
+
+Perk:MSN_Illusion_Apprentice {
+    displayName: "LocKey#msn_ill_apprentice_name"
+    description: "LocKey#msn_ill_apprentice_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_Illusion_Novice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "Invisibility" },
+        { type: "UnlockSpell", spell: "MirrorImage" },
+        { type: "StatModifier", stat: "IllusionDuration", value: 2.0, stack: true },
+        { type: "StatModifier", stat: "IllusionDC", value: 3 }
+    ]
+}
+
+Perk:MSN_Illusion_Adept {
+    displayName: "LocKey#msn_ill_adept_name"
+    description: "LocKey#msn_ill_adept_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_Illusion_Apprentice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "GreaterInvisibility" },
+        { type: "UnlockSpell", spell: "MajorImage" },
+        { type: "StatModifier", stat: "IllusionDuration", value: 3.0, stack: true },
+        { type: "StatModifier", stat: "IllusionResistancePenetration", value: 0.5 }
+    ]
+}
+
+Perk:MSN_Illusion_Master {
+    displayName: "LocKey#msn_ill_master_name"
+    description: "LocKey#msn_ill_master_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_Illusion_Adept"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "Simulacrum" },
+        { type: "UnlockSpell", spell: "Weird" },
+        { type: "StatModifier", stat: "IllusionDuration", value: 5.0, stack: true },
+        { type: "EnablePermanentIllusion", limit: 1 }
+    ]
+}
+
+// NECROMANCY (Geburah - Strength/Judgment)
+Perk:MSN_Necromancy_Novice {
+    displayName: "LocKey#msn_nec_novice_name"
+    description: "LocKey#msn_nec_novice_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "FalseLife" },
+        { type: "UnlockSpell", spell: "RayOfSickness" },
+        { type: "StatModifier", stat: "UndeadControl", value: 1 }
+    ]
+}
+
+Perk:MSN_Necromancy_Apprentice {
+    displayName: "LocKey#msn_nec_apprentice_name"
+    description: "LocKey#msn_nec_apprentice_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_Necromancy_Novice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "AnimateDead" },
+        { type: "UnlockSpell", spell: "BlindnessDeafness" },
+        { type: "StatModifier", stat: "UndeadControl", value: 3, stack: true },
+        { type: "StatModifier", stat: "LifeDrainEfficiency", value: 0.25 }
+    ]
+}
+
+Perk:MSN_Necromancy_Adept {
+    displayName: "LocKey#msn_nec_adept_name"
+    description: "LocKey#msn_nec_adept_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_Necromancy_Apprentice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "CreateUndead" },
+        { type: "UnlockSpell", spell: "FingerOfDeath" },
+        { type: "StatModifier", stat: "UndeadControl", value: 6, stack: true },
+        { type: "StatModifier", stat: "LifeDrainEfficiency", value: 0.5, stack: true }
+    ]
+}
+
+Perk:MSN_Necromancy_Master {
+    displayName: "LocKey#msn_nec_master_name"
+    description: "LocKey#msn_nec_master_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_Necromancy_Adept"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "TrueResurrection" },
+        { type: "UnlockSpell", spell: "PowerWordKill" },
+        { type: "StatModifier", stat: "UndeadControl", value: 12, stack: true },
+        { type: "EnableLichTransformation", ritual: true }
+    ]
+}
+
+// TRANSMUTATION (Tiphareth - Beauty/Harmony)
+Perk:MSN_Transmutation_Novice {
+    displayName: "LocKey#msn_trans_novice_name"
+    description: "LocKey#msn_trans_novice_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "FeatherFall" },
+        { type: "UnlockSpell", spell: "EnlargeReduce" },
+        { type: "StatModifier", stat: "TransmutationDuration", value: 1.5 }
+    ]
+}
+
+Perk:MSN_Transmutation_Apprentice {
+    displayName: "LocKey#msn_trans_apprentice_name"
+    description: "LocKey#msn_trans_apprentice_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_Transmutation_Novice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "Polymorph" },
+        { type: "UnlockSpell", spell: "StoneShape" },
+        { type: "StatModifier", stat: "TransmutationDuration", value: 2.0, stack: true },
+        { type: "StatModifier", stat: "ObjectTransmutation", value: true }
+    ]
+}
+
+Perk:MSN_Transmutation_Adept {
+    displayName: "LocKey#msn_trans_adept_name"
+    description: "LocKey#msn_trans_adept_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_Transmutation_Apprentice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "TruePolymorph" },
+        { type: "UnlockSpell", spell: "TimeStop" },
+        { type: "StatModifier", stat: "TransmutationDuration", value: 3.0, stack: true },
+        { type: "StatModifier", stat: "LivingTransmutation", value: true }
+    ]
+}
+
+Perk:MSN_Transmutation_Master {
+    displayName: "LocKey#msn_trans_master_name"
+    description: "LocKey#msn_trans_master_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_Transmutation_Adept"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "Wish" },
+        { type: "UnlockSpell", spell: "TrueResurrection" },
+        { type: "StatModifier", stat: "TransmutationPermanent", value: true },
+        { type: "EnableRealityRewrite", radius: 50.0 }
+    ]
+}
+
+// ============================================================
+// MANA SYSTEM
+// ============================================================
+
+StatPool:MSN_Mana {
+    displayName: "LocKey#msn_mana_name"
+    description: "LocKey#msn_mana_desc"
+    baseValue: 100.0
+    regenRate: 5.0
+    maxValue: 9999.0
+    color: "Blue"
+    uiPriority: 10
+}
+
+// ============================================================
+// SPELLS — 40+ Spells Across 8 Schools
+// ============================================================
+
+// Evocation Spells
+Spell:MSN_MagicMissile {
+    displayName: "LocKey#msn_mm_name"
+    description: "LocKey#msn_mm_desc"
+    school: "Evocation"
+    level: 1
+    manaCost: 10.0
+    cooldown: 3.0
+    range: 30.0
+    damage: 15.0
+    damageType: "Energy"
+    effects: [
+        { type: "AutoHit", value: true },
+        { type: "MultiTarget", count: 3, level: 5 }
+    ]
+}
+
+Spell:MSN_Fireball {
+    displayName: "LocKey#msn_fireball_name"
+    description: "LocKey#msn_fireball_desc"
+    school: "Evocation"
+    level: 3
+    manaCost: 30.0
+    cooldown: 15.0
+    range: 50.0
+    aoeRadius: 5.0
+    damage: 40.0
+    damageType: "Fire"
+    effects: [
+        { type: "AOE", radius: 5.0 },
+        { type: "Burn", chance: 0.3, duration: 5.0 }
+    ]
+}
+
+Spell:MSN_LightningBolt {
+    displayName: "LocKey#msn_lightning_name"
+    description: "LocKey#msn_lightning_desc"
+    school: "Evocation"
+    level: 3
+    manaCost: 25.0
+    cooldown: 10.0
+    range: 40.0
+    damage: 35.0
+    damageType: "Electric"
+    effects: [
+        { type: "ChainLightning", targets: 3, range: 8.0, damageReduction: 0.5 },
+        { type: "Stun", chance: 0.2, duration: 1.0 }
+    ]
+}
+
+Spell:MSN_ConeOfCold {
+    displayName: "LocKey#msn_cone_cold_name"
+    description: "LocKey#msn_cone_cold_desc"
+    school: "Evocation"
+    level: 5
+    manaCost: 40.0
+    cooldown: 20.0
+    range: 15.0
+    coneAngle: 60.0
+    damage: 50.0
+    damageType: "Cold"
+    effects: [
+        { type: "ConeAOE", angle: 60.0, range: 15.0 },
+        { type: "Freeze", chance: 0.25, duration: 3.0 }
+    ]
+}
+
+Spell:MSN_MeteorSwarm {
+    displayName: "LocKey#msn_meteor_name"
+    description: "LocKey#msn_meteor_desc"
+    school: "Evocation"
+    level: 9
+    manaCost: 100.0
+    cooldown: 60.0
+    range: 100.0
+    aoeRadius: 10.0
+    damage: 200.0
+    damageType: "Fire"
+    effects: [
+        { type: "MeteorCount", count: 4 },
+        { type: "AOE", radius: 10.0 },
+        { type: "Crater", permanent: true }
+    ]
+}
+
+// Abjuration Spells
+Spell:MSN_MageArmor {
+    displayName: "LocKey#msn_mage_armor_name"
+    description: "LocKey#msn_mage_armor_desc"
+    school: "Abjuration"
+    level: 1
+    manaCost: 15.0
+    cooldown: 300.0
+    duration: 300.0
+    effects: [
+        { type: "ArmorBonus", value: 50.0 },
+        { type: "MagicResistance", value: 0.2 }
+    ]
+}
+
+Spell:MSN_Shield {
+    displayName: "LocKey#msn_shield_name"
+    description: "LocKey#msn_shield_desc"
+    school: "Abjuration"
+    level: 1
+    manaCost: 10.0
+    cooldown: 60.0
+    duration: 60.0
+    effects: [
+        { type: "ShieldHP", value: 100.0 },
+        { type: "BlockMagic", value: true },
+        { type: "BlockProjectiles", value: true }
+    ]
+}
+
+Spell:MSN_GlobeOfInvulnerability {
+    displayName: "LocKey#msn_globe_name"
+    description: "LocKey#msn_globe_desc"
+    school: "Abjuration"
+    level: 6
+    manaCost: 50.0
+    cooldown: 60.0
+    duration: 60.0
+    radius: 5.0
+    effects: [
+        { type: "SpellImmunity", level: 5 },
+        { type: "AOESpellBlock", radius: 10.0 }
+    ]
+}
+
+Spell:MSN_PrismaticWall {
+    displayName: "LocKey#msn_prismatic_name"
+    description: "LocKey#msn_prismatic_desc"
+    school: "Abjuration"
+    level: 9
+    manaCost: 80.0
+    cooldown: 120.0
+    duration: 60.0
+    effects: [
+        { type: "SevenLayers", colors: ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"] },
+        { type: "EachLayerEffect", effects: ["Fire", "Acid", "Poison", "Petrify", "Blind", "Insanity", "Banish"] }
+    ]
+}
+
+// Conjuration Spells
+Spell:MSN_SummonFamiliar {
+    displayName: "LocKey#msn_familiar_name"
+    description: "LocKey#msn_familiar_desc"
+    school: "Conjuration"
+    level: 1
+    manaCost: 50.0
+    cooldown: 3600.0
+    effects: [
+        { type: "SpawnEntity", template: "Familiar_Imp", duration: 3600.0 },
+        { type: "TelepathicLink", range: 100.0 }
+    ]
+}
+
+Spell:MSN_ConjureElemental {
+    displayName: "LocKey#msn_elemental_name"
+    description: "LocKey#msn_elemental_desc"
+    school: "Conjuration"
+    level: 5
+    manaCost: 60.0
+    cooldown: 60.0
+    effects: [
+        { type: "SpawnEntity", template: "Elemental_Fire", duration: 300.0 },
+        { type: "ElementalControl", duration: 300.0 }
+    ]
+}
+
+Spell:MSN_Gate {
+    displayName: "LocKey#msn_gate_name"
+    description: "LocKey#msn_gate_desc"
+    school: "Conjuration"
+    level: 9
+    manaCost: 100.0
+    cooldown: 300.0
+    effects: [
+        { type: "PlanarPortal", destination: "Random", duration: 60.0 },
+        { type: "SummonEntity", template: "RandomOutsider", duration: 300.0 }
+    ]
+}
+
+// Divination Spells
+Spell:MSN_DetectMagic {
+    displayName: "LocKey#msn_detect_magic_name"
+    description: "LocKey#msn_detect_magic_desc"
+    school: "Divination"
+    level: 0
+    manaCost: 5.0
+    cooldown: 30.0
+    duration: 60.0
+    radius: 30.0
+    effects: [
+        { type: "DetectAuras", schools: "All", range: 30.0 }
+    ]
+}
+
+Spell:MSN_Clairvoyance {
+    displayName: "LocKey#msn_clairvoyance_name"
+    description: "LocKey#msn_clairvoyance_desc"
+    school: "Divination"
+    level: 3
+    manaCost: 20.0
+    cooldown: 15.0
+    duration: 60.0
+    range: 1000.0
+    effects: [
+        { type: "RemoteViewing", sensor: "Visual", range: 1000.0 }
+    ]
+}
+
+Spell:MSN_Foresight {
+    displayName: "LocKey#msn_foresight_name"
+    description: "LocKey#msn_foresight_desc"
+    school: "Divination"
+    level: 9
+    manaCost: 50.0
+    cooldown: 300.0
+    duration: 300.0
+    effects: [
+        { type: "AdvantageOnAll", duration: 300.0 },
+        { type: "CannotBeSurprised", value: true },
+        { type: "Premonition", interval: 10.0 }
+    ]
+}
+
+// Enchantment Spells
+Spell:MSN_CharmPerson {
+    displayName: "LocKey#msn_charm_name"
+    description: "LocKey#msn_charm_desc"
+    school: "Enchantment"
+    level: 1
+    manaCost: 10.0
+    cooldown: 15.0
+    duration: 300.0
+    range: 10.0
+    effects: [
+        { type: "Charmed", target: "Humanoid", attitude: "Friendly" }
+    ]
+}
+
+Spell:MSN_Suggestion {
+    displayName: "LocKey#msn_suggestion_name"
+    description: "LocKey#msn_suggestion_desc"
+    school: "Enchantment"
+    level: 2
+    manaCost: 15.0
+    cooldown: 30.0
+    duration: 3600.0
+    range: 10.0
+    effects: [
+        { type: "Suggested", action: "Reasonable", duration: 3600.0 }
+    ]
+}
+
+Spell:MSN_DominatePerson {
+    displayName: "LocKey#msn_dominate_name"
+    description: "LocKey#msn_dominate_desc"
+    school: "Enchantment"
+    level: 5
+    manaCost: 40.0
+    cooldown: 60.0
+    duration: 300.0
+    range: 15.0
+    effects: [
+        { type: "Dominated", target: "Humanoid", control: "Full" }
+    ]
+}
+
+// Illusion Spells
+Spell:MSN_Invisibility {
+    displayName: "LocKey#msn_invis_name"
+    description: "LocKey#msn_invis_desc"
+    school: "Illusion"
+    level: 2
+    manaCost: 15.0
+    cooldown: 30.0
+    duration: 300.0
+    effects: [
+        { type: "Invisible", improved: false }
+    ]
+}
+
+Spell:MSN_MirrorImage {
+    displayName: "LocKey#msn_mirror_name"
+    description: "LocKey#msn_mirror_desc"
+    school: "Illusion"
+    level: 2
+    manaCost: 15.0
+    cooldown: 60.0
+    duration: 60.0
+    effects: [
+        { type: "Duplicate", count: 3, ac: 10 }
+    ]
+}
+
+Spell:MSN_Simulacrum {
+    displayName: "LocKey#msn_simulacrum_name"
+    description: "LocKey#msn_simulacrum_desc"
+    school: "Illusion"
+    level: 7
+    manaCost: 80.0
+    cooldown: 86400.0
+    effects: [
+        { type: "Duplicate", perfect: true, hp: 0.5, stats: 1.0 }
+    ]
+}
+
+// Necromancy Spells
+Spell:MSN_AnimateDead {
+    displayName: "LocKey#msn_animate_dead_name"
+    description: "LocKey#msn_animate_dead_desc"
+    school: "Necromancy"
+    level: 3
+    manaCost: 30.0
+    cooldown: 3600.0
+    effects: [
+        { type: "CreateUndead", type: "SkeletonZombie", count: 2, duration: "Permanent" }
+    ]
+}
+
+Spell:MSN_CreateUndead {
+    displayName: "LocKey#msn_create_undead_name"
+    description: "LocKey#msn_create_undead_desc"
+    school: "Necromancy"
+    level: 6
+    manaCost: 60.0
+    cooldown: 3600.0
+    effects: [
+        { type: "CreateUndead", type: "GhoulWight", count: 3, duration: "Permanent" }
+    ]
+}
+
+Spell:MSN_TrueResurrection {
+    displayName: "LocKey#msn_true_res_name"
+    description: "LocKey#msn_true_res_desc"
+    school: "Necromancy"
+    level: 9
+    manaCost: 100.0
+    cooldown: 86400.0
+    effects: [
+        { type: "Resurrect", target: "Dead", condition: "Perfect", regainLevel: true }
+    ]
+}
+
+// Transmutation Spells
+Spell:MSN_Polymorph {
+    displayName: "LocKey#msn_polymorph_name"
+    description: "LocKey#msn_polymorph_desc"
+    school: "Transmutation"
+    level: 4
+    manaCost: 35.0
+    cooldown: 30.0
+    duration: 300.0
+    range: 10.0
+    effects: [
+        { type: "Transform", target: "Creature", forms: ["Beast", "Dragon", "Giant"] }
+    ]
+}
+
+Spell:MSN_TimeStop {
+    displayName: "LocKey#msn_time_stop_name"
+    description: "LocKey#msn_time_stop_desc"
+    school: "Transmutation"
+    level: 9
+    manaCost: 80.0
+    cooldown: 300.0
+    duration: 10.0
+    effects: [
+        { type: "TimeStop", duration: 10.0, casterOnly: true }
+    ]
+}
+
+Spell:MSN_Wish {
+    displayName: "LocKey#msn_wish_name"
+    description: "LocKey#msn_wish_desc"
+    school: "Transmutation"
+    level: 9
+    manaCost: 150.0
+    cooldown: 86400.0
+    effects: [
+        { type: "RealityRewrite", scope: "Any", limits: "DMDiscretion" }
+    ]
+}
+
+// ============================================================
+// CYBERWARE — MAGIC CEREBELLUM
+// ============================================================
+
+Cyberdeck:MSN_Arcane_Cerebellum {
+    displayName: "LocKey#msn_arcane_cerebellum_name"
+    description: "LocKey#msn_arcane_cerebellum_desc"
+    category: "Cyberdeck"
+    rarity: "Legendary"
+    stats: [
+        { type: "RAM", value: 24 },
+        { type: "Buffer", value: 8 },
+        { type: "CooldownReduction", value: 0.3 },
+        { type: "QuickhackDamage", value: 1.5 }
+    ]
+    mods: [
+        "MSN_Arcane_LocalInference",
+        "MSN_Arcane_ManaPool",
+        "MSN_Arcane_SchoolAffinity",
+        "MSN_Arcane_Overcharge",
+        "MSN_Arcane_RitualCasting"
+    ]
+}
+
+Item:MSN_Arcane_LocalInference {
+    displayName: "LocKey#msn_arcane_local_name"
+    description: "LocKey#msn_arcane_local_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "LocalInferenceEnabled", value: true },
+        { type: "ModelQuantization", value: "INT4" },
+        { type: "VRAMBudgetMB", value: 1024 }
+    ]
+}
+
+Item:MSN_Arcane_ManaPool {
+    displayName: "LocKey#msn_arcane_manapool_name"
+    description: "LocKey#msn_arcane_manapool_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "ManaPoolBonus", value: 200.0 },
+        { type: "ManaRegenBonus", value: 10.0 },
+        { type: "OverchargeCapacity", value: 100.0 }
+    ]
+}
+
+Item:MSN_Arcane_SchoolAffinity {
+    displayName: "LocKey#msn_arcane_school_name"
+    description: "LocKey#msn_arcane_school_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "SchoolSpecialization", schools: "All", bonus: 0.25 },
+        { type: "OppositionSchoolPenalty", value: 0.0 }
+    ]
+}
+
+Item:MSN_Arcane_Overcharge {
+    displayName: "LocKey#msn_arcane_overcharge_name"
+    description: "LocKey#msn_arcane_overcharge_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "OverchargeEnabled", value: true },
+        { type: "OverchargeDamageBonus", value: 1.0 },
+        { type: "OverchargeHealthCost", value: 0.1 }
+    ]
+}
+
+Item:MSN_Arcane_RitualCasting {
+    displayName: "LocKey#msn_arcane_ritual_name"
+    description: "LocKey#msn_arcane_ritual_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "RitualCastingEnabled", value: true },
+        { type: "RitualSpellSlots", value: 3 },
+        { type: "RitualManaCostReduction", value: 0.5 }
+    ]
+}
+
+// ============================================================
+// WEAPONS — ARCANE FOCI & STAVES
+// ============================================================
+
+Item:MSN_Arcane_Focus {
+    displayName: "LocKey#msn_arcane_focus_name"
+    description: "LocKey#msn_arcane_focus_desc"
+    category: "Melee"
+    rarity: "Legendary"
+    damage: 50
+    damageType: "Energy"
+    attackSpeed: 1.2
+    stats: [
+        { type: "SpellPowerBonus", value: 0.5 },
+        { type: "ManaRegenBonus", value: 5.0 },
+        { type: "CooldownReduction", value: 0.2 }
+    ]
+}
+
+Item:MSN_Staff_of_Power {
+    displayName: "LocKey#msn_staff_power_name"
+    description: "LocKey#msn_staff_power_desc"
+    category: "Melee"
+    rarity: "Legendary"
+    damage: 80
+    damageType: "Energy"
+    attackSpeed: 1.0
+    stats: [
+        { type: "SpellPowerBonus", value: 1.0 },
+        { type: "ManaPoolBonus", value: 100.0 },
+        { type: "AutoCastOnHit", spell: "MagicMissile", chance: 0.2 }
+    ]
+}
+
+Item:MSN_Wand_of_Fireballs {
+    displayName: "LocKey#msn_wand_fireball_name"
+    description: "LocKey#msn_wand_fireball_desc"
+    category: "Ranged"
+    rarity: "Legendary"
+    damage: 0
+    damageType: "Fire"
+    fireRate: 1.0
+    magazineSize: 3
+    reloadTime: 3.0
+    stats: [
+        { type: "SpellCast", spell: "Fireball", cost: 0 },
+        { type: "ManaCost", value: 0 }
+    ]
+}
+
+// ============================================================
+// ARMOR — ROBES & VESTMENTS
+// ============================================================
+
+Item:Armor.MSN_Robes_of_the_Archmage {
+    displayName: "LocKey#msn_archmage_robes_name"
+    description: "LocKey#msn_archmage_robes_desc"
+    category: "OuterTorso"
+    rarity: "Legendary"
+    armor: 150
+    stats: [
+        { type: "SpellPowerBonus", value: 0.5 },
+        { type: "ManaRegenBonus", value: 10.0 },
+        { type: "SchoolMastery", all: true },
+        { type: "CounterspellAura", range: 10.0 }
+    ]
+}
+
+Item:Armor.MSN_Robes_of_Evocation {
+    displayName: "LocKey#msn_evoc_robes_name"
+    description: "LocKey#msn_evoc_robes_desc"
+    category: "OuterTorso"
+    rarity: "Legendary"
+    armor: 120
+    stats: [
+        { type: "SchoolSpecialization", school: "Evocation", bonus: 1.0 },
+        { type: "ElementalResistance", all: 0.3 },
+        { type: "OverchargeCapacity", value: 50.0 }
+    ]
+}
+
+// ============================================================
+// CONSUMABLES
+// ============================================================
+
+Item:Consumable.MSN_Mana_Potion {
+    displayName: "LocKey#msn_mana_potion_name"
+    description: "LocKey#msn_mana_potion_desc"
+    category: "Consumable"
+    rarity: "Common"
+    effects: [
+        { type: "ManaRestore", value: 50.0 }
+    ]
+    cooldown: 5.0
+}
+
+Item:Consumable.MSN_Mana_Potion_Greater {
+    displayName: "LocKey#msn_mana_potion_greater_name"
+    description: "LocKey#msn_mana_potion_greater_desc"
+    category: "Consumable"
+    rarity: "Rare"
+    effects: [
+        { type: "ManaRestore", value: 200.0 }
+    ]
+    cooldown: 5.0
+}
+
+Item:Consumable.MSN_Elixir_of_Arcane_Power {
+    displayName: "LocKey#msn_elixir_power_name"
+    description: "LocKey#msn_elixir_power_desc"
+    category: "Consumable"
+    rarity: "Legendary"
+    effects: [
+        { type: "SpellPowerBonus", value: 1.0, duration: 300.0 },
+        { type: "ManaRegenBonus", value: 20.0, duration: 300.0 },
+        { type: "CooldownReduction", value: 0.5, duration: 300.0 }
+    ]
+    cooldown: 60.0
+}
+
+// ============================================================
+// SHARDS
+// ============================================================
+
+Shard:Abyssal_Magic_Intro {
+    Name: "The Arcane Codex: Magic in the Age of Chrome"
+    Description: "A leather-bound tome recovered from a NetWatch dead drop. The pages shimmer."
+    Category: "World"
+    Text: [
+        "Magic returns to Night City. Not the parlor tricks of media stars — true Art.",
+        "",
+        "Eight Schools. Eight paths to power:",
+        "  EVOCATION (Geburah) — Fire, lightning, force. Destruction made art.",
+        "  ABJURATION (Chesed) — Shields, wards, protection. The unbreakable wall.",
+        "  CONJURATION (Netzach) — Summon, bind, call. Allies from beyond.",
+        "  DIVINATION (Chokmah) — See all. Know all. The trap never springs.",
+        "  ENCHANTMENT (Netzach) — Command. Dominate. The will is yours.",
+        "  ILLUSION (Hod) — Deceive. Hide. Reality bends to your will.",
+        "  NECROMANCY (Geburah) — Life and death. The boundary erased.",
+        "  TRANSMUTATION (Tiphareth) — Change. Adapt. Become anything.",
+        "",
+        "Mana flows through the Net. Cyberdecks channel it. Cerebellums store it.",
+        "The Corporations fear what they cannot buy. The NetWatch hunts Artificers.",
+        "",
+        "Your spellbook awaits. The Schools call. Choose your path.",
+        "",
+        "— Anonymous Artificer, Δ∞ Sector"
+    ]
+}
+
+// ============================================================
+// QUESTS
+// ============================================================
+
+Quest:MSN_Artificer_Path {
+    Name: "The Artificer's Path"
+    Description: "Master the Eight Schools. Craft the ultimate focus. Become Archmage."
+    Type: "Main"
+    Acts: 8
+    Objectives: [
+        "Choose your primary School (Evocation/Abjuration/Conjuration/Divination/Enchantment/Illusion/Necromancy/Transmutation)",
+        "Craft your Arcane Focus (Focus/Staff/Wand)",
+        "Master all 4 tiers of your chosen School",
+        "Learn a spell from each of the other 7 Schools",
+        "Craft a Legendary cyberdeck: Arcane Cerebellum",
+        "Defeat a Corporate Artificer in magical duel",
+        "Cast a 9th-level spell (Meteor Swarm / Wish / Time Stop / Power Word Kill)",
+        "Achieve Archmage status: All Schools at Master tier"
+    ]
+}

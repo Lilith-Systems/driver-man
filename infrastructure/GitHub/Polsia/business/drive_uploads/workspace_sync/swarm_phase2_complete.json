@@ -1,0 +1,82 @@
+{
+  "schema": "lilith.swarm.phase2.complete.v1",
+  "completed_at": "2026-06-21T14:39:24.981789+00:00",
+  "exports": {
+    "business-strategy": [
+      "operations/coop_pool_state.json",
+      "operations/swarm_report_phase1.json",
+      "operations/swarm_report_phase2.json",
+      "operations/lilith_tool_orchestration.json",
+      "operations/quantum_skillset_desktop.json",
+      "operations/github_organization.json",
+      "operations/cp2077_launch_checklist.md",
+      "operations/cp2077_smoke_test.json",
+      "operations/abyssal_skill_bridge.json"
+    ],
+    "driver-man": [
+      "data/coop_pool_state.json",
+      "docs/DRIVER_MAN_API.md",
+      "docs/DRIVER_MAN_OPS_MANUAL.md"
+    ],
+    "Polsia": [
+      "data/coop_pool_state.json",
+      "config/lilith_tool_orchestration.json"
+    ],
+    "lilith-systems.github.io": [
+      "data/quantum_skillset.json",
+      "heart_mind.html"
+    ]
+  },
+  "push_results": [
+    {
+      "repo": "Polsia",
+      "ok": true,
+      "action": "commit_push",
+      "detail": "To https://github.com/Lilith-Systems/Polsia.git\n   8bd33f8..9fa99ce  main -> main"
+    },
+    {
+      "repo": "business-strategy",
+      "ok": true,
+      "action": "commit_push",
+      "detail": "To https://github.com/Lilith-Systems/business-strategy.git\n   a0c833b..364d32d  main -> main"
+    },
+    {
+      "repo": "driver-man",
+      "ok": true,
+      "action": "commit_push",
+      "detail": "To https://github.com/Lilith-Systems/driver-man.git\n   bfdfddb..8e01c13  main -> main"
+    },
+    {
+      "repo": "grand-theft-cyberpunk",
+      "ok": true,
+      "action": "push_only",
+      "detail": "Everything up-to-date"
+    },
+    {
+      "repo": "lilith-systems.github.io",
+      "ok": true,
+      "action": "commit_push",
+      "detail": "To https://github.com/Lilith-Systems/lilith-systems.github.io.git\n   18b1dbc..f383c37  main -> main"
+    },
+    {
+      "repo": "msn-integration",
+      "ok": true,
+      "action": "push_only",
+      "detail": "Everything up-to-date"
+    },
+    {
+      "repo": "msn-integration",
+      "ok": true,
+      "action": "commit_push",
+      "detail": "To https://github.com/Lilith-Systems/msn-integration.git\n   a6862c1..ca04ff0  master -> master"
+    },
+    {
+      "repo": "grand-theft-cyberpunk",
+      "ok": true,
+      "action": "commit_push",
+      "detail": "To https://github.com/Lilith-Systems/grand-theft-cyberpunk.git\n   090c8ed..ef40cba  main -> main"
+    }
+  ],
+  "repos_ok": 8,
+  "repos_total": 8
+}

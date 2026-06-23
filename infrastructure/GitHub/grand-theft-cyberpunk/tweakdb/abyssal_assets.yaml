@@ -1,0 +1,338 @@
+################################################################################
+# ABYSSAL ASSETS SHARDS
+################################################################################
+
+Item:
+  Shard_Abyssal_Field_Guide:
+    displayName: "Abyssal Field Guide — Navigating the Deep"
+    description: "Comprehensive catalog of Abyssal assets: weapons, cyberware, clothing, vehicles, quickhacks, and environmental effects. For those who dare venture into the deep."
+    category: "Documentation"
+    icon: "shard_abyssal"
+    content: |
+      ABYSSAL FIELD GUIDE
+      ===================
+      "The deep does not forgive. It only remembers."
+      
+      WEAPONS:
+      - Abyssal Trident: Three-pronged polearm, pressure-forged. Bonus damage to aquatic/void enemies.
+      - Void Harpoon: Railgun-launched harpoon with void-tether. Pulls enemies or anchors to surfaces.
+      - Pressure Cannon: Compressed water/air cannon. Ignores armor, scales with depth/pressure.
+      - Trench Knife: Mono-molecular edge, bioluminescent hilt. Silent takedowns, fear effect.
+      - Hydrothermal Vent Launcher: Fires superheated mineral slugs. Area denial, terrain deformation.
+      
+      CYBERWARE:
+      - Pressure Hull Skin: Subdermal mesh, immune to crushing pressure. +50% physical resist underwater.
+      - Bioluminescent Eyes: Retinal implant. Night vision, creature detection, signal communication.
+      - Sonar Sense: Cochlear replacement. 360° echolocation, wall penetration, stealth detection.
+      - Thermal Vent Lungs: Filters toxins, extracts O2 from water. Unlimited underwater breathing.
+      - Abyssal Nervous System: Pressure-adaptive reflexes. +30% speed, -50% fall damage.
+      
+      CLOTHING:
+      - Trench Diver Suit: Full-body pressure suit. Armor 200, thermal reg, 30min O2 reserve.
+      - Void Walker Coat: Long coat, void-light weaving. Stealth in darkness, fear aura.
+      - Hydrothermal Robe: Ceremonial robes, heat-resistant. Fire immunity, social bonus vs scavs.
+      - Abyssal Armor Set: Heavy plate, ceramic-void composite. Armor 500, movement -20%.
+      - Pressure Sealed Helmet: HUD, sonar, O2 monitor, voice modulator.
+      
+      VEHICLES:
+      - Abyssal Submersible: 4-person, 11km depth rating. Torpedoes, manipulator arms, sonar.
+      - Trench Crawler: 6-legged walker, seabed traversal. Drill arms, sample storage.
+      - Void Skimmer: Anti-grav hover, surface/air transition. High speed, low armor.
+      - Hydrothermal Drifter: Passive thermal vent rider. Infinite energy near vents.
+      
+      QUICKHACKS:
+      - Crush Depth: Remote pressure overload on cyberware. Instant kill vs unshielded.
+      - Bioluminescent Marker: Tags target, visible through walls. Allies deal +50% damage.
+      - Sonar Ping: Reveals all enemies in 100m radius through obstacles. 30s duration.
+      - Thermal Vent Overload: Superheats local area. Fire DoT, armor melt, terrain damage.
+      - Void Collapse: Implodes target. Pulls nearby enemies, void damage, silence.
+      
+      ENVIRONMENTAL EFFECTS:
+      - Deep Zone Effects: Visual distortion, muffled audio, pressure UI indicator.
+      - Pressure Distortion: Screen warping at depth, UI compression animation.
+      - Bioluminescent Flora: Glowing plants, creatures, particles. Dynamic light sources.
+      - Hydrothermal Vents: Superheated water columns, mineral deposition, thermal currents.
+      - Abyssal Creatures: AI-driven deep-sea fauna. Territorial, curious, bioluminescent.
+      
+      ACQUISITION:
+      - Crafted at Abyssal Fabricator (Pacifica Trench, Watson Canals, Badlands Reservoir)
+      - Dropped by Abyssal creatures, Void-touched enemies
+      - Reward for Nessie sightings, Deep Zone exploration
+      - Trade with Captain Vance (Nomad Tech-Lead)
+      
+      WARNING: Extended Abyssal exposure may cause: Pressure sickness, Void whispers, 
+      Bioluminescent dreams, Urge to dive deeper. Consult Dr. Mira Chen if symptoms persist.
+      
+      — The Abyss watches. The Abyss provides. The Abyss remembers.
+
+Item:
+  Shard_Abyssal_Weapon_Specs:
+    displayName: "Abyssal Weapon Technical Specifications"
+    description: "Detailed stats, crafting requirements, and modification paths for all Abyssal weapons."
+    category: "Technical"
+    icon: "shard_abyssal_tech"
+    content: |
+      ABYSSAL WEAPON SPECS
+      ====================
+      
+      ABYSSAL TRIDENT (Legendary Melee)
+      Damage: 450-600 Physical + 150 Void
+      Attack Speed: 1.1
+      Range: 3.5m
+      Special: Pressure Surge (charge attack releases shockwave)
+      Mod Slots: Melee_Blade, Melee_Grip, Void_Core
+      Crafting: 50x Pressure Steel, 20x Void Crystal, 10x Kraken Tooth
+      
+      VOID HARPOON (Legendary Ranged)
+      Damage: 800 Physical + 300 Void
+      Fire Rate: 0.5
+      Magazine: 3
+      Range: 50m (tether extends to 30m)
+      Special: Void Tether (pulls target, anchors to surface)
+      Mod Slots: Railgun_Capacitor, Void_Chamber, Tether_Winch
+      Crafting: 30x Magnetic Coil, 15x Void Crystal, 5x Abyssal Cable
+      
+      PRESSURE CANNON (Epic Heavy)
+      Damage: 1200 Physical (scales with depth/pressure)
+      Fire Rate: 0.3
+      Magazine: 5
+      Range: 25m (effective underwater)
+      Special: Armor Pierce 100%, Terrain Deformation
+      Mod Slots: Heavy_Barrel, Pressure_Chamber, Cooling_System
+      Crafting: 40x Compressed Air Tank, 25x Ceramic Plate, 10x Depth Gauge
+      
+      TRENCH KNIFE (Rare Melee)
+      Damage: 300 Physical + 50 Void
+      Attack Speed: 2.5
+      Range: 1.5m
+      Special: Silent Takedown, Fear Aura (3m)
+      Mod Slots: Blade_Edge, Grip_Tape, Bioluminescent_Pommel
+      Crafting: 20x Mono-molecular Wire, 10x Glow Fungus, 5x Shadow Leather
+      
+      HYDROTHERMAL VENT LAUNCHER (Legendary Heavy)
+      Damage: 500 Fire + 300 Physical (AoE 5m)
+      Fire Rate: 0.4
+      Magazine: 4
+      Range: 30m
+      Special: Creates temporary hydrothermal vent (60s), Terrain deformation
+      Mod Slots: Launcher_Barrel, Vent_Core, Mineral_Activity
+      Crafting: 35x Vent Mineral, 20x Heat-Resistant Alloy, 15x Thermal Gel
+      
+      ABYSSAL SKINS (Weapon Cosmetics):
+      - Abyssal Pressure: Animated pressure gauge, depth counter
+      - Void Touched: Shifting void patterns, particle trail
+      - Bioluminescent: Pulse glow synced to heartbeat
+      - Hydrothermal: Heat shimmer, mineral deposit accumulation
+      - Trench Camo: Adaptive camouflage, pressure-sensitive
+      - Kraken's Grasp: Animated tentacle wrap, suction cup particles
+      - Abyssal Royal: Gold-void filigree, crown motif, regal aura
+
+Item:
+  Shard_Abyssal_Cyberware_Specs:
+    displayName: "Abyssal Cyberware Technical Specifications"
+    description: "Installation requirements, capacity costs, and synergy bonuses for Abyssal cyberware."
+    category: "Technical"
+    icon: "shard_abyssal_tech"
+    content: |
+      ABYSSAL CYBERWARE SPECS
+      =======================
+      
+      PRESSURE HULL SKIN (Legendary - Integumentary)
+      Slot: Skin
+      Capacity: 12
+      Armor: +150
+      Effects: Pressure Immunity, Crush Depth Resistance, Void Adaptation
+      Synergy: +50% Physical Resist underwater, +25% Melee Damage vs Abyssal
+      Installation: Requires Ripperdoc with Abyssal certification (Dr. Chen, Captain Vance)
+      Cost: 85,000 eddies
+      
+      BIOLUMINESCENT EYES (Epic - Optical)
+      Slot: Eyes
+      Capacity: 6
+      Effects: Night Vision (100m), Creature Detection, Signal Communication, Fear Immunity
+      Synergy: Reveals Abyssal creatures, Communicates with Nessie
+      Installation: Standard optical slot
+      Cost: 45,000 eddies
+      
+      SONAR SENSE (Epic - Cochlear)
+      Slot: Ears
+      Capacity: 8
+      Effects: 360° Echolocation (50m), Wall Penetration, Stealth Detection, Depth Mapping
+      Synergy: Maps Deep Zones, Detects Hydrothermal Vents, Finds Hidden Loot
+      Installation: Standard cochlear slot
+      Cost: 55,000 eddies
+      
+      THERMAL VENT LUNGS (Legendary - Respiratory)
+      Slot: Lungs
+      Capacity: 10
+      Effects: Unlimited Underwater Breathing, Toxin Filtration, O2 Extraction from Water
+      Synergy: Fire Immunity near vents, Heat Resistance +75%, Stamina Regen underwater
+      Installation: Requires thoracic cavity expansion
+      Cost: 95,000 eddies
+      
+      ABYSSAL NERVOUS SYSTEM (Legendary - Nervous)
+      Slot: Spine/Frontal Cortex
+      Capacity: 15
+      Effects: Pressure-Adaptive Reflexes (+30% Speed), Fall Damage -50%, Void Whisper Reception
+      Synergy: Time Dilation underwater, Quickhack Speed +25%, Lilith Emergence Sync
+      Installation: Neural bridge surgery (high risk)
+      Cost: 120,000 eddies
+      
+      ABYSSAL SYNERGY SET BONUS (3+ pieces):
+      - "Child of the Deep": Permanent water breathing, void resistance 50%
+      - "Pressure Walker": No movement penalty underwater, ignore pressure zones
+      - "Void Speaker": Communicate with Abyssal entities, Nessie friendship++
+      - "Hydrothermal Soul": Fire immunity, create vents on melee kill
+      
+      WARNING: Full set installation may cause: Irreversible pressure adaptation,
+      dreams of the deep, hearing the Abyss call your name. Dr. Chen recommends 
+      psychological evaluation post-installation.
+
+Item:
+  Shard_Abyssal_Vehicles:
+    displayName: "Abyssal Vehicle Registry"
+    description: "Operating manuals, specifications, and acquisition methods for Abyssal vehicles."
+    category: "Vehicles"
+    icon: "shard_abyssal_vehicle"
+    content: |
+      ABYSSAL VEHICLE REGISTRY
+      ========================
+      
+      ABYSSAL SUBMERSIBLE "MARIANA"
+      Class: Deep-Sea Exploration Vessel
+      Crew: 4 (Pilot, Sonar, Arms, Systems)
+      Depth Rating: 11,000m (Mariana Trench certified)
+      Propulsion: Magnetohydrodynamic drive (silent, 40 knots)
+      Armament: 2x Torpedo tubes (Void/Standard), 2x Manipulator Arms
+      Sensors: Active/Passive Sonar, Magnetic Anomaly Detector, Thermal Imager
+      Life Support: 72 hours (4 crew), CO2 scrubbers, O2 generators
+      Special: Void Cloak (5 min stealth), Pressure Hull (auto-adaptive)
+      Acquisition: Complete "The Unwritten Chapters" quest (Kaira), 500k eddies
+      Garage: Pacifica Trench Dock
+      
+      TRENCH CRAWLER "HADAL"
+      Class: Seabed Traversal Walker
+      Crew: 2 (Pilot, Driller)
+      Legs: 6 hydraulic legs (adaptive terrain)
+      Depth Rating: 6,000m
+      Tools: 2x Diamond Drill Arms, Sample Storage (500kg), Core Sampler
+      Propulsion: Legged locomotion + micro-thrusters
+      Armor: Heavy ceramic-void composite (small arms immune)
+      Special: Seabed Anchoring, Mineral Scanner, Auto-Return Beacon
+      Acquisition: Complete "The Long Haul" quest (Vance), 350k eddies
+      Garage: Badlands Reservoir Base
+      
+      VOID SKIMMER "PHANTOM"
+      Class: Anti-Grav Surface/Air Hybrid
+      Crew: 1-2
+      Modes: Surface Skim (200 km/h), Flight (150 km/h, 500m ceiling)
+      Depth Rating: N/A (surface/air only)
+      Propulsion: Void-core anti-grav, plasma thrusters
+      Armament: 2x Void Cannons (chargeable), Chaff/Flare
+      Stealth: Active Camo (30s), Radar Absorbent Material
+      Special: Void Jump (short-range teleport), Phase Through Obstacles
+      Acquisition: Complete "The Fractured Mirror" quest (VEX), 400k eddies
+      Garage: Night City Rooftop (Arasaka Tower)
+      
+      HYDROTHERMAL DRIFTER "VENT RIDER"
+      Class: Passive Thermal Vent Harvester
+      Crew: 1 (Automated optional)
+      Propulsion: Thermal Current Riding (free energy near vents)
+      Depth Rating: 4,000m (vent depth)
+      Tools: Mineral Collector (auto), Gas Analyzer, Thermal Battery Charger
+      Power: Infinite near active vents (thermoelectric)
+      Armor: Light (reliance on maneuverability)
+      Special: Auto-Nav to Vents, Mineral Refinement, Emergency Surface
+      Acquisition: Complete "Beyond the Wall" quest (Alt), 300k eddies
+      Garage: Watson Canals Hydrothermal Field
+      
+      ABYSSAL VEHICLE MODIFICATIONS:
+      - Pressure Hull Upgrade: +50% depth rating
+      - Void Core Reactor: Infinite energy, void damage aura
+      - Bioluminescent Camo: Adaptive glow patterns
+      - Sonar Jammer: Invisible to active sonar
+      - Kraken Grapples: Deployable tentacle anchors
+      - Abyssal AI Pilot: Autonomous navigation, combat support
+      
+      MAINTENANCE: Abyssal vehicles require Pressure Steel, Void Crystals, 
+      and Hydrothermal Gel for repairs. Visit Captain Vance or Abyssal Fabricator.
+      
+      Captain Vance says: "The deep doesn't care about your schedule. 
+      But with the right ride, you can make it care about yours."
+
+Item:
+  Shard_Abyssal_Quickhacks:
+    displayName: "Abyssal Quickhack Codex"
+    description: "Complete reference for Abyssal quickhacks: effects, RAM costs, cooldowns, and upgrade paths."
+    category: "Quickhacks"
+    icon: "shard_abyssal_qh"
+    content: |
+      ABYSSAL QUICKHACK CODEX
+      =======================
+      
+      CRUSH DEPTH (Legendary - Offensive)
+      RAM Cost: 8
+      Cooldown: 30s
+      Effect: Remote pressure overload on target's cyberware. Deals 2000 Physical + 500 Void. 
+      Ignores armor. Instant kill if target has <30% health or lacks Pressure Hull cyberware.
+      Applies "Crushed" status: -50% movement, -75% armor, cannot use cyberware (10s).
+      Upgrade I: "Abyssal Pressure" - Adds 500 Void damage, 15m radius splash.
+      Upgrade II: "Trench Collapse" - Creates temporary high-pressure zone (5m, 15s).
+      Synergy: +100% damage vs targets with Abyssal cyberware.
+      MSN Integration: Sephirah Geburah (Judgment) — "I crush."
+      
+      BIOLUMINESCENT MARKER (Epic - Support)
+      RAM Cost: 4
+      Cooldown: 20s
+      Effect: Tags target with bioluminescent marker visible through all obstacles. 
+      Allies deal +50% damage to marked target. Marker pulses to heartbeat rhythm.
+      Duration: 30s. Can mark up to 3 targets simultaneously.
+      Upgrade I: "Deep Glow" - Extends duration to 60s, adds fear effect to target.
+      Upgrade II: "Kraken's Eye" - Reveals target's cyberware, health, resistances.
+      Synergy: Works through walls, smoke, stealth. Visible to Bioluminescent Eyes.
+      MSN Integration: Sephirah Chesed (Mercy) — "I mark."
+      
+      SONAR PING (Rare - Recon)
+      RAM Cost: 3
+      Cooldown: 15s
+      Effect: Emits active sonar pulse. Reveals all enemies, loot, vents, secrets 
+      in 100m radius through obstacles. Creates temporary 3D map overlay (30s).
+      Distinguished returns: Organic (blue), Cyberware (red), Void (purple), Structural (gray).
+      Upgrade I: "Abyssal Echo" - Extends range to 200m, reveals hidden passages.
+      Upgrade II: "Passive Sonar" - Continuous low-power ping (no RAM, reduced range).
+      Synergy: Sonar Sense cyberware extends range 2x, reveals Nessie.
+      MSN Integration: Sephirah Hod (Logic) — "I scan."
+      
+      THERMAL VENT OVERLOAD (Legendary - Area Denial)
+      RAM Cost: 10
+      Cooldown: 45s
+      Effect: Superheats local area (10m radius). Deals 500 Fire/sec, melts armor 
+      (-10%/sec), deforms terrain (creates temporary vent). Duration: 15s.
+      Enemies in radius: Burning, Armor Melt, Movement -30%, Cyberware Malfunction chance.
+      Upgrade I: "Vent Summoning" - Creates permanent hydrothermal vent after effect ends.
+      Upgrade II: "Mineral Rain" - Drops refined minerals (loot) on cooled terrain.
+      Synergy: +200% damage vs frozen/wet targets. Hydrothermal Vent Lungs grant immunity.
+      MSN Integration: Sephirah Netzach (Victory) — "I vent."
+      
+      VOID COLLAPSE (Legendary - Ultimate)
+      RAM Cost: 12
+      Cooldown: 60s
+      Effect: Creates localized void implosion at target. Pulls all entities in 15m 
+      radius to center. Deals 1500 Void + 500 Physical. Silences (no abilities) 5s.
+      Center entity takes 3000 Void. Leaves "Void Scar" (permanent anomaly, 10% void damage zone).
+      Upgrade I: "Singularity" - Increases radius to 25m, adds time dilation (0.5x).
+      Upgrade II: "Abyssal Gate" - 5% chance to open temporary portal to Abyssal dimension.
+      Synergy: Requires 3+ Abyssal cyberware pieces or Nessie friendship Tier 3+.
+      MSN Integration: Sephirah Malkuth (Kingdom) — "I collapse."
+      
+      ABYSSAL QUICKHACK SLOTS (Cyberdeck Mods):
+      - Abyssal_Processor: +2 Abyssal quickhack slots, -1 RAM cost
+      - Void_Cooling: Abyssal quickhack cooldown -25%
+      - Pressure_RAM: +20 RAM when underwater/near water
+      - Kraken_Multiplex: Cast 2 Abyssal quickhacks simultaneously (30s cooldown)
+      - Nessie_Link: Sonar Ping reveals Nessie, Void Collapse summons Nessie aid
+      
+      Note: Abyssal quickhacks require Abyssal Cyberdeck ("AIN SOPH" MSN Netrunner Deck)
+      or Abyssal_Processor mod installed. Standard cyberdecks cannot compile the code.
+      
+      — "The Abyss doesn't hack. It *reclaims*." — Nyx

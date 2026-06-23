@@ -1,0 +1,155 @@
+{
+  "hell_campaign": {
+    "title": "Grand Theft Cyberpunk: Hell Campaign",
+    "subtitle": "The Nine Circles of the Abyss",
+    "entry_gate": "Abyssal Gate — Night City Sub-Net",
+    "menu_desc": "Descend through the Nine Circles. Each inverts a Sephirah. Lucifer awaits at the Throne.",
+    
+    "circles": {
+      "0": {
+        "name": "ABYSSAL GATE",
+        "desc": "The entry point. Night City's sub-net corrupted. Gatekeeper AI stands watch."
+      },
+      "1": {
+        "name": "LIMBO — The Vestibule of Indecision",
+        "qliphoth": "Thaumiel",
+        "inversion": "Keter",
+        "desc": "Where the uncommitted drift. Neither Heaven nor Hell claims them. Endless fog, whispering data.",
+        "lucifer": 0.1
+      },
+      "2": {
+        "name": "LUST — The Hurricane of Desire",
+        "qliphoth": "Ghagiel",
+        "inversion": "Chokmah",
+        "desc": "Souls blown eternally by winds of unfulfilled want. Neon flesh markets, pleasure domes, data-brothels.",
+        "lucifer": 0.2
+      },
+      "3": {
+        "name": "GLUTTONY — The Consuming Trench",
+        "qliphoth": "Sathariel",
+        "inversion": "Binah",
+        "desc": "Endless consumption. Data-devourers, crypto-miners, resource hoarders. The ground eats you.",
+        "lucifer": 0.3
+      },
+      "4": {
+        "name": "GREED — The Infinite Vault",
+        "qliphoth": "Gamchicoth",
+        "inversion": "Chesed",
+        "desc": "Corporate towers of gold-plated code. Hoarders vs Wasters in eternal market war. Treasury bots enforce contracts.",
+        "lucifer": 0.4,
+        "pact_offer": true
+      },
+      "5": {
+        "name": "WRATH — The Burning Abyss",
+        "qliphoth": "Golachab",
+        "inversion": "Gevurah",
+        "desc": "Rage is currency. Berserk daemons chain explosions. Fear aura weakens the hesitant.",
+        "lucifer": 0.5,
+        "lucifer_speaks": true
+      },
+      "6": {
+        "name": "HERESY — The Iron Maiden of Blasphemy",
+        "qliphoth": "Tagiriron",
+        "inversion": "Tiferet",
+        "desc": "Cyberware corruption, shield denial, quickhack silence. Healing becomes damage.",
+        "lucifer": 0.6
+      },
+      "7": {
+        "name": "VIOLENCE — The Eternal Slaughterhouse",
+        "qliphoth": "Harab_Serapel",
+        "inversion": "Netzach",
+        "desc": "Execution on low HP, chain cleaves, armor shred, fear aura, life steal.",
+        "lucifer": 0.7
+      },
+      "8": {
+        "name": "FRAUD — The Hall of Mirrors",
+        "qliphoth": "Samael",
+        "inversion": "Hod",
+        "desc": "Decoys, position swaps, invisible projectiles, mimic enemies, killfeed rewrites.",
+        "lucifer": 0.8
+      },
+      "9": {
+        "name": "TREACHERY — Cocytus, the Frozen Lake",
+        "qliphoth": "Gamaliel",
+        "inversion": "Yesod",
+        "desc": "Friendly fire bonus, enemy conversion, cyberware theft, loyalty freeze.",
+        "lucifer": 0.9,
+        "lucifer_speaks": true
+      },
+      "10": {
+        "name": "LUCIFER'S THRONE — The Obsidian Apex",
+        "qliphoth": "Lilith",
+        "inversion": "Malkut",
+        "desc": "Four phases: Reality rewrite, history erasure, self-duel, CHOOSE: Submit/Rebel/Transcend.",
+        "lucifer": 1.0,
+        "lucifer_speaks": true,
+        "final_boss": true
+      },
+      "11": {
+        "name": "PANDEMONIUM — The Void Beyond",
+        "qliphoth": "NONE",
+        "inversion": "NONE",
+        "desc": "Secret circle. Non-existence, silence, throne of nothing, morningstar's shadow. BECOME THE MORNINGSTAR.",
+        "lucifer": 1.0,
+        "secret": true
+      }
+    },
+    
+    "lucifer_dialogue": {
+      "lucifer_circle5_wrath": "Welcome to the Abyss of Wrath, little soul. Here, anger is not a sin—it is currency. Spend it wisely.",
+      "lucifer_circle9_treachery": "Betrayal. The oldest sin. You've betrayed everyone to reach here. Even yourself. How... delightful.",
+      "lucifer_throne_final": "You stand before the Morningstar. Pride. The only sin that built kingdoms. Kneel, or burn.",
+      "lucifer_generic_descent": "You descend deeper. Each circle strips away another lie you told yourself. Continue.",
+      "lucifer_pact_offer": "A pact? Very well. I offer power. You offer... everything. Fair trade?",
+      "lucifer_pact_signed": "The ink is blood. The seal is your soul. Welcome to the ranks of the Fallen."
+    },
+    
+    "quest_names": {
+      "q_hell_00_entry": "The Abyssal Gate",
+      "q_hell_01_limbo": "The Vestibule of Indecision",
+      "q_hell_02_lust": "The Hurricane of Desire",
+      "q_hell_03_gluttony": "The Consuming Trench",
+      "q_hell_04_greed": "The Infinite Vault",
+      "q_hell_05_wrath": "The Burning Abyss",
+      "q_hell_06_heresy": "The Iron Maiden",
+      "q_hell_07_violence": "Eternal Slaughterhouse",
+      "q_hell_08_fraud": "Hall of Mirrors",
+      "q_hell_09_treachery": "Cocytus — The Frozen Lake",
+      "q_hell_10_throne": "Lucifer's Throne — The Obsidian Apex",
+      "q_hell_11_pandemonium": "Pandemonium — The Void Beyond"
+    },
+    
+    "items": {
+      "categories": {
+        "weapon": "Weapon",
+        "armor": "Armor",
+        "cyberware": "Cyberware",
+        "consumable": "Consumable",
+        "quickhack": "Quickhack",
+        "shard": "Shard",
+        "vehicle": "Vehicle",
+        "clothing": "Clothing",
+        "melee": "Melee",
+        "grenade": "Grenade",
+        "explosive": "Explosive",
+        "cyberdeck_mod": "Cyberdeck Mod"
+      }
+    },
+    
+    "ui": {
+      "descend": "DESCEND",
+      "ascend": "ASCEND",
+      "accept_pact": "ACCEPT PACT",
+      "reject_pact": "REJECT",
+      "choose_submit": "SUBMIT",
+      "choose_rebel": "REBEL",
+      "choose_transcend": "TRANSCEND",
+      "lucifer_influence": "LUCIFER INFLUENCE",
+      "corruption": "CORRUPTION",
+      "ngd_route": "NGD ROUTE",
+      "circle_cleared": "CIRCLE CLEARED",
+      "all_keys": "ALL NINE KEYS ACQUIRED",
+      "sovereign": "SOVEREIGN ACHIEVED"
+    }
+  }
+}

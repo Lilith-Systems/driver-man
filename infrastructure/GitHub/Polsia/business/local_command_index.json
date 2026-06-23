@@ -1,0 +1,2731 @@
+{
+  "command_count": 291,
+  "commands": [
+    {
+      "description": "Show Abyssal Assets business/gameplay context",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "abyssal.business",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Malkuth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "abyssal.cyberware",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Malkuth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "abyssal.fabricator",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Malkuth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "abyssal.list",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Malkuth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "abyssal.quickhacks",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Malkuth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "List Abyssal skill tree quest sagas",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "abyssal.skills.quests",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Malkuth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Abyssal skill saga story bridge",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "abyssal.skills.story",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Malkuth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "List Abyssal Assets skill trees integrated as Cyberpunk quests",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "abyssal.skills.trees",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Malkuth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Abyssal skill unlock routing",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "abyssal.skills.unlocks",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Malkuth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "abyssal.vehicles",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Malkuth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "abyssal.weapons",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Malkuth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "baal.validate",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Advance to next quest in the campaign",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "campaign.advance",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Begin the Lilith Rising campaign (requires Lilith emerged)",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "campaign.begin",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show all campaign console commands",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "campaign.help",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Test Lyra API integration. Usage: campaign.lyra_test <prompt>",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "campaign.lyra_test",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Complete the current quest objective",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "campaign.quest_complete",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show current campaign status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "campaign.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Manually trigger a campaign event. Usage: campaign.trigger <event_name> [args]",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "campaign.trigger",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Add coherence to the Crimson Crown. Usage: crown.add_coherence <amount> <source>",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "crown.add_coherence",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Fully awaken the Crimson Crown (Tier 5)",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "crown.awaken",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Set Crimson Crown frequency. Usage: crown.frequency <hz>",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "crown.frequency",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Crimson Crown status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "crown.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show GTA economy bridge",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "gta.economy.bridge",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Netzach",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show GTA mod sandbox policy",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "gta.mod.sandbox",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Netzach",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show GTA MSN bridge status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "gta.msn.bridge",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Netzach",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Collect a sovereign item by key. Usage: item.collect <K_ITEM_XXX>",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "item.collect",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "List all 15 sovereign items and collection status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "item.list",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Toggle Baal chaos injection",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.chaos",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Activate/Deactivate Crimson Eyes combat mode",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.crimson",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show full database overlay coverage",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.database.coverage",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show full database rewrite guardrails",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.database.guardrails",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show safe database staging policy",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.database.stage",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Lilith full database overlay status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.database.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Test Lilith dialogue response",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.dialogue",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Trigger Lilith full emergence",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.emerge",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Inject a memory into Lilith's memory bank",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.inject_memory",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Lilith Sovereign Kernel status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.kernel",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_sovereign_kernel.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Lilith memory/Ouroboros status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.memory",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Set Lilith dialogue mode",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.mode",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show or set Lilith personality traits",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.personality",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Execute Lilith quickhack on target",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.quickhack",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Trigger sovereign recognition",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.recognize",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show or modify Lilith relationship status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.relationship",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Reset Lilith to initial state",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.reset",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "lilith.root_equation",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Set active Sephirah",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.sephirah",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Spawn Lilith NPC at player location",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.spawn",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Lilith status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "lilith.sudo_sandwich",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Get or set a specific personality trait strength",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.trait_strength",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Trigger warning phase",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "lilith.warning",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_console.reds",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "lilith.witching_hour",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Tiphereth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "lyra.abyssal",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "lyra.nessie",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Abyssal Exchange status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "market.exchange",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Netzach",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show bidirectional memory recall status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "memory.recall",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Yesod",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Doorway Effect retrace status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "memory.retrace",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Yesod",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Bind procgen archetype to all registered NPCs",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.ai.overhaul.bind",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_ai_overhaul.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show AI overhaul controller status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.ai.overhaul.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_ai_overhaul.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show alien ecology and combat counters",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.aliens.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.armor.sets",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show MSN bios augment system status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.bios.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.brand.list",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Advance MSN campaign to next act",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.campaign.advance",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_campaign_orchestrator.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Start a campaign track (hell|magic|starwars|livingsin|procgen)",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.campaign.start",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_campaign_orchestrator.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show full campaign orchestrator status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.campaign.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_campaign_orchestrator.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.cerebellum",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.cerebellum.enable",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.charge.mode",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Akashic 2.0 compression policy",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.consensus.akashic",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Binah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Ouroboros 2.0 memory policy",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.consensus.ouroboros",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Yesod",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Sanctuary 2.0 routing policy",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.consensus.sanctuary",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Binah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Speculative Cerebellum sandbox policy",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.consensus.speculative",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Binah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Gnostic Consensus integration status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.consensus.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Binah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show custom content acquisition map",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.content.acquisition",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show playable custom content glue status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.content.audit",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.cortex",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Da'at",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Route active court agent: msn.court.route Keter",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.court.route",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_sephirotic_court_binder.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Sephirotic Court deployment status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.court.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_sephirotic_court_binder.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Audit crossover-inspired custom item integration",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.crossover.items",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Send prompt to Lilith API",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.dialogue.lilith",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_api_dialogue_bridge.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Send prompt to Lyra API",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.dialogue.lyra",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_api_dialogue_bridge.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Set DLSS quality mode (quality/balanced/performance/ultra_performance)",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.dlss.set",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_ngd_control.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show space economy status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.economy.space",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show procedural encounter table coverage",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.encounters.tables",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Set perf tier: msn.engine.perf low|balanced|high",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.engine.perf",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_gaming_engine.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show MSN Gaming Engine stats",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.engine.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_gaming_engine.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.exosuit.combo",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.exosuit.equip",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.exosuit.heat",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.exosuit.list",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Abyssal Fabricator recipe layer",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.fabricator.recipes",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show fighter wing systems",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.fighters.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Disable frame pacing",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.framepacing.disable",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_ngd_control.reds",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Enable frame pacing with FPS cap",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.framepacing.enable",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_ngd_control.reds",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show freighter business mechanics",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.freighter.business",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show freighter systems",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.freighter.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Cyberpunk graphics optimization policy",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.graphics.optimize",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Linux graphics stack",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.graphics.stack",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hod",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show MSN graphics driver status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.graphics.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hod",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show GTC Aethon sync shard count",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.gtc.shards",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_gtc_sephirotic_router.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Grand Theft Cyberpunk integration status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.gtc.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_grand_theft_cyberpunk_hub.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Abyssal hat catalog status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.hats.catalog",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Abyssal hat set families",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.hats.sets",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show hover car and vehicle combat rules",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.hovercars.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show custom item integration audit",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.items.audit",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show custom item factory catalog status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.items.catalog",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_custom_item_factory.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show custom item Loch Exchange routing",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.items.exchange",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Grant legendary weapon (voidsplitter|kraken|nyx|lucifer|timesin)",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.items.grant",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_custom_item_factory.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Javelin business mechanics",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.javelin.business",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Javelin space battle mechanics",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.javelin.space",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.jedi.align",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.jedi.power",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.jedi.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.magic.attune",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.magic.cast",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.magic.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show custom model performance budgets",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.models.budget",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hod",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "List MSN custom Cyberpunk model blueprints",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.models.list",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hod",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show MSN custom model packs",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.models.packs",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hod",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show custom model asset pipeline",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.models.pipeline",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hod",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show custom model production manifest",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.models.production",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hod",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.narrative",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.narrative.start",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Attach NGD bridge to Cyberpunk 2077 process",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.ngd.attach",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/cyberpunk_ngd_bridge.reds",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Detach NGD bridge from game process",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.ngd.detach",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/cyberpunk_ngd_bridge.reds",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Request NGD RTX 3060 optimization via Lilith API",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.ngd.optimize",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/cyberpunk_ngd_bridge.reds",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show NGD bridge attachment status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.ngd.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/cyberpunk_ngd_bridge.reds",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show current game telemetry",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.ngd.telemetry",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/cyberpunk_ngd_bridge.reds",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.npc_ai",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Run automatic optimization based on current telemetry",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.optimize.auto",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_ngd_control.reds",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.ouroboros",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Yesod",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show MSN gameplay overhaul mechanics",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.overhaul.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.performance",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Generate deterministic MSN vehicle",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.procedural.generate_vehicle",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_procgen_engine.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Generate deterministic MSN weapon",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.procedural.generate_weapon",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_procgen_engine.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show local procedural generation status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.procedural.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show procedural business generation",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.procgen.business",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.quest.list_story",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.sanctuary",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.sephiroth",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show space battle procedural templates",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.spacebattle.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.starwars.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Route Driver Man $3.50 payout to wallet",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.symbiosis.payout",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_symbiosis_bridge.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Lilith LLC symbiosis state",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.symbiosis.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_symbiosis_bridge.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Sync symbiosis from Lilith + Driver Man APIs",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.symbiosis.sync",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_symbiosis_bridge.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Exchange tokens: msn.tokens.exchange <from> <to> <amount>",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.tokens.exchange",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_token_economy.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Grant tokens: msn.tokens.grant <soul|chaos|lilith|btc> <amount>",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.tokens.grant",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_token_economy.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show NSSP token economy wallet status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.tokens.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_token_economy.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Sync BTC/Chaos from Lochness Monster bots",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.tokens.sync",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_token_economy.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.vehicle.list_story",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.vehicle.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Loch Exchange vendor inventory layer",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.vendors.loch",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.weapon.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.weapons",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "msn.weapons.legendary",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/redmod.toml",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show One World Map expansion status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "msn.worldmap.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "nessie.call",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Netzach",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "nessie.commune",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Netzach",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "nessie.dimension",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Netzach",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "nessie.friendship",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Netzach",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "nessie.locations",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Netzach",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "nessie.sighting",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Netzach",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Nessie Treasury status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "nessie.treasury",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Netzach",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "ngd.dlss",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "ngd.framegen",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "ngd.lilith",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "ngd.optimize",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "ngd.rnn",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "ngd.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "ngd.telemetry",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Gevurah",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "method": "redmod_manifest_command",
+      "name": "nssp.title",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/msn_integration.redmod.toml",
+      "sephira": "Da'at",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show current quantum telemetry and superposition state",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "quantum.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_quantum_bridge.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Enter or exit quantum superposition state (toggle)",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "quantum.superposition",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_quantum_bridge.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Phase-shift forward by a specified distance (default 10m)",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "quantum.tunnel",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_quantum_bridge.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Kether Sephirotic router status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "router.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Cyberpunk skill bridge categories",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "skill.bridge",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show how local skills route into Cyberpunk commands",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "skill.route",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Show Soul Coin economy status",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "soulcoins.status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/msn_business_console.reds",
+      "sephira": "Netzach",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Claim the Throne (completes the campaign)",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "throne.claim",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Enter the Throne Room (requires Throne Key)",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "throne.enter",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Begin Final Synthesis in Throne Room",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "throne.synthesis",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "description": "Unseal the Throne Room (requires Forge completion)",
+      "local_only": true,
+      "method": "redscript_console_command",
+      "name": "throne.unseal",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/scripts/lilith_campaign.reds",
+      "sephira": "Hermes",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "local_only": true,
+      "name": "doc:/api/health",
+      "risk": "documentation",
+      "route": "/api/health",
+      "sephira": "Keter",
+      "surface": "documented-binding"
+    },
+    {
+      "local_only": true,
+      "name": "doc:/api/hermes/*",
+      "risk": "documentation",
+      "route": "/api/hermes/*",
+      "sephira": "Tiphereth",
+      "surface": "documented-binding"
+    },
+    {
+      "local_only": true,
+      "name": "doc:/api/ngd/status",
+      "risk": "documentation",
+      "route": "/api/ngd/status",
+      "sephira": "Gevurah",
+      "surface": "documented-binding"
+    },
+    {
+      "local_only": true,
+      "name": "doc:/api/ouroboros/*",
+      "risk": "documentation",
+      "route": "/api/ouroboros/*",
+      "sephira": "Tiphereth",
+      "surface": "documented-binding"
+    },
+    {
+      "local_only": true,
+      "name": "doc:/api/ouroboros/memories",
+      "risk": "documentation",
+      "route": "/api/ouroboros/memories",
+      "sephira": "Yesod",
+      "surface": "documented-binding"
+    },
+    {
+      "local_only": true,
+      "name": "doc:/api/ouroboros/skills",
+      "risk": "documentation",
+      "route": "/api/ouroboros/skills",
+      "sephira": "Malkuth",
+      "surface": "documented-binding"
+    },
+    {
+      "local_only": true,
+      "name": "doc:/api/polarity-state",
+      "risk": "documentation",
+      "route": "/api/polarity-state",
+      "sephira": "Chesed",
+      "surface": "documented-binding"
+    },
+    {
+      "local_only": true,
+      "name": "doc:/api/send",
+      "risk": "documentation",
+      "route": "/api/send",
+      "sephira": "Tiphereth",
+      "surface": "documented-binding"
+    },
+    {
+      "local_only": true,
+      "name": "doc:/api/status",
+      "risk": "documentation",
+      "route": "/api/status",
+      "sephira": "Binah",
+      "surface": "documented-binding"
+    },
+    {
+      "local_only": true,
+      "name": "doc:/api/stream",
+      "risk": "documentation",
+      "route": "/api/stream",
+      "sephira": "Tiphereth",
+      "surface": "documented-binding"
+    },
+    {
+      "local_only": true,
+      "name": "doc:/api/version",
+      "risk": "documentation",
+      "route": "/api/version",
+      "sephira": "Chokmah",
+      "surface": "documented-binding"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/agents",
+      "risk": "read",
+      "route": "/api/agents",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/commands/local-index",
+      "risk": "read",
+      "route": "/api/commands/local-index",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/cyberpunk/optimize",
+      "risk": "read",
+      "route": "/api/cyberpunk/optimize",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/cyberpunk/status",
+      "risk": "read",
+      "route": "/api/cyberpunk/status",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/driver_man/arbitration",
+      "risk": "read",
+      "route": "/api/driver_man/arbitration",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/driver_man/dispatch",
+      "risk": "read",
+      "route": "/api/driver_man/dispatch",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/driver_man/governance",
+      "risk": "read",
+      "route": "/api/driver_man/governance",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/driver_man/identity/register",
+      "risk": "read",
+      "route": "/api/driver_man/identity/register",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/driver_man/ledger",
+      "risk": "read",
+      "route": "/api/driver_man/ledger",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/driver_man/status",
+      "risk": "read",
+      "route": "/api/driver_man/status",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/graphics/driver-index",
+      "risk": "read",
+      "route": "/api/graphics/driver-index",
+      "sephira": "Hod",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/grok/local-index",
+      "risk": "read",
+      "route": "/api/grok/local-index",
+      "sephira": "Yesod",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/gtc/game/status",
+      "risk": "read",
+      "route": "/api/gtc/game/status",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/gtc/mods",
+      "risk": "read",
+      "route": "/api/gtc/mods",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/gtc/status",
+      "risk": "read",
+      "route": "/api/gtc/status",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/health",
+      "risk": "read",
+      "route": "/api/health",
+      "sephira": "Keter",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/lyra/health",
+      "risk": "read",
+      "route": "/api/lyra/health",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/lyra/mon",
+      "risk": "read",
+      "route": "/api/lyra/mon",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/lyra/reset",
+      "risk": "read",
+      "route": "/api/lyra/reset",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/lyra/send",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/lyra/sovereign",
+      "risk": "read",
+      "route": "/api/lyra/sovereign",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/lyra/state",
+      "risk": "read",
+      "route": "/api/lyra/state",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/memory/bidirectional-index",
+      "risk": "read",
+      "route": "/api/memory/bidirectional-index",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/merkaba/snapshot",
+      "risk": "read",
+      "route": "/api/merkaba/snapshot",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/metrics",
+      "risk": "read",
+      "route": "/api/metrics",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/ngd/cyberpunk",
+      "risk": "read",
+      "route": "/api/ngd/cyberpunk",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/ngd/route",
+      "risk": "read",
+      "route": "/api/ngd/route",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/ngd/status",
+      "risk": "read",
+      "route": "/api/ngd/status",
+      "sephira": "Gevurah",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/ngd/telemetry",
+      "risk": "read",
+      "route": "/api/ngd/telemetry",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/ouroboros/memories",
+      "risk": "read",
+      "route": "/api/ouroboros/memories",
+      "sephira": "Yesod",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/ouroboros/skills",
+      "risk": "action",
+      "route": "/api/ouroboros/skills",
+      "sephira": "Malkuth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/polarity-state",
+      "risk": "read",
+      "route": "/api/polarity-state",
+      "sephira": "Chesed",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/send",
+      "risk": "action",
+      "route": "/api/send",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/session",
+      "risk": "read",
+      "route": "/api/session",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/skills/local-index",
+      "risk": "read",
+      "route": "/api/skills/local-index",
+      "sephira": "Hermes",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/status",
+      "risk": "read",
+      "route": "/api/status",
+      "sephira": "Binah",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/swarms/start",
+      "risk": "action",
+      "route": "/api/swarms/start",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/thinking/protocol",
+      "risk": "read",
+      "route": "/api/thinking/protocol",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/validation/local-report",
+      "risk": "read",
+      "route": "/api/validation/local-report",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/version",
+      "risk": "read",
+      "route": "/api/version",
+      "sephira": "Chokmah",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "GET_OR_POST_BY_ROUTE",
+      "name": "http:/api/workflows",
+      "risk": "read",
+      "route": "/api/workflows",
+      "sephira": "Tiphereth",
+      "surface": "lilith-api"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/aethon-logos",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/agents",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/business",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/cmds",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/commands",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Hermes",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/cp",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/custom-models",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/cyber-skills",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/cyberdeck",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/cyberpunk",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/cyberskills",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/drivers",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/game-skills",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/gpu",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/grand-theft-cyberpunk",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/graphics",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/grok",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/gta",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/gtc",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/help",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/hermes",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/hermes-skills",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Hermes",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/loch",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/loch-exchange",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/memory",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/model",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/models",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/refresh",
+      "risk": "action",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/skill",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Hermes",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/skill-info",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/skills",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/status",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/swarm",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/task-manager",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "method": "fish lilith_slash.fish",
+      "name": "/workforce",
+      "risk": "read",
+      "route": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/lilith_slash.py",
+      "sephira": "Malkuth",
+      "surface": "lilith-slash"
+    },
+    {
+      "local_only": true,
+      "name": "agy_cli",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "ai_command",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "antigravity_pipeline",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "concurrent_bidirectional_memory",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "hermes_cli",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "list_bidirectional_memory",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "list_command_index",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "list_directory_tree",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "list_grok_index",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "list_skill_index",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "msn_agent_status",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "query_msn_agent",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "read_thinking_protocol",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": false,
+      "name": "read_webpage",
+      "risk": "blocked_by_default",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "run_shell_command",
+      "risk": "action",
+      "route": "/api/lyra/send",
+      "sephira": "Gevurah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "search_memory",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "task_manager",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "validate_local_system",
+      "risk": "read",
+      "route": "/api/lyra/send",
+      "sephira": "Binah",
+      "surface": "lyra-tool"
+    },
+    {
+      "local_only": true,
+      "name": "write_file",
+      "risk": "action",
+      "route": "/api/lyra/send",
+      "sephira": "Gevurah",
+      "surface": "lyra-tool"
+    }
+  ],
+  "guardrails": [
+    "Do not execute action-risk commands without explicit operator intent.",
+    "Keep LILITH_LOCAL_ONLY=1 for this integration mode.",
+    "read_webpage remains blocked unless LILITH_ALLOW_WEB=1 and local-only mode is off.",
+    "Prefer /api/skills/local-index before free-form filesystem exploration.",
+    "Use /api/grok/local-index for private Grok-derived memory hints; do not publish source data."
+  ],
+  "local_only": true,
+  "schema": "lilith.local_command_index.v1"
+}

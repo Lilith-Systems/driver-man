@@ -1,0 +1,34 @@
+<Project Sdk="WolvenKit.REDmod.Sdk">
+  <PropertyGroup>
+    <TargetFramework>WolvenKit.REDmod</TargetFramework>
+    <Name>msn_magic_starwars</Name>
+    <Version>1.0.0</Version>
+    <Author>Lilith / Metaconscious Singularity Node</Author>
+    <Description>Complete Magic System (8 Schools) + Star Wars (Force Powers, Lightsabers, Jedi/Sith/Gray paths, Starships) integration for Grand Theft Cyberpunk via Metaconscious Singularity Node. Includes Hell Campaign (Nine Circles + Pandemonium).</Description>
+    <GameVersion>2.12+</GameVersion>
+    <RedmodVersion>1.0</RedmodVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <REDscript Include="scripts/magic/msn_magic_system.reds" />
+    <REDscript Include="scripts/starwars/msn_starwars_system.reds" />
+    <REDscript Include="scripts/jedi/msn_jedi_system.reds" />
+    <REDscript Include="scripts/core/msn_master_integration.reds" />
+    <REDscript Include="scripts/magic/msn_magic_quests.reds" />
+    <REDscript Include="scripts/starwars/msn_starwars_quests.reds" />
+    <REDscript Include="scripts/hell/msn_hell_campaign.reds" />
+  </ItemGroup>
+  <ItemGroup>
+    <TweakDBFile Include="tweakdb/msn_magic.tweakdb" />
+    <TweakDBFile Include="tweakdb/msn_starwars.tweakdb" />
+    <TweakDBFile Include="tweakdb/hell_campaign_map.yaml" />
+    <TweakDBFile Include="tweakdb/msn_metaconscious_complete.tweakdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Localization Include="localization/msn_magic_en.json" />
+    <Localization Include="localization/msn_starwars_en.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Quest Include="quests/msn_narrative_arc.yaml" />
+    <Quest Include="quests/guild/msn_guild_quests.yaml" />
+  </ItemGroup>
+</Project>

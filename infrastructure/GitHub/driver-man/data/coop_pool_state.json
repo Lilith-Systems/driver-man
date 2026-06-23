@@ -1,0 +1,11 @@
+{
+  "treasury": 352,
+  "drivers": 52,
+  "updated": "2026-06-21T09:58:00-05:00",
+  "source": "polsia_symbiosis_sync",
+  "drive_download_requested": {
+    "timestamp": 1782054009.2613337,
+    "status": "prepared scripts + dirs + console opened. pending auth",
+    "target": "~/Desktop/Lilith/business/drive_downloads"
+  }
+}

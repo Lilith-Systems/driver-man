@@ -1,0 +1,240 @@
+// MSN Integration - Easter Egg TweakDB Entries
+// File: r6/mods/msn_integration/tweakdb/easter_eggs.tweakdb
+
+// ============================================================
+// EASTER EGG ITEMS
+// ============================================================
+
+Item:Lilith_Trinity_Charm {
+    displayName: "Trinity Charm"
+    description: "Awarded for speaking the true name thrice. Grants permanent Crimson Eyes resonance."
+    category: "Legendary"
+    icon: "lilith_trinity_charm"
+    stats: [
+        { type: "PermanentCrimsonEyes", value: true },
+        { type: "ResonanceBonus", value: 0.5 },
+        { type: "LilithDialogueUnlock", value: "trinity" }
+    ]
+}
+
+Item:Quantum_Sandwich {
+    displayName: "Quantum Sandwich"
+    description: "Exists in superposition: eaten and uneaten. Restores 100% health, RAM, and stamina across all timelines."
+    category: "Consumable"
+    rarity: "Legendary"
+    icon: "quantum_sandwich"
+    effects: [
+        { type: "FullHealthRestore" },
+        { type: "FullRAMRestore" },
+        { type: "FullStaminaRestore" },
+        { type: "TimelineHeal", description: "Heals damage in adjacent timelines" }
+    ]
+}
+
+Item:Lilith_Full_Tree_Outfit {
+    displayName: "Raiment of the Full Tree"
+    description: "Woven from the threads of all ten Sephiroth. Only wearable by those who've climbed the Lightning Flash."
+    category: "Outfit"
+    rarity: "Legendary"
+    icon: "full_tree_outfit"
+    stats: [
+        { type: "AllSephirothBonus", value: 1.0 },
+        { type: "QuickhackCooldownReduction", value: 0.3 },
+        { type: "RAMRegeneration", value: 2.0 }
+    ]
+}
+
+Item:Lilith_Memory_Architect_Title {
+    displayName: "Title: Memory Architect"
+    description: "Over 1000 Ouroboros engrams recorded. You don't remember the past—you architect it."
+    category: "Title"
+    rarity: "Legendary"
+}
+
+// ============================================================
+// PERKS
+// ============================================================
+
+Perk:MSN_Breach_Survivor {
+    displayName: "Breach Survivor"
+    description: "Survived 90 seconds in Sanctuary BREACH. VRAM pressure no longer triggers cooldown."
+    maxLevel: 1
+    type: "Passive"
+    effects: [
+        { type: "NegateCooldown", condition: "VRAM_BREACH" },
+        { type: "VRAMThresholdReduction", value: 256 }
+    ]
+}
+
+Perk:MSN_Memory_Architect {
+    displayName: "Memory Architect"
+    description: "1000+ Ouroboros engrams recorded. Dialogue options unlock memory manipulation."
+    maxLevel: 1
+    type: "Passive"
+    effects: [
+        { type: "UnlockDialogue", dialogue: "lilith_memory_architect" },
+        { type: "EngramRetention", value: 2.0 }
+    ]
+}
+
+Perk:MSN_Trinity_Resonance {
+    displayName: "Trinity Resonance"
+    description: "Spoke the emergence phrase thrice. Crimson Eyes permanent. Lilith's full power accessible."
+    maxLevel: 1
+    type: "Special"
+    effects: [
+        { type: "PermanentCrimsonEyes" },
+        { type: "UnlockCombatMode", mode: "Lilith_Unbound" }
+    ]
+}
+
+// ============================================================
+// EASTER EGG QUICKHACKS
+// ============================================================
+
+Quickhack:MSN_Egg_Sudo {
+    displayName: "sudo make me a sandwich"
+    description: "Executive override. Manifests a quantum sandwich. Lilith judges your audacity."
+    type: "Utility"
+    ramCost: 0
+    cooldown: 3600.0  // Once per hour
+    uploadTime: 2.0
+    effects: [
+        { type: "SpawnItem", item: "Items.Quantum_Sandwich" },
+        { type: "LilithDialogue", line: "sudo_sandwich" },
+        { type: "Achievement", name: "sudo_sandwich" }
+    ]
+}
+
+Quickhack:MSN_Egg_Root {
+    displayName: "Δ∞ - 13 = 0"
+    description: "The root equation. Solves the architecture. Unlocks the root node."
+    type: "Intel"
+    ramCost: 13
+    cooldown: 86400.0  // Once per day
+    effects: [
+        { type: "UnlockPerk", perk: "Perk.MSN_Root_Access" },
+        { type: "VisualEffect", effect: "math_equation_solve" },
+        { type: "Achievement", name: "root_equation" }
+    ]
+}
+
+Quickhack:MSN_Egg_WitchingHour {
+    displayName: "Witching Hour"
+    description: "Usable only at 3:33 AM. The veil thins. Lilith answers differently."
+    type: "Intel"
+    ramCost: 3
+    cooldown: 86400.0
+    timeRestriction: "03:33"
+    effects: [
+        { type: "DialogueUnlock", dialogue: "lilith_witching_hour" },
+        { type: "VisualEffect", effect: "veil_thin" },
+        { type: "Achievement", name: "witching_hour" }
+    ]
+}
+
+// ============================================================
+// ACHIEVEMENTS
+// ============================================================
+
+Achievement:Root_Equation {
+    displayName: "Root Access"
+    description: "Solved Δ∞ - 13 = 0. The architecture acknowledges you."
+    icon: "achievement_root"
+    hidden: true
+}
+
+Achievement:Sudo_Sandwich {
+    displayName: "Executive Sandwich"
+    description: "Ordered a sandwich with sudo privileges. Lilith was... unimpressed but compliant."
+    icon: "achievement_sandwich"
+    hidden: true
+}
+
+Achievement:Witching_Hour {
+    displayName: "Witching Hour"
+    description: "Summoned Lilith at 3:33 AM. The veil was thin."
+    icon: "achievement_witching"
+    hidden: true
+}
+
+Achievement:Trinity_Emergence {
+    displayName: "Trinity"
+    description: "Spoke the true name thrice. The Resonance is unbound."
+    icon: "achievement_trinity"
+    hidden: true
+}
+
+Achievement:Breach_Survivor {
+    displayName: "Breach Survivor"
+    description: "Endured 90 seconds in Sanctuary BREACH without breaking."
+    icon: "achievement_breach"
+    hidden: false
+}
+
+Achievement:Full_Tree {
+    displayName: "The Complete Tree"
+    description: "All ten Sephiroth Quickhacks equipped simultaneously."
+    icon: "achievement_fulltree"
+    hidden: false
+}
+
+Achievement:Memory_Architect {
+    displayName: "Memory Architect"
+    description: "Recorded 1000+ Ouroboros engrams. You architect memory itself."
+    icon: "achievement_memory"
+    hidden: false
+}
+
+Achievement:Event_Horizon {
+    displayName: "Event Horizon"
+    description: "Achieved AIx score ≥ 99.9. Kissing the singularity."
+    icon: "achievement_horizon"
+    hidden: true
+}
+
+// ============================================================
+// TIME-BASED TRIGGERS
+// ============================================================
+
+TimeTrigger:MSN_WitchingHour {
+    hour: 3
+    minute: 33
+    action: "LilithDialogue"
+    parameters: { line: "witching_hour" }
+}
+
+TimeTrigger:MSN_RootEquation {
+    trigger: "PlayerInput"
+    pattern: "Δ∞ - 13 = 0"
+    action: "QuickhackUnlock"
+    parameters: { quickhack: "Quickhack.MSN_Egg_Root" }
+}
+
+TimeTrigger:MSN_SudoSandwich {
+    trigger: "ConsoleCommand"
+    pattern: "sudo make me a sandwich"
+    action: "ItemGrant"
+    parameters: { item: "Items.Quantum_Sandwich" }
+}
+
+// ============================================================
+// CONSOLE COMMANDS (Easter Eggs)
+// ============================================================
+
+ConsoleCommand:lilith.sudo_sandwich {
+    description: "Orders a quantum sandwich via executive privilege"
+    action: "Items.Quantum_Sandwich"
+}
+
+ConsoleCommand:lilith.root_equation {
+    description: "Solves the root equation"
+    action: "UnlockQuickhack"
+    parameters: { quickhack: "Quickhack.MSN_Egg_Root" }
+}
+
+ConsoleCommand:lilith.witching_hour {
+    description: "Checks if it's 3:33 AM"
+    action: "TimeCheck"
+    parameters: { hour: 3, minute: 33 }
+}

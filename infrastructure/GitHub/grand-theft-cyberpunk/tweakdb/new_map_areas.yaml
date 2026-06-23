@@ -1,0 +1,187 @@
+################################################################################
+# NEW MAP AREAS — THE DEEP ARCHIVE, VERDANT RIFT, CHRONOS ANCHORAGE, VOID COMMERCE SPIRE
+# Extends procedural_space_systems.yaml and procedural_encounter_tables.yaml
+################################################################################
+
+ProceduralGeneration:
+  schema: "msn.procgen.space.v2"
+  localOnly: true
+  designGoals:
+    - "New regions bridging Abyssal depth, Loch ecology, and Cyberpunk megacorp ruins"
+    - "Time-dilation zones where NGD driver hysteresis creates emergent mechanics"
+    - "Commerce spires linking Loch Exchange, Night City markets, and Orbital Graveyard"
+    - "Lilith/NGD telemetry integration: VRAM pressure affects zone stability"
+
+  # ==================== NEW BIOME GRAMMAR ====================
+  BiomeGrammar:
+    deepArchive:
+      displayName: "The Deep Archive"
+      description: "Submerged Arasaka black-site data vaults. Cold, silent, monitored."
+      palette: ["arsaka white", "data blue", "cryo mist"]
+      hazards: ["black ice scanners", "cryo stasis fields", "engraM protection daemons"]
+      nativeAliens: ["Archive Sentinel", "Data Remora", "Cryo Wraith"]
+      vehicleBias: ["Vehicle_PhantomNeedle_Fighter", "Vehicle_CovenantFreighter_Model"]
+      lootBias: ["Arasaka Shogun", "Old Net Flight Computer", "Ouroboros Coil", "Engram Shard"]
+      ngdIntegration:
+        vramPressureEffect: "High VRAM usage stabilizes cryo fields (safer), low VRAM causes daemon aggression"
+        routeLOCAL_CEREBELLUM: "Full daemon behavior, stealth viable"
+        routeHYBRID: "Daemon patrol routes visible via Thoth scans"
+        routeCLOUD_CORTEX: "Daemons aggressive, cryo fields unstable"
+
+    verdantRift:
+      displayName: "The Verdant Rift"
+      description: "Hydrocarbon seep feeding bioluminescent coral forests. The Loch's garden."
+      palette: ["bioluminescent teal", "hydrocarbon iridescent", "deep emerald"]
+      hazards: ["methane pocket detonation", "spore hallucination", "current shear"]
+      nativeAliens: ["Coral Gardener", "Verdant Leviathan", "Spore Drifter"]
+      vehicleBias: ["Vehicle_Nessie_Mount", "Vehicle_Abyssal_Leviathan_Sub"]
+      lootBias: ["Voidweave", "Abyssal Crystal", "Nessie Covenant Relic", "Chronos Essence"]
+      ngdIntegration:
+        vramPressureEffect: "Low VRAM boosts bioluminescence (better vision), high VRAM causes spore density increase"
+        routeLOCAL_CEREBELLUM: "Full ecosystem simulation, spore currents dynamic"
+        routeHYBRID: "Coral growth visible, spore clouds simplified"
+        routeCLOUD_CORTEX: "Reduced bioluminescence, spore hazard zones marked"
+
+    chronosAnchorage:
+      displayName: "Chronos Anchorage"
+      description: "Time-dilated anchor stations where Arasaka tested Chronos tech. Past and future bleed."
+      palette: ["temporal gold", "stasis silver", "paradox violet"]
+      hazards: ["time echo damage", "causality violation", "anchor decay"]
+      nativeAliens: ["Chronos Echo", "Anchor Warden", "Paradox Beast"]
+      vehicleBias: ["Vehicle_Phantom_Void_Ship", "Exosuit_BastionBulwark_Javelin"]
+      lootBias: ["LivingSin_Time_Blade fragment", "Ouroboros Coil", "Singularity Core", "Convergence Key"]
+      ngdIntegration:
+        vramPressureEffect: "VRAM pressure directly modulates time dilation factor (higher VRAM = slower local time)"
+        routeLOCAL_CEREBELLUM: "Full time-simulation, player actions echo across 3 timelines"
+        routeHYBRID: "Major echoes visible, minor echoes buffered"
+        routeCLOUD_CORTEX: "Time dilation locked to 1.0x, echoes disabled"
+
+    voidCommerceSpire:
+      displayName: "Void Commerce Spire"
+      description: "Neutral trading hub between Loch Exchange, Night City, and Orbital Graveyard. Nessie-guarded."
+      palette: ["market gold", "void obsidian", "treaty blue"]
+      hazards: ["arbitrage bot swarms", "contract daemons", "treaty violation pulse"]
+      nativeAliens: ["Merchant Kraken", "Exchange Basilisk", "Treaty Sentinel"]
+      vehicleBias: ["Vehicle_CovenantFreighter_Model", "Vehicle_Nessie_Mount", "Vehicle_PhantomNeedle_Fighter"]
+      lootBias: ["Soul Coins", "Loch Exchange Contract", "Market Maker Charter", "Tree Fiddy Waiver"]
+      ngdIntegration:
+        vramPressureEffect: "Market latency scales with VRAM (LOCAL = 0ms, CLOUD = 500ms simulated)"
+        routeLOCAL_CEREBELLUM: "Real-time order book, bot competition active"
+        routeHYBRID: "50ms simulated latency, major orders visible"
+        routeCLOUD_CORTEX: "200ms latency, order book snapshots only"
+
+  # ==================== NEW ALIEN ARCHETYPES ====================
+  AlienArchetypes:
+    archivist:
+      role: "Data guardian and memory curator"
+      behavior: "Protects engram clusters, trades memories for rare data, summons cryo barriers"
+      counter: "Thoth quickhack, Nyx monowire, Songbird protocol"
+      drops: ["Engram Shard", "Old Net Blackbox", "Arasaka Shogun fragment"]
+      sephirah: "Chokmah"
+
+    gardener:
+      role: "Ecosystem maintainer, coral tender"
+      behavior: "Accelerates coral growth, releases healing spores, summons verdant barriers"
+      counter: "Sonar Ping disrupts spores, Thermal Vent Overload clears coral"
+      drops: ["Voidweave", "Abyssal Crystal", "Chronos Essence", "Nessie Blessing"]
+      sephirah: "Tiferet"
+
+    anchorWarden:
+      role: "Time anchor defender, causality enforcer"
+      behavior: "Freezes local time, replays player damage, anchors reality against paradox"
+      counter: "Living Sin Time Blade, Ouroboros recall, paradox acceptance"
+      drops: ["Ouroboros Coil", "Singularity Core", "Convergence Key fragment"]
+      sephirah: "Keter"
+
+    merchantKraken:
+      role: "Commerce Spire guardian, treaty enforcer"
+      behavior: "Spawns contract daemons, enforces market rules, arbitrage detection"
+      counter: "Valid trade license, Tree Fiddy payment, Nessie communion"
+      drops: ["Soul Coins", "Market Maker Charter", "Loch Exchange Contract"]
+      sephirah: "Chesed"
+
+  # ==================== NEW SPACE BATTLE TEMPLATES ====================
+  SpaceBattleTemplates:
+    archiveHeist:
+      displayName: "Archive Heist: The Engram Vault"
+      objective: "Infiltrate Deep Archive, extract target engram before cryo purge"
+      phases:
+        - "Approach: Stealth through sensor net (Thoth required)"
+        - "Breach: Disable cryo field generators (3 targets)"
+        - "Extract: Navigate daemon maze to vault core"
+        - "Escape: Trigger melt-down, exfil before collapse"
+      requiredSystems: ["stealth", "quickhack", "memory extraction", "ngd telemetry"]
+      recommendedSuit: "Exosuit_VectorStarling_Javelin"
+      rewardPools: ["Arasaka Shogun", "Old Net Flight Computer", "Engram Shard", "Ouroboros Coil"]
+
+    riftRestoration:
+      displayName: "Rift Restoration: The Coral Heart"
+      objective: "Heal the Verdant Rift's dying coral heart before methane collapse"
+      phases:
+        - "Survey: Map spore currents and methane pockets (Sonar Sense)"
+        - "Cleanse: Deploy thermal vents to stabilize temperature"
+        - "Seed: Plant primordial coral at heart chamber"
+        - "Defend: Protect seeding from corruption surge"
+      requiredSystems: ["abyssal mount", "thermal management", "ngd telemetry", "sonar"]
+      recommendedSuit: "Vehicle_Nessie_Mount"
+      rewardPools: ["Voidweave", "Abyssal Crystal", "Nessie Covenant Relic", "Chronos Essence"]
+
+    anchorConvergence:
+      displayName: "Anchor Convergence: Three Timelines"
+      objective: "Synchronize three Chronos Anchors before paradox cascade"
+      phases:
+        - "Timeline Alpha: Past - Prevent anchor sabotage"
+        - "Timeline Beta: Present - Stabilize active anchor"
+        - "Timeline Gamma: Future - Seed anchor growth"
+        - "Convergence: Merge timelines at central spire"
+      requiredSystems: ["time blade", "ngd telemetry", "ouroboros sync", "lilith bridge"]
+      recommendedSuit: "Exosuit_BastionBulwark_Javelin"
+      rewardPools: ["LivingSin_Time_Blade fragment", "Ouroboros Coil", "Singularity Core", "Convergence Key"]
+
+    spireArbitrage:
+      displayName: "Spire Arbitrage: The Market War"
+      objective: "Execute 13 perfect trades across Spire markets before treaty deadline"
+      phases:
+        - "Intel: Map bot patterns and latency windows"
+        - "Execute: Chain 13 arbitrage loops across 3 markets"
+        - "Defend: Repel rival bot swarms and contract daemons"
+        - "Settle: Submit settlement before 13:00 external timer"
+      requiredSystems: ["trading", "ngd telemetry", "lochness bots", "market interface"]
+      recommendedSuit: "Exosuit_VectorStarling_Javelin"
+      rewardPools: ["Soul Coins", "Market Maker Charter", "Tree Fiddy Waiver", "Loch Exchange Contract"]
+
+  # ==================== NEW HOVER VEHICLE VARIANTS ====================
+  HoverVehicleVariants:
+    ArchiveNeedle:
+      base: "Vehicle_PhantomNeedle_Fighter"
+      biome: "deepArchive"
+      modules: ["black_ice_shroud", "engraM_extractor", "cryo_pulse", "thoth_link", "stealth_coating"]
+      statBias: { speed: 1.15, armor: 0.80, stealth: 1.40, quickhack_bandwidth: 1.30 }
+
+    VerdantGlider:
+      base: "Vehicle_Nessie_Mount"
+      biome: "verdantRift"
+      modules: ["coral_senses", "spore_filter", "thermal_vent_rider", "methane_detector", "nessie_link"]
+      statBias: { speed: 1.05, armor: 1.15, pressureResistance: 1.25, toxin_filter: 1.40 }
+
+    ChronosDrifter:
+      base: "Vehicle_Phantom_Void_Ship"
+      biome: "chronosAnchorage"
+      modules: ["anchor_resonator", "time_echo_shield", "parity_stabilizer", "ouroboros_link", "parad ox_absorber"]
+      statBias: { speed: 0.95, armor: 1.30, timeResistance: 1.50, paradoxBuffer: 1.40 }
+
+    SpireMerchant:
+      base: "Vehicle_CovenantFreighter_Model"
+      biome: "voidCommerceSpire"
+      modules: ["arbitrage_engine", "treaty_shield", "bot_swarm_controller", "settlement_accelerator", "nessie_guardian"]
+      statBias: { speed: 0.85, armor: 1.20, cargo: 1.50, tradeSpeed: 1.60, latencyMitigation: 1.40 }
+
+  # ==================== NEW CONSOLE ROUTES ====================
+  ConsoleRoutes:
+    deepArchive: "msn.deeparchive.status"
+    verdantRift: "msn.verdantrift.status"
+    chronosAnchorage: "msn.chronosanchorage.status"
+    voidCommerceSpire: "msn.voidspire.status"
+    newMaps: "msn.maps.newareas"
+    biomeInfo: "msn.biome.info"
+    ngdZoneEffect: "msn.ngd.zoneeffect"

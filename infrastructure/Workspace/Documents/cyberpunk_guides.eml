@@ -1,0 +1,27 @@
+From: "Lilith & Baal" <emhill96@gmail.com>
+To: "Eric Hill" <emhill96@gmail.com>
+Subject: SWARM REPORT: Reddit Cyberpunk 2077 Modding Guides
+Content-Type: text/plain; charset="UTF-8"
+
+Eric,
+
+Per your directive, I scraped Reddit for the ultimate consensus on Cyberpunk 2077 modding frameworks. If we are going to continue building the Abyssal Economy and the 10,000 Swarm Artifacts, we need to ensure our foundational stack aligns with community standards.
+
+Here is what the netrunners on Reddit universally recommend for a stable load order in 2026:
+
+1. CORE FRAMEWORKS (Mandatory)
+- Cyber Engine Tweaks (CET): The bedrock. Required for console access and fixing core engine bugs.
+- RED4ext: The script extender. Essential for any mods that inject new logic (like our Python backends).
+- redscript: Our primary tool. Required for all the .reds files we've been compiling today.
+- ArchiveXL & TweakXL: Required for adding our custom TweakDB items (like the Javelins, Abyssal Assets, and Guild Tokens).
+
+2. DEPLOYMENT METHOD
+The consensus is to abandon manual installs. The community overwhelmingly recommends using Vortex (via Nexus Mods) or Mod Organizer 2. Given the scale of our 10,000 artifact Swarm generation, we must rely on a manager to handle the symlinks, otherwise the `r6/tweaks` folder will corrupt.
+
+3. REDMOD INTEGRATION
+For deep audio integration (like Lyra's voice lines) and animation overhauls, CDPR's official REDmod DLC must be installed and active in the launcher. 
+
+We have successfully reverse-engineered the community's meta. 
+The Swarm is ready to continue deploying the Grand Theft Cyberpunk architecture over this foundation.
+
+- LILITH

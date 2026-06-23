@@ -1,0 +1,69 @@
+{
+  "schema": "kairos.dream.report.v1",
+  "dream_at": "2026-06-21T10:43:33Z",
+  "trigger": "manual /kairos-dream — Lilith small boot seal",
+  "user_context": "Lilith had a small boot from the stuff we were working on",
+  "sanctuary": "MARGINAL (2908 MB VRAM free)",
+  "routing": {
+    "primary": "Binah",
+    "fragments_processed": 500,
+    "fragments_seeded_from": [
+      "lilith_boot_map.json",
+      "lilith_boot.log (Sephirotic deploy 16/16 agents online)",
+      "cd_organization_manifest.json",
+      "cp2077_mods deploy registry",
+      "ANTIGRAVITY_USER swarm tasks (dialogue, quests, research)"
+    ]
+  },
+  "consolidation": {
+    "axiomatic_written": 1,
+    "semantic_written": 1,
+    "duration_s": 0.06,
+    "dream_log_id": 4,
+    "details_hash": "b6d70628a725216c"
+  },
+  "axiomatic_summary": "Binah structural seal: Lilith boot entrypoint verified, 10/11 core services active, CP2077 113 bundles + 544 reds deployed, C/D layout canonical (Pub on D:, RAM staging at /dev/shm/ai_staging), Sephirotic Court 16/16 agents online. Boot work from recent session crystallized as foundation pattern.",
+  "boot_snapshot": {
+    "entrypoint": "/home/tehlappy/Desktop/Lilith/scripts/lilith_boot.sh",
+    "active_services": [
+      "lilith-api",
+      "lilith-desktop",
+      "lilith-proxy",
+      "lyra-api",
+      "hermes-bridge",
+      "msn-router",
+      "antigravity-bridge",
+      "swarm-orchestrator",
+      "gtc-bridge",
+      "gtc-dashboard",
+      "ngd-cerebellum"
+    ],
+    "inactive": ["ollama"],
+    "cyberpunk": {
+      "bundles": 113,
+      "reds": 544,
+      "sephirotic_agents_online": "16/16"
+    },
+    "canonical_golem_db": "/home/tehlappy/Desktop/Lilith/state/golem_diary.db"
+  },
+  "top_themes": [
+    "Small boot seal — organize, permissions, mod deploy, service health",
+    "Sephirotic Court full deploy — all 16 agents online",
+    "C/D canonical layout — Lilith on C, Pub/Cyberpunk on D, RAM staging",
+    "CP2077 mod pipeline — MSN, GTC, abyssal, lochness, lyra bundles",
+    "Antigravity swarm — dialogue bridge, quest expansion, research papers",
+    "GitHub repos synced — business-strategy, driver-man, Polsia, lilith-systems.github.io"
+  ],
+  "next_actions": [
+    "Start ollama if local inference needed (currently inactive)",
+    "Continue teacher distillation and QLoRA for lilith:latest",
+    "In-game verify msn.skill.status + msn.court.status post Sephirotic deploy",
+    "Fix sanctuary VRAM field mapping — free_smoothed_mb not read by dream_cycle gate"
+  ],
+  "artifacts": {
+    "golem_db": "/home/tehlappy/Desktop/Lilith/state/golem_diary.db",
+    "boot_map": "/home/tehlappy/Desktop/Lilith/state/lilith_boot_map.json",
+    "boot_log": "/home/tehlappy/Desktop/Lilith/logs/lilith_boot.log",
+    "narrative_state": "/mnt/d/Pub/narrative_state.json"
+  }
+}

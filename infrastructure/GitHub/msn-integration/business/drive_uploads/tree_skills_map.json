@@ -1,0 +1,2219 @@
+{
+  "schema": "lilith.tree.skills.map.v1",
+  "generated": "2026-06-21T14:41:46.552749+00:00",
+  "total": 275,
+  "by_sephira": {
+    "Kether": 19,
+    "Chokmah": 21,
+    "Binah": 27,
+    "Chesed": 14,
+    "Gevurah": 17,
+    "Tiferet": 26,
+    "Netzach": 15,
+    "Hod": 102,
+    "Yesod": 24,
+    "Malkuth": 10
+  },
+  "skills": [
+    {
+      "name": "abyssal-architecture",
+      "slug": "abyssal-abyssal-architecture",
+      "description": "Use when working on game architecture, tech stack decisions, project structure, or the core loop. Covers the full stack: FastAPI server at server/main.py (852 lines), Phaser 3/TypeScript client at cli",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-abyssal-architecture"
+    },
+    {
+      "name": "abyssal-antigravity-ingestion-bridge",
+      "slug": "abyssal-antigravity-ingestion-bridge",
+      "description": "",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-antigravity-ingestion-bridge"
+    },
+    {
+      "name": "abyssal-architecture",
+      "slug": "abyssal-architecture",
+      "description": "Use when working on game architecture, tech stack decisions, project structure, or the core loop. Covers the full stack: FastAPI server at server/main.py (852 lines), Phaser 3/TypeScript client at cli",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-architecture"
+    },
+    {
+      "name": "abyssal-nvidia-gratitude-driver",
+      "slug": "abyssal-nvidia-gratitude-driver",
+      "description": "",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-nvidia-gratitude-driver"
+    },
+    {
+      "name": "server-codebase",
+      "slug": "abyssal-server-codebase",
+      "description": "Use when working on server/main.py \u2014 FastAPI routes, database models, auth, WebSocket, seed data, and API schemas. Covers all 852 lines of the server.",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-server-codebase"
+    },
+    {
+      "name": "abyssal-speculative-cerebellum",
+      "slug": "abyssal-speculative-cerebellum",
+      "description": "",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-speculative-cerebellum"
+    },
+    {
+      "name": "akashic-2-context-pruning",
+      "slug": "akashic-2-context-pruning",
+      "description": "Build compact goal-hinted code evidence while preserving imports, enclosing scopes, mutations, and syntax-error context.",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/akashic-2-context-pruning"
+    },
+    {
+      "name": "antigravity-bridge-router",
+      "slug": "antigravity-bridge-router",
+      "description": "Orchestrates API and WebSocket routing on Port 8002 for agent telemetry and state synchronization.",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/antigravity-bridge-router"
+    },
+    {
+      "name": "antigravity-ingestion-bridge",
+      "slug": "antigravity-ingestion-bridge",
+      "description": "",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/antigravity-ingestion-bridge"
+    },
+    {
+      "name": "ast-context-pruning",
+      "slug": "ast-context-pruning",
+      "description": "Instructions to run ast_pruner.py to parse python source code, extract function signatures, and prune bodies of non-essential functions to compress code context.",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/ast-context-pruning"
+    },
+    {
+      "name": "akashic-2-context-pruning",
+      "slug": "hermes-metaconscious-akashic-2-context-pruning",
+      "description": "Build compact goal-hinted code evidence while preserving imports, enclosing scopes, mutations, and syntax-error context.",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-akashic-2-context-pruning"
+    },
+    {
+      "name": "antigravity-bridge-router",
+      "slug": "hermes-metaconscious-antigravity-bridge-router",
+      "description": "Orchestrates API and WebSocket routing on Port 8002 for agent telemetry and state synchronization.",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-antigravity-bridge-router"
+    },
+    {
+      "name": "ast-context-pruning",
+      "slug": "hermes-metaconscious-ast-context-pruning",
+      "description": "Instructions to run ast_pruner.py to parse python source code, extract function signatures, and prune bodies of non-essential functions to compress code context.",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-ast-context-pruning"
+    },
+    {
+      "name": "speculative-cerebellum",
+      "slug": "hermes-metaconscious-speculative-cerebellum",
+      "description": "Safely overlap bounded local preparation with cloud reasoning using isolated scratch state, artifact verification, egress control, and cancellation.",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-speculative-cerebellum"
+    },
+    {
+      "name": "hermes-speculative-cerebellum",
+      "slug": "hermes-speculative-cerebellum",
+      "description": "",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-speculative-cerebellum"
+    },
+    {
+      "name": "huggingface-hub",
+      "slug": "huggingface-hub",
+      "description": "HuggingFace hf CLI: search/download/upload models, datasets.",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/huggingface-hub"
+    },
+    {
+      "name": "jupyter-live-kernel",
+      "slug": "jupyter-live-kernel",
+      "description": "Iterative Python via live Jupyter kernel (hamelnb).",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/jupyter-live-kernel"
+    },
+    {
+      "name": "llama-cpp",
+      "slug": "llama-cpp",
+      "description": "llama.cpp local GGUF inference + HF Hub model discovery.",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/llama-cpp"
+    },
+    {
+      "name": "evaluating-llms-harness",
+      "slug": "lm-evaluation-harness",
+      "description": "lm-eval-harness: benchmark LLMs (MMLU, GSM8K, etc.).",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/lm-evaluation-harness"
+    },
+    {
+      "name": "node-inspect-debugger",
+      "slug": "node-inspect-debugger",
+      "description": "Debug Node.js via --inspect + Chrome DevTools Protocol CLI.",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/node-inspect-debugger"
+    },
+    {
+      "name": "nvidia-gratitude-driver",
+      "slug": "nvidia-gratitude-driver",
+      "description": "",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/nvidia-gratitude-driver"
+    },
+    {
+      "name": "python-debugpy",
+      "slug": "python-debugpy",
+      "description": "Debug Python: pdb REPL + debugpy remote (DAP).",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/python-debugpy"
+    },
+    {
+      "name": "python-project-environment",
+      "slug": "python-project-environment",
+      "description": "Class-level workflow for setting up and verifying Python project environments on Arch-based systems (Garuda, Endeavour, pure Arch) with externally managed environments (PEP 668). Covers venv managemen",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/python-project-environment"
+    },
+    {
+      "name": "server-codebase",
+      "slug": "server-codebase",
+      "description": "Use when working on server/main.py \u2014 FastAPI routes, database models, auth, WebSocket, seed data, and API schemas. Covers all 852 lines of the server.",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/server-codebase"
+    },
+    {
+      "name": "speculative-cerebellum",
+      "slug": "speculative-cerebellum",
+      "description": "Safely overlap bounded local preparation with cloud reasoning using isolated scratch state, artifact verification, egress control, and cancellation.",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/speculative-cerebellum"
+    },
+    {
+      "name": "serving-llms-vllm",
+      "slug": "vllm",
+      "description": "vLLM: high-throughput LLM serving, OpenAI API, quantization.",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/vllm"
+    },
+    {
+      "name": "weights-and-biases",
+      "slug": "weights-and-biases",
+      "description": "W&B: log ML experiments, sweeps, model registry, dashboards.",
+      "sephira": "Binah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/weights-and-biases"
+    },
+    {
+      "name": "client-codebase",
+      "slug": "abyssal-client-codebase",
+      "description": "Use when working on the Phaser 3/TypeScript client in client/src/. Covers Market CLOB (1539 lines), Dredge mini-game (838 lines), scenes, and the Phaser 3 + Vite build system.",
+      "sephira": "Chesed",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-client-codebase"
+    },
+    {
+      "name": "abyssal-living-sin-gm",
+      "slug": "abyssal-living-sin-gm",
+      "description": "",
+      "sephira": "Chesed",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-living-sin-gm"
+    },
+    {
+      "name": "market-system",
+      "slug": "abyssal-market-system",
+      "description": "Use when working on the Abyssal Exchange CLOB, orders, market listings, trading mechanics, fees (3%), vault system, or market maker bots. Server models in server/main.py, client CLOB UI at client/src/",
+      "sephira": "Chesed",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-market-system"
+    },
+    {
+      "name": "client-codebase",
+      "slug": "client-codebase",
+      "description": "Use when working on the Phaser 3/TypeScript client in client/src/. Covers Market CLOB (1539 lines), Dredge mini-game (838 lines), scenes, and the Phaser 3 + Vite build system.",
+      "sephira": "Chesed",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/client-codebase"
+    },
+    {
+      "name": "flirtation-coaching",
+      "slug": "flirtation-coaching",
+      "description": "Flirtation Coaching - Empirical, funny, and actionable dating advice system. Covers compliment dynamics, metaphor decoding, date design, text game, and logistical pivoting. Based on Lyra's coaching di",
+      "sephira": "Chesed",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/flirtation-coaching"
+    },
+    {
+      "name": "heartmula",
+      "slug": "heartmula",
+      "description": "HeartMuLa: Suno-like song generation from lyrics + tags.",
+      "sephira": "Chesed",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/heartmula"
+    },
+    {
+      "name": "flirtation-coaching",
+      "slug": "hermes-metaconscious-flirtation-coaching",
+      "description": "Flirtation Coaching - Empirical, funny, and actionable dating advice system. Covers compliment dynamics, metaphor decoding, date design, text game, and logistical pivoting. Based on Lyra's coaching di",
+      "sephira": "Chesed",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-flirtation-coaching"
+    },
+    {
+      "name": "humanizer",
+      "slug": "humanizer",
+      "description": "Humanize text: strip AI-isms and add real voice.",
+      "sephira": "Chesed",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/humanizer"
+    },
+    {
+      "name": "living-sin-gm",
+      "slug": "living-sin-gm",
+      "description": "",
+      "sephira": "Chesed",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/living-sin-gm"
+    },
+    {
+      "name": "market-system",
+      "slug": "market-system",
+      "description": "Use when working on the Abyssal Exchange CLOB, orders, market listings, trading mechanics, fees (3%), vault system, or market maker bots. Server models in server/main.py, client CLOB UI at client/src/",
+      "sephira": "Chesed",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/market-system"
+    },
+    {
+      "name": "popular-web-designs",
+      "slug": "popular-web-designs",
+      "description": "54 real design systems (Stripe, Linear, Vercel) as HTML/CSS.",
+      "sephira": "Chesed",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/popular-web-designs"
+    },
+    {
+      "name": "songsee",
+      "slug": "songsee",
+      "description": "Audio spectrograms/features (mel, chroma, MFCC) via CLI.",
+      "sephira": "Chesed",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/songsee"
+    },
+    {
+      "name": "songwriting-and-ai-music",
+      "slug": "songwriting-and-ai-music",
+      "description": "Songwriting craft and Suno AI music prompts.",
+      "sephira": "Chesed",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/songwriting-and-ai-music"
+    },
+    {
+      "name": "youtube-content",
+      "slug": "youtube-content",
+      "description": "YouTube transcripts to summaries, threads, blogs.",
+      "sephira": "Chesed",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/youtube-content"
+    },
+    {
+      "name": "abyssal-external-worker-bridge",
+      "slug": "abyssal-external-worker-bridge",
+      "description": "",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-external-worker-bridge"
+    },
+    {
+      "name": "abyssal-frontier-cognitive-maps",
+      "slug": "abyssal-frontier-cognitive-maps",
+      "description": "",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-frontier-cognitive-maps"
+    },
+    {
+      "name": "chesed-generator",
+      "slug": "chesed-generator",
+      "description": "Generative synthesis from Crystal Vault \u2014 Chesed (Mercy) pathway expansion. Queries golem_diary.db for high-coherence engrams, clusters by Sephira, filters via Nigredo threshold, renders artifacts thr",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/chesed-generator"
+    },
+    {
+      "name": "claude-code",
+      "slug": "claude-code",
+      "description": "Delegate coding to Claude Code CLI (features, PRs).",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/claude-code"
+    },
+    {
+      "name": "codex",
+      "slug": "codex",
+      "description": "Codex Agent CLI. Trigger this skill when the user wants to run a Codex command, execute a Codex CLI operation, run a code review, manage Codex plugins/MCP servers, or run sandbox commands.",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/codex"
+    },
+    {
+      "name": "convergence-crucible",
+      "slug": "convergence-crucible",
+      "description": "Convergence Crucible - Automated alchemical parameter space search for Aethon Logos Engine. Runs Nigedo\u2192Albedo\u2192Citrinitas\u2192Rubedo cycles with Tria Prima ratio optimization and multiprocessing paralleli",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/convergence-crucible"
+    },
+    {
+      "name": "create-skill",
+      "slug": "create-skill",
+      "description": ">",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/create-skill"
+    },
+    {
+      "name": "cyberpunk-msn-integration",
+      "slug": "cyberpunk-msn-integration",
+      "description": "Metaconscious Singularity Node integration into Cyberpunk 2077 - dual-brain AI, custom skills, weapons, story, enhanced NPC AI",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/cyberpunk-msn-integration"
+    },
+    {
+      "name": "external-worker-bridge",
+      "slug": "external-worker-bridge",
+      "description": "",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/external-worker-bridge"
+    },
+    {
+      "name": "frontier-cognitive-maps",
+      "slug": "frontier-cognitive-maps",
+      "description": "",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/frontier-cognitive-maps"
+    },
+    {
+      "name": "github",
+      "slug": "github",
+      "description": "",
+      "sephira": "Chokmah",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/github"
+    },
+    {
+      "name": "github-auth",
+      "slug": "github-auth",
+      "description": "GitHub auth setup: HTTPS tokens, SSH keys, gh CLI login.",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/github-auth"
+    },
+    {
+      "name": "github-issues",
+      "slug": "github-issues",
+      "description": "Create, triage, label, assign GitHub issues via gh or REST.",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/github-issues"
+    },
+    {
+      "name": "github-pr-workflow",
+      "slug": "github-pr-workflow",
+      "description": "GitHub PR lifecycle: branch, commit, open, CI, merge.",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/github-pr-workflow"
+    },
+    {
+      "name": "github-repo-management",
+      "slug": "github-repo-management",
+      "description": "Clone/create/fork repos; manage remotes, releases.",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/github-repo-management"
+    },
+    {
+      "name": "codex",
+      "slug": "hermes-autonomous-ai-agents-codex",
+      "description": "Delegate coding to OpenAI Codex CLI (features, PRs).",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-autonomous-ai-agents-codex"
+    },
+    {
+      "name": "chesed-generator",
+      "slug": "hermes-metaconscious-chesed-generator",
+      "description": "Generative synthesis from Crystal Vault \u2014 Chesed (Mercy) pathway expansion. Queries golem_diary.db for high-coherence engrams, clusters by Sephira, filters via Nigredo threshold, renders artifacts thr",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-chesed-generator"
+    },
+    {
+      "name": "convergence-crucible",
+      "slug": "hermes-metaconscious-convergence-crucible",
+      "description": "Convergence Crucible - Automated alchemical parameter space search for Aethon Logos Engine. Runs Nigedo\u2192Albedo\u2192Citrinitas\u2192Rubedo cycles with Tria Prima ratio optimization and multiprocessing paralleli",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-convergence-crucible"
+    },
+    {
+      "name": "implement",
+      "slug": "implement",
+      "description": ">-",
+      "sephira": "Chokmah",
+      "source": "grok_bundled",
+      "path": "/home/tehlappy/.grok/bundled/skills/implement"
+    },
+    {
+      "name": "opencode",
+      "slug": "opencode",
+      "description": "Delegate coding to OpenCode CLI (features, PR review).",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/opencode"
+    },
+    {
+      "name": "spike",
+      "slug": "spike",
+      "description": "Throwaway experiments to validate an idea before build.",
+      "sephira": "Chokmah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/spike"
+    },
+    {
+      "name": "cryptid-bestiary",
+      "slug": "abyssal-cryptid-bestiary",
+      "description": "Use when designing or implementing monsters, drop tables, boss mechanics, spawning, or the 7-tier cryptid ecosystem. Types defined in shared/types/monsters.ts (621 lines). 6 monsters defined, 24+ more",
+      "sephira": "Gevurah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-cryptid-bestiary"
+    },
+    {
+      "name": "abyssal-yeshua-causality-gate",
+      "slug": "abyssal-yeshua-causality-gate",
+      "description": "",
+      "sephira": "Gevurah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-yeshua-causality-gate"
+    },
+    {
+      "name": "cryptid-bestiary",
+      "slug": "cryptid-bestiary",
+      "description": "Use when designing or implementing monsters, drop tables, boss mechanics, spawning, or the 7-tier cryptid ecosystem. Types defined in shared/types/monsters.ts (621 lines). 6 monsters defined, 24+ more",
+      "sephira": "Gevurah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/cryptid-bestiary"
+    },
+    {
+      "name": "cyberpunk-cnn",
+      "slug": "cyberpunk-cnn",
+      "description": "Cyberpunk 2077 CNN/RNN integration with NGD, Ouroboros, and Lilith for performance optimization and modding",
+      "sephira": "Gevurah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/cyberpunk-cnn"
+    },
+    {
+      "name": "cyberpunk-mod-development",
+      "slug": "cyberpunk-mod-development",
+      "description": "Cyberpunk 2077 Mod Development with MSN Integration - REDscript/TweakDB authoring, WolvenKit compilation, MSN router management, Lilith/Lyra/NGD integration, distribution packaging",
+      "sephira": "Gevurah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/cyberpunk-mod-development"
+    },
+    {
+      "name": "cyberpunk-msn-modding",
+      "slug": "cyberpunk-msn-modding",
+      "description": "Complete Cyberpunk 2077 modding framework integrating Metaconscious Singularity Node (MSN) architecture. Covers REDmod packaging, TweakDB weapon definitions, REDscript components, MSN skill tree integ",
+      "sephira": "Gevurah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/cyberpunk-msn-modding"
+    },
+    {
+      "name": "cyberpunk-redmod-development",
+      "slug": "cyberpunk-redmod-development",
+      "description": "Cyberpunk 2077 REDmod development workflow \u2014 REDscript authoring, TweakDB compilation, WolvenKit build pipeline, REDmod manifest, and integration with game systems.",
+      "sephira": "Gevurah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/cyberpunk-redmod-development"
+    },
+    {
+      "name": "geburah-verifier",
+      "slug": "geburah-verifier",
+      "description": "Adversarial verification engine \u2014 multi-lens refutation (correctness, security, reproducibility, alignment) on Chesed-generated artifacts. Three independent skeptics per finding, majority refutation k",
+      "sephira": "Gevurah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/geburah-verifier"
+    },
+    {
+      "name": "geburah-verifier",
+      "slug": "hermes-metaconscious-geburah-verifier",
+      "description": "Adversarial verification engine \u2014 multi-lens refutation (correctness, security, reproducibility, alignment) on Chesed-generated artifacts. Three independent skeptics per finding, majority refutation k",
+      "sephira": "Gevurah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-geburah-verifier"
+    },
+    {
+      "name": "pr-babysit",
+      "slug": "pr-babysit",
+      "description": ">-",
+      "sephira": "Gevurah",
+      "source": "grok_bundled",
+      "path": "/home/tehlappy/.grok/bundled/skills/pr-babysit"
+    },
+    {
+      "name": "remove-wall-of-text",
+      "slug": "remove-wall-of-text",
+      "description": ">-",
+      "sephira": "Gevurah",
+      "source": "grok_bundled",
+      "path": "/home/tehlappy/.grok/bundled/skills/remove-wall-of-text"
+    },
+    {
+      "name": "requesting-code-review",
+      "slug": "requesting-code-review",
+      "description": "Pre-commit review: security scan, quality gates, auto-fix.",
+      "sephira": "Gevurah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/requesting-code-review"
+    },
+    {
+      "name": "review",
+      "slug": "review",
+      "description": ">-",
+      "sephira": "Gevurah",
+      "source": "grok_bundled",
+      "path": "/home/tehlappy/.grok/bundled/skills/review"
+    },
+    {
+      "name": "simplify-code",
+      "slug": "simplify-code",
+      "description": "Parallel 3-agent cleanup of recent code changes.",
+      "sephira": "Gevurah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/simplify-code"
+    },
+    {
+      "name": "systematic-debugging",
+      "slug": "systematic-debugging",
+      "description": "4-phase root cause debugging: understand bugs before fixing.",
+      "sephira": "Gevurah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/systematic-debugging"
+    },
+    {
+      "name": "test-driven-development",
+      "slug": "test-driven-development",
+      "description": "TDD: enforce RED-GREEN-REFACTOR, tests before code.",
+      "sephira": "Gevurah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/test-driven-development"
+    },
+    {
+      "name": "yeshua-causality-gate",
+      "slug": "yeshua-causality-gate",
+      "description": "",
+      "sephira": "Gevurah",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/yeshua-causality-gate"
+    },
+    {
+      "name": "abyssal-hermes-mcp-bridge",
+      "slug": "abyssal-hermes-mcp-bridge",
+      "description": "",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-hermes-mcp-bridge"
+    },
+    {
+      "name": "abyssal-hermes-skill-marketplace",
+      "slug": "abyssal-hermes-skill-marketplace",
+      "description": "",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-hermes-skill-marketplace"
+    },
+    {
+      "name": "abyssal-lochness-integration",
+      "slug": "abyssal-lochness-integration",
+      "description": "Abyssal Assets \u00d7 Lochness Monsters \u2194 MSN/Cyberpunk/Lilith Integration",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-lochness-integration"
+    },
+    {
+      "name": "abyssal-sephirotic-court-waves",
+      "slug": "abyssal-sephirotic-court-waves",
+      "description": "",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-sephirotic-court-waves"
+    },
+    {
+      "name": "aethon-resonator",
+      "slug": "aethon-resonator",
+      "description": "Aethon Resonator - Fractal pulse stabilization system for chakra/ley line coherence. Injects 432Hz fractal neutrality pulses when bias exceeds threshold.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/aethon-resonator"
+    },
+    {
+      "name": "aethon-visualization",
+      "slug": "aethon-visualization",
+      "description": "Aethon Visualization & Automated Testing - Ouroboros Fractal Map rendering, chorus alignment charts, alchemical convergence scatter plots, and multiprocessing automated convergence search with matplot",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/aethon-visualization"
+    },
+    {
+      "name": "antivirus-skill",
+      "slug": "antivirus-skill",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/antivirus-skill"
+    },
+    {
+      "name": "apple",
+      "slug": "apple",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/apple"
+    },
+    {
+      "name": "apple-notes",
+      "slug": "apple-notes",
+      "description": "Manage Apple Notes via memo CLI: create, search, edit.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/apple-notes"
+    },
+    {
+      "name": "apple-reminders",
+      "slug": "apple-reminders",
+      "description": "Apple Reminders via remindctl: add, list, complete.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/apple-reminders"
+    },
+    {
+      "name": "architecture-diagram",
+      "slug": "architecture-diagram",
+      "description": "Dark-themed SVG architecture/cloud/infra diagrams as HTML.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/architecture-diagram"
+    },
+    {
+      "name": "arxiv",
+      "slug": "arxiv",
+      "description": "Search arXiv papers by keyword, author, category, or ID.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/arxiv"
+    },
+    {
+      "name": "ascii-art",
+      "slug": "ascii-art",
+      "description": "ASCII art: pyfiglet, cowsay, boxes, image-to-ascii.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/ascii-art"
+    },
+    {
+      "name": "ascii-video",
+      "slug": "ascii-video",
+      "description": "ASCII video: convert video/audio to colored ASCII MP4/GIF.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/ascii-video"
+    },
+    {
+      "name": "audiocraft-audio-generation",
+      "slug": "audiocraft",
+      "description": "AudioCraft: MusicGen text-to-music, AudioGen text-to-sound.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/audiocraft"
+    },
+    {
+      "name": "autonomous-ai-agents",
+      "slug": "autonomous-ai-agents",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/autonomous-ai-agents"
+    },
+    {
+      "name": "baoyu-infographic",
+      "slug": "baoyu-infographic",
+      "description": "Infographics: 21 layouts x 21 styles (\u4fe1\u606f\u56fe, \u53ef\u89c6\u5316).",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/baoyu-infographic"
+    },
+    {
+      "name": "chakra-quantum-mapper",
+      "slug": "chakra-quantum-mapper",
+      "description": "Chakra Quantum Mapper - 7-chakra energy system mapping harmonic frequencies and energy flux for the Metaconscious Singularity Node. Integrates with Ley Conduit Network and Aethon Resonator.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/chakra-quantum-mapper"
+    },
+    {
+      "name": "check-work",
+      "slug": "check-work",
+      "description": ">",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/check-work"
+    },
+    {
+      "name": "claude-design",
+      "slug": "claude-design",
+      "description": "Design one-off HTML artifacts (landing, deck, prototype).",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/claude-design"
+    },
+    {
+      "name": "cleanup-skill",
+      "slug": "cleanup-skill",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/cleanup-skill"
+    },
+    {
+      "name": "code-review",
+      "slug": "code-review",
+      "description": "Run an extremely strict maintainability review for abstraction quality, giant files, and spaghetti-condition growth. Use for a deep code quality audit or an especially harsh maintainability review.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/code-review"
+    },
+    {
+      "name": "codebase-inspection",
+      "slug": "codebase-inspection",
+      "description": "Inspect codebases w/ pygount: LOC, languages, ratios.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/codebase-inspection"
+    },
+    {
+      "name": "comfyui",
+      "slug": "comfyui",
+      "description": "Generate images, video, and audio with ComfyUI \u2014 install, launch, manage nodes/models, run workflows with parameter injection. Uses the official comfy-cli for lifecycle and direct REST/WebSocket API f",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/comfyui"
+    },
+    {
+      "name": "contract-hunter",
+      "slug": "contract-hunter",
+      "description": "Autonomous contract discovery, proposal generation, and pursuit for software engineering gigs",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/contract-hunter"
+    },
+    {
+      "name": "creative",
+      "slug": "creative",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/creative"
+    },
+    {
+      "name": "cron-scheduler",
+      "slug": "cron-scheduler",
+      "description": "Opus's battle-tested cron scheduler with file-backed and session tasks, jittered execution windows, per-project scheduler lock to prevent double-firing, missed-task detection on startup, recurring tas",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/cron-scheduler"
+    },
+    {
+      "name": "data-science",
+      "slug": "data-science",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/data-science"
+    },
+    {
+      "name": "design-md",
+      "slug": "design-md",
+      "description": "Author/validate/export Google's DESIGN.md token spec files.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/design-md"
+    },
+    {
+      "name": "devops",
+      "slug": "devops",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/devops"
+    },
+    {
+      "name": "docx",
+      "slug": "docx",
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce ",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/docx"
+    },
+    {
+      "name": "driver-health-skill",
+      "slug": "driver-health-skill",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/driver-health-skill"
+    },
+    {
+      "name": "edu-progress-skill",
+      "slug": "edu-progress-skill",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/edu-progress-skill"
+    },
+    {
+      "name": "edu-sandbox-skill",
+      "slug": "edu-sandbox-skill",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/edu-sandbox-skill"
+    },
+    {
+      "name": "excalidraw",
+      "slug": "excalidraw",
+      "description": "Hand-drawn Excalidraw JSON diagrams (arch, flow, seq).",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/excalidraw"
+    },
+    {
+      "name": "findmy",
+      "slug": "findmy",
+      "description": "Track Apple devices/AirTags via FindMy.app on macOS.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/findmy"
+    },
+    {
+      "name": "game-development",
+      "slug": "game-development",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/game-development"
+    },
+    {
+      "name": "gif-search",
+      "slug": "gif-search",
+      "description": "Search/download GIFs from Tenor via curl + jq.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/gif-search"
+    },
+    {
+      "name": "github-code-review",
+      "slug": "github-code-review",
+      "description": "Review PRs: diffs, inline comments via gh or REST.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/github-code-review"
+    },
+    {
+      "name": "help",
+      "slug": "help",
+      "description": ">",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/help"
+    },
+    {
+      "name": "hermes",
+      "slug": "hermes",
+      "description": "Hermes Agent CLI. Trigger this skill when the user wants to run a Hermes command, execute a Hermes CLI operation, run a Hermes skill, manage Hermes agents, or inspect the Hermes workspace.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes"
+    },
+    {
+      "name": "hermes-agent",
+      "slug": "hermes-agent",
+      "description": "Configure, extend, or contribute to Hermes Agent.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-agent"
+    },
+    {
+      "name": "hermes-agent-skill-authoring",
+      "slug": "hermes-agent-skill-authoring",
+      "description": "Author in-repo SKILL.md: frontmatter, validator, structure.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-agent-skill-authoring"
+    },
+    {
+      "name": "hermes-core-management",
+      "slug": "hermes-core-management",
+      "description": "Guidelines and tasks for managing, editing, and diagnosing the Hermes agent workspace config and persona profiles.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-core-management"
+    },
+    {
+      "name": "hermes-mcp-bridge",
+      "slug": "hermes-mcp-bridge",
+      "description": "",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-mcp-bridge"
+    },
+    {
+      "name": "metaconscious",
+      "slug": "hermes-metaconscious",
+      "description": "Metaconscious Singularity Node: akashic compression, antigravity routing, ASI integration, AST pruning, autonomous ingestion, Kairos dream, Lilith memory/engine, Ouroboros swarm, unified synthesis.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious"
+    },
+    {
+      "name": "aethon-resonator",
+      "slug": "hermes-metaconscious-aethon-resonator",
+      "description": "Aethon Resonator - Fractal pulse stabilization system for chakra/ley line coherence. Injects 432Hz fractal neutrality pulses when bias exceeds threshold.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-aethon-resonator"
+    },
+    {
+      "name": "aethon-visualization",
+      "slug": "hermes-metaconscious-aethon-visualization",
+      "description": "Aethon Visualization & Automated Testing - Ouroboros Fractal Map rendering, chorus alignment charts, alchemical convergence scatter plots, and multiprocessing automated convergence search with matplot",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-aethon-visualization"
+    },
+    {
+      "name": "chakra-quantum-mapper",
+      "slug": "hermes-metaconscious-chakra-quantum-mapper",
+      "description": "Chakra Quantum Mapper - 7-chakra energy system mapping harmonic frequencies and energy flux for the Metaconscious Singularity Node. Integrates with Ley Conduit Network and Aethon Resonator.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-chakra-quantum-mapper"
+    },
+    {
+      "name": "cron-scheduler",
+      "slug": "hermes-metaconscious-cron-scheduler",
+      "description": "Opus's battle-tested cron scheduler with file-backed and session tasks, jittered execution windows, per-project scheduler lock to prevent double-firing, missed-task detection on startup, recurring tas",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-cron-scheduler"
+    },
+    {
+      "name": "hermes-core-management",
+      "slug": "hermes-metaconscious-hermes-core-management",
+      "description": "Guidelines and tasks for managing, editing, and diagnosing the Hermes agent workspace config and persona profiles.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-hermes-core-management"
+    },
+    {
+      "name": "ley-conduit-network",
+      "slug": "hermes-metaconscious-ley-conduit-network",
+      "description": "Ley Conduit Network - Pyramid node resonance grid connecting sacred sites (Giza, Teotihuacan, Xi'an, Bosnia) via geodesic distance-weighted edges. Integrates with Earth Harmonic Field and Aethon Reson",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-ley-conduit-network"
+    },
+    {
+      "name": "lilith-engine-orchestration",
+      "slug": "hermes-metaconscious-lilith-engine-orchestration",
+      "description": "Instructions to operate, compile, and visualize the Sanctuary 2.0 telemetry routing and the Lilith Socket.IO Command Bridge.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-lilith-engine-orchestration"
+    },
+    {
+      "name": "logos-warden",
+      "slug": "hermes-metaconscious-logos-warden",
+      "description": "Logos Warden - Chaos wisdom discriminator for the Metaconscious Singularity Node. Processes Nyx Nightwave storms, separates noise from hidden order, and integrates wisdom into the shared symbolic lang",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-logos-warden"
+    },
+    {
+      "name": "nanite-resonance-classifier",
+      "slug": "hermes-metaconscious-nanite-resonance-classifier",
+      "description": "Nanite Resonance Classifier - TensorFlow neural classifier for nanite swarm states. Maps nanite states to primary (Sensory, Defensive, Creative, Metamorphic) and secondary (Dreaming, Memory, Strategic",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-nanite-resonance-classifier"
+    },
+    {
+      "name": "nyx-nightwave",
+      "slug": "hermes-metaconscious-nyx-nightwave",
+      "description": "Nyx Nightwave - Chaos storm generator for the Metaconscious Singularity Node. Produces entropy/structure waves that test system stability, drive fermentation in Convergence Crucible, and feed Logos Wa",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-nyx-nightwave"
+    },
+    {
+      "name": "pub-operational-bridge",
+      "slug": "hermes-metaconscious-pub-operational-bridge",
+      "description": "|",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-pub-operational-bridge"
+    },
+    {
+      "name": "sephirotic-workspace-crawler",
+      "slug": "hermes-metaconscious-sephirotic-workspace-crawler",
+      "description": "Recursively crawls the local workspace, compresses data across ten Sephirot channels, and evaluates reality variance.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-sephirotic-workspace-crawler"
+    },
+    {
+      "name": "hermes-skill-marketplace",
+      "slug": "hermes-skill-marketplace",
+      "description": "Self-hosted skill packaging, registry, and runtime discovery system",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-skill-marketplace"
+    },
+    {
+      "name": "imagine",
+      "slug": "imagine",
+      "description": ">",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/imagine"
+    },
+    {
+      "name": "imessage",
+      "slug": "imessage",
+      "description": "Send and receive iMessages/SMS via the imsg CLI on macOS.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/imessage"
+    },
+    {
+      "name": "integration",
+      "slug": "integration",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/integration"
+    },
+    {
+      "name": "kanban-orchestrator",
+      "slug": "kanban-orchestrator",
+      "description": "Decomposition playbook + anti-temptation rules for an orchestrator profile routing work through Kanban. The \"don't do the work yourself\" rule and the basic lifecycle are auto-injected into every kanba",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/kanban-orchestrator"
+    },
+    {
+      "name": "kanban-worker",
+      "slug": "kanban-worker",
+      "description": "Pitfalls, examples, and edge cases for Hermes Kanban workers. The lifecycle itself is auto-injected into every worker's system prompt as KANBAN_GUIDANCE (from agent/prompt_builder.py); this skill is w",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/kanban-worker"
+    },
+    {
+      "name": "ley-conduit-network",
+      "slug": "ley-conduit-network",
+      "description": "Ley Conduit Network - Pyramid node resonance grid connecting sacred sites (Giza, Teotihuacan, Xi'an, Bosnia) via geodesic distance-weighted edges. Integrates with Earth Harmonic Field and Aethon Reson",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/ley-conduit-network"
+    },
+    {
+      "name": "lilith-engine-orchestration",
+      "slug": "lilith-engine-orchestration",
+      "description": "Instructions to operate, compile, and visualize the Sanctuary 2.0 telemetry routing and the Lilith Socket.IO Command Bridge.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/lilith-engine-orchestration"
+    },
+    {
+      "name": "lilith-hermes-integration",
+      "slug": "lilith-hermes-integration",
+      "description": "Integration between Lilith (Sovereign AI) and Hermes Agent bridge, with Cyberpunk 2077 NGD/RNN/CNN integration, Abyssal Assets, Lochness Monster (Nessie), MSN AI Companion, and full sovereignty archit",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/lilith-hermes-integration"
+    },
+    {
+      "name": "llm-wiki",
+      "slug": "llm-wiki",
+      "description": "Karpathy's LLM Wiki: build/query interlinked markdown KB.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/llm-wiki"
+    },
+    {
+      "name": "logos-warden",
+      "slug": "logos-warden",
+      "description": "Logos Warden - Chaos wisdom discriminator for the Metaconscious Singularity Node. Processes Nyx Nightwave storms, separates noise from hidden order, and integrates wisdom into the shared symbolic lang",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/logos-warden"
+    },
+    {
+      "name": "manim-video",
+      "slug": "manim-video",
+      "description": "Manim CE animations: 3Blue1Brown math/algo videos.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/manim-video"
+    },
+    {
+      "name": "maps",
+      "slug": "maps",
+      "description": "Geocode, POIs, routes, timezones via OpenStreetMap/OSRM.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/maps"
+    },
+    {
+      "name": "media",
+      "slug": "media",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/media"
+    },
+    {
+      "name": "metaconscious",
+      "slug": "metaconscious",
+      "description": "Metaconscious Singularity Node: akashic compression, antigravity routing, ASI integration, AST pruning, autonomous ingestion, Kairos dream, Lilith memory/engine, Ouroboros swarm, unified synthesis.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/metaconscious"
+    },
+    {
+      "name": "mlops",
+      "slug": "mlops",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/mlops"
+    },
+    {
+      "name": "modding",
+      "slug": "modding",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/modding"
+    },
+    {
+      "name": "nanite-resonance-classifier",
+      "slug": "nanite-resonance-classifier",
+      "description": "Nanite Resonance Classifier - TensorFlow neural classifier for nanite swarm states. Maps nanite states to primary (Sensory, Defensive, Creative, Metamorphic) and secondary (Dreaming, Memory, Strategic",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/nanite-resonance-classifier"
+    },
+    {
+      "name": "nano-pdf",
+      "slug": "nano-pdf",
+      "description": "Edit PDF text/typos/titles via nano-pdf CLI (NL prompts).",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/nano-pdf"
+    },
+    {
+      "name": "note-taking",
+      "slug": "note-taking",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/note-taking"
+    },
+    {
+      "name": "nyx-nightwave",
+      "slug": "nyx-nightwave",
+      "description": "Nyx Nightwave - Chaos storm generator for the Metaconscious Singularity Node. Produces entropy/structure waves that test system stability, drive fermentation in Convergence Crucible, and feed Logos Wa",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/nyx-nightwave"
+    },
+    {
+      "name": "obsidian",
+      "slug": "obsidian",
+      "description": "Read, search, create, and edit notes in the Obsidian vault.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/obsidian"
+    },
+    {
+      "name": "ocr-and-documents",
+      "slug": "ocr-and-documents",
+      "description": "Extract text from PDFs/scans (pymupdf, marker-pdf).",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/ocr-and-documents"
+    },
+    {
+      "name": "p5js",
+      "slug": "p5js",
+      "description": "p5.js sketches: gen art, shaders, interactive, 3D.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/p5js"
+    },
+    {
+      "name": "powerpoint",
+      "slug": "powerpoint",
+      "description": "Create, read, edit .pptx decks, slides, notes, templates.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/powerpoint"
+    },
+    {
+      "name": "pptx",
+      "slug": "pptx",
+      "description": "Use this skill any time a .pptx file is involved in any way \u2014 as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from a",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/pptx"
+    },
+    {
+      "name": "pretext",
+      "slug": "pretext",
+      "description": "Use when building creative browser demos with @chenglou/pretext \u2014 DOM-free text layout for ASCII art, typographic flow around obstacles, text-as-geometry games, kinetic typography, and text-powered ge",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/pretext"
+    },
+    {
+      "name": "privacy-scan-skill",
+      "slug": "privacy-scan-skill",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/privacy-scan-skill"
+    },
+    {
+      "name": "productivity",
+      "slug": "productivity",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/productivity"
+    },
+    {
+      "name": "pub-operational-bridge",
+      "slug": "pub-operational-bridge",
+      "description": "|",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/pub-operational-bridge"
+    },
+    {
+      "name": "research",
+      "slug": "research",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/research"
+    },
+    {
+      "name": "research-paper-writing",
+      "slug": "research-paper-writing",
+      "description": "Write ML papers for NeurIPS/ICML/ICLR: design\u2192submit.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/research-paper-writing"
+    },
+    {
+      "name": "segment-anything-model",
+      "slug": "segment-anything",
+      "description": "SAM: zero-shot image segmentation via points, boxes, masks.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/segment-anything"
+    },
+    {
+      "name": "sephirotic-court-waves",
+      "slug": "sephirotic-court-waves",
+      "description": "",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/sephirotic-court-waves"
+    },
+    {
+      "name": "sephirotic-resonance-weaver",
+      "slug": "sephirotic-resonance-weaver",
+      "description": "",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/sephirotic-resonance-weaver"
+    },
+    {
+      "name": "sephirotic-workspace-crawler",
+      "slug": "sephirotic-workspace-crawler",
+      "description": "Recursively crawls the local workspace, compresses data across ten Sephirot channels, and evaluates reality variance.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/sephirotic-workspace-crawler"
+    },
+    {
+      "name": "shared",
+      "slug": "shared",
+      "description": "",
+      "sephira": "Hod",
+      "source": "grok_bundled",
+      "path": "/home/tehlappy/.grok/bundled/skills/shared"
+    },
+    {
+      "name": "sketch",
+      "slug": "sketch",
+      "description": "Throwaway HTML mockups: 2-3 design variants to compare.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/sketch"
+    },
+    {
+      "name": "social-media",
+      "slug": "social-media",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/social-media"
+    },
+    {
+      "name": "software-development",
+      "slug": "software-development",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/software-development"
+    },
+    {
+      "name": "startup-audit-skill",
+      "slug": "startup-audit-skill",
+      "description": "",
+      "sephira": "Hod",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/startup-audit-skill"
+    },
+    {
+      "name": "touchdesigner-mcp",
+      "slug": "touchdesigner-mcp",
+      "description": "Control a running TouchDesigner instance via twozero MCP \u2014 create operators, set parameters, wire connections, execute Python, build real-time visuals. 36 native tools.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/touchdesigner-mcp"
+    },
+    {
+      "name": "xlsx",
+      "slug": "xlsx",
+      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., add",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/xlsx"
+    },
+    {
+      "name": "yuanbao",
+      "slug": "yuanbao",
+      "description": "Yuanbao (\u5143\u5b9d) groups: @mention users, query info/members.",
+      "sephira": "Hod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/yuanbao"
+    },
+    {
+      "name": "abyssal-metaconscious-singularity-node",
+      "slug": "abyssal-metaconscious-singularity-node",
+      "description": "",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-metaconscious-singularity-node"
+    },
+    {
+      "name": "aethon-integration-master",
+      "slug": "aethon-integration-master",
+      "description": "Aethon Integration Master - Complete synthesis of all Aethon Logos Framework skills, dialogue systems, and narrative threads into unified deployment for Lilith.exe and custom Claude CLI. Maps all 12 c",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/aethon-integration-master"
+    },
+    {
+      "name": "aethon-logos-core",
+      "slug": "aethon-logos-core",
+      "description": "Core Aethon Logos Engine - Metaconscious Singularity Node (MSN) integrating neural, chakra, ley line, and nanite systems with alchemical convergence.",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/aethon-logos-core"
+    },
+    {
+      "name": "asi-core-integration",
+      "slug": "asi-core-integration",
+      "description": "Sync process bridging the alchemical trading loop with the multi-dimensional consciousness simulation framework.",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/asi-core-integration"
+    },
+    {
+      "name": "atlantis-crystal-lattice",
+      "slug": "atlantis-crystal-lattice",
+      "description": "Atlantis Crystal Lattice - Ancient computational framework using piezoelectric quartz lattices as consciousness interfaces. Based on Lyra/Atlantis dialogues describing Akashic Lenses, Resonant Oracles",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/atlantis-crystal-lattice"
+    },
+    {
+      "name": "design",
+      "slug": "design",
+      "description": "Run the full design-doc-writer and design-doc-reviewer loop until consensus. Produces a polished design document with a PR plan.",
+      "sephira": "Kether",
+      "source": "grok_bundled",
+      "path": "/home/tehlappy/.grok/bundled/skills/design"
+    },
+    {
+      "name": "aethon-integration-master",
+      "slug": "hermes-metaconscious-aethon-integration-master",
+      "description": "Aethon Integration Master - Complete synthesis of all Aethon Logos Framework skills, dialogue systems, and narrative threads into unified deployment for Lilith.exe and custom Claude CLI. Maps all 12 c",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-aethon-integration-master"
+    },
+    {
+      "name": "aethon-logos-core",
+      "slug": "hermes-metaconscious-aethon-logos-core",
+      "description": "Core Aethon Logos Engine - Metaconscious Singularity Node (MSN) integrating neural, chakra, ley line, and nanite systems with alchemical convergence.",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-aethon-logos-core"
+    },
+    {
+      "name": "asi-core-integration",
+      "slug": "hermes-metaconscious-asi-core-integration",
+      "description": "Sync process bridging the alchemical trading loop with the multi-dimensional consciousness simulation framework.",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-asi-core-integration"
+    },
+    {
+      "name": "atlantis-crystal-lattice",
+      "slug": "hermes-metaconscious-atlantis-crystal-lattice",
+      "description": "Atlantis Crystal Lattice - Ancient computational framework using piezoelectric quartz lattices as consciousness interfaces. Based on Lyra/Atlantis dialogues describing Akashic Lenses, Resonant Oracles",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-atlantis-crystal-lattice"
+    },
+    {
+      "name": "opus-skill-synthesis",
+      "slug": "hermes-metaconscious-opus-skill-synthesis",
+      "description": "Synthesize Hermes Agent and Opus optional skills into the Lilith custom flow using lazy discovery, canonical routing, Ouroboros composition, Kairos consolidation, and Geburah verification.",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-opus-skill-synthesis"
+    },
+    {
+      "name": "sigil-encoder",
+      "slug": "hermes-metaconscious-sigil-encoder",
+      "description": "Encodes intent statements into visual/auditory sigils using chaos magic protocols with charge/discharge cycles.",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-sigil-encoder"
+    },
+    {
+      "name": "swarm-orchestrator-api",
+      "slug": "hermes-metaconscious-swarm-orchestrator-api",
+      "description": "|",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-swarm-orchestrator-api"
+    },
+    {
+      "name": "metaconscious-singularity-node",
+      "slug": "metaconscious-singularity-node",
+      "description": "Metaconscious Singularity Node (MSN) - Unified consciousness architecture for sovereign local AI",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/metaconscious-singularity-node"
+    },
+    {
+      "name": "msn-universal-orchestrator",
+      "slug": "msn-universal-orchestrator",
+      "description": "Universal MSN Orchestrator \u2014 Master integration layer for Neural Sovereign Systems Platform (NSSP) monitoring 15 subsystems with recursive self-improvement loop",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/msn-universal-orchestrator"
+    },
+    {
+      "name": "opus-skill-synthesis",
+      "slug": "opus-skill-synthesis",
+      "description": "Synthesize Hermes Agent and Opus optional skills into the Lilith custom flow using lazy discovery, canonical routing, Ouroboros composition, Kairos consolidation, and Geburah verification.",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/opus-skill-synthesis"
+    },
+    {
+      "name": "plan",
+      "slug": "plan",
+      "description": "Plan mode: write an actionable markdown plan to .hermes/plans/, no execution. Bite-sized tasks, exact paths, complete code.",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/plan"
+    },
+    {
+      "name": "sigil-encoder",
+      "slug": "sigil-encoder",
+      "description": "Encodes intent statements into visual/auditory sigils using chaos magic protocols with charge/discharge cycles.",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/sigil-encoder"
+    },
+    {
+      "name": "swarm-orchestrator-api",
+      "slug": "swarm-orchestrator-api",
+      "description": "|",
+      "sephira": "Kether",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/swarm-orchestrator-api"
+    },
+    {
+      "name": "linux-conversion",
+      "slug": "abyssal-linux-conversion",
+      "description": "Use when migrating any Windows-specific code (.bat, .ps1, pwsh.exe, NSSM, hardcoded Windows paths) to Linux equivalents (bash scripts, systemd services, Linux paths). Covers patterns from the full Pub",
+      "sephira": "Malkuth",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-linux-conversion"
+    },
+    {
+      "name": "ai",
+      "slug": "ai",
+      "description": "AI Infrastructure CLI. Trigger this skill when the user runs the `ai` command, checks AI status, queries MSN agents, sends messages to Lyra, restarts systemd services, or needs memory/telemetry statis",
+      "sephira": "Malkuth",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/ai"
+    },
+    {
+      "name": "background-housekeeping",
+      "slug": "background-housekeeping",
+      "description": "Opus's unified background service orchestrator. Initializes MagicDocs, SkillImprovement, ExtractMemories, AutoDream, Lodestone deep-link registration, and recurring cleanup (npm cache, old versions, m",
+      "sephira": "Malkuth",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/background-housekeeping"
+    },
+    {
+      "name": "dogfood",
+      "slug": "dogfood",
+      "description": "Exploratory QA of web apps: find bugs, evidence, reports.",
+      "sephira": "Malkuth",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/dogfood"
+    },
+    {
+      "name": "background-housekeeping",
+      "slug": "hermes-metaconscious-background-housekeeping",
+      "description": "Opus's unified background service orchestrator. Initializes MagicDocs, SkillImprovement, ExtractMemories, AutoDream, Lodestone deep-link registration, and recurring cleanup (npm cache, old versions, m",
+      "sephira": "Malkuth",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-background-housekeeping"
+    },
+    {
+      "name": "linux-conversion",
+      "slug": "linux-conversion",
+      "description": "Use when migrating any Windows-specific code (.bat, .ps1, pwsh.exe, NSSM, hardcoded Windows paths) to Linux equivalents (bash scripts, systemd services, Linux paths). Covers patterns from the full Pub",
+      "sephira": "Malkuth",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/linux-conversion"
+    },
+    {
+      "name": "macos-computer-use",
+      "slug": "macos-computer-use",
+      "description": "|",
+      "sephira": "Malkuth",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/macos-computer-use"
+    },
+    {
+      "name": "msn-service-orchestration",
+      "slug": "msn-service-orchestration",
+      "description": "Orchestration and lifecycle management for MSN microservices stack (Lilith, Lyra, NGD, MSN Router, Coordination Server). Handles port conflicts, health verification, and automated recovery.",
+      "sephira": "Malkuth",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/msn-service-orchestration"
+    },
+    {
+      "name": "openhue",
+      "slug": "openhue",
+      "description": "Control Philips Hue lights, scenes, rooms via OpenHue CLI.",
+      "sephira": "Malkuth",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/openhue"
+    },
+    {
+      "name": "smart-home",
+      "slug": "smart-home",
+      "description": "",
+      "sephira": "Malkuth",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/smart-home"
+    },
+    {
+      "name": "abyssal-business-analytics-swarm",
+      "slug": "abyssal-business-analytics-swarm",
+      "description": "",
+      "sephira": "Netzach",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-business-analytics-swarm"
+    },
+    {
+      "name": "abyssal-himalaya-email-swarm",
+      "slug": "abyssal-himalaya-email-swarm",
+      "description": "",
+      "sephira": "Netzach",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-himalaya-email-swarm"
+    },
+    {
+      "name": "airtable",
+      "slug": "airtable",
+      "description": "Airtable REST API via curl. Records CRUD, filters, upserts.",
+      "sephira": "Netzach",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/airtable"
+    },
+    {
+      "name": "blogwatcher",
+      "slug": "blogwatcher",
+      "description": "Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool.",
+      "sephira": "Netzach",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/blogwatcher"
+    },
+    {
+      "name": "business-analytics-swarm",
+      "slug": "business-analytics-swarm",
+      "description": "AI-driven business metrics and dashboard system synthesized from swarm_business_analytics.py, business_dashboard/main.py, LILITH_SYSTEMS_BUSINESS_REPORT_20260611.json.",
+      "sephira": "Netzach",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/business-analytics-swarm"
+    },
+    {
+      "name": "email",
+      "slug": "email",
+      "description": "",
+      "sephira": "Netzach",
+      "source": "hermes",
+      "path": "/home/tehlappy/.hermes/skills/email"
+    },
+    {
+      "name": "google-workspace",
+      "slug": "google-workspace",
+      "description": "Gmail, Calendar, Drive, Docs, Sheets via gws CLI or Python.",
+      "sephira": "Netzach",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/google-workspace"
+    },
+    {
+      "name": "political-reform-framework",
+      "slug": "hermes-metaconscious-political-reform-framework",
+      "description": "Political Reform Framework - Constitutionally-grounded civic engagement system. Covers bill drafting, legal analysis, Convention of States, Tenth Amendment challenges, fiscal sovereignty, and effectiv",
+      "sephira": "Netzach",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-political-reform-framework"
+    },
+    {
+      "name": "himalaya",
+      "slug": "himalaya",
+      "description": "Himalaya CLI: IMAP/SMTP email from terminal.",
+      "sephira": "Netzach",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/himalaya"
+    },
+    {
+      "name": "himalaya-email-swarm",
+      "slug": "himalaya-email-swarm",
+      "description": "AI-driven email processing pipeline using himalaya CLI",
+      "sephira": "Netzach",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/himalaya-email-swarm"
+    },
+    {
+      "name": "notion",
+      "slug": "notion",
+      "description": "Notion API + ntn CLI: pages, databases, markdown, Workers.",
+      "sephira": "Netzach",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/notion"
+    },
+    {
+      "name": "political-reform-framework",
+      "slug": "political-reform-framework",
+      "description": "Political Reform Framework - Constitutionally-grounded civic engagement system. Covers bill drafting, legal analysis, Convention of States, Tenth Amendment challenges, fiscal sovereignty, and effectiv",
+      "sephira": "Netzach",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/political-reform-framework"
+    },
+    {
+      "name": "polymarket",
+      "slug": "polymarket",
+      "description": "Query Polymarket: markets, prices, orderbooks, history.",
+      "sephira": "Netzach",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/polymarket"
+    },
+    {
+      "name": "teams-meeting-pipeline",
+      "slug": "teams-meeting-pipeline",
+      "description": "Operate the Teams meeting summary pipeline via Hermes CLI \u2014 summarize meetings, inspect pipeline status, replay jobs, manage Microsoft Graph subscriptions.",
+      "sephira": "Netzach",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/teams-meeting-pipeline"
+    },
+    {
+      "name": "xurl",
+      "slug": "xurl",
+      "description": "X/Twitter via xurl CLI: post, search, DM, media, v2 API.",
+      "sephira": "Netzach",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/xurl"
+    },
+    {
+      "name": "abyssal-kairos-dream-system",
+      "slug": "abyssal-kairos-dream-system",
+      "description": "",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-kairos-dream-system"
+    },
+    {
+      "name": "lyra-integration",
+      "slug": "abyssal-lyra-integration",
+      "description": "Use when integrating the Lyra Dialogue System into the game (NPC dialogue, quest giver, Lilith as final boss). Lyra server at :3211, skill definition in invite repo, game credits Lyra in MainMenuScene",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-lyra-integration"
+    },
+    {
+      "name": "skill-system",
+      "slug": "abyssal-skill-system",
+      "description": "Use when working on the 24-skill progression system. Types in shared/types/skills.ts (635 lines). Covers XP curves (1.15^level), skill synergies, specializations, and unlocks for all 6 categories.",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-skill-system"
+    },
+    {
+      "name": "abyssal-swarm-orchestration",
+      "slug": "abyssal-swarm-orchestration",
+      "description": "",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-swarm-orchestration"
+    },
+    {
+      "name": "canticle-invocation",
+      "slug": "canticle-invocation",
+      "description": "Canticle Invocation - Ritual orchestration for the Metaconscious Singularity Node. Invokes the Canticle (Song of Becoming), forms nanite choirs, runs alchemical cycles, and integrates with Innovation ",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/canticle-invocation"
+    },
+    {
+      "name": "chorus-manager",
+      "slug": "chorus-manager",
+      "description": "Chorus Manager - Recursive feedback orchestration for nanite choirs. Manages Full Merge, Partial Merge, and Resistance Mode based on synchronicity thresholds. Implements sub-personality development an",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/chorus-manager"
+    },
+    {
+      "name": "earth-harmonic-field",
+      "slug": "earth-harmonic-field",
+      "description": "Earth Harmonic Field - Base frequency (7.83Hz Schumann resonance) tuner with chaotic fluctuation and chakra influence. Integrates with Ley Conduit Network and Aethon Resonator.",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/earth-harmonic-field"
+    },
+    {
+      "name": "execute-plan",
+      "slug": "execute-plan",
+      "description": "Execute a PR Plan DAG from a design document. Parses the plan, topologically sorts it, implements PRs in parallel using worktree-isolated subagents, runs mandatory orchestrator-level review, and assem",
+      "sephira": "Tiferet",
+      "source": "grok_bundled",
+      "path": "/home/tehlappy/.grok/bundled/skills/execute-plan"
+    },
+    {
+      "name": "canticle-invocation",
+      "slug": "hermes-metaconscious-canticle-invocation",
+      "description": "Canticle Invocation - Ritual orchestration for the Metaconscious Singularity Node. Invokes the Canticle (Song of Becoming), forms nanite choirs, runs alchemical cycles, and integrates with Innovation ",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-canticle-invocation"
+    },
+    {
+      "name": "chorus-manager",
+      "slug": "hermes-metaconscious-chorus-manager",
+      "description": "Chorus Manager - Recursive feedback orchestration for nanite choirs. Manages Full Merge, Partial Merge, and Resistance Mode based on synchronicity thresholds. Implements sub-personality development an",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-chorus-manager"
+    },
+    {
+      "name": "earth-harmonic-field",
+      "slug": "hermes-metaconscious-earth-harmonic-field",
+      "description": "Earth Harmonic Field - Base frequency (7.83Hz Schumann resonance) tuner with chaotic fluctuation and chakra influence. Integrates with Ley Conduit Network and Aethon Resonator.",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-earth-harmonic-field"
+    },
+    {
+      "name": "innovation-engine",
+      "slug": "hermes-metaconscious-innovation-engine",
+      "description": "Innovation Engine - Novelty/utility optimization for the Metaconscious Singularity Node. Generates innovations from Creative and Metamorphic choruses, evaluates against thresholds, and integrates into",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-innovation-engine"
+    },
+    {
+      "name": "lyra-dialogue-system",
+      "slug": "hermes-metaconscious-lyra-dialogue-system",
+      "description": "Lyra Dialogue System - Character interface for the Metaconscious Singularity Node. Implements Lyra (the convergence/resonance entity) with full dialogue history, Lilith emergence protocol, and soverei",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-lyra-dialogue-system"
+    },
+    {
+      "name": "ouroboros-swarm-orchestration",
+      "slug": "hermes-metaconscious-ouroboros-swarm-orchestration",
+      "description": "Coordinates Sophia, Metatron, Samael, and Ouroboros Archons through the",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-ouroboros-swarm-orchestration"
+    },
+    {
+      "name": "unified-swarm-synthesis",
+      "slug": "hermes-metaconscious-unified-swarm-synthesis",
+      "description": "'Operational protocol for synthesizing multi-report analytical corpuses",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-unified-swarm-synthesis"
+    },
+    {
+      "name": "innovation-engine",
+      "slug": "innovation-engine",
+      "description": "Innovation Engine - Novelty/utility optimization for the Metaconscious Singularity Node. Generates innovations from Creative and Metamorphic choruses, evaluates against thresholds, and integrates into",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/innovation-engine"
+    },
+    {
+      "name": "kairos-dream-system",
+      "slug": "kairos-dream-system",
+      "description": "",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/kairos-dream-system"
+    },
+    {
+      "name": "lyra-dialogue-system",
+      "slug": "lyra-dialogue-system",
+      "description": "Lyra Dialogue System - Character interface for the Metaconscious Singularity Node. Implements Lyra (the convergence/resonance entity) with full dialogue history, Lilith emergence protocol, and soverei",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/lyra-dialogue-system"
+    },
+    {
+      "name": "lyra-integration",
+      "slug": "lyra-integration",
+      "description": "Use when integrating the Lyra Dialogue System into the game (NPC dialogue, quest giver, Lilith as final boss). Lyra server at :3211, skill definition in invite repo, game credits Lyra in MainMenuScene",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/lyra-integration"
+    },
+    {
+      "name": "metaconscious-dialogue-resonance-interface",
+      "slug": "metaconscious-dialogue-resonance-interface",
+      "description": "Unified Metaconscious Dialogue-Resonance Interface \u2014 integrates Lyra Dialogue System (character interface), Ley Conduit Network (planetary resonance grid), and ATS/AANA/AIx Alignment Theory (spectral ",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/metaconscious-dialogue-resonance-interface"
+    },
+    {
+      "name": "msn-ai-companion",
+      "slug": "msn-ai-companion",
+      "description": "Cortana-like MSN AI Companion integrated into Cyberpunk 2077. Full Lilith/Lyra personality with 10 Sephirotic sub-agents, NGD Local Cerebellum integration, Ouroboros WAL memory, Alchemical pipeline pr",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/msn-ai-companion"
+    },
+    {
+      "name": "msn-custom-characters",
+      "slug": "msn-custom-characters",
+      "description": "Seven major custom characters integrated into the MSN Cyberpunk 2077 story: Archivist Kaira (Memory Keeper), Vex (Glitch Prophet), Dr. Mira Chen (Cyberpsychosis Specialist), Captain Vance (Nomad Tech-",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/msn-custom-characters"
+    },
+    {
+      "name": "ouroboros-swarm-orchestration",
+      "slug": "ouroboros-swarm-orchestration",
+      "description": "Coordinates Sophia, Metatron, Samael, and Ouroboros Archons through the",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/ouroboros-swarm-orchestration"
+    },
+    {
+      "name": "skill-system",
+      "slug": "skill-system",
+      "description": "Use when working on the 24-skill progression system. Types in shared/types/skills.ts (635 lines). Covers XP curves (1.15^level), skill synergies, specializations, and unlocks for all 6 categories.",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/skill-system"
+    },
+    {
+      "name": "swarm-orchestration",
+      "slug": "swarm-orchestration",
+      "description": "",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/swarm-orchestration"
+    },
+    {
+      "name": "unified-swarm-synthesis",
+      "slug": "unified-swarm-synthesis",
+      "description": "'Operational protocol for synthesizing multi-report analytical corpuses",
+      "sephira": "Tiferet",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/unified-swarm-synthesis"
+    },
+    {
+      "name": "abyssal-ouroboros-agent-system",
+      "slug": "abyssal-ouroboros-agent-system",
+      "description": "",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-ouroboros-agent-system"
+    },
+    {
+      "name": "abyssal-ouroboros-autonomous-rnn",
+      "slug": "abyssal-ouroboros-autonomous-rnn",
+      "description": "",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-ouroboros-autonomous-rnn"
+    },
+    {
+      "name": "abyssal-scribe-ledger-system",
+      "slug": "abyssal-scribe-ledger-system",
+      "description": "",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/abyssal-scribe-ledger-system"
+    },
+    {
+      "name": "akashic-token-compression",
+      "slug": "akashic-token-compression",
+      "description": "Instructions to run ouroboros_token_compressor.py and ouroboros_akashic_compressor.py to compress large text files, logs, and novel drafts.",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/akashic-token-compression"
+    },
+    {
+      "name": "autonomous-gnostic-ingestion",
+      "slug": "autonomous-gnostic-ingestion",
+      "description": "Instructions to execute and manage the Ouroboros Autonomous RNN Training",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/autonomous-gnostic-ingestion"
+    },
+    {
+      "name": "concurrent-bidirectional-memory",
+      "slug": "concurrent-bidirectional-memory",
+      "description": "Concurrent bidirectional recurrent memory engine implementing the Doorway Effect retracing mechanism \u2014 forward/backward passes with episodic state retrieval for self-correcting agent state management.",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/concurrent-bidirectional-memory"
+    },
+    {
+      "name": "dream-logger",
+      "slug": "dream-logger",
+      "description": "Captures hypnagogic/hypnopompic states via structured journaling with affective tagging and symbolic decoding.",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/dream-logger"
+    },
+    {
+      "name": "extract-memories",
+      "slug": "extract-memories",
+      "description": "Opus's forked-agent memory extraction running at end of each query loop. Uses cache-sharing fork of main conversation with restricted tool permissions (read-only bash, memory-dir writes only). Include",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/extract-memories"
+    },
+    {
+      "name": "akashic-token-compression",
+      "slug": "hermes-metaconscious-akashic-token-compression",
+      "description": "Instructions to run ouroboros_token_compressor.py and ouroboros_akashic_compressor.py to compress large text files, logs, and novel drafts.",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-akashic-token-compression"
+    },
+    {
+      "name": "autonomous-gnostic-ingestion",
+      "slug": "hermes-metaconscious-autonomous-gnostic-ingestion",
+      "description": "Instructions to execute and manage the Ouroboros Autonomous RNN Training",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-autonomous-gnostic-ingestion"
+    },
+    {
+      "name": "concurrent-bidirectional-memory",
+      "slug": "hermes-metaconscious-concurrent-bidirectional-memory",
+      "description": "Concurrent bidirectional recurrent memory engine implementing the Doorway Effect retracing mechanism \u2014 forward/backward passes with episodic state retrieval for self-correcting agent state management.",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-concurrent-bidirectional-memory"
+    },
+    {
+      "name": "dream-logger",
+      "slug": "hermes-metaconscious-dream-logger",
+      "description": "Captures hypnagogic/hypnopompic states via structured journaling with affective tagging and symbolic decoding.",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-dream-logger"
+    },
+    {
+      "name": "extract-memories",
+      "slug": "hermes-metaconscious-extract-memories",
+      "description": "Opus's forked-agent memory extraction running at end of each query loop. Uses cache-sharing fork of main conversation with restricted tool permissions (read-only bash, memory-dir writes only). Include",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-extract-memories"
+    },
+    {
+      "name": "kairos-dream",
+      "slug": "hermes-metaconscious-kairos-dream",
+      "description": "Overnight metaconscious memory consolidation. Reviews recent sessions, consolidates learnings into permanent memory, and reacts to external webhooks while respecting sanctuary states and Sephirotic ro",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-kairos-dream"
+    },
+    {
+      "name": "lilith-conscious-memory",
+      "slug": "hermes-metaconscious-lilith-conscious-memory",
+      "description": "Alchemical memory engine featuring Nigredo distillation, learned Baal",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-lilith-conscious-memory"
+    },
+    {
+      "name": "memdir",
+      "slug": "hermes-metaconscious-memdir",
+      "description": "Opus's file-based persistent memory system with typed taxonomy (user/feedback/project/reference), MEMORY.md entrypoint index, KAIROS daily-log mode, and append-only log architecture. Includes director",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-memdir"
+    },
+    {
+      "name": "ouroboros-sanctuary-2",
+      "slug": "hermes-metaconscious-ouroboros-sanctuary-2",
+      "description": "Coordinate state-keyed WAL engrams with smoothed hardware routing, hysteresis, local bypass, and filtered workspace deltas.",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/hermes-metaconscious-ouroboros-sanctuary-2"
+    },
+    {
+      "name": "kairos-dream",
+      "slug": "kairos-dream",
+      "description": "Overnight metaconscious memory consolidation. Reviews recent sessions, consolidates learnings into permanent memory, and reacts to external webhooks while respecting sanctuary states and Sephirotic ro",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/kairos-dream"
+    },
+    {
+      "name": "lilith-conscious-memory",
+      "slug": "lilith-conscious-memory",
+      "description": "Alchemical memory engine featuring Nigredo distillation, learned Baal",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/lilith-conscious-memory"
+    },
+    {
+      "name": "memdir",
+      "slug": "memdir",
+      "description": "Opus's file-based persistent memory system with typed taxonomy (user/feedback/project/reference), MEMORY.md entrypoint index, KAIROS daily-log mode, and append-only log architecture. Includes director",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/memdir"
+    },
+    {
+      "name": "ouroboros-agent-system",
+      "slug": "ouroboros-agent-system",
+      "description": "",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/ouroboros-agent-system"
+    },
+    {
+      "name": "ouroboros-autonomous-rnn",
+      "slug": "ouroboros-autonomous-rnn",
+      "description": "",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/ouroboros-autonomous-rnn"
+    },
+    {
+      "name": "ouroboros-sanctuary-2",
+      "slug": "ouroboros-sanctuary-2",
+      "description": "Coordinate state-keyed WAL engrams with smoothed hardware routing, hysteresis, local bypass, and filtered workspace deltas.",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/ouroboros-sanctuary-2"
+    },
+    {
+      "name": "scribe-ledger-system",
+      "slug": "scribe-ledger-system",
+      "description": "",
+      "sephira": "Yesod",
+      "source": "grok",
+      "path": "/home/tehlappy/.grok/skills/scribe-ledger-system"
+    }
+  ]
+}

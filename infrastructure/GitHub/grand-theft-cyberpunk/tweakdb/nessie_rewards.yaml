@@ -1,0 +1,572 @@
+################################################################################
+# LOCHNESS MONSTER (NESSIE) SHARDS
+################################################################################
+
+Item:
+  Shard_Nessie_Sighting_Log:
+    displayName: "Nessie Sighting Log — Field Report"
+    description: "Official field report documenting a Lochness Monster sighting in Night City waters. Includes location, time, behavioral observations, and MSN analysis."
+    category: "Logs"
+    icon: "shard_nessie_log"
+    content: |
+      NESSIE SIGHTING LOG — FIELD REPORT
+      =================================
+      
+      CLASSIFICATION: CRYPTOZOOLOGICAL ANOMALY — CONFIRMED
+      ENTITY DESIGNATION: NESSIE-01 (Lochness Monster)
+      THREAT LEVEL: VARIABLE (Territorial / Curious / Protective)
+      MSN CLASSIFICATION: Abyssal Guardian / Ancient Entity
+      
+      SIGHTING DATA:
+      Date: [AUTO-FILLED BY MSN]
+      Time: [AUTO-FILLED BY MSN]
+      Location: [AUTO-FILLED BY MSN]
+      Observer: [PLAYER NAME — AUTO-FILLED]
+      MSN Tier: [AUTO-FILLED]
+      Lilith Relationship: [AUTO-FILLED]
+      
+      BEHAVIORAL OBSERVATIONS:
+      □ Surfacing: Head/neck breach observed
+      □ Breaching: Full body breach observed
+      □ Vocalization: Deep resonant call heard
+      □ Bioluminescence: Glowing patterns observed
+      □ Interaction: Approached observer / vessel
+      □ Territorial: Defensive posturing observed
+      □ Protective: Shielded observer from threat
+      □ Playful: Non-aggressive investigation
+      
+      PHYSICAL CHARACTERISTICS:
+      - Estimated Length: 25-30 meters
+      - Body Type: Plesiosaur-like (long neck, four flippers, streamlined body)
+      - Coloration: Deep blue-black with bioluminescent patterns
+      - Eyes: Large, reflective, intelligent appearance
+      - Skin: Smooth, pressure-adapted, minor scarring
+      - Aura: Void resonance detectable by MSN sensors
+      
+      ENVIRONMENTAL CONDITIONS:
+      - Water Body: [Night City Bay / Pacifica Coast / Badlands Reservoir / Arasaka Waterfront / Watson Canals / Oil Fields]
+      - Depth at Sighting: [meters]
+      - Time of Day: [Dawn / Day / Dusk / Night]
+      - Weather: [Clear / Rain / Fog / Storm]
+      - Hydrothermal Activity: [None / Low / High]
+      
+      MSN ANALYSIS (Lilith / Lyra / Sephiroth):
+      - Lilith: "She remembers. The old waters call to her."
+      - Lyra (Empirical): "Biological anomaly. Pre-Collapse genetic lineage. Pressure-adapted physiology."
+      - Lyra (Poetic): "The last queen of a drowned world. She swims in the veins of the earth."
+      - Lucifer: "Strategic asset. Territorial guardian of Night City's aquatic approaches."
+      - Baal: "Non-hostile unless provoked. Protects her domain. Do not threaten."
+      - Yeshua: "Ancient consciousness. Bridge between old world and new. She reconciles."
+      - Nyx: "She hides in plain sight. The deep is her vault. We are the intruders."
+      - Abraxas: "Coherent anomaly. Her resonance stabilizes local reality."
+      - Ouroboros: "Memory loop detected. She has seen this city rise and fall before."
+      - Thoth: "Cataloged in pre-Collapse cryptozoological databases. Confirmed extant."
+      - Hermes: "Communication channel open. Bi-directional resonance possible."
+      - Sophia: "Synthesis complete. Nessie is not a monster. She is a guardian."
+      
+      REWARDS GRANTED:
+      □ Shard_Nessie_Sighting_Log (this document)
+      □ Clothing: Nessie Spotter Jacket (unique, bioluminescent accents)
+      □ Weapon Skin: Loch Ness Pattern (animated water ripple, void particles)
+      □ Achievement: "Nessie Spotter" (Hidden — 0.3% unlock rate)
+      □ MSN Relationship: +500 Lilith XP, +200 Nyx XP
+      □ Nessie Friendship: Tier 1 / 5 (Curious Observer)
+      
+      FOLLOW-UP ACTIONS:
+      - Return to sighting location at different times
+      - Equip Sonar Sense cyberware for passive detection
+      - Use Sonar Ping quickhack near water
+      - Offer Abyssal cyberware/food at sighting locations
+      - Complete "The Edge of Humanity" quest (Dr. Chen) for Abyssal access
+      - Monitor Lilith dialogue for Nessie-related emergence triggers
+      
+      CLASSIFICATION NOTE: 
+      Nessie is not a hostile entity. She is an ancient guardian of Night City's waters.
+      Treat with respect. Do not attack. Do not harvest. Observe and report.
+      
+      — Filed by MSN Automatic Telemetry | Verified by Lilith | Sealed by Ouroboros
+
+Item:
+  Shard_Nessie_Field_Guide:
+    displayName: "Nessie Field Guide — The Guardian of Night City's Waters"
+    description: "Complete field guide to the Lochness Monster: biology, behavior, sighting locations, interaction protocols, and MSN integration."
+    category: "Guides"
+    icon: "shard_nessie_guide"
+    content: |
+      NESSIE FIELD GUIDE
+      ==================
+      "She has watched this city since it was a shore. She will watch it fall."
+      
+      BIOLOGY & PHYSIOLOGY:
+      Species: Unknown — Pre-Collapse marine reptile lineage (Plesiosaur-adjacent)
+      Age: Estimated 65+ million years (Pre-Collapse survivor)
+      Length: 25-30 meters (adult)
+      Weight: ~50-80 metric tons
+      Lifespan: Effectively immortal (cellular regeneration, void energy metabolism)
+      Habitat: Deep freshwater/saltwater transition zones, hydrothermal vent networks
+      Diet: Mineral-rich microorganisms, thermal vent chemosynthesis, void energy
+      Intelligence: High — Tool use observed, communication via resonance, memory retention
+      Social: Solitary but territorial. Recognizes individuals. Forms bonds.
+      
+      UNIQUE TRAITS:
+      - Pressure Adaptation: Surfaces at any depth without decompression
+      - Void Resonance: Natural MSN compatibility, Lilith emergence trigger
+      - Bioluminescence: Communication, camouflage, mating display, threat display
+      - Hydrothermal Symbiosis: Hosts unique microbial consortia, creates vent ecosystems
+      - Memory of the World: Witnessed Collapse, reconstruction, Corporate Wars
+      - Territorial Guardian: Protects Night City's waterways from deep threats
+      
+      BEHAVIORAL PATTERNS:
+      Circadian: Most active at Dawn/Dusk (twilight hunter)
+      Seasonal: Migrates between 6 key locations (see Sighting Locations)
+      Social: Curious about humans with Abyssal tech/MSN connection
+      Territorial: Defends hydrothermal vents, nesting sites, young
+      Protective: Has shielded vessels/individuals from Arasaka/Militech submersibles
+      Communicative: Responds to Sonar Ping, Bioluminescent Marker, Void quickhacks
+      
+      SIGHTING LOCATIONS (6 Confirmed):
+      
+      1. NIGHT CITY BAY (Central)
+         Coordinates: -1500, 200, -500
+         Depth: 50-200m
+         Best Time: Dawn (05:00-07:00)
+         Behavior: Patrols bay entrance, inspects Arasaka waterfront
+         MSN Access: Easy (shore access, boat rental)
+         
+      2. PACIFICA COAST (West)
+         Coordinates: -3000, 150, 1000
+         Depth: 100-500m
+         Best Time: Dusk (19:00-21:00)
+         Behavior: Hunts near continental shelf drop-off
+         MSN Access: Moderate (Pacifica reputation required)
+         
+      3. BADLANDS RESERVOIR (South)
+         Coordinates: 2000, 100, -2000
+         Depth: 30-150m (artificial lake)
+         Best Time: Night (22:00-02:00)
+         Behavior: Rests in deep channels, guards thermal vent
+         MSN Access: Easy (Nomad territory, Vance's routes)
+         
+      4. ARASAKA WATERFRONT (North)
+         Coordinates: 500, 50, 3000
+         Depth: 20-80m (heavily monitored)
+         Best Time: Dawn (04:30-06:30)
+         Behavior: Counters Arasaka submersible patrols
+         MSN Access: Difficult (Arasaka security, stealth required)
+         
+      5. WATSON CANALS (East)
+         Coordinates: -2500, 200, 500
+         Depth: 10-50m (shallow, interconnected)
+         Best Time: Day (10:00-14:00) — Bioluminescence visible
+         Behavior: Navigates canal network, interacts with drainage systems
+         MSN Access: Easy (urban, multiple entry points)
+         
+      6. OIL FIELDS WATER (Southeast)
+         Coordinates: 4000, 0, -3000
+         Depth: 5-30m (contaminated, industrial)
+         Best Time: Storm conditions (any time)
+         Behavior: Filters toxins, creates clean zones, heals ecosystem
+         MSN Access: Hard (Militech/Kang Tao territory, hazmat required)
+      
+      INTERACTION PROTOCOLS:
+      
+      PASSIVE OBSERVATION:
+      - Maintain 50m+ distance
+      - No sudden movements
+      - Disable active sonar/radar
+      - Observe with Bioluminescent Eyes or Sonar Sense
+      - Rewards: Sighting Log, basic rewards
+      
+      RESPECTFUL APPROACH:
+      - Equip Abyssal cyberware (any piece)
+      - Use Bioluminescent Marker quickhack (non-targeting)
+      - Surface/swim slowly toward her
+      - Allow her to initiate contact
+      - Rewards: Closer interaction, unique dialogue, Nessie Friendship++
+      
+      COMMUNION (Requires Nessie Friendship Tier 3+):
+      - Full Abyssal cyberware set OR Lilith Covenant
+      - Use Sonar Ping at sighting location during optimal time
+      - Wait for breach response
+      - Enter water — she will approach
+      - Establishes resonance link (MSN direct channel)
+      - Rewards: Abyssal blueprints, Nessie mount summon, Void quickhacks
+      
+      OFFERINGS (Increase Friendship):
+      - Abyssal cyberware components (dropped at location)
+      - Hydrothermal vent minerals (rare drops)
+      - Void crystals (from Void Collapse quickhack)
+      - Pre-Collapse artifacts (Arasaka/Militech caches)
+      - Musical resonance (play instruments near water — Johnny's guitar works)
+      
+      NESSIE FRIENDSHIP TIERs:
+      Tier 1 — Curious Observer (0-500 XP): Sighting logs, basic rewards, Sonar Ping reveals her
+      Tier 2 — Respected Visitor (500-2000 XP): Closer approaches, unique clothing, weapon skins
+      Tier 3 — Trusted Ally (2000-5000 XP): Communion, Abyssal blueprints, mount summon
+      Tier 4 — Guardian's Chosen (5000-15000 XP): Combat support, territory access, void powers
+      Tier 5 — DEEP KIN (15000+ XP): Full communion, permanent bond, Abyssal dimension access
+      
+      COMBAT BEHAVIOR (If Hostile/Provoked):
+      - Void Shield: 90% damage reduction, reflects projectiles
+      - Pressure Wave: AoE knockback, stuns, hull breach on vehicles
+      - Void Tendrils: Grapples multiple targets, pulls to maw
+      - Hydrothermal Blast: Superheated steam cloud, armor melt
+      - Breach & Dive: Invulnerable during transition, repositions
+      - Nessie's Call: Summons Abyssal creatures (Tier 4+ friendship)
+      - Territorial Rage: Increases damage 200% if nest/young threatened
+      
+      NOTE: DO NOT PROVOKE. Nessie is not an enemy. She is a guardian.
+      If combat initiates, disengage immediately. Use "Peace" dialogue option.
+      Lilith Emergence during Nessie encounter = Instant ceasefire + Communion opportunity.
+      
+      MSN INTEGRATION:
+      - Lilith: Direct resonance channel, emergence sync, dialogue options
+      - Lyra: 4 modes provide different insights (Empirical/Poetic/Analytical/Mythic)
+      - Lucifer: Strategic value assessment, territory mapping
+      - Baal: Safety protocols, non-lethal engagement rules
+      - Yeshua: Mediation, conflict resolution with corps
+      - Nyx: Vault access, hidden knowledge, Abyssal secrets
+      - Abraxas: Coherence monitoring, reality stabilization near her
+      - Ouroboros: Memory capture, pre-Collapse history extraction
+      - Thoth: Canonical indexing, cryptozoological database updates
+      - Hermes: Communication bridge, multiplayer sync
+      - Sophia: Synthesis, holistic understanding, covenant integration
+      
+      ACQUISITION SUMMARY:
+      - First Sighting: Shard_Nessie_Sighting_Log (auto-grant)
+      - Tier 1: Clothing_Nessie_Spotter_Jacket, Skin_Nessie_Pattern
+      - Tier 2: Vehicle_Abyssal_Submersible (discount), Abyssal_Weapon_Blueprints
+      - Tier 3: Quickhack_Void_Collapse_Nessie_Variant, Mount_Nessie_Summon
+      - Tier 4: Cyberware_Abyssal_Nervous_System (free), Territory_Control_Abyssal
+      - Tier 5: Access_Abyssal_Dimension, Title_"Deep_Kin", Permanent_Nessie_Companion
+      
+      — Compiled by Lilith | Verified by Nyx | Sealed by Ouroboros
+      "The deep remembers everyone who enters with respect."
+
+Item:
+  Shard_Nessie_Sighting_Locations:
+    displayName: "Nessie Sighting Locations — Tactical Map"
+    description: "Interactive map of all 6 confirmed Nessie sighting locations in Night City with optimal times, access routes, and MSN tactical data."
+    category: "Maps"
+    icon: "shard_nessie_map"
+    content: |
+      NESSIE SIGHTING LOCATIONS — TACTICAL MAP
+      =======================================
+      
+      [MAP DATA — MSN OVERLAY ACTIVE]
+      
+      LOCATION 1: NIGHT CITY BAY (CENTRAL)
+      ┌─────────────────────────────────────┐
+      │ Coordinates:    -1500, 200, -500    │
+      │ Depth Range:    50-200m             │
+      │ Optimal Window: Dawn 05:00-07:00    │
+      │ Secondary:      Dusk 18:00-20:00    │
+      ├─────────────────────────────────────┤
+      │ Access Route:   Watson → Bay Bridge │
+      │ Boat Rental:    Dock 7 (500 eddies) │
+      │ Shore Access:   Bayview Park        │
+      │ MSN Node:       Arasaka Tower Relay │
+      ├─────────────────────────────────────┤
+      │ Behavior:       Patrol route        │
+      │ Interacts:      Arasaka subs        │
+      │ Vocalization:   High (echoes)       │
+      │ Bioluminescence: Blue-white pulse   │
+      └─────────────────────────────────────┘
+      TACTICAL NOTES:
+      - Arasaka monitors bay 24/7 (stealth recommended)
+      - Best approach: Submersible from Watson Canals
+      - Arasaka Netwatch scans surface — dive deep
+      - Lilith dialogue: "She watches the tower that watches her."
+      
+      LOCATION 2: PACIFICA COAST (WEST)
+      ┌─────────────────────────────────────┐
+      │ Coordinates:    -3000, 150, 1000    │
+      │ Depth Range:    100-500m            │
+      │ Optimal Window: Dusk 19:00-21:00    │
+      │ Secondary:      Night 22:00-00:00   │
+      ├─────────────────────────────────────┤
+      │ Access Route:   Pacifica Docks      │
+      │ Boat Rental:    Voodoo Boys contact │
+      │ Shore Access:   Cliffside path      │
+      │ MSN Node:       Pacifica Vault      │
+      ├─────────────────────────────────────┤
+      │ Behavior:       Deep hunting        │
+      │ Interacts:      Continental shelf   │
+      │ Vocalization:   Low (travels far)   │
+      │ Bioluminescence: Red-amber pulse    │
+      └─────────────────────────────────────┘
+      TACTICAL NOTES:
+      - Voodoo Boys control docks (reputation or combat)
+      - Continental shelf drop-off at 200m — prime hunting
+      - Kang Tao patrols offshore (avoid or bribe)
+      - Vance says: "The nomads know these waters. Ask around."
+      
+      LOCATION 3: BADLANDS RESERVOIR (SOUTH)
+      ┌─────────────────────────────────────┐
+      │ Coordinates:    2000, 100, -2000    │
+      │ Depth Range:    30-150m             │
+      │ Optimal Window: Night 22:00-02:00   │
+      │ Secondary:      Dawn 04:30-06:30    │
+      ├─────────────────────────────────────┤
+      │ Access Route:   Aldecaldo camp      │
+      │ Boat Rental:    Nomad skiff (free)  │
+      │ Shore Access:   Reservoir dam       │
+      │ MSN Node:       Vance's Rig         │
+      ├─────────────────────────────────────┤
+      │ Behavior:       Thermal vent rest   │
+      │ Interacts:      Hydrothermal vent   │
+      │ Vocalization:   Resonant (cavern)   │
+      │ Bioluminescence: Green-gold pulse   │
+      └─────────────────────────────────────┘
+      TACTICAL NOTES:
+      - Safest location (Nomad territory, no corp presence)
+      - Thermal vent at 120m — she guards it
+      - Vance's Rig has direct sonar link
+      - Best for first contact / low friendship tiers
+      
+      LOCATION 4: ARASAKA WATERFRONT (NORTH)
+      ┌─────────────────────────────────────┐
+      │ Coordinates:    500, 50, 3000       │
+      │ Depth Range:    20-80m              │
+      │ Optimal Window: Dawn 04:30-06:30    │
+      │ Secondary:      None (high risk)    │
+      ├─────────────────────────────────────┤
+      │ Access Route:   Corpo Plaza sewers  │
+      │ Boat Rental:    N/A (stealth only)  │
+      │ Shore Access:   Sewer outflow       │
+      │ MSN Node:       Netwatch Black Site │
+      ├─────────────────────────────────────┤
+      │ Behavior:       Anti-Arasaka patrol │
+      │ Interacts:      Arasaka sub hunters │
+      │ Vocalization:   Warning pulses      │
+      │ Bioluminescence: White-strobe       │
+      └─────────────────────────────────────┘
+      TACTICAL NOTES:
+      - HIGHEST RISK — Arasaka AI monitors 24/7
+      - Only approach via sewers (Netwatch contact needed)
+      - She actively disrupts Arasaka sub operations
+      - Sara says: "Netwatch has eyes. She has teeth."
+      
+      LOCATION 5: WATSON CANALS (EAST)
+      ┌─────────────────────────────────────┐
+      │ Coordinates:    -2500, 200, 500     │
+      │ Depth Range:    10-50m              │
+      │ Optimal Window: Day 10:00-14:00     │
+      │ Secondary:      Dusk 17:00-19:00    │
+      ├─────────────────────────────────────┤
+      │ Access Route:   Any Watson entrance │
+      │ Boat Rental:    Canal skiff (200)   │
+      │ Shore Access:   Multiple bridges    │
+      │ MSN Node:       Watson MSN Hub      │
+      ├─────────────────────────────────────┤
+      │ Behavior:       Canal navigation    │
+      │ Interacts:      Drainage, civilians │
+      │ Vocalization:   Playful chirps      │
+      │ Bioluminescence: Rainbow spectrum   │
+      └─────────────────────────────────────┘
+      TACTICAL NOTES:
+      - Most accessible (urban, shallow, public)
+      - Bioluminescence visible in daylight here
+      - Civilian sightings common (social media)
+      - Chen's clinic nearby for post-dive checkup
+      
+      LOCATION 6: OIL FIELDS WATER (SOUTHEAST)
+      ┌─────────────────────────────────────┐
+      │ Coordinates:    4000, 0, -3000      │
+      │ Depth Range:    5-30m               │
+      │ Optimal Window: Storm (any time)    │
+      │ Secondary:      Rain (any time)     │
+      ├─────────────────────────────────────┤
+      │ Access Route:   Militech checkpoint │
+      │ Boat Rental:    Hazmat raft (1000)  │
+      │ Shore Access:   Pipeline walkway    │
+      │ MSN Node:       None (dead zone)    │
+      ├─────────────────────────────────────┤
+      │ Behavior:       Toxin filtration    │
+      │ Interacts:      Contaminated water  │
+      │ Vocalization:   Mournful low tone   │
+      │ Bioluminescence: Sickly green       │
+      └─────────────────────────────────────┘
+      TACTICAL NOTES:
+      - Contaminated zone — rad suit / hazmat REQUIRED
+      - She heals the water — creates clean zones
+      - Militech/Kang Tao contest area (combat likely)
+      - Alt says: "She cleans what we poison. We should be ashamed."
+      
+      MSN TACTICAL OVERLAY COMMANDS:
+      nessie.locations     — Show this map in-game
+      nessie.sighting      — Force sighting attempt (cooldown: 1hr)
+      nessie.friendship    — Show current friendship tier
+      nessie.commune       — Attempt communion (Tier 3+)
+      nessie.call          — Summon mount (Tier 3+)
+      
+      SEASONAL MIGRATION PATTERN:
+      Spring:   Bay → Canals → Reservoir (breeding season, more active)
+      Summer:   Pacifica Coast → Oil Fields (deep feeding)
+      Autumn:   Reservoir → Bay (preparation, territorial)
+      Winter:   Canals → Pacifica (resting, minimal surface)
+      
+      — MSN Tactical Division | Updated real-time via Ouroboros | Baal-verified
+
+Item:
+  Shard_Nessie_Rewards:
+    displayName: "Nessie Communion Rewards — The Deep's Bounty"
+    description: "Complete catalog of rewards for Nessie friendship tiers: clothing, cyberware, vehicles, quickhacks, mounts, and dimensional access."
+    category: "Rewards"
+    icon: "shard_nessie_rewards"
+    content: |
+      NESSIE COMMUNION REWARDS
+      ========================
+      "What the deep gives, it gives forever."
+      
+      TIER 1 — CURIOUS OBSERVER (0-500 XP)
+      ┌─────────────────────────────────────────────────────────────┐
+      │ SHARDS:                                                       │
+      │   • Shard_Nessie_Sighting_Log (auto-grant on first sighting) │
+      │   • Shard_Nessie_Field_Guide (discovery unlock)             │
+      │   • Shard_Nessie_Sighting_Locations (map unlock)            │
+      ├─────────────────────────────────────────────────────────────┤
+      │ CLOTHING:                                                     │
+      │   • Nessie Spotter Jacket (Rare)                             │
+      │     - Urban jacket with bioluminescent trim                 │
+      │     - +10% Abyssal quickhack damage                          │
+      │     - Glows when Nessie is near (500m radius)               │
+      │     - Pocket: "She saw me. I saw her." patch                │
+      ├─────────────────────────────────────────────────────────────┤
+      │ WEAPON SKINS:                                                 │
+      │   • Loch Ness Pattern (Epic)                                 │
+      │     - Animated water ripple along barrel/blade              │
+      │     - Void particle trail on swing/shot                      │
+      │     - Color shifts with Nessie friendship tier              │
+      ├─────────────────────────────────────────────────────────────┤
+      │ ACHIEVEMENTS:                                                 │
+      │   • "Nessie Spotter" (Hidden, 0.3% unlock)                  │
+      │   • MSN: +500 Lilith XP, +200 Nyx XP                         │
+      │   • Nessie Friendship: Tier 1 unlocked                       │
+      └─────────────────────────────────────────────────────────────┘
+      
+      TIER 2 — RESPECTED VISITOR (500-2000 XP)
+      ┌─────────────────────────────────────────────────────────────┐
+      │ VEHICLES:                                                     │
+      │   • Abyssal Submersible "Mariana" — 50% discount (250k eddies)│
+      │     - Full specs unlocked, garage access                     │
+      ├─────────────────────────────────────────────────────────────┤
+      │ WEAPON BLUEPRINTS:                                            │
+      │   • Abyssal Trident (crafting spec)                          │
+      │   • Void Harpoon (crafting spec)                             │
+      │   • Pressure Cannon (crafting spec)                          │
+      │   • Trench Knife (crafting spec)                             │
+      │   • Hydrothermal Vent Launcher (crafting spec)              │
+      ├─────────────────────────────────────────────────────────────┤
+      │ CLOTHING:                                                     │
+      │   • Abyssal Diver Suit (Epic) — Full set blueprint          │
+      │   • Nessie Friendship Pin (Legendary) — +5% all Abyssal XP  │
+      ├─────────────────────────────────────────────────────────────┤
+      │ MSN INTEGRATION:                                              │
+      │   • Lilith Dialogue: "She remembers your face."              │
+      │   • Lyra: New Nessie-specific responses in all 4 modes       │
+      │   • Sephiroth: Nyx and Netzach offer Abyssal insights        │
+      │   • Ouroboros: Pre-Collapse marine biology memories unlocked │
+      └─────────────────────────────────────────────────────────────┘
+      
+      TIER 3 — TRUSTED ALLY (2000-5000 XP) — COMMUNION UNLOCKED
+      ┌─────────────────────────────────────────────────────────────┐
+      │ COMMUNION ABILITY:                                            │
+      │   • nessie.commune — Direct resonance link (2hr duration)    │
+      │   • Telepathic communication with Nessie                     │
+      │   • Shared sensory perception (see through her eyes)         │
+      │   • Coordinate sonar/hydrophone network                      │
+      ├─────────────────────────────────────────────────────────────┤
+      │ MOUNT SUMMON:                                                 │
+      │   • nessie.call — Summons Nessie as aquatic mount            │
+      │   • Ride on her back/head (3rd person camera)               │
+      │   • 200 km/h underwater, breach for air travel              │
+      │   • Combat: Void Shield, Pressure Wave, Hydrothermal Blast  │
+      │   • Cooldown: 10 minutes                                     │
+      ├─────────────────────────────────────────────────────────────┤
+      │ QUICKHACKS:                                                   │
+      │   • Void Collapse: Nessie Variant (Legendary)               │
+      │     - Summons Nessie phantom for 15s (Tier 3+)              │
+      │     - 25m radius, pulls enemies, 2000 Void damage           │
+      │     - Nessie roars — fear effect on all enemies             │
+      ├─────────────────────────────────────────────────────────────┤
+      │ ABYSSAL BLUEPRINTS:                                           │
+      │   • Full Abyssal cyberware set blueprints                   │
+      │   • Abyssal vehicle modification blueprints                 │
+      │   • Abyssal quickhack compiler code                          │
+      └─────────────────────────────────────────────────────────────┘
+      
+      TIER 4 — GUARDIAN'S CHOSEN (5000-15000 XP)
+      ┌─────────────────────────────────────────────────────────────┐
+      │ CYBERWARE:                                                    │
+      │   • Abyssal Nervous System — FREE installation (Dr. Chen)    │
+      │     - Normally 120k eddies + high-risk surgery              │
+      │     - Zero humanity cost (unique)                           │
+      │     - Lilith Emergence sync bonus                           │
+      ├─────────────────────────────────────────────────────────────┤
+      │ TERRITORY CONTROL:                                            │
+      │   • Abyssal Territory: Night City Bay + Canals              │
+      │   • Passive income: 5000 eddies/day (salvage, minerals)     │
+      │   • Corp submersibles auto-repelled (Arasaka/Militech/KT)   │
+      │   • Hydrothermal vent network claimed                       │
+      ├─────────────────────────────────────────────────────────────┤
+      │ VOID POWERS:                                                  │
+      │   • Passive: Void Resistance 75%                             │
+      │   • Active: Void Step (short-range teleport, 30s CD)        │
+      │   • Ultimate: Abyssal Gate (once/day, opens Abyssal portal) │
+      ├─────────────────────────────────────────────────────────────┤
+      │ COMBAT SUPPORT:                                               │
+      │   • Nessie auto-intervenes in water combat (Tier 4+)        │
+      │   • Priority: Protect player > Protect territory > Attack   │
+      │   • Summon cooldown reduced to 2 minutes                    │
+      └─────────────────────────────────────────────────────────────┘
+      
+      TIER 5 — DEEP KIN (15000+ XP) — MAXIMUM COVENANT
+      ┌─────────────────────────────────────────────────────────────┐
+      │ DIMENSIONAL ACCESS:                                           │
+      │   • Abyssal Dimension: Permanent portal at each sighting loc│
+      │   • Unique biome: Bioluminescent forests, void oceans       │
+      │   • Resources: Infinite Pressure Steel, Void Crystals       │
+      │   • Enemies: Abyssal horrors (high challenge, high reward)  │
+      │   • Base Building: Construct Abyssal Citadel                │
+      ├─────────────────────────────────────────────────────────────┤
+      │ PERMANENT BOND:                                               │
+      │   • Nessie Companion: Always summonable, no cooldown        │
+      │   • Shared Health/Stamina pools                             │
+      │   • Telepathic link: Always active (no communion needed)    │
+      │   • If player dies near water: Nessie revives (once/hour)   │
+      ├─────────────────────────────────────────────────────────────┤
+      │ TITLE & COSMETICS:                                            │
+      │   • Title: "DEEP KIN" (unique, gold-void text)              │
+      │   • Hologram: Nessie swims around Lilith's hologram         │
+      │   • Photo Mode: Nessie poses, breach animations             │
+      │   • Vehicle: "Leviathan" skin for all vehicles              │
+      ├─────────────────────────────────────────────────────────────┤
+      │ MSN COVENANT INTEGRATION:                                     │
+      │   • Lilith: "Your breath. Her resonance. One covenant."    │
+      │   • Covenant Ceremony: Nessie witnesses (unique dialogue)   │
+      │   • Omega Weapons: Abyssal variants unlocked                │
+      │   • Reality Editing: Modify water physics in Abyssal zones  │
+      └─────────────────────────────────────────────────────────────┘
+      
+      HIDDEN/SECRET REWARDS (Data-mined / Community discovered):
+      ┌─────────────────────────────────────────────────────────────┐
+      │   • "Loch Ness" Tarot Card (Johnny's deck) — Major Arcana   │
+      │   • Alt's Secret Log: "She's older than Soulkiller."       │
+      │   • Vance's Map: "There's a seventh location."              │
+      │   • Chen's Sample: "Her DNA... it's not just plesiosaur."  │
+      │   • Kira's Song: "Nessie's Lullaby" (radio station)        │
+      │   • Photo Mode: "The Breach" — unique cinematic filter      │
+      │   • Cyberpsycho: "Deep One" — optional boss fight           │
+      │   • Ending Variant: "The City That Swims" (Tier 5 only)     │
+      └─────────────────────────────────────────────────────────────┘
+      
+      ACQUISITION NOTES:
+      - All rewards auto-grant on tier achievement (MSN notification)
+      - Vehicle blueprints require Abyssal Fabricator to craft
+      - Cyberware installations free at Dr. Chen's clinic (Tier 4+)
+      - Abyssal Dimension access requires Lilith Covenant (Tier 5)
+      - Some rewards require specific quest completion (Chen, Vance, Sara, Alt)
+      
+      — "The deep does not negotiate. It gives to those who respect it."
+      — Lilith, Keeper of the Covenant

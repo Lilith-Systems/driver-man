@@ -1,0 +1,105 @@
+schema: msn.gnostic_consensus_bridge.v1
+local_only: true
+source_engram: Frontier Cognitive Refinement - Gnostic Consensus
+purpose: >
+  Bind the Thoth/Lilith/Baal consensus into playable and operable Cyberpunk
+  systems: stable RTX 3060 routing, safe speculative planning, compact context,
+  and concurrency-safe memory.
+
+systems:
+  sanctuary_2:
+    command: msn.consensus.sanctuary
+    gameplay_hook: NGD cyberware governor and graphics optimization console
+    route_states:
+      SANCTUARY_CLEAR:
+        condition: smoothed_vram_free_mb > 4096
+        action: local_cerebellum
+      SANCTUARY_MARGINAL:
+        condition: smoothed_vram_free_mb <= 4096
+        action: hybrid_prechecks
+      SANCTUARY_BREACH:
+        condition: smoothed_vram_free_mb < 1024
+        action: full_delegate_or_local_bypass
+      LOCAL_BYPASS:
+        condition: physical hardware, game process, GPU, or local filesystem access required
+        action: force_local_compute
+    observation_window_seconds: 15
+    hysteresis_lock_seconds: 90
+    guardrails:
+      - Use exponential smoothing, never raw one-sample VRAM flips.
+      - Do not mutate drivers or game memory without explicit operator approval.
+      - Prefer read/status commands while Cyberpunk or REDlauncher is active.
+
+  akashic_2:
+    command: msn.consensus.akashic
+    gameplay_hook: in-game shard scanner, quest debugger, and local command compression
+    compression:
+      primary: AST or structural scope-aware pruning
+      mutation_preserve_patterns:
+        - assignments
+        - database writes
+        - file redirects
+        - in-place edits
+        - environment and dependency declarations
+      fallback: regex and indentation outliner when syntax is broken
+    player_effect: less menu lag and cleaner Lilith advice while debugging mods.
+
+  ouroboros_2:
+    command: msn.consensus.ouroboros
+    gameplay_hook: engram memory, kill/location recall, mod-session audit trail
+    sqlite_policy:
+      journal_mode: WAL
+      busy_timeout_ms: 5000
+      write_path: async staging queue first, idle compaction later
+      verification_loop_sessions: 3
+      high_priority_override: operator-approved critical fixes only
+    cache_key:
+      - quest_or_mod_id
+      - game_version
+      - proton_version
+      - dependency_fuzzy_semver
+      - gpu_route_state
+
+  speculative_cerebellum:
+    command: msn.consensus.speculative
+    gameplay_hook: safe local preflight for REDscript, TweakDB, and GTA bridge work
+    sandbox:
+      filesystem: copy_on_write_scratch
+      network: blocked_by_default
+      cancellation: kill speculative branch when the accepted plan changes
+    permitted_actions:
+      - parse files
+      - run read-only validation
+      - compile dry-run in scratch
+      - generate diff previews
+    denied_actions:
+      - driver mutation
+      - live process injection
+      - external network egress
+      - destructive workspace changes
+
+cross_game_bridge:
+  cyberpunk:
+    city_role: Night City node on the one-world map
+    mechanics:
+      - NGD frame pacing and sanctuary routing
+      - Abyssal Assets skill quests
+      - Nessie covenant and Loch Exchange economy
+      - Javelin space combat and freighter systems
+  gta:
+    city_role: open-world crime/economy sandbox node
+    mechanics:
+      - safe mod planning with speculative sandbox
+      - state-keyed vehicle, heist, and business memory
+      - economy bridges for markets, fleets, and territory
+      - shared Abyssal/Nessie easter egg framework
+
+commands:
+  - msn.consensus.status
+  - msn.consensus.sanctuary
+  - msn.consensus.akashic
+  - msn.consensus.ouroboros
+  - msn.consensus.speculative
+  - gta.msn.bridge
+  - gta.economy.bridge
+  - gta.mod.sandbox

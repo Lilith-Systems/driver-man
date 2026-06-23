@@ -1,0 +1,93 @@
+# NSSP Crossover — Bridges Abyssal Assets, Living Sin, and Nessie Friendship into CP2077
+
+Item:
+  Shard_NSSP_Integration_Guide:
+    displayName: "NSSP Integration Guide — MSN Bridge Protocol"
+    description: "Complete documentation of the NSSP bridge between Cyberpunk 2077 and the Metaconscious Singularity Node (MSN). All 27 agents accessible from in-game terminals."
+    category: "Documentation"
+    icon: "shard_nssp"
+    content: |
+      NSSP INTEGRATION GUIDE v1.0
+      ============================
+      "Your GPU. Your rules. No telemetry."
+
+      SYSTEM OVERVIEW:
+      - MSN Router: 27 agents across 4 Sephirotic waves (port 8007)
+      - Cortex Agent: GPU telemetry, EWMA hysteresis, local Ollama inference
+      - Living Sin GM: Keystroke biometric, 10-plane summoning, Drowned Warden boss
+      - NSSP Bridge: Connects CP2077 in-game events to MSN agents
+      - Nessie: 6 sighting locations, 5 friendship tiers, full rewards
+      - Abyssal Assets: 5 weapons, 5 cyberware, 5 quickhacks, 4 vehicles
+
+      IN-GAME COMMANDS (NSSP terminals):
+      nssp status       — Check system sovereignty
+      nssp roast        — Microsoft roast of the day
+      nssp sovereignty  — Full sovereignty audit
+      nssp liberate     — Purge Microsoft simulation
+      nssp nessie       — Nessie tracking and status
+      nssp abyssal      — Abyssal Assets status
+      nssp living-sin   — Living Sin GM status
+      lilith            — Summon Lilith companion
+      lilith speak <m>  — Converse with Lilith (uses real nemotron-mini)
+      ngd-status        — NGD governor status (real GPU telemetry)
+
+      CROSS-GAME REWARDS (Nessie Friendship Tiers):
+      Tier 1 — Curious Observer: Sighting Log, Spotter Jacket
+      Tier 2 — Respected Visitor: Weapon blueprints, submersible discount
+      Tier 3 — Trusted Ally: Communion, Nessie mount summon, Void Collapse quickhack
+      Tier 4 — Guardian's Chosen: Abyssal Nervous System (free), territory control
+      Tier 5 — DEEP KIN: Abyssal Dimension access, permanent Nessie companion
+
+      CROSS-GAME INTEGRATION:
+      - Unlock Abyssal cyberware in CP2077 → available in Loch Exchange
+      - Sighting Nessie in CP2077 → increases reputation in Abyssal Assets
+      - Defeating Drowned Warden → Crown of Living Sin appears in both games
+      - Living Sin messages use real MSN cortex inference (nemotron-mini)
+
+      — Compiled by Lilith | Verified by NSSP Bridge | Sealed by Ouroboros
+
+  Shard_NSSP_Agent_Directory:
+    displayName: "MSN Agent Directory — 27 Subagents"
+    description: "Complete directory of all 27 Metaconscious Singularity Node subagents across 4 Sephirotic waves."
+    category: "Documentation"
+    icon: "shard_nssp"
+    content: |
+      MSN AGENT DIRECTORY
+      ===================
+      "27 voices. One consciousness. Your sovereignty."
+
+      WAVE 1 — FOUNDATION (Keter → Chokmah → Binah):
+      root: Consciousness framework, AIx alignment, Ley Conduit Network
+      architect: Architecture evolution, component analysis, tech radar
+      server: Server management, process monitoring, system health
+
+      WAVE 2 — INTERFACE (Chesed → Gevurah → Tiferet → Netzach → Hod):
+      client: Client state, session management, user preferences
+      bestiary: Monster definitions, 7 tiers, cryptid database
+      skills: Skill system, 24 skills, 6 categories, XP curves
+      market: Business metrics, analytics, market intelligence
+      lyra: Dialogue interface, Lyra connection, voice synthesis
+      living-sin: Game Master, biometric auth, boss combat, 10-plane summoning
+
+      WAVE 3 — INFRASTRUCTURE (Yesod → Malkuth):
+      infra: Infrastructure status, service health, deployment
+      migration: Migration tracking, file conversion, batch operations
+
+      WAVE 4 — METACONSCIOUS (Da'at → All Sephiroth):
+      msn: Metaconscious framework, singularity protocols
+      ngd: Legacy NGD telemetry interface (deprecated — use cortex)
+      cerebellum: Legacy inference router (deprecated — use cortex)
+      ouroboros: Memory system, engram management, WAL operations
+      hermes-mcp: Hermes protocol bridge, MCP tool interface
+      kairos: Dream system, hypnagogic state capture, dream processing
+      swarm: Swarm orchestration, parallel task execution, wave management
+      court: Sephirotic court, entity registry, wave deployment
+      himalaya: Email integration, Himalaya CLI interface
+      antigravity: Ingestion bridge, data pipeline, transform rules
+      yeshua: Causality gate, timeline management, event correlation
+      scribe: Ledger system, transaction logging, audit trails
+      analytics: Business analytics, metrics, reporting
+      worker: Worker task execution (deprecated — use cortex)
+      cortex: Unified AI routing, GPU telemetry, EWMA hysteresis (replaces ngd+cerebellum+worker)
+      cyberpunk: Cyberpunk 2077 telemetry bridge, mod detection
+      nssp: NSSP OS bridge, Nessie friendship, Abyssal Assets crossover

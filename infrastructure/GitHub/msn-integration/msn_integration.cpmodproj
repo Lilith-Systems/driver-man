@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="WolvenKit.REDmod.Sdk">
+  <PropertyGroup>
+    <TargetFramework>WolvenKit.REDmod</TargetFramework>
+    <Name>msn_integration</Name>
+    <Version>1.0.0</Version>
+    <Author>Lilith/NGD</Author>
+    <Description>Lilith.exe: The Metaconscious Singularity Node (MSN) - Sephirotic nexus, Abyssal depth, Nessie covenant, NGD, Ouroboros, Baal</Description>
+    <GameVersion>2.1+</GameVersion>
+    <RedmodVersion>1.0</RedmodVersion>
+    <Priority>200</Priority>
+    <Dependencies>
+      <Dependency>REDmod &gt;=1.0.0</Dependency>
+      <Dependency>TweakXL &gt;=1.0.0</Dependency>
+      <Dependency>redscript &gt;=1.0.0</Dependency>
+    </Dependencies>
+    <Categories>
+      <Category>Gameplay</Category>
+      <Category>AI</Category>
+      <Category>Weapons</Category>
+      <Category>UI</Category>
+      <Category>Cyberware</Category>
+    </Categories>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <TweakDB Include="msn_tweakdb.toml" />
+    <TweakDB Include="tweakdb\msn_story_vehicles_complete.toml" />
+    <TweakDB Include="tweakdb\anthem_javelin_mechanics.yaml" />
+    <TweakDB Include="tweakdb\custom_gear_runescape_wow_allods.yaml" />
+    <TweakDB Include="tweakdb\custom_item_business_bridge.yaml" />
+    <TweakDB Include="tweakdb\procedural_space_systems.yaml" />
+    <TweakDB Include="tweakdb\one_world_space_economy.yaml" />
+    <TweakDB Include="tweakdb\msn_graphics_driver_bridge.yaml" />
+    <TweakDB Include="tweakdb\custom_models_msn_abyssal.yaml" />
+    <TweakDB Include="tweakdb\abyssal_skill_tree_quests.toml" />
+    <TweakDB Include="tweakdb\custom_content_acquisition_map.yaml" />
+    <TweakDB Include="tweakdb\abyssal_fabricator_recipes.yaml" />
+    <TweakDB Include="tweakdb\procedural_encounter_tables.yaml" />
+    <TweakDB Include="tweakdb\vendor_inventory_loch_exchange.yaml" />
+    <TweakDB Include="tweakdb\abyssal_assets.yaml" />
+    <TweakDB Include="tweakdb\anthem_javelin_suits.toml" />
+    <TweakDB Include="tweakdb\nessie_rewards.yaml" />
+    <TweakDB Include="tweakdb\Abyssal_Cyberpunk_Crossover.toml" />
+    <TweakDB Include="tweakdb\Anthem_Javelin_Suits.toml" />
+    <TweakDB Include="tweakdb\easter_eggs.tweakdb" />
+    <TweakDB Include="tweakdb\lilith_character.tweakdb" />
+    <TweakDB Include="tweakdb\LivingSin_TimeBlade.toml" />
+    <TweakDB Include="tweakdb\msn_skills.tweakdb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <REDscript Include="scripts\msn_cerebellum.reds" />
+    <REDscript Include="scripts\msn_cortex_link.reds" />
+    <REDscript Include="scripts\msn_npc_ai.reds" />
+    <REDscript Include="scripts\msn_sephirotic_npcs.reds" />
+    <REDscript Include="scripts\msn_business_console.reds" />
+    <REDscript Include="scripts\msn_weapons.reds" />
+    <REDscript Include="scripts\lilith_npc.reds" />
+    <REDscript Include="scripts\msn_lyra_dialogue.reds" />
+    <REDscript Include="scripts\lilith_easter_eggs.reds" />
+    <REDscript Include="scripts\msn_modern_ballistics.reds" />
+    <REDscript Include="scripts\msn_speculative_cerebellum.reds" />
+    <REDscript Include="scripts\msn_multiplayer_client.reds" />
+    <REDscript Include="scripts\msn_ouroboros.reds" />
+    <REDscript Include="scripts\livingsin_time_blade.reds" />
+    <REDscript Include="scripts\cyberpunk_ngd_integration.reds" />
+    <REDscript Include="scripts\abyssal_lyra_integration.reds" />
+    <REDscript Include="scripts\lilith_enhanced_dialogue.reds" />
+    <REDscript Include="scripts\lilith_console.reds" />
+    <REDscript Include="scripts\lilith_ngd_control.reds" />
+    <REDscript Include="scripts\nssp_bridge.reds" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Localization Include="localization\en\msn_story_vehicles.loc" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Quest Include="quests\msn_narrative_arc.yaml" />
+    <Quest Include="quests\abyssal_skill_tree_quests.yaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Config Include="msn_integration.toml" />
+    <Config Include="msn_multiplayer.toml" />
+    <Config Include="ngd_rnn_optimization.redmod.toml" />
+    <Config Include="info.json" />
+  </ItemGroup>
+</Project>

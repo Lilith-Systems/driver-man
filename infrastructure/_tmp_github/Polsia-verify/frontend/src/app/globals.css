@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 5 5 8;
+  --foreground: 0 255 204;
+  --primary: 255 0 255;
+  --accent: 57 255 20;
+  --muted: 20 60 60;
+  --card: 10 10 15;
+  --border: 255 0 255;
+}
+
+body {
+  color: rgb(var(--foreground));
+  background: rgb(var(--background));
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  overflow-x: hidden;
+  text-shadow: 0 0 5px rgb(var(--foreground) / 0.5);
+}
+
+/* Glitch and Terminal Effects */
+.glitch-text {
+  position: relative;
+  display: inline-block;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(var(--background));
+}
+
+.glitch-text::before {
+  left: 2px;
+  text-shadow: -2px 0 red;
+  clip: rect(24px, 550px, 90px, 0);
+  animation: glitch-anim 3s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+  left: -2px;
+  text-shadow: -2px 0 blue;
+  clip: rect(85px, 550px, 140px, 0);
+  animation: glitch-anim 2.5s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim {
+  0% { clip: rect(10px, 9999px, 86px, 0); transform: skew(0.5deg); }
+  5% { clip: rect(66px, 9999px, 20px, 0); transform: skew(0.1deg); }
+  10% { clip: rect(31px, 9999px, 86px, 0); transform: skew(0.3deg); }
+  15% { clip: rect(8px, 9999px, 18px, 0); transform: skew(0.7deg); }
+  20% { clip: rect(24px, 9999px, 66px, 0); transform: skew(0.9deg); }
+  25% { clip: rect(81px, 9999px, 49px, 0); transform: skew(0.2deg); }
+  30% { clip: rect(4px, 9999px, 35px, 0); transform: skew(0.1deg); }
+  35% { clip: rect(43px, 9999px, 8px, 0); transform: skew(0.3deg); }
+  40% { clip: rect(15px, 9999px, 73px, 0); transform: skew(0.2deg); }
+  45% { clip: rect(98px, 9999px, 11px, 0); transform: skew(0.8deg); }
+  50% { clip: rect(40px, 9999px, 66px, 0); transform: skew(0.7deg); }
+  55% { clip: rect(2px, 9999px, 97px, 0); transform: skew(0.9deg); }
+  60% { clip: rect(20px, 9999px, 8px, 0); transform: skew(0.4deg); }
+  65% { clip: rect(52px, 9999px, 22px, 0); transform: skew(0.3deg); }
+  70% { clip: rect(46px, 9999px, 88px, 0); transform: skew(0.8deg); }
+  75% { clip: rect(74px, 9999px, 5px, 0); transform: skew(0.6deg); }
+  80% { clip: rect(34px, 9999px, 79px, 0); transform: skew(0.1deg); }
+  85% { clip: rect(86px, 9999px, 37px, 0); transform: skew(0.8deg); }
+  90% { clip: rect(10px, 9999px, 91px, 0); transform: skew(0.2deg); }
+  95% { clip: rect(27px, 9999px, 18px, 0); transform: skew(0.7deg); }
+  100% { clip: rect(58px, 9999px, 72px, 0); transform: skew(0.4deg); }
+}
+
+.terminal-box {
+  border: 1px solid rgb(var(--primary));
+  box-shadow: 0 0 10px rgb(var(--primary) / 0.5), inset 0 0 15px rgb(var(--primary) / 0.2);
+  background: rgba(var(--card) / 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.scanline {
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(var(--primary) / 0.2) 50%, rgba(0,0,0,0) 100%);
+  opacity: 0.1;
+  position: absolute;
+  bottom: 100%;
+  animation: scanline 8s linear infinite;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes scanline {
+  0% { bottom: 100%; }
+  100% { bottom: -100px; }
+}

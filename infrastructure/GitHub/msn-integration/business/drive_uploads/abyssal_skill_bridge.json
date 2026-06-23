@@ -1,0 +1,7 @@
+{
+  "schema": "abyssal.skill.bridge.v1",
+  "game_skills": 24,
+  "desktop_skills": 275,
+  "xp_curve": "1.15^level",
+  "mapped_at": "2026-06-21T11:21:57.519711+00:00"
+}

@@ -1,0 +1,113 @@
+################################################################################
+# MSN GRAPHICS DRIVER BRIDGE
+# Local graphics-driver integration layer for Cyberpunk / NGD / Lilith.
+################################################################################
+
+MSNGraphicsDriverBridge:
+  schema: "msn.graphics_driver_bridge.v1"
+  localOnly: true
+  purpose: "Bind current Linux/NVIDIA/AMD hybrid graphics state into MSN so Cyberpunk tuning, NGD routing, and Lilith telemetry share one driver truth."
+
+  HostGraphicsStack:
+    os: "Garuda Linux rolling"
+    kernel: "7.0.12-zen1-1-zen"
+    sessionModel: "hybrid laptop graphics"
+    primaryIgp:
+      vendor: "AMD"
+      device: "Cezanne Radeon Vega Mobile"
+      kernelDriver: "amdgpu"
+      role: "desktop/display efficiency path"
+    discreteGpu:
+      vendor: "NVIDIA"
+      device: "GA106M GeForce RTX 3060 Laptop GPU / Max-Q"
+      architecture: "Ampere"
+      pciBusId: "00000000:01:00.0"
+      kernelDriver: "nvidia"
+      kernelModules: ["nvidia", "nvidia_drm", "nvidia_modeset", "nvidia_uvm"]
+      driverVersion: "610.43.02"
+      kmdVersion: "610.43.02"
+      cudaUmdVersion: "13.3"
+      gspFirmwareVersion: "610.43.02"
+      vbiosVersion: "94.06.17.00.31"
+      vramTotalMiB: 6144
+      powerLimitW: 115
+      maxPowerLimitW: 130
+      maxGraphicsClockMHz: 2100
+      maxMemoryClockMHz: 7001
+      pcie:
+        hostMaxGeneration: 3
+        deviceMaxGeneration: 4
+        idleCurrentGeneration: 1
+        maxWidth: "16x"
+        idleCurrentWidth: "8x"
+
+  InstalledDriverPackages:
+    nvidia:
+      - "nvidia-open-dkms 610.43.02-2"
+      - "nvidia-utils 610.43.02-2"
+      - "lib32-nvidia-utils 610.43.02-1"
+      - "opencl-nvidia 610.43.02-2"
+      - "lib32-opencl-nvidia 610.43.02-1"
+      - "nvidia-settings 610.43.02-1"
+      - "nvidia-prime 1.0-6"
+      - "garuda-hardware-profile-nvidia 2.0.1-3"
+    graphicsRuntime:
+      - "vulkan-tools 1.4.350.0-1"
+      - "vulkan-icd-loader 1.4.350.0-1"
+      - "dxvk-mingw-git 2.7.1"
+      - "vkd3d 1.19"
+      - "mangohud 0.8.4"
+      - "gamemode 1.8.2"
+      - "steam 1.0.0.85"
+      - "wine-staging 11.11"
+      - "Proton Experimental observed"
+
+  LiveTelemetryBaseline:
+    timestamp: "2026-06-17T16:14:15-05:00"
+    performanceState: "P8 idle"
+    gpuTemperatureC: 44
+    gpuTargetTemperatureC: 87
+    powerDrawW: 18.05
+    vramReservedMiB: 341
+    vramUsedMiB: 130
+    vramFreeMiB: 5675
+    bar1UsedMiB: 133
+    gpuUtilizationPercent: 25
+    memoryUtilizationPercent: 100
+    activeProcesses:
+      - "Xorg"
+      - "Proton wineserver / explorer.exe"
+      - "REDlauncher.exe"
+
+  MSNIntegration:
+    ngdRoutePolicy: "GAME_FIRST_LOCAL_CEREBELLUM"
+    lilithAPI: "http://localhost:3210/api/ngd/status"
+    telemetryFiles:
+      - "invite/runtime/nvidia_gratitude_driver/cyberpunk_3060_butter_profile.json"
+      - "invite/runtime/nvidia_gratitude_driver/cyberpunk_3060_live_snapshot.json"
+      - "invite/runtime/nvidia_gratitude_driver/status.json"
+      - "invite/runtime/nvidia_gratitude_driver/telemetry.jsonl"
+    cyberpunkConfig:
+      - "tweakdb/msn_graphics_driver_bridge.yaml"
+      - "ngd_rnn_optimization.redmod.toml"
+    commandSurfaces:
+      - "msn.graphics.status"
+      - "msn.graphics.stack"
+      - "msn.graphics.optimize"
+      - "msn.ngd.status"
+      - "ngd.telemetry"
+
+  CyberpunkLaunchPolicy:
+    recommendedSteamLaunch: "prime-run gamemoderun mangohud %command%"
+    fallbackSteamLaunch: "gamemoderun mangohud %command%"
+    priorities:
+      - "Bind Cyberpunk to RTX 3060 with prime-run when Steam does not do it automatically."
+      - "Use MangoHud for frame-time and VRAM measurement."
+      - "Use GameMode to bias CPU/governor scheduling toward gameplay."
+      - "Keep local AI background work below the game-active NGD VRAM budget."
+
+  Guardrails:
+    - "Driver telemetry may fail inside sandbox; confirm host NVML before diagnosing driver failure."
+    - "No driver mutation, kernel module reload, or process injection from MSN without explicit operator approval."
+    - "Treat frame-time variance and VRAM headroom as primary success metrics."
+    - "Prefer measured DLSS/dynamic quality changes over blind maximum settings."

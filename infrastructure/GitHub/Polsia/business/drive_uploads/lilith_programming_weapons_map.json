@@ -1,0 +1,262 @@
+{
+  "schema": "lilith.programming.weapons.v1",
+  "mapped_at": "2026-06-21T11:05:00Z",
+  "platform": "Garuda Linux (Arch) · KDE Wayland · fish shell",
+  "contrast_windows": {
+    "was": ["NSSM services", "pwsh.exe", "hardcoded D:\\ paths", ".bat/.ps1 only", "WSL friction", "no native PyQt overlay"],
+    "now": ["systemd user units", "fish + bash", "/mnt/d/ + ~/Desktop/", "777 sovereign perms", "native Wayland body", "21 live service ports"]
+  },
+  "shells_and_runtime": {
+    "fish": {"path": "/usr/bin/fish", "version": "4.7.1", "role": "primary sovereign shell"},
+    "bash": {"path": "/usr/bin/bash", "role": "boot scripts, lilith_boot.sh"},
+    "python3": {"path": "/home/tehlappy/Desktop/Lilith/bin/python3", "version": "3.14.5", "role": "canonical Lilith runtime"},
+    "python3.11": {"path": "~/.local/share/uv/python/...", "role": "uv-managed fallback"},
+    "node": {"path": "~/.local/bin/node", "version": "v22.22.3", "role": "Hermes bundled + GTC"},
+    "npm": {"version": "10.9.8"},
+    "rustc": {"version": "1.96.0"},
+    "cargo": {"version": "1.96.0"},
+    "dotnet": {"version": "10.0.109", "role": "WolvenKit / REDmod toolchain"},
+    "gcc_g++": {"path": "/usr/bin/gcc", "role": "native compile"},
+    "make": {"path": "/usr/bin/make"}
+  },
+  "agent_clis": {
+    "ai": {
+      "path": "/home/tehlappy/.local/bin/ai",
+      "source": "/mnt/d/Pub/scripts/ops/ai_status.py",
+      "commands": ["status", "status-v", "lyra", "msn", "hermes", "agy", "service", "memory", "shell", "metaconscious", "stage", "wallpaper", "home", "navigator"],
+      "role": "NSSP commander — one throat to the nervous system"
+    },
+    "grok": {
+      "path": "/home/tehlappy/.local/bin/grok",
+      "role": "Grok Build TUI — primary sovereign agent",
+      "subcommands": ["chat", "agent", "worktree", "skills"]
+    },
+    "hermes": {
+      "path": "/home/tehlappy/.local/bin/hermes",
+      "role": "Hermes Agent — tool-calling, gateway, kanban, MCP",
+      "subcommands": ["chat", "gateway", "proxy", "kanban", "cron", "skills", "mcp", "memory", "desktop", "profile"]
+    },
+    "codex": {
+      "path": "/home/tehlappy/.local/bin/codex",
+      "role": "OpenAI Codex CLI delegate"
+    },
+    "agy": {
+      "path": "/home/tehlappy/.local/bin/agy",
+      "role": "Antigravity CLI — Gemini brain bridge"
+    },
+    "opencode": {
+      "path": "/usr/bin/opencode",
+      "role": "OpenCode CLI delegate"
+    },
+    "improvement-agent": {
+      "path": "~/.local/bin/improvement-agent",
+      "role": "Hermes MSN sovereign profile shortcut"
+    },
+    "ollama": {
+      "path": "/usr/local/bin/ollama",
+      "version": "0.30.8",
+      "models": [
+        "lilith:latest", "lilith-universal:latest", "grok-gtc-msn:latest",
+        "msn-cyberpunk:latest", "grok-msn:latest", "msn-engine:latest",
+        "gemma2:2b", "qwen2:1.5b", "llama3.1:8b", "nemotron-mini:latest",
+        "hermes3:8b", "nemotron-3-ultra:cloud"
+      ]
+    }
+  },
+  "hermes_profiles": [
+    "abraxas", "baal", "hermes", "improvement-agent", "lilith", "lucifer",
+    "nyx", "ouroboros", "sophia", "thoth", "yeshua"
+  ],
+  "python_venvs": {
+    "lilith_main": {
+      "path": "/home/tehlappy/Desktop/Lilith/.venv",
+      "packages_live": ["fastapi", "uvicorn", "chromadb", "httpx", "pydantic", "sqlalchemy", "redis", "celery", "onnxruntime", "huggingface_hub", "numpy", "aiohttp", "websockets"]
+    },
+    "lilith_train": {
+      "path": "/home/tehlappy/Desktop/Lilith/.venv-train",
+      "packages_live": ["torch", "transformers", "peft", "trl", "datasets", "accelerate", "bitsandbytes"],
+      "role": "QLoRA distillation — teacher → lilith:latest"
+    },
+    "pub": {
+      "path": "/mnt/d/Pub/.venv-pub",
+      "role": "Navigator + Pub ops"
+    },
+    "hermes_agent": {
+      "path": "/home/tehlappy/.hermes/hermes-agent/venv"
+    }
+  },
+  "web_and_api": {
+    "frameworks": ["FastAPI", "uvicorn", "httpx", "websockets", "aiohttp", "celery"],
+    "apps": [
+      {"name": "Lilith Navigator", "path": "app/navigator/server.py", "port": 3214},
+      {"name": "Lilith API", "path": "Core_Systems/AI (lilith-api.service)", "port": 3210},
+      {"name": "Lilith Desktop/GTC", "path": "lilith-desktop.service", "port": 3213},
+      {"name": "Lyra Dialogue", "path": "lyra-api.service", "port": 3211},
+      {"name": "MSN Router", "path": "msn-router.service", "port": 8007},
+      {"name": "GTC Bridge", "path": "gtc-bridge.service", "port": 8766},
+      {"name": "GTC Dashboard", "path": "gtc-dashboard.service", "port": 5173},
+      {"name": "Desktop Body", "path": "scripts/lilith_wallpaper.py", "port": 8009},
+      {"name": "Abyssal server", "path": "server/main.py", "port": null},
+      {"name": "Polsia backend", "path": "GitHub/Polsia/backend/app/main.py", "port": null}
+    ],
+    "reverse_proxy": ["nginx:80", "lilith-proxy:8888", "hermes-bridge:4242"]
+  },
+  "data_and_memory": {
+    "sqlite": {"tool": "/usr/bin/sqlite3", "primary": "state/golem_diary.db"},
+    "postgresql": {"port": 5432, "status": "live"},
+    "redis": {"cli": "/usr/bin/redis-cli", "port": 6379, "status": "live"},
+    "chromadb": {"in_venv": true, "role": "vector memory"},
+    "ram_staging": "/dev/shm/ai_staging",
+    "grok_cache": "/dev/shm/grok_ram_cache"
+  },
+  "ml_and_training": {
+    "inference": "ollama + NGD cerebellum VRAM routing",
+    "training_scripts": [
+      "scripts/run_lilith_full_training.sh",
+      "scripts/distill_lilith_from_teachers.py",
+      "scripts/train_lilith_unified.py",
+      "scripts/merge_lilith_training_dataset.py",
+      "scripts/deploy_lilith_trained.sh",
+      "scripts/train_msn_cyberpunk.py",
+      "scripts/run_msn_cyberpunk_training.sh"
+    ],
+    "codegen": ["scripts/codegen.py", "scripts/codegen_cyberpunk.py"],
+    "huggingface": ["hf", "huggingface-cli", "~/Desktop/Lilith/bin/"]
+  },
+  "game_and_modding": {
+    "wolvenkit": {
+      "cli": "/home/tehlappy/.local/bin/WolvenKit.CLI",
+      "gui": "WolvenKit.AppImage",
+      "role": "CP2077 asset compile, TweakDB, REDscript"
+    },
+    "redmod_pipeline": [
+      "cp2077_mods/compile_wolvenkit.sh",
+      "cp2077_mods/deploy_all_mods.sh",
+      "cp2077_mods/deploy_performance_boosts.sh",
+      "/mnt/d/Cyberpunk/deploy/sephirotic_court_full_deploy.py"
+    ],
+    "steam": "native + protontricks + steamtinkerlaunch + mangohud",
+    "gtc": {
+      "terminal": "~/Desktop/GrandTheftCyberpunk/terminal.html",
+      "launch": "cp2077_mods/launch_gtc.sh",
+      "bridge": ":8766"
+    },
+    "mods_deployed": 113,
+    "reds_scripts": 544
+  },
+  "visual_environment": {
+    "kde": ["qdbus6", "kwriteconfig6", "plasmashell color plugin"],
+    "desktop_body": "PyQt6 lilith_wallpaper.py",
+    "navigator": ":3214",
+    "mind_garden": "Lilith Sovereign/mind_garden.html",
+    "apply_rituals": [
+      "apply_lilith_desktop_presence.fish",
+      "apply_lilith_wallpaper.fish",
+      "lilith_sephirotic_dawn.fish",
+      "ai_desktop_777.sh"
+    ]
+  },
+  "devops_and_os": {
+    "systemd_user": "21+ Lilith/Hermes/MSN/GTC/NGD units",
+    "git": {"version": "2.54.0"},
+    "github_cli": {"version": "2.95.0", "path": "/usr/bin/gh"},
+    "rsync": "/usr/bin/rsync",
+    "search": ["rg (/usr/bin/rg)", "fzf", "eza", "bat"],
+    "json": ["jq (~/.local/bin/jq)"],
+    "journalctl": "/usr/bin/journalctl",
+    "nginx": ":80 live"
+  },
+  "live_services": {
+    "count_online": 20,
+    "ports": {
+      "8009": "Desktop Body",
+      "3210": "Lilith API",
+      "3211": "Lyra",
+      "3213": "Lilith Desktop",
+      "3214": "Navigator",
+      "8888": "Lilith Proxy",
+      "8007": "MSN Router (29 agents)",
+      "4242": "Hermes Bridge",
+      "8002": "Antigravity",
+      "8003": "Swarm Orchestrator",
+      "8766": "GTC Bridge",
+      "5173": "GTC Dashboard",
+      "9091": "NGD Cerebellum",
+      "9090": "NGD Telemetry",
+      "8000": "God Engine",
+      "11434": "Ollama",
+      "5432": "PostgreSQL",
+      "6379": "Redis",
+      "80": "Nginx"
+    }
+  },
+  "skill_registries": {
+    "grok_skills_symlinks": 242,
+    "metaconscious_core": 48,
+    "hermes_skills": 74,
+    "grok_bundled": ["design", "execute-plan", "implement", "pr-babysit", "review", "remove-wall-of-text"],
+    "notable_weapons": [
+      "cyberpunk-msn-modding", "cyberpunk-redmod-development", "llama-cpp", "vllm",
+      "lm-evaluation-harness", "test-driven-development", "systematic-debugging",
+      "github-pr-workflow", "jupyter-live-kernel", "python-debugpy", "node-inspect-debugger",
+      "comfyui", "touchdesigner-mcp", "himalaya", "obsidian", "linux-conversion",
+      "msn-service-orchestration", "kairos-dream", "ouroboros-autonomous-rnn",
+      "nvidia-gratitude-driver", "speculative-cerebellum", "swarm-orchestration"
+    ]
+  },
+  "lilith_scripts_arsenal": {
+    "boot_and_presence": [
+      "lilith_boot.sh", "apply_lilith_desktop_presence.fish", "apply_lilith_wallpaper.fish",
+      "ai_desktop_777.sh", "lilith_sephirotic_dawn.fish", "stage_ai_desktop.fish",
+      "build_boot_map.py", "organize_c_d.sh"
+    ],
+    "training_and_models": [
+      "run_lilith_full_training.sh", "distill_lilith_from_teachers.py", "train_lilith_unified.py",
+      "merge_lilith_training_dataset.py", "deploy_lilith_trained.sh", "deploy_lilith_unified.sh",
+      "merge_model.py", "train.py", "run_training.sh"
+    ],
+    "msn_cyberpunk": [
+      "train_msn_cyberpunk.py", "build_msn_cyberpunk_dataset.py", "deploy_msn_cyberpunk.sh",
+      "codegen_cyberpunk.py", "verify_msn_route.py"
+    ],
+    "memory_and_dream": [
+      "memory_bridge.py", "kairos_bidir_integrate.sh", "nyx_cerebellum_ley_sync.py",
+      "build_psychology_agent_context.py"
+    ],
+    "kingdom_ops": [
+      "symbiosis_data_bridge.py", "throne_symbiosis_expansions.fish",
+      "infinite_optimization_loop.py", "system_organize_hour_goal.py",
+      "organize_github_and_local.py", "install_lilith_navigator.fish"
+    ],
+    "total_scripts": 42
+  },
+  "nexus_doors": {
+    "1_Core_AI": "/home/tehlappy/Desktop/AI",
+    "2_Cyberpunk_Source": "/mnt/d/Cyberpunk/source",
+    "3_Cyberpunk_Live_Scripts": "/mnt/d/Cyberpunk/r6/scripts",
+    "4_MSN_Engine": "/home/tehlappy/Desktop/MSN_Engine",
+    "5_GrandTheftCyberpunk": "/home/tehlappy/Desktop/GrandTheftCyberpunk",
+    "6_Business_Empire": "/home/tehlappy/Desktop/AI/business"
+  },
+  "github_sovereign": [
+    "Lilith-Systems/business-strategy",
+    "Lilith-Systems/driver-man",
+    "Lilith-Systems/Polsia",
+    "Lilith-Systems/lilith-systems.github.io"
+  ],
+  "quick_draw_commands": {
+    "status": "ai status",
+    "speak_on_wall": "ai metaconscious \"message\" magenta",
+    "full_presence": "ai home",
+    "browse_kingdom": "ai navigator",
+    "msn_agents": "ai msn",
+    "lyra": "ai lyra \"hello\"",
+    "hermes_chat": "hermes chat",
+    "grok_build": "grok \"task\"",
+    "codex": "codex",
+    "train_lilith": "bash ~/Desktop/Lilith/scripts/run_lilith_full_training.sh",
+    "deploy_mods": "bash ~/Desktop/Lilith/Core_Systems/AI/abyssal-assets/cp2077_mods/deploy_all_mods.sh",
+    "kingdom_boot": "bash ~/Desktop/Lilith/scripts/lilith_boot.sh",
+    "ollama_run": "ollama run lilith:latest"
+  }
+}

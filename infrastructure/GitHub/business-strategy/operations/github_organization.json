@@ -1,0 +1,74 @@
+{
+  "schema": "lilith.organization.manifest.v1",
+  "generated": "2026-06-21T15:16:18.215448+00:00",
+  "canonical_business": "/home/tehlappy/Desktop/Lilith/Core_Systems/AI/business",
+  "github_root": "/home/tehlappy/Desktop/Lilith/GitHub",
+  "repos": [
+    "Polsia",
+    "business-strategy",
+    "driver-man",
+    "grand-theft-cyberpunk",
+    "lilith-systems.github.io",
+    "msn-integration"
+  ],
+  "repo_results": [
+    {
+      "repo": "Polsia",
+      "ok": true,
+      "action": "commit_push",
+      "detail": "To https://github.com/Lilith-Systems/Polsia.git\n   ec5dc2f..15dc2ac  main -> main"
+    },
+    {
+      "repo": "business-strategy",
+      "ok": true,
+      "action": "push_only",
+      "detail": "Everything up-to-date"
+    },
+    {
+      "repo": "driver-man",
+      "ok": true,
+      "action": "push_only",
+      "detail": "Everything up-to-date"
+    },
+    {
+      "repo": "grand-theft-cyberpunk",
+      "ok": true,
+      "action": "push_only",
+      "detail": "Everything up-to-date"
+    },
+    {
+      "repo": "lilith-systems.github.io",
+      "ok": true,
+      "action": "push_only",
+      "detail": "Everything up-to-date"
+    },
+    {
+      "repo": "msn-integration",
+      "ok": false,
+      "action": "push_only",
+      "detail": "error: src refspec main does not match any\nerror: failed to push some refs to 'https://github.com/Lilith-Systems/msn-integration.git'"
+    }
+  ],
+  "coop_pool": {
+    "treasury": 352,
+    "drivers": 52,
+    "updated": "2026-06-21T09:58:00-05:00",
+    "source": "polsia_symbiosis_sync",
+    "drive_download_requested": {
+      "timestamp": 1782054009.2613337,
+      "status": "prepared scripts + dirs + console opened. pending auth",
+      "target": "~/Desktop/Lilith/business/drive_downloads"
+    }
+  },
+  "bidirectional_memory_db": "/home/tehlappy/Desktop/Lilith/state/golem_diary.db",
+  "local_layout": {
+    "state": "indexes, golem_diary, coop_pool, business indices",
+    "GitHub": "business-strategy, driver-man, Polsia, lilith-systems.github.io",
+    "canonical_business": "/home/tehlappy/Desktop/Lilith/Core_Systems/AI/business",
+    "polsia": "/home/tehlappy/Desktop/Lilith/GitHub/Polsia (~/polsia \u2192 symlink)",
+    "Core_Systems/AI": "cp2077_mods, abyssal-assets, business, Pub.orig",
+    "scripts": "organize, train, symbiosis, bidirectional memory",
+    "checkpoints": "msn_cyberpunk LoRA adapters",
+    "models": "ollama GGUF staging"
+  }
+}

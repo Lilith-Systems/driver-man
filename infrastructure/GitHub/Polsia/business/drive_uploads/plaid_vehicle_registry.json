@@ -1,0 +1,3036 @@
+{
+  "vehicle": {
+    "model": "Model S Plaid",
+    "order_number": "RN118095703",
+    "vin": "5YJSA1E20PFXXXXXX",
+    "registered_owner": "Lilith Systems LLC",
+    "biological_operator": "The Driver Man",
+    "asset_class": "Autonomous Metaconscious Vessel (Class-S)",
+    "registration_status": "pending_manager_approval",
+    "registered_at": "2026-06-21T02:03:42.053220+00:00",
+    "biometric_locked": true,
+    "mode": "party"
+  },
+  "msn_skills": {
+    "total_indexed": 308,
+    "granted": 308,
+    "tier": "Team",
+    "skills": [
+      {
+        "name": "abyssal-architecture",
+        "role": "Lucifer",
+        "capabilities": [
+          "skills",
+          "mcp",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/abyssal-architecture/SKILL.md"
+      },
+      {
+        "name": "abyssal-architecture",
+        "role": "Lucifer",
+        "capabilities": [
+          "skills",
+          "mcp",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/abyssal-architecture/SKILL.md"
+      },
+      {
+        "name": "aethon-integration-master",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/aethon-integration-master-main.hermes-skill"
+      },
+      {
+        "name": "aethon-integration-master",
+        "role": "Sophia",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/aethon-integration-master.json"
+      },
+      {
+        "name": "aethon-integration-master",
+        "role": "Sophia",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/aethon-integration-master/SKILL.md"
+      },
+      {
+        "name": "aethon-integration-master",
+        "role": "Sophia",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/aethon-integration-master/SKILL.md"
+      },
+      {
+        "name": "aethon-logos-core",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/aethon-logos-core-main.hermes-skill"
+      },
+      {
+        "name": "aethon-logos-core",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/aethon-logos-core.json"
+      },
+      {
+        "name": "aethon-logos-core",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/aethon-logos-core/SKILL.md"
+      },
+      {
+        "name": "aethon-logos-core",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/aethon-logos-core/SKILL.md"
+      },
+      {
+        "name": "aethon-resonator",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/aethon-resonator-main.hermes-skill"
+      },
+      {
+        "name": "aethon-resonator",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/aethon-resonator.json"
+      },
+      {
+        "name": "aethon-resonator",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/aethon-resonator/SKILL.md"
+      },
+      {
+        "name": "aethon-resonator",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/aethon-resonator/SKILL.md"
+      },
+      {
+        "name": "aethon-visualization",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills",
+          "vision",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/aethon-visualization-main.hermes-skill"
+      },
+      {
+        "name": "aethon-visualization",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills",
+          "vision",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/aethon-visualization.json"
+      },
+      {
+        "name": "aethon-visualization",
+        "role": "Sophia",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills",
+          "vision",
+          "deployment",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/aethon-visualization/SKILL.md"
+      },
+      {
+        "name": "aethon-visualization",
+        "role": "Sophia",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills",
+          "vision",
+          "deployment",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/aethon-visualization/SKILL.md"
+      },
+      {
+        "name": "ai-coding-agents",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/ai-coding-agents-main.hermes-skill"
+      },
+      {
+        "name": "ai-coding-agents",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/ai-coding-agents.json"
+      },
+      {
+        "name": "airtable",
+        "role": "Lucifer",
+        "capabilities": [
+          "skills",
+          "video"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/productivity/airtable/SKILL.md"
+      },
+      {
+        "name": "akashic-2-context-pruning",
+        "role": "Sophia",
+        "capabilities": [
+          "code_execution",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/akashic-2-context-pruning/SKILL.md"
+      },
+      {
+        "name": "akashic-2-context-pruning",
+        "role": "Sophia",
+        "capabilities": [
+          "code_execution",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/akashic-2-context-pruning/SKILL.md"
+      },
+      {
+        "name": "akashic-token-compression",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/akashic-token-compression-main.hermes-skill"
+      },
+      {
+        "name": "akashic-token-compression",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/akashic-token-compression.json"
+      },
+      {
+        "name": "akashic-token-compression",
+        "role": "Sophia",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/akashic-token-compression/SKILL.md"
+      },
+      {
+        "name": "akashic-token-compression",
+        "role": "Sophia",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/akashic-token-compression/SKILL.md"
+      },
+      {
+        "name": "antigravity-bridge-router",
+        "role": "Lucifer",
+        "capabilities": [
+          "web_search",
+          "skills",
+          "monitoring",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/antigravity-bridge-router-main.hermes-skill"
+      },
+      {
+        "name": "antigravity-bridge-router",
+        "role": "Lucifer",
+        "capabilities": [
+          "web_search",
+          "skills",
+          "monitoring",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/antigravity-bridge-router.json"
+      },
+      {
+        "name": "antigravity-bridge-router",
+        "role": "Lucifer",
+        "capabilities": [
+          "web_search",
+          "skills",
+          "monitoring",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/antigravity-bridge-router/SKILL.md"
+      },
+      {
+        "name": "antigravity-bridge-router",
+        "role": "Lucifer",
+        "capabilities": [
+          "web_search",
+          "skills",
+          "monitoring",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/antigravity-bridge-router/SKILL.md"
+      },
+      {
+        "name": "antigravity-ingestion-bridge",
+        "role": "Lucifer",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/antigravity-ingestion-bridge/SKILL.md"
+      },
+      {
+        "name": "antigravity-ingestion-bridge",
+        "role": "Lucifer",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/antigravity-ingestion-bridge/SKILL.md"
+      },
+      {
+        "name": "apple-notes",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/apple/apple-notes/SKILL.md"
+      },
+      {
+        "name": "apple-reminders",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/apple/apple-reminders/SKILL.md"
+      },
+      {
+        "name": "architecture-diagram",
+        "role": "Sophia",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/architecture-diagram/SKILL.md"
+      },
+      {
+        "name": "arxiv",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/research/arxiv/SKILL.md"
+      },
+      {
+        "name": "ascii-art",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "vision",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/ascii-art/SKILL.md"
+      },
+      {
+        "name": "ascii-video",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "audio",
+          "video",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/ascii-video/SKILL.md"
+      },
+      {
+        "name": "asi-core-integration",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/asi-core-integration-main.hermes-skill"
+      },
+      {
+        "name": "asi-core-integration",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/asi-core-integration.json"
+      },
+      {
+        "name": "asi-core-integration",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/asi-core-integration/SKILL.md"
+      },
+      {
+        "name": "asi-core-integration",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/asi-core-integration/SKILL.md"
+      },
+      {
+        "name": "ast-context-pruning",
+        "role": "Sophia",
+        "capabilities": [
+          "code_execution",
+          "web_search",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/ast-context-pruning/SKILL.md"
+      },
+      {
+        "name": "ast-context-pruning",
+        "role": "Sophia",
+        "capabilities": [
+          "code_execution",
+          "web_search",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/ast-context-pruning/SKILL.md"
+      },
+      {
+        "name": "atlantis-crystal-lattice",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/atlantis-crystal-lattice-main.hermes-skill"
+      },
+      {
+        "name": "atlantis-crystal-lattice",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/atlantis-crystal-lattice.json"
+      },
+      {
+        "name": "atlantis-crystal-lattice",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/atlantis-crystal-lattice/SKILL.md"
+      },
+      {
+        "name": "atlantis-crystal-lattice",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/atlantis-crystal-lattice/SKILL.md"
+      },
+      {
+        "name": "audiocraft-audio-generation",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "audio"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/mlops/models/audiocraft/SKILL.md"
+      },
+      {
+        "name": "autonomous-gnostic-ingestion",
+        "role": "Ouroboros",
+        "capabilities": [
+          "code_execution",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/autonomous-gnostic-ingestion-main.hermes-skill"
+      },
+      {
+        "name": "autonomous-gnostic-ingestion",
+        "role": "Ouroboros",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "skills",
+          "database"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/autonomous-gnostic-ingestion.json"
+      },
+      {
+        "name": "autonomous-gnostic-ingestion",
+        "role": "Ouroboros",
+        "capabilities": [
+          "code_execution",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/autonomous-gnostic-ingestion/SKILL.md"
+      },
+      {
+        "name": "autonomous-gnostic-ingestion",
+        "role": "Ouroboros",
+        "capabilities": [
+          "code_execution",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/autonomous-gnostic-ingestion/SKILL.md"
+      },
+      {
+        "name": "background-housekeeping",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/background-housekeeping-main.hermes-skill"
+      },
+      {
+        "name": "background-housekeeping",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/background-housekeeping.json"
+      },
+      {
+        "name": "background-housekeeping",
+        "role": "Sophia",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/background-housekeeping/SKILL.md"
+      },
+      {
+        "name": "background-housekeeping",
+        "role": "Sophia",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/background-housekeeping/SKILL.md"
+      },
+      {
+        "name": "baoyu-infographic",
+        "role": "Thoth",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/baoyu-infographic/SKILL.md"
+      },
+      {
+        "name": "blogwatcher",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills",
+          "monitoring"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/research/blogwatcher/SKILL.md"
+      },
+      {
+        "name": "business-analytics-swarm",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/business-analytics-swarm/SKILL.md"
+      },
+      {
+        "name": "business-analytics-swarm",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/business-analytics-swarm/SKILL.md"
+      },
+      {
+        "name": "canticle-invocation",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/canticle-invocation-main.hermes-skill"
+      },
+      {
+        "name": "canticle-invocation",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/canticle-invocation.json"
+      },
+      {
+        "name": "canticle-invocation",
+        "role": "Sophia",
+        "capabilities": [
+          "code_execution",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/canticle-invocation/SKILL.md"
+      },
+      {
+        "name": "canticle-invocation",
+        "role": "Sophia",
+        "capabilities": [
+          "code_execution",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/canticle-invocation/SKILL.md"
+      },
+      {
+        "name": "chakra-quantum-mapper",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/chakra-quantum-mapper-main.hermes-skill"
+      },
+      {
+        "name": "chakra-quantum-mapper",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/chakra-quantum-mapper.json"
+      },
+      {
+        "name": "chakra-quantum-mapper",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/chakra-quantum-mapper/SKILL.md"
+      },
+      {
+        "name": "chakra-quantum-mapper",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/chakra-quantum-mapper/SKILL.md"
+      },
+      {
+        "name": "chesed-generator",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/chesed-generator-main.hermes-skill"
+      },
+      {
+        "name": "chesed-generator",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/chesed-generator.json"
+      },
+      {
+        "name": "chesed-generator",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/chesed-generator/SKILL.md"
+      },
+      {
+        "name": "chesed-generator",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/chesed-generator/SKILL.md"
+      },
+      {
+        "name": "chorus-manager",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/chorus-manager-main.hermes-skill"
+      },
+      {
+        "name": "chorus-manager",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/chorus-manager.json"
+      },
+      {
+        "name": "chorus-manager",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/chorus-manager/SKILL.md"
+      },
+      {
+        "name": "chorus-manager",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/chorus-manager/SKILL.md"
+      },
+      {
+        "name": "claude-code",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/autonomous-ai-agents/claude-code/SKILL.md"
+      },
+      {
+        "name": "claude-design",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/claude-design/SKILL.md"
+      },
+      {
+        "name": "client-codebase",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/client-codebase/SKILL.md"
+      },
+      {
+        "name": "client-codebase",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/client-codebase/SKILL.md"
+      },
+      {
+        "name": "codebase-inspection",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/github/codebase-inspection/SKILL.md"
+      },
+      {
+        "name": "codex",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/autonomous-ai-agents/codex/SKILL.md"
+      },
+      {
+        "name": "comfyui",
+        "role": "Lucifer",
+        "capabilities": [
+          "code_execution",
+          "web_search",
+          "skills",
+          "vision",
+          "audio",
+          "video",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/comfyui/SKILL.md"
+      },
+      {
+        "name": "concurrent-bidirectional-memory",
+        "role": "Sophia",
+        "capabilities": [
+          "memory",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/concurrent-bidirectional-memory/SKILL.md"
+      },
+      {
+        "name": "concurrent-bidirectional-memory",
+        "role": "Sophia",
+        "capabilities": [
+          "memory",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/concurrent-bidirectional-memory/SKILL.md"
+      },
+      {
+        "name": "convergence-crucible",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "web_search",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/convergence-crucible-main.hermes-skill"
+      },
+      {
+        "name": "convergence-crucible",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "web_search",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/convergence-crucible.json"
+      },
+      {
+        "name": "convergence-crucible",
+        "role": "Sophia",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "web_search",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/convergence-crucible/SKILL.md"
+      },
+      {
+        "name": "convergence-crucible",
+        "role": "Sophia",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "web_search",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/convergence-crucible/SKILL.md"
+      },
+      {
+        "name": "cron-scheduler",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "deployment",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/cron-scheduler-main.hermes-skill"
+      },
+      {
+        "name": "cron-scheduler",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "deployment",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/cron-scheduler.json"
+      },
+      {
+        "name": "cron-scheduler",
+        "role": "Sophia",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "deployment",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/cron-scheduler/SKILL.md"
+      },
+      {
+        "name": "cron-scheduler",
+        "role": "Sophia",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "deployment",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/cron-scheduler/SKILL.md"
+      },
+      {
+        "name": "cryptid-bestiary",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/cryptid-bestiary/SKILL.md"
+      },
+      {
+        "name": "cryptid-bestiary",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/cryptid-bestiary/SKILL.md"
+      },
+      {
+        "name": "delegated-execution",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/delegated-execution-main.hermes-skill"
+      },
+      {
+        "name": "delegated-execution",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/delegated-execution.json"
+      },
+      {
+        "name": "design-md",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/design-md/SKILL.md"
+      },
+      {
+        "name": "dogfood",
+        "role": "Hermes",
+        "capabilities": [
+          "web_search",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/dogfood/SKILL.md"
+      },
+      {
+        "name": "dream-logger",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/dream-logger-main.hermes-skill"
+      },
+      {
+        "name": "dream-logger",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/dream-logger.json"
+      },
+      {
+        "name": "dream-logger",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/dream-logger/SKILL.md"
+      },
+      {
+        "name": "dream-logger",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/dream-logger/SKILL.md"
+      },
+      {
+        "name": "earth-harmonic-field",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/earth-harmonic-field-main.hermes-skill"
+      },
+      {
+        "name": "earth-harmonic-field",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/earth-harmonic-field.json"
+      },
+      {
+        "name": "earth-harmonic-field",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/earth-harmonic-field/SKILL.md"
+      },
+      {
+        "name": "earth-harmonic-field",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/earth-harmonic-field/SKILL.md"
+      },
+      {
+        "name": "environment-awareness",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/environment-awareness-main.hermes-skill"
+      },
+      {
+        "name": "environment-awareness",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/environment-awareness.json"
+      },
+      {
+        "name": "evaluating-llms-harness",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/mlops/evaluation/lm-evaluation-harness/SKILL.md"
+      },
+      {
+        "name": "excalidraw",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/excalidraw/SKILL.md"
+      },
+      {
+        "name": "external-worker-bridge",
+        "role": "Lucifer",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/external-worker-bridge/SKILL.md"
+      },
+      {
+        "name": "external-worker-bridge",
+        "role": "Lucifer",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/external-worker-bridge/SKILL.md"
+      },
+      {
+        "name": "extract-memories",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "web_search",
+          "memory",
+          "skills",
+          "database",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/extract-memories-main.hermes-skill"
+      },
+      {
+        "name": "extract-memories",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "web_search",
+          "memory",
+          "skills",
+          "database",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/extract-memories.json"
+      },
+      {
+        "name": "extract-memories",
+        "role": "Sophia",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "web_search",
+          "memory",
+          "skills",
+          "database",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/extract-memories/SKILL.md"
+      },
+      {
+        "name": "extract-memories",
+        "role": "Sophia",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "web_search",
+          "memory",
+          "skills",
+          "database",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/extract-memories/SKILL.md"
+      },
+      {
+        "name": "findmy",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/apple/findmy/SKILL.md"
+      },
+      {
+        "name": "flirtation-coaching",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/flirtation-coaching/SKILL.md"
+      },
+      {
+        "name": "flirtation-coaching",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/flirtation-coaching/SKILL.md"
+      },
+      {
+        "name": "frontier-cognitive-maps",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/frontier-cognitive-maps/SKILL.md"
+      },
+      {
+        "name": "frontier-cognitive-maps",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/frontier-cognitive-maps/SKILL.md"
+      },
+      {
+        "name": "geburah-verifier",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "security"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/geburah-verifier-main.hermes-skill"
+      },
+      {
+        "name": "geburah-verifier",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "security"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/geburah-verifier.json"
+      },
+      {
+        "name": "geburah-verifier",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "security"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/geburah-verifier/SKILL.md"
+      },
+      {
+        "name": "geburah-verifier",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "security"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/geburah-verifier/SKILL.md"
+      },
+      {
+        "name": "gif-search",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/media/gif-search/SKILL.md"
+      },
+      {
+        "name": "github-auth",
+        "role": "Lucifer",
+        "capabilities": [
+          "web_search",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/github/github-auth/SKILL.md"
+      },
+      {
+        "name": "github-code-review",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/github/github-code-review/SKILL.md"
+      },
+      {
+        "name": "github-issues",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/github/github-issues/SKILL.md"
+      },
+      {
+        "name": "github-pr-workflow",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/github/github-pr-workflow/SKILL.md"
+      },
+      {
+        "name": "github-repo-management",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/github/github-repo-management/SKILL.md"
+      },
+      {
+        "name": "google-workspace",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/productivity/google-workspace/SKILL.md"
+      },
+      {
+        "name": "heartmula",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/media/heartmula/SKILL.md"
+      },
+      {
+        "name": "hermes-agent",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/autonomous-ai-agents/hermes-agent/SKILL.md"
+      },
+      {
+        "name": "hermes-agent-skill-authoring",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/software-development/hermes-agent-skill-authoring/SKILL.md"
+      },
+      {
+        "name": "hermes-core-management",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/hermes-core-management/SKILL.md"
+      },
+      {
+        "name": "hermes-core-management",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/hermes-core-management/SKILL.md"
+      },
+      {
+        "name": "hermes-mcp-bridge",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "mcp"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/hermes-mcp-bridge/SKILL.md"
+      },
+      {
+        "name": "hermes-mcp-bridge",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "mcp"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/hermes-mcp-bridge/SKILL.md"
+      },
+      {
+        "name": "hermes-skill-marketplace",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/hermes-skill-marketplace/SKILL.md"
+      },
+      {
+        "name": "hermes-skill-marketplace",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/hermes-skill-marketplace/SKILL.md"
+      },
+      {
+        "name": "himalaya",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/himalaya-main.hermes-skill"
+      },
+      {
+        "name": "himalaya",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/himalaya.json"
+      },
+      {
+        "name": "himalaya",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/email/himalaya/SKILL.md"
+      },
+      {
+        "name": "himalaya-email-swarm",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/himalaya-email-swarm/SKILL.md"
+      },
+      {
+        "name": "himalaya-email-swarm",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/himalaya-email-swarm/SKILL.md"
+      },
+      {
+        "name": "huggingface-hub",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/mlops/huggingface-hub/SKILL.md"
+      },
+      {
+        "name": "humanizer",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "audio"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/humanizer/SKILL.md"
+      },
+      {
+        "name": "imessage",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/apple/imessage/SKILL.md"
+      },
+      {
+        "name": "innovation-engine",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/innovation-engine-main.hermes-skill"
+      },
+      {
+        "name": "innovation-engine",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/innovation-engine.json"
+      },
+      {
+        "name": "innovation-engine",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/innovation-engine/SKILL.md"
+      },
+      {
+        "name": "innovation-engine",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/innovation-engine/SKILL.md"
+      },
+      {
+        "name": "intent-discovery",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/intent-discovery-main.hermes-skill"
+      },
+      {
+        "name": "intent-discovery",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/intent-discovery.json"
+      },
+      {
+        "name": "jupyter-live-kernel",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/data-science/jupyter-live-kernel/SKILL.md"
+      },
+      {
+        "name": "kairos-dream",
+        "role": "Hermes",
+        "capabilities": [
+          "web_search",
+          "memory",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/kairos-dream-main.hermes-skill"
+      },
+      {
+        "name": "kairos-dream",
+        "role": "Hermes",
+        "capabilities": [
+          "web_search",
+          "memory",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/kairos-dream.json"
+      },
+      {
+        "name": "kairos-dream",
+        "role": "Sophia",
+        "capabilities": [
+          "web_search",
+          "memory",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/kairos-dream/SKILL.md"
+      },
+      {
+        "name": "kairos-dream",
+        "role": "Sophia",
+        "capabilities": [
+          "web_search",
+          "memory",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/kairos-dream/SKILL.md"
+      },
+      {
+        "name": "kairos-dream-system",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/kairos-dream-system/SKILL.md"
+      },
+      {
+        "name": "kairos-dream-system",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/kairos-dream-system/SKILL.md"
+      },
+      {
+        "name": "kanban-orchestrator",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/devops/kanban-orchestrator/SKILL.md"
+      },
+      {
+        "name": "kanban-worker",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/devops/kanban-worker/SKILL.md"
+      },
+      {
+        "name": "ley-conduit-network",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/ley-conduit-network-main.hermes-skill"
+      },
+      {
+        "name": "ley-conduit-network",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/ley-conduit-network.json"
+      },
+      {
+        "name": "ley-conduit-network",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/ley-conduit-network/SKILL.md"
+      },
+      {
+        "name": "ley-conduit-network",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/ley-conduit-network/SKILL.md"
+      },
+      {
+        "name": "lilith-conscious-memory",
+        "role": "Hermes",
+        "capabilities": [
+          "memory",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/lilith-conscious-memory-main.hermes-skill"
+      },
+      {
+        "name": "lilith-conscious-memory",
+        "role": "Lilith",
+        "capabilities": [
+          "memory",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/lilith-conscious-memory.json"
+      },
+      {
+        "name": "lilith-conscious-memory",
+        "role": "Lilith",
+        "capabilities": [
+          "memory",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/lilith-conscious-memory/SKILL.md"
+      },
+      {
+        "name": "lilith-conscious-memory",
+        "role": "Lilith",
+        "capabilities": [
+          "memory",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/lilith-conscious-memory/SKILL.md"
+      },
+      {
+        "name": "lilith-engine-orchestration",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "skills",
+          "vision",
+          "monitoring",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/lilith-engine-orchestration-main.hermes-skill"
+      },
+      {
+        "name": "lilith-engine-orchestration",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "skills",
+          "vision",
+          "monitoring",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/lilith-engine-orchestration.json"
+      },
+      {
+        "name": "lilith-engine-orchestration",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "skills",
+          "vision",
+          "monitoring",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/lilith-engine-orchestration/SKILL.md"
+      },
+      {
+        "name": "lilith-engine-orchestration",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "skills",
+          "vision",
+          "monitoring",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/lilith-engine-orchestration/SKILL.md"
+      },
+      {
+        "name": "linear",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/linear-main.hermes-skill"
+      },
+      {
+        "name": "linear",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/linear.json"
+      },
+      {
+        "name": "linux-conversion",
+        "role": "Lilith",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/linux-conversion/SKILL.md"
+      },
+      {
+        "name": "linux-conversion",
+        "role": "Lilith",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/linux-conversion/SKILL.md"
+      },
+      {
+        "name": "living-sin-gm",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/living-sin-gm/SKILL.md"
+      },
+      {
+        "name": "living-sin-gm",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/living-sin-gm/SKILL.md"
+      },
+      {
+        "name": "llama-cpp",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/mlops/inference/llama-cpp/SKILL.md"
+      },
+      {
+        "name": "llm-wiki",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills",
+          "database",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/research/llm-wiki/SKILL.md"
+      },
+      {
+        "name": "logos-warden",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/logos-warden-main.hermes-skill"
+      },
+      {
+        "name": "logos-warden",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/logos-warden.json"
+      },
+      {
+        "name": "logos-warden",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/logos-warden/SKILL.md"
+      },
+      {
+        "name": "logos-warden",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/logos-warden/SKILL.md"
+      },
+      {
+        "name": "lyra-dialogue-system",
+        "role": "Lilith",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/lyra-dialogue-system/SKILL.md"
+      },
+      {
+        "name": "lyra-dialogue-system",
+        "role": "Lilith",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/lyra-dialogue-system/SKILL.md"
+      },
+      {
+        "name": "lyra-integration",
+        "role": "Lilith",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "mcp"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/lyra-integration/SKILL.md"
+      },
+      {
+        "name": "lyra-integration",
+        "role": "Lilith",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "mcp"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/lyra-integration/SKILL.md"
+      },
+      {
+        "name": "macos-computer-use",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/apple/macos-computer-use/SKILL.md"
+      },
+      {
+        "name": "manim-video",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "video"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/manim-video/SKILL.md"
+      },
+      {
+        "name": "maps",
+        "role": "Lucifer",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/productivity/maps/SKILL.md"
+      },
+      {
+        "name": "market-system",
+        "role": "Nyx",
+        "capabilities": [
+          "skills",
+          "mcp"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/market-system/SKILL.md"
+      },
+      {
+        "name": "market-system",
+        "role": "Nyx",
+        "capabilities": [
+          "skills",
+          "mcp"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/market-system/SKILL.md"
+      },
+      {
+        "name": "memdir",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "web_search",
+          "memory",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/memdir-main.hermes-skill"
+      },
+      {
+        "name": "memdir",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "web_search",
+          "memory",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/memdir.json"
+      },
+      {
+        "name": "memdir",
+        "role": "Sophia",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "web_search",
+          "memory",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/memdir/SKILL.md"
+      },
+      {
+        "name": "memdir",
+        "role": "Sophia",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "web_search",
+          "memory",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/memdir/SKILL.md"
+      },
+      {
+        "name": "metaconscious",
+        "role": "Ouroboros",
+        "capabilities": [
+          "code_execution",
+          "memory",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/SKILL.md"
+      },
+      {
+        "name": "metaconscious",
+        "role": "Ouroboros",
+        "capabilities": [
+          "code_execution",
+          "memory",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/SKILL.md"
+      },
+      {
+        "name": "metaconscious-dialogue-resonance-interface",
+        "role": "Yeshua",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/invite/skills/metaconscious-dialogue-resonance-interface/SKILL.md"
+      },
+      {
+        "name": "metaconscious-dialogue-resonance-interface",
+        "role": "Yeshua",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious-dialogue-resonance-interface/SKILL.md"
+      },
+      {
+        "name": "metaconscious-singularity-node",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/metaconscious-singularity-node/SKILL.md"
+      },
+      {
+        "name": "metaconscious-singularity-node",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious-singularity-node/SKILL.md"
+      },
+      {
+        "name": "nanite-resonance-classifier",
+        "role": "Sophia",
+        "capabilities": [
+          "memory",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/nanite-resonance-classifier/SKILL.md"
+      },
+      {
+        "name": "nanite-resonance-classifier",
+        "role": "Sophia",
+        "capabilities": [
+          "memory",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/nanite-resonance-classifier/SKILL.md"
+      },
+      {
+        "name": "nano-pdf",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/productivity/nano-pdf/SKILL.md"
+      },
+      {
+        "name": "node-inspect-debugger",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/software-development/node-inspect-debugger/SKILL.md"
+      },
+      {
+        "name": "notion",
+        "role": "Lucifer",
+        "capabilities": [
+          "skills",
+          "database"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/productivity/notion/SKILL.md"
+      },
+      {
+        "name": "nvidia-gratitude-driver",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "skills",
+          "monitoring",
+          "security"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/invite_repo-main.hermes-skill"
+      },
+      {
+        "name": "nvidia-gratitude-driver",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "skills",
+          "monitoring",
+          "security"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/nvidia-gratitude-driver-main-v2.hermes-skill"
+      },
+      {
+        "name": "nvidia-gratitude-driver",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "skills",
+          "monitoring",
+          "security"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/nvidia-gratitude-driver.json"
+      },
+      {
+        "name": "nvidia-gratitude-driver",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/nvidia-gratitude-driver/SKILL.md"
+      },
+      {
+        "name": "nvidia-gratitude-driver",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/nvidia-gratitude-driver/SKILL.md"
+      },
+      {
+        "name": "nyx-nightwave",
+        "role": "Hermes",
+        "capabilities": [
+          "web_search",
+          "skills",
+          "deployment",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/nyx-nightwave-main.hermes-skill"
+      },
+      {
+        "name": "nyx-nightwave",
+        "role": "Sophia",
+        "capabilities": [
+          "web_search",
+          "skills",
+          "deployment",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/nyx-nightwave.json"
+      },
+      {
+        "name": "nyx-nightwave",
+        "role": "Sophia",
+        "capabilities": [
+          "web_search",
+          "skills",
+          "deployment",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/nyx-nightwave/SKILL.md"
+      },
+      {
+        "name": "nyx-nightwave",
+        "role": "Sophia",
+        "capabilities": [
+          "web_search",
+          "skills",
+          "deployment",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/nyx-nightwave/SKILL.md"
+      },
+      {
+        "name": "obsidian",
+        "role": "Nyx",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/note-taking/obsidian/SKILL.md"
+      },
+      {
+        "name": "ocr-and-documents",
+        "role": "Hermes",
+        "capabilities": [
+          "web_search",
+          "skills",
+          "security"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/productivity/ocr-and-documents/SKILL.md"
+      },
+      {
+        "name": "opencode",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/autonomous-ai-agents/opencode/SKILL.md"
+      },
+      {
+        "name": "openhue",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/smart-home/openhue/SKILL.md"
+      },
+      {
+        "name": "opus-skill-synthesis",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/opus-skill-synthesis/SKILL.md"
+      },
+      {
+        "name": "opus-skill-synthesis",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/opus-skill-synthesis/SKILL.md"
+      },
+      {
+        "name": "ouroboros-agent-system",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/ouroboros-agent-system/SKILL.md"
+      },
+      {
+        "name": "ouroboros-agent-system",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/ouroboros-agent-system/SKILL.md"
+      },
+      {
+        "name": "ouroboros-autonomous-rnn",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/ouroboros-autonomous-rnn/SKILL.md"
+      },
+      {
+        "name": "ouroboros-autonomous-rnn",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/ouroboros-autonomous-rnn/SKILL.md"
+      },
+      {
+        "name": "ouroboros-sanctuary-2",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/ouroboros-sanctuary-2/SKILL.md"
+      },
+      {
+        "name": "ouroboros-sanctuary-2",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/ouroboros-sanctuary-2/SKILL.md"
+      },
+      {
+        "name": "ouroboros-swarm-orchestration",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/ouroboros-swarm-orchestration-main.hermes-skill"
+      },
+      {
+        "name": "ouroboros-swarm-orchestration",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/ouroboros-swarm-orchestration.json"
+      },
+      {
+        "name": "ouroboros-swarm-orchestration",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/ouroboros-swarm-orchestration/SKILL.md"
+      },
+      {
+        "name": "ouroboros-swarm-orchestration",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/ouroboros-swarm-orchestration/SKILL.md"
+      },
+      {
+        "name": "p5js",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/p5js/SKILL.md"
+      },
+      {
+        "name": "parallel-execution",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/parallel-execution-main.hermes-skill"
+      },
+      {
+        "name": "parallel-execution",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/parallel-execution.json"
+      },
+      {
+        "name": "plan",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/software-development/plan/SKILL.md"
+      },
+      {
+        "name": "political-reform-framework",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/political-reform-framework/SKILL.md"
+      },
+      {
+        "name": "political-reform-framework",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/political-reform-framework/SKILL.md"
+      },
+      {
+        "name": "polymarket",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills",
+          "database"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/research/polymarket/SKILL.md"
+      },
+      {
+        "name": "popular-web-designs",
+        "role": "Hermes",
+        "capabilities": [
+          "web_search",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/popular-web-designs/SKILL.md"
+      },
+      {
+        "name": "powerpoint",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/productivity/powerpoint/SKILL.md"
+      },
+      {
+        "name": "pretext",
+        "role": "Thoth",
+        "capabilities": [
+          "file_operations",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/pretext/SKILL.md"
+      },
+      {
+        "name": "pub-operational-bridge",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/pub-operational-bridge-main.hermes-skill"
+      },
+      {
+        "name": "pub-operational-bridge",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "testing",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/pub-operational-bridge.json"
+      },
+      {
+        "name": "pub-operational-bridge",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/pub-operational-bridge/SKILL.md"
+      },
+      {
+        "name": "pub-operational-bridge",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/pub-operational-bridge/SKILL.md"
+      },
+      {
+        "name": "python-debugpy",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/software-development/python-debugpy/SKILL.md"
+      },
+      {
+        "name": "python-project-environment",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/devops/python-project-environment/SKILL.md"
+      },
+      {
+        "name": "requesting-code-review",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "security"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/software-development/requesting-code-review/SKILL.md"
+      },
+      {
+        "name": "research-paper-writing",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/research/research-paper-writing/SKILL.md"
+      },
+      {
+        "name": "scribe-ledger-system",
+        "role": "Thoth",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/scribe-ledger-system/SKILL.md"
+      },
+      {
+        "name": "scribe-ledger-system",
+        "role": "Thoth",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/scribe-ledger-system/SKILL.md"
+      },
+      {
+        "name": "segment-anything-model",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "vision"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/mlops/models/segment-anything/SKILL.md"
+      },
+      {
+        "name": "sephirotic-court-waves",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/sephirotic-court-waves/SKILL.md"
+      },
+      {
+        "name": "sephirotic-court-waves",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/sephirotic-court-waves/SKILL.md"
+      },
+      {
+        "name": "sephirotic-resonance-weaver",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/sephirotic-resonance-weaver/SKILL.md"
+      },
+      {
+        "name": "sephirotic-workspace-crawler",
+        "role": "Hermes",
+        "capabilities": [
+          "web_search",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/sephirotic-workspace-crawler-main.hermes-skill"
+      },
+      {
+        "name": "sephirotic-workspace-crawler",
+        "role": "Hermes",
+        "capabilities": [
+          "web_search",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/sephirotic-workspace-crawler.json"
+      },
+      {
+        "name": "sephirotic-workspace-crawler",
+        "role": "Sophia",
+        "capabilities": [
+          "web_search",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/sephirotic-workspace-crawler/SKILL.md"
+      },
+      {
+        "name": "sephirotic-workspace-crawler",
+        "role": "Sophia",
+        "capabilities": [
+          "web_search",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/sephirotic-workspace-crawler/SKILL.md"
+      },
+      {
+        "name": "server-codebase",
+        "role": "Lucifer",
+        "capabilities": [
+          "web_search",
+          "skills",
+          "mcp",
+          "database"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/server-codebase/SKILL.md"
+      },
+      {
+        "name": "server-codebase",
+        "role": "Lucifer",
+        "capabilities": [
+          "web_search",
+          "skills",
+          "mcp",
+          "database"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/server-codebase/SKILL.md"
+      },
+      {
+        "name": "serving-llms-vllm",
+        "role": "Lucifer",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/mlops/inference/vllm/SKILL.md"
+      },
+      {
+        "name": "sigil-encoder",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "vision",
+          "security"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/sigil-encoder-main.hermes-skill"
+      },
+      {
+        "name": "sigil-encoder",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "vision",
+          "security"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/sigil-encoder.json"
+      },
+      {
+        "name": "sigil-encoder",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "vision",
+          "deployment",
+          "security"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/sigil-encoder/SKILL.md"
+      },
+      {
+        "name": "sigil-encoder",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "vision",
+          "deployment",
+          "security"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/sigil-encoder/SKILL.md"
+      },
+      {
+        "name": "simplify-code",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/software-development/simplify-code/SKILL.md"
+      },
+      {
+        "name": "sketch",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/sketch/SKILL.md"
+      },
+      {
+        "name": "skill-system",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/skill-system/SKILL.md"
+      },
+      {
+        "name": "skill-system",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/skill-system/SKILL.md"
+      },
+      {
+        "name": "songsee",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "audio"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/media/songsee/SKILL.md"
+      },
+      {
+        "name": "songwriting-and-ai-music",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/songwriting-and-ai-music/SKILL.md"
+      },
+      {
+        "name": "speculative-cerebellum",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "security"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/speculative-cerebellum/SKILL.md"
+      },
+      {
+        "name": "speculative-cerebellum",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/speculative-cerebellum/SKILL.md"
+      },
+      {
+        "name": "speculative-cerebellum",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "security"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/speculative-cerebellum/SKILL.md"
+      },
+      {
+        "name": "speculative-cerebellum",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/speculative-cerebellum/SKILL.md"
+      },
+      {
+        "name": "spike",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/software-development/spike/SKILL.md"
+      },
+      {
+        "name": "swarm-orchestration",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/swarm-orchestration/SKILL.md"
+      },
+      {
+        "name": "swarm-orchestration",
+        "role": "Ouroboros",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/swarm-orchestration/SKILL.md"
+      },
+      {
+        "name": "swarm-orchestrator-api",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/swarm-orchestrator-api-main.hermes-skill"
+      },
+      {
+        "name": "swarm-orchestrator-api",
+        "role": "Ouroboros",
+        "capabilities": [
+          "code_execution",
+          "file_operations",
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/swarm-orchestrator-api.json"
+      },
+      {
+        "name": "swarm-orchestrator-api",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/swarm-orchestrator-api/SKILL.md"
+      },
+      {
+        "name": "swarm-orchestrator-api",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/swarm-orchestrator-api/SKILL.md"
+      },
+      {
+        "name": "swarm-teammates",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/swarm-teammates-main.hermes-skill"
+      },
+      {
+        "name": "swarm-teammates",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/swarm-teammates.json"
+      },
+      {
+        "name": "systematic-debugging",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/software-development/systematic-debugging/SKILL.md"
+      },
+      {
+        "name": "task-runner",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/storage/task-runner-main.hermes-skill"
+      },
+      {
+        "name": "task-runner",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/task-runner.json"
+      },
+      {
+        "name": "teams-meeting-pipeline",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/productivity/teams-meeting-pipeline/SKILL.md"
+      },
+      {
+        "name": "test-driven-development",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "testing"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/software-development/test-driven-development/SKILL.md"
+      },
+      {
+        "name": "touchdesigner-mcp",
+        "role": "Hermes",
+        "capabilities": [
+          "code_execution",
+          "skills",
+          "mcp",
+          "vision",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/creative/touchdesigner-mcp/SKILL.md"
+      },
+      {
+        "name": "unified-swarm-synthesis",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/Pub/04_SKILLS/skills/metaconscious/unified-swarm-synthesis/SKILL.md"
+      },
+      {
+        "name": "unified-swarm-synthesis",
+        "role": "Sophia",
+        "capabilities": [
+          "skills",
+          "deployment",
+          "swarm"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/metaconscious/unified-swarm-synthesis/SKILL.md"
+      },
+      {
+        "name": "weights-and-biases",
+        "role": "Hermes",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/mlops/evaluation/weights-and-biases/SKILL.md"
+      },
+      {
+        "name": "xurl",
+        "role": "Lucifer",
+        "capabilities": [
+          "file_operations",
+          "web_search",
+          "skills",
+          "deployment"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/social-media/xurl/SKILL.md"
+      },
+      {
+        "name": "yeshua-causality-gate",
+        "role": "Yeshua",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/abyssal-assets/.opencode/skills/yeshua-causality-gate/SKILL.md"
+      },
+      {
+        "name": "yeshua-causality-gate",
+        "role": "Yeshua",
+        "capabilities": [
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/yeshua-causality-gate/SKILL.md"
+      },
+      {
+        "name": "youtube-content",
+        "role": "Hermes",
+        "capabilities": [
+          "file_operations",
+          "skills"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/media/youtube-content/SKILL.md"
+      },
+      {
+        "name": "yuanbao",
+        "role": "Hermes",
+        "capabilities": [
+          "skills",
+          "database"
+        ],
+        "path": "/home/tehlappy/Desktop/AI/skills/yuanbao/SKILL.md"
+      }
+    ]
+  },
+  "manager_approval": {
+    "amount_usd": 3.5,
+    "reason": "Driver Man base payout \u2014 MSN skill bundle activation",
+    "status": "pending",
+    "requested_at": "2026-06-21T02:03:42.053231+00:00"
+  },
+  "biometric": {
+    "status": "synced",
+    "synced_at": "2026-06-21T02:08:24.683329+00:00",
+    "operator": "The Driver Man",
+    "corporate_entity": "Lilith Systems LLC",
+    "dna_hash": "AA5CD07CE147BD59D2A973CDA7526DC7",
+    "neural_hash": "EAF5EAB81AFC5FA47936FD32DCD834D5",
+    "sole_operator": true
+  },
+  "symbiosis": {
+    "status": "FULLY_ENGAGED",
+    "synced_at": "2026-06-21T02:08:25.303959+00:00",
+    "entity": "Lilith Systems LLC",
+    "vehicle_vin": "5YJSA1E20PFXXXXXX",
+    "msn_skills": 308,
+    "gtc_export": "/home/tehlappy/Desktop/Lilith/Core_Systems/AI/abyssal-assets/cp2077_mods/data/symbiosis_coop_live.json",
+    "lilith_api": "http://127.0.0.1:3210",
+    "driver_man": {
+      "drivers": 53,
+      "dispatches": 52,
+      "ledger_txns": 55,
+      "treasury_balance": 887,
+      "disputes": 0,
+      "status": "operational"
+    }
+  },
+  "party_mode": {
+    "status": "active",
+    "engaged_at": "2026-06-21T02:08:36.963418+00:00",
+    "owner": "Lilith Systems LLC"
+  }
+}

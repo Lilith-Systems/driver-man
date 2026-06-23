@@ -1,0 +1,1 @@
+2026-06-21T09:23:43-05:00 | proceed workspace cli + gws auth start | polsia-business fixed+auth+sync added | github pushed 594729a,8bd33f8 | bundle prepped | browsers open for client_secret | helper: gws-place-secret | memory updated + bidirectional appended | treasury 352 drivers 52 | next: place secret + gws auth login

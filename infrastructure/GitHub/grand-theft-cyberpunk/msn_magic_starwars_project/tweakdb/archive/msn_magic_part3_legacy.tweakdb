@@ -1,0 +1,655 @@
+// GRAND THEFT CYBERPUNK — MAGIC SYSTEM TWEAKDB (PART 3/3)
+// Spells, Cyberware, Items, Armor, Consumables, Shards, Quests
+// File: r6/tweakdb/msn_magic_part3.tweakdb
+
+# ============================================================
+# SPELLS — 40+ Spells Across 8 Schools
+# ============================================================
+
+# EVOCATION SPELLS
+Spell:MSN_MagicMissile {
+    displayName: "LocKey#msn_mm_name"
+    description: "LocKey#msn_mm_desc"
+    school: "Evocation"
+    level: 1
+    manaCost: 10.0
+    cooldown: 3.0
+    range: 30.0
+    damage: 15.0
+    damageType: "Energy"
+    effects: [
+        { type: "AutoHit", value: true },
+        { type: "MultiTarget", count: 3, level: 5 }
+    ]
+}
+
+Spell:MSN_Fireball {
+    displayName: "LocKey#msn_fireball_name"
+    description: "LocKey#msn_fireball_desc"
+    school: "Evocation"
+    level: 3
+    manaCost: 30.0
+    cooldown: 15.0
+    range: 50.0
+    aoeRadius: 5.0
+    damage: 40.0
+    damageType: "Fire"
+    effects: [
+        { type: "AOE", radius: 5.0 },
+        { type: "Burn", chance: 0.3, duration: 5.0 }
+    ]
+}
+
+Spell:MSN_LightningBolt {
+    displayName: "LocKey#msn_lightning_name"
+    description: "LocKey#msn_lightning_desc"
+    school: "Evocation"
+    level: 3
+    manaCost: 25.0
+    cooldown: 10.0
+    range: 40.0
+    damage: 35.0
+    damageType: "Electric"
+    effects: [
+        { type: "ChainLightning", targets: 3, range: 8.0, damageReduction: 0.5 },
+        { type: "Stun", chance: 0.2, duration: 1.0 }
+    ]
+}
+
+Spell:MSN_ConeOfCold {
+    displayName: "LocKey#msn_cone_cold_name"
+    description: "LocKey#msn_cone_cold_desc"
+    school: "Evocation"
+    level: 5
+    manaCost: 40.0
+    cooldown: 20.0
+    range: 15.0
+    coneAngle: 60.0
+    damage: 50.0
+    damageType: "Cold"
+    effects: [
+        { type: "ConeAOE", angle: 60.0, range: 15.0 },
+        { type: "Freeze", chance: 0.25, duration: 3.0 }
+    ]
+}
+
+Spell:MSN_MeteorSwarm {
+    displayName: "LocKey#msn_meteor_name"
+    description: "LocKey#msn_meteor_desc"
+    school: "Evocation"
+    level: 9
+    manaCost: 100.0
+    cooldown: 60.0
+    range: 100.0
+    aoeRadius: 10.0
+    damage: 200.0
+    damageType: "Fire"
+    effects: [
+        { type: "MeteorCount", count: 4 },
+        { type: "AOE", radius: 10.0 },
+        { type: "Crater", permanent: true }
+    ]
+}
+
+Spell:MSN_Sunburst {
+    displayName: "LocKey#msn_sunburst_name"
+    description: "LocKey#msn_sunburst_desc"
+    school: "Evocation"
+    level: 9
+    manaCost: 90.0
+    cooldown: 60.0
+    range: 80.0
+    aoeRadius: 20.0
+    damage: 150.0
+    damageType: "Radiant"
+    effects: [
+        { type: "BlindUndead", chance: 1.0 },
+        { type: "AOE", radius: 20.0 },
+        { type: "HolyDamage", multiplier: 2.0 }
+    ]
+}
+
+Spell:MSN_WallOfFire {
+    displayName: "LocKey#msn_wall_fire_name"
+    description: "LocKey#msn_wall_fire_desc"
+    school: "Evocation"
+    level: 4
+    manaCost: 35.0
+    cooldown: 30.0
+    duration: 60.0
+    range: 30.0
+    effects: [
+        { type: "WallAOE", length: 20.0, width: 1.0 },
+        { type: "FireDamage", value: 30.0, perSecond: true }
+    ]
+}
+
+# ABJURATION SPELLS
+Spell:MSN_MageArmor {
+    displayName: "LocKey#msn_mage_armor_name"
+    description: "LocKey#msn_mage_armor_desc"
+    school: "Abjuration"
+    level: 1
+    manaCost: 15.0
+    cooldown: 300.0
+    duration: 300.0
+    effects: [
+        { type: "ArmorBonus", value: 50.0 },
+        { type: "MagicResistance", value: 0.2 }
+    ]
+}
+
+Spell:MSN_Shield {
+    displayName: "LocKey#msn_shield_name"
+    description: "LocKey#msn_shield_desc"
+    school: "Abjuration"
+    level: 1
+    manaCost: 10.0
+    cooldown: 60.0
+    duration: 60.0
+    effects: [
+        { type: "ShieldHP", value: 100.0 },
+        { type: "BlockMagic", value: true },
+        { type: "BlockProjectiles", value: true }
+    ]
+}
+
+Spell:MSN_ProtectionFromEnergy {
+    displayName: "LocKey#msn_prot_energy_name"
+    description: "LocKey#msn_prot_energy_desc"
+    school: "Abjuration"
+    level: 3
+    manaCost: 25.0
+    cooldown: 60.0
+    duration: 300.0
+    effects: [
+        { type: "EnergyResistance", type: "FireColdElectricAcid", value: 0.5 }
+    ]
+}
+
+Spell:MSN_GlobeOfInvulnerability {
+    displayName: "LocKey#msn_globe_name"
+    description: "LocKey#msn_globe_desc"
+    school: "Abjuration"
+    level: 6
+    manaCost: 50.0
+    cooldown: 60.0
+    duration: 60.0
+    radius: 5.0
+    effects: [
+        { type: "SpellImmunity", level: 5 },
+        { type: "AOESpellBlock", radius: 10.0 }
+    ]
+}
+
+Spell:MSN_PrismaticWall {
+    displayName: "LocKey#msn_prismatic_name"
+    description: "LocKey#msn_prismatic_desc"
+    school: "Abjuration"
+    level: 9
+    manaCost: 80.0
+    cooldown: 120.0
+    duration: 60.0
+    effects: [
+        { type: "SevenLayers", colors: ["Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"] },
+        { type: "EachLayerEffect", effects: ["Fire", "Acid", "Poison", "Petrify", "Blind", "Insanity", "Banish"] }
+    ]
+}
+
+Spell:MSN_MagesDisjunction {
+    displayName: "LocKey#msn_disjunction_name"
+    description: "LocKey#msn_disjunction_desc"
+    school: "Abjuration"
+    level: 9
+    manaCost: 70.0
+    cooldown: 120.0
+    range: 60.0
+    effects: [
+        { type: "DispelMagic", area: true, level: "All" },
+        { type: "DestroyMagicItems", chance: 0.5 }
+    ]
+}
+
+# CONJURATION SPELLS
+Spell:MSN_SummonFamiliar {
+    displayName: "LocKey#msn_familiar_name"
+    description: "LocKey#msn_familiar_desc"
+    school: "Conjuration"
+    level: 1
+    manaCost: 50.0
+    cooldown: 3600.0
+    effects: [
+        { type: "SpawnEntity", template: "Familiar_Imp", duration: 3600.0 },
+        { type: "TelepathicLink", range: 100.0 }
+    ]
+}
+
+Spell:MSN_UnseenServant {
+    displayName: "LocKey#msn_unseen_name"
+    description: "LocKey#msn_unseen_desc"
+    school: "Conjuration"
+    level: 1
+    manaCost: 5.0
+    cooldown: 300.0
+    duration: 3600.0
+    effects: [
+        { type: "SpawnEntity", template: "UnseenServant", duration: 3600.0 },
+        { type: "CarryCapacity", value: 50.0 }
+    ]
+}
+
+Spell:MSN_ConjureElemental {
+    displayName: "LocKey#msn_elemental_name"
+    description: "LocKey#msn_elemental_desc"
+    school: "Conjuration"
+    level: 5
+    manaCost: 60.0
+    cooldown: 60.0
+    duration: 300.0
+    effects: [
+        { type: "SpawnEntity", template: "Elemental_Fire", duration: 300.0 },
+        { type: "ElementalControl", duration: 300.0 }
+    ]
+}
+
+Spell:MSN_Gate {
+    displayName: "LocKey#msn_gate_name"
+    description: "LocKey#msn_gate_desc"
+    school: "Conjuration"
+    level: 9
+    manaCost: 100.0
+    cooldown: 300.0
+    effects: [
+        { type: "PlanarPortal", destination: "Random", duration: 60.0 },
+        { type: "SummonEntity", template: "RandomOutsider", duration: 300.0 }
+    ]
+}
+
+# DIVINATION SPELLS
+Spell:MSN_DetectMagic {
+    displayName: "LocKey#msn_detect_magic_name"
+    description: "LocKey#msn_detect_magic_desc"
+    school: "Divination"
+    level: 0
+    manaCost: 5.0
+    cooldown: 30.0
+    duration: 60.0
+    radius: 30.0
+    effects: [
+        { type: "DetectAuras", schools: "All", range: 30.0 }
+    ]
+}
+
+Spell:MSN_Clairvoyance {
+    displayName: "LocKey#msn_clairvoyance_name"
+    description: "LocKey#msn_clairvoyance_desc"
+    school: "Divination"
+    level: 3
+    manaCost: 20.0
+    cooldown: 15.0
+    duration: 60.0
+    range: 1000.0
+    effects: [
+        { type: "RemoteViewing", sensor: "Visual", range: 1000.0 }
+    ]
+}
+
+Spell:MSN_Foresight {
+    displayName: "LocKey#msn_foresight_name"
+    description: "LocKey#msn_foresight_desc"
+    school: "Divination"
+    level: 9
+    manaCost: 50.0
+    cooldown: 300.0
+    duration: 300.0
+    effects: [
+        { type: "AdvantageOnAll", duration: 300.0 },
+        { type: "CannotBeSurprised", value: true },
+        { type: "Premonition", interval: 10.0 }
+    ]
+}
+
+Spell:MSN_TrueSeeing {
+    displayName: "LocKey#msn_true_seeing_name"
+    description: "LocKey#msn_true_seeing_desc"
+    school: "Divination"
+    level: 6
+    manaCost: 40.0
+    cooldown: 60.0
+    duration: 300.0
+    effects: [
+        { type: "TrueSight", range: 120.0 },
+        { type: "DetectInvisible", value: true },
+        { type: "SeeThroughIllusions", value: true }
+    ]
+}
+
+# ENCHANTMENT SPELLS
+Spell:MSN_CharmPerson {
+    displayName: "LocKey#msn_charm_name"
+    description: "LocKey#msn_charm_desc"
+    school: "Enchantment"
+    level: 1
+    manaCost: 10.0
+    cooldown: 15.0
+    duration: 300.0
+    range: 10.0
+    effects: [
+        { type: "Charmed", target: "Humanoid", attitude: "Friendly" }
+    ]
+}
+
+Spell:MSN_Suggestion {
+    displayName: "LocKey#msn_suggestion_name"
+    description: "LocKey#msn_suggestion_desc"
+    school: "Enchantment"
+    level: 2
+    manaCost: 15.0
+    cooldown: 30.0
+    duration: 3600.0
+    range: 10.0
+    effects: [
+        { type: "Suggested", action: "Reasonable", duration: 3600.0 }
+    ]
+}
+
+Spell:MSN_HoldPerson {
+    displayName: "LocKey#msn_hold_name"
+    description: "LocKey#msn_hold_desc"
+    school: "Enchantment"
+    level: 2
+    manaCost: 15.0
+    cooldown: 30.0
+    duration: 60.0
+    range: 15.0
+    effects: [
+        { type: "Paralyzed", target: "Humanoid", duration: 60.0 }
+    ]
+}
+
+Spell:MSN_DominatePerson {
+    displayName: "LocKey#msn_dominate_name"
+    description: "LocKey#msn_dominate_desc"
+    school: "Enchantment"
+    level: 5
+    manaCost: 40.0
+    cooldown: 60.0
+    duration: 300.0
+    range: 15.0
+    effects: [
+        { type: "Dominated", target: "Humanoid", control: "Full" }
+    ]
+}
+
+Spell:MSN_MassDominate {
+    displayName: "LocKey#msn_mass_dominate_name"
+    description: "LocKey#msn_mass_dominate_desc"
+    school: "Enchantment"
+    level: 9
+    manaCost: 80.0
+    cooldown: 300.0
+    range: 30.0
+    effects: [
+        { type: "Dominated", target: "AllHumanoids", count: 10, control: "Full" }
+    ]
+}
+
+# ILLUSION SPELLS
+Spell:MSN_MinorIllusion {
+    displayName: "LocKey#msn_minor_illusion_name"
+    description: "LocKey#msn_minor_illusion_desc"
+    school: "Illusion"
+    level: 0
+    manaCost: 2.0
+    cooldown: 10.0
+    duration: 60.0
+    effects: [
+        { type: "CreateIllusion", size: "Small", sensory: "VisualAuditory" }
+    ]
+}
+
+Spell:MSN_DisguiseSelf {
+    displayName: "LocKey#msn_disguise_name"
+    description: "LocKey#msn_disguise_desc"
+    school: "Illusion"
+    level: 1
+    manaCost: 10.0
+    cooldown: 30.0
+    duration: 3600.0
+    effects: [
+        { type: "Disguise", appearance: "AnyHumanoid" }
+    ]
+}
+
+Spell:MSN_Invisibility {
+    displayName: "LocKey#msn_invis_name"
+    description: "LocKey#msn_invis_desc"
+    school: "Illusion"
+    level: 2
+    manaCost: 15.0
+    cooldown: 30.0
+    duration: 300.0
+    effects: [
+        { type: "Invisible", improved: false }
+    ]
+}
+
+Spell:MSN_MirrorImage {
+    displayName: "LocKey#msn_mirror_name"
+    description: "LocKey#msn_mirror_desc"
+    school: "Illusion"
+    level: 2
+    manaCost: 15.0
+    cooldown: 60.0
+    duration: 60.0
+    effects: [
+        { type: "Duplicate", count: 3, ac: 10 }
+    ]
+}
+
+Spell:MSN_GreaterInvisibility {
+    displayName: "LocKey#msn_greater_invis_name"
+    description: "LocKey#msn_greater_invis_desc"
+    school: "Illusion"
+    level: 4
+    manaCost: 30.0
+    cooldown: 60.0
+    duration: 60.0
+    effects: [
+        { type: "Invisible", improved: true, attackBreaks: false }
+    ]
+}
+
+Spell:MSN_Simulacrum {
+    displayName: "LocKey#msn_simulacrum_name"
+    description: "LocKey#msn_simulacrum_desc"
+    school: "Illusion"
+    level: 7
+    manaCost: 80.0
+    cooldown: 86400.0
+    effects: [
+        { type: "Duplicate", perfect: true, hp: 0.5, stats: 1.0 }
+    ]
+}
+
+Spell:MSN_Weird {
+    displayName: "LocKey#msn_weird_name"
+    description: "LocKey#msn_weird_desc"
+    school: "Illusion"
+    level: 9
+    manaCost: 70.0
+    cooldown: 120.0
+    range: 60.0
+    effects: [
+        { type: "PhantasmalKilling", targets: "AllInRadius", radius: 30.0 }
+    ]
+}
+
+# NECROMANCY SPELLS
+Spell:MSN_FalseLife {
+    displayName: "LocKey#msn_false_life_name"
+    description: "LocKey#msn_false_life_desc"
+    school: "Necromancy"
+    level: 1
+    manaCost: 10.0
+    cooldown: 300.0
+    duration: 3600.0
+    effects: [
+        { type: "TempHP", value: 20.0 }
+    ]
+}
+
+Spell:MSN_AnimateDead {
+    displayName: "LocKey#msn_animate_dead_name"
+    description: "LocKey#msn_animate_dead_desc"
+    school: "Necromancy"
+    level: 3
+    manaCost: 30.0
+    cooldown: 3600.0
+    effects: [
+        { type: "CreateUndead", type: "SkeletonZombie", count: 2, duration: "Permanent" }
+    ]
+}
+
+Spell:MSN_CreateUndead {
+    displayName: "LocKey#msn_create_undead_name"
+    description: "LocKey#msn_create_undead_desc"
+    school: "Necromancy"
+    level: 6
+    manaCost: 60.0
+    cooldown: 3600.0
+    effects: [
+        { type: "CreateUndead", type: "GhoulWight", count: 3, duration: "Permanent" }
+    ]
+}
+
+Spell:MSN_FingerOfDeath {
+    displayName: "LocKey#msn_finger_death_name"
+    description: "LocKey#msn_finger_death_desc"
+    school: "Necromancy"
+    level: 7
+    manaCost: 50.0
+    cooldown: 60.0
+    range: 20.0
+    effects: [
+        { type: "InstantDeath", damage: 100.0, type: "Necrotic" }
+    ]
+}
+
+Spell:MSN_TrueResurrection {
+    displayName: "LocKey#msn_true_res_name"
+    description: "LocKey#msn_true_res_desc"
+    school: "Necromancy"
+    level: 9
+    manaCost: 100.0
+    cooldown: 86400.0
+    effects: [
+        { type: "Resurrect", target: "Dead", condition: "Perfect", regainLevel: true }
+    ]
+}
+
+Spell:MSN_PowerWordKill {
+    displayName: "LocKey#msn_pwk_name"
+    description: "LocKey#msn_pwk_desc"
+    school: "Necromancy"
+    level: 9
+    manaCost: 60.0
+    cooldown: 120.0
+    range: 30.0
+    effects: [
+        { type: "InstantDeath", condition: "HPBelow100" }
+    ]
+}
+
+# TRANSMUTATION SPELLS
+Spell:MSN_FeatherFall {
+    displayName: "LocKey#msn_feather_fall_name"
+    description: "LocKey#msn_feather_fall_desc"
+    school: "Transmutation"
+    level: 1
+    manaCost: 5.0
+    cooldown: 60.0
+    duration: 60.0
+    effects: [
+        { type: "FallDamageImmunity", value: true }
+    ]
+}
+
+Spell:MSN_EnlargeReduce {
+    displayName: "LocKey#msn_enlarge_name"
+    description: "LocKey#msn_enlarge_desc"
+    school: "Transmutation"
+    level: 2
+    manaCost: 15.0
+    cooldown: 30.0
+    duration: 60.0
+    effects: [
+        { type: "SizeChange", multiplier: 2.0, stats: "StrCon" }
+    ]
+}
+
+Spell:MSN_Polymorph {
+    displayName: "LocKey#msn_polymorph_name"
+    description: "LocKey#msn_polymorph_desc"
+    school: "Transmutation"
+    level: 4
+    manaCost: 35.0
+    cooldown: 30.0
+    duration: 300.0
+    range: 10.0
+    effects: [
+        { type: "Transform", target: "Creature", forms: ["Beast", "Dragon", "Giant"] }
+    ]
+}
+
+Spell:MSN_StoneShape {
+    displayName: "LocKey#msn_stone_shape_name"
+    description: "LocKey#msn_stone_shape_desc"
+    school: "Transmutation"
+    level: 4
+    manaCost: 30.0
+    cooldown: 30.0
+    range: 10.0
+    effects: [
+        { type: "ReshapeStone", volume: "100 cubic feet" }
+    ]
+}
+
+Spell:MSN_TruePolymorph {
+    displayName: "LocKey#msn_true_poly_name"
+    description: "LocKey#msn_true_poly_desc"
+    school: "Transmutation"
+    level: 9
+    manaCost: 80.0
+    cooldown: 120.0
+    duration: "Permanent"
+    range: 10.0
+    effects: [
+        { type: "Transform", target: "Any", forms: "Any", permanent: true }
+    ]
+}
+
+Spell:MSN_TimeStop {
+    displayName: "LocKey#msn_time_stop_name"
+    description: "LocKey#msn_time_stop_desc"
+    school: "Transmutation"
+    level: 9
+    manaCost: 80.0
+    cooldown: 300.0
+    duration: 10.0
+    effects: [
+        { type: "TimeStop", duration: 10.0, casterOnly: true }
+    ]
+}
+
+Spell:MSN_Wish {
+    displayName: "LocKey#msn_wish_name"
+    description: "LocKey#msn_wish_desc"
+    school: "Transmutation"
+    level: 9
+    manaCost: 150.0
+    cooldown: 86400.0
+    effects: [
+        { type: "RealityRewrite", scope: "Any", limits: "DMDiscretion" }
+    ]
+}

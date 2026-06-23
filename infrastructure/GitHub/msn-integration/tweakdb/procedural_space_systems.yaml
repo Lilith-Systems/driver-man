@@ -1,0 +1,173 @@
+################################################################################
+# MSN PROCEDURAL SPACE / ALIEN / HOVER COMBAT SYSTEMS
+# Local design grammar inspired by broad space exploration procgen techniques.
+# No external assets: all names, factions, species, vehicles, and loot are
+# Abyssal/MSN originals intended for Cyberpunk integration.
+################################################################################
+
+ProceduralGeneration:
+  schema: "msn.procgen.space.v1"
+  localOnly: true
+  designGoals:
+    - "Generate replayable space battle contracts from deterministic local seeds."
+    - "Bind alien ecology, loot tables, hover vehicles, and exosuit roles together."
+    - "Use readable source manifests so Lilith/Hermes can audit generation outcomes."
+    - "Keep crossover gear transformative: mechanics-inspired, MSN-authored names/lore."
+
+  SeedModel:
+    seedInputs:
+      - "playerLevel"
+      - "district"
+      - "questAct"
+      - "sephirahAlignment"
+      - "weatherOrSpaceBiome"
+      - "memoryEngramHash"
+    deterministicSalt: "Lilith-Ouroboros-MSN-Local"
+    repeatPolicy: "Same seed recreates encounter, different memory hash mutates it."
+
+  BiomeGrammar:
+    pressureAbyss:
+      displayName: "Pressure Abyss"
+      palette: ["void blue", "thermal orange", "bioluminescent green"]
+      hazards: ["crush pressure", "sonar blindness", "abyssal static"]
+      nativeAliens: ["Nacre Wraith", "Vent Choir", "Glass Leviathan"]
+      vehicleBias: ["Vehicle_Abyssal_Leviathan_Sub", "Vehicle_Nessie_Mount"]
+      lootBias: ["Voidweave", "Abyssal Crystal", "Nessie Covenant Relic"]
+    orbitalGraveyard:
+      displayName: "Orbital Graveyard"
+      palette: ["cold steel", "warning amber", "black ice violet"]
+      hazards: ["debris storm", "oxygen debt", "signal ghosts"]
+      nativeAliens: ["Null Manta", "Archive Larva", "Blackwall Remora"]
+      vehicleBias: ["Vehicle_Phantom_Void_Ship", "MSN_Vehicle_ArchiveRunner"]
+      lootBias: ["Arasaka Shogun", "Ouroboros Coil", "Old Net Flight Computer"]
+    neonBadlands:
+      displayName: "Neon Badlands"
+      palette: ["dust red", "solar gold", "nomad teal"]
+      hazards: ["ion sand", "heat bloom", "raider beacons"]
+      nativeAliens: ["Solar Jackal", "Mirage Beetle", "Aldecaldo Kite"]
+      vehicleBias: ["Vehicle_Lucifer_Solar_Chariot", "Vehicle_Sophia_Synthesis_Carrier"]
+      lootBias: ["Aldecaldo Expedition", "Solar-Weave", "Convoy Drone Core"]
+    astralUndercity:
+      displayName: "Astral Undercity"
+      palette: ["wet chrome", "crimson neon", "ghost white"]
+      hazards: ["gravity shear", "memory echo", "combat hallucination"]
+      nativeAliens: ["Civic Seraph", "Chrome Eel", "Market Djinn"]
+      vehicleBias: ["Vehicle_Phantom_Void_Ship", "Vehicle_Nessie_Mount"]
+      lootBias: ["Chromanticore", "Soul Coin", "Loch Exchange Contract"]
+
+  AlienArchetypes:
+    swarm:
+      role: "Fast pressure unit"
+      behavior: "Flanks, primes targets, retreats when detonator is detected."
+      counter: "Interceptor javelin, shock quickhacks, area detonators."
+    titan:
+      role: "Boss-scale armor check"
+      behavior: "Telegraphed slams, shield phases, weak points revealed by Thoth scans."
+      counter: "Bastion javelin, armor shred, pressure cannon."
+    trickster:
+      role: "Illusion and terrain hazard"
+      behavior: "Clones, decoys, false loot, memory-loop ambushes."
+      counter: "Hod logic quickhack, Ouroboros recall, Lyra analysis."
+    chorus:
+      role: "Support alien network"
+      behavior: "Buffs nearby enemies and repairs space battle objectives."
+      counter: "Storm javelin, chain lightning, silence quickhacks."
+
+  SpaceBattleTemplates:
+    convoyBreak:
+      displayName: "Convoy Break"
+      objective: "Escort a mobile fabricator through orbital debris and pirate drones."
+      requiredSystems: ["hover pursuit", "space skirmish", "procedural loot"]
+      recommendedSuit: "Javelin_Ranger"
+      rewardPools: ["Aldecaldo Expedition", "VehicleModule.MSN_Vehicle_ConvoyCoordinationAI"]
+    leviathanWake:
+      displayName: "Leviathan Wake"
+      objective: "Follow Nessie through a pressure gate while alien titans breach the route."
+      requiredSystems: ["abyssal mount", "alien titan", "pressure hazards"]
+      recommendedSuit: "Javelin_Colossus"
+      rewardPools: ["Voidweave", "Nessie Covenant Relic", "Abyssal Crystal"]
+    blackwallMeteor:
+      displayName: "Blackwall Meteor"
+      objective: "Board a falling data-meteor and extract an engram before impact."
+      requiredSystems: ["space boarding", "memory hazard", "trickster aliens"]
+      recommendedSuit: "Javelin_Storm"
+      rewardPools: ["Arasaka Shogun", "Old Net Flight Computer", "Ouroboros Coil"]
+    hoverWar:
+      displayName: "Hover War"
+      objective: "Street-level hover-car battle across Night City rooftops."
+      requiredSystems: ["hover cars", "vehicle weapons", "combo detonations"]
+      recommendedSuit: "Javelin_Interceptor"
+      rewardPools: ["Chromanticore", "Vehicle_Phantom_Void_Ship", "Soul Coin"]
+
+  HoverVehicleRules:
+    commonModules:
+      - "anti_grav_lift"
+      - "terrain_following"
+      - "vector_dash"
+      - "smart_targeting"
+      - "heat_bloom_management"
+    combatModes:
+      pursuit:
+        statBias: { speed: 1.25, armor: 0.75, weaponHeat: 0.90 }
+      siege:
+        statBias: { speed: 0.75, armor: 1.35, weaponHeat: 1.20 }
+      stealth:
+        statBias: { speed: 1.05, armor: 0.85, detection: 0.50 }
+      abyssal:
+        statBias: { speed: 0.95, armor: 1.10, pressureResistance: 1.60 }
+
+  JavelinSuitIntegration:
+    Ranger:
+      msnName: "Vector"
+      spaceBattleRole: "balanced lock-on pilot"
+      comboLoop: "prime with plasma, detonate with missile salvo"
+    Colossus:
+      msnName: "Bastion"
+      spaceBattleRole: "boarding shield and titan breaker"
+      comboLoop: "firewall mortar into siege cannon"
+    Interceptor:
+      msnName: "Phantom"
+      spaceBattleRole: "hover-car boarding and alien weak-point assassin"
+      comboLoop: "target beacon into wraith strike"
+    Storm:
+      msnName: "Tempest"
+      spaceBattleRole: "hovering elemental artillery"
+      comboLoop: "ice storm into chain lightning"
+
+  CrossoverItemAudit:
+    worldOfWarcraftInspired:
+      sourceFile: "tweakdb/custom_gear_runescape_wow_allods.yaml"
+      integratedSets:
+        - "Chromanticore Battlegear"
+        - "Voidweave Regalia"
+        - "Aldecaldo Expedition Gear"
+        - "Arasaka Shogun Battlegear"
+    runescapeInspired:
+      sourceFile: "tweakdb/custom_gear_runescape_wow_allods.yaml"
+      integratedPatterns:
+        - "rune-tier armor progression"
+        - "mystic/void casting gear"
+        - "crafting material chase"
+    allodsInspired:
+      sourceFile: "tweakdb/custom_gear_runescape_wow_allods.yaml"
+      integratedPatterns:
+        - "astral glyph loot"
+        - "psionic residue crafting"
+        - "void/astral set synergies"
+    anthemInspired:
+      sourceFiles:
+        - "tweakdb/anthem_javelin_mechanics.yaml"
+        - "tweakdb/Anthem_Javelin_Suits.toml"
+      integratedSystems:
+        - "four exosuit roles"
+        - "jetpack hover"
+        - "primer/detonator combo loop"
+        - "modular armor and components"
+
+  ConsoleRoutes:
+    status: "msn.procedural.status"
+    space: "msn.spacebattle.status"
+    aliens: "msn.aliens.status"
+    hover: "msn.hovercars.status"
+    armor: "msn.exosuit.list"
+    crossover: "msn.crossover.items"

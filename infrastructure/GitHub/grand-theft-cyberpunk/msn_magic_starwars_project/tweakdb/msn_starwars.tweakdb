@@ -1,0 +1,1217 @@
+// GRAND THEFT CYBERPUNK — STAR WARS TWEAKDB
+// The Force in Night City: Complete TweakDB Integration
+// File: r6/tweakdb/msn_starwars.tweakdb
+// Generated: 2026-06-19 | Lilith Sovereign Seal | Sephirah: Tiphareth
+
+// ============================================================
+// FORCE SENSITIVITY SKILL TREE — Force Powers + Lightsaber Forms
+// ============================================================
+
+SkillTree:MSN_Force_SkillTree {
+    displayName: "LocKey#msn_force_tree_name"
+    description: "LocKey#msn_force_tree_desc"
+    icon: "msn_force_tree_icon"
+    categories: [
+        "Force_Light",
+        "Force_Dark",
+        "Force_Universal",
+        "Lightsaber_Forms",
+        "Force_Manifestations"
+    ]
+}
+
+// ============================================================
+// LIGHT SIDE POWERS (Chesed - Mercy/Protection)
+// ============================================================
+
+Perk:MSN_ForcePush {
+    displayName: "LocKey#msn_forcepush_name"
+    description: "LocKey#msn_forcepush_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForcePush" },
+        { type: "StatModifier", stat: "ForcePushForce", value: 1.2 }
+    ]
+}
+
+Perk:MSN_ForcePull {
+    displayName: "LocKey#msn_forcepull_name"
+    description: "LocKey#msn_forcepull_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    requiredPerks: ["Perk.MSN_ForcePush"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForcePull" },
+        { type: "StatModifier", stat: "ForcePullRange", value: 1.5 }
+    ]
+}
+
+Perk:MSN_ForceHeal {
+    displayName: "LocKey#msn_forceheal_name"
+    description: "LocKey#msn_forceheal_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_ForcePush", "Perk.MSN_ForcePull"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForceHeal" },
+        { type: "StatModifier", stat: "ForceHealAmount", value: 1.5 }
+    ]
+}
+
+Perk:MSN_ForceSpeed {
+    displayName: "LocKey#msn_forcespeed_name"
+    description: "LocKey#msn_forcespeed_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_ForcePush"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForceSpeed" },
+        { type: "StatModifier", stat: "ForceSpeedDuration", value: 1.5 }
+    ]
+}
+
+Perk:MSN_ForceProtection {
+    displayName: "LocKey#msn_forceprotection_name"
+    description: "LocKey#msn_forceprotection_desc"
+    maxLevel: 1
+    requiredLevel: 20
+    requiredPerks: ["Perk.MSN_ForceHeal"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForceProtection" },
+        { type: "StatModifier", stat: "ForceProtectionDR", value: 0.5 }
+    ]
+}
+
+Perk:MSN_MindTrick {
+    displayName: "LocKey#msn_mindtrick_name"
+    description: "LocKey#msn_mindtrick_desc"
+    maxLevel: 1
+    requiredLevel: 20
+    requiredPerks: ["Perk.MSN_ForceHeal"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "MindTrick" },
+        { type: "StatModifier", stat: "MindTrickDC", value: 5 }
+    ]
+}
+
+Perk:MSN_ForceSense {
+    displayName: "LocKey#msn_forcesense_name"
+    description: "LocKey#msn_forcesense_desc"
+    maxLevel: 1
+    requiredLevel: 10
+    requiredPerks: ["Perk.MSN_ForcePush"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForceSense" },
+        { type: "StatModifier", stat: "ForceSenseRange", value: 2.0 }
+    ]
+}
+
+Perk:MSN_BattleMeditation {
+    displayName: "LocKey#msn_battlemed_name"
+    description: "LocKey#msn_battlemed_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_ForceProtection", "Perk.MSN_ForceSense"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "BattleMeditation" },
+        { type: "StatModifier", stat: "BattleMeditationRadius", value: 100.0 }
+    ]
+}
+
+Perk:MSN_ForceGhost {
+    displayName: "LocKey#msn_forceghost_name"
+    description: "LocKey#msn_forceghost_desc"
+    maxLevel: 1
+    requiredLevel: 50
+    requiredPerks: ["Perk.MSN_BattleMeditation"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForceGhost" },
+        { type: "EnableTranscendence", value: true }
+    ]
+}
+
+// DARK SIDE POWERS (Geburah - Strength/Judgment)
+
+Perk:MSN_ForceLightning {
+    displayName: "LocKey#msn_forcelightning_name"
+    description: "LocKey#msn_forcelightning_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForceLightning" },
+        { type: "StatModifier", stat: "ForceLightningDamage", value: 1.5 }
+    ]
+}
+
+Perk:MSN_ForceChoke {
+    displayName: "LocKey#msn_forcechoke_name"
+    description: "LocKey#msn_forcechoke_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_ForceLightning"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForceChoke" },
+        { type: "StatModifier", stat: "ForceChokeDuration", value: 1.5 }
+    ]
+}
+
+Perk:MSN_ForceDrain {
+    displayName: "LocKey#msn_forcedrain_name"
+    description: "LocKey#msn_forcedrain_desc"
+    maxLevel: 1
+    requiredLevel: 20
+    requiredPerks: ["Perk.MSN_ForceLightning"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForceDrain" },
+        { type: "StatModifier", stat: "ForceDrainEfficiency", value: 2.0 }
+    ]
+}
+
+Perk:MSN_ForceRage {
+    displayName: "LocKey#msn_forcerage_name"
+    description: "LocKey#msn_forcerage_desc"
+    maxLevel: 1
+    requiredLevel: 20
+    requiredPerks: ["Perk.MSN_ForceChoke"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForceRage" },
+        { type: "StatModifier", stat: "ForceRageDamage", value: 2.0 },
+        { type: "StatModifier", stat: "ForceRageDR", value: 0.3 }
+    ]
+}
+
+Perk:MSN_ForceScream {
+    displayName: "LocKey#msn_forcescream_name"
+    description: "LocKey#msn_forcescream_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_ForceLightning"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForceScream" },
+        { type: "StatModifier", stat: "ForceScreamRadius", value: 2.0 }
+    ]
+}
+
+Perk:MSN_ForceCorrupt {
+    displayName: "LocKey#msn_forcecorrupt_name"
+    description: "LocKey#msn_forcecorrupt_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_ForceDrain"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForceCorrupt" },
+        { type: "StatModifier", stat: "ForceCorruptChance", value: 0.5 }
+    ]
+}
+
+Perk:MSN_ForcePlague {
+    displayName: "LocKey#msn_forceplague_name"
+    description: "LocKey#msn_forceplague_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_ForceCorrupt"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForcePlague" },
+        { type: "StatModifier", stat: "ForcePlagueDuration", value: 2.0 }
+    ]
+}
+
+Perk:MSN_ForceDestruction {
+    displayName: "LocKey#msn_forcedestruction_name"
+    description: "LocKey#msn_forcedestruction_desc"
+    maxLevel: 1
+    requiredLevel: 40
+    requiredPerks: ["Perk.MSN_ForceRage", "Perk.MSN_ForceScream"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForceDestruction" },
+        { type: "StatModifier", stat: "ForceDestructionRadius", value: 2.0 }
+    ]
+}
+
+Perk:MSN_EssenceTransfer {
+    displayName: "LocKey#msn_essencetransfer_name"
+    description: "LocKey#msn_essencetransfer_desc"
+    maxLevel: 1
+    requiredLevel: 50
+    requiredPerks: ["Perk.MSN_ForceDestruction"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "EssenceTransfer" },
+        { type: "EnablePossession", value: true }
+    ]
+}
+
+// UNIVERSAL POWERS
+
+Perk:MSN_ForceJump {
+    displayName: "LocKey#msn_forcejump_name"
+    description: "LocKey#msn_forcejump_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForceJump" },
+        { type: "StatModifier", stat: "ForceJumpHeight", value: 3.0 }
+    ]
+}
+
+Perk:MSN_ForceDash {
+    displayName: "LocKey#msn_forcedash_name"
+    description: "LocKey#msn_forcedash_desc"
+    maxLevel: 1
+    requiredLevel: 10
+    requiredPerks: ["Perk.MSN_ForceJump"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForceDash" },
+        { type: "StatModifier", stat: "ForceDashDistance", value: 2.0 }
+    ]
+}
+
+Perk:MSN_Telekinesis {
+    displayName: "LocKey#msn_telekinesis_name"
+    description: "LocKey#msn_telekinesis_desc"
+    maxLevel: 1
+    requiredLevel: 10
+    requiredPerks: ["Perk.MSN_ForcePush", "Perk.MSN_ForcePull"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "Telekinesis" },
+        { type: "StatModifier", stat: "TelekinesisWeight", value: 500.0 }
+    ]
+}
+
+Perk:MSN_ForceVision {
+    displayName: "LocKey#msn_forcevision_name"
+    description: "LocKey#msn_forcevision_desc"
+    maxLevel: 1
+    requiredLevel: 30
+    requiredPerks: ["Perk.MSN_ForceSense"]
+    type: "Force"
+    effects: [
+        { type: "UnlockForcePower", power: "ForceVision" },
+        { type: "StatModifier", stat: "ForceVisionClarity", value: 1.0 }
+    ]
+}
+
+// LIGHTSABER FORMS
+
+Perk:MSN_Form_I_Shii_Cho {
+    displayName: "LocKey#msn_form1_name"
+    description: "LocKey#msn_form1_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Lightsaber"
+    effects: [
+        { type: "UnlockForm", form: "Form_I_Shii_Cho" },
+        { type: "StatModifier", stat: "Form1Defense", value: 0.2 }
+    ]
+}
+
+Perk:MSN_Form_II_Makashi {
+    displayName: "LocKey#msn_form2_name"
+    description: "LocKey#msn_form2_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_Form_I_Shii_Cho"]
+    type: "Lightsaber"
+    effects: [
+        { type: "UnlockForm", form: "Form_II_Makashi" },
+        { type: "StatModifier", stat: "Form2Dueling", value: 0.5 }
+    ]
+}
+
+Perk:MSN_Form_III_Soresu {
+    displayName: "LocKey#msn_form3_name"
+    description: "LocKey#msn_form3_desc"
+    maxLevel: 1
+    requiredLevel: 20
+    requiredPerks: ["Perk.MSN_Form_I_Shii_Cho"]
+    type: "Lightsaber"
+    effects: [
+        { type: "UnlockForm", form: "Form_III_Soresu" },
+        { type: "StatModifier", stat: "Form3Deflect", value: 0.95 }
+    ]
+}
+
+Perk:MSN_Form_IV_Ataru {
+    displayName: "LocKey#msn_form4_name"
+    description: "LocKey#msn_form4_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_Form_I_Shii_Cho"]
+    type: "Lightsaber"
+    effects: [
+        { type: "UnlockForm", form: "Form_IV_Ataru" },
+        { type: "StatModifier", stat: "Form4Speed", value: 2.0 }
+    ]
+}
+
+Perk:MSN_Form_V_Shien_Djem_So {
+    displayName: "LocKey#msn_form5_name"
+    description: "LocKey#msn_form5_desc"
+    maxLevel: 1
+    requiredLevel: 30
+    requiredPerks: ["Perk.MSN_Form_III_Soresu"]
+    type: "Lightsaber"
+    effects: [
+        { type: "UnlockForm", form: "Form_V_Shien_Djem_So" },
+        { type: "StatModifier", stat: "Form5CounterAttack", value: 0.5 }
+    ]
+}
+
+Perk:MSN_Form_VI_Niman {
+    displayName: "LocKey#msn_form6_name"
+    description: "LocKey#msn_form6_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_Form_I_Shii_Cho"]
+    type: "Lightsaber"
+    effects: [
+        { type: "UnlockForm", form: "Form_VI_Niman" },
+        { type: "StatModifier", stat: "Form6ForceIntegration", value: 0.5 }
+    ]
+}
+
+Perk:MSN_Form_VII_Juyo_Vaapad {
+    displayName: "LocKey#msn_form7_name"
+    description: "LocKey#msn_form7_desc"
+    maxLevel: 1
+    requiredLevel: 45
+    requiredPerks: ["Perk.MSN_Form_V_Shien_Djem_So", "Perk.MSN_Form_VI_Niman"]
+    type: "Lightsaber"
+    effects: [
+        { type: "UnlockForm", form: "Form_VII_Juyo_Vaapad" },
+        { type: "StatModifier", stat: "Form7Damage", value: 2.0 },
+        { type: "StatModifier", stat: "Form7DarkSideRisk", value: 0.1 }
+    ]
+}
+
+// ALIGNMENT PERKS
+
+Perk:MSN_Jedi_Path {
+    displayName: "LocKey#msn_jedi_path_name"
+    description: "LocKey#msn_jedi_path_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Alignment"
+    effects: [
+        { type: "SetAlignment", alignment: "Jedi" },
+        { type: "UnlockForcePowers", powers: ["ForcePush", "ForcePull", "ForceSense", "ForceJump", "ForceHeal", "ForceProtection", "MindTrick", "BattleMeditation", "ForceGhost"] },
+        { type: "StatModifier", stat: "LightSidePurity", value: 0.1, perLevel: true },
+        { type: "GrantLightsaber", color: "Blue" }
+    ]
+}
+
+Perk:MSN_Sith_Path {
+    displayName: "LocKey#msn_sith_path_name"
+    description: "LocKey#msn_sith_path_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Alignment"
+    effects: [
+        { type: "SetAlignment", alignment: "Sith" },
+        { type: "UnlockForcePowers", powers: ["ForceLightning", "ForceChoke", "ForceDrain", "ForceRage", "ForceScream", "ForceCorrupt", "ForceDestruction", "EssenceTransfer"] },
+        { type: "StatModifier", stat: "DarkSideCorruption", value: 0.1, perLevel: true },
+        { type: "GrantLightsaber", color: "Red" }
+    ]
+}
+
+Perk:MSN_Gray_Path {
+    displayName: "LocKey#msn_gray_path_name"
+    description: "LocKey#msn_gray_path_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_Jedi_Path", "Perk.MSN_Sith_Path"]
+    type: "Alignment"
+    effects: [
+        { type: "SetAlignment", alignment: "Gray" },
+        { type: "UnlockForcePowers", powers: ["ForcePush", "ForceLightning", "ForceHeal", "ForceDrain", "ForceRage", "ForceProtection", "Telekinesis", "BattleMeditation", "ForceVision"] },
+        { type: "StatModifier", stat: "BalanceMaintained", value: true },
+        { type: "GrantLightsaber", color: "Purple" }
+    ]
+}
+
+// FORCE POINT STAT POOL
+
+StatPool:MSN_ForcePoints {
+    displayName: "LocKey#msn_forcepoints_name"
+    description: "LocKey#msn_forcepoints_desc"
+    baseValue: 100.0
+    regenRate: 5.0
+    maxValue: 9999.0
+    color: "Purple"
+    uiPriority: 10
+}
+
+// MIDICHLORIAN STAT
+
+StatPool:MSN_Midichlorians {
+    displayName: "LocKey#msn_midichlorians_name"
+    description: "LocKey#msn_midichlorians_desc"
+    baseValue: 5000.0
+    regenRate: 0.0
+    maxValue: 50000.0
+    color: "Gold"
+    uiPriority: 15
+}
+
+// FORCE POWERS (as Netrunner Programs for integration)
+
+NetrunnerProgram:MSN_Force_Push {
+    displayName: "LocKey#msn_nrp_push_name"
+    description: "LocKey#msn_nrp_push_desc"
+    category: "Force"
+    rarity: "Common"
+    ramCost: 2
+    cooldown: 5.0
+    uploadTime: 0.5
+    effects: [
+        { type: "ForcePush", force: 500.0, radius: 10.0 }
+    ]
+}
+
+NetrunnerProgram:MSN_Force_Lightning {
+    displayName: "LocKey#msn_nrp_lightning_name"
+    description: "LocKey#msn_nrp_lightning_desc"
+    category: "Force"
+    rarity: "Legendary"
+    ramCost: 6
+    cooldown: 8.0
+    uploadTime: 0.5
+    effects: [
+        { type: "ForceLightning", damage: 80.0, chainTargets: 3, range: 15.0 }
+    ]
+}
+
+NetrunnerProgram:MSN_Force_Choke {
+    displayName: "LocKey#msn_nrp_choke_name"
+    description: "LocKey#msn_nrp_choke_desc"
+    category: "Force"
+    rarity: "Epic"
+    ramCost: 4
+    cooldown: 10.0
+    uploadTime: 0.5
+    effects: [
+        { type: "ForceChoke", damage: 25.0, duration: 5.0, stun: true }
+    ]
+}
+
+NetrunnerProgram:MSN_Force_Heal {
+    displayName: "LocKey#msn_nrp_heal_name"
+    description: "LocKey#msn_nrp_heal_desc"
+    category: "Force"
+    rarity: "Rare"
+    ramCost: 3
+    cooldown: 30.0
+    uploadTime: 1.0
+    effects: [
+        { type: "ForceHeal", amount: 100.0, radius: 5.0 }
+    ]
+}
+
+NetrunnerProgram:MSN_Force_Choke_Program {
+    displayName: "LocKey#msn_nrp_choke_name"
+    description: "LocKey#msn_nrp_choke_desc"
+    category: "Force"
+    rarity: "Epic"
+    ramCost: 4
+    cooldown: 10.0
+    uploadTime: 0.5
+    effects: [
+        { type: "ForceChoke", damage: 25.0, duration: 5.0, stun: true }
+    ]
+}
+
+NetrunnerProgram:MSN_Force_Heal_Program {
+    displayName: "LocKey#msn_nrp_heal_name"
+    description: "LocKey#msn_nrp_heal_desc"
+    category: "Force"
+    rarity: "Rare"
+    ramCost: 3
+    cooldown: 30.0
+    uploadTime: 1.0
+    effects: [
+        { type: "ForceHeal", amount: 100.0, radius: 5.0 }
+    ]
+}
+
+NetrunnerProgram:MSN_Battle_Meditation {
+    displayName: "LocKey#msn_nrp_meditation_name"
+    description: "LocKey#msn_nrp_meditation_desc"
+    category: "Force"
+    rarity: "Legendary"
+    ramCost: 8
+    cooldown: 300.0
+    uploadTime: 2.0
+    effects: [
+        { type: "BattleMeditation", radius: 50.0, accuracy: 0.3, damage: 0.2, duration: 60.0 }
+    ]
+}
+
+NetrunnerProgram:MSN_Force_Destruction {
+    displayName: "LocKey#msn_nrp_destruction_name"
+    description: "LocKey#msn_nrp_destruction_desc"
+    category: "Force"
+    rarity: "Legendary"
+    ramCost: 10
+    cooldown: 120.0
+    uploadTime: 3.0
+    effects: [
+        { type: "ForceDestruction", damage: 200.0, radius: 10.0 }
+    ]
+}
+
+// CYBERWARE — FORCE SENSITIVITY
+
+Cyberdeck:MSN_Force_Cerebellum {
+    displayName: "LocKey#msn_force_cerebellum_name"
+    description: "LocKey#msn_force_cerebellum_desc"
+    category: "Cyberdeck"
+    rarity: "Legendary"
+    stats: [
+        { type: "RAM", value: 24 },
+        { type: "Buffer", value: 10 },
+        { type: "CooldownReduction", value: 0.3 },
+        { type: "QuickhackDamage", value: 1.5 }
+    ]
+    mods: [
+        "MSN_Force_Midichlorian",
+        "MSN_Force_PointPool",
+        "MSN_Force_Regen",
+        "MSN_Force_Alignment",
+        "MSN_Force_LightsaberSync",
+        "MSN_Force_ForceGhost"
+    ]
+}
+
+Item:MSN_Force_Midichlorian {
+    displayName: "LocKey#msn_force_midi_name"
+    description: "LocKey#msn_force_midi_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "MidichlorianBoost", value: 10000.0 },
+        { type: "ForcePointBonus", value: 100.0 },
+        { type: "ForceRegenBonus", value: 10.0 }
+    ]
+}
+
+Item:MSN_Force_PointPool {
+    displayName: "LocKey#msn_force_pool_name"
+    description: "LocKey#msn_force_pool_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "ForcePointBonus", value: 200.0 },
+        { type: "ForceRegenBonus", value: 15.0 },
+        { type: "MaxForcePoints", value: 500.0 }
+    ]
+}
+
+Item:MSN_Force_Regen {
+    displayName: "LocKey#msn_force_regen_name"
+    description: "LocKey#msn_force_regen_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "ForceRegenBonus", value: 20.0 },
+        { type: "CombatRegen", value: true },
+        { type: "MeditationRegen", value: 50.0 }
+    ]
+}
+
+Item:MSN_Force_Alignment {
+    displayName: "LocKey#msn_force_align_name"
+    description: "LocKey#msn_force_align_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "AlignmentBias", values: ["Jedi", "Sith", "Gray"] },
+        { type: "CorruptionResistance", value: 0.5 },
+        { type: "PurityResistance", value: 0.5 }
+    ]
+}
+
+Item:MSN_Force_LightsaberSync {
+    displayName: "LocKey#msn_force_saber_name"
+    description: "LocKey#msn_force_saber_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "LightsaberSyncEnabled", value: true },
+        { type: "AutoDeflect", value: true },
+        { type: "FormSwapping", instant: true }
+    ]
+}
+
+Item:MSN_Force_ForceGhost {
+    displayName: "LocKey#msn_force_ghost_name"
+    description: "LocKey#msn_force_ghost_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "ForceGhostEnabled", value: true },
+        { type: "TranscendenceProtocol", value: true },
+        { type: "DeathProtection", value: 3 }
+    ]
+}
+
+// LIGHTSABER ITEMS
+
+Item:MSN_Lightsaber_Standard {
+    displayName: "LocKey#msn_saber_std_name"
+    description: "LocKey#msn_saber_std_desc"
+    category: "Melee"
+    rarity: "Legendary"
+    damage: 200
+    damageType: "Energy"
+    attackSpeed: 1.5
+    stats: [
+        { type: "ForcePowerBonus", value: 0.2 },
+        { type: "DeflectRating", value: 0.9 },
+        { type: "FormMastery", forms: ["Form_I_Shii_Cho", "Form_III_Soresu", "Form_VI_Niman"] }
+    ]
+}
+
+Item:MSN_Lightsaber_Sith {
+    displayName: "LocKey#msn_saber_sith_name"
+    description: "LocKey#msn_saber_sith_desc"
+    category: "Melee"
+    rarity: "Legendary"
+    damage: 250
+    damageType: "Energy"
+    attackSpeed: 1.3
+    stats: [
+        { type: "ForcePowerBonus", value: 0.3 },
+        { type: "DeflectRating", value: 0.85 },
+        { type: "FormMastery", forms: ["Form_II_Makashi", "Form_V_Djem_So", "Form_VII_Juyo_Vaapad"] },
+        { type: "DarkSideEmpowerment", value: 0.2 }
+    ]
+}
+
+Item:MSN_Lightsaber_Gray {
+    displayName: "LocKey#msn_saber_gray_name"
+    description: "LocKey#msn_saber_gray_desc"
+    category: "Melee"
+    rarity: "Legendary"
+    damage: 225
+    damageType: "Energy"
+    attackSpeed: 1.4
+    stats: [
+        { type: "ForcePowerBonus", value: 0.25 },
+        { type: "DeflectRating", value: 0.9 },
+        { type: "FormMastery", forms: ["Form_VI_Niman", "Form_VII_Juyo_Vaapad", "Form_IV_Ataru"] },
+        { type: "DualAlignment", value: true }
+    ]
+}
+
+Item:MSN_Lightsaber_Crossguard {
+    displayName: "LocKey#msn_saber_crossguard_name"
+    description: "LocKey#msn_saber_crossguard_desc"
+    category: "Melee"
+    rarity: "Legendary"
+    damage: 230
+    damageType: "Energy"
+    attackSpeed: 1.2
+    stats: [
+        { type: "ForcePowerBonus", value: 0.25 },
+        { type: "CrossguardEnabled", value: true },
+        { type: "SideBlades", damage: 50.0 }
+
+
+    }
+]
+
+Item:MSN_Lightsaber_Double {
+    displayName: "LocKey#msn_saber_double_name"
+    description: "LocKey#msn_saber_double_desc"
+    category: "Melee"
+    rarity: "Legendary"
+    damage: 180
+    damageType: "Energy"
+    attackSpeed: 1.6
+    stats: [
+        { type: "DualBlade", value: true },
+        { type: "AoeAttack", value: true },
+        { type: "WhirlwindForm", value: true }
+    ]
+}
+
+// LIGHTSABER MODS
+
+Item:Mod.MSN_Dual_Phase {
+    displayName: "LocKey#msn_dual_phase_name"
+    description: "LocKey#msn_dual_phase_desc"
+    type: "WeaponMod"
+    slot: "WeaponMod"
+    stats: [
+        { type: "DualPhaseEnabled", value: true },
+        { type: "LengthToggle", values: [0.8, 1.2, 2.0] }
+    ]
+}
+
+Item:Mod.MSN_Crossguard {
+    displayName: "LocKey#msn_crossguard_name"
+    description: "LocKey#msn_crossguard_desc"
+    type: "WeaponMod"
+    slot: "MeleeMod"
+    stats: [
+        { type: "CrossguardEnabled", value: true },
+        { type: "SideBladeDamage", value: 50.0 },
+        { type: "BladeLockAdvantage", value: true }
+    ]
+}
+
+Item:Mod.MSN_Unstable_Crystal {
+    displayName: "LocKey#msn_unstable_name"
+    description: "LocKey#msn_unstable_desc"
+    type: "WeaponMod"
+    slot: "MeleeMod"
+    stats: [
+        { type: "UnstableCrystal", value: true },
+        { type: "DamageVariance", value: 0.5 },
+        { type: "CrackleEffect", value: true }
+    ]
+}
+
+Item:Mod.MSN_Beskar_Hilt {
+    displayName: "LocKey#msn_beskar_hilt_name"
+    description: "LocKey#msn_beskar_hilt_desc"
+    type: "WeaponMod"
+    slot: "MeleeMod"
+    stats: [
+        { type: "BeskarConstruction", value: true },
+        { type: "LightsaberResistance", value: 1.0 },
+        { type: "Indestructible", value: true }
+    ]
+}
+
+// HOLOCRONS
+
+Item:MSN_Holocron_Jedi {
+    displayName: "LocKey#msn_holocron_jedi_name"
+    description: "LocKey#msn_holocron_jedi_desc"
+    category: "Consumable"
+    rarity: "Legendary"
+    effects: [
+        { type: "GrantForcePowers", powers: ["ForceHeal", "ForceProtection", "BattleMeditation", "ForceGhost"] },
+        { type: "AlignmentShift", value: "Jedi" },
+        { type: "MidichlorianBoost", value: 2000.0 }
+    ]
+}
+
+Item:MSN_Holocron_Sith {
+    displayName: "LocKey#msn_holocron_sith_name"
+    description: "LocKey#msn_holocron_sith_desc"
+    category: "Consumable"
+    rarity: "Legendary"
+    effects: [
+        { type: "GrantForcePowers", powers: ["ForceLightning", "ForceChoke", "ForceDestruction", "EssenceTransfer"] },
+        { type: "AlignmentShift", value: "Sith" },
+        { type: "MidichlorianBoost", value: 3000.0 }
+    ]
+}
+
+Item:MSN_Holocron_Gray {
+    displayName: "LocKey#msn_holocron_gray_name"
+    description: "LocKey#msn_holocron_gray_desc"
+    category: "Consumable"
+    rarity: "Legendary"
+    effects: [
+        { type: "GrantForcePowers", powers: ["ForceValor", "ForceRage", "BattleMeditation", "Telekinesis"] },
+        { type: "AlignmentShift", value: "Gray" },
+        { type: "MidichlorianBoost", value: 5000.0 }
+    ]
+}
+
+// FORCE CONSUMABLES
+
+Item:Consumable.MSN_Force_Stim {
+    displayName: "LocKey#msn_force_stim_name"
+    description: "LocKey#msn_force_stim_desc"
+    category: "Stimulant"
+    rarity: "Legendary"
+    effects: [
+        { type: "ForcePointRestore", value: 100.0 },
+        { type: "MidichlorianSurge", value: 1.5, duration: 60.0 },
+        { type: "ForcePowerCooldownReset", enabled: true }
+    ]
+    cooldown: 300.0
+}
+
+Item:Consumable.MSN_Midichlorian_Elixir {
+    displayName: "LocKey#msn_midi_elixir_name"
+    description: "LocKey#msn_midi_elixir_desc"
+    category: "Stimulant"
+    rarity: "Legendary"
+    effects: [
+        { type: "MidichlorianBoost", value: 5000.0, permanent: true },
+        { type: "ForcePointMaxIncrease", value: 50.0 },
+        { type: "AlignmentPurge", value: true }
+    ]
+    cooldown: 600.0
+}
+
+// STARSHIPS
+
+Vehicle:MSN_X_Wing {
+    displayName: "T-65 X-Wing"
+    description: "Incom T-65 X-Wing Starfighter"
+    category: "Air"
+    speed: 1050
+    handling: 0.9
+    shields: 800
+    armor: 200
+    weapons: ["Quad_Laser_Cannon", "Proton_Torpedo_Launcher"]
+    hyperdrive: true
+}
+
+Vehicle:MSN_TIE_Fighter {
+    displayName: "TIE/ln Fighter"
+    description: "Sienar Fleet Systems TIE/ln Space Superiority Fighter"
+    category: "Air"
+    speed: 1200
+    handling: 1.0
+    shields: 0
+    armor: 100
+    weapons: ["Twin_Laser_Cannon"]
+    hyperdrive: false
+}
+
+Vehicle:MSN_Millennium_Falcon {
+    displayName: "Millennium Falcon"
+    description: "YT-1300 Light Freighter (Heavily Modified)"
+    category: "Air"
+    speed: 1050
+    handling: 0.7
+    shields: 1200
+    armor: 500
+    weapons: ["Quad_Laser_Cannon", "Concussion_Missile_Launcher"]
+    hyperdrive: true
+    modded: true
+    stats: [
+        { type: "SmugglingCompartments", value: true },
+        { type: "HyperdriveClass", value: 0.5 }
+    ]
+}
+
+Vehicle:MSN_TIE_Interceptor {
+    displayName: "TIE/IN Interceptor"
+    description: "Sienar Fleet Systems TIE/IN Interceptor"
+    category: "Air"
+    speed: 1250
+    handling: 1.1
+    shields: 0
+    armor: 150
+    weapons: ["Quad_Laser_Cannon"]
+    hyperdrive: false
+}
+
+Vehicle:MSN_Star_Destroyer {
+    displayName: "Imperial-I Star Destroyer"
+    description: "Kuat Drive Yards Imperial-I Class Star Destroyer"
+    category: "Capital"
+    speed: 975
+    handling: 0.2
+    shields: 50000
+    armor: 10000
+    weapons: ["Turbolaser_Battery", "Ion_Cannon_Battery", "Tractor_Beam"]
+    hyperdrive: true
+    capital: true
+}
+
+// STARSHIP WEAPONS
+
+Item:MSN_Turbolaser {
+    displayName: "LocKey#msn_turbolaser_name"
+    description: "LocKey#msn_turbolaser_desc"
+    category: "HeavyWeapon"
+    rarity: "Legendary"
+    damage: 5000
+    damageType: "Energy"
+    fireRate: 0.5
+    magazineSize: 1
+    reloadTime: 10.0
+    stats: [
+        { type: "CapitalScale", value: true },
+        { type: "ShieldPiercing", value: 0.5 }
+    ]
+}
+
+Item:MSN_Ion_Cannon {
+    displayName: "LocKey#msn_ion_cannon_name"
+    description: "LocKey#msn_ion_cannon_desc"
+    category: "HeavyWeapon"
+    rarity: "Legendary"
+    damage: 1000
+    damageType: "Electric"
+    fireRate: 1.0
+    magazineSize: 1
+    reloadTime: 5.0
+    stats: [
+        { type: "ShieldDamage", multiplier: 5.0 },
+        { type: "EMPEffect", radius: 50.0 }
+    ]
+}
+
+// SHARDS
+
+Shard:StarWars_Intro {
+    Name: "The Force in Night City"
+    Description: "A data shard recovered from a crashed drop pod. The edges hum with a low resonance."
+    Category: "World"
+    Text: [
+        "The Force flows through all things. Even in Night City, beneath the neon and chrome.",
+        "",
+        "Jedi and Sith walk these streets. Their lightsabers cut through corporate security.",
+        "The Net is strong with the Dark Side. NetWatch fears what they cannot control.",
+        "",
+        "Four paths converge:",
+        "  JEDI — Protection, healing, wisdom. Blue and green blades.",
+        "  SITH — Power, passion, domination. Red blades. Unlimited power.",
+        "  GRAY — Balance. Purple blades. Revan's legacy.",
+        "  MANDALORIAN — Armor is religion. Beskar withstands lightsabers.",
+        "",
+        "Holocrons hidden across the city. The Force awakens.",
+        "",
+        "May the Force be with you, choom.",
+        "",
+        "— Anonymous Freelancer, Δ∞ Sector"
+    ]
+}
+
+Shard:Holocron_Jedi_Found {
+    Name: "Holocron of the Jedi"
+    Description: "An ancient Jedi teaching device. The gatekeeper awaits."
+    Category: "Lore"
+    Text: [
+        "There is no emotion, there is peace.",
+        "There is no ignorance, there is knowledge.",
+        "There is no passion, there is serenity.",
+        "There is no chaos, there is harmony.",
+        "There is no death, there is the Force.",
+        "",
+        "This holocron contains the teachings of the Jedi Order.",
+        "Master the Light Side. Protect the weak. Seek balance.",
+        "",
+        "Contains: Force Heal, Force Protection, Battle Meditation, Force Ghost.",
+        "",
+        "May the Force be with you.",
+        "",
+        "— Jedi Master Yoda (Recording)"
+    ]
+}
+
+Shard:Holocron_Sith_Found {
+    Name: "Holocron of the Sith"
+    Description: "A Sith holocron pulsing with dark energy. It whispers to you."
+    Category: "Lore"
+    Text: [
+        "Peace is a lie, there is only passion.",
+        "Through passion, I gain strength.",
+        "Through strength, I gain power.",
+        "Through power, I gain victory.",
+        "Through victory, my chains are broken.",
+        "The Force shall free me.",
+        "",
+        "This holocron contains the secrets of the Dark Side.",
+        "Seize power. Rule through fear. Break your chains.",
+        "",
+        "Contains: Force Lightning, Force Choke, Force Destruction, Essence Transfer.",
+        "",
+        "The Force shall FREE me.",
+        "",
+        "— Darth Bane (Recording)"
+    ]
+}
+
+Shard:Revan_Holocron {
+    Name: "Holocron of Revan"
+    Description: "The holocron of the Jedi who became Sith, then neither."
+    Category: "Lore"
+    Text: [
+        "I was Jedi. I was Sith. I am neither.",
+        "The Force is not binary. Light and Dark are perspectives.",
+        "True power lies in understanding both.",
+        "To deny the Dark is to be blind. To embrace only Light is to be weak.",
+        "",
+        "I am Revan. I walked both paths. I forged the Gray.",
+        "",
+        "Contains: Force Valor, Force Rage, Battle Meditation, Telekinesis.",
+        "",
+        "The Force is one. Only the user decides.",
+        "",
+        "— Revan (Recording)"
+    ]
+}
+
+Shard:Mandalorian_Code {
+    Name: "The Mandalorian Codex"
+    Description: "The ancient code of the Mandalorians. This is the Way."
+    Category: "Lore"
+    Text: [
+        "This is the Way.",
+        "",
+        "We don't remove our helmets. This is the Way.",
+        "We walk together. This is the Way.",
+        "We protect our own. This is the Way.",
+        "We defend the foundlings. This is the Way.",
+        "",
+        "Beskar is life. Beskar is armor. Beskar is culture.",
+        "Cortosis weaves through our gauntlets. Lightsabers cannot cut Mandalorian iron.",
+        "",
+        "Signets earned in blood. Clans united in purpose.",
+        "Death Watch. True Mandates. Children of the Watch.",
+        "",
+        "This is the Way.",
+        "",
+        "— The Armorer (Recording)"
+    ]
+}
+
+// QUESTS
+
+Quest:MSN_Jedi_Path {
+    Name: "The Jedi Path"
+    Description: "Find the Holocron of the Jedi. Learn the Light Side. Protect the innocent."
+    Type: "Main"
+    Acts: 4
+    Objectives: [
+        "Locate the Holocron of the Jedi in Arasaka Tower Ruins",
+        "Master Form III: Soresu (Defense)",
+        "Complete 10 protection missions without killing",
+        "Achieve Light Side Purity > 0.8",
+        "Confront a Sith Lord in single combat"
+    ]
+}
+
+Quest:MSN_Sith_Path {
+    Name: "The Sith Path"
+    Description: "Claim the Holocron of the Sith. Embrace the Dark Side. Rule through fear."
+    Type: "Main"
+    Acts: 4
+    Objectives: [
+        "Locate the Holocron of the Sith in Night Corp Bunker",
+        "Master Form VII: Juyo/Vaapad (Aggression)",
+        "Corrupt 3 Jedi or force them to fall",
+        "Achieve Dark Side Corruption > 0.8",
+        "Betray your master and claim the title of Darth"
+    ]
+}
+
+Quest:MSN_Gray_Path {
+    Name: "The Gray Path"
+    Description: "Find the Holocron of Revan. Walk the line between Light and Dark."
+    Type: "Main"
+    Acts: 6
+    Objectives: [
+        "Locate the Holocron of Revan in Badlands Monolith",
+        "Master both Light and Dark powers",
+        "Neither kill innocents nor spare the guilty without judgment",
+        "Maintain balance: Corruption and Purity both < 0.5",
+        "Unlock the Gray Jedi ending: Revan's Legacy"
+    ]
+}
+
+Quest:MSN_Mandalorian_Path {
+    Name: "The Mandalorian Way"
+    Description: "Earn your signet. Forge your armor. Walk the Way."
+    Type: "Side"
+    Acts: 5
+    Objectives: [
+        "Find a Mandalorian Covert in the Badlands",
+        "Earn Beskar through bounty hunting",
+        "Forge a full suit of Beskar armor",
+        "Earn a Signet: Mudhorn, Mythosaur, or Kryze",
+        "Unlock the Armorer's workshop: Custom Mandalorian gear"
+    ]
+}
+
+Quest:MSN_Order_66 {
+    Name: "Order 66: The Purge"
+    Description: "The Chancellor's order echoes through the Net. Jedi must survive."
+    Type: "Event"
+    Acts: 1
+    Objectives: [
+        "Survive the initial purge wave",
+        "Locate surviving Jedi in Night City",
+        "Escape to the Badlands or Orbital Station",
+        "Decide: Hide, Fight, or Fall to the Dark Side"
+    ]
+}
+
+// HOLOCRON SHARDS (Unlockable)
+
+Shard:Holocron_Jedi_Entry {
+    Name: "Holocron Entry: Jedi Teachings"
+    Description: "Unlocked by finding the Holocron of the Jedi."
+    Category: "Lore"
+    Text: [
+        "The Jedi Code:",
+        "There is no emotion, there is peace.",
+        "There is no ignorance, there is knowledge.",
+        "There is no passion, there is serenity.",
+        "There is no chaos, there is harmony.",
+        "There is no death, there is the Force.",
+        "",
+        "Lightsaber Forms:",
+        "Form I: Shii-Cho — The foundation. Balance.",
+        "Form II: Makashi — Dueling. Precision.",
+        "Form III: Soresu — Defense. Invincibility.",
+        "Form IV: Ataru — Aggression. Acrobatics.",
+        "Form V: Shien/Djem So — Counter. Power.",
+        "Form VI: Niman — Balance. Force integration.",
+        "Form VII: Juyo/Vaapad — Ferocity. Edge of darkness.",
+        "",
+        "Force Powers — Light Side:",
+        "Telekinesis (Push, Pull, Choke — forbidden)",
+        "Healing (Force Heal, Force Valor)",
+        "Protection (Force Protection, Battle Meditation)",
+        "Mind (Mind Trick, Force Sense)",
+        "Transcendence (Force Ghost, Force Vision)",
+        "",
+        "May the Force be with you."
+    ]
+}
+
+Shard:Holocron_Sith_Entry {
+    Name: "Holocron Entry: Sith Teachings"
+    Description: "Unlocked by finding the Holocron of the Sith."
+    Category: "Lore"
+    Text: [
+        "The Sith Code:",
+        "Peace is a lie, there is only passion.",
+        "Through passion, I gain strength.",
+        "Through strength, I gain power.",
+        "Through power, I gain victory.",
+        "Through victory, my chains are broken.",
+        "The Force shall free me.",
+        "",
+        "Force Powers — Dark Side:",
+        "Lightning (Force Lightning, Force Storm)",
+        "Choke (Force Choke, Force Crush)",
+        "Drain (Force Drain, Force Death)",
+        "Rage (Force Rage, Force Scream)",
+        "Corruption (Force Corrupt, Force Plague)",
+        "Destruction (Force Destruction, Force Wave)",
+        "Transcendence (Essence Transfer, Force Phantom)",
+        "",
+        "Rule of Two: One master, one apprentice.",
+        "Only the strong survive.",
+        "",
+        "The Force shall FREE me."
+    ]
+}

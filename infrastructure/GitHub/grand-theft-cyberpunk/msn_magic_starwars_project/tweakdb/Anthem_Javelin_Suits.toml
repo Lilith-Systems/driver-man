@@ -1,0 +1,515 @@
+# Anthem Javelin Exosuits & Jetpack System for Cyberpunk 2077
+# Four Javelin classes with fully customizable modular armor and integrated jetpacks
+
+# ============================================================
+# JAVELIN BASE SYSTEM
+# ============================================================
+
+[Items.Javelin_Base_System]
+Name = "Javelin Exosuit System"
+Description = "Modular exosuit framework. Four archetypes. Infinite configurations. The Freelancer's choice."
+Type = "CyberwareSystem"
+Category = "Exosuit"
+Rarity = "Legendary"
+JavelinClasses = ["Ranger", "Colossus", "Interceptor", "Storm"]
+
+# ============================================================
+# RANGER - The Balanced Veteran
+# ============================================================
+
+[Items.Javelin_Ranger]
+Name = "Ranger Javelin"
+Description = "Versatile. Reliable. First in. Last out. The standard all Freelancers measure against."
+Archetype = "Ranger"
+BaseStats_Health = 1000
+BaseStats_Shield = 500
+BaseStats_Armor = 100
+BaseStats_Speed = 1.0
+BaseStats_FlightSpeed = 25.0
+BaseStats_DashDistance = 8.0
+
+SigAbility_1_Name = "Seeking Missile"
+SigAbility_1_Description = "Lock-on missile. Tracks. Punishes. One target. High damage."
+SigAbility_1_Type = "Ordnance"
+SigAbility_1_Cooldown = 12.0
+SigAbility_1_Damage = 800
+SigAbility_1_TrackingRange = 50.0
+SigAbility_1_DamageType = "Explosive"
+
+SigAbility_2_Name = "Multi-Target Missile Battery"
+SigAbility_2_Type = "Ordnance"
+SigAbility_2_Cooldown = 25.0
+SigAbility_2_ProjectileCount = 5
+SigAbility_2_DamagePerMissile = 400
+SigAbility_2_TrackingRange = 40.0
+
+SigAbility_3_Name = "Sticky Grenade"
+SigAbility_3_Type = "Gear"
+SigAbility_3_Cooldown = 8.0
+SigAbility_3_Damage = 600
+SigAbility_3_Radius = 4.0
+
+SigAbility_4_Name = "Pulse Blast"
+SigAbility_4_Type = "Support"
+SigAbility_4_Cooldown = 15.0
+SigAbility_4_Force = 2000
+SigAbility_4_Radius = 6.0
+SigAbility_4_StunDuration = 2.0
+
+ComponentBonus_WeaponDamage = 0.15
+ComponentBonus_CooldownReduction = -0.10
+ComponentBonus_ShieldCapacity = 0.10
+ComponentBonus_FlightEfficiency = 0.05
+
+Ultimate_Name = "Missile Storm"
+Ultimate_Cooldown = 90.0
+Ultimate_MissileCount = 20
+Ultimate_DamagePerMissile = 500
+Ultimate_Radius = 30.0
+
+Visual_PrimaryColor = "#E8C547"
+Visual_SecondaryColor = "#2D2D2D"
+Visual_EmissiveColor = "#FFD700"
+Visual_Silhouette = "Balanced"
+Visual_HelmetStyle = "Ranger_Visor"
+Visual_ArmorStyle = "Modular_Plates"
+Visual_JetpackVFX = "Blue_Afterburner"
+
+# ============================================================
+# COLOSSUS - The Walking Fortress
+# ============================================================
+
+[Items.Javelin_Colossus]
+Name = "Colossus Javelin"
+Description = "Heavy. Unstoppable. Shield first. Questions later. The wall that holds."
+Archetype = "Colossus"
+BaseStats_Health = 2000
+BaseStats_Shield = 1000
+BaseStats_Armor = 300
+BaseStats_Speed = 0.7
+BaseStats_FlightSpeed = 15.0
+BaseStats_DashDistance = 5.0
+
+SigAbility_1_Name = "Firewall"
+SigAbility_1_Type = "Support"
+SigAbility_1_Cooldown = 20.0
+SigAbility_1_Duration = 10.0
+SigAbility_1_Width = 6.0
+SigAbility_1_DamagePerSecond = 200
+SigAbility_1_DamageType = "Fire"
+
+SigAbility_2_Name = "Siege Cannon"
+SigAbility_2_Type = "Ordnance"
+SigAbility_2_Cooldown = 30.0
+SigAbility_2_Damage = 2500
+SigAbility_2_ChargeTime = 2.0
+SigAbility_2_Radius = 8.0
+SigAbility_2_DamageType = "Explosive"
+SigAbility_2_Pierce = true
+
+SigAbility_3_Name = "Shield Charge"
+SigAbility_3_Type = "Gear"
+SigAbility_3_Cooldown = 15.0
+SigAbility_3_Distance = 20.0
+SigAbility_3_ImpactForce = 3000
+SigAbility_3_StunDuration = 3.0
+SigAbility_3_Damage = 400
+
+SigAbility_4_Name = "Flak Cannon"
+SigAbility_4_Type = "Ordnance"
+SigAbility_4_Cooldown = 18.0
+SigAbility_4_ProjectileCount = 12
+SigAbility_4_Spread = 45.0
+SigAbility_4_DamagePerShard = 150
+SigAbility_4_DamageType = "Physical"
+
+ComponentBonus_Health = 0.50
+ComponentBonus_ShieldCapacity = 0.50
+ComponentBonus_Armor = 0.30
+ComponentBonus_FireDamage = 0.25
+ComponentBonus_ExplosiveResistance = 0.30
+ComponentBonus_MovementSpeed = -0.15
+ComponentBonus_FlightSpeed = -0.20
+
+Ultimate_Name = "Siege Cannon Overcharge"
+Ultimate_Cooldown = 120.0
+Ultimate_ShotCount = 3
+Ultimate_DamagePerShot = 4000
+Ultimate_Radius = 12.0
+Ultimate_Pierce = true
+
+Visual_PrimaryColor = "#C41E3A"
+Visual_SecondaryColor = "#1A1A2E"
+Visual_EmissiveColor = "#FF4444"
+Visual_Silhouette = "Bulky"
+Visual_HelmetStyle = "Colossus_Faceplate"
+Visual_ArmorStyle = "Heavy_Plating_Rivets"
+Visual_JetpackVFX = "Orange_Heavy_Thrust"
+
+# ============================================================
+# INTERCEPTOR - The Close-Quarters Assassin
+# ============================================================
+
+[Items.Javelin_Interceptor]
+Name = "Interceptor Javelin"
+Description = "Fast. Lethal. In. Out. Dead. The blade that finds the gap."
+Archetype = "Interceptor"
+BaseStats_Health = 700
+BaseStats_Shield = 300
+BaseStats_Armor = 50
+BaseStats_Speed = 1.4
+BaseStats_FlightSpeed = 35.0
+BaseStats_DashDistance = 12.0
+
+SigAbility_1_Name = "Wraith Strike"
+SigAbility_1_Type = "Gear"
+SigAbility_1_Cooldown = 10.0
+SigAbility_1_Damage = 1200
+SigAbility_1_PhaseDuration = 1.5
+SigAbility_1_TeleportRange = 8.0
+SigAbility_1_InvulnerableDuring = true
+
+SigAbility_2_Name = "Detonating Strike"
+SigAbility_2_Type = "Ordnance"
+SigAbility_2_Cooldown = 14.0
+SigAbility_2_Damage = 1500
+SigAbility_2_Radius = 5.0
+SigAbility_2_DetonationDelay = 0.5
+SigAbility_2_DamageType = "Explosive"
+
+SigAbility_3_Name = "Cryo Glaive"
+SigAbility_3_Type = "Support"
+SigAbility_3_Cooldown = 12.0
+SigAbility_3_Damage = 800
+SigAbility_3_FreezeDuration = 4.0
+SigAbility_3_ShatterDamage = 2000
+SigAbility_3_Pierce = true
+
+SigAbility_4_Name = "Target Beacon"
+SigAbility_4_Type = "Support"
+SigAbility_4_Cooldown = 20.0
+SigAbility_4_Duration = 15.0
+SigAbility_4_DamageAmplification = 0.50
+SigAbility_4_Radius = 10.0
+
+ComponentBonus_MeleeDamage = 0.50
+ComponentBonus_MovementSpeed = 0.25
+ComponentBonus_FlightSpeed = 0.20
+ComponentBonus_CooldownReduction = 0.15
+ComponentBonus_CriticalChance = 0.20
+ComponentBonus_Health = -0.15
+ComponentBonus_ShieldCapacity = -0.20
+
+Ultimate_Name = "Assassin Blades"
+Ultimate_Cooldown = 90.0
+Ultimate_Duration = 10.0
+Ultimate_DamagePerSecond = 500
+Ultimate_AttackSpeed = 10.0
+Ultimate_Invulnerable = true
+Ultimate_PhaseThroughEnemies = true
+
+Visual_PrimaryColor = "#00FFFF"
+Visual_SecondaryColor = "#0D0D1A"
+Visual_EmissiveColor = "#00FFFF"
+Visual_Silhouette = "Sleek"
+Visual_HelmetStyle = "Interceptor_Visor_Slit"
+Visual_ArmorStyle = "Light_Weave_Carbon"
+Visual_JetpackVFX = "Cyan_Phase_Trail"
+
+# ============================================================
+# STORM - The Elemental Architect
+# ============================================================
+
+[Items.Javelin_Storm]
+Name = "Storm Javelin"
+Description = "Elemental. Unbound. Hover. Rain fire. Ice. Lightning. The sky speaks."
+Archetype = "Storm"
+BaseStats_Health = 600
+BaseStats_Shield = 600
+BaseStats_Armor = 40
+BaseStats_Speed = 0.9
+BaseStats_FlightSpeed = 30.0
+BaseStats_DashDistance = 6.0
+
+SigAbility_1_Name = "Ice Storm"
+SigAbility_1_Type = "Ordnance"
+SigAbility_1_Cooldown = 18.0
+SigAbility_1_Duration = 8.0
+SigAbility_1_Radius = 10.0
+SigAbility_1_FreezeChancePerSecond = 0.25
+SigAbility_1_DamagePerSecond = 200
+SigAbility_1_DamageType = "Ice"
+
+SigAbility_2_Name = "Lightning Strike"
+SigAbility_2_Type = "Ordnance"
+SigAbility_2_Cooldown = 15.0
+SigAbility_2_Damage = 1200
+SigAbility_2_ChainCount = 5
+SigAbility_2_ChainRange = 8.0
+SigAbility_2_ShieldDamageBonus = 2.0
+SigAbility_2_DamageType = "Electric"
+
+SigAbility_3_Name = "Fire Wall"
+SigAbility_3_Type = "Ordnance"
+SigAbility_3_Cooldown = 16.0
+SigAbility_3_Modes = "Orb,Wall"
+SigAbility_3_OrbDamage = 1000
+SigAbility_3_OrbRadius = 6.0
+SigAbility_3_WallDuration = 8.0
+SigAbility_3_WallDamagePerSecond = 300
+SigAbility_3_DamageType = "Fire"
+
+SigAbility_4_Name = "Wind Wall"
+SigAbility_4_Type = "Support"
+SigAbility_4_Cooldown = 20.0
+SigAbility_4_Duration = 6.0
+SigAbility_4_Width = 8.0
+SigAbility_4_PushForce = 1500
+SigAbility_4_ProjectileReflection = true
+
+ComponentBonus_AbilityDamage = 0.30
+ComponentBonus_ElementalDuration = 0.25
+ComponentBonus_ShieldCapacity = 0.20
+ComponentBonus_ElementalResistance = 0.20
+ComponentBonus_Health = -0.20
+ComponentBonus_Armor = -0.25
+ComponentBonus_MovementSpeed = -0.10
+
+Ultimate_Name = "Elemental Storm"
+Ultimate_Cooldown = 100.0
+Ultimate_Duration = 12.0
+
+Visual_PrimaryColor = "#8A2BE2"
+Visual_SecondaryColor = "#1A0A2E"
+Visual_EmissiveColor = "#BA55D3"
+Visual_Silhouette = "Floating_Robes"
+Visual_HelmetStyle = "Storm_Halo_Crown"
+Visual_ArmorStyle = "Fabric_Metal_Hybrid"
+Visual_JetpackVFX = "Purple_Lightning_Arcs"
+
+# ============================================================
+# JAVELIN CORE SYSTEMS
+# ============================================================
+
+[Systems.Javelin_Jetpack_Core]
+Name = "Jetpack Core"
+Description = "Vectored thrust system. Vertical takeoff. Hover. Dash. The sky is not the limit."
+FlightModes = ["VTOL", "Forward_Flight", "Hover", "Combat_Dash"]
+FuelCapacity = 100.0
+RegenRate = 15.0
+OverheatThreshold = 85.0
+CooldownTime = 3.0
+
+[Systems.Javelin_Shield_Core]
+Name = "Aegis Shield Generator"
+Description = "Hardlight barrier. Regenerates. Scales with Components."
+BaseCapacity = 500.0
+RegenDelay = 5.0
+RegenRate = 50.0
+
+[Systems.Javelin_Component_Slots]
+Description = "Modular component system. 8 slots. Mix. Match. Master."
+Slots = "Ordnance_1,Ordnance_2,Support_1,Support_2,Component_1,Component_2,Gear_1,Gear_2"
+
+[Systems.Javelin_Appearance]
+Description = "Full visual customization. Materials. Colors. Wear. Vinyls."
+Layers = "Base_Armor,Accent_Armor,Emissive_Details,Fabric_Undersuit,Metal_Plating,Vinyl_Layer_1,Vinyl_Layer_2,Vinyl_Layer_3,Finish_Coating"
+ColorChannels = 4
+MaterialTypes = "Matte,Gloss,Metallic,Pearlescent,Chrome,Carbon_Fiber,Kevlar_Weave,Ceramic_Composite"
+
+# ============================================================
+# MODULAR ARMOR PIECES (6 Slots per Javelin)
+# ============================================================
+
+[Items.Javelin_Armor_Helmet]
+Name = "Javelin Helmet"
+Type = "Armor"
+Slot = "Helmet"
+Customizable = true
+MaterialSlots = 3
+ColorChannels = 4
+Variants = "Ranger,Colossus,Interceptor,Storm"
+BaseArmor = 10
+
+[Items.Javelin_Armor_Chest]
+Name = "Javelin Chest Plate"
+Type = "Armor"
+Slot = "Chest"
+Customizable = true
+MaterialSlots = 4
+ColorChannels = 4
+Variants = "Ranger,Colossus,Interceptor,Storm"
+BaseArmor = 30
+
+[Items.Javelin_Armor_Arms]
+Name = "Javelin Arm Guards"
+Type = "Armor"
+Slot = "Arms"
+Customizable = true
+MaterialSlots = 2
+ColorChannels = 4
+Variants = "Ranger,Colossus,Interceptor,Storm"
+BaseArmor = 15
+
+[Items.Javelin_Armor_Legs]
+Name = "Javelin Leg Guards"
+Type = "Armor"
+Slot = "Legs"
+Customizable = true
+MaterialSlots = 3
+ColorChannels = 4
+Variants = "Ranger,Colossus,Interceptor,Storm"
+BaseArmor = 20
+
+[Items.Javelin_Armor_Back_Jetpack]
+Name = "Javelin Jetpack Frame"
+Type = "Armor"
+Slot = "Back"
+Customizable = true
+MaterialSlots = 4
+ColorChannels = 4
+Variants = "Ranger,Colossus,Interceptor,Storm"
+JetpackIntegrated = true
+BaseArmor = 15
+
+[Items.Javelin_Armor_Shoulders]
+Name = "Javelin Pauldrons"
+Type = "Armor"
+Slot = "Shoulders"
+Customizable = true
+MaterialSlots = 2
+ColorChannels = 4
+Variants = "Ranger,Colossus,Interceptor,Storm"
+BaseArmor = 10
+
+# ============================================================
+# MATERIAL SYSTEM
+# ============================================================
+
+[Materials.Javelin_Base_Metal]
+Name = "Base Metal"
+Category = "Armor_Material"
+Types = "Titanium_Alloy,Carbon_Fiber,Ceramic_Composite,Kevlar_Weave,Graphene_Weave,Tungsten_Carbide,Osmium_Alloy,Iridium_Plating"
+Default = "Titanium_Alloy"
+
+[Materials.Javelin_Fabric_Undersuit]
+Name = "Undersuit Fabric"
+Types = "Kevlar_Mesh,Dyneema_Weave,Spectra_Fiber,Zylon_Polymer,Spider_Silk_Synth,Carbon_Nanotube_Cloth"
+Default = "Kevlar_Mesh"
+
+[Materials.Javelin_Emissive]
+Name = "Emissive Details"
+Types = "LED_Strip,Fiber_Optic,Plasma_Channel,Hardlight_Projector,Quantum_Dot,Bioluminescent_Gel"
+Default = "LED_Strip"
+ColorShift = true
+PulseOptions = "Steady,Pulse_Slow,Pulse_Fast,Heartbeat,Reactive_Damage,Reactive_Flight,Reactive_Combat"
+
+[Materials.Javelin_Finish]
+Name = "Finish Coating"
+Types = "Matte,Satin,Gloss,High_Gloss,Chrome,Pearlescent,Chameleon,Holographic,Thermochromic,Photochromic"
+Default = "Matte"
+
+# ============================================================
+# JETPACK MODIFICATIONS
+# ============================================================
+
+[Items.Javelin_Jetpack_Thruster]
+Name = "Custom Thruster Array"
+Type = "Jetpack_Mod"
+Slot = "Thruster"
+Variants = "Standard,High_Flow,Precision,Vectored,Ion_Drive,Plasma_Burst"
+
+[Items.Javelin_Jetpack_Exhaust]
+Name = "Exhaust Visual Customization"
+Type = "Jetpack_Visual"
+Variants = "Standard_Blue,Cyan_Phase,Gold_Standard,Crimson_Rage,Purple_Storm,Emerald_Flow,White_Hot,Void_Black,Rainbow_Prism,Thermal_Shift"
+
+[Items.Javelin_Flight_Computer]
+Name = "Advanced Flight Computer"
+Type = "Jetpack_Upgrade"
+Features = "Auto_Hover,Combat_Auto_Dodge,Formation_Flying,Terrain_Following,Sonic_Boom_Dash"
+
+# ============================================================
+# SET BONUSES (6 Piece Sets)
+# ============================================================
+
+[SetBonuses.Javelin_Full_Ranger]
+Name = "Freelancer's Standard"
+PiecesRequired = 6
+Bonus_UniversalDamage = 0.10
+Bonus_CooldownReduction = 0.15
+Bonus_JetpackEfficiency = 0.20
+Bonus_SeekingMissileCharges = 1
+
+[SetBonuses.Javelin_Full_Colossus]
+Name = "Bastion's Bulwark"
+PiecesRequired = 6
+Bonus_HealthShieldIncrease = 0.30
+Bonus_DamageReduction = 0.25
+Bonus_ShieldRechargeRate = 0.50
+Bonus_FirewallDuration = 2.0
+
+[SetBonuses.Javelin_Full_Interceptor]
+Name = "Whisper's Edge"
+PiecesRequired = 6
+Bonus_MeleeDamage = 0.50
+Bonus_PhaseDuration = 1.0
+Bonus_DashCooldown = -0.30
+Bonus_CriticalChance = 0.25
+
+[SetBonuses.Javelin_Full_Storm]
+Name = "Elemental Sovereign"
+PiecesRequired = 6
+Bonus_ElementalDamage = 0.30
+Bonus_EffectDuration = 0.50
+Bonus_ComboDamage = 0.50
+Bonus_HoverEfficiency = 0.30
+
+# ============================================================
+# CRAFTING & UPGRADES
+# ============================================================
+
+[Crafting.Javelin_Component]
+Name = "Javelin Component Crafting"
+Requirements = "Component_Base:1,Rare_Materials:3,Data_Fragments:50,Credits:5000"
+Output = "Random_Component_For_Javelin_Class"
+
+[Crafting.Javelin_Armor_Upgrade]
+Name = "Armor Modification"
+Requirements = "Base_Armor_Piece:1,Material_Kit:1,Color_Pigment:1,Mod_Slot_Unlocker:1"
+Output = "Upgraded_Armor_Piece"
+
+# ============================================================
+# QUESTS
+# ============================================================
+
+[Quest.Javelin_Ranger]
+Name = "First Flight: Ranger"
+Objectives = "Complete training,Defeat 3 waves,Land missile from 50m+,Speak with Haluk"
+Rewards = "Items.Javelin_Ranger,Items.Javelin_Armor_Set_Ranger_Basic"
+
+[Quest.Javelin_Colossus]
+Name = "Iron Heart: Colossus"
+Objectives = "Hold point 5min,Block 10k damage,Kill 20 with Siege Cannon,Speak with Faye"
+Rewards = "Items.Javelin_Colossus,Items.Javelin_Armor_Set_Colossus_Basic"
+
+[Quest.Javelin_Interceptor]
+Name = "Silent Blade: Interceptor"
+Objectives = "Kill 15 in 3s each,Chain 5 melee kills airborne,Phase through 10 enemies,Speak with Brin"
+Rewards = "Items.Javelin_Interceptor,Items.Javelin_Armor_Set_Interceptor_Basic"
+
+[Quest.Javelin_Storm]
+Name = "Elemental Ascension: Storm"
+Objectives = "Trigger 20 combos,Freeze/Burn/Shock 10 each,Hover 60s,Speak with Matthias"
+Rewards = "Items.Javelin_Storm,Items.Javelin_Armor_Set_Storm_Basic"
+
+[Quest.Javelin_Master]
+Name = "Master of All Javelins"
+Prerequisites = "Quest.Javelin_Ranger,Quest.Javelin_Colossus,Quest.Javelin_Interceptor,Quest.Javelin_Storm"
+Objectives = "Complete all recruitments,Level 30 each,Javelin Masterwork each,Defeat Monitor with each"
+Rewards = "Items.Javelin_Master_Set,Vehicle.Javelin_Transport,Home_Base_Full,Title_The_True_Freelancer"
+
+# ============================================================
+# TAGS
+# ============================================================
+Tags = "Anthem,Javelin,Exosuit,Jetpack,Mech,Flight,Modular,Customizable,Armor,Anthem_Crossover,Ranger,Colossus,Interceptor,Storm,Freelancer,Legendary,Modular_Armor,Flight_Combat,Exosuit_System"

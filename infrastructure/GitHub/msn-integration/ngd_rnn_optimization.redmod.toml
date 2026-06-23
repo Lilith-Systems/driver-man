@@ -1,0 +1,105 @@
+# Lilith.exe: MSN - NGD RNN Performance Optimization
+# REDmod compatible configuration for RNN inference acceleration
+
+## RNN Performance Settings (Engine Config)
+# These settings control the game's internal RNN inference for:
+# - NPC behavior prediction
+# - Traffic/pedestrian AI
+# - Combat AI decision trees
+# - Animation blending
+
+[RNN.Inference]
+# Batch size for RNN inference (higher = more parallel, more VRAM)
+BatchSize = 32
+# Number of inference threads (0 = auto)
+InferenceThreads = 0
+# Enable TensorRT optimization (requires NVIDIA GPU)
+EnableTensorRT = true
+# Precision mode: fp32, fp16, int8
+PrecisionMode = "fp16"
+# Max workspace size in MB for TensorRT
+MaxWorkspaceMB = 512
+# Enable CUDA Graph capture for reduced launch overhead
+EnableCUDAGraph = true
+
+## NGD Integration Settings
+[NGD.Integration]
+# Enable NGD telemetry bridge
+EnableTelemetry = true
+# Shared memory bridge name
+BridgeName = "cyberpunk_ngd_bridge"
+# Poll interval for optimization commands (ms)
+CommandPollInterval = 100
+# Apply optimizations automatically (false = log only)
+AutoApply = false
+# VRAM safety margin for game (MB)
+GameVRAMMargin = 1024
+
+## RTX 3060 Mobile / Max-Q Game-First Profile
+[NGD.Cyberpunk3060Butter]
+# Cyberpunk gets priority over local model VRAM while the game is active.
+Profile = "GAME_FIRST_LOCAL_CEREBELLUM"
+GPU = "RTX 3060 Mobile / Max-Q"
+TotalVRAMMB = 6144
+PowerCapWatts = 115
+GameActiveModelVRAMMB = 1024
+GameActiveSafetyMarginMB = 2048
+MinimumGameHeadroomMB = 1536
+MarginalFreeVRAMMB = 1536
+BreachFreeVRAMMB = 768
+EWMAAlpha = 0.22
+CooldownSeconds = 90
+PreferFramePacing = true
+LocalAIBackgroundMode = "small-prompts-delayed-background-work"
+Guardrail = "Telemetry and config hints only; no game process injection or driver mutation from this profile."
+
+## DLSS/FSR/Frame Gen Optimization
+[Upscaling.Optimization]
+# Dynamic quality adjustment based on NGD route
+DynamicQuality = true
+# Target FPS for quality scaling
+TargetFPS = 60
+# Minimum quality preset (0=Ultra Performance, 3=Quality)
+MinQualityPreset = 1
+# Maximum quality preset
+MaxQualityPreset = 3
+# Frame generation enable (requires DLSS 3 / FSR 3)
+EnableFrameGen = true
+# Frame gen strength (0.0-1.0)
+FrameGenStrength = 0.8
+
+[Upscaling.Cyberpunk3060Butter]
+DefaultDLSS = "Quality"
+MarginalDLSS = "Balanced"
+BreachDLSS = "Performance"
+TextureQualityClear = "High"
+TextureQualityMarginal = "Medium"
+PathTracing = false
+RayTracedReflections = "OffOrLowAfterMeasuredHeadroom"
+CrowdDensity = "Medium"
+MotionBlur = false
+FramePacingFirst = true
+
+## Lilith API Integration
+[Lilith.API]
+# Lilith HTTP API endpoint
+Endpoint = "http://localhost:3210"
+# Enable real-time optimization commands
+EnableOptimization = true
+# Optimization command timeout (ms)
+CommandTimeout = 5000
+# Report game state to Lilith
+ReportGameState = true
+# Game state report interval (ms)
+ReportInterval = 500
+
+## Performance Monitoring
+[Monitoring]
+# Enable in-game performance overlay
+EnableOverlay = true
+# Log telemetry to file
+LogTelemetry = true
+# Telemetry log path
+LogPath = "r6/logs/ngd_telemetry.jsonl"
+# Max log file size (MB)
+MaxLogSize = 10

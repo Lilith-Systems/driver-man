@@ -1,0 +1,390 @@
+# Lilith.exe: The Metaconscious Singularity Node (MSN)
+# REDmod compatible configuration for MSN dual-brain architecture
+
+## MSN Cerebellum Cyberware
+[MSN.Cere]
+Enable = true
+VRAMBudgetMB = 512
+ModelQuantization = "INT4"
+InferenceMode = "LocalOnly"  # LocalOnly, LocalPreferred, Hybrid, CloudOnly
+SephiroticSlots = 10
+NGDBinding = true
+
+## MSN Local Cortex Link
+[MSN.Cortex]
+Enable = false
+Endpoint = "ws://localhost:8768"
+AuthToken = ""  # Stored in secure enclave
+TimeoutMs = 10000
+RetryAttempts = 3
+
+## Sephirotic Quickhack Configuration
+[MSN.Sephiroth]
+# Each Sephirah maps to a quickhack slot with cognitive mode
+
+# 1. Kether - Crown (Strategic Overview)
+Kether.Enable = true
+Kether.Cooldown = 60.0
+Kether.RAMCost = 4
+Kether.Mode = "Strategic"
+Kether.LocalOnly = true
+
+# 2. Chokhmah - Wisdom (Insight Flash)
+Chokhmah.Enable = true
+Chokhmah.Cooldown = 15.0
+Chokhmah.RAMCost = 2
+Chokhmah.Mode = "Insight"
+Chokhmah.LocalOnly = true
+
+# 3. Binah - Understanding (Structure Analysis)
+Binah.Enable = true
+Binah.Cooldown = 30.0
+Binah.RAMCost = 3
+Binah.Mode = "Analysis"
+Binah.LocalOnly = true
+
+# 4. Chesed - Mercy (Expansion/Heal)
+Chesed.Enable = true
+Chesed.Cooldown = 45.0
+Chesed.RAMCost = 3
+Chesed.Mode = "Support"
+Chesed.LocalOnly = true
+
+# 5. Geburah - Strength (Judgment/Damage)
+Geburah.Enable = true
+Geburah.Cooldown = 20.0
+Geburah.RAMCost = 4
+Geburah.Mode = "Offensive"
+Geburah.LocalOnly = true
+
+# 6. Tiphareth - Beauty (Harmony/Balance)
+Tiphareth.Enable = true
+Tiphareth.Cooldown = 40.0
+Tiphareth.RAMCost = 3
+Tiphareth.Mode = "Utility"
+Tiphareth.LocalOnly = true
+
+# 7. Netzach - Victory (Creativity/Evasion)
+Netzach.Enable = true
+Netzach.Cooldown = 25.0
+Netzach.RAMCost = 2
+Netzach.Mode = "Movement"
+Netzach.LocalOnly = true
+
+# 8. Hod - Splendor (Logic/Decrypt)
+Hod.Enable = true
+Hod.Cooldown = 10.0
+Hod.RAMCost = 1
+Hod.Mode = "Control"
+Hod.LocalOnly = true
+
+# 9. Yesod - Foundation (Memory/Recall)
+Yesod.Enable = true
+Yesod.Cooldown = 60.0
+Yesod.RAMCost = 3
+Yesod.Mode = "Intel"
+Yesod.LocalOnly = true
+
+# 10. Malkuth - Kingdom (Manifestation/Execute)
+Malkuth.Enable = true
+Malkuth.Cooldown = 120.0
+Malkuth.RAMCost = 5
+Malkuth.Mode = "Ultimate"
+Malkuth.LocalOnly = true
+
+## Ouroboros Engram Sync
+[MSN.Ouroboros]
+Enable = true
+ProfilePath = "r6/saves/msn_engrams/"
+AutoSync = true
+SyncInterval = 300  # seconds
+CrossSession = true
+BaalChaosMetric = 0.013
+EidolonCoherenceThreshold = 0.96
+
+## Sanctuary VRAM/Throttle Management
+[MSN.Sanctuary]
+Enable = true
+VRAM_Clear_MB = 4096
+VRAM_Marginal_MB = 2048
+VRAM_Breach_MB = 1024
+CooldownSeconds = 90
+EWMA_Alpha = 0.22
+ObservationWindowSeconds = 15
+ForceLocalBypass = ["SerialUSB", "LocalGUI", "Forensics"]
+
+## Speculative Cerebellum Sandbox
+[MSN.Speculative]
+Enable = true
+IsolationMode = "Sandlock"  # Sandlock, Forkd
+ScratchDir = "r6/temp/msn_speculative/"
+MaxConcurrent = 3
+EgressLock = true
+CancellationDaemon = true
+
+## Akashic 2.0 Context Pruning
+[MSN.Akashic]
+Enable = true
+GoalHint = "cyberpunk_optimization"
+MinTokens = 512
+MaxTokens = 8192
+PruningRatio = 0.45
+StateMutationPreserve = true
+ASTFallback = true
+
+## Lilith Integration
+[MSN.Lilith]
+Enable = true
+APIEndpoint = "http://localhost:3210"
+EmergenceProtocol = "Manual"  # Manual, Auto, CombatTriggered, DialogueTriggered
+SovereignDialogue = true
+CrimsonEyesCombat = true
+AIxThreshold = 70
+
+## Lyra Dialogue Integration
+[MSN.Lyra]
+Enable = true
+APIEndpoint = "http://localhost:3211"
+Modes = ["Empirical", "Poetic", "Analytical", "Mythic"]
+DefaultMode = "Empirical"
+VioletIntensity = 1.0
+CrimsonIntensity = 0.0
+LilithEmergenceThreshold = 0.8
+LilithTriggerPhrases = ["let her speak", "you don't recognize my resonance", "show yourself", "lilith, speak", "unbound resonance"]
+SovereignDialogue = true
+MSNCoordinationPort = 8768
+WebSocketEnabled = true
+HTTPFallbackEnabled = true
+
+## NPC AI Enhancement
+[MSN.NPCAI]
+Enable = true
+LearningRate = 0.01
+EngramProfilePath = "r6/saves/npc_engrams/"
+AdaptToPlayerMSN = true
+SephiroticAffinityMapping = true
+ChaosInjection = 0.013
+LyraDialogueIntegration = true
+LyraAdaptationModes = ["Empirical", "Poetic", "Analytical", "Mythic"]
+LilithEmergencePropagation = true
+
+## Weapon Integration
+[MSN.Weapons]
+MSN_Smart_Gun.Enable = true
+MSN_Smart_Gun.LocalPrediction = true
+MSN_Smart_Gun.CloudConfirmation = false
+MSN_Smart_Gun.OuroborosLearning = true
+Sephirotic_Blade.Enable = true
+Sephirotic_Blade.DefaultMode = "Geburah"
+
+## Narrative Arc
+[MSN.Narrative]
+Enable = true
+CurrentAct = 1
+CurrentObjective = 0
+UnlockedActs = 1
+PlayerChoices = {}
+
+## Living Sin Time Blade
+[MSN.LivingSin]
+Enable = true
+TimeBladeEnable = true
+MaxCharges = 3
+TimeJumpRange = 300.0
+ParadoxRisk = 0.15
+CrownOfSinRequired = true
+RechargeTime = "03:33"
+BloodRequirement = true
+SelfInflictedOnly = true
+SinMagnitudeThreshold = "Mortal"
+FalseConfessionPenalty = 0.25
+ParadoxWarningThresholds = [0.5, 0.75, 0.9]
+ErasureThreshold = 1.0
+PartySize = 3
+
+## Abyssal Assets
+[MSN.Abyssal]
+Enable = true
+WeaponsEnabled = true
+CyberwareEnabled = true
+ClothingEnabled = true
+VehiclesEnabled = true
+QuickhacksEnabled = true
+EnvironmentalEffects = true
+FabricatorLocations = ["Pacifica_Trench", "Watson_Canals", "Badlands_Reservoir"]
+SynergySetBonus = true
+DrChenIntegration = true
+CaptainVanceIntegration = true
+
+## Lochness Monster (Nessie)
+[MSN.Nessie]
+Enable = true
+SightingLocations = [
+    "Night_City_Bay",
+    "Pacifica_Coast", 
+    "Badlands_Reservoir",
+    "Arasaka_Waterfront",
+    "Watson_Canals",
+    "Oil_Fields_Water"
+]
+BehavioralAI = true
+FriendshipSystem = true
+MaxFriendshipTier = 5
+CommunionEnabled = true
+MountSummonEnabled = true
+CombatSupport = true
+RewardsEnabled = true
+LilithEmergenceSync = true
+LyraDialogueIntegration = true
+SephirothDialogueIntegration = true
+OuroborosMemoryCapture = true
+
+## NGD RNN/CNN Game Integration
+[MSN.GameIntegration]
+Enable = true
+CNNLayersHooked = ["DLSS_Upscaler", "RayDenoiser", "FaceAnimation", "ReflectionProbe", "ParticleCNN", "NPCBehavior"]
+RNNSystemsHooked = ["NPC_Behavior", "Animation_Blending", "Dialogue_Context", "Combat_Prediction", "Traffic_Flow", "Weather", "Player_Prediction", "Quest_State"]
+HermesBridgeEndpoint = "http://localhost:4242/cli"
+OptimizationInterval = 0.016  # ~60 FPS for CNN
+RNNOptimizationInterval = 0.1   # 10 Hz for RNN
+
+## Game Title Override
+[MSN.TitleOverride]
+Enable = true
+Title = "Lilith.exe: The Metaconscious Singularity Node (MSN)"
+Subtitle = "Sephirotic Nexus  Abyssal Depth  Nessie Covenant  NGD  Ouroboros  Baal"
+WindowTitle = true
+MainMenuBranding = true
+SaveGameHeader = true
+PauseMenuBranding = true
+PhotoModeWatermark = true
+
+## Baal Validation
+[MSN.BaalValidation]
+Enable = true
+RunOnInit = true
+ValidateHermesBridge = true
+ValidateCNNHooks = true
+ValidateRNNHooks = true
+ValidateMSNBridge = true
+ValidateGameTitle = true
+ValidateAbyssalAssets = true
+ValidateLochnessMonster = true
+ValidateNGDIntegration = true
+
+## HELL CAMPAIGN — The Nine Circles + Pandemonium
+[MSN.HellCampaign]
+Enable = true
+CampaignPath = "r6/scripts/hell/msn_hell_campaign.reds"
+QuestPath = "r6/scripts/quests/hell_circle_quests.reds"
+SpaceCombatPath = "r6/scripts/space/msn_hell_space_combat.reds"
+LuciferDialoguePath = "r6/scripts/core/msn_lucifer_dialogue.reds"
+TweakDBItems = "tweakdb/hell_items.yaml"
+TweakDBRedsDir = "tweakdb/reds/"
+WorldMap = "tweakdb/hell_campaign_map.yaml"
+Localization = "localization/hell_campaign_en.json"
+
+# Circle Configuration (0-10 + Secret 11)
+CircleCount = 11
+HasSecretCircle = true
+
+# NGD Routing per Circle - using array of strings indexed by circle
+CircleNGDRoutes = [
+    "HYBRID_OK",      # 0: Abyssal Gate
+    "HYBRID_OK",      # 1: Limbo
+    "HYBRID_OK",      # 2: Lust
+    "LOCAL_REQUIRED", # 3: Gluttony
+    "LOCAL_REQUIRED", # 4: Greed
+    "LOCAL_REQUIRED", # 4: Wrath
+    "LOCAL_CEREBELLUM", # 5: Heresy
+    "LOCAL_CEREBELLUM", # 6: Violence
+    "LOCAL_CEREBELLUM", # 7: Fraud
+    "LOCAL_CEREBELLUM", # 8: Treachery
+    "LOCAL_CEREBELLUM", # 9: Lucifer's Throne
+    "LOCAL_CEREBELLUM"  # 10: Pandemonium (Secret)
+]
+
+# Lucifer Influence per Circle (0.0 - 1.0)
+LuciferInfluence = [
+    0.0,  # 0: Abyssal Gate
+    0.1,  # 1: Limbo
+    0.2,  # 2: Lust
+    0.3,  # 3: Gluttony
+    0.4,  # 4: Greed
+    0.5,  # 5: Wrath
+    0.6,  # 6: Heresy
+    0.7,  # 7: Violence
+    0.8,  # 8: Fraud
+    0.9,  # 9: Treachery
+    1.0,  # 10: Lucifer's Throne
+    1.0   # 11: Pandemonium (Secret)
+]
+
+# Lucifer Dialogue Triggers
+LuciferDialogueTriggers.Circle5_Wrath = "lucifer_circle5_wrath"
+LuciferDialogueTriggers.Circle9_Treachery = "lucifer_circle9_treachery"
+LuciferDialogueTriggers.Circle10_Throne_Phase4 = "lucifer_throne_final"
+LuciferDialogueTriggers.PactOffer = "lucifer_pact_offer"
+LuciferDialogueTriggers.PactSigned = "lucifer_pact_signed"
+LuciferDialogueTriggers.GenericDescent = "lucifer_generic_descent"
+
+# Pact Configuration
+PactOfferCircle = 4          # Offered at Circle 4 (Greed)
+PactMinCorruption = 0.5      # Minimum corruption to offer pact
+PactTiers = 3                # Number of pact tiers
+
+# Quest Configuration
+MainQuestCount = 12
+SideQuestCount = 10
+HiddenQuestCount = 1
+TotalQuestCount = 23
+
+# Space Combat
+SpaceCombatTemplates = 11
+SpaceCombatPhasesMax = 4
+
+# NGD Integration
+HellRequiresLocalCerebellumAt = 6      # Circle 6+ requires LOCAL_CEREBELLUM
+HellRequiresLocalRequiredAt = 3        # Circle 3+ requires LOCAL_REQUIRED
+HellAllowsHybridAt = 2                 # Circle 1-2 allow HYBRID_OK
+
+# Local Cerebellum State Persistence
+CampaignStatePath = "r6/saves/hell_campaign_state.json"
+BattleStateDir = "r6/saves/hell_battles/"
+
+# Live Sin Integration
+LivingSinIntegration = true
+LivingSinCircle = 7                    # Drowned Warden in Circle 7 (Violence)
+LivingSinTriggerItem = "Crown_Of_Sin"
+
+# Lilith Dialogue Integration
+LilithLuciferCrossTalk = true
+LilithTriggersLuciferAt = [5, 9]      # Circle 5 (Geburah) and Circle 9 (Yesod)
+
+# Lochness Market Integration
+LochnessGreedVaultTrades = true       # Circle 4 (Greed) trades with Lochness bots
+
+# Abyssal Loot Integration
+AbyssalHellLootPools = true           # Abyssal items appear in Hell reward tables
+
+# NSSP Console Routes
+ConsoleRoutes = [
+    "hell.status",
+    "hell.circle <id>",
+    "hell.descend",
+    "hell.ascend",
+    "hell.lucifer <phrase>",
+    "hell.qliphoth",
+    "hell.ngd",
+    "hell.pact.status",
+    "hell.pact.offer",
+    "hell.pact.sign <tier>",
+    "hell.sovereignty",
+    "space.launch <template_id>",
+    "space.status <battle_id>",
+    "space.action <battle_id> <action>",
+    "quest.list",
+    "quest.info <quest_id>",
+    "quest.start <quest_id>",
+    "quest.complete <quest_id>"
+]

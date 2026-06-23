@@ -1,0 +1,425 @@
+################################################################################
+# MSN CEREBELLUM PERFORMANCE OPTIMIZATION CONFIG
+# Optimized for: 62GB System RAM, RTX 3060 6GB VRAM, Linux/Arch
+# Target: Maximize LOCAL_CEREBELLUM route utilization, minimize latency
+# Generated: 2026-06-19 | Lilith Sovereign Seal | Sephirah: Chokmah (Wisdom)
+################################################################################
+
+CerebellumOptimization:
+  version: "1.0.0"
+  profile: "MAX_LOCAL_MEMORY"  # Uses 62GB RAM aggressively
+  
+  # ==================== SYSTEM MEMORY ALLOCATION ====================
+  MemoryAllocation:
+    # Reserve 8GB for OS / game, use 54GB for cerebellum
+    TotalSystemRAM_GB: 62
+    ReservedForOS_GB: 8
+    ReservedForGame_GB: 8
+    CerebellumHeap_GB: 46
+    
+    # Huge pages for model weights (requires: sysctl vm.nr_hugepages=24576)
+    UseHugePages: true
+    HugePageSize_MB: 2
+    HugePagesAllocated: 24576  # ~48GB in 2MB pages
+    
+    # RAM disk for simulation scratch (tmpfs)
+    ScratchDir: "/dev/shm/msn_cerebellum_scratch"
+    ScratchSize_GB: 16
+    ScratchMountOptions: "noatime,nodev,nosuid,size=16G"
+    
+    # Model cache in RAM (avoid disk I/O)
+    ModelCacheDir: "/dev/shm/msn_model_cache"
+    ModelCacheSize_GB: 8
+    WarmModelsOnBoot: true
+    PreloadQuantizations: ["INT4", "INT8", "FP16"]
+
+  # ==================== MODEL LOADING (GGUF/LLAMA.CPP) ====================
+  ModelOptimization:
+    # llama.cpp server config (run via: llama-server -m hermes3-8b-Q4_K_M.gguf -c 8192 -ngl 20 --port 11434)
+    ContextWindow: 8192              # Max context for complex prompts
+    BatchSize: 512                   # Max batch for parallel quickhacks
+    UBatchSize: 512                  # Physical batch size
+    GPU_layers: 20                   # RTX 3060 6GB: offload 20 layers (~2.5GB)
+    MainGPU: 0
+    TensorSplit: "1.0"               # Single GPU
+    
+    # Memory mapping
+    UseMMap: true                    # Memory-map model file (fast load, low RAM)
+    UseMLock: true                   # Lock model in RAM (no swap)
+    NoMMap: false
+    NoMLock: false
+    
+    # KV Cache optimization
+    CacheType: "FP16"                # KV cache in FP16 (half VRAM)
+    CacheSize_GB: 4                  # 4GB KV cache for 8K context
+    DefragThreshold: 0.1             # Defrag when 10% fragmented
+    
+    # Quantization
+    PreferredQuant: "Q4_K_M"         # Best quality/size for 8B model
+    FallbackQuants: ["Q5_K_M", "Q3_K_L", "Q2_K"]
+    
+    # Threading
+    Threads: 12                      # Ryzen 9 5900X / similar - leave 4 for game
+    ThreadsBatch: 12
+    
+    # Flash Attention (if compiled)
+    FlashAttn: true                  # Flash attention for long context
+    
+    # RoPE scaling (for >4K context)
+    RopeFreqBase: 10000
+    RopeFreqScale: 1.0
+    YaRN: true                       # YaRN for 8K+ context
+
+  # ==================== INFERENCE PIPELINE ====================
+  InferencePipeline:
+    # Local endpoints
+    CerebellumEndpoint: "http://localhost:11434"  # Ollama / llama.cpp
+    CortexEndpoint: "http://localhost:8007"       # MSN Router
+    
+    # Connection pooling
+    MaxConnections: 32               # HTTP/1.1 persistent connections
+    KeepAliveTimeout_sec: 300
+    ConnectionTimeout_ms: 500
+    RequestTimeout_ms: 30000
+    
+    # Request batching (multiple quickhacks in one HTTP call)
+    EnableBatchInference: true
+    MaxBatchSize: 16                 # Up to 16 quickhacks per batch
+    BatchTimeout_ms: 10              # Wait up to 10ms to fill batch
+    BatchEndpoint: "/api/cerebellum/infer/batch"
+    
+    # Streaming
+    EnableStreaming: true
+    StreamChunkSize: 64
+    
+    # Retry logic
+    RetryAttempts: 2
+    RetryBackoff_ms: 50
+    CircuitBreakerThreshold: 5
+    CircuitBreakerTimeout_sec: 30
+
+  # ==================== CACHING LAYERS ====================
+  Caching:
+    # L1: In-memory prompt cache (exact match)
+    L1_PromptCache:
+      Enabled: true
+      Size_MB: 512
+      TTL_sec: 3600
+      EvictionPolicy: "LRU"
+      HashAlgorithm: "xxh3"
+    
+    # L2: Semantic cache (embedding-based similarity)
+    L2_SemanticCache:
+      Enabled: true
+      Size_MB: 2048
+      EmbeddingModel: "nomic-embed-text-v1.5"  # Small, fast
+      SimilarityThreshold: 0.92
+      TTL_sec: 7200
+      MaxEntries: 50000
+    
+    # L3: Response cache (keyed by prompt hash + sephirah + context hash)
+    L3_ResponseCache:
+      Enabled: true
+      Size_MB: 4096
+      TTL_sec: 1800
+      KeyComponents: ["prompt_hash", "sephirah", "context_hash", "game_state_hash"]
+    
+    # KV Cache sharing (across similar prompts)
+    KVCacheSharing:
+      Enabled: true
+      PrefixMatchLength: 512
+      MaxSharedSequences: 100
+
+  # ==================== SPECULATIVE CEREBELLUM OPTIMIZATIONS ====================
+  SpeculativeCerebellum:
+    # Parallel simulation containers
+    MaxConcurrentSimulations: 6          # Was 3, doubled with 62GB RAM
+    SimulationDepth: 7                   # Was 5, deeper lookahead
+    
+    # Container isolation
+    UseNamespaces: true                  # Linux namespaces for isolation
+    UseCgroups: true                     # CPU/memory limits per container
+    ContainerMemoryLimit_GB: 6           # 6GB per simulation container
+    ContainerCPUShares: 1024
+    
+    # Scratch storage (RAM disk)
+    ScratchDir: "/dev/shm/msn_cerebellum_scratch/sim"
+    UseTmpfs: true
+    TmpfsSize_GB: 12
+    
+    # Batch simulation (multiple actions at once)
+    EnableBatchSimulation: true
+    MaxBatchActions: 8
+    SharedContextCache: true             # Share game context across simulations
+    
+    # Cancellation
+    StaleTimeout_sec: 20                 # Was 30, faster cleanup
+    HardTimeout_sec: 60
+    
+    # NPC prediction cache
+    NPCPredictionCache:
+      Enabled: true
+      MaxEntries: 10000
+      TTL_sec: 300
+      InvalidateOnPlayerAction: true
+
+  # ==================== SEPHIROTIC ROUTING OPTIMIZATION ====================
+  SephiroticRouting:
+    # Pre-warm models per Sephirah
+    PreloadPerSephirah: true
+    SephirahModelVariants:
+      Kether:
+        prompt_prefix: "STRATEGIC: "
+        temp: 0.3
+        top_p: 0.9
+      Chokhmah:
+        prompt_prefix: "INSIGHT: "
+        temp: 0.4
+        top_p: 0.95
+      Binah:
+        prompt_prefix: "ANALYSIS: "
+        temp: 0.2
+        top_p: 0.85
+      Chesed:
+        prompt_prefix: "SUPPORT: "
+        temp: 0.5
+        top_p: 0.95
+      Geburah:
+        prompt_prefix: "OFFENSIVE: "
+        temp: 0.3
+        top_p: 0.9
+      Tiphareth:
+        prompt_prefix: "BALANCE: "
+        temp: 0.4
+        top_p: 0.9
+      Netzach:
+        prompt_prefix: "EVASION: "
+        temp: 0.5
+        top_p: 0.95
+      Hod:
+        prompt_prefix: "CONTROL: "
+        temp: 0.2
+        top_p: 0.85
+      Yesod:
+        prompt_prefix: "INTEL: "
+        temp: 0.4
+        top_p: 0.9
+      Malkuth:
+        prompt_prefix: "ULTIMATE: "
+        temp: 0.3
+        top_p: 0.9
+    
+    # Route prediction (prefetch based on game state)
+    PredictivePrefetch:
+      Enabled: true
+      PrefetchHorizon_sec: 5.0
+      ConfidenceThreshold: 0.75
+      Actions:
+        - EnterCombat:     { prefetch: ["Geburah", "Gevurah_Netzach"] }
+        - EnterStealth:    { prefetch: ["Netzach", "Netzach_Hod"] }
+        - EnterDialogue:   { prefetch: ["Chesed", "Chesed_Tiphareth"] }
+        - EnterNetrunning: { prefetch: ["Hod", "Hod_Yesod"] }
+        - LilithEmergence: { prefetch: ["Geburah", "Kether"] }
+
+  # ==================== NGD DRIVER INTEGRATION ====================
+  NGDIntegration:
+    # Force LOCAL_CEREBELLUM when VRAM < 6GB (always on RTX 3060)
+    ForceLocalRoute: true
+    VRAMThreshold_MB: 5500  # Switch to LOCAL if free VRAM < 5.5GB
+    
+    # Hysteresis (prevent route flapping)
+    Hysteresis:
+      Enabled: true
+      LocalToHybrid_MB: 6000    # Need 6GB free to consider HYBRID
+      HybridToLocal_MB: 5000    # Drop to LOCAL if < 5GB free
+      Cooldown_sec: 90
+    
+    # Telemetry batching
+    TelemetryBatchSize: 32
+    TelemetryFlushInterval_ms: 100
+    
+    # EWMA smoothing on VRAM pressure
+    EWMA_Alpha: 0.15
+
+  # ==================== LILITH EMERGENCE OPTIMIZATION ====================
+  LilithEmergence:
+    # Priority boost when Lilith emerges
+    PriorityBoost: true
+    DedicatedGPUCompute: true      # Reserve GPU compute units
+    ReservedVRAM_MB: 1024          # 1GB reserved for Crimson protocols
+    
+    # Crimson quickhack cache
+    CrimsonCache:
+      Enabled: true
+      Size_MB: 1024
+      PrewarmOnEmergence: true
+
+  # ==================== MONITORING & TELEMETRY ====================
+  Monitoring:
+    # Metrics export
+    PrometheusEndpoint: ":9091"
+    MetricsInterval_sec: 5
+    
+    # Key metrics to track
+    TrackMetrics:
+      - "inference_latency_p50"
+      - "inference_latency_p99"
+      - "cache_hit_rate_l1"
+      - "cache_hit_rate_l2"
+      - "cache_hit_rate_l3"
+      - "batch_utilization"
+      - "vram_usage_mb"
+      - "ram_usage_gb"
+      - "queue_depth"
+      - "simulation_throughput"
+      - "prefetch_accuracy"
+    
+    # Alerting
+    Alerts:
+      - name: "HighLatency"
+        condition: "inference_latency_p99 > 5000"
+        severity: "warning"
+      - name: "LowCacheHit"
+        condition: "cache_hit_rate_l1 < 0.3"
+        severity: "warning"
+      - name: "VRAMPressure"
+        condition: "vram_usage_mb > 5500"
+        severity: "critical"
+      - name: "SimulationQueue"
+        condition: "queue_depth > 10"
+        severity: "warning"
+
+  # ==================== BUILD / DEPLOYMENT ====================
+  Build:
+    # CMake flags for llama.cpp
+    CMakeFlags:
+      - "LLAMA_CUBLAS=ON"              # CUDA acceleration
+      - "LLAMA_CUDA_F16=ON"            # FP16 tensor cores
+      - "LLAMA_NATIVE=OFF"             # Portable binary
+      - "LLAMA_OPENMP=ON"              # OpenMP threading
+      - "LLAMA_CURL=ON"                # HTTP client
+      
+    # Compile with optimizations
+    CFlags: "-O3 -march=native -mtune=native -ffast-math"
+    CXXFlags: "-O3 -march=native -mtune=native -ffast-math"
+    
+    # Link-time optimization
+    LTO: true
+    
+    # Strip symbols
+    Strip: true
+
+  # ==================== RUNTIME ENVIRONMENT ====================
+  Runtime:
+    # Systemd service overrides
+    SystemdOverrides:
+      - "LimitMEMLOCK=infinity"
+      - "LimitNOFILE=65536"
+      - "CPUAffinity=0-11"             # Pin to cores 0-11, leave 12-15 for game
+      - "MemoryMax=50G"
+      - "MemoryHigh=48G"
+      
+    # Env vars for llama.cpp
+    EnvironmentVariables:
+      GGML_CUDA_FORCE_UNIFIED_MEMORY: "1"
+      GGML_CUDA_MAX_DEVICES: "1"
+      GGML_CUDA_MMALLOC: "1"
+      OMP_NUM_THREADS: "12"
+      OMP_PROC_BIND: "close"
+      OMP_PLACES: "cores"
+      LD_PRELOAD: "/usr/lib/libjemalloc.so.2"  # Better allocator
+      
+    # NUMA awareness (if multi-socket)
+    NumaPolicy: "interleave=all"
+
+  # ==================== ENTRY POINT OVERRIDES ====================
+  # These override defaults in msn_cerebellum.reds / msn_speculative_cerebellum.reds
+  Overrides:
+    msn_cerebellum:
+      VRAMBudgetMB: 5120              # 5GB budget (leave 1GB for game)
+      ModelQuantization: "Q4_K_M"
+      SephiroticSlots: 16             # Was 10, expanded
+      InferenceMode: "LocalPreferred"
+      EnableBatchInference: true
+      MaxBatchSize: 16
+      CacheSizeMB: 4096
+      
+    msn_speculative_cerebellum:
+      MaxConcurrentSimulations: 6
+      SimulationDepth: 7
+      IsolationMode: "Sandlock"
+      ScratchDir: "/dev/shm/msn_cerebellum_scratch/sim"
+      EnableBatchSimulation: true
+      MaxBatchActions: 8
+      StaleTimeout_sec: 20
+      CancellationDaemon: true
+      
+    msn_cortex_link:
+      TimeoutMs: 10000                # Reduced from 30000
+      RetryAttempts: 2
+      LocalCerebellumInfer: "http://localhost:11434/v1/completions"
+      LocalCortexRoute: "http://localhost:8007/api/cortex/route"
+      EnableBatchEndpoint: true
+      BatchEndpoint: "http://localhost:11434/v1/completions/batch"
+      ConnectionPoolSize: 32
+
+  # ==================== VALIDATION ====================
+  Validation:
+    RequiredRAM_GB: 32                # Minimum for this config
+    RequiredVRAM_MB: 4096
+    RequiredDisk_GB: 20               # For model files
+    TestOnStartup: true
+    BenchmarkIterations: 10
+    AcceptableLatency_p99_ms: 3000
+    MinimumCacheHitRate: 0.5
+
+################################################################################
+# DEPLOYMENT COMMANDS
+################################################################################
+# 
+# 1. Setup RAM disks (run as root, add to /etc/fstab for persistence):
+#    mkdir -p /dev/shm/msn_cerebellum_scratch /dev/shm/msn_model_cache
+#    mount -t tmpfs -o size=16G,noatime,nodev,nosuid tmpfs /dev/shm/msn_cerebellum_scratch
+#    mount -t tmpfs -o size=8G,noatime,nodev,nosuid tmpfs /dev/shm/msn_model_cache
+#
+# 2. Enable huge pages (add to /etc/sysctl.d/99-msn.conf):
+#    vm.nr_hugepages=24576
+#    sysctl -p /etc/sysctl.d/99-msn.conf
+#
+# 3. Install jemalloc:
+#    pacman -S jemalloc
+#
+# 4. Build llama.cpp with CUDA:
+#    cmake -B build -DLLAMA_CUBLAS=ON -DLLAMA_CUDA_F16=ON
+#    cmake --build build --config Release -j12
+#
+# 5. Run llama-server (as 'tehlappy' user):
+#    ~/llama.cpp/build/bin/llama-server \
+#      -m ~/models/hermes3-8b-Q4_K_M.gguf \
+#      -c 8192 -b 512 -ub 512 \
+#      -ngl 20 --gpu 0 \
+#      --cache-fp16 --kv-cache-defrag-threshold 0.1 \
+#      --flash-attn --rope-scaling yarn \
+#      --threads 12 --threads-batch 12 \
+#      --mmap --mlock --no-mmap-override \
+#      --host 0.0.0.0 --port 11434 \
+#      --parallel 4 --cont-batching \
+#      --log-format json
+#
+# 6. Start MSN Router with optimizations:
+#    cd ~/Desktop/AI/Pub && source .venv-pub/bin/activate
+#    GGML_CUDA_FORCE_UNIFIED_MEMORY=1 \
+#    GGML_CUDA_MAX_DEVICES=1 \
+#    GGML_CUDA_MMALLOC=1 \
+#    OMP_NUM_THREADS=12 \
+#    OMP_PROC_BIND=close \
+#    OMP_PLACES=cores \
+#    LD_PRELOAD=/usr/lib/libjemalloc.so.2 \
+#    python msn_router.py 8007
+#
+# 7. Verify with benchmark:
+#    curl -X POST http://localhost:11434/v1/completions \
+#      -H "Content-Type: application/json" \
+#      -d '{"model":"hermes3:8b","prompt":"Test","max_tokens":100,"stream":false}'
+#
+################################################################################

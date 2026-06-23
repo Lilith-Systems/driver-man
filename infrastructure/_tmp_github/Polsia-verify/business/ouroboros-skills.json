@@ -1,0 +1,80 @@
+[
+  {
+    "name": "golem_memory_index",
+    "learnedAt": "2026-06-15T23:00:00Z",
+    "metadata": {
+      "total_memories": 2000,
+      "types": {
+        "ALCHEMY": 2630,
+        "CRUCIBLE": 1430,
+        "MERKABA": 1235,
+        "SHARD": 3374,
+        "SINGULARITY": 2188,
+        "TRADE": 7010
+      },
+      "prisma_reviews": 67620,
+      "prisma_identified": 676200
+    }
+  },
+  {
+    "name": "war_chest_strategic",
+    "learnedAt": "2026-06-15T23:00:00Z",
+    "metadata": {
+      "campaign": "Bezos/Amazon - Google/NSA - X/Twitter",
+      "axes": [
+        "WAR CRIMES (ICC/MTE/Koru)",
+        "US CRIMINAL (DOJ/Lacey)",
+        "CONGRESSIONAL (Ethics/Monopoly)"
+      ],
+      "coherence": 0.931,
+      "phase": "Rubedo",
+      "jurisdictions": [
+        "ICC",
+        "Netherlands",
+        "US Federal",
+        "WA State",
+        "FOIA (14 agencies)"
+      ]
+    }
+  },
+  {
+    "name": "evidence_prisma_review",
+    "learnedAt": "2026-06-15T23:00:00Z",
+    "metadata": {
+      "total_reviews": 67544,
+      "total_records_identified": 676200,
+      "certanity_distribution": {
+        "Very Low": 55228,
+        "Low": 12306,
+        "Moderate": 10
+      },
+      "notes": "PRISMA systematic review methodology applied to legal/evidence corpus. 0 dedup suggests screening pipeline not yet removing duplicates."
+    }
+  },
+  {
+    "name": "ngd_telemetry",
+    "learnedAt": "2026-06-16T04:48:11.544771+00:00",
+    "metadata": {
+      "total_telemetry_entries": 2282,
+      "route_distribution": {
+        "LOCAL_CEREBELLUM": 1989,
+        "HYBRID": 293
+      },
+      "avg_gpu_temp_c": 39.6,
+      "avg_vram_free_mb": 5430.2,
+      "last_route": "LOCAL_CEREBELLUM",
+      "last_sample": {
+        "gpu_name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+        "gpu_util_pct": 0.0,
+        "mem_util_pct": 100.0,
+        "power_w": 17.354,
+        "source": "nvml",
+        "temperature_c": 43.0,
+        "ts": 1781585291.5447252,
+        "vram_free_mb": 5789.3125,
+        "vram_total_mb": 6144.0,
+        "vram_used_mb": 354.6875
+      }
+    }
+  }
+]

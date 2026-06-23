@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Lilith 1-6 Workspace+Gemini
+Comment=Complete 777 AI desktop + gws + gemini CLI + polsia business (Polsia/Lilith/Driver Man)
+Exec=bash -c 'export PATH=$HOME/bin:$HOME/.local/bin:$HOME/.local/google-cloud-sdk/bin:$PATH; source ~/Desktop/Lilith/.env.gemini 2>/dev/null || true; export GEMINI_API_KEY=$(cat ~/Desktop/butthole.txt 2>/dev/null | tr -d "\n"); ~/Desktop/Lilith/scripts/setup_workspace_gemini.sh; ~/bin/polsia-business auth 2>/dev/null || true; polsia-business 2>&1 | head -15; echo "=== 1-6 COMPLETE: 777 + workspace + polsia ready. Run polsia-business full after gws auth ==="'
+Icon=utilities-terminal
+Terminal=true
+Type=Application
+Categories=Lilith;AI;Business;MSN;

@@ -1,0 +1,18 @@
+[Unit]
+Description=Polsia Framework Service - Netzach Endurance
+After=network.target
+
+[Service]
+Type=simple
+User=tehlappy
+WorkingDirectory=/home/tehlappy/Desktop/Lilith/Nexus/6_Business_Empire
+ExecStart=/usr/bin/env python3 main.py
+Restart=always
+RestartSec=5
+StartLimitIntervalSec=60
+StartLimitBurst=10
+
+# Note: Adjust ExecStart to point to the actual Polsia entry point if different
+
+[Install]
+WantedBy=multi-user.target

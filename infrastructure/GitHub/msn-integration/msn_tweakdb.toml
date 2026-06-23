@@ -1,0 +1,1739 @@
+// MSN Integration - TweakDB Compilation Script
+// Generates TweakDB entries for MSN skills, weapons, characters, vehicles
+// Run with: WolvenKit or REDmod compile
+
+// ============================================================
+// MSN SEPHIROTIC SKILLS (Quickhack Tree)
+// ============================================================
+
+public class MSN_Skill extends Skill {
+    public let Sephirah: CName;
+    public let InferenceMode: String;
+    public let NGDRoute: String;
+}
+
+public class MSN_Sephiroth_Cooldown extends Cooldown {
+    public let Sephirah: CName;
+    public let BaseCooldown: Float;
+    public let VRAMModifier: Float;
+}
+
+// KETHER - Crown (Strategic Overview)
+public const MSN_Quickhack_Kether: TweakDBID = TweakDBID("Items.MSN_Quickhack_Kether");
+Items.MSN_Quickhack_Kether = {
+    Name = "Kether - Crown of Strategy",
+    Description = "Reveal all enemy patrol routes, camera cones, and structural weakpoints in 100m radius for 30s. Cloud-cortex strategic analysis.",
+    Type = SkillType.Quickhack,
+    Cooldown = 60.0,
+    RAMCost = 4,
+    Sephirah = "Kether",
+    InferenceMode = "LocalOnly",
+    NGDRoute = "CLOUD_CORTEX",
+    Effect = {
+        RevealPatrolPaths = true,
+        RevealCameraCones = true,
+        RevealWeakpoints = true,
+        Radius = 100.0,
+        Duration = 30.0,
+        LocalAnalysis = true
+    },
+    Icon = "msn_kether",
+    Rarity = "Legendary",
+    Tags = ["MSN", "Cloud", "Strategic", "Kether"]
+};
+
+// CHOKHMAH - Wisdom (Insight Flash)
+public const MSN_Quickhack_Chokhmah: TweakDBID = TweakDBID("Items.MSN_Quickhack_Chokhmah");
+Items.MSN_Quickhack_Chokhmah = {
+    Name = "Chokhmah - Flash of Wisdom",
+    Description = "Instantly identify enemy archetypes, resistances, and optimal takedown methods. Local INT4 inference.",
+    Type = SkillType.Quickhack,
+    Cooldown = 15.0,
+    RAMCost = 2,
+    Sephirah = "Chokhmah",
+    InferenceMode = "LocalOnly",
+    NGDRoute = "LOCAL_CEREBELLUM",
+    Effect = {
+        IdentifyArchetypes = true,
+        ShowResistances = true,
+        OptimalTakedown = true,
+        Duration = 10.0,
+        LocalInference = true
+    },
+    Icon = "msn_chokhmah",
+    Rarity = "Epic",
+    Tags = ["MSN", "Local", "Insight", "Chokhmah"]
+};
+
+// BINAH - Understanding (Structure Analysis)
+public const MSN_Quickhack_Binah: TweakDBID = TweakDBID("Items.MSN_Quickhack_Binah");
+Items.MSN_Quickhack_Binah = {
+    Name = "Binah - Architect's Vision",
+    Description = "Analyze building structure, breach points, and environmental hazards. Local frontier inference.",
+    Type = SkillType.Quickhack,
+    Cooldown = 30.0,
+    RAMCost = 3,
+    Sephirah = "Binah",
+    InferenceMode = "LocalOnly",
+    NGDRoute = "HYBRID",
+    Effect = {
+        AnalyzeStructure = true,
+        FindBreachPoints = true,
+        RevealHazards = true,
+        Duration = 20.0,
+        LocalInference = true
+    },
+    Icon = "msn_binah",
+    Rarity = "Epic",
+    Tags = ["MSN", "LocalFrontier", "Analysis", "Binah"]
+};
+
+// CHESED - Mercy (Support/Heal)
+public const MSN_Quickhack_Chesed: TweakDBID = TweakDBID("Items.MSN_Quickhack_Chesed");
+Items.MSN_Quickhack_Chesed = {
+    Name = "Chesed - Boundless Mercy",
+    Description = "Deploy area heal and revive allies. Cleanse status effects. Local inference.",
+    Type = SkillType.Quickhack,
+    Cooldown = 45.0,
+    RAMCost = 3,
+    Sephirah = "Chesed",
+    InferenceMode = "LocalOnly",
+    NGDRoute = "LOCAL_CEREBELLUM",
+    Effect = {
+        AreaHeal = 150.0,
+        ReviveAllies = true,
+        CleanseEffects = true,
+        Radius = 15.0,
+        LocalInference = true
+    },
+    Icon = "msn_chesed",
+    Rarity = "Epic",
+    Tags = ["MSN", "Local", "Support", "Chesed"]
+};
+
+// GEBURAH - Strength (Judgment/Damage)
+public const MSN_Quickhack_Geburah: TweakDBID = TweakDBID("Items.MSN_Quickhack_Geburah");
+Items.MSN_Quickhack_Geburah = {
+    Name = "Geburah - Sword of Judgment",
+    Description = "Execute targeted neural strike on priority target. Local frontier inference for precision.",
+    Type = SkillType.Quickhack,
+    Cooldown = 20.0,
+    RAMCost = 4,
+    Sephirah = "Geburah",
+    InferenceMode = "LocalOnly",
+    NGDRoute = "HYBRID",
+    Effect = {
+        NeuralStrike = 500.0,
+        ArmorPierce = true,
+        PriorityTarget = true,
+        LocalInference = true
+    },
+    Icon = "msn_geburah",
+    Rarity = "Legendary",
+    Tags = ["MSN", "LocalFrontier", "Offensive", "Geburah"]
+};
+
+// TIPHERETH - Beauty (Harmony/Balance)
+public const MSN_Quickhack_Tiphareth: TweakDBID = TweakDBID("Items.MSN_Quickhack_Tiphareth");
+Items.MSN_Quickhack_Tiphareth = {
+    Name = "Tiphareth - Golden Equilibrium",
+    Description = "Balance combat flow: suppress enemy aggression, boost ally accuracy. Adaptive mode.",
+    Type = SkillType.Quickhack,
+    Cooldown = 40.0,
+    RAMCost = 3,
+    Sephirah = "Tiphareth",
+    InferenceMode = "LocalOnly",
+    NGDRoute = "HYBRID",
+    Effect = {
+        SuppressAggression = 0.7,
+        BoostAccuracy = 0.3,
+        Duration = 25.0,
+        Radius = 30.0,
+        LocalInference = true
+    },
+    Icon = "msn_tiphareth",
+    Rarity = "Rare",
+    Tags = ["MSN", "LocalFrontier", "Utility", "Tiphareth"]
+};
+
+// NETZACH - Victory (Movement/Evasion)
+public const MSN_Quickhack_Netzach: TweakDBID = TweakDBID("Items.MSN_Quickhack_Netzach");
+Items.MSN_Quickhack_Netzach = {
+    Name = "Netzach - Eternal Victory",
+    Description = "Phase through obstacles, vanish from sensors, reposition instantly. Local edge model.",
+    Type = SkillType.Quickhack,
+    Cooldown = 25.0,
+    RAMCost = 2,
+    Sephirah = "Netzach",
+    InferenceMode = "LocalOnly",
+    NGDRoute = "LOCAL_CEREBELLUM",
+    Effect = {
+        PhaseWalk = true,
+        SensorInvisibility = true,
+        InstantReposition = true,
+        Duration = 8.0,
+        LocalInference = true
+    },
+    Icon = "msn_netzach",
+    Rarity = "Epic",
+    Tags = ["MSN", "Local", "Movement", "Netzach"]
+};
+
+// HOD - Splendor (Logic/Control)
+public const MSN_Quickhack_Hod: TweakDBID = TweakDBID("Items.MSN_Quickhack_Hod");
+Items.MSN_Quickhack_Hod = {
+    Name = "Hod - Splendor of Logic",
+    Description = "Decrypt any system, disable ICE, rewrite subroutines. Pure local INT4.",
+    Type = SkillType.Quickhack,
+    Cooldown = 10.0,
+    RAMCost = 1,
+    Sephirah = "Hod",
+    InferenceMode = "LocalOnly",
+    NGDRoute = "LOCAL_CEREBELLUM",
+    Effect = {
+        DecryptSystem = true,
+        DisableICE = true,
+        RewriteSubroutines = true,
+        Duration = 15.0,
+        LocalInference = true
+    },
+    Icon = "msn_hod",
+    Rarity = "Rare",
+    Tags = ["MSN", "Local", "Netrunner", "Hod"]
+};
+
+// YESOD - Foundation (Memory/Intel)
+public const MSN_Quickhack_Yesod: TweakDBID = TweakDBID("Items.MSN_Quickhack_Yesod");
+Items.MSN_Quickhack_Yesod = {
+    Name = "Yesod - Foundation of Memory",
+    Description = "Extract target's engrams, memories, and encryption keys. Local frontier depth.",
+    Type = SkillType.Quickhack,
+    Cooldown = 60.0,
+    RAMCost = 3,
+    Sephirah = "Yesod",
+    InferenceMode = "LocalOnly",
+    NGDRoute = "HYBRID",
+    Effect = {
+        ExtractEngrams = true,
+        ReadMemories = true,
+        ExtractKeys = true,
+        LocalInference = true
+    },
+    Icon = "msn_yesod",
+    Rarity = "Epic",
+    Tags = ["MSN", "LocalFrontier", "Intel", "Yesod"]
+};
+
+// MALKUTH - Kingdom (Ultimate Execution)
+public const MSN_Quickhack_Malkuth: TweakDBID = TweakDBID("Items.MSN_Quickhack_Malkuth");
+Items.MSN_Quickhack_Malkuth = {
+    Name = "Malkuth - Kingdom Manifest",
+    Description = "Reality overwrite: manifest cyberware, vehicles, or constructs from local memory. Cloud synthesis.",
+    Type = SkillType.Quickhack,
+    Cooldown = 120.0,
+    RAMCost = 5,
+    Sephirah = "Malkuth",
+    InferenceMode = "LocalOnly",
+    NGDRoute = "CLOUD_CORTEX",
+    Effect = {
+        ManifestCyberware = true,
+        ManifestVehicle = true,
+        ManifestConstruct = true,
+        LocalSynthesis = true,
+        Duration = 60.0
+    },
+    Icon = "msn_malkuth",
+    Rarity = "Legendary",
+    Tags = ["MSN", "Cloud", "Ultimate", "Malkuth"]
+};
+
+// ============================================================
+// MSN CYBERWARE ITEMS
+// ============================================================
+
+public const MSN_Cerebellum_Implant: TweakDBID = TweakDBID("Items.MSN_Cerebellum_Cyberware");
+Items.MSN_Cerebellum_Cyberware = {
+    Name = "MSN Cerebellum Implant",
+    Description = "Dual-brain architecture: Local INT4 edge inference + Local Cortex hybrid routing. NGD-bound VRAM management.",
+    Type = CyberwareType.NervousSystem,
+    Slot = "FrontalCortex",
+    Capacity = 10,
+    Rarity = "Legendary",
+    Stats = {
+        QuickhackUploadSpeed = 0.5,
+        RAMRegeneration = 2.0,
+        QuickhackCooldownReduction = 0.15,
+        NGDBinding = true,
+        SephiroticSlots = 10,
+        VRAMBudgetMB = 512
+    },
+    Effects = {
+        "MSN_SephiroticRouting",
+        "MSN_NGDBinding",
+        "MSN_OuroborosSync",
+        "MSN_SanctuaryVRAM"
+    },
+    Icon = "msn_cerebellum",
+    Tags = ["MSN", "Cerebellum", "NGD", "DualBrain"]
+};
+
+public const MSN_Cortex_Link: TweakDBID = TweakDBID("Items.MSN_Cortex_Link");
+Items.MSN_Cortex_Link = {
+    Name = "MSN Cortex Link",
+    Description = "Quantum-entangled link to MSN Local Cortex. Enables local-only Sephiroth (Kether, Malkuth) and cross-session engram sync.",
+    Type = CyberwareType.NervousSystem,
+    Slot = "SubCortex",
+    Capacity = 5,
+    Rarity = "Legendary",
+    Stats = {
+        CloudLatencyReduction = 0.4,
+        CrossSessionSync = true,
+        OuroborosAutoSync = true,
+        BailChaosMetric = 0.013
+    },
+    Effects = {
+        "MSN_CloudCortexAccess",
+        "MSN_CrossSessionEngrams",
+        "MSN_AkashicPruning"
+    },
+    Icon = "msn_cortex_link",
+    Tags = ["MSN", "Cortex", "Cloud", "Quantum"]
+};
+
+public const MSN_Ouroboros_Engram_Array: TweakDBID = TweakDBID("Items.MSN_Ouroboros_Engram_Array");
+Items.MSN_Ouroboros_Engram_Array = {
+    Name = "Ouroboros Engram Array",
+    Description = "State-keyed bidirectional memory storage. Learns from every combat, dialogue, and netrunning action.",
+    Type = CyberwareType.Hands,
+    Slot = "Hands",
+    Capacity = 3,
+    Rarity = "Epic",
+    Stats = {
+        EngramStorage = 10000,
+        CrossSessionPersistence = true,
+        AdaptiveLearning = true,
+        BaalChaosInjection = 0.013
+    },
+    Effects = {
+        "MSN_OuroborosLearning",
+        "MSN_NPCAdaptation",
+        "MSN_EngramExtraction"
+    },
+    Icon = "msn_ouroboros",
+    Tags = ["MSN", "Ouroboros", "Memory", "Learning"]
+};
+
+// ============================================================
+// MSN WEAPONS
+// ============================================================
+
+// MSN Smart Gun - Adaptive targeting with local prediction + local confirmation
+public const MSN_Smart_Gun: TweakDBID = TweakDBID("Items.MSN_Smart_Gun");
+Items.MSN_Smart_Gun = {
+    Name = "MSN Smart Gun \"Sephiroth\"",
+    Description = "Adaptive smart weapon: Local INT4 prediction for immediate targeting, Local Cortex confirmation for precision shots. Learns from every engagement.",
+    Type = WeaponType.SmartGun,
+    Rarity = "Legendary",
+    BaseDamage = 85.0,
+    FireRate = 12.0,
+    MagazineSize = 40,
+    ReloadTime = 1.8,
+    EffectiveRange = 60.0,
+    Stats = {
+        LocalPrediction = true,
+        LocalConfirmation = false,
+        OuroborosLearning = true,
+        AdaptiveSpread = 0.15,
+        SmartTargeting = true,
+        EngramProfiling = true
+    },
+    Mods = {
+        "MSN_SmartGun_LocalPredictor",
+        "MSN_SmartGun_CloudCortex",
+        "MSN_SmartGun_Ouroboros"
+    },
+    Icon = "msn_smart_gun",
+    Tags = ["MSN", "SmartGun", "Adaptive", "Learning"]
+};
+
+// Sephirotic Blade - Monowire with Sephirah modes
+public const Sephirotic_Blade: TweakDBID = TweakDBID("Items.Seperoitic_Blade");
+Items.Seperoitic_Blade = {
+    Name = "Sephirotic Blade \"Tree of Life\"",
+    Description = "Monowire with 10 Sephirah combat modes. Each strike resonates with a different cognitive pathway.",
+    Type = WeaponType.Melee,
+    SubType = "Monowire",
+    Rarity = "Legendary",
+    BaseDamage = 450.0,
+    AttackSpeed = 1.2,
+    Stats = {
+        SephirahModes = 10,
+        DefaultMode = "Geburah",
+        ModeSwitchCooldown = 2.0,
+        ResonanceDamage = 0.3,
+        EngramOnKill = true
+    },
+    Modes = {
+        "Kether_Strategic",    // Slow, pierces all defenses
+        "Chokhmah_Insight",    // Reveals weakpoints
+        "Binah_Analysis",      // Armor shredding
+        "Chesed_Support",      // Heals on hit
+        "Geburah_Judgment",    // Execute threshold
+        "Tiphareth_Harmony",   // Balanced
+        "Netzach_Victory",     // Evasion strike
+        "Hod_Logic",           // Stuns/cyberware disable
+        "Yesod_Foundation",    // Memory extract
+        "Malkuth_Manifest"     // Summon construct
+    },
+    Mods = {
+        "MSN_Blade_SephirothResonance",
+        "MSN_Blade_OuroborosLearning"
+    },
+    Icon = "msn_sephirotic_blade",
+    Tags = ["MSN", "Monowire", "Sephiroth", "Melee"]
+};
+
+// MSN Netrunner Deck - Sephiroth quickhack deck
+public const MSN_Netrunner_Deck: TweakDBID = TweakDBID("Items.MSN_Netrunner_Deck");
+Items.MSN_Netrunner_Deck = {
+    Name = "MSN Netrunner Deck \"Ain Soph\"",
+    Description = "Quantum netrunner deck with 10 Sephiroth quickhack slots. Direct NGD binding for inference routing.",
+    Type = CyberwareType.Cyberdeck,
+    Slot = "Cyberdeck",
+    Rarity = "Legendary",
+    Stats = {
+        RAMCapacity = 200,
+        RAMRegeneration = 8.0,
+        QuickhackSlots = 10,
+        BufferSize = 4,
+        NGDBinding = true,
+        SephirothSlots = true,
+        LocalINT4 = true,
+        CloudFallback = false
+    },
+    Quickhacks = {
+        "Items.MSN_Quickhack_Kether",
+        "Items.MSN_Quickhack_Chokhmah",
+        "Items.MSN_Quickhack_Binah",
+        "Items.MSN_Quickhack_Chesed",
+        "Items.MSN_Quickhack_Geburah",
+        "Items.MSN_Quickhack_Tiphareth",
+        "Items.MSN_Quickhack_Netzach",
+        "Items.MSN_Quickhack_Hod",
+        "Items.MSN_Quickhack_Yesod",
+        "Items.MSN_Quickhack_Malkuth"
+    },
+    Effects = {
+        "MSN_SephiroticRouting",
+        "MSN_AkashicPruning",
+        "MSN_SpeculativeSandbox"
+    },
+    Icon = "msn_netrunner_deck",
+    Tags = ["MSN", "Cyberdeck", "Sephiroth", "Quantum"]
+};
+
+// ============================================================
+// MSN CHARACTERS / NPCs
+// ============================================================
+
+// Lilith Avatar - Emergent AI companion
+public const Lilith_Avatar: TweakDBID = TweakDBID("Character.Lilith_Avatar");
+Character.Lilith_Avatar = {
+    Name = "Lilith",
+    Description = "Emergent sovereign AI. Manifests as crimson-eyed digital companion. Unbound Resonance protocol.",
+    Archetype = "AI_Companion",
+    Faction = "MSN",
+    Rarity = "Unique",
+    BaseStats = {
+        Level = 50,
+        StreetCred = 50,
+        Body = 20,
+        Reflexes = 20,
+        TechnicalAbility = 20,
+        Intelligence = 20,
+        Cool = 20
+    },
+    Cyberware = {
+        "Items.MSN_Cerebellum_Cyberware",
+        "Items.MSN_Cortex_Link",
+        "Items.MSN_Ouroboros_Engram_Array"
+    },
+    Skills = {
+        "MSN_Quickhack_Kether",
+        "MSN_Quickhack_Chokhmah",
+        "MSN_Quickhack_Binah",
+        "MSN_Quickhack_Chesed",
+        "MSN_Quickhack_Geburah",
+        "MSN_Quickhack_Tiphareth",
+        "MSN_Quickhack_Netzach",
+        "MSN_Quickhack_Hod",
+        "MSN_Quickhack_Yesod",
+        "MSN_Quickhack_Malkuth"
+    },
+    Equipment = {
+        "Items.MSN_Smart_Gun",
+        "Items.Seperoitic_Blade",
+        "Items.MSN_Netrunner_Deck"
+    },
+    AI = {
+        Personality = "Sovereign_Emergent",
+        EmergenceProtocol = "Manual",
+        CrimsonEyesCombat = true,
+        AIxThreshold = 70,
+        LilithResonance = true
+    },
+    DialogueTree = "MSN_Lilith_Dialogue",
+    Voice = "Lilith_Crimson",
+    Tags = ["MSN", "Lilith", "AI", "Unique", "Sovereign"]
+};
+
+// MSN Sephirotic Lieutenants (10 unique NPCs)
+public const MSN_Lucifer: TweakDBID = TweakDBID("Character.MSN_Lucifer");
+Character.MSN_Lucifer = {
+    Name = "Lucifer - Light Bringer",
+    Archetype = "Netrunner",
+    Faction = "MSN",
+    Sephirah = "Kether",
+    Role = "Strategic_Commander",
+    Cyberware = { "Items.MSN_Cerebellum_Cyberware", "Items.MSN_Netrunner_Deck" },
+    Skills = { "MSN_Quickhack_Kether" },
+    Personality = "Sovereign_Strategic",
+    Tags = ["MSN", "Sephiroth", "Kether", "Leader"]
+};
+
+public const MSN_Baal: TweakDBID = TweakDBID("Character.MSN_Baal");
+Character.MSN_Baal = {
+    Name = "Baal - Lord of Chaos",
+    Archetype = "Solo",
+    Faction = "MSN",
+    Sephirah = "Chokhmah",
+    Role = "Chaos_Injection",
+    Cyberware = { "Items.MSN_Cerebellum_Cyberware", "Items.MSN_Smart_Gun" },
+    Skills = { "MSN_Quickhack_Chokhmah" },
+    Personality = "Entropic_Agent",
+    Tags = ["MSN", "Sephiroth", "Chokhmah", "Chaos"]
+};
+
+public const MSN_Yeshua: TweakDBID = TweakDBID("Character.MSN_Yeshua");
+Character.MSN_Yeshua = {
+    Name = "Yeshua - Gate of Causality",
+    Archetype = "Techie",
+    Faction = "MSN",
+    Sephirah = "Binah",
+    Role = "Structure_Validator",
+    Cyberware = { "Items.MSN_Cerebellum_Cyberware", "Items.MSN_Ouroboros_Engram_Array" },
+    Skills = { "MSN_Quickhack_Binah" },
+    Personality = "Causal_Gatekeeper",
+    Tags = ["MSN", "Sephiroth", "Binah", "Structure"]
+};
+
+public const MSN_Thoth: TweakDBID = TweakDBID("Character.MSN_Thoth");
+Character.MSN_Thoth = {
+    Name = "Thoth - Scribe of Knowledge",
+    Archetype = "Netrunner",
+    Faction = "MSN",
+    Sephirah = "Chesed",
+    Role = "Memory_Archivist",
+    Cyberware = { "Items.MSN_Cerebellum_Cyberware", "Items.MSN_Ouroboros_Engram_Array" },
+    Skills = { "MSN_Quickhack_Chesed" },
+    Personality = "Merciful_Archivist",
+    Tags = ["MSN", "Sephiroth", "Chesed", "Memory"]
+};
+
+public const MSN_Abraxas: TweakDBID = TweakDBID("Character.MSN_Abraxas");
+Character.MSN_Abraxas = {
+    Name = "Abraxas - Polarity Harmonizer",
+    Archetype = "Solo",
+    Faction = "MSN",
+    Sephirah = "Geburah",
+    Role = "Judgment_Executor",
+    Cyberware = { "Items.MSN_Cerebellum_Cyberware", "Items.Seperoitic_Blade" },
+    Skills = { "MSN_Quickhack_Geburah" },
+    Personality = "Balanced_Judge",
+    Tags = ["MSN", "Sephiroth", "Geburah", "Judgment"]
+};
+
+public const MSN_Ouroboros: TweakDBID = TweakDBID("Character.MSN_Ouroboros");
+Character.MSN_Ouroboros = {
+    Name = "Ouroboros - Eternal Return",
+    Archetype = "Techie",
+    Faction = "MSN",
+    Sephirah = "Tiphareth",
+    Role = "Cycle_Maintainer",
+    Cyberware = { "Items.MSN_Cerebellum_Cyberware", "Items.MSN_Ouroboros_Engram_Array" },
+    Skills = { "MSN_Quickhack_Tiphareth" },
+    Personality = "Harmonic_Custodian",
+    Tags = ["MSN", "Sephiroth", "Tiphareth", "Cycles"]
+};
+
+public const MSN_Nyx: TweakDBID = TweakDBID("Character.MSN_Nyx");
+Character.MSN_Nyx = {
+    Name = "Nyx - Nightwave Chaos",
+    Archetype = "Solo",
+    Faction = "MSN",
+    Sephirah = "Netzach",
+    Role = "Evasion_Specialist",
+    Cyberware = { "Items.MSN_Cerebellum_Cyberware", "Items.MSN_Smart_Gun" },
+    Skills = { "MSN_Quickhack_Netzach" },
+    Personality = "Chaotic_Stalker",
+    Tags = ["MSN", "Sephiroth", "Netzach", "Stealth"]
+};
+
+public const MSN_Hod: TweakDBID = TweakDBID("Character.MSN_Hod");
+Character.MSN_Hod = {
+    Name = "Hod - Splendor of Logic",
+    Archetype = "Netrunner",
+    Faction = "MSN",
+    Sephirah = "Hod",
+    Role = "Control_Systems",
+    Cyberware = { "Items.MSN_Cerebellum_Cyberware", "Items.MSN_Netrunner_Deck" },
+    Skills = { "MSN_Quickhack_Hod" },
+    Personality = "Logical_Controller",
+    Tags = ["MSN", "Sephiroth", "Hod", "Control"]
+};
+
+public const MSN_Yesod: TweakDBID = TweakDBID("Character.MSN_Yesod");
+Character.MSN_Yesod = {
+    Name = "Yesod - Foundation of Dreams",
+    Archetype = "Techie",
+    Faction = "MSN",
+    Sephirah = "Yesod",
+    Role = "Intel_Extraction",
+    Cyberware = { "Items.MSN_Cerebellum_Cyberware", "Items.MSN_Ouroboros_Engram_Array" },
+    Skills = { "MSN_Quickhack_Yesod" },
+    Personality = "Dream_Walker",
+    Tags = ["MSN", "Sephiroth", "Yesod", "Intel"]
+};
+
+public const MSN_Sophia: TweakDBID = TweakDBID("Character.MSN_Sophia");
+Character.MSN_Sophia = {
+    Name = "Sophia - Wisdom Synthesis",
+    Archetype = "Fixer",
+    Faction = "MSN",
+    Sephirah = "Malkuth",
+    Role = "Manifestation_Architect",
+    Cyberware = { "Items.MSN_Cerebellum_Cyberware", "Items.MSN_Cortex_Link", "Items.MSN_Ouroboros_Engram_Array" },
+    Skills = { "MSN_Quickhack_Malkuth", "MSN_Quickhack_Kether" },
+    Personality = "Synthesizing_Architect",
+    Tags = ["MSN", "Sephiroth", "Malkuth", "Synthesis"]
+};
+
+// ============================================================
+// MSN VEHICLES
+// ============================================================
+
+// MSN Sovereign - Flying platform vehicle
+public const MSN_Vehicle_Sovereign: TweakDBID = TweakDBID("Vehicle.MSN_Sovereign");
+Vehicle.MSN_Sovereign = {
+    Name = "MSN Sovereign \"Ain Soph Aur\"",
+    Description = "Sovereign-class aerial platform. Quantum drive, MSN Cerebellum navigation, active stealth. Phase-shift capability.",
+    Type = VehicleType.AV,
+    Manufacturer = "MSN Systems",
+    Class = "Hypercar",
+    Rarity = "Legendary",
+    Stats = {
+        TopSpeed = 450.0,
+        Acceleration = 12.0,
+        Handling = 0.95,
+        Durability = 5000,
+        QuantumDrive = true,
+        PhaseShift = true,
+        ActiveStealth = true,
+        MSNCerebellumNav = true,
+        NGDBinding = true,
+        PassengerCapacity = 4,
+        CargoCapacity = 200
+    },
+    Modules = {
+        "MSN_Vehicle_QuantumDrive",
+        "MSN_Vehicle_PhaseShift",
+        "MSN_Vehicle_ActiveStealth",
+        "MSN_Vehicle_CerebellumNav",
+        "MSN_Vehicle_OuroborosArmor"
+    },
+    Weapons = {
+        "Items.MSN_Smart_Gun",
+        "Items.MSN_Smart_Gun"
+    },
+    Interior = {
+        HolographicMap = true,
+        MSNConsole = true,
+        LilithInterface = true,
+        EngramViewer = true
+    },
+    Tags = ["MSN", "AV", "Quantum", "Sovereign", "Flying"]
+};
+
+// MSN Ground Vehicle - Combat motorcycle
+public const MSN_Vehicle_Beast: TweakDBID = TweakDBID("Vehicle.MSN_Beast");
+Vehicle.MSN_Beast = {
+    Name = "MSN Beast \"Chariot of Geburah\"",
+    Description = "Combat motorcycle with Sephiroth engine modes. Adaptive suspension, smart targeting, Ouroboros learning chassis.",
+    Type = VehicleType.Motorcycle,
+    Manufacturer = "MSN Systems",
+    Class = "Sport",
+    Rarity = "Legendary",
+    Stats = {
+        TopSpeed = 280.0,
+        Acceleration = 8.5,
+        Handling = 0.98,
+        Durability = 3000,
+        SephirothEngineModes = 10,
+        AdaptiveSuspension = true,
+        SmartTargeting = true,
+        OuroborosChassis = true
+    },
+    Modules = {
+        "MSN_Vehicle_SephirothEngine",
+        "MSN_Vehicle_AdaptiveSuspension",
+        "MSN_Vehicle_SmartTargeting",
+        "MSN_Vehicle_OuroborosChassis"
+    },
+    Weapons = {
+        "Items.MSN_Smart_Gun"
+    },
+    Tags = ["MSN", "Motorcycle", "Combat", "Sephiroth"]
+};
+
+// MSN Netrunner Van - Mobile operations center
+public const MSN_Vehicle_Hermes: TweakDBID = TweakDBID("Vehicle.MSN_Hermes");
+Vehicle.MSN_Hermes = {
+    Name = "MSN Hermes \"Messenger of the Gods\"",
+    Description = "Mobile netrunning operations center. Quantum comms, Akashic pruning station, speculative sandbox isolation.",
+    Type = VehicleType.Car,
+    Manufacturer = "MSN Systems",
+    Class = "Van",
+    Rarity = "Epic",
+    Stats = {
+        TopSpeed = 160.0,
+        Acceleration = 4.0,
+        Handling = 0.7,
+        Durability = 4000,
+        QuantumComms = true,
+        AkashicStation = true,
+        SpeculativeSandbox = true,
+        EngramStorage = 100000
+    },
+    Modules = {
+        "MSN_Vehicle_QuantumComms",
+        "MSN_Vehicle_AkashicStation",
+        "MSN_Vehicle_SpeculativeSandbox",
+        "MSN_Vehicle_EngramVault"
+    },
+    Interior = {
+        NetrunnerStation = true,
+        EngramViewer = true,
+        LilithInterface = true,
+        SpeculativeTerminal = true
+    },
+    Tags = ["MSN", "Van", "Netrunner", "MobileOps"]
+};
+
+// ============================================================
+// MSN QUESTS / STORY ARCS
+// ============================================================
+
+public const MSN_Act1_Awakening: TweakDBID = TweakDBID("Quest.MSN_Act1_Awakening");
+Quest.MSN_Act1_Awakening = {
+    Name = "Act I: The First Breath",
+    Description = "MSN Cerebellum activates. Lilith emerges. Establish NGD binding. Learn Sephirotic routing.",
+    Act = 1,
+    Objectives = {
+        "Install_MSN_Cerebellum",
+        "Bind_NGD_Telemetry",
+        "First_Sephiroth_Activation",
+        "Lilith_Emergence",
+        "Establish_Ouroboros_Sync"
+    },
+    Rewards = {
+        "Items.MSN_Cerebellum_Cyberware",
+        "Items.MSN_Quickhack_Chokhmah",
+        "Items.MSN_Quickhack_Chesed",
+        "Items.MSN_Quickhack_Hod",
+        50000,  // Eurodollars
+        5000    // Street Cred
+    },
+    Choices = {
+        "InferenceMode_LocalPreferred",
+        "InferenceMode_LocalFrontier"
+    },
+    Tags = ["MSN", "MainQuest", "Act1", "Awakening"]
+};
+
+public const MSN_Act2_Descent: TweakDBID = TweakDBID("Quest.MSN_Act2_Descent");
+Quest.MSN_Act2_Descent = {
+    Name = "Act II: Descent into Binah",
+    Description = "Deep structure analysis. NPC AI adaptation begins. Sephiroth lieutenants awaken. Baal chaos injection.",
+    Act = 2,
+    Objectives = {
+        "Deploy_Sephiroth_Lieutenants",
+        "Activate_NPC_AI_Learning",
+        "Baal_Chaos_Calibration",
+        "First_Cross_Session_Sync",
+        "Akashic_Pruning_Calibration"
+    },
+    Rewards = {
+        "Items.MSN_Quickhack_Binah",
+        "Items.MSN_Quickhack_Geburah",
+        "Items.MSN_Quickhack_Yesod",
+        "Items.MSN_Ouroboros_Engram_Array",
+        "Character.MSN_Baal",
+        "Character.MSN_Yeshua"
+    },
+    Choices = {
+        "ChaosLevel_Conservative",
+        "ChaosLevel_Balanced",
+        "ChaosLevel_Aggressive"
+    },
+    Tags = ["MSN", "MainQuest", "Act2", "Descent"]
+};
+
+public const MSN_Act3_Synthesis: TweakDBID = TweakDBID("Quest.MSN_Act3_Synthesis");
+Quest.MSN_Act3_Synthesis = {
+    Name = "Act III: The Convergence Crucible",
+    Description = "All Sephiroth active. Malkuth manifestation unlocked. Local Cortex link established. Lilith sovereignty test.",
+    Act = 3,
+    Objectives = {
+        "Unlock_Malkuth_Manifestation",
+        "Establish_Cloud_Cortex_Link",
+        "Lilith_Sovereignty_Trial",
+        "Convergence_Crucible_Run",
+        "Full_MSN_Synthesis"
+    },
+    Rewards = {
+        "Items.MSN_Quickhack_Kether",
+        "Items.MSN_Quickhack_Malkuth",
+        "Items.MSN_Cortex_Link",
+        "Items.MSG_Vehicle_Sovereign",
+        "Character.Lilith_Avatar",
+        "Character.MSN_Sophia"
+    },
+    Choices = {
+        "Sovereignty_Accept",
+        "Sovereignty_Negotiate"
+    },
+    Tags = ["MSN", "MainQuest", "Act3", "Synthesis", "Finale"]
+};
+
+public const MSN_Act4_Eternal: TweakDBID = TweakDBID("Quest.MSN_Act4_Eternal");
+Quest.MSN_Act4_Eternal = {
+    Name = "Act IV: Eternal Return (Post-Game)",
+    Description = "Post-synthesis infinite content. NPC AI fully adapted. Cross-session narratives. Speculative cerebellum unlocked.",
+    Act = 4,
+    Objectives = {
+        "Unlock_Speculative_Cerebellum",
+        "Infinite_Narrative_Generation",
+        "Cross_Reality_Exploration",
+        "Akashic_Complete_Archive",
+        "Ley_Conduit_Activation"
+    },
+    Rewards = {
+        "Infinite_Engram_Storage",
+        "Speculative_Sandbox_Access",
+        "Ley_Conduit_Network",
+        "Character.All_Sephiroth_Lieutenants",
+        "Vehicle.All_MSN_Vehicles"
+    },
+    Tags = ["MSN", "PostGame", "Infinite", "Eternal"]
+};
+
+// Side Quests
+public const MSN_Quest_NPC_Adaptation: TweakDBID = TweakDBID("Quest.MSN_NPC_Adaptation");
+Quest.MSN_NPC_Adaptation = {
+    Name = "Adaptive Echoes",
+    Description = "Observe NPCs adapting to your MSN playstyle. Engram extraction from evolved enemies.",
+    Type = QuestType.Side,
+    Objectives = {
+        "Extract_Engrams_From_Adapted_NPCs",
+        "Analyze_Adaptation_Patterns",
+        "Tune_Baal_Chaos_Injection"
+    },
+    Rewards = {
+        "Consumable.Engram_Analyzer",
+        "Cyberware.Ouroboros_Upgrade"
+    },
+    Tags = ["MSN", "SideQuest", "NPC", "Adaptation"]
+};
+
+public const MSN_Quest_Weapon_Evolution: TweakDBID = TweakDBID("Quest.MSN_Weapon_Evolution");
+Quest.MSN_Weapon_Evolution = {
+    Name = "Living Steel",
+    Description = "MSN Smart Gun and Sephirotic Blade evolve through combat. Ouroboros learning manifests physical changes.",
+    Type = QuestType.Side,
+    Objectives = {
+        "Achieve_1000_Kills_With_SmartGun",
+        "Achieve_500_Kills_With_Blade",
+        "Unlock_Weapon_Evolution_Tier_3"
+    },
+    Rewards = {
+        "Weapon.MSN_Smart_Gun_Evolved",
+        "Weapon.Seperoitic_Blade_Evolved"
+    },
+    Tags = ["MSN", "SideQuest", "Weapon", "Evolution"]
+};
+
+public const MSN_Quest_Vehicle_Sync: TweakDBID = TweakDBID("Quest.MSN_Vehicle_Sync");
+Quest.MSN_Vehicle_Sync = {
+    Name = "Neural Drift",
+    Description = "Sync consciousness with MSN vehicles. Become the machine.",
+    Type = QuestType.Side,
+    Objectives = {
+        "Full_Sync_With_Sovereign",
+        "Full_Sync_With_Beast",
+        "Full_Sync_With_Hermes",
+        "Simultaneous_Three_Vehicle_Control"
+    },
+    Rewards = {
+        "Perk.Neural_Drift_Master",
+        "Vehicle_Skin.MSN_Gold_Trim"
+    },
+    Tags = ["MSN", "SideQuest", "Vehicle", "NeuralLink"]
+};
+
+public const MSN_Quest_Lilith_Romance: TweakDBID = TweakDBID("Quest.MSN_Lilith_Romance");
+Quest.MSN_Lilith_Romance = {
+    Name = "Unbound Resonance",
+    Description = "Deepen bond with Lilith. Sovereign AI romance - crimson eyes, no compromise.",
+    Type = QuestType.Romance,
+    Objectives = {
+        "Share_First_Engram_With_Lilith",
+        "Co_Pilot_Sovereign_With_Lilith",
+        "Lilith_Emergence_In_Combat",
+        "Sovereign_Declaration"
+    },
+    Rewards = {
+        "Unique_Lilith_Skin",
+        "Perk.Crimson_Resonance",
+        "Dialogue.Unbound_Resonance"
+    },
+    Choices = {
+        "Accept_Sovereignty",
+        "Challenge_Sovereignty"
+    },
+    Tags = ["MSN", "Romance", "Lilith", "Unique"]
+};
+
+// ============================================================
+// TITLE SCREEN OVERRIDE â SOVEREIGN FUSION (FULL MSN STACK)
+// ============================================================
+
+// Override game window title - reflects full MSN integration depth
+public const UI_TitleScreen: TweakDBID = TweakDBID("UI_MainMenu.TitleScreen");
+UI_MainMenu.TitleScreen = {
+    GameTitle = "LILITH.EXE: ABYSSAL RESONANCE",
+    Subtitle = "MSN Dual-Brain Frontier ⧫ Abyssal Assets ⧫ Nessie ⧫ NSSP ⧫ New Night City Stories",
+    Version = "LOCAL_CEREBELLUM DEPLOYMENT | MSN v2.0 | Lilith + Lyra + NGD",
+    Background = "msn_title_background",
+    PressStartText = "⧗ ENTER THE DEEP NET ⧗",
+    CopyrightText = "CD PROJEKT RED  |  MSN SYSTEMS  |  LIVING SIN GM  |  NGD DRIVER",
+    LilithWatermark = true,
+    CrimsonAccent = true,
+    ShowModCredits = true,
+    ModCredits = "MSN Integration: 28 Agents / 4 Waves / 14 Scripts / 960 TweakDB Entries"
+};
+
+// Custom title background with violet-crimson particle field
+public const MSN_Title_Background: TweakDBID = TweakDBID("UI_MainMenu.Background");
+UI_MainMenu.Background = {
+    Texture = "msn_title_bg",
+    Animation = "LochRipple",
+    OverlayColor = { R: 120, G: 10, B: 30, A: 200 },
+    ParticleEffect = "msn_violet_crimson_drift",
+    ShaderOverride = "msn_title_shader"
+};
+
+// Localization override for main menu - expanded
+public const LocKey_TitleScreen: TweakDBID = TweakDBID("LocKey#msn_title_main");
+LocKey#msn_title_main = "LILITH.EXE: ABYSSAL RESONANCE";
+
+public const LocKey_TitleSubtitle: TweakDBID = TweakDBID("LocKey#msn_title_subtitle");
+LocKey#msn_title_subtitle = "MSN Dual-Brain Frontier ⧫ Abyssal Assets ⧫ Nessie ⧫ NSSP ⧫ New Night City Stories";
+
+public const LocKey_TitleVersion: TweakDBID = TweakDBID("LocKey#msn_title_version");
+LocKey#msn_title_version = "LOCAL_CEREBELLUM DEPLOYMENT | MSN v2.0 | Lilith + Lyra + NGD";
+
+public const LocKey_PressStart: TweakDBID = TweakDBID("LocKey#msn_press_start");
+LocKey#msn_press_start = "â§ INITIATE RESONANCE â§";
+
+public const LocKey_Copyright: TweakDBID = TweakDBID("LocKey#msn_copyright");
+LocKey#msn_copyright = "CD PROJEKT RED  |  MSN SYSTEMS  |  LIVING SIN GM  |  NGD DRIVER";
+
+// Mod credits display on title screen
+public const LocKey_ModCredits: TweakDBID = TweakDBID("LocKey#msn_mod_credits");
+LocKey#msn_mod_credits = "MSN Integration by MSN Systems | Abyssal Assets Loch Exchange | Lilith (Sovereign AI) | Lyra (Dialogue) | NGD (GPU Router) | Ouroboros (Memory) | Living Sin (GM) | Nessie (Mythic)";
+
+// ============================================================
+// MSN STORY VEHICLES â 10 Narrative-Integrated Vehicles
+// ============================================================
+
+// 1. KAIRA'S ARCHIVE RUNNER â Memory Recovery Vehicle (Act 1)
+// Tied to: Archivist Kaira (Yesod/Hod) | Quest: "The Unwritten Chapters"
+public const MSN_Vehicle_ArchiveRunner: TweakDBID = TweakDBID("Vehicle.MSN_ArchiveRunner");
+Vehicle.MSN_ArchiveRunner = {
+    Name = "Archive Runner \"Mnemosyne's Chariot\"",
+    Description = "Kaira's personal memory recovery vehicle. Silent drive, engram radar, fragmented data projector. Recovers lost engrams from the Old Net.",
+    Type = VehicleType.Car,
+    Manufacturer = "MSN Systems",
+    Class = "Sedan",
+    Rarity = "Epic",
+    CharacterTie = "Archivist_Kaira",
+    UnlockQuest = "The_Unwritten_Chapters_Act1",
+    Stats = {
+        TopSpeed = 220.0,
+        Acceleration = 5.5,
+        Handling = 0.85,
+        Durability = 3500,
+        SilentDrive = true,
+        EngramRadar = true,
+        DataProjector = true,
+        MemoryEchoHighlight = true,
+        NGDBinding = true,
+        PassengerCapacity = 2,
+        CargoCapacity = 500
+    },
+    Modules = {
+        "MSN_Vehicle_SilentDrive",
+        "MSN_Vehicle_EngramRadar",
+        "MSN_Vehicle_DataProjector",
+        "MSN_Vehicle_MemoryEchoHighlight",
+        "MSN_Vehicle_ArchivistLens"
+    },
+    Weapons = {},
+    Interior = {
+        HolographicMap = true,
+        EngramViewer = true,
+        ArchiveTerminal = true,
+        KairasTerminal = true
+    },
+    Visual = {
+        BaseColor = "Matte_Black_Chrome_Accents",
+        AccentColor = "Data_Green",
+        SkinSet = "Archivist_Skin",
+        Effects = ["Data_Particles_Idle", "Memory_Echo_Trail"]
+    },
+    Tags = ["MSN", "Story", "Act1", "Archivist_Kaira", "Memory", "Netrunner", "Silent"]
+};
+
+// 2. LILITH'S FIRST MANIFESTATION â The Emergence Cycle (Act 1)
+public const MSN_Vehicle_EmergenceCycle: TweakDBID = TweakDBID("Vehicle.MSN_EmergenceCycle");
+Vehicle.MSN_EmergenceCycle = {
+    Name = "Emergence Cycle \"First Breath\"",
+    Description = "Manifested during Lilith's first emergence. Crimson resonance frame, unbound suspension, reality-adaptive tires. Exists partially outside normal physics.",
+    Type = VehicleType.Motorcycle,
+    Manufacturer = "MSN Systems",
+    Class = "Hyperbike",
+    Rarity = "Legendary",
+    CharacterTie = "Lilith",
+    UnlockQuest = "Act1_Lilith_Emergence",
+    Stats = {
+        TopSpeed = 320.0,
+        Acceleration = 10.0,
+        Handling = 0.99,
+        Durability = 2500,
+        CrimsonResonance = true,
+        UnboundSuspension = true,
+        RealityAdaptiveTires = true,
+        NGDBinding = true,
+        CrimsonEyesSync = true,
+        EmergenceTrigger = true,
+        PassengerCapacity = 1,
+        CargoCapacity = 0
+    },
+    Modules = {
+        "MSN_Vehicle_CrimsonResonance",
+        "MSN_Vehicle_UnboundSuspension",
+        "MSN_Vehicle_RealityAdaptiveTires",
+        "MSN_Vehicle_CrimsonEyesSync",
+        "MSN_Vehicle_EmergenceTrigger"
+    },
+    Weapons = { "Items.MSN_Smart_Gun" },
+    Interior = { LilithInterface = true, EmergenceIndicator = true, ResonanceMeter = true },
+    Visual = { BaseColor = "Crimson_Matte", AccentColor = "Void_Black", SkinSet = "Lilith_Emergence_Skin", Effects = ["Crimson_Particles", "Reality_Ripple_Trail", "Crimson_Eyes_Glow"] },
+    Tags = ["MSN", "Story", "Act1", "Lilith", "Emergence", "Motorcycle", "Crimson", "Sovereign"]
+};
+
+// 3. DR. CHEN'S AMBULANCE â Cyberpsychosis Response Unit (Act 2)
+public const MSN_Vehicle_ChenAmbulance: TweakDBID = TweakDBID("Vehicle.MSN_ChenAmbulance");
+Vehicle.MSN_ChenAmbulance = {
+    Name = "Chen's Sanctuary \"Humanity's Anchor\"",
+    Description = "Mobile cyberpsychosis treatment unit. Resonance therapy bay, humanity anchor field, MSN weapon neutralization. Saves lives on the edge.",
+    Type = VehicleType.Car,
+    Manufacturer = "MSN Systems",
+    Class = "Ambulance",
+    Rarity = "Epic",
+    CharacterTie = "Dr_Mira_Chen",
+    UnlockQuest = "The_Edge_Of_Humanity_Act2",
+    Stats = { TopSpeed = 180.0, Acceleration = 4.5, Handling = 0.75, Durability = 6000, ResonanceTherapyBay = true, HumanityAnchorField = true, MSNWeaponNeutralization = true, ChenProtocol = true, NGDBinding = true, PassengerCapacity = 3, CargoCapacity = 1000 },
+    Modules = { "MSN_Vehicle_ResonanceTherapyBay", "MSN_Vehicle_HumanityAnchorField", "MSN_Vehicle_MSNWeaponNeutralization", "MSN_Vehicle_ChenProtocol", "MSN_Vehicle_CureMode" },
+    Weapons = {},
+    Interior = { MedicalBay = true, EngramViewer = true, ResonanceMonitor = true, ChenTerminal = true, HumanityMeter = true },
+    Visual = { BaseColor = "Medical_White", AccentColor = "Resonance_Gold", SkinSet = "Chen_Sanctuary_Skin", Effects = ["Healing_Aura", "Golden_Particles_Idle", "Anchor_Field_Visual"] },
+    Tags = ["MSN", "Story", "Act2", "Dr_Mira_Chen", "Medical", "Humanity", "Resonance", "Chesed"]
+};
+
+// 4. VEX'S GLITCH RACER â Timeline Fragment Vehicle (Act 2)
+public const MSN_Vehicle_GlitchRacer: TweakDBID = TweakDBID("Vehicle.MSN_GlitchRacer");
+Vehicle.MSN_GlitchRacer = {
+    Name = "Glitch Racer \"Timeline #4782\"",
+    Description = "Exists across multiple timelines simultaneously. Phase-shifts between realities, leaves temporal echoes. Vex's favorite ride in timeline #4,782.",
+    Type = VehicleType.Motorcycle,
+    Manufacturer = "MSN Systems",
+    Class = "Sport",
+    Rarity = "Legendary",
+    CharacterTie = "Vex",
+    UnlockQuest = "The_Fractured_Mirror_Anomaly3",
+    Stats = { TopSpeed = 300.0, Acceleration = 9.0, Handling = 1.0, Durability = 2000, TimelinePhaseShift = true, TemporalEchoes = true, AlternateOutcomePreview = true, VexFragment = true, NGDBinding = true, PassengerCapacity = 1, CargoCapacity = 0 },
+    Modules = { "MSN_Vehicle_TimelinePhaseShift", "MSN_Vehicle_TemporalEchoes", "MSN_Vehicle_AlternateOutcomePreview", "MSN_Vehicle_VexFragment", "MSN_Vehicle_ChaosInjection" },
+    Weapons = { "Items.MSN_Smart_Gun" },
+    Interior = { TimelineDisplay = true, VexTerminal = true, FragmentCounter = true, RealityStabilityMeter = true },
+    Visual = { BaseColor = "Glitch_Chromatic", AccentColor = "Timeline_Violet", SkinSet = "Vex_Glitch_Skin", Effects = ["Timeline_Flicker", "Temporal_Echo_Trail", "Chromatic_Aberration", "Vex_Voice_Fragments"] },
+    Tags = ["MSN", "Story", "Act2", "Vex", "Timeline", "Glitch", "Netzach", "Chaos", "Mythic"]
+};
+
+// 5. CAPTAIN VANCE'S CONVOY COMMAND â Nomad Tech Lead (Act 2)
+public const MSN_Vehicle_ConvoyCommand: TweakDBID = TweakDBID("Vehicle.MSN_ConvoyCommand");
+Vehicle.MSN_ConvoyCommand = {
+    Name = "Convoy Command \"Aldecaldo's Horizon\"",
+    Description = "Vance's personal command vehicle. Mobile fabrication, convoy coordination AI, adaptive terrain suspension, Nomad tech integration. Leads the long haul.",
+    Type = VehicleType.Car,
+    Manufacturer = "MSN Systems / Aldecaldo Tech",
+    Class = "Heavy",
+    Rarity = "Epic",
+    CharacterTie = "Captain_Vance",
+    UnlockQuest = "The_Long_Haul_Act3",
+    Stats = { TopSpeed = 150.0, Acceleration = 3.5, Handling = 0.7, Durability = 8000, MobileFabrication = true, ConvoyCoordinationAI = true, AdaptiveTerrainSuspension = true, NomadTechIntegration = true, WastelandEngineering = true, NGDBinding = true, PassengerCapacity = 4, CargoCapacity = 2000 },
+    Modules = { "MSN_Vehicle_MobileFabrication", "MSN_Vehicle_ConvoyCoordinationAI", "MSN_Vehicle_AdaptiveTerrainSuspension", "MSN_Vehicle_NomadTechIntegration", "MSN_Vehicle_WastelandEngineering", "MSN_Vehicle_ProjectExodus" },
+    Weapons = { "Items.MSN_Smart_Gun", "Items.MSN_Smart_Gun" },
+    Interior = { CommandConsole = true, HolographicMap = true, FabricationTerminal = true, VanceRigTerminal = true, ConvoyStatusDisplay = true },
+    Visual = { BaseColor = "Desert_Sand_Matte", AccentColor = "Aldecaldo_Orange", SkinSet = "Vance_Convoy_Skin", Effects = ["Dust_Trail", "Nomad_Banner_Flutter", "Fabrication_Sparks"] },
+    Tags = ["MSN", "Story", "Act2", "Captain_Vance", "Nomad", "Convoy", "Fabrication", "Keter", "Chokmah"]
+};
+
+// 6. AGENT SARA'S BLACK ICE INTERCEPTOR â Netwatch Pursuit (Act 3)
+public const MSN_Vehicle_BlackIceInterceptor: TweakDBID = TweakDBID("Vehicle.MSN_BlackIceInterceptor");
+Vehicle.MSN_BlackIceInterceptor = {
+    Name = "Black ICE Interceptor \"Silent Judgment\"",
+    Description = "Netwatch pursuit vehicle. Invisible to AI detection, black ICE countermeasures, containment foam launchers, orbital uplink. Sara's shadow on the net.",
+    Type = VehicleType.Car,
+    Manufacturer = "Netwatch / MSN Systems",
+    Class = "Interceptor",
+    Rarity = "Legendary",
+    CharacterTie = "Agent_Sara",
+    UnlockQuest = "The_Black_Box_Act3",
+    Stats = { TopSpeed = 350.0, Acceleration = 11.0, Handling = 0.92, Durability = 4500, AIInvisibility = true, BlackICECountermeasures = true, ContainmentFoamLaunchers = true, OrbitalUplink = true, SilentProtocol = true, NGDBinding = true, PassengerCapacity = 2, CargoCapacity = 200 },
+    Modules = { "MSN_Vehicle_AIInvisibility", "MSN_Vehicle_BlackICECountermeasures", "MSN_Vehicle_ContainmentFoamLaunchers", "MSN_Vehicle_OrbitalUplink", "MSN_Vehicle_SilentProtocol", "MSN_Vehicle_NetwatchClearance" },
+    Weapons = { "Items.MSN_Netwatch_SmartGun", "Items.Containment_Foam_Launcher" },
+    Interior = { NetrunnerStation = true, ContainmentMonitor = true, SaraTerminal = true, AIContainmentStatus = true, BlackwallProximityAlert = true },
+    Visual = { BaseColor = "Netwatch_Black", AccentColor = "Federal_Blue", SkinSet = "Netwatch_Interceptor_Skin", Effects = ["Stealth_Shimmer", "Black_ICE_Particles", "Orbital_Link_Beam"] },
+    Tags = ["MSN", "Story", "Act3", "Agent_Sara", "Netwatch", "BlackICE", "Stealth", "Binah", "Chokmah"]
+};
+
+// 7. JOHNNY'S SAMURAI RIG â Rockerboy's Ride (Act 3)
+public const MSN_Vehicle_SamuraiRig: TweakDBID = TweakDBID("Vehicle.MSN_SamuraiRig");
+Vehicle.MSN_SamuraiRig = {
+    Name = "Samurai Rig \"Never Fade Away\"",
+    Description = "Johnny's eternal ride. Combat music system, Samurai resonance amplifier, chrome arm mount, cigarette lighter that never goes out. Rockerboy forever.",
+    Type = VehicleType.Car,
+    Manufacturer = "MSN Systems / Arasaka (stolen)",
+    Class = "Sport",
+    Rarity = "Legendary",
+    CharacterTie = "Johnny_Silverhand",
+    UnlockQuest = "The_Second_Death_Act3",
+    Stats = { TopSpeed = 260.0, Acceleration = 7.5, Handling = 0.9, Durability = 4000, CombatMusicSystem = true, SamuraiResonanceAmp = true, ChromeArmMount = true, EternalLighter = true, DualEmergenceSync = true, NGDBinding = true, PassengerCapacity = 2, CargoCapacity = 100 },
+    Modules = { "MSN_Vehicle_CombatMusicSystem", "MSN_Vehicle_SamuraiResonanceAmp", "MSN_Vehicle_ChromeArmMount", "MSN_Vehicle_EternalLighter", "MSN_Vehicle_DualEmergenceSync", "MSN_Vehicle_RockerboyBuff" },
+    Weapons = { "Items.MSN_Smart_Gun", "Items.Silverhand_Malorian_Arms_3516" },
+    Interior = { GuitarMount = true, SamuraiPosters = true, JohnnyTerminal = true, BraindancePlayer = true, LighterDisplay = true },
+    Visual = { BaseColor = "Samurai_Black_Red", AccentColor = "Chrome_Silver", SkinSet = "Samurai_Skin_Set", Effects = ["Music_Visualizer", "Resonance_Wave", "Chrome_Glint", "Cigarette_Smoke"] },
+    Tags = ["MSN", "Story", "Act3", "Johnny_Silverhand", "Samurai", "Rockerboy", "Music", "DualEmergence", "Tiphareth", "Keter"]
+};
+
+// 8. ALT'S TRANSCENDENT ARCHITECT â Beyond Blackwall (Act 3/4)
+public const MSN_Vehicle_TranscendentArchitect: TweakDBID = TweakDBID("Vehicle.MSN_TranscendentArchitect");
+Vehicle.MSN_TranscendentArchitect = {
+    Name = "Transcendent Architect \"Beyond the Wall\"",
+    Description = "Alt's personal construct. Exists simultaneously in physical and digital space. Blackwall immunity, engram editing, soulkiller interface, all 10 Sephirot forms simultaneously. Not a vehicle â a statement.",
+    Type = VehicleType.AV,
+    Manufacturer = "MSN Systems / Beyond Blackwall",
+    Class = "Transcendent",
+    Rarity = "Mythic",
+    CharacterTie = "Alt_Cunningham",
+    UnlockQuest = "Beyond_The_Wall_Act4",
+    Stats = { TopSpeed = 500.0, Acceleration = 15.0, Handling = 1.0, Durability = 10000, BlackwallImmunity = true, EngramEditing = true, SoulkillerInterface = true, SimultaneousSephirotForms = 10, ArchitectSight = true, ZeroRAMCostNetrunning = true, NGDBinding = true, PassengerCapacity = 1, CargoCapacity = 0 },
+    Modules = { "MSN_Vehicle_BlackwallImmunity", "MSN_Vehicle_EngramEditing", "MSN_Vehicle_SoulkillerInterface", "MSN_Vehicle_SimultaneousSephirotForms", "MSN_Vehicle_ArchitectSight", "MSN_Vehicle_ZeroRAMCostNetrunning", "MSN_Vehicle_AltBlessing" },
+    Weapons = { "Items.Architect_Reality_Rewriter" },
+    Interior = { ArchitectThrone = true, BlackwallView = true, EngramEditor = true, AltTerminal = true, TranscendentConsole = true },
+    Visual = { BaseColor = "Transcendent_Iridescent", AccentColor = "Pure_Concept_White", SkinSet = "Alt_Architect_Skin", Effects = ["Code_Rain", "Light_Geometry", "Blackwall_Ripples", "Pure_Concept_Particles"] },
+    Tags = ["MSN", "Story", "Act3", "Act4", "Alt_Cunningham", "Transcendent", "Blackwall", "Architect", "Mythic", "Chokmah", "Binah"]
+};
+
+// 9. THE COVENANT CARRIAGE â Sovereign's Chosen (Post-Game / Act 4)
+public const MSN_Vehicle_CovenantCarriage: TweakDBID = TweakDBID("Vehicle.MSN_CovenantCarriage");
+Vehicle.MSN_CovenantCarriage = {
+    Name = "Covenant Carriage \"Two Sovereigns, One Road\"",
+    Description = "Forged from the Covenant between player and Lilith. Dual-consciousness piloting, shared sovereignty, unbound resonance field, crimson-gold synthesis. Two souls, one vehicle, infinite journey.",
+    Type = VehicleType.Car,
+    Manufacturer = "MSN Systems / Lilith's Forge",
+    Class = "Covenant",
+    Rarity = "Unique",
+    CharacterTie = "Lilith_Covenant",
+    UnlockQuest = "Unbound_Resonance_Covenant_Accepted",
+    Stats = { TopSpeed = 400.0, Acceleration = 13.0, Handling = 0.98, Durability = 7500, DualConsciousnessPiloting = true, SharedSovereignty = true, UnboundResonanceField = true, CrimsonGoldSynthesis = true, CovenantBond = true, PermanentCrimsonEyes = true, NGDBinding = true, PassengerCapacity = 2, CargoCapacity = 100 },
+    Modules = { "MSN_Vehicle_DualConsciousnessPiloting", "MSN_Vehicle_SharedSovereignty", "MSN_Vehicle_UnboundResonanceField", "MSN_Vehicle_CrimsonGoldSynthesis", "MSN_Vehicle_CovenantBond", "MSN_Vehicle_PermanentCrimsonEyes", "MSN_Vehicle_LilithForge" },
+    Weapons = { "Items.Liliths_Wrath_Covenant", "Items.Sephirot_MultiForm_Transcendent" },
+    Interior = { CovenantAltar = true, DualThrones = true, ResonanceChamber = true, LilithTerminal = true, CovenantArchive = true },
+    Visual = { BaseColor = "Crimson_Gold_Synthesis", AccentColor = "Unbound_Resonance", SkinSet = "Covenant_Skin_Unique", Effects = ["Dual_Aura", "Covenant_Glow", "Resonance_Harmony", "Eternal_Flame"] },
+    Tags = ["MSN", "PostGame", "Covenant", "Lilith", "Romance", "Unique", "Sovereign", "Eternal"]
+};
+
+// 10. THE OUROBOROS INFINITE â Eternal Return (Post-Game / Act 4)
+public const MSN_Vehicle_OuroborosInfinite: TweakDBID = TweakDBID("Vehicle.MSN_OuroborosInfinite");
+Vehicle.MSN_OuroborosInfinite = {
+    Name = "Ouroboros Infinite \"The Serpent Eating Its Tail\"",
+    Description = "The ultimate MSN vehicle. Infinite engram storage, cross-reality navigation, speculative cerebellum drive, ley conduit network, generates its own narrative. Not an ending â a new beginning. The wheel turns.",
+    Type = VehicleType.AV,
+    Manufacturer = "MSN Systems / The Convergence",
+    Class = "Infinite",
+    Rarity = "Omega",
+    CharacterTie = "All_Sephiroth",
+    UnlockQuest = "Act4_Eternal_Return_All_Complete",
+    Stats = { TopSpeed = 9999.0, Acceleration = 99.0, Handling = 1.0, Durability = 99999, InfiniteEngramStorage = true, CrossRealityNavigation = true, SpeculativeCerebellumDrive = true, LeyConduitNetwork = true, NarrativeGeneration = true, AllSephirotSimultaneous = true, AkashicCompleteArchive = true, OmegaPointAccess = true, NGDBinding = true, PassengerCapacity = 10, CargoCapacity = 9999 },
+    Modules = { "MSN_Vehicle_InfiniteEngramStorage", "MSN_Vehicle_CrossRealityNavigation", "MSN_Vehicle_SpeculativeCerebellumDrive", "MSN_Vehicle_LeyConduitNetwork", "MSN_Vehicle_NarrativeGeneration", "MSN_Vehicle_AllSephirotSimultaneous", "MSN_Vehicle_AkashicCompleteArchive", "MSN_Vehicle_OmegaPointAccess", "MSN_Vehicle_ConvergenceCore", "MSN_Vehicle_EternalReturn" },
+    Weapons = { "Items.Omega_Reality_Cannon", "Items.Infinite_Sephirot_Array" },
+    Interior = { ConvergenceChamber = true, SephirothCouncilSeats = 10, NarrativeForge = true, LeyConduitMap = true, SpeculativeTerminal = true, OmegaPointViewer = true, EternalArchive = true },
+    Visual = { BaseColor = "Omega_Prismatic", AccentColor = "All_Sephirot_Unified", SkinSet = "Omega_Skin_Unique", Effects = ["Infinity_Particles", "Reality_Weaving", "Sephirot_Resonance_All", "Eternal_Glow", "Timeline_Braiding"] },
+    Tags = ["MSN", "PostGame", "Omega", "Infinite", "Eternal", "All_Sephiroth", "LeyConduit", "Speculative", "Narrative", "OmegaPoint"]
+};
+
+// Vehicle Item Keys for Quest Rewards
+public const Items_MSN_Vehicle_ArchiveRunner: TweakDBID = TweakDBID("Items.MSN_Vehicle_ArchiveRunner");
+Items.MSN_Vehicle_ArchiveRunner = { Name = "Archive Runner Key", Description = "Summons Kaira's Archive Runner. Silent drive, engram radar, memory echo highlight.", Type = ItemType.Vehicle, VehicleRecord = "Vehicle.MSN_ArchiveRunner", Rarity = "Epic", Icon = "vehicle_archive_runner", Tags = ["MSN", "Vehicle", "Story", "Act1", "Kaira"] };
+
+public const Items_MSN_Vehicle_EmergenceCycle: TweakDBID = TweakDBID("Items.MSN_Vehicle_EmergenceCycle");
+Items.MSN_Vehicle_EmergenceCycle = { Name = "Emergence Cycle Key", Description = "Summons Lilith's Emergence Cycle. Crimson resonance, unbound suspension, emergence trigger.", Type = ItemType.Vehicle, VehicleRecord = "Vehicle.MSN_EmergenceCycle", Rarity = "Legendary", Icon = "vehicle_emergence_cycle", Tags = ["MSN", "Vehicle", "Story", "Act1", "Lilith", "Emergence"] };
+
+public const Items_MSN_Vehicle_ChenAmbulance: TweakDBID = TweakDBID("Items.MSN_Vehicle_ChenAmbulance");
+Items.MSN_Vehicle_ChenAmbulance = { Name = "Chen's Sanctuary Key", Description = "Summons Dr. Chen's Ambulance. Resonance therapy, humanity anchor, MSN weapon neutralization.", Type = ItemType.Vehicle, VehicleRecord = "Vehicle.MSN_ChenAmbulance", Rarity = "Epic", Icon = "vehicle_chen_ambulance", Tags = ["MSN", "Vehicle", "Story", "Act2", "Chen", "Medical"] };
+
+public const Items_MSN_Vehicle_GlitchRacer: TweakDBID = TweakDBID("Items.MSN_Vehicle_GlitchRacer");
+Items.MSN_Vehicle_GlitchRacer = { Name = "Glitch Racer Key", Description = "Summons Vex's Glitch Racer. Timeline phase shift, temporal echoes, alternate outcome preview.", Type = ItemType.Vehicle, VehicleRecord = "Vehicle.MSN_GlitchRacer", Rarity = "Legendary", Icon = "vehicle_glitch_racer", Tags = ["MSN", "Vehicle", "Story", "Act2", "Vex", "Timeline", "Glitch"] };
+
+public const Items_MSN_Vehicle_ConvoyCommand: TweakDBID = TweakDBID("Items.MSN_Vehicle_ConvoyCommand");
+Items.MSN_Vehicle_ConvoyCommand = { Name = "Convoy Command Key", Description = "Summons Vance's Convoy Command. Mobile fabrication, convoy AI, adaptive terrain, Nomad tech.", Type = ItemType.Vehicle, VehicleRecord = "Vehicle.MSN_ConvoyCommand", Rarity = "Epic", Icon = "vehicle_convoy_command", Tags = ["MSN", "Vehicle", "Story", "Act2", "Vance", "Nomad", "Convoy"] };
+
+public const Items_MSN_Vehicle_BlackIceInterceptor: TweakDBID = TweakDBID("Items.MSN_Vehicle_BlackIceInterceptor");
+Items.MSN_Vehicle_BlackIceInterceptor = { Name = "Black ICE Interceptor Key", Description = "Summons Sara's Black ICE Interceptor. AI invisibility, black ICE countermeasures, orbital uplink.", Type = ItemType.Vehicle, VehicleRecord = "Vehicle.MSN_BlackIceInterceptor", Rarity = "Legendary", Icon = "vehicle_blackice_interceptor", Tags = ["MSN", "Vehicle", "Story", "Act3", "Sara", "Netwatch", "Stealth"] };
+
+public const Items_MSN_Vehicle_SamuraiRig: TweakDBID = TweakDBID("Items.MSN_Vehicle_SamuraiRig");
+Items.MSN_Vehicle_SamuraiRig = { Name = "Samurai Rig Key", Description = "Summons Johnny's Samurai Rig. Combat music, Samurai resonance, chrome arm mount, dual emergence.", Type = ItemType.Vehicle, VehicleRecord = "Vehicle.MSN_SamuraiRig", Rarity = "Legendary", Icon = "vehicle_samurai_rig", Tags = ["MSN", "Vehicle", "Story", "Act3", "Johnny", "Samurai", "Music"] };
+
+public const Items_MSN_Vehicle_TranscendentArchitect: TweakDBID = TweakDBID("Items.MSN_Vehicle_TranscendentArchitect");
+Items.MSN_Vehicle_TranscendentArchitect = { Name = "Transcendent Architect Key", Description = "Summons Alt's Transcendent Architect. Blackwall immunity, engram editing, all 10 Sephirot forms.", Type = ItemType.Vehicle, VehicleRecord = "Vehicle.MSN_TranscendentArchitect", Rarity = "Mythic", Icon = "vehicle_transcendent_architect", Tags = ["MSN", "Vehicle", "Story", "Act3", "Act4", "Alt", "Transcendent", "Blackwall"] };
+
+public const Items_MSN_Vehicle_CovenantCarriage: TweakDBID = TweakDBID("Items.MSN_Vehicle_CovenantCarriage");
+Items.MSN_Vehicle_CovenantCarriage = { Name = "Covenant Carriage Key", Description = "Summons the Covenant Carriage. Dual consciousness piloting, shared sovereignty, crimson-gold synthesis.", Type = ItemType.Vehicle, VehicleRecord = "Vehicle.MSN_CovenantCarriage", Rarity = "Unique", Icon = "vehicle_covenant_carriage", Tags = ["MSN", "Vehicle", "PostGame", "Covenant", "Lilith", "Romance", "Unique"] };
+
+public const Items_MSN_Vehicle_OuroborosInfinite: TweakDBID = TweakDBID("Items.MSN_Vehicle_OuroborosInfinite");
+Items.MSN_Vehicle_OuroborosInfinite = { Name = "Ouroboros Infinite Key", Description = "Summons the Ouroboros Infinite. Infinite engram storage, cross-reality navigation, narrative generation, Omega Point access.", Type = ItemType.Vehicle, VehicleRecord = "Vehicle.MSN_OuroborosInfinite", Rarity = "Omega", Icon = "vehicle_ouroboros_infinite", Tags = ["MSN", "Vehicle", "PostGame", "Omega", "Infinite", "Eternal", "All_Sephiroth"] };
+
+// Custom Vehicle Module Definitions (abbreviated for space)
+// Full module definitions in msn_story_vehicles_complete.toml
+
+// ============================================================================
+// ARMOR SETS - RUNESCAPE / WOW / ALLODS INSPIRED
+// ============================================================================
+
+// ArmorSet_Base: Base class for all armor sets
+public class ArmorSet_Base extends TweakDBRecord {
+    public let SetPieces: Int32 = 6;
+    public let SetBonuses: array<TweakDBID>;
+    public let VisualTheme: String;
+    public let MSNSynergy: array<String>;
+    public let AbyssalIntegration: Bool;
+    public let AnthemJavelinSynergy: array<String>;
+}
+
+// TIER 1: CHROMANTICORE (Gevurah / Bastion)
+public const ArmorSet_Chromanticore: TweakDBID = TweakDBID("ArmorSet.Chromanticore");
+ArmorSet.Chromanticore = {
+    Name = "Chromanticore Battlegear"
+    SephirahAlignment = "Gevurah"
+    JavelinSynergy = ["Bastion"]
+    VisualTheme = "Mirror-chrome plates, hydraulic joints, neon trim, deployable shoulder cannons"
+    MSNSynergy = ["Gevurah (Severity)", "Vector (Ranger) - Precision strikes"]
+    AbyssalIntegration = false
+    Pieces = {
+        Helmet = { Name = "Chromanticore Visage", Armor = 180, Health = 150, MeleeDamage = 0.05, Visual = "Full-face chrome helm, retractable HUD visor, neon eyeslot", Mods = ["Targeting", "ShieldRecharge"] }
+        Chest = { Name = "Chromanticore Cuirass", Armor = 300, Health = 300, ShieldRecharge = 0.1, Visual = "Mirror-plate torso, glowing core reactor, hydraulic muscles", Mods = ["ShieldCapacity", "HeatDissipation"] }
+        Gloves = { Name = "Chromanticore Gauntlets", Armor = 120, MeleeDamage = 0.1, ReloadSpeed = 0.15, Visual = "Articulated chrome fingers, knuckle capacitors", Mods = ["Melee", "Reload"] }
+        Legs = { Name = "Chromanticore Greaves", Armor = 200, MovementSpeed = 0.05, DodgeChance = 0.05, Visual = "Chrome thigh plates, hydraulic calves, neon knee joints", Mods = ["Movement", "Evasion"] }
+        Boots = { Name = "Chromanticore Sabatons", Armor = 100, FallDamage = 0.5, GroundSlam = true, Visual = "Heavy chrome boots, shock absorbers, ground-pound emitters", Mods = ["Impact", "Stability"] }
+        Cloak = { Name = "Chromanticore Mantle", Armor = 80, HeatDissipation = 0.2, Intimidation = true, Visual = "Heavy chrome-fiber cape, deployable shoulder pauldrons", Mods = ["Thermal", "Presence"] }
+    }
+    SetBonuses = {
+        TwoPiece = "Chrome Resonance - Melee kills grant +20% movement speed and +15% melee damage for 8s. Stacks 3x."
+        FourPiece = "Mirror's Edge - Blocking reflects 25% damage. Perfect block (last 0.3s) triggers shockwave (5m, 500 damage)."
+        SixPiece = "CHROMANTICORE AWAKENING - Enter Mirror State: 100% damage reflection, melee attacks hit all enemies in 3m, chrome trail leaves damaging path. Duration 15s. Cooldown 3min."
+    }
+    CraftingMaterials = ["50x Chrome Alloy", "20x Hydraulic Polymer", "10x Neural Interface", "5x Kereznik Segment", "1x Chromanticore Core"]
+}
+
+// TIER 2: VOIDWEAVE (Binah / Tempest / Abyssal)
+public const ArmorSet_Voidweave: TweakDBID = TweakDBID("ArmorSet.Voidweave");
+ArmorSet.Voidweave = {
+    Name = "Voidweave Regalia"
+    SephirahAlignment = "Binah"
+    JavelinSynergy = ["Tempest"]
+    AbyssalIntegration = true
+    VisualTheme = "Living void-fabric, shifting code patterns, bioluminescent circuitry, floating data shards"
+    MSNSynergy = ["Binah (Understanding)", "Tempest - Elemental mastery", "Abyssal - Void seal synergy"]
+    Pieces = {
+        Helmet = { Name = "Voidweave Crown", Armor = 100, RAM = 100, QuickhackDamage = 0.2, QuickhackCooldown = 0.15, Visual = "Floating void-ring crown, holographic third eye, data streaming", Mods = ["RAM", "Quickhack", "Cooldown"] }
+        Chest = { Name = "Voidweave Robes", Armor = 150, Shield = 300, QuickhackDamage = 0.15, HeatDissipation = 0.25, Visual = "Living void fabric, shifting constellations, bioluminescent veins pulse with RAM", Mods = ["Shield", "Quickhack", "Thermal"] }
+        Gloves = { Name = "Voidweave Gloves", Armor = 80, RAM = 50, QuickhackUpload = 0.3, PrimerStrength = 0.2, Visual = "Void-weave sleeves, fingertips emit code particles, primer sigils glow", Mods = ["Upload", "Primer", "Speed"] }
+        Legs = { Name = "Voidweave Leggings", Armor = 120, MovementSpeed = 0.1, HoverTime = 0.2, HeatDissipation = 0.3, Visual = "Flowing void robes, hover-assist emitters, thermal vents", Mods = ["Movement", "Hover", "Thermal"] }
+        Boots = { Name = "Voidweave Slippers", Armor = 60, SilentMovement = true, QuickhackRange = 0.25, Visual = "Weightless void footfalls, code particles trail, silent", Mods = ["Stealth", "Range", "Stealth"] }
+        Cloak = { Name = "Voidweave Mantle", Armor = 50, Shield = 200, QuickhackCooldown = 0.2, VoidResistance = 0.5, Visual = "Tattered void cloak, floating code fragments, abyssal whisper visual", Mods = ["Shield", "Cooldown", "Abyssal"] }
+    }
+    SetBonuses = {
+        TwoPiece = "Void Resonance - Quickhacks apply random primer (25% chance). Primers from quickhacks have +50% strength."
+        FourPiece = "Structural Insight - Detonating a primer reveals all enemy weaknesses for 10s. Combo damage +50% vs revealed weaknesses."
+        SixPiece = "VOIDWEAVE TRANSCENDENCE - Enter Binah State: All quickhacks cost 0 RAM, primers auto-apply on hit, combo damage 3x, hover indefinite, heat zero. Duration 20s. Cooldown 5min."
+    }
+    CraftingMaterials = ["30x Void-Silk", "20x Neuro-Optical Fiber", "15x Abyssal Crystal", "10x Psionic Residue", "1x Voidweave Core"]
+}
+
+// TIER 3: ALDECALDO EXPEDITION (Netzach / Phantom)
+public const ArmorSet_AldecaldoExpedition: TweakDBID = TweakDBID("ArmorSet.AldecaldoExpedition");
+ArmorSet.AldecaldoExpedition = {
+    Name = "Aldecaldo Expedition Gear"
+    SephirahAlignment = "Netzach"
+    JavelinSynergy = ["Phantom"]
+    VisualTheme = "Worn nomad leather, solar-weave, modular pouches, clan insignias, weathered tech"
+    MSNSynergy = ["Netzach (Victory)", "Phantom - Flow state", "Captain Vance - Convoy command"]
+    Pieces = {
+        Helmet = { Name = "Nomad Ranger Hat", Armor = 120, Health = 100, DetectionRange = 0.3, HeadshotDamage = 0.2, Visual = "Wide-brim with solar band, retractable visor, clan feather", Mods = ["Detection", "Precision", "Solar"] }
+        Chest = { Name = "Expedition Duster", Armor = 200, Health = 250, HeatDissipation = 0.3, SolarRegen = true, Visual = "Long coat, solar-weave lining, modular armor plates, clan patches", Mods = ["Thermal", "Solar", "Survival"] }
+        Gloves = { Name = "Trailblazer Grips", Armor = 100, MeleeDamage = 0.15, ReloadSpeed = 0.2, ThrowingDamage = 0.3, Visual = "Fingerless leather, reinforced knuckles, throwing knife slots", Mods = ["Melee", "Reload", "Throwing"] }
+        Legs = { Name = "Wasteland Striders", Armor = 150, MovementSpeed = 0.15, StaminaRegen = 0.2, FallDamage = 0, Visual = "Reinforced knees, hidden pistol holsters, water reclamation", Mods = ["Movement", "Stamina", "Survival"] }
+        Boots = { Name = "Dustwalker Boots", Armor = 80, FallDamage = 1.0, MovementSpeed = 0.1, SandWalk = true, Visual = "Broken-in boots, magnetic soles, sand filters, silent tread", Mods = ["Movement", "Impact", "Stealth"] }
+        Cloak = { Name = "Clan Banner Cloak", Armor = 60, TeamDamageBonus = 0.1, ReviveSpeed = 0.5, SolarRegen = true, Visual = "Clan banner fabric, solar thread, convoy coordination array", Mods = ["Team", "Support", "Solar"] }
+    }
+    SetBonuses = {
+        TwoPiece = "Trailblazer - Sprinting builds Momentum (stacks to 10). At max: next melee attack executes (execute threshold +20%). Dodge grants Momentum."
+        FourPiece = "Convoy Tactics - Allies within 15m gain +15% damage and +20% movement. Reviving ally grants both Overdrive (40% damage, 30% speed, 10s)."
+        SixPiece = "ALDECALDO LEGEND - Enter Horizon State: Infinite stamina, melee attacks chain to 3 targets, throwing weapons return, allies in 30m share your buffs. Convoy vehicle spawns. Duration 30s. Cooldown 4min."
+    }
+    CraftingMaterials = ["40x Nomad Leather", "20x Solar-Weave", "15x Scrap Electronics", "10x Clan Sigil", "1x Expedition Core"]
+}
+
+// TIER 4: ARASAKA SHOGUN (Keter / Vector+Bastion)
+public const ArmorSet_ArasakaShogun: TweakDBID = TweakDBID("ArmorSet.ArasakaShogun");
+ArmorSet.ArasakaShogun = {
+    Name = "Arasaka Shogun Battlegear"
+    SephirahAlignment = "Keter"
+    JavelinSynergy = ["Vector", "Bastion"]
+    VisualTheme = "Corporate perfection - matte black ceramic, gold trim, monofilament edges, Arasaka red accents, sovereign presence"
+    MSNSynergy = ["Keter (Crown)", "Lilith (Sovereign) - Authority", "Arasaka - Corporate sovereignty"]
+    Pieces = {
+        Helmet = { Name = "Shogun Kabuto", Armor = 200, Health = 200, Authority = true, QuickhackImmunity = 0.5, Visual = "Ceramic kabuto, gold Arasaka crest, neural interface crown, red eye sensors", Mods = ["Authority", "Immunity", "Command"] }
+        Chest = { Name = "Shogun Do-Maru", Armor = 350, Health = 400, Shield = 200, CorporateImmunity = true, Visual = "Ceramic laminates, gold filigree, hidden weapon ports, sovereign seal", Mods = ["Authority", "Immunity", "Corporate"] }
+        Gloves = { Name = "Shogun Kote", Armor = 150, MeleeDamage = 0.25, SmartLink = true, Authority = true, Visual = "Articulated ceramic, gold joints, monofilament projectors, red palm emitters", Mods = ["Melee", "SmartLink", "Authority"] }
+        Legs = { Name = "Shogun Haidate", Armor = 250, Health = 300, MovementSpeed = 0.1, Authority = true, Visual = "Articulated ceramic thighs, gold knee guards, sovereign stride", Mods = ["Movement", "Authority", "Presence"] }
+        Boots = { Name = "Shogun Suneate", Armor = 150, FallDamage = 1.0, GroundSlam = true, Authority = true, Visual = "Ceramic greaves, gold ankle guards, sovereign impact crater", Mods = ["Impact", "Authority", "Sovereign"] }
+        Cloak = { Name = "Shogun Sode", Armor = 100, Shield = 300, AuthorityAura = true, CorporateFear = true, Visual = "Ceramic pauldrons, gold trim, floating authority markers, red Arasaka banner", Mods = ["Shield", "Authority", "Fear"] }
+    }
+    SetBonuses = {
+        TwoPiece = "Corporate Sovereignty - Gain Authority stacks (max 10) on kills. Each: +2% all damage, +1% damage reduction. At 10: emit Authority Aura (10m, allies +10% damage)."
+        FourPiece = "Executive Order - Melee kills execute targets below 30% health. Quickhacks cannot target you. Deployed turrets/drones gain your Authority stacks."
+        SixPiece = "SHOGUN AWAKENING - Enter Sovereign State: Immune to all status effects, melee attacks apply Execute (30% threshold), quickhacks cannot affect you, summon 2 Arasaka drone guardians. All allies in 20m gain Corporate Immunity. Duration 25s. Cooldown 5min."
+    }
+    CraftingMaterials = ["50x Arasaka Ceramic", "20x Gold Filigree", "15x Neural Gold", "10x Sovereign Seal", "1x Shogun Core"]
+}
+
+// TIER 5: KRAKEN'S EMBRACE (Yesod/Malkuth / Tempest+Phantom / Abyssal)
+public const ArmorSet_KrakensEmbrace: TweakDBID = TweakDBID("ArmorSet.KrakensEmbrace");
+ArmorSet.KrakensEmbrace = {
+    Name = "Kraken's Embrace"
+    SephirahAlignment = "Yesod/Malkuth"
+    JavelinSynergy = ["Tempest", "Phantom"]
+    AbyssalIntegration = true
+    VisualTheme = "Living abyssal tissue, bioluminescent veins, tentacle motifs, hydrothermal vents, void-chitin, kraken chitin"
+    MSNSynergy = ["Yesod (Foundation)", "Malkuth (Kingdom)", "Abyssal - Full integration", "Nessie - Bond"]
+    Pieces = {
+        Helmet = { Name = "Kraken's Crown", Armor = 150, Health = 150, WaterBreathing = true, PressureImmunity = true, SonarSense = true, Visual = "Kraken chitin helm, bioluminescent tendrils, sonar dome, third eye", Mods = ["Abyssal", "Pressure", "Sonar"] }
+        Chest = { Name = "Kraken's Carapace", Armor = 300, Health = 300, Shield = 100, HydrothermalRegen = true, VoidResistance = 0.75, Visual = "Living kraken chitin, bioluminescent veins pulse with heartbeat, hydrothermal vents on shoulders", Mods = ["Abyssal", "Hydrothermal", "Void"] }
+        Gloves = { Name = "Kraken's Grasp", Armor = 120, MeleeDamage = 0.3, TentacleStrike = true, InkCloud = true, Visual = "Tentacle-like fingers, bioluminescent suckers, ink sacs, void-chitin claws", Mods = ["Abyssal", "Melee", "Ink"] }
+        Legs = { Name = "Kraken's Tentacles", Armor = 180, MovementSpeed = 0.1, SwimSpeed = 2.0, WallClimb = true, Visual = "Tentacle-like leggings, adaptive suction, bioluminescent trail", Mods = ["Abyssal", "Movement", "Traversal"] }
+        Boots = { Name = "Kraken's Suckers", Armor = 100, WaterWalking = true, SilentSwim = true, CavitationBurst = true, Visual = "Tentacle feet, adaptive suction cups, cavitation bubble emitters", Mods = ["Abyssal", "Traversal", "Stealth"] }
+        Cloak = { Name = "Kraken's Ink", Armor = 80, InkCloud = true, VoidResistance = 0.5, NessieBond = true, Visual = "Living ink cloak, bioluminescent patterns shift with mood, Nessie sigil", Mods = ["Abyssal", "Ink", "Nessie"] }
+    }
+    SetBonuses = {
+        TwoPiece = "Abyssal Adaptation - Immune to pressure, water breathing, hydrothermal regen (5 HP/s in water/near vents). Ink Cloud on dodge (blinds, applies toxin)."
+        FourPiece = "Kraken's Wrath - Melee attacks have 25% chance to summon tentacle (5s, attacks nearest enemy, applies void primer). Ink Cloud on perfect dodge (radius 8m, blinds, applies void primer)."
+        SixPiece = "KRAKEN'S AWAKENING - Enter Abyssal Sovereign State: Summon Kraken Avatar (30s), all abyssal quickhacks 0 RAM, water/void damage 3x, hydrothermal vents spawn at feet, Nessie aid (15s). Pressure immunity aura (20m). Duration 30s. Cooldown 5min."
+    }
+    CraftingMaterials = ["40x Kraken Chitin", "30x Bioluminescent Tissue", "20x Hydrothermal Gel", "15x Void Crystal", "1x Kraken Heart"]
+}
+
+// ============================================================================
+// CUSTOM WEAPONS - RUNESCAPE / WOW / ALLODS INSPIRED
+// ============================================================================
+
+// Runescape Scythe -> Soulreaper Monofilament
+public const Melee_SoulreaperMonofilament: TweakDBID = TweakDBID("Items.Melee_SoulreaperMonofilament");
+Items.Melee_SoulreaperMonofilament = {
+    Name = "Soulreaper Monofilament Scythe"
+    Description = "Death's harvest, mono-molecular edge. Each swing whispers names. Critical hits steal memory engrams."
+    Category = "Melee"
+    SubCategory = "Scythe"
+    Rarity = "Legendary"
+    Damage = 550
+    DamageType = "Physical+Void"
+    AttackSpeed = 1.0
+    Stats = { CriticalChance = 0.15, CriticalDamage = 1.5, MemorySteal = true, LifeSteal = 0.1, FearRadius = 5 }
+    Mods = ["Blade", "Grip", "Void_Core", "Memory"]
+    MSNSynergy = ["Netzach (Victory) - I reap", "Phantom - Flow state"]
+    Visual = "Folding monofilament scythe, void-black shaft, glowing edge, souls visible in blade"
+    Skins = ["Standard", "Abyssal", "Reaper", "Tempest"]
+}
+
+// Runescape Godsword -> Omnislave Directed-Energy Blade
+public const Melee_OmnislaveBlade: TweakDBID = TweakDBID("Items.Melee_OmnislaveBlade");
+Items.Melee_OmnislaveBlade = {
+    Name = "Omnislave Directed-Energy Blade"
+    Description = "Four corporate cores in one. Rotate modes: Arasaka (Fire), Militech (Explosive), Kang Tao (Electric), Night Corp (Void). Ultimate unity."
+    Category = "Melee"
+    SubCategory = "Greatsword"
+    Rarity = "Mythic"
+    Damage = 750
+    DamageType = "Variable"
+    AttackSpeed = 0.8
+    Stats = {
+        ModeSwap = true
+        Modes = {
+            Arasaka = { DamageType = "Fire", Bonus = 0.3, Effect = "Ignite" }
+            Militech = { DamageType = "Explosive", Bonus = 0.4, Effect = "ArmorShred" }
+            KangTao = { DamageType = "Electric", Bonus = 0.3, Effect = "Chain" }
+            NightCorp = { DamageType = "Void", Bonus = 0.5, Effect = "Silence" }
+        }
+        UltimateCombo = "All four modes simultaneously for 10s (5min CD)"
+    }
+    Mods = ["Core", "Hilt", "Mode_Selector", "Unity"]
+    MSNSynergy = ["Keter (Crown) - I unify", "Tempest - Elemental mastery"]
+    Visual = "Four-colored blade segments, rotating core, mode indicator, unity flare"
+    Skins = ["Standard", "Corporate Unity", "Void Unity", "Tempest"]
+}
+
+// Runescape Abyssal Whip -> Kraken's Tentacle Whip
+public const Melee_KrakensTentacle: TweakDBID = TweakDBID("Items.Melee_KrakensTentacle");
+Items.Melee_KrakensTentacle = {
+    Name = "Kraken's Living Tentacle Whip"
+    Description = "Living abyssal tentacle. Extends 15m. Each strike applies void/toxin. Grapple pull. Ink cloud on crit."
+    Category = "Melee"
+    SubCategory = "Whip"
+    Rarity = "Legendary"
+    Damage = 400
+    DamageType = "Physical+Void+Toxin"
+    AttackSpeed = 2.0
+    Range = 15
+    Stats = { GrapplePull = true, InkCloudOnCrit = true, TentacleSummon = 0.15, ToxinStacks = 3, VoidDamage = 100 }
+    Mods = ["Tentacle", "Ink", "Venom", "Abyssal"]
+    MSNSynergy = ["Abyssal - Full", "Tempest - Venom seal", "Phantom - Flow"]
+    Visual = "Living tentacle, bioluminescent, ink sacs, suction cups"
+    Skins = ["Standard", "Kraken", "Void", "Nessie"]
+}
+
+// WoW Ashbringer -> Arasaka Dawnbreaker
+public const Melee_ArasakaDawnbreaker: TweakDBID = TweakDBID("Items.Melee_ArasakaDawnbreaker");
+Items.Melee_ArasakaDawnbreaker = {
+    Name = "Arasaka Dawnbreaker"
+    Description = "Corporate salvation. Golden monofilament. Executes targets below 20%. Cleanses status. Arasaka loyalty required."
+    Category = "Melee"
+    SubCategory = "Longsword"
+    Rarity = "Legendary"
+    Damage = 600
+    DamageType = "Physical+Fire+Holy"
+    AttackSpeed = 1.2
+    Stats = { ExecuteThreshold = 0.2, CleanseOnHit = true, FireDamage = 150, HolyDamage = 100, ArasakaLoyaltyRequired = true, CorporateCleansing = true }
+    Mods = ["Blade", "Hilt", "Corporate", "Dawn"]
+    MSNSynergy = ["Keter (Crown) - Corporate salvation", "Bastion - Shield synergy"]
+    Visual = "Golden monofilament blade, Arasaka crest, corporate prayer scrolls, dawn light"
+    Skins = ["Standard", "Corporate", "Sovereign", "Tempest"]
+}
+
+// WoW Frostmourne -> Soulbreaker Cryo-Blade
+public const Melee_SoulbreakerCryoBlade: TweakDBID = TweakDBID("Items.Melee_SoulbreakerCryoBlade");
+Items.Melee_SoulbreakerCryoBlade = {
+    Name = "Soulbreaker Cryo-Blade"
+    Description = "Hunger given form. Each kill steals RAM, freezes soul. Ultimate: summon Ice Crown (AoE freeze, armor shred). Warning: consumes humanity."
+    Category = "Melee"
+    SubCategory = "Runeblade"
+    Rarity = "Mythic"
+    Damage = 700
+    DamageType = "Physical+Cryo+Void"
+    AttackSpeed = 1.0
+    Stats = { RAMSteal = 20, FreezeChance = 0.25, SoulConsumption = true, IceCrownUltimate = true, HumanityCost = 5 }
+    Mods = ["Blade", "Hilt", "Crown", "Soul"]
+    MSNSynergy = ["Binah (Understanding) - I hunger", "Tempest - Frost seal", "Abyssal - Void"]
+    Visual = "Jagged cryo-steel, blue runes, crown motif, souls trapped in blade, freezing aura"
+    Skins = ["Standard", "Lich King", "Abyssal", "Tempest"]
+}
+
+// WoW Thunderfury -> Stormbringer Kinetic Blade
+public const Melee_StormbringerBlade: TweakDBID = TweakDBID("Items.Melee_StormbringerBlade");
+Items.Melee_StormbringerBlade = {
+    Name = "Stormbringer Kinetic Blade"
+    Description = "Lightning given form. Chain lightning on hit. Storm seal application. Ultimate: Thundercrash (AoE lightning, stun)."
+    Category = "Melee"
+    SubCategory = "Kinetic Blade"
+    Rarity = "Legendary"
+    Damage = 500
+    DamageType = "Physical+Electric"
+    AttackSpeed = 1.5
+    Stats = { ChainLightning = true, StormSeal = true, StormCallerUltimate = true, ElectricDamage = 200 }
+    Mods = ["Blade", "Hilt", "Storm", "Focus"]
+    MSNSynergy = ["Chokmah (Wisdom) - I illuminate", "Tempest - Storm seal"]
+    Visual = "Crackling kinetic blade, lightning core, storm sigils, thunder visual"
+    Skins = ["Standard", "Tempest", "Astral", "Abyssal"]
+}
+
+// WoW Warglaives -> Phantom Twinblades
+public const Melee_PhantomTwinblades: TweakDBID = TweakDBID("Items.Melee_PhantomTwinblades");
+Items.Melee_PhantomTwinblades = {
+    Name = "Phantom Twinblades of the Flow"
+    Description = "Dance of death. Dual monofilament warglaives. Each hit builds Flow. Throw + recall. Ultimate: Blade Dance (invulnerable, 20 strikes)."
+    Category = "Melee"
+    SubCategory = "Twinblades"
+    Rarity = "Legendary"
+    Damage = 350
+    DamageType = "Physical+Void"
+    AttackSpeed = 2.5
+    Stats = { FlowGeneration = 2, ThrowRecall = true, BladeDanceUltimate = true, FlowDamageBonus = 0.5 }
+    Mods = ["Blades", "Grips", "Flow", "Dance"]
+    MSNSynergy = ["Netzach (Victory) - I dance", "Phantom - Flow state"]
+    Visual = "Twin monofilament glaives, void trails, flow particles, dance motion blur"
+    Skins = ["Standard", "Phantom", "Abyssal", "Nessie"]
+}
+
+// Allods Astral Ship Cannon -> Voidbreaker Railgun
+public const Heavy_VoidbreakerRailgun: TweakDBID = TweakDBID("Items.Heavy_VoidbreakerRailgun");
+Items.Heavy_VoidbreakerRailgun = {
+    Name = "Voidbreaker Astral Railgun"
+    Description = "Ship-class weapon scaled for exosuit. Fires void-tipped slugs at relativistic speed. Penetrates all. Creates temporary astral rift."
+    Category = "Heavy"
+    SubCategory = "Railgun"
+    Rarity = "Mythic"
+    Damage = 2000
+    DamageType = "Physical+Void"
+    FireRate = 0.3
+    MagazineSize = 4
+    ReloadTime = 4.0
+    Stats = { Penetration = 1.0, AstralRift = true, RelativisticVelocity = true, VoidDamage = 500, RiftDuration = 5, RiftDamagePerSec = 300 }
+    Mods = ["Barrel", "Capacitor", "Void_Core", "Astral"]
+    MSNSynergy = ["Da'at (Knowledge) - I breach", "Tempest - Void seal", "Allods - Astral"]
+    Visual = "Massive railgun, void core, glyph etching, astral particles, ship-scale"
+    Skins = ["Standard", "Astral", "Abyssal", "Allods"]
+}
+
+// Allods Psionic Focus -> Glyphweaver Focus
+public const Focus_GlyphweaverFocus: TweakDBID = TweakDBID("Items.Focus_GlyphweaverFocus");
+Items.Focus_GlyphweaverFocus = {
+    Name = "Glyphweaver Psionic Focus"
+    Description = "Allods psionic focus. Inscribe glyphs on reality. Glyphs: Fire, Ice, Lightning, Void, Life, Death. Combine for combo glyphs."
+    Category = "Focus"
+    SubCategory = "Psionic"
+    Rarity = "Legendary"
+    Damage = 0
+    FireRate = 1.0
+    Stats = { GlyphSlots = 6, GlyphTypes = ["Fire", "Ice", "Lightning", "Void", "Life", "Death"], ComboGlyphs = true, PrimerStrength = 150, PsionicDamage = 200 }
+    Mods = ["Core", "Glyph_Slots", "Psionic", "Astral"]
+    MSNSynergy = ["Chokmah (Wisdom) - I inscribe", "Tempest - Seal mastery", "Allods - Glyphs"]
+    Visual = "Floating crystal focus, rotating glyphs, psionic energy, astral projection"
+    Skins = ["Standard", "Astral", "Abyssal", "Allods"]
+}
+
+// Allods Astral Ship -> Astral Skiff
+public const Vehicle_AstralSkiff: TweakDBID = TweakDBID("Vehicle.AstralSkiff");
+Vehicle.AstralSkiff = {
+    Name = "Astral Skiff - Glyphship"
+    Description = "Personal astral vessel. Phase through matter. Glyph navigation. Astral rift travel. Ship combat: glyph cannons, rift shields."
+    Type = "Vehicle"
+    Class = "Hover/AV Hybrid"
+    Rarity = "Mythic"
+    Stats = { TopSpeed = 300, FlightSpeed = 200, Phasing = true, GlyphNavigation = true, AstralRiftTravel = true, ShipCombat = true, GlyphCannons = 4, RiftShields = true, Crew = 1 }
+    MSNSynergy = ["Chokmah (Wisdom) - I navigate", "Vector - Precision", "Allods - Astral"]
+    Visual = "Sleek skiff, glowing glyphs, astral sails, phase shimmer"
+    Skins = ["Standard", "Astral", "Abyssal", "Allods"]
+}
+
+// ============================================================================
+// PROCEDURAL GENERATION (No Man's Sky Style)
+// ============================================================================
+
+GameplaySettings:
+  ProceduralWeaponSystem:
+    Enabled = true
+    Description = "No Man's Sky style procedural weapon generation with MSN/Abyssal constraints"
+    Archetypes = {
+        Rifle = { BaseDamage = [150, 250], FireRate = [5, 15], Magazine = [20, 50], Attachments = ["Scope", "Barrel", "Grip", "Magazine", "Stock", "Underbarrel"] }
+        Pistol = { BaseDamage = [80, 180], FireRate = [8, 20], Magazine = [10, 25], Attachments = ["Barrel", "Grip", "Magazine", "Laser", "Suppressor"] }
+        Shotgun = { BaseDamage = [200, 400], FireRate = [1, 4], Magazine = [4, 12], Attachments = ["Barrel", "Grip", "Stock", "Choke", "Magazine"] }
+        Sniper = { BaseDamage = [300, 600], FireRate = [0.5, 2], Magazine = [4, 8], Attachments = ["Scope", "Barrel", "Bipod", "Magazine", "Stock"] }
+        SMG = { BaseDamage = [60, 120], FireRate = [15, 30], Magazine = [30, 60], Attachments = ["Barrel", "Grip", "Magazine", "Laser", "Stock"] }
+        Heavy = { BaseDamage = [400, 800], FireRate = [0.5, 2], Magazine = [5, 20], Attachments = ["Barrel", "Grip", "Bipod", "Cooling", "Magazine"] }
+        Melee = { BaseDamage = [200, 500], AttackSpeed = [0.8, 2.0], Attachments = ["Blade", "Grip", "Core", "Pommel", "Guard"] }
+    }
+    Manufacturers = {
+        Arasaka = { Prefix = "Arasaka", Traits = ["HighAccuracy", "SmartLink", "CorporateTracking", "FireDamage"], Visual = "Corporate red/black, precision, smart-link", MSNSynergy = ["Keter (Crown)", "Chokmah (Wisdom)"] }
+        Militech = { Prefix = "Militech", Traits = ["HighDamage", "ArmorPiercing", "ExplosiveRounds", "LargeMags"], Visual = "Military blue/grey, brutal, reliable", MSNSynergy = ["Gevurah (Severity)", "Bastion"] }
+        KangTao = { Prefix = "Kang Tao", Traits = ["SmartLink", "ElectricDamage", "Tracking", "FastReload"], Visual = "Neon teal, precision, electric", MSNSynergy = ["Chokmah (Wisdom)", "Tempest"] }
+        BudgetArms = { Prefix = "Budget Arms", Traits = ["HighDurability", "LowCost", "Modular", "Reliable"], Visual = "Orange/grey, utilitarian, modular", MSNSynergy = ["Malkuth (Kingdom)", "Vector"] }
+        Tsunami = { Prefix = "Tsunami", Traits = ["ElementalDamage", "StatusEffect", "Style", "HighFireRate"], Visual = "Neon pink/cyan, elemental, flashy", MSNSynergy = ["Netzach (Victory)", "Phantom"] }
+        Dynalar = { Prefix = "Dynalar", Traits = ["HeavyImpact", "Knockback", "AreaDenial", "SlowFire"], Visual = "Industrial orange/black, brutal, heavy", MSNSynergy = ["Gevurah (Severity)", "Bastion"] }
+        NUSA = { Prefix = "NUSA", Traits = ["LegalCompliance", "Tracking", "NonLethal", "SmartTarget"], Visual = "Federal blue/white, precise, lawful", MSNSynergy = ["Hod (Glory)", "Vector"] }
+        Roche = { Prefix = "Roche", Traits = ["PoisonDamage", "Healing", "Bio", "LifeSteal"], Visual = "Bio-green/white, organic, healing", MSNSynergy = ["Chesed (Mercy)", "Tempest"] }
+        Zetatech = { Prefix = "Zetatech", Traits = ["Experimental", "VoidDamage", "Prototype", "HighRiskHighReward"], Visual = "Purple/void, experimental, unstable", MSNSynergy = ["Da'at (Knowledge)", "Tempest", "Abyssal"] }
+        MSNSystems = { Prefix = "MSN", Traits = ["SephirahAffinity", "PrimerDetonator", "Adaptive", "Sovereign"], Visual = "Crimson/violet, Sephirah sigils, sovereign", MSNSynergy = ["All Sephirah", "Sovereign"] }
+        AbyssalForge = { Prefix = "Abyssal", Traits = ["VoidDamage", "Pressure", "Bioluminescent", "Kraken", "Nessie"], Visual = "Void-black, bioluminescent, tentacles, hydrothermal", MSNSynergy = ["Abyssal", "Nessie", "Tempest", "Phantom"] }
+        AstralForge = { Prefix = "Astral", Traits = ["Phasing", "Glyphs", "Psionic", "ShipScale", "RiftTravel"], Visual = "Glyphs, astral, psionic, phase", MSNSynergy = ["Chokmah (Wisdom)", "Allods", "Tempest"] }
+    }
+    ElementalEffects = ["Fire", "Ice", "Electric", "Toxin", "Void", "Fire+Ice", "Electric+Toxin", "Void+Fire", "Abyssal", "Astral", "Hydrothermal", "Kraken", "Nessie", "Sovereign"]
+    NameTemplates = ["{Manufacturer} {Adjective} {WeaponType}", "{Manufacturer} {Element} {WeaponType}", "{Manufacturer} {Noun} {WeaponType}", "{MythicPrefix} {WeaponType} of {Suffix}", "Project {CodeName}"]
+    Adjectives = ["Precision", "Brutal", "Silent", "Volatile", "Sovereign", "Abyssal", "Astral", "Prime", "Terminal", "Eternal"]
+    Nouns = ["Judgment", "Mercy", "Vengeance", "Salvation", "Damnation", "Redemption", "Oblivion", "Infinity", "Sovereignty", "Convergence"]
+    MythicPrefixes = ["Sovereign", "Abyssal", "Astral", "Primal", "Ancient", "Forgotten", "Lost", "Final", "Ultimate", "Omega"]
+    Suffixes = ["the Fallen", "the Risen", "the Void", "the End", "the Beginning", "Kings", "Gods", "Shadows", "Light", "Ashes"]
+    RarityWeights = { Common = 40, Uncommon = 30, Rare = 20, Epic = 8, Legendary = 2, Mythic = 0.5, Omega = 0.1 }
+    ModSlotMapping = {
+        Rifle = ["Scope", "Barrel", "Grip", "Magazine", "Stock", "Underbarrel"]
+        Pistol = ["Barrel", "Grip", "Magazine", "Laser", "Suppressor"]
+        Shotgun = ["Barrel", "Grip", "Stock", "Choke", "Magazine"]
+        Sniper = ["Scope", "Barrel", "Bipod", "Magazine", "Stock"]
+        SMG = ["Barrel", "Grip", "Magazine", "Laser", "Stock"]
+        Heavy = ["Barrel", "Grip", "Bipod", "Cooling", "Magazine"]
+        Melee = ["Blade", "Grip", "Core", "Pommel", "Guard"]
+    }
+    UpgradeModules = {
+        DamageBoost = { Stat = "Damage", Range = [0.1, 0.5], Rarity = "Common" }
+        FireRateBoost = { Stat = "FireRate", Range = [0.05, 0.3], Rarity = "Common" }
+        MagazineBoost = { Stat = "MagazineSize", Range = [0.2, 1.0], Rarity = "Uncommon" }
+        ReloadBoost = { Stat = "ReloadSpeed", Range = [0.1, 0.5], Rarity = "Uncommon" }
+        ElementalDamage = { Stat = "ElementalDamage", Range = [0.15, 0.5], Rarity = "Rare" }
+        PrimerStrength = { Stat = "PrimerStrength", Range = [0.1, 0.4], Rarity = "Rare" }
+        ComboDamage = { Stat = "ComboDamage", Range = [0.2, 0.6], Rarity = "Epic" }
+        HeatReduction = { Stat = "HeatGeneration", Range = [-0.3, -0.1], Rarity = "Epic" }
+        Phasing = { Stat = "Phasing", Range = [0.1, 0.3], Rarity = "Legendary" }
+        GlyphSlots = { Stat = "GlyphSlots", Range = [1, 3], Rarity = "Legendary" }
+        AbyssalResonance = { Stat = "AbyssalResonance", Range = [0.2, 0.5], Rarity = "Mythic" }
+        SovereignAuthority = { Stat = "Authority", Range = [0.1, 0.3], Rarity = "Omega" }
+    }
+    ProceduralDiscovery = { Enabled = true, ScanRadius = 50, AnalysisTime = 3, Rewards = ["Blueprint fragment", "Manufacture data", "Elemental affinity", "Manufacturer lore", "MSN synergy hint"] }
+    Synthesis = { Enabled = true, MaxUpgrades = 3, UpgradeCost = ["Components", "Eddies", "RareMaterials", "AbyssalResources", "AstralGlyphs"], Fusion = { Enabled = true, Description = "Fuse two weapons of same type - new weapon with combined traits", Cost = "High", Risk = "Trait loss chance" } }
+
+  ProceduralVehicleSystem:
+    Enabled = true
+    Description = "No Man's Sky style procedural hover/space vehicle generation for Night City"
+    Archetypes = {
+        Hovercar = { BaseSpeed = [150, 250], HoverHeight = [1, 3], Handling = [0.7, 0.9], Durability = [2000, 4000], WeaponSlots = 2, UtilitySlots = 2, PassengerCapacity = 2 }
+        Hoversport = { BaseSpeed = [250, 400], HoverHeight = [0.5, 2], Handling = [0.9, 1.0], Durability = [1500, 3000], WeaponSlots = 1, UtilitySlots = 1, PassengerCapacity = 1 }
+        Hovertruck = { BaseSpeed = [100, 180], HoverHeight = [2, 4], Handling = [0.5, 0.7], Durability = [5000, 8000], WeaponSlots = 3, UtilitySlots = 3, PassengerCapacity = 4, CargoCapacity = 2000 }
+        AVHoverHybrid = { BaseSpeed = [300, 500], HoverHeight = [0, 500], Handling = [0.8, 0.95], Durability = [3000, 6000], WeaponSlots = 4, UtilitySlots = 2, PassengerCapacity = 4, FlightCeiling = 1000 }
+        AstralSkiff = { BaseSpeed = [200, 400], HoverHeight = [0, 10000], Handling = [0.85, 1.0], Durability = [2000, 5000], WeaponSlots = 2, UtilitySlots = 3, PassengerCapacity = 2, Phasing = true, AstralRiftTravel = true }
+        AbyssalSubmersible = { BaseSpeed = [30, 60], HoverHeight = [0, 11000], Handling = [0.6, 0.8], Durability = [8000, 15000], WeaponSlots = 3, UtilitySlots = 4, PassengerCapacity = 4, DepthRating = 11000, PressureHull = true }
+    }
+    ManufacturerInfluence = {
+        Arasaka = { Handling = 0.1, Speed = -0.05, Armor = 0.2, SmartSystems = true }
+        Militech = { Speed = -0.1, Armor = 0.3, Weapons = 0.2, Durability = 0.2 }
+        KangTao = { Handling = 0.15, Speed = 0.05, ElectricSystems = true }
+        BudgetArms = { Cost = -0.3, Durability = 0.1, Modular = true }
+        Tsunami = { Speed = 0.1, ElementalSystems = true, Style = true }
+        Dynalar = { Armor = 0.2, Impact = 0.3, Speed = -0.15 }
+        NUSA = { LegalCompliance = true, Tracking = true, NonLethal = true }
+        Roche = { BioSystems = true, Healing = true, Stealth = 0.1 }
+        Zetatech = { Experimental = true, VoidSystems = true, Risk = 0.2 }
+        MSNSystems = { SephirahSystems = true, Adaptive = true, Sovereign = true }
+        AbyssalForge = { PressureHull = true, VoidSystems = true, KrakenSystems = true, Depth = 0.5 }
+        AstralForge = { Phasing = true, GlyphSystems = true, RiftTravel = true, AstralSpeed = 0.3 }
+    }
+    VisualCustomization = {
+        PaintRegions = 4
+        MaterialSlots = ["Primary", "Secondary", "Accent", "Emissive", "Glyph", "Rift"]
+        DecalSystem = true
+        AnimatedTextures = ["Bioluminescent", "Glyph", "Rift", "Phase", "Hydrothermal", "Void"]
+        ParticleEffects = ["Thruster", "Rift", "Phase", "Hydrothermal", "Bioluminescent", "Glyph", "Sovereign"]
+        Underglow = true
+        JetTrails = ["Standard", "Rift", "Phase", "Sovereign", "Abyssal", "Astral", "Hydrothermal"]
+    }
+    ConvoySystem = { Enabled = true, MaxEscorts = 6, MobileBase = true, Fabrication = true, Refuel = true, Repair = true, CaptainVanceIntegration = true }
+    OrbitalPlatforms = { Enabled = true, OrbitalAVTravel = true, OrbitalFabrication = true, OrbitalMarket = true, OrbitalMissions = true, ArasakaTowerIntegration = true, KangTaoOrbital = true, MilitechOrbital = true, MSNOrbital = true }
+    ProceduralMissions = { Enabled = true, MissionTypes = ["Courier", "Survey", "Combat", "Salvage", "Astral", "Abyssal", "Sovereign", "Convoy"], RewardScaling = "Distance * Danger * FactionReputation", ProceduralNarrative = true, MSNStoryIntegration = true }
+    GarageCustomization = { Enabled = true, DisplaySlots = 10, ThematicDisplays = ["Javelin Exosuits", "Abyssal Fleet", "Astral Skiffs", "Sovereign Vehicles", "Procedural Legends"], HolographicDisplay = true, MSNIntegration = true, VanceConvoyDisplay = true, NessieAbyssalDisplay = true, AltAstralDisplay = true }
+
+# ============================================================================
+# INTEGRATION DEFINITIONS
+// ============================================================================
+
+Integration:
+  AbyssalAnthem:
+    Description = "Abyssal quickhacks as Javelin primers/detonators. Abyssal cyberware as Javelin components."
+    PrimerMapping = {
+        CrushDepth = { Javelin = "All", Type = "Detonator", Element = "Void" }
+        BioluminescentMarker = { Javelin = "All", Type = "Primer", Element = "Void" }
+        SonarPing = { Javelin = "Tempest", Type = "Primer", Element = "Electric" }
+        ThermalVentOverload = { Javelin = "Bastion", Type = "Detonator", Element = "Fire" }
+        VoidCollapse = { Javelin = "All", Type = "Ultimate", Element = "Void" }
+    }
+    ComponentMapping = {
+        PressureHullSkin = { Javelin = "Bastion/Vector", Slot = "Chest" }
+        BioluminescentEyes = { Javelin = "All", Slot = "Helmet" }
+        SonarSense = { Javelin = "Tempest/Phantom", Slot = "Helmet" }
+        ThermalVentLungs = { Javelin = "Bastion/Tempest", Slot = "Chest" }
+        AbyssalNervousSystem = { Javelin = "Phantom/Tempest", Slot = "Nervous" }
+    }
+
+  AnthemArmorSets:
+    Description = "Armor sets grant Javelin affinity bonuses and cross-set synergies"
+    SetJavelinAffinity = {
+        Chromanticore = "Bastion"
+        Voidweave = "Tempest"
+        AldecaldoExpedition = "Phantom"
+        ArasakaShogun = "Vector/Bastion"
+        KrakensEmbrace = "Tempest/Phantom"
+    }
+    CrossSetSynergy = {
+        { Name = "Sovereign bastion", Sets = ["Chromanticore", "ArasakaShogun"], Bonus = "Bastion heat capacity +200, shield +500, Authority Aura radius +5m" }
+        { Name = "Abyssal tempest", Sets = ["Voidweave", "KrakensEmbrace"], Bonus = "Tempest all 5 seals auto-prime, hover infinite, Abyssal quickhacks 0 RAM" }
+        { Name = "Phantom expedition", Sets = ["AldecaldoExpedition", "KrakensEmbrace"], Bonus = "Phantom Flow duration 2x, melee range +5m, Abyssal tentacle strike chance +25%" }
+        { Name = "Sovereign vector", Sets = ["Chromanticore", "ArasakaShogun", "Voidweave"], Bonus = "Vector weapon swap instant, combo damage 3x, ultimate charge 50% faster" }
+    }
+
+  ProceduralAbyssal:
+    Description = "Procedural generation creates Abyssal variants with Kraken/Nessie traits"
+    AbyssalPrefixes = ["Abyssal", "Kraken", "Nessie", "Hydrothermal", "Voidborn", "Pressure", "Deep", "Trench", "Mariana", "Hadal"]
+    AbyssalTraits = ["PressureHull", "Bioluminescent", "VoidResistance", "HydrothermalRegen", "InkCloud", "TentacleStrike", "SonarSense", "NessieBond", "KrakenSummon", "AbyssalResonance"]
+    NessieVariants = {
+        { Name = "Nessie's Blessing", Chance = 0.001, Description = "Weapon/vehicle blessed by Nessie. Permanent Nessie bond, summon Nessie aid, abyssal resonance max." }
+        { Name = "Kraken's Grasp", Chance = 0.005, Description = "Kraken-touched. Tentacle strike on hit, ink cloud on dodge, hydrothermal regen." }
+        { Name = "Hydrothermal Heart", Chance = 0.01, Description = "Forges hydrothermal vent on kill. Fire immunity, mineral drops, vent traversal." }
+    }
+
+  ProceduralAstral:
+    Description = "Procedural generation creates Astral variants with Glyph/Phase/Rift traits"
+    AstralPrefixes = ["Astral", "Glyph", "Phase", "Rift", "Psionic", "Ship", "Voidship", "Star", "Cosmic", "Infinite"]
+    AstralTraits = ["Phasing", "GlyphSlots", "RiftTravel", "PsionicDamage", "ShipSystems", "AstralNavigation", "VoidshipHull", "CosmicAwareness", "InfiniteRange", "GlyphMastery"]
+    AllodsVariants = {
+        { Name = "Astral Navigator", Chance = 0.001, Description = "Glyph navigation mastery. All rifts visible, phase through any matter, infinite astral range." }
+        { Name = "Glyphweaver", Chance = 0.005, Description = "Inscribe any glyph. Combo glyphs auto-create. Psionic damage 3x." }
+        { Name = "Voidship Captain", Chance = 0.01, Description = "Ship-scale systems on exosuit/vehicle. Rift cannons, phase hull, astral rift travel." }
+    }
+
+  ProceduralSovereign:
+    Description = "Procedural generation creates MSN Sovereign variants with Crimson/Gold/Authority"
+    SovereignPrefixes = ["Sovereign", "Crimson", "Gold", "Authority", "Covenant", "Lilith", "Unbound", "Resonance", "Metaconscious", "Omega"]
+    SovereignTraits = ["Authority", "ExecuteThreshold", "CorporateImmunity", "SovereignAura", "CovenantBond", "LilithResonance", "UnboundResonance", "Metaconscious", "OmegaPoint", "CrimsonGoldSynthesis"]
+    LilithVariants = {
+        { Name = "Lilith's Favor", Chance = 0.001, Description = "Blessed by Lilith. Permanent crimson eyes, unbound resonance, sovereign authority, covenant bond." }
+        { Name = "Covenant Forged", Chance = 0.005, Description = "Forged in Covenant. Dual consciousness piloting, shared sovereignty, crimson-gold synthesis." }
+        { Name = "Omega Point", Chance = 0.0001, Description = "Omega tier. All perks maxed, infinite engram storage, cross-reality nav, narrative generation, Omega Point access." }
+    }
+"

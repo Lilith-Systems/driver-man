@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 60" width="320" height="60">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b45309;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="binanceGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f0b90b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+    <filter id="goldBadgeGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur">
+        <animate attributeName="stdDeviation" values="1;3;1" dur="2s" repeatCount="indefinite" />
+      </feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="320" height="60" rx="8" fill="#1e1b4b" />
+  <rect width="320" height="60" rx="8" fill="url(#goldGradient)" opacity="0.1" />
+  
+  <!-- Left Label -->
+  <rect x="0" y="0" width="130" height="60" rx="8" fill="url(#goldGradient)" filter="url(#goldBadgeGlow)" />
+  <text x="65" y="37" text-anchor="middle" font-family="'JetBrains Mono', monospace" 
+        font-size="12" font-weight="700" fill="#1e1b4b">LOCHNESS MONSTERS</text>
+  
+  <!-- Right Status -->
+  <rect x="130" y="2" width="188" height="56" rx="6" fill="#0f172a" />
+  
+  <g font-family="'JetBrains Mono', monospace" font-size="9">
+    <text x="140" y="20" font-size="9" font-weight="600" fill="#fbbf24">7 BOTS</text>
+    <text x="200" y="20" font-size="9" fill="#0ea5e9">BINANCE WS</text>
+    <text x="140" y="40" font-size="9" fill="#a855f7">SEPHIROTH</text>
+    <text x="220" y="40" font-size="9" fill="url(#binanceGradient)">TREE FIDDY $3.50</text>
+  </g>
+  
+  <!-- Pulsing Nessie -->
+  <circle cx="285" cy="30" r="5" fill="#fbbf24" filter="url(#goldBadgeGlow)">
+    <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Swimming motion -->
+  <ellipse cx="270" cy="35" rx="3" ry="1.5" fill="#fbbf24" opacity="0.5">
+    <animateTransform attributeName="transform" type="translate" values="0,0; -10,0; 0,0" dur="3s" repeatCount="indefinite" />
+  </ellipse>
+</svg>

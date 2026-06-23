@@ -1,0 +1,11 @@
+{
+  "schema": "lilith.grok_archive.v1",
+  "ingested_at": "2026-06-21T09:45:20.091718+00:00",
+  "source": "/home/tehlappy/Desktop/Lilith/Core_Systems/AI/grokdata_extracted/grok_conversations.json",
+  "archive_copy": "/mnt/d/AI/memories/grok_conversations.json",
+  "conversation_count": 238,
+  "media_posts": 273,
+  "grok_messages_in_golem": 1005,
+  "grok_episodic_in_golem": 238,
+  "index_entries": 80
+}

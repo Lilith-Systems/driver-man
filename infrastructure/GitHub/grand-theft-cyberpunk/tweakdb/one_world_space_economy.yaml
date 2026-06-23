@@ -1,0 +1,152 @@
+################################################################################
+# MSN ONE-WORLD SPACE EXPANSION ECONOMY
+# Night City becomes one city-node on a larger single-world map with orbital,
+# abyssal, badlands, and off-world routes.
+################################################################################
+
+OneWorldSpaceEconomy:
+  schema: "msn.one_world_space_economy.v1"
+  localOnly: true
+  premise: "Night City is one city on the One World Map, connected to orbital habitats, abyssal gates, badlands launch corridors, and frontier colonies."
+
+  WorldMap:
+    rootWorld: "Malkuth-One"
+    cityNodes:
+      nightCity:
+        displayName: "Night City"
+        role: "Starter megacity, black-market exchange, cyberware industry, fixer contracts"
+        districts: ["Watson", "Westbrook", "City Center", "Heywood", "Santo Domingo", "Pacifica", "Badlands"]
+        exports: ["cyberware", "quickhack daemons", "black-market weapons", "Soul Coin liquidity"]
+        imports: ["void crystals", "freighter salvage", "alien biology", "abyssal minerals"]
+      pacificaTrench:
+        displayName: "Pacifica Trench"
+        role: "Abyssal launch gate, Nessie covenant, deep-zone fabrication"
+        exports: ["abyssal crystals", "pressure alloys", "Nessie covenant contracts"]
+        imports: ["sonar telemetry", "medical cyberware", "ship hull plates"]
+      orbitalGraveyard:
+        displayName: "Orbital Graveyard"
+        role: "Zero-g salvage, space battle contracts, Blackwall meteor events"
+        exports: ["ship cores", "Old Net flight computers", "engram debris"]
+        imports: ["fuel cells", "fighter repairs", "boarding teams"]
+      nomadLaunchCorridor:
+        displayName: "Nomad Launch Corridor"
+        role: "Badlands mass-driver, convoy logistics, freighter cargo routing"
+        exports: ["solar-weave", "vehicle parts", "convoy crews"]
+        imports: ["water", "food", "reactor shielding"]
+      lunarFreeport:
+        displayName: "Lunar Freeport"
+        role: "Late-game trading hub, shipyard, alien diplomacy"
+        exports: ["fighter frames", "rare isotopes", "alien treaties"]
+        imports: ["Soul Coins", "Night City tech", "Abyssal relics"]
+
+  Economy:
+    currencies:
+      eddies:
+        role: "Night City retail and fixer payments"
+      soulCoins:
+        role: "Abyssal Exchange, covenant rewards, space contract settlement"
+      salvageCredits:
+        role: "Freighter maintenance, fighter repairs, orbital market"
+      nessieTreasuryMarks:
+        role: "Guardian-backed vouchers for respectful Abyssal/Nessie progression"
+    markets:
+      lochExchange:
+        command: "market.exchange"
+        tradables: ["materials", "set fragments", "ship modules", "fighter components", "quickhack fragments", "cosmetics"]
+        gatedItems: ["mythic weapons", "Nessie mount", "covenant freighter core"]
+        feeModel: { buyFeePercent: 3, burnPercent: 1, nessieTreasuryPercent: 2 }
+      orbitalSalvageBoard:
+        command: "msn.economy.space"
+        tradables: ["hull plates", "weapon capacitors", "drone cores", "fuel cells", "Old Net telemetry"]
+        volatilityDrivers: ["space battle losses", "alien incursions", "convoy success", "Blackwall meteor events"]
+      abyssalTreasury:
+        command: "nessie.treasury"
+        tradables: ["treasury marks", "guardian bounties", "covenant rewards"]
+        rule: "Rewards respect, sightings, restoration, and non-hostile Nessie interactions."
+
+  Fleet:
+    freighters:
+      CovenantFreighter:
+        displayName: "Covenant Freighter"
+        role: "Mobile base, cargo market, fighter hangar, Abyssal fabricator"
+        unlock: "Nessie Friendship Tier 3 + Loch Exchange reputation"
+        hangarSlots: 6
+        cargoSlots: 120
+        modules: ["Abyssal Fabricator", "Loch Exchange Terminal", "Ouroboros Map Room", "Javelin Launch Bay"]
+      VanceLonghaulCarrier:
+        displayName: "Vance Longhaul Carrier"
+        role: "Nomad logistics freighter for convoy/space supply contracts"
+        unlock: "Nomad Launch Corridor storyline"
+        hangarSlots: 4
+        cargoSlots: 180
+        modules: ["Convoy AI", "Solar-Weave Repair Bay", "Mass Driver Dock"]
+      NyxSilentArk:
+        displayName: "Nyx Silent Ark"
+        role: "Stealth freighter for black-ops salvage and alien containment"
+        unlock: "Orbital Graveyard trickster chain"
+        hangarSlots: 3
+        cargoSlots: 80
+        modules: ["Active Camo", "Alien Containment", "Blackwall Quarantine"]
+    fighters:
+      VectorStarling:
+        role: "Balanced fighter, lock-on missiles, Javelin Vector synergy"
+        counters: ["swarm", "chorus"]
+      BastionBulwark:
+        role: "Heavy fighter, boarding shield, siege cannon, Javelin Bastion synergy"
+        counters: ["titan", "station armor"]
+      PhantomNeedle:
+        role: "Interceptor fighter, weak-point assassin, boarding lance, Javelin Phantom synergy"
+        counters: ["trickster", "ace drones"]
+      TempestHalo:
+        role: "Elemental fighter, chain lightning, shield stripping, Javelin Tempest synergy"
+        counters: ["chorus", "shielded swarms"]
+
+  JavelinSpaceCombat:
+    sharedSpaceModules:
+      - "vacuum sealing"
+      - "reaction control thrusters"
+      - "mag boots"
+      - "fighter neural link"
+      - "boarding tether"
+      - "oxygen heat loop"
+    suitRoles:
+      Vector:
+        fighterLink: "VectorStarling"
+        role: "Dogfight commander"
+        spaceCombo: "Plasma primer lock -> missile detonation -> target mark refund"
+      Bastion:
+        fighterLink: "BastionBulwark"
+        role: "Boarding tank and hull breaker"
+        spaceCombo: "Mag shield brace -> siege cannon detonation -> hull breach"
+      Phantom:
+        fighterLink: "PhantomNeedle"
+        role: "Ace interceptor and boarding assassin"
+        spaceCombo: "Cloak approach -> tether strike -> weak-point detonation"
+      Tempest:
+        fighterLink: "TempestHalo"
+        role: "Shield control and swarm clearing"
+        spaceCombo: "Ion primer -> chain lightning detonation -> shield cascade"
+
+  ProceduralContracts:
+    contractInputs: ["cityNode", "marketVolatility", "freighterClass", "fighterWing", "alienArchetype", "playerReputation"]
+    outputs: ["cargoManifest", "enemyWing", "battlefieldHazards", "lootTable", "marketDelta", "NessieTreasuryDelta"]
+    templates:
+      salvageRush:
+        objective: "Reach a wreck before rival crews, recover cargo, decide whether to list or donate it."
+        economyEffect: "Adds salvage to orbital market; donation increases Nessie Treasury marks."
+      freighterDefense:
+        objective: "Defend a freighter convoy through an alien ambush."
+        economyEffect: "Successful defense lowers material prices and increases trade route trust."
+      bountyInterdiction:
+        objective: "Interdict hostile fighters carrying stolen Abyssal cargo."
+        economyEffect: "Recovered cargo can be sold, crafted, or returned for guardian vouchers."
+      alienParley:
+        objective: "Disable, scan, and negotiate instead of destroying an alien chorus node."
+        economyEffect: "Unlocks alien treaties, rare non-combat loot, and lower future hostility."
+
+  ConsoleRoutes:
+    world: "msn.worldmap.status"
+    economy: "msn.economy.space"
+    freighter: "msn.freighter.status"
+    fighters: "msn.fighters.status"
+    javelinSpace: "msn.javelin.space"

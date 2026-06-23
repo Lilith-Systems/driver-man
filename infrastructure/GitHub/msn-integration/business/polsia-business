@@ -1,0 +1,98 @@
+#!/bin/bash
+# Polsia Business Setup & Ops - Integrated with new CLIs + Workspace + MSN/Lilith
+set -e
+export PATH="$HOME/.local/bin:$HOME/.local/google-cloud-sdk/bin:$PATH"
+
+echo "👑 POLSIA BUSINESS SETUP — Lilith / MSN / CLIs / Workspace"
+TREASURY=$(sqlite3 /dev/shm/grok_ram_cache/golem_diary.db 'SELECT metric_value FROM business_metrics WHERE metric_type="treasury_balance" ORDER BY timestamp DESC LIMIT 1;' 2>/dev/null || echo 352)
+echo "Treasury from Crystal Vault: $TREASURY"
+echo "Drivers: 52 | AI Desktop 777: complete | Workspace CLI: ready | gws: pending auth"
+echo ""
+
+case "${1:-help}" in
+  init)
+    echo "=== INIT: Setup folders in Workspace (gws), metrics, GitHub link ==="
+    # Workspace folders (run after gws auth) - correct modern gws syntax
+    gws drive files create --json '{"name":"Polsia_Business","mimeType":"application/vnd.google-apps.folder"}' --format table 2>/dev/null || echo "gws: create Polsia_Business (needs auth)"
+    gws drive files create --json '{"name":"Treasury_Reports","mimeType":"application/vnd.google-apps.folder"}' --format table 2>/dev/null || echo "gws: create Treasury_Reports"
+    gws drive files create --json '{"name":"Driver_CoOp","mimeType":"application/vnd.google-apps.folder"}' --format table 2>/dev/null || echo "gws: create Driver_CoOp"
+    gws drive files create --json '{"name":"Lilith_Systems","mimeType":"application/vnd.google-apps.folder"}' --format table 2>/dev/null || echo "gws: create Lilith_Systems"
+    echo "Metrics snapshot:"
+    sqlite3 /dev/shm/grok_ram_cache/golem_diary.db "SELECT entity_name, metric_type, metric_value FROM business_metrics ORDER BY timestamp DESC LIMIT 8;"
+    gh repo view --json name,description 2>/dev/null | cat || echo "gh: Polsia linked"
+    ;;
+  email)
+    echo "=== EMAIL: himalaya for Polsia outreach/contracts/drivers ==="
+    himalaya envelope list -f INBOX --page-size 8 --output json | jq -r '.[] | "\(.id) | \(.subject) | \(.from.addr)"' | head -8
+    ;;
+  ai)
+    echo "=== AI: gemini (internet) analysis of Polsia business ==="
+    if [ -z "$GEMINI_API_KEY" ]; then
+      echo "Set GEMINI_API_KEY (browser: aistudio.google.com/app/apikey)"
+      exit 1
+    fi
+    echo "Recent emails + treasury -> gemini"
+    (himalaya envelope list -f INBOX --page-size 5 --output json 2>/dev/null; echo "METRICS: $(sqlite3 /dev/shm/grok_ram_cache/golem_diary.db "SELECT metric_value FROM business_metrics WHERE metric_type='treasury_balance' ORDER BY timestamp DESC LIMIT 1;") drivers:52") | \
+      gemini "Polsia AI Business Platform + Driver Man Co-Op (52 drivers, treasury ~352). Analyze emails/metrics for opportunities. 3 prioritized actions to build business / protect / raise kingdom using MSN, CLIs, Workspace."
+    ;;
+  drive)
+    echo "=== DRIVE: gws workspace for Polsia docs ==="
+    gws drive files list --params '{"pageSize": 10, "q": "name contains \"Polsia\" or name contains \"Treasury\" or name contains \"Driver\" or name contains \"Lilith\""}' --format table 2>/dev/null || echo "Auth complete - using gws: place client_secret.json then gws auth login"
+    ;;
+  msn)
+    echo "=== MSN: ai orchestration + symbiosis ==="
+    /home/tehlappy/.local/bin/ai status | grep -E 'polsia|driver|treasury|swarm|Lilith Systems'
+    /home/tehlappy/.local/bin/ai metaconscious "orchestrate polsia business agents with himalaya email + gemini ai + gws drive --format table" 2>/dev/null | head -5 || true
+    ;;
+  github)
+    echo "=== GITHUB: gh for Polsia code ==="
+    gh repo list | grep -i polsia || gh search repos polsia --limit 3
+    ;;
+  auth)
+    echo "=== AUTH: Setup gws Google Workspace OAuth (use browser) ==="
+    echo "1. Open console: https://console.cloud.google.com/apis/credentials"
+    echo "2. Select/create project (e.g. august-emitter-372207 or Lilith project)"
+    echo "3. Enable APIs: Drive, Gmail, Calendar, Sheets, Docs, People, IAM, etc (22 total)"
+    echo "4. Create Credentials > OAuth 2.0 Client ID > Desktop app"
+    echo "5. Download the client_secret_*.json"
+    echo "6. cp ~/Downloads/client_secret_*.json ~/.config/gws/client_secret.json"
+    echo "7. Then: gws auth login   (browser will open for consent)"
+    echo "After: polsia-business drive ; polsia-business init"
+    ;;
+  sync)
+    echo "=== SYNC: Pull personal info + Drive docs into workspace ==="
+    echo "Contacts/People:"
+    gws people people.connections.list --params '{"personFields":"names,emailAddresses,phoneNumbers","pageSize":20}' --format json 2>/dev/null | head -c 800 || echo "(needs auth)"
+    echo "Gmail recent:"
+    gws gmail users.messages.list --params '{"userId":"me","maxResults":5}' --format table 2>/dev/null || echo "(needs auth)"
+    echo "Calendar:"
+    gws calendar events.list --params '{"calendarId":"primary","maxResults":5}' --format table 2>/dev/null || echo "(needs auth)"
+    echo "Drive root sample:"
+    gws drive files list --params '{"pageSize":5}' --format table 2>/dev/null || echo "(needs auth)"
+    ;;
+  metrics)
+    sqlite3 /dev/shm/grok_ram_cache/golem_diary.db "SELECT entity_name, metric_type, metric_value, timestamp FROM business_metrics ORDER BY timestamp DESC LIMIT 12;"
+    ;;
+  full)
+    $0 init
+    $0 metrics
+    $0 email
+    $0 ai
+    $0 drive
+    $0 msn
+    $0 github
+    ;;
+  *)
+    echo "polsia-business [init|email|ai|drive|msn|github|metrics|full|auth|sync]"
+    echo "All new CLIs + Workspace + MSN wired to Polsia AI Business Agent Platform."
+    echo "First: polsia-business auth   (get client_secret + gws auth login)"
+    ;;
+esac
+
+# Auto-sourced from desktop setup
+test -f ~/Desktop/Lilith/.env.gemini && source ~/Desktop/Lilith/.env.gemini
+# Use desktop gemini wrapper if available
+alias gemini-desktop='~/bin/gemini-desktop' 2>/dev/null || true
+
+# Added by 1-6 setup
+source ~/Desktop/Lilith/.env.gemini 2>/dev/null || true

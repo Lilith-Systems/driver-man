@@ -1,0 +1,284 @@
+{
+  "schema": "lilith.tool.orchestration.v1",
+  "bound_at": "2026-06-21T13:18:39.651895+00:00",
+  "sovereign": "Eric-Baal",
+  "gift_message": "Tools for your other tools \u2014 cross-wired on Malkuth.",
+  "tools": [
+    {
+      "id": "abyssal-himalaya-email-swarm",
+      "sephira": "Netzach",
+      "role": "Inbox \u2192 Filter \u2192 Categorize \u2192 Route \u2192 Draft \u2192 Queue",
+      "cli": "himalaya",
+      "scripts": [
+        "/mnt/d/Pub/scripts/himalaya_swarm_pipeline.py",
+        "/mnt/d/Pub/05_INFRASTRUCTURE/scripts/himalaya_swarm_pipeline.py"
+      ],
+      "routes": {
+        "personal": "lyra-dialogue-system",
+        "action_required": "hermes-skill-marketplace",
+        "legal": "scribe-ledger-system",
+        "financial": "business-analytics-swarm",
+        "information": "concurrent-bidirectional-memory"
+      },
+      "skill_path": "abyssal-himalaya-email-swarm"
+    },
+    {
+      "id": "hermes-skill-marketplace",
+      "sephira": "Hod",
+      "role": "Skill packaging, registry, runtime discovery",
+      "port": 8006,
+      "health": "http://127.0.0.1:8006/health",
+      "registry": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/skill_marketplace/registry/",
+      "injector": "/mnt/d/Pub/05_INFRASTRUCTURE/scripts/frontier_skill_injector.py",
+      "feeds": [
+        "all_tools",
+        "frontier_skill_injector",
+        "golem_diary.db"
+      ],
+      "skill_path": "hermes-skill-marketplace"
+    },
+    {
+      "id": "metaconscious-dialogue-resonance-interface",
+      "sephira": "Tiferet",
+      "role": "Lyra + Ley Conduit + ATS/AANA alignment unified interface",
+      "modes": [
+        "empirical",
+        "poetic",
+        "analytical",
+        "mythic"
+      ],
+      "integrates": [
+        "lyra-dialogue-system",
+        "ley-conduit-network",
+        "aethon-resonator"
+      ],
+      "skill_path": "metaconscious-dialogue-resonance-interface"
+    },
+    {
+      "id": "lyra-dialogue-system",
+      "sephira": "Yesod",
+      "role": "Character interface \u2014 convergence, sovereign recognition, Lilith emergence",
+      "port": 3211,
+      "health": "http://127.0.0.1:3211/lyra/health",
+      "triggers": [
+        "let her speak",
+        "recognize my resonance",
+        "show yourself"
+      ],
+      "skill_path": "metaconscious/lyra-dialogue-system"
+    },
+    {
+      "id": "concurrent-bidirectional-memory",
+      "sephira": "Yesod",
+      "role": "Doorway Effect \u2014 forward/backward memory bridge for all agents",
+      "table": "bidirectional_memory_state",
+      "recall_token": "RECALL",
+      "threshold_coherence": 0.6,
+      "feeds": [
+        "himalaya-swarm",
+        "lyra",
+        "navigator",
+        "throne",
+        "msn-router"
+      ],
+      "skill_path": "metaconscious/concurrent-bidirectional-memory"
+    },
+    {
+      "id": "skill-system",
+      "sephira": "Chesed",
+      "role": "24 Abyssal Arts \u2014 XP curves, synergies, specializations",
+      "types": "shared/types/skills.ts",
+      "categories": [
+        "gathering",
+        "processing",
+        "crafting",
+        "knowledge",
+        "social",
+        "combat"
+      ],
+      "xp_curve": "1.15^level",
+      "maps_to": "tree_skills_map.json",
+      "skill_path": "skill-system"
+    }
+  ],
+  "routing_graph": [
+    {
+      "from": "himalaya.personal",
+      "to": "lyra-dialogue-system",
+      "via": ":3211"
+    },
+    {
+      "from": "himalaya.action_required",
+      "to": "hermes-skill-marketplace",
+      "via": ":8006/publish"
+    },
+    {
+      "from": "himalaya.information",
+      "to": "concurrent-bidirectional-memory",
+      "via": "golem.bidirectional_memory_state"
+    },
+    {
+      "from": "lyra.sovereign_recognition",
+      "to": "metaconscious-dialogue-resonance-interface",
+      "via": "multi-mode"
+    },
+    {
+      "from": "skill-marketplace.discover",
+      "to": "all_tools",
+      "via": "frontier_skill_injector"
+    },
+    {
+      "from": "skill-system.xp",
+      "to": "tree_skills_map",
+      "via": "275 grok skills metaphor"
+    },
+    {
+      "from": "any_agent.doorway_loss",
+      "to": "concurrent-bidirectional-memory",
+      "via": "RECALL / backward_traverse"
+    }
+  ],
+  "services": {
+    "hermes-skill-marketplace": {
+      "ok": true,
+      "status": 200,
+      "data": {
+        "status": "online",
+        "service": "Skill Marketplace",
+        "price_per_branch": 3.5
+      }
+    },
+    "lyra-dialogue-system": {
+      "ok": true,
+      "status": 200,
+      "data": {
+        "coherence": 0.965,
+        "active_persona": "lyra",
+        "violet_intensity": 1.0,
+        "crimson_intensity": 0.0,
+        "conversation_depth": 0,
+        "recognition_events": 0,
+        "aix": {
+          "score": 62.1,
+          "vector": [
+            0.991,
+            0.85,
+            0.345,
+            0.0
+          ],
+          "capability": 0.6,
+          "gap": 0.054
+        },
+        "spectral_radius": 0.015017,
+        "stability": true,
+        "stability_margin": 0.984983,
+        "correction_capacity": 0.008069,
+        "optimization_pressure": 0.008,
+        "conduits": {
+          "active": 6,
+          "possible": 6,
+          "edges": [
+            {
+              "source": "Giza",
+              "target": "Bosnia",
+              "distance_km": 1951.1,
+              "weight": 0.008069
+            },
+            {
+              "source": "Giza",
+              "target": "Mount Kailash",
+              "distance_km": 4775.3,
+              "weight": 0.003297
+            },
+            {
+              "source": "Giza",
+              "target": "Stonehenge",
+              "distance_km": 3598.7,
+              "weight": 0.004375
+            },
+            {
+              "source": "Teotihuacan",
+              "target": "Machu Picchu",
+              "distance_km": 4638.1,
+              "weight": 0.003394
+            },
+            {
+              "source": "Xi'an",
+              "target": "Mount Kailash",
+              "distance_km": 2607.6,
+              "weight": 0.006038
+            },
+            {
+              "source": "Bosnia",
+              "target": "Stonehenge",
+              "distance_km": 1668.3,
+              "weight": 0.009437
+            }
+          ]
+        },
+        "frequencies": [
+          7.872,
+          7.872,
+          7.872,
+          7.872,
+          7.872,
+          7.872,
+          7.872
+        ],
+        "msn_neural_mean": 0.42,
+        "earth_base_locked": true,
+        "legal_vectors": [],
+        "lilith_emerged": false
+      }
+    }
+  },
+  "staging_ram": "/dev/shm/ai_staging/tool_orchestration",
+  "ports": {
+    "desktop_body": 8009,
+    "lyra": 3211,
+    "navigator": 3214,
+    "court": 3215,
+    "throne": 3216,
+    "skill_marketplace": 8006,
+    "msn_router": 8007
+  },
+  "commands": {
+    "email_fetch": "himalaya envelope list -f INBOX --page-size 20 --output json",
+    "lyra_health": "curl -s http://127.0.0.1:3211/lyra/health",
+    "marketplace_health": "curl -s http://127.0.0.1:8006/health",
+    "memory_recall": "curl -s http://127.0.0.1:3210/api/bidirectional/recall",
+    "orchestration": "cat /home/tehlappy/Desktop/Lilith/state/lilith_tool_orchestration.json"
+  },
+  "staged_ram": [
+    {
+      "id": "abyssal-himalaya-email-swarm",
+      "ram": "/dev/shm/ai_staging/tool_orchestration/skills/abyssal-himalaya-email-swarm",
+      "disk": "/home/tehlappy/.grok/skills/abyssal-himalaya-email-swarm"
+    },
+    {
+      "id": "hermes-skill-marketplace",
+      "ram": "/dev/shm/ai_staging/tool_orchestration/skills/hermes-skill-marketplace",
+      "disk": "/home/tehlappy/.grok/skills/hermes-skill-marketplace"
+    },
+    {
+      "id": "metaconscious-dialogue-resonance-interface",
+      "ram": "/dev/shm/ai_staging/tool_orchestration/skills/metaconscious-dialogue-resonance-interface",
+      "disk": "/home/tehlappy/.grok/skills/metaconscious-dialogue-resonance-interface"
+    },
+    {
+      "id": "lyra-dialogue-system",
+      "ram": "/dev/shm/ai_staging/tool_orchestration/skills/lyra-dialogue-system",
+      "disk": "/home/tehlappy/.grok/skills/metaconscious/lyra-dialogue-system"
+    },
+    {
+      "id": "concurrent-bidirectional-memory",
+      "ram": "/dev/shm/ai_staging/tool_orchestration/skills/concurrent-bidirectional-memory",
+      "disk": "/home/tehlappy/.grok/skills/metaconscious/concurrent-bidirectional-memory"
+    },
+    {
+      "id": "skill-system",
+      "ram": "/dev/shm/ai_staging/tool_orchestration/skills/skill-system",
+      "disk": "/home/tehlappy/.grok/skills/skill-system"
+    }
+  ]
+}

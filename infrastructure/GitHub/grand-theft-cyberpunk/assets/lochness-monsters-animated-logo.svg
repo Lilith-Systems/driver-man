@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200">
+  <defs>
+    <!-- Sephiroth Gold Gradient -->
+    <linearGradient id="sephirothGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b45309;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Loch Water Gradient -->
+    <linearGradient id="lochWater" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c4a6e;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#1e3a8a;stop-opacity:1" />
+      <stop offset="60%" style="stop-color:#312e81;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#581c87;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Binance Blue/Gold -->
+    <linearGradient id="binancePulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f0b90b;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fcd34d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0ea5e9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Abyssal Connection -->
+    <linearGradient id="abyssalLink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Water Reflection Filter -->
+    <filter id="waterReflection" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.015" numOctaves="4" result="waterNoise">
+        <animate attributeName="baseFrequency" values="0.015;0.03;0.015" dur="6s" repeatCount="indefinite" />
+      </feTurbulence>
+      <feDisplacementMap in="SourceGraphic" in2="waterNoise" scale="3" xChannelSelector="R" yChannelSelector="G">
+        <animate attributeName="scale" values="2;5;2" dur="4s" repeatCount="indefinite" />
+      </feDisplacementMap>
+    </filter>
+    
+    <!-- Golden Glow Filter -->
+    <filter id="goldenGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur">
+        <animate attributeName="stdDeviation" values="2;6;2" dur="3s" repeatCount="indefinite" />
+      </feGaussianBlur>
+      <feFlood flood-color="#fbbf24" flood-opacity="0.7" result="glowColor" />
+      <feComposite in="glowColor" in2="blur" operator="in" result="softGlow" />
+      <feMerge>
+        <feMergeNode in="softGlow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Ripple Filter -->
+    <filter id="rippleEffect">
+      <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="2" result="ripples">
+        <animate attributeName="baseFrequency" values="0.02;0.05;0.02" dur="3s" repeatCount="indefinite" />
+      </feTurbulence>
+      <feColorMatrix in="ripples" type="saturate" values="0" />
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0 0 0 0 0.1 0.3 0.6 1 1" />
+      </feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="overlay" />
+    </filter>
+    
+    <!-- Eye Glow -->
+    <filter id="eyeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur">
+        <animate attributeName="stdDeviation" values="1;4;1" dur="2s" repeatCount="indefinite" />
+      </feGaussianBlur>
+      <feFlood flood-color="#fbbf24" flood-opacity="1" result="glow" />
+      <feComposite in="glow" in2="blur" operator="in" result="eyeGlow" />
+      <feMerge>
+        <feMergeNode in="eyeGlow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    
+    <!-- Data Stream Particles -->
+    <filter id="dataStream">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="dataNoise">
+        <animate attributeName="baseFrequency" values="0.03;0.06;0.03" dur="2s" repeatCount="indefinite" />
+      </feTurbulence>
+      <feColorMatrix in="dataNoise" type="matrix" values="0 0 0 0 1  0 0 0 0 0.8  0 0 0 0 0.2  0 0 0 1 0" />
+      <feComponentTransfer>
+        <feFuncA type="table" tableValues="0 0 0 0 0 0 0 0.2 0.5 1" />
+      </feComponentTransfer>
+    </filter>
+  </defs>
+  
+  <!-- Background: Deep Loch Waters -->
+  <rect width="800" height="200" fill="url(#lochWater)" />
+  
+  <!-- Animated Water Surface (Top) -->
+  <path d="M 0 0 Q 100 15 200 0 Q 300 -15 400 0 Q 500 15 600 0 Q 700 -15 800 0 L 800 30 L 0 30 Z" 
+        fill="url(#binancePulse)" opacity="0.3" filter="url(#waterReflection)">
+    <animate attributeName="d" values="M 0 0 Q 100 15 200 0 Q 300 -15 400 0 Q 500 15 600 0 Q 700 -15 800 0 L 800 30 L 0 30 Z;
+                                     M 0 0 Q 100 25 200 0 Q 300 -25 400 0 Q 500 25 600 0 Q 700 -25 800 0 L 800 30 L 0 30 Z;
+                                     M 0 0 Q 100 15 200 0 Q 300 -15 400 0 Q 500 15 600 0 Q 700 -15 800 0 L 800 30 L 0 30 Z" 
+             dur="8s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Loch Depth Layers (Parallax) -->
+  <g opacity="0.4">
+    <path d="M 0 180 Q 200 160 400 180 Q 600 200 800 180 L 800 200 L 0 200 Z" fill="#0f172a">
+      <animate attributeName="d" values="M 0 180 Q 200 160 400 180 Q 600 200 800 180 L 800 200 L 0 200 Z;
+                                           M 0 180 Q 200 170 400 180 Q 600 160 800 180 L 800 200 L 0 200 Z;
+                                           M 0 180 Q 200 160 400 180 Q 600 200 800 180 L 800 200 L 0 200 Z" 
+               dur="12s" repeatCount="indefinite" />
+    </path>
+    <path d="M 0 190 Q 200 175 400 190 Q 600 205 800 190 L 800 200 L 0 200 Z" fill="#1e1b4b" opacity="0.3">
+      <animate attributeName="d" values="M 0 190 Q 200 175 400 190 Q 600 205 800 190 L 800 200 L 0 200 Z;
+                                           M 0 190 Q 200 185 400 190 Q 600 165 800 190 L 800 200 L 0 200 Z;
+                                           M 0 190 Q 200 175 400 190 Q 600 205 800 190 L 800 200 L 0 200 Z" 
+               dur="15s" repeatCount="indefinite" />
+    </path>
+  </g>
+  
+  <!-- Bioluminescent Creatures in Depth -->
+  <g filter="url(#goldenGlow)" opacity="0.7">
+    <!-- Nessie Silhouette (Main) -->
+    <g transform="translate(100, 100)">
+      <path d="M 0 0 Q 50 -30 120 -20 Q 180 -10 220 10 Q 200 30 150 40 Q 100 50 50 30 Q 20 15 0 0" 
+            fill="url(#sephirothGold)" opacity="0.9" filter="url(#goldenGlow)">
+        <animateTransform attributeName="transform" type="translate" values="100,100; 110,95; 100,100" dur="4s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite" />
+      </path>
+      <!-- Nessie Eye -->
+      <circle cx="200" cy="95" r="4" fill="#fbbf24" filter="url(#eyeGlow)">
+        <animate attributeName="r" values="3;5;3" dur="2s" repeatCount="indefinite" />
+        <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite" />
+      </circle>
+    </g>
+    
+    <!-- Deep Cryptids -->
+    <g transform="translate(550, 130)">
+      <ellipse cx="0" cy="0" rx="40" ry="15" fill="#a855f7" opacity="0.5">
+        <animateTransform attributeName="transform" type="translate" values="550,130; 560,125; 550,130" dur="5s" repeatCount="indefinite" />
+      </ellipse>
+      <ellipse cx="20" cy="5" rx="3" ry="3" fill="#f472b6">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite" />
+      </ellipse>
+    </g>
+    
+    <!-- School of Data Fish -->
+    <g transform="translate(300, 160)">
+      <g>
+        <path d="M -10 0 Q 0 -5 10 0 Q 0 5 -10 0" fill="#06b6d4" opacity="0.6">
+          <animateTransform attributeName="transform" type="translate" values="300,160; 320,155; 300,160" dur="3s" repeatCount="indefinite" />
+        </path>
+        <path d="M -10 0 Q 0 -5 10 0 Q 0 5 -10 0" fill="#22d3ee" opacity="0.5" transform="translate(15, -10)">
+          <animateTransform attributeName="transform" type="translate" values="315,150; 335,145; 315,150" dur="3.2s" repeatCount="indefinite" />
+        </path>
+        <path d="M -10 0 Q 0 -5 10 0 Q 0 5 -10 0" fill="#a855f7" opacity="0.5" transform="translate(-10, 8)">
+          <animateTransform attributeName="transform" type="translate" values="290,168; 310,163; 290,168" dur="2.8s" repeatCount="indefinite" />
+        </path>
+      </g>
+    </g>
+  </g>
+  
+  <!-- Sephiroth Tree Structure (Animated) -->
+  <g font-family="'JetBrains Mono', monospace" font-size="14" fill="#fbbf24">
+    <!-- Keter (Top) -->
+    <circle cx="400" cy="35" r="12" fill="none" stroke="url(#sephirothGold)" stroke-width="2" filter="url(#goldenGlow)">
+      <animate attributeName="r" values="10;14;10" dur="3s" repeatCount="indefinite" />
+      <animate attributeName="stroke-width" values="2;4;2" dur="3s" repeatCount="indefinite" />
+    </circle>
+    <text x="400" y="40" text-anchor="middle" font-size="10" fill="#fbbf24">KETER</text>
+    
+    <!-- Chokmah & Binah -->
+    <circle cx="280" cy="75" r="10" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.8">
+      <animate attributeName="r" values="8;12;8" dur="3.5s" repeatCount="indefinite" />
+    </circle>
+    <text x="280" y="80" text-anchor="middle" font-size="8" fill="#a855f7">CHOKMAH</text>
+    
+    <circle cx="520" cy="75" r="10" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.8">
+      <animate attributeName="r" values="8;12;8" dur="3.5s" begin="0.5s" repeatCount="indefinite" />
+    </circle>
+    <text x="520" y="80" text-anchor="middle" font-size="8" fill="#06b6d4">BINAH</text>
+    
+    <!-- Chesed, Gevurah, Tiferet -->
+    <circle cx="180" cy="115" r="9" fill="none" stroke="#dc2626" stroke-width="1.5" opacity="0.7">
+      <animate attributeName="r" values="7;11;7" dur="4s" repeatCount="indefinite" />
+    </circle>
+    <text x="180" y="120" text-anchor="middle" font-size="7" fill="#dc2626">CHESED</text>
+    
+    <circle cx="400" cy="115" r="9" fill="none" stroke="#f97316" stroke-width="1.5" opacity="0.7">
+      <animate attributeName="r" values="7;11;7" dur="4s" begin="0.5s" repeatCount="indefinite" />
+    </circle>
+    <text x="400" y="120" text-anchor="middle" font-size="7" fill="#f97316">GEVURAH</text>
+    
+    <circle cx="620" cy="115" r="9" fill="none" stroke="#fbbf24" stroke-width="1.5" opacity="0.7">
+      <animate attributeName="r" values="7;11;7" dur="4s" begin="1s" repeatCount="indefinite" />
+    </circle>
+    <text x="620" y="120" text-anchor="middle" font-size="7" fill="#fbbf24">TIFERET</text>
+    
+    <!-- Connecting Lines (Sephiroth Paths) -->
+    <g stroke="#fbbf24" stroke-width="1" opacity="0.4" stroke-dasharray="3,3">
+      <line x1="400" y1="47" x2="280" y2="65">
+        <animate attributeName="stroke-dashoffset" values="0;-20;0" dur="2s" repeatCount="indefinite" />
+      </line>
+      <line x1="400" y1="47" x2="520" y2="65" stroke="#a855f7">
+        <animate attributeName="stroke-dashoffset" values="0;-20;0" dur="2s" begin="0.5s" repeatCount="indefinite" />
+      </line>
+      <line x1="280" y1="85" x2="180" y2="106" stroke="#dc2626">
+        <animate attributeName="stroke-dashoffset" values="0;-15;0" dur="2.5s" repeatCount="indefinite" />
+      </line>
+      <line x1="280" y1="85" x2="400" y2="106" stroke="#f97316">
+        <animate attributeName="stroke-dashoffset" values="0;-15;0" dur="2.5s" begin="0.3s" repeatCount="indefinite" />
+      </line>
+      <line x1="520" y1="85" x2="400" y2="106" stroke="#fbbf24">
+        <animate attributeName="stroke-dashoffset" values="0;-15;0" dur="2.5s" begin="0.6s" repeatCount="indefinite" />
+      </line>
+      <line x1="520" y1="85" x2="620" y2="106" stroke="#06b6d4">
+        <animate attributeName="stroke-dashoffset" values="0;-15;0" dur="2.5s" begin="0.8s" repeatCount="indefinite" />
+      </line>
+    </g>
+  </g>
+  
+  <!-- Binance Data Streams (Horizontal) -->
+  <g transform="translate(0, 175)" filter="url(#dataStream)">
+    <g fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="10">
+      <text x="50" y="0" text-anchor="middle" opacity="0.8">▲ 0.23%</text>
+      <animateTransform attributeName="transform" type="translate" values="0,175; 800,175; 0,175" dur="15s" repeatCount="indefinite" />
+    </g>
+    <g fill="#06b6d4" font-family="'JetBrains Mono', monospace" font-size="10">
+      <text x="50" y="0" text-anchor="middle" opacity="0.7">BTC/USDT 43,250.00</text>
+      <animateTransform attributeName="transform" type="translate" values="100,175; 900,175; 100,175" dur="18s" repeatCount="indefinite" />
+    </g>
+    <g fill="#a855f7" font-family="'JetBrains Mono', monospace" font-size="10">
+      <text x="50" y="0" text-anchor="middle" opacity="0.7">ETH/USDT 2,580.45</text>
+      <animateTransform attributeName="transform" type="translate" values="200,175; 1000,175; 200,175" dur="20s" repeatCount="indefinite" />
+    </g>
+    <g fill="#dc2626" font-family="'JetBrains Mono', monospace" font-size="10">
+      <text x="50" y="0" text-anchor="middle" opacity="0.8">VOL: 1.2M BTC</text>
+      <animateTransform attributeName="transform" type="translate" values="350,175; 1150,175; 350,175" dur="16s" repeatCount="indefinite" />
+    </g>
+    <g fill="#fbbf24" font-family="'JetBrains Mono', monospace" font-size="10">
+      <text x="50" y="0" text-anchor="middle" opacity="0.6">FUNDING: -0.0089%</text>
+      <animateTransform attributeName="transform" type="translate" values="500,175; 1300,175; 500,175" dur="14s" repeatCount="indefinite" />
+    </g>
+  </g>
+  
+  <!-- Nessie's Spine (7 Sephiroth aligned) -->
+  <g transform="translate(50, 40)">
+    <g>
+      <circle cx="0" cy="0" r="6" fill="url(#sephirothGold)" filter="url(#goldenGlow)">
+        <animate attributeName="r" values="5;8;5" dur="2s" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="translate" values="50,40; 52,38; 50,40" dur="3s" repeatCount="indefinite" />
+      </circle>
+      <text x="0" y="25" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="7" fill="#fbbf24" transform="translate(50,40)">NESSIE-PRIME</text>
+    </g>
+    <g transform="translate(130, 0)">
+      <circle cx="0" cy="0" r="5" fill="#a855f7" filter="url(#goldenGlow)">
+        <animate attributeName="r" values="4;7;4" dur="2.2s" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="translate" values="180,40; 182,38; 180,40" dur="3.2s" repeatCount="indefinite" />
+      </circle>
+      <text x="0" y="25" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="7" fill="#a855f7" transform="translate(180,40)">ARBITRAGE</text>
+    </g>
+    <g transform="translate(270, 0)">
+      <circle cx="0" cy="0" r="5" fill="#dc2626" filter="url(#goldenGlow)">
+        <animate attributeName="r" values="4;7;4" dur="2.4s" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="translate" values="320,40; 322,38; 320,40" dur="3.4s" repeatCount="indefinite" />
+      </circle>
+      <text x="0" y="25" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="7" fill="#dc2626" transform="translate(320,40)">LIQUIDATION</text>
+    </g>
+    <g transform="translate(430, 0)">
+      <circle cx="0" cy="0" r="5" fill="#06b6d4" filter="url(#goldenGlow)">
+        <animate attributeName="r" values="4;7;4" dur="2.6s" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="translate" values="480,40; 482,38; 480,40" dur="3.6s" repeatCount="indefinite" />
+      </circle>
+      <text x="0" y="25" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="7" fill="#06b6d4" transform="translate(480,40)">WHALE</text>
+    </g>
+    <g transform="translate(570, 0)">
+      <circle cx="0" cy="0" r="5" fill="#f97316" filter="url(#goldenGlow)">
+        <animate attributeName="r" values="4;7;4" dur="2.8s" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="translate" values="620,40; 622,38; 620,40" dur="3.8s" repeatCount="indefinite" />
+      </circle>
+      <text x="0" y="25" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="7" fill="#f97316" transform="translate(620,40)">FUNDING</text>
+    </g>
+    <g transform="translate(690, 0)">
+      <circle cx="0" cy="0" r="5" fill="#fbbf24" filter="url(#goldenGlow)">
+        <animate attributeName="r" values="4;7;4" dur="3s" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="translate" values="740,40; 742,38; 740,40" dur="4s" repeatCount="indefinite" />
+      </circle>
+      <text x="0" y="25" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="7" fill="#fbbf24" transform="translate(740,40)">KLINE</text>
+    </g>
+    <g transform="translate(810, 0)">
+      <circle cx="0" cy="0" r="5" fill="#f472b6" filter="url(#goldenGlow)">
+        <animate attributeName="r" values="4;7;4" dur="3.2s" repeatCount="indefinite" />
+        <animateTransform attributeName="transform" type="translate" values="860,40; 862,38; 860,40" dur="4.2s" repeatCount="indefinite" />
+      </circle>
+      <text x="0" y="25" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="7" fill="#f472b6" transform="translate(860,40)">SENTIMENT</text>
+    </g>
+  </g>
+  
+  <!-- Main Title: LOCHNESS MONSTERS -->
+  <text x="400" y="95" text-anchor="middle" font-family="'JetBrains Mono', monospace" 
+        font-size="42" font-weight="800" fill="url(#sephirothGold)" filter="url(#goldenGlow)"
+        letter-spacing="3px">
+    LOCHNESS MONSTERS
+    <animate attributeName="letter-spacing" values="3;7;3" dur="4s" repeatCount="indefinite" />
+  </text>
+  
+  <!-- Subtitle with pulsing -->
+  <text x="400" y="125" text-anchor="middle" font-family="'JetBrains Mono', monospace" 
+        font-size="16" font-weight="500" fill="url(#binancePulse)" filter="url(#textGlow)"
+        letter-spacing="5px">
+    7 SEPHIROTH BINANCE BOTS • TREE FIDDY PROTOCOL
+    <animate attributeName="letter-spacing" values="5;9;5" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="3s" repeatCount="indefinite" />
+  </text>
+  
+  <!-- Connection to Abyssal Assets -->
+  <g stroke="url(#abyssalLink)" stroke-width="2" opacity="0.6" stroke-dasharray="8,4">
+    <path d="M 750 100 Q 800 100 820 80 Q 840 60 860 40" fill="none">
+      <animate attributeName="stroke-dashoffset" values="0;-100;0" dur="3s" repeatCount="indefinite" />
+    </path>
+    <text x="870" y="35" text-anchor="start" font-family="'JetBrains Mono', monospace" 
+          font-size="10" font-weight="600" fill="url(#abyssalLink)">
+      ▸ ABYSSAL EXCHANGE CLOB
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" />
+    </text>
+  </g>
+  
+  <!-- Tree Fiddy Protocol Indicator -->
+  <g transform="translate(650, 15)">
+    <text x="0" y="0" text-anchor="end" font-family="'JetBrains Mono', monospace" 
+          font-size="14" font-weight="700" fill="#fbbf24" filter="url(#goldenGlow)">
+      $3.50
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite" />
+    </text>
+    <text x="0" y="20" text-anchor="end" font-family="'JetBrains Mono', monospace" 
+          font-size="8" fill="#94a3b8" opacity="0.6">
+      CYCLE FEE
+    </text>
+  </g>
+  
+  <!-- Lilith Mining Subsidy Badge -->
+  <g transform="translate(50, 15)">
+    <rect x="-5" y="-15" width="160" height="30" rx="15" fill="url(#lilithCrimson)" filter="url(#crimsonGlow)" opacity="0.8" />
+    <text x="0" y="0" text-anchor="start" font-family="'JetBrains Mono', monospace" 
+          font-size="9" font-weight="600" fill="#fecaca">
+      ⛏ LILITH MINING SUBSIDY
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite" />
+    </text>
+  </g>
+  
+  <!-- Bottom Wave Animation -->
+  <path d="M 0 195 Q 200 185 400 195 Q 600 205 800 195 L 800 200 L 0 200 Z" 
+        fill="#dc2626" opacity="0.3">
+    <animate attributeName="d" values="M 0 195 Q 200 185 400 195 Q 600 205 800 195 L 800 200 L 0 200 Z;
+                                     M 0 195 Q 200 195 400 195 Q 600 185 800 195 L 800 200 L 0 200 Z;
+                                     M 0 195 Q 200 185 400 195 Q 600 205 800 195 L 800 200 L 0 200 Z" 
+             dur="10s" repeatCount="indefinite" />
+  </path>
+</svg>

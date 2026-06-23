@@ -1,0 +1,154 @@
+# GRAND THEFT CYBERPUNK — HELL CAMPAIGN MOD MANIFEST
+# Abyssal Assets: The Nine Circles + Pandemonium
+# WolvenKit REDmod Configuration
+
+name: "hell_campaign"
+displayName: "Grand Theft Cyberpunk: Hell Campaign"
+description: |
+  Descend through the Nine Circles of the Abyss beneath Night City.
+  Each circle inverts a Sephirah on the Tree of Life (Qliphoth integration).
+  VRAM pressure directly modulates Hell's stability via NGD routing.
+  
+  • 10 Circles + 1 Secret (Pandemonium)
+  • 12 Main Quests + 10 Side Quests + 1 Hidden Wager
+  • 500 Custom Items (weapons, armor, cyberware, consumables, vehicles, etc.)
+  • Space Combat Integration (10+ Battle Templates)
+  • Lucifer Dialogue System (Pre-written templates, zero GPU inference)
+  • Local-First Architecture (LOCAL_CEREBELLUM for Circle 7+)
+  • NGD Integration: VRAM telemetry forces LOCAL_CEREBELLUM at Circle 7+
+  • Lilith Dialogue → Lucifer at Circle 5 (Geburah) & Circle 9 (Yesod)
+  
+author: "Lucifer / Lilith / Metaconscious Singularity Node"
+version: "1.0.0"
+gameVersion: "2.12+"
+REDmodFormat: "1.0"
+
+# Dependencies
+dependencies:
+  - "msn_integration"        # Core MSN integration
+  - "msn_weapon_overhaul"    # Weapon mechanics
+  - "abyssal_assets"         # Abyssal Assets core
+  - "red4ext"                # RED4ext runtime (v1.30.0+)
+
+# TweakDB Files (auto-loaded by game)
+tweakdbFiles:
+  - "tweakdb/hell_items.yaml"           # 500 Custom Items
+  - "tweakdb/reds/hell_limbo.reds"      # Circle 1 Items
+  - "tweakdb/reds/hell_lust.reds"       # Circle 2 Items
+  - "tweakdb/reds/hell_gluttony.reds"   # Circle 3 Items
+  - "tweakdb/reds/hell_greed.reds"      # Circle 4 Items
+  - "tweakdb/reds/hell_wrath.reds"      # Circle 5 Items
+  - "tweakdb/reds/hell_heresy.reds"     # Circle 6 Items
+  - "tweakdb/reds/hell_violence.reds"   # Circle 7 Items
+  - "tweakdb/reds/hell_fraud.reds"      # Circle 8 Items
+  - "tweakdb/reds/hell_treachery.reds"  # Circle 9 Items
+  - "tweakdb/reds/hell_lucifers_throne.reds" # Circle 10 Items
+
+# Script Files (compiled by WolvenKit)
+scriptFiles:
+  - "scripts/core/msn_hell_campaign.reds"        # Campaign Manager + Console
+  - "scripts/space/msn_hell_space_combat.reds"   # Space Combat Templates
+  - "scripts/quests/hell_circle_quests.reds"     # 23 Quests (12 Main + 10 Side + 1 Secret)
+  - "scripts/core/msn_master_integration.reds"   # MSN Master Integration
+  - "scripts/core/msn_lucifer_dialogue.reds"     # Lucifer Dialogue Templates
+
+# Localization Files
+localizationFiles:
+  - "localization/hell_campaign_en.json"   # English (base)
+  - "localization/hell_campaign_pl.json"   # Polish
+  - "localization/hell_campaign_ru.json"   # Russian
+  - "localization/hell_campaign_fr.json"   # French
+  - "localization/hell_campaign_de.json"   # German
+  - "localization/hell_campaign_es.json"   # Spanish
+  - "localization/hell_campaign_ja.json"   # Japanese
+  - "localization/hell_campaign_zh.json"   # Chinese
+  - "localization/hell_campaign_it.json"   # Italian
+  - "localization/hell_campaign_pt.json"   # Portuguese
+
+# Asset Files (models, textures, audio)
+assetPaths:
+  - "assets/models/hell/"
+  - "assets/textures/hell/"
+  - "assets/audio/hell/"
+
+# NGD Integration Configuration
+ngdIntegration:
+  # VRAM-based routing for Hell circles
+  circleRouting:
+    1: "HYBRID_OK"        # Limbo
+    2: "HYBRID_OK"        # Lust
+    3: "LOCAL_REQUIRED"   # Gluttony
+    4: "LOCAL_REQUIRED"   # Greed
+    5: "LOCAL_REQUIRED"   # Wrath
+    6: "LOCAL_CEREBELLUM" # Heresy
+    7: "LOCAL_CEREBELLUM" # Violence
+    8: "LOCAL_CEREBELLUM" # Fraud
+    9: "LOCAL_CEREBELLUM" # Treachery
+    10: "LOCAL_CEREBELLUM" # Lucifer's Throne
+    11: "LOCAL_CEREBELLUM" # Pandemonium (Secret)
+
+  # Lucifer Influence thresholds
+  luciferInfluence:
+    circle_1: 0.1   # Limbo
+    circle_2: 0.2   # Lust
+    circle_3: 0.3   # Gluttony
+    circle_4: 0.4   # Greed
+    circle_5: 0.5   # Wrath (Lucifer speaks)
+    circle_6: 0.6   # Heresy
+    circle_7: 0.7   # Violence
+    circle_8: 0.8   # Fraud
+    circle_9: 0.9   # Treachery (Lucifer speaks)
+    circle_10: 1.0  # Lucifer's Throne (Final Boss)
+    circle_11: 1.0  # Pandemonium (Secret)
+
+# Build Configuration
+build:
+  outputDir: "dist"
+  redmodName: "hell_campaign.redmod"
+  compression: "zlib"
+  encryption: "aes256"
+  
+  # Proton/Wine compatibility
+  proton:
+    useNtsync: true
+    noEsync: true
+    noFsync: true
+    waitForExitAndRun: "REDprelauncher.exe"
+    
+  # Environment variables for Proton
+  protonEnv:
+    PROTON_USE_NTSYNC: "1"
+    PROTON_NO_ESYNC: "1"
+    PROTON_NO_FSYNC: "1"
+
+# Testing Checklist
+testing:
+  - "All 10 circles load without errors"
+  - "NGD route transitions work (HYBRID_OK -> LOCAL_REQUIRED -> LOCAL_CEREBELLUM)"
+  - "Lucifer dialogue triggers at Circle 5 and 9"
+  - "Space combat templates launch correctly"
+  - "Quest prerequisites enforce proper order"
+  - "Lucifer Pact offered at Circle 4 with 0.5+ corruption"
+  - "Final Boss Phase 4 choice: Submit/Rebel/Transcend"
+  - "Secret Pandemonium unlocks after Sovereign + Final Boss"
+  - "500 items appear in vendor inventories and loot drops"
+  - "Local cerebellum state persists across sessions"
+  - "Proton launch with NTSYNC works"
+
+# Known Issues / TODOs
+knownIssues:
+  - "Lightsaber visual effects require custom shader compilation"
+  - "Space combat camera needs FOV adjustment for vertical biomes"
+  - "Lucifer save deletion threat needs filesystem protection"
+  - "Mandalorian Beskar armor requires custom material definition"
+  - "Holocron gatekeeper dialogues need voice acting or TTS"
+  - "Corruption/Purity visual UI indicators need HUD integration"
+  - "Living Sin Time Blade integration with Circle 7 (Drowned Warden) needs testing"
+
+# Compatibility
+compatibility:
+  gameVersion: "2.12+"
+  red4ext: "1.30.0+"
+  wolvenkit: "8.18+"
+  proton: "GE-Proton9-26+"
+  os: ["Windows 10/11", "Linux (Proton)", "Steam Deck"]

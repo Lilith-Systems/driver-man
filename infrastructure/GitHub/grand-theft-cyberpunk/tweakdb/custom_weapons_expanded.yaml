@@ -1,0 +1,116 @@
+################################################################################
+# ADDITIONAL CUSTOM WEAPONS — EXPERIMENTAL / LEGENDARY
+################################################################################
+
+Item:
+  # Voidsplitter — Phase-Shift Railgun
+  Voidsplitter_Railgun:
+    displayName: "Voidsplitter Railgun"
+    description: "Fires phase-shifted slugs that exist partially in the void. Ignores all cover. Hits targets through walls."
+    category: "SniperRifle"
+    brand: "Zetatech"
+    rarity: "Legendary"
+    damage: 1200
+    damageType: "Physical+Void"
+    fireRate: 0.8
+    magazineSize: 5
+    chargeTime: 1.5
+    penetrateWalls: true
+    voidPhaseShift: true
+    msnIntegration:
+      sephirah: "Binah"
+      structureAnalysis: true
+      voidResonance: true
+    uniqueMod: "Voidsplitter_Phase_Core"
+    modSlots: ["Sniper_Barrel", "Sniper_Optic", "Sniper_Muzzle", "Void_Core"]
+
+Item:
+  # Kraken's Wrath — Abyssal Heavy Launcher
+  Krakens_Wrath_Launcher:
+    displayName: "Kraken's Wrath"
+    description: "Launches bio-engineered void-torpedoes. Each impact spawns crushing pressure zones. The deep answers."
+    category: "HeavyWeapon"
+    brand: "Abyssal"
+    rarity: "Legendary"
+    damage: 2500
+    damageType: "Physical+Void+Pressure"
+    fireRate: 0.3
+    magazineSize: 3
+    reloadTime: 4.0
+    aoeRadius: 8.0
+    pressureZoneDuration: 15.0
+    spawnsAbyssalCreatures: true
+    msnIntegration:
+      sephirah: "Geburah"
+      judgmentProtocol: true
+      abyssalSummoning: true
+    uniqueMod: "Kraken_Void_Core"
+    modSlots: ["Heavy_Barrel", "Void_Core", "Pressure_Chamber", "Abyssal_AI"]
+
+Item:
+  # Nyx's Whisper — Stealth Monowire
+  Nyx_Whisper_Monowire:
+    displayName: "Nyx's Whisper"
+    description: "Monowire that phases through armor. Silent kills store victim's engrams in your Ouroboros. The vault remembers."
+    category: "Melee"
+    subType: "Monowire"
+    brand: "Custom"
+    rarity: "Legendary"
+    damage: 600
+    damageType: "Physical+Void"
+    attackSpeed: 1.5
+    phaseThroughArmor: true
+    silentKill: true
+    engramExtraction: true
+    memoryStorage: 50
+    msnIntegration:
+      sephirah: "Nyx"
+      vaultStorage: true
+      engramHarvest: true
+    uniqueMod: "Nyx_Vault_Interface"
+    modSlots: ["Monowire_Core", "Void_Core", "Ouroboros_Link", "Stealth_Field"]
+
+Item:
+  # Lucifer's Dawn — Solar Flare Pistol
+  Lucifers_Dawn_Pistol:
+    displayName: "Lucifer's Dawn"
+    description: "Compact plasma pistol. Overcharge creates miniature solar flare. Blinds, burns, reveals all. The Light Bringer's sidearm."
+    category: "Pistol"
+    brand: "Custom"
+    rarity: "Legendary"
+    damage: 450
+    damageType: "Thermal+EMP+Light"
+    fireRate: 10.0
+    magazineSize: 18
+    overchargeMode: true
+    solarFlareRadius: 10.0
+    blindDuration: 5.0
+    revealsStealth: true
+    msnIntegration:
+      sephirah: "Lucifer"
+      strategicReveal: true
+      solarResonance: true
+    uniqueMod: "Lucifer_Solar_Core"
+    modSlots: ["Pistol_Barrel", "Solar_Core", "EMP_Coil", "Light_Focus"]
+
+Item:
+  # Sophia's Symphony — Resonance Cannon
+  Sophias_Symphony_Cannon:
+    displayName: "Sophia's Symphony"
+    description: "Resonance weapon that harmonizes all damage types. Adapts to enemy resistances. The synthesis of war."
+    category: "TechWeapon"
+    brand: "Custom"
+    rarity: "Legendary"
+    damage: 800
+    damageType: "Adaptive"
+    fireRate: 8.0
+    magazineSize: 40
+    adaptiveDamage: true
+    resonanceHarmony: true
+    sephirahAttunement: true
+    msnIntegration:
+      sephirah: "Sophia"
+      synthesisProtocol: true
+      adaptiveResonance: true
+    uniqueMod: "Sophia_Harmony_Core"
+    modSlots: ["Tech_Capacitor", "Resonance_Core", "Sephirah_Attuner", "Synthesis_Chamber"]

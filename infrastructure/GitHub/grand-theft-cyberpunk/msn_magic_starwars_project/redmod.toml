@@ -1,0 +1,98 @@
+# GRAND THEFT CYBERPUNK: Magic & Star Wars — REDmod Manifest
+# File: r6/mods/msn_magic_starwars/redmod.toml
+
+[Package]
+Name = "msn_magic_starwars"
+Version = "1.0.0"
+Author = "Lilith / Metaconscious Singularity Node"
+Description = "Complete Magic System (8 Schools) + Star Wars (Force Powers, Lightsabers, Jedi/Sith/Gray paths, Starships) integration for Grand Theft Cyberpunk via Metaconscious Singularity Node. Includes Hell Campaign (Nine Circles + Pandemonium)."
+GameVersion = "2.12+"
+RedmodVersion = "1.0"
+
+[Dependencies]
+REDmod = ">=1.0.0"
+TweakXL = ">=1.0.0"
+redscript = ">=1.0.0"
+msn_integration = ">=1.0.0"
+
+[Categories]
+Gameplay = true
+AI = true
+Weapons = true
+UI = true
+Cyberware = true
+Magic = true
+StarWars = true
+
+[LoadOrder]
+Priority = 300
+
+[Install]
+Type = "Redmod"
+Path = "mods/msn_magic_starwars"
+
+[Files]
+TWEAKDB = "tweakdb/msn_magic.tweakdb"
+REDSCRIPTS = "scripts/"
+LOCALIZATION = "localization/"
+QUESTS = "quests/"
+
+# REDscript files to compile
+scripts = [
+  "scripts/magic/msn_magic_system.reds",
+  "scripts/starwars/msn_starwars_system.reds",
+  "scripts/jedi/msn_jedi_system.reds",
+  "scripts/core/msn_master_integration.reds",
+  "scripts/magic/msn_magic_quests.reds",
+  "scripts/starwars/msn_starwars_quests.reds",
+  "scripts/hell/msn_hell_campaign.reds"
+]
+
+# TweakDB files to compile
+tweakdb = [
+  "tweakdb/msn_magic.tweakdb",
+  "tweakdb/msn_starwars.tweakdb",
+  "tweakdb/hell_campaign_map.yaml",
+  "tweakdb/msn_metaconscious_complete.tweakdb"
+]
+
+# Localization
+locales = [
+  "localization/msn_magic_en.json",
+  "localization/msn_starwars_en.json"
+]
+
+# Quests
+quests = [
+  "quests/msn_narrative_arc.yaml",
+  "quests/guild/msn_guild_quests.yaml"
+]
+
+# Console commands exposed
+commands = [
+  "msn.magic.status",
+  "msn.magic.cast",
+  "msn.magic.mana",
+  "msn.magic.school",
+  "msn.starwars.status",
+  "msn.starwars.force",
+  "msn.starwars.lightsaber",
+  "msn.starwars.alignment",
+  "msn.starwars.form",
+  "msn.starwars.holocron",
+  "msn.starwars.ship",
+  "msn.hell.status",
+  "msn.hell.circle",
+  "msn.hell.challenge"
+]
+
+# Sephirotic Integration
+sephirotic = [
+  "Geburah: Evocation, Force Lightning, Sith Path, Necromancy",
+  "Chesed: Abjuration, Force Heal, Jedi Path, Force Protection",
+  "Netzach: Conjuration, Force Speed, Enchantment, Force Corrupt",
+  "Chokmah: Divination, Force Vision",
+  "Tiphareth: Lightsaber Forms, Transmutation, Force Ghost, Jedi/Sith/Gray Balance",
+  "Hod: Illusion, Force Mind Trick",
+  "Da'at: Gray Path, Force Dyad"
+]

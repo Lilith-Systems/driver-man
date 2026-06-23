@@ -1,0 +1,42 @@
+{
+  "schema": "kairos.dream.report.v1",
+  "dream_at": "2026-06-21T09:36:22Z",
+  "trigger": "manual --force",
+  "sanctuary": "CLEAR (5750 MB VRAM free)",
+  "routing": {
+    "primary": "Tiferet",
+    "fragments_processed": 77,
+    "fragments_seeded_from": [
+      "kingdom_dream_2026-06-21.json",
+      "ouroboros-memories.json (last 80 Sephirotic batches)",
+      "cd_organization_manifest.json",
+      "github_local_organization.json"
+    ]
+  },
+  "consolidation": {
+    "axiomatic_written": 1,
+    "semantic_written": 1,
+    "duration_s": 0.02,
+    "dream_log_id": "Tiferet/77"
+  },
+  "axiomatic_summary": "Harmonic synthesis across kingdom intent, C/D organize, GitHub sync, and Sephirotic Ouroboros batches — throne + foundation + victory threads unified under Tiferet balance.",
+  "top_themes": [
+    "Kingdom build — Malkuth physical + Kether crown overlay",
+    "Driver Man 52 drivers / $352 treasury / zero-commission restaurants",
+    "GTC 100 shards + cp2077_mods + symbiosis bridge",
+    "C/D staging — Pub deduped, models on D:, RAM at /dev/shm/ai_staging",
+    "Teacher distillation in flight — hermes3:8b corpus growing",
+    "Netzach endurance — outreach, grants, war chest routing"
+  ],
+  "next_actions": [
+    "Continue teacher distillation (70+/5000 prompts)",
+    "Deploy trained lilith:latest after QLoRA lands",
+    "In-game verify msn.skill.status + msn.court.status",
+    "Fix timer golem path — now synced Lilith state -> RAM"
+  ],
+  "artifacts": {
+    "golem_db": "/home/tehlappy/Desktop/Lilith/state/golem_diary.db",
+    "narrative_state": "/mnt/d/Pub/narrative_state.json",
+    "prior_kingdom_dream": "/home/tehlappy/Desktop/Lilith/state/kingdom_dream_2026-06-21.json"
+  }
+}

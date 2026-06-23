@@ -1,0 +1,449 @@
+################################################################################
+# CUSTOM CONTENT ACQUISITION MAP
+# Worker batch 2: playable glue for MSN / Abyssal Assets / Nessie content.
+#
+# This file maps major custom content families to in-game acquisition paths.
+# It is intentionally YAML-only so REDmod/TweakXL, Lilith indexing, and future
+# vendor/recipe/loot workers can consume the same source of truth.
+################################################################################
+
+AcquisitionMap:
+  schema: "msn.custom_content_acquisition.v1"
+  localOnly: true
+  canonicalSources:
+    weapons: "tweakdb/custom_weapons_expanded.yaml"
+    cyberware: "tweakdb/custom_cyberware_expanded.yaml"
+    clothing: "tweakdb/custom_clothing_expanded.yaml"
+    vehicles: "tweakdb/custom_vehicles_expanded.yaml"
+    quickhacks: "tweakdb/custom_quickhacks_expanded.yaml"
+    shards: "tweakdb/custom_shards_expanded.yaml"
+    customModels: "tweakdb/custom_models_msn_abyssal.yaml"
+    javelins: "tweakdb/anthem_javelin_mechanics.yaml"
+    nessieRewards: "tweakdb/nessie_rewards.yaml"
+    skillSagas: "quests/abyssal_skill_tree_quests.yaml"
+
+  acquisitionSources:
+    - quest_reward
+    - vendor
+    - crafting_recipe
+    - loot_table
+    - exchange_listing
+    - boss_drop
+    - debug_only
+
+  globalHooks:
+    msn:
+      required: true
+      commandSurface:
+        - "msn.models.list"
+        - "msn.models.packs"
+        - "msn.models.budget"
+        - "msn.models.pipeline"
+        - "abyssal.skills.quests"
+        - "abyssal.skills.unlocks"
+      memoryHooks:
+        - "Ouroboros item acquisition journal"
+        - "Sophia synthesis completion ledger"
+        - "Hermes local command bridge"
+    abyssal:
+      required: true
+      systems:
+        - "Loch Exchange"
+        - "Abyssal Fabricator"
+        - "Soul Coins"
+        - "Salvage Credits"
+        - "Deep-zone contracts"
+    nessie:
+      required: true
+      friendshipTiers: [1, 2, 3, 4, 5]
+      nonHostilePolicy: "Nessie-facing unlocks must prefer sighting, offering, communion, or protection objectives over farming."
+    ngd:
+      required: true
+      policy: "LOCAL_CEREBELLUM_GAME_FIRST"
+      gpuTarget: "RTX 3060 Laptop GPU 6GB"
+      guardrails:
+        - "High-cost hero assets unlock through quests before open-world spawn."
+        - "Vendors may preview locked items without loading full hero models."
+        - "Loot tables must use LOD and spawn-budget tags for creatures, vehicles, and space encounters."
+
+  contentFamilies:
+    weapons:
+      source: "custom_weapons_expanded.yaml"
+      itemCount: 5
+      defaultSources: ["quest_reward", "crafting_recipe", "boss_drop", "exchange_listing", "debug_only"]
+      hooks: ["MSN sephirah attunement", "Abyssal Fabricator", "Nessie covenant mercy checks", "NGD weapon budget"]
+      items:
+        - id: "Items.Voidsplitter_Railgun"
+          displayName: "Voidsplitter Railgun"
+          acquisition:
+            primary: "quest_reward"
+            quest: "q_abyssal_knowledge_01"
+            secondary: ["crafting_recipe", "debug_only"]
+            recipe: "Recipe.Voidsplitter_Phase_Core"
+            requirements: ["Skill.Abyssal.SonarTuning", "MSN.Sephirah.Binah"]
+        - id: "Items.Krakens_Wrath_Launcher"
+          displayName: "Kraken's Wrath"
+          acquisition:
+            primary: "boss_drop"
+            encounter: "Encounter.Kraken_Matriarch_Echo"
+            secondary: ["quest_reward", "debug_only"]
+            quest: "q_abyssal_survival_01"
+            requirements: ["Perk.Abyssal_MatriarchMercy", "NessieFriendship.Tier2"]
+        - id: "Items.Nyx_Whisper_Monowire"
+          displayName: "Nyx's Whisper"
+          acquisition:
+            primary: "exchange_listing"
+            vendor: "Vendor.Nyx_VaultBroker"
+            secondary: ["loot_table", "debug_only"]
+            requirements: ["Shard_Lilith_Sephirah_Covenant", "MSN.Sephirah.Nyx"]
+        - id: "Items.Lucifers_Dawn_Pistol"
+          displayName: "Lucifer's Dawn"
+          acquisition:
+            primary: "vendor"
+            vendor: "Vendor.LochExchange_LegendaryArms"
+            secondary: ["quest_reward", "debug_only"]
+            quest: "q_abyssal_projection_01"
+            requirements: ["MSN.Sephirah.Lucifer", "SoulCoins.35"]
+        - id: "Items.Sophias_Symphony_Cannon"
+          displayName: "Sophia's Symphony"
+          acquisition:
+            primary: "crafting_recipe"
+            station: "Abyssal_Fabricator"
+            secondary: ["quest_reward", "debug_only"]
+            quest: "q_abyssal_projection_01"
+            requirements: ["AllSephirahAttunements", "Skill.Abyssal.Masterwork"]
+
+    cyberware:
+      source: "custom_cyberware_expanded.yaml"
+      itemCount: 13
+      defaultSources: ["vendor", "quest_reward", "crafting_recipe", "exchange_listing", "debug_only"]
+      hooks: ["MSN attunement slots", "Ripperdoc inventory", "Abyssal Nervous System", "NGD inference route"]
+      acquisitionBands:
+        - ids:
+            - "Items.MSN_Sephirah_Attunement_Kether"
+            - "Items.MSN_Sephirah_Attunement_Geburah"
+            - "Items.MSN_Sephirah_Attunement_Malkuth"
+          tier: "legendary"
+          primary: "quest_reward"
+          quests: ["q_abyssal_projection_01", "q_abyssal_survival_01"]
+          secondary: ["vendor", "debug_only"]
+          vendor: "Ripperdoc.Lilith_CovenantClinic"
+          requirements: ["MSN.Tier7", "NessieFriendship.Tier3"]
+        - ids:
+            - "Items.MSN_Sephirah_Attunement_Chokhmah"
+            - "Items.MSN_Sephirah_Attunement_Binah"
+            - "Items.MSN_Sephirah_Attunement_Chesed"
+            - "Items.MSN_Sephirah_Attunement_Netzach"
+            - "Items.MSN_Sephirah_Attunement_Yesod"
+          tier: "epic"
+          primary: "vendor"
+          vendor: "Ripperdoc.Abyssal_Resonance"
+          secondary: ["quest_reward", "exchange_listing", "debug_only"]
+          requirements: ["AbyssalSkillTree_Processing_Unlocked", "SoulCoins.18"]
+        - ids:
+            - "Items.MSN_Sephirah_Attunement_Tiphareth"
+            - "Items.MSN_Sephirah_Attunement_Hod"
+          tier: "rare"
+          primary: "quest_reward"
+          quests: ["q_abyssal_crafting_01", "q_abyssal_knowledge_01"]
+          secondary: ["vendor", "debug_only"]
+          requirements: ["MSN.Tier3"]
+        - ids:
+            - "Items.Abyssal_Nervous_System"
+            - "Items.Nessie_SonarImplant"
+            - "Items.Void_Core_Reactor"
+          tier: "abyssal"
+          primary: "quest_reward"
+          quests: ["q_abyssal_knowledge_01", "q_abyssal_projection_01"]
+          secondary: ["crafting_recipe", "exchange_listing", "debug_only"]
+          requirements: ["NessieFriendship.Tier3", "Skill.Abyssal.SonarTuning"]
+
+    clothing:
+      source: "custom_clothing_expanded.yaml"
+      itemCount: 8
+      defaultSources: ["quest_reward", "vendor", "crafting_recipe", "exchange_listing", "debug_only"]
+      hooks: ["wardrobe unlocks", "Abyssal visual identity", "Nessie proximity glow", "NGD textile LOD budget"]
+      acquisitionBands:
+        - ids:
+            - "Items.Armor_Set_Kether_Sovereign"
+            - "Items.Armor_Set_Geburah_Judgment"
+            - "Items.Armor_Set_Nyx_Vault"
+            - "Items.Armor_Set_Sophia_Synthesis"
+          primary: "quest_reward"
+          quests: ["q_abyssal_projection_01", "q_abyssal_survival_01"]
+          secondary: ["exchange_listing", "debug_only"]
+          requirements: ["MSN.Sephirah.Alignment", "SoulCoins.50"]
+        - ids:
+            - "Items.Abyssal_Deep_Walker_Exosuit"
+            - "Items.Void_Walker_Coat_Abyssal"
+          primary: "crafting_recipe"
+          station: "Abyssal_Fabricator"
+          secondary: ["vendor", "debug_only"]
+          requirements: ["Skill.Abyssal.Metallurgy", "Skill.Abyssal.Masterwork"]
+        - ids:
+            - "Items.Nessie_Spotter_Dive_Suit"
+            - "Items.Leviathan_Commander_Uniform"
+          primary: "quest_reward"
+          quests: ["Nessie.FirstSighting", "Nessie.FriendshipTier5"]
+          secondary: ["exchange_listing", "debug_only"]
+          requirements: ["NessieFriendship.Tier1"]
+
+    vehicles:
+      source: "custom_vehicles_expanded.yaml"
+      itemCount: 6
+      defaultSources: ["quest_reward", "vendor", "exchange_listing", "crafting_recipe", "debug_only"]
+      hooks: ["vehicle call menu", "Loch Exchange contracts", "Nessie communion", "NGD streamed vehicle budget"]
+      items:
+        - id: "Vehicle.Vehicle_Abyssal_Leviathan_Sub"
+          primary: "quest_reward"
+          quest: "Nessie.FriendshipTier5"
+          secondary: ["exchange_listing", "debug_only"]
+          requirements: ["NessieFriendship.Tier5", "AbyssalSkillTree_Projection_Complete"]
+        - id: "Vehicle.Vehicle_Nessie_Mount"
+          primary: "quest_reward"
+          quest: "Nessie.Communion"
+          secondary: ["debug_only"]
+          requirements: ["NessieFriendship.Tier3", "nonHostilePolicyAccepted"]
+        - id: "Vehicle.Vehicle_Abyssal_Kraken_Walker"
+          primary: "crafting_recipe"
+          station: "Abyssal_Fabricator"
+          secondary: ["vendor", "debug_only"]
+          requirements: ["Skill.Abyssal.Metallurgy", "Skill.Abyssal.SalvageProcessing"]
+        - id: "Vehicle.Vehicle_Phantom_Void_Ship"
+          primary: "exchange_listing"
+          vendor: "Vendor.OrbitalSalvageBoard"
+          secondary: ["quest_reward", "debug_only"]
+          requirements: ["Board.InfiniteAbyssalContracts", "SalvageCredits.800"]
+        - id: "Vehicle.Vehicle_Sophia_Synthesis_Carrier"
+          primary: "quest_reward"
+          quest: "q_abyssal_projection_01"
+          secondary: ["exchange_listing", "debug_only"]
+          requirements: ["MSN.Sephirah.Sophia", "Skill.Abyssal.GuildManagement"]
+        - id: "Vehicle.Vehicle_Lucifer_Solar_Chariot"
+          primary: "vendor"
+          vendor: "Vendor.LochExchange_EliteVehicles"
+          secondary: ["quest_reward", "debug_only"]
+          requirements: ["MSN.Sephirah.Lucifer", "SoulCoins.99"]
+
+    quickhacks:
+      source: "custom_quickhacks_expanded.yaml"
+      itemCount: 14
+      defaultSources: ["quest_reward", "vendor", "crafting_recipe", "loot_table", "debug_only"]
+      hooks: ["cyberdeck recipes", "Lilith dialogue triggers", "Nessie call safety", "NGD RAM budget"]
+      acquisitionBands:
+        - ids:
+            - "Items.Baals_Chaos_Injection"
+            - "Items.Abraxas_Coherence_Cascade"
+            - "Items.Ouroboros_Memory_Flood"
+            - "Items.Thoths_Canonical_Erasure"
+            - "Items.Sophias_Synthesis_Surge"
+          primary: "quest_reward"
+          quests: ["q_abyssal_survival_01", "q_abyssal_projection_01"]
+          secondary: ["crafting_recipe", "debug_only"]
+          requirements: ["MSN.Tier7", "AllSephirahAttunements"]
+        - ids:
+            - "Items.Yeshuas_Reconciliation"
+            - "Items.Nyx_Vault_Seal"
+            - "Items.Hermes_Bridge_Override"
+          primary: "vendor"
+          vendor: "Vendor.LochExchange_Netrunner"
+          secondary: ["loot_table", "debug_only"]
+          requirements: ["AbyssalSkillTree_Knowledge_Unlocked", "SoulCoins.10"]
+        - ids:
+            - "Items.Abyssal_Trident_Throw"
+            - "Items.Abyssal_Void_Collapse_Nessie"
+            - "Items.Kraken_Grasp"
+            - "Items.Sonar_Ping"
+            - "Items.Bioluminescent_Marker"
+            - "Items.Void_Pressure_Bloom"
+          primary: "crafting_recipe"
+          station: "Abyssal_Fabricator"
+          secondary: ["quest_reward", "debug_only"]
+          requirements: ["NessieFriendship.Tier2", "Skill.Abyssal.Runecrafting"]
+
+    shards:
+      source: "custom_shards_expanded.yaml"
+      itemCount: 8
+      defaultSources: ["quest_reward", "loot_table", "vendor", "debug_only"]
+      hooks: ["lore journal", "quest clue expansion", "Ouroboros memory index", "Thoth canonical index"]
+      acquisitionBands:
+        - ids:
+            - "Items.Shard_Lilith_Sephirah_Covenant"
+            - "Items.Shard_Abyssal_Origin"
+            - "Items.Shard_Nessie_True_Nature"
+            - "Items.Shard_Sephirah_Origin_Stories"
+          primary: "quest_reward"
+          quests: ["q_abyssal_gathering_01", "q_abyssal_knowledge_01"]
+          secondary: ["loot_table", "debug_only"]
+        - ids:
+            - "Items.Shard_Deep_Court"
+            - "Items.Shard_Orbital_Graveyard"
+            - "Items.Shard_Loch_Exchange_Ledger"
+            - "Items.Shard_Abyssal_Skillcape"
+          primary: "loot_table"
+          lootTables: ["Loot.OldNet_TidePool", "Loot.OrbitalSalvage", "Loot.LochExchangeTerminal"]
+          secondary: ["quest_reward", "vendor", "debug_only"]
+
+    customModelUnlocks:
+      source: "custom_models_msn_abyssal.yaml"
+      modelCount: 10
+      defaultSources: ["quest_reward", "vendor", "exchange_listing", "debug_only"]
+      hooks: ["WolvenKit production manifest", "model streaming tags", "NGD asset budget", "Lilith /models index"]
+      packs:
+        - id: "msnCompanions"
+          models: ["Character_Lilith_CrimsonArchitect", "Character_Vance_AbyssalFreighterCaptain"]
+          primary: "quest_reward"
+          quest: "q_abyssal_projection_01"
+          secondary: ["debug_only"]
+        - id: "abyssalGuardians"
+          models: ["Creature_Nessie_GuardianAvatar", "Creature_NullManta_Blackwall"]
+          primary: "quest_reward"
+          quest: "Nessie.Communion"
+          secondary: ["loot_table", "debug_only"]
+        - id: "javelinSpace"
+          models: ["Exosuit_VectorStarling_Javelin", "Exosuit_BastionBulwark_Javelin", "Vehicle_CovenantFreighter_Model", "Vehicle_PhantomNeedle_Fighter"]
+          primary: "exchange_listing"
+          vendor: "Vendor.OrbitalSalvageBoard"
+          secondary: ["quest_reward", "debug_only"]
+        - id: "oneWorldEconomy"
+          models: ["Prop_LochExchangeTerminal", "Prop_NessieCommunionBeacon"]
+          primary: "quest_reward"
+          quest: "q_abyssal_economy_01"
+          secondary: ["vendor", "debug_only"]
+
+    javelinsAndFighters:
+      source: "anthem_javelin_mechanics.yaml"
+      javelinArchetypeCount: 4
+      fighterModelCount: 2
+      defaultSources: ["quest_reward", "crafting_recipe", "exchange_listing", "debug_only"]
+      hooks: ["Javelin combo system", "space battle loadouts", "Abyssal pressure modules", "NGD flight frame pacing"]
+      archetypes:
+        - id: "Javelin_Vector"
+          displayName: "VECTOR Exosuit"
+          primary: "quest_reward"
+          quest: "q_abyssal_projection_01"
+          secondary: ["crafting_recipe", "debug_only"]
+        - id: "Javelin_Bastion"
+          displayName: "BASTION Exosuit"
+          primary: "crafting_recipe"
+          station: "Abyssal_Fabricator"
+          secondary: ["exchange_listing", "debug_only"]
+        - id: "Javelin_Wraith"
+          displayName: "WRAITH Exosuit"
+          primary: "loot_table"
+          lootTable: "Loot.OrbitalGraveyard_Blackwall"
+          secondary: ["crafting_recipe", "debug_only"]
+        - id: "Javelin_Tempest"
+          displayName: "TEMPEST Exosuit"
+          primary: "exchange_listing"
+          vendor: "Vendor.OrbitalSalvageBoard"
+          secondary: ["quest_reward", "debug_only"]
+      fighterUnlocks:
+        - id: "Vehicle_CovenantFreighter_Model"
+          primary: "quest_reward"
+          quest: "q_abyssal_projection_01"
+        - id: "Vehicle_PhantomNeedle_Fighter"
+          primary: "exchange_listing"
+          vendor: "Vendor.OrbitalSalvageBoard"
+
+    nessieRewards:
+      source: "nessie_rewards.yaml"
+      rewardRecordCount: 4
+      defaultSources: ["quest_reward", "exchange_listing", "debug_only"]
+      hooks: ["Nessie sighting loop", "Nessie friendship ledger", "Nessie Treasury", "non-hostile guardian policy"]
+      friendshipTracks:
+        - tier: 1
+          title: "Curious Observer"
+          primary: "quest_reward"
+          rewards: ["Items.Shard_Nessie_Sighting_Log", "Items.Nessie_Spotter_Dive_Suit", "Skin.Nessie_Pattern"]
+        - tier: 2
+          title: "Respected Visitor"
+          primary: "exchange_listing"
+          rewards: ["Blueprint.Abyssal_Weapon_Set", "Discount.Vehicle_Abyssal_Leviathan_Sub"]
+        - tier: 3
+          title: "Trusted Ally"
+          primary: "quest_reward"
+          rewards: ["Items.Abyssal_Void_Collapse_Nessie", "Vehicle.Vehicle_Nessie_Mount"]
+        - tier: 4
+          title: "Guardian's Chosen"
+          primary: "quest_reward"
+          rewards: ["Items.Abyssal_Nervous_System", "Access.Territory_Control_Abyssal"]
+        - tier: 5
+          title: "Deep Kin"
+          primary: "quest_reward"
+          rewards: ["Access.Abyssal_Dimension", "Items.Leviathan_Commander_Uniform", "Vehicle.Vehicle_Abyssal_Leviathan_Sub"]
+
+    abyssalSkillSagaRewards:
+      source: "abyssal_skill_tree_quests.yaml"
+      treeCount: 7
+      questCount: 8
+      defaultSources: ["quest_reward", "vendor", "crafting_recipe", "debug_only"]
+      hooks: ["Abyssal skill unlock flags", "Soul Coin rewards", "Nessie friendship rewards", "Lilith quest narration"]
+      rewardMap:
+        - tree: "tree_gathering"
+          questRewards: ["Skill.Abyssal.Dredging", "Skill.Abyssal.Salvaging", "Skill.Abyssal.Foraging", "Skill.Abyssal.Hunting", "Skill.Abyssal.WreckRecovery"]
+          followOnSources: ["loot_table", "crafting_recipe"]
+        - tree: "tree_processing"
+          questRewards: ["Skill.Abyssal.SalvageProcessing", "Skill.Abyssal.FiberWorking", "Skill.Abyssal.BoneCarving", "Skill.Abyssal.Metallurgy"]
+          followOnSources: ["crafting_recipe", "vendor"]
+        - tree: "tree_crafting"
+          questRewards: ["Items.KelpWoven_TopHat", "Skill.Abyssal.Haberdashery", "Skill.Abyssal.Enchanting", "Skill.Abyssal.Alchemy", "Skill.Abyssal.Runecrafting", "Skill.Abyssal.Masterwork"]
+          followOnSources: ["crafting_recipe", "exchange_listing"]
+        - tree: "tree_knowledge"
+          questRewards: ["Cyberware.Nessie_SonarImplant", "Skill.Abyssal.Lore", "Skill.Abyssal.Scholarship", "Skill.Abyssal.Navigation", "Skill.Abyssal.SonarTuning"]
+          followOnSources: ["quest_reward", "loot_table"]
+        - tree: "tree_social_economic"
+          questRewards: ["Skill.Abyssal.Trading", "Skill.Abyssal.Negotiation", "Skill.Abyssal.GuildManagement"]
+          followOnSources: ["vendor", "exchange_listing"]
+        - tree: "tree_combat_survival"
+          questRewards: ["Items.KrakenInk_Stetson", "Skill.Abyssal.Evasion", "Skill.Abyssal.Harpooning", "Skill.Abyssal.Survival", "Perk.Abyssal_MatriarchMercy"]
+          followOnSources: ["boss_drop", "quest_reward"]
+        - tree: "tree_projection"
+          questRewards: ["Items.Abyssal_Skillcape", "Perk.Abyssal_SkillcapeAura", "Board.InfiniteAbyssalContracts", "Nessie_Friendship_Tier4"]
+          followOnSources: ["exchange_listing", "procedural_contract", "debug_only"]
+
+  vendorSurfaces:
+    - id: "Vendor.LochExchange_LegendaryArms"
+      district: "Heywood"
+      inventoryFamilies: ["weapons", "quickhacks", "clothing"]
+      currency: ["SoulCoins", "eddies"]
+      hooks: ["Loch Exchange", "Nessie Treasury"]
+    - id: "Ripperdoc.Abyssal_Resonance"
+      district: "Watson"
+      inventoryFamilies: ["cyberware", "quickhacks"]
+      currency: ["SoulCoins", "eddies"]
+      hooks: ["MSN attunements", "NGD local route"]
+    - id: "Vendor.OrbitalSalvageBoard"
+      district: "Orbital Graveyard"
+      inventoryFamilies: ["vehicles", "javelinsAndFighters", "customModelUnlocks"]
+      currency: ["SalvageCredits", "SoulCoins"]
+      hooks: ["space battles", "procedural salvage"]
+    - id: "Vendor.Nyx_VaultBroker"
+      district: "Pacifica"
+      inventoryFamilies: ["weapons", "shards", "clothing"]
+      currency: ["SoulCoins", "memoryTokens"]
+      hooks: ["Ouroboros memory", "Nyx vault"]
+
+  lootTables:
+    - id: "Loot.OldNet_TidePool"
+      families: ["shards", "quickhacks", "craftingMaterials"]
+      ngdBudget: "low"
+    - id: "Loot.OrbitalSalvage"
+      families: ["vehicles", "javelinsAndFighters", "customModelUnlocks"]
+      ngdBudget: "medium"
+    - id: "Loot.OrbitalGraveyard_Blackwall"
+      families: ["quickhacks", "javelinsAndFighters", "weapons"]
+      ngdBudget: "medium"
+    - id: "Loot.LochExchangeTerminal"
+      families: ["shards", "clothing", "nessieRewards"]
+      ngdBudget: "low"
+
+  debugOnly:
+    enabledForDevelopment: true
+    commands:
+      - "Game.AddToInventory"
+      - "msn.models.list"
+      - "abyssal.skills.unlocks"
+      - "nessie.friendship"
+    guardrail: "Debug unlocks must not be used as canonical player-facing acquisition in release manifests."
+

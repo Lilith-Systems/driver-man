@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Grand Theft Cyberpunk
+Comment=The Metaconscious Singularity Node
+Exec="/home/tehlappy/.local/share/Steam/steamapps/common/Cyberpunk 2077/launch_modded.sh"
+Icon=steam_icon_1091500
+Terminal=false
+Type=Application
+Categories=Game;

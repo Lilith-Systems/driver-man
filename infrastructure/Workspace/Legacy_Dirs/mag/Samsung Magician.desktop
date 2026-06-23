@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Samsung Magician
+Exec=env "WINEPREFIX=/home/tehlappy/.wine" wine "C:\\\\users\\\\Public\\\\Desktop\\\\Samsung Magician.lnk"
+Type=Application
+StartupNotify=true
+Path=/home/tehlappy/.wine/drive_c/Program Files (x86)/Samsung/Samsung Magician
+Icon=BEE6_SamsungMagician.0
+StartupWMClass=samsungmagician.exe

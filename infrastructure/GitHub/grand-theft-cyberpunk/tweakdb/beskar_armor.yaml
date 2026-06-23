@@ -1,0 +1,11 @@
+
+Records:
+  Items.MandalorianBeskarArmor:
+    $type: Item_Record
+    displayName: "Mandalorian Beskar Armor"
+    quality: Quality.Legendary
+    tags: ["Armor", "Beskar"]
+    statModifiers:
+      - statType: BaseStats.Armor
+        modifierType: Additive
+        value: 500

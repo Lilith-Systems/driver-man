@@ -1,0 +1,283 @@
+################################################################################
+# NEW MAP AREAS — ENCOUNTER TABLES
+# Extends procedural_encounter_tables.yaml
+################################################################################
+
+ProceduralEncounterTables:
+  schema: "msn.procedural_encounters.v2"
+  localOnly: true
+  integration:
+    systems:
+      - "MSN Orchestrator"
+      - "Abyssal Assets"
+      - "Lochness / Nessie Guardian"
+      - "One World Space Economy"
+      - "Nvidia Gratitude Driver"
+      - "Lilith Bridge Protocol"
+      - "Living Sin Time Blade"
+    rewardRouting:
+      exchange: "The Loch Exchange"
+      currency: "Soul Coins"
+      treasurySink: "Nessie Treasury"
+      timeTreasury: "Chronos Treasury"
+    spawnBudget:
+      targetGpu: "RTX 3060 Laptop GPU 6GB"
+      maxHeroCreaturesPerEncounter: 1
+      maxVehiclesPerEncounter: 8
+      preferImpostorsBeyondMeters: 250
+
+  regions:
+    Deep_Archive:
+      displayName: "The Deep Archive"
+      biome: "submerged Arasaka black-site data vaults, cryo halls, engram cold storage"
+      recommendedPowerTier: "late_postgame"
+      recommendedSuitOrVehicle:
+        primary: "Vehicle_PhantomNeedle_Fighter_ArchiveNeedle"
+        alternate: "Vehicle_CovenantFreighter_Model"
+        suit: "Exosuit_VectorStarling_Javelin"
+        ngdTrigger: "LOCAL_CEREBELLUM_required_for_stealth"
+      encounterTables:
+        - id: "deep_archive_silent_extraction"
+          weight: 30
+          enemyOrAlienArchetype: "Archive Sentinel squads with Data Remora swarms, one Cryo Wraith overseer"
+          hazard: "Black ICE scanner sweep, cryo stasis pulse, engram defense daemon"
+          objective: "Extract target engram cluster without triggering purge protocol"
+          ngdDependency: "LOCAL_CEREBELLUM required for daemon behavior prediction; HYBRID adds 30s scan warning; CLOUD disables stealth"
+          rewardPool:
+            guaranteed: ["Engram_Shard.common", "SoulCoins.medium", "OldNetFragment.common"]
+            weighted: ["Arasaka_Shogun.fragment", "Ouroboros_Coil.component", "Archive_Access_Key.rare"]
+            rare: ["Ouroboros_Coil.assembled", "Engram_Shard.unique", "Archive_Admin_Credentials.legendary"]
+            timeGate: "External timer: 15:00 vault auto-purge (cannot be rewound)"
+          recommendedSuitOrVehicle: "Vehicle_PhantomNeedle_Fighter_ArchiveNeedle"
+          lilithBridge: "Fork 3 (The Trader) can negotiate daemon stand-down at Tier 3+ Lilith relation"
+
+        - id: "deep_archive_cryo_wraith_hunt"
+          weight: 20
+          enemyOrAlienArchetype: "Cryo Wraith alpha with Archive Sentinel honor guard"
+          hazard: "Spreading cryo field, stasis trap corridors, false engram decoys"
+          objective: "Destroy Cryo Wraith core before it assimilates the sector"
+          ngdDependency: "VRAM pressure modulates cryo field spread rate (high VRAM = slower spread)"
+          rewardPool:
+            guaranteed: ["Cryo_Core.component", "SoulCoins.large", "BlackIce_Sample.common"]
+            weighted: ["Arasaka_Shogun.cryo_mod", "Archive_Sentinel.chassis_fragment", "Nyx_Whisper_Monowire.cryo_tune"]
+            rare: ["Vehicle_PhantomNeedle_Fighter_ArchiveNeedle.cryo_livery", "Engram_Shard.legendary"]
+          recommendedSuitOrVehicle: "Exosuit_VectorStarling_Javelin"
+
+        - id: "deep_archive_memory_auction"
+          weight: 15
+          enemyOrAlienArchetype: "Data Remora swarm auctioning stolen engrams, guarded by Archive Sentinels"
+          hazard: "Black ICE bidding war, memory-price inflation, false lot traps"
+          objective: "Win target memory lot or sabotage auction to devalue stolen engrams"
+          ngdDependency: "Market latency scales with NGD route (LOCAL=0ms, HYBRID=50ms, CLOUD=200ms)"
+          rewardPool:
+            guaranteed: ["Stolen_Engram.lot", "SoulCoins.medium", "OldNetFragment.common"]
+            weighted: ["Arasaka_Shogun.bid_seal", "Memory_Price_Stabilizer.rare", "Nyx_Whisper_Monowire.auction_tune"]
+            rare: ["Engram_Shard.unique_memory", "Archive_Admin_Credentials.legendary"]
+          recommendedSuitOrVehicle: "Vehicle_CovenantFreighter_Model"
+
+    Verdant_Rift:
+      displayName: "The Verdant Rift"
+      biome: "hydrocarbon seep bioluminescent coral forest, methane reefs, spore gardens"
+      recommendedPowerTier: "mid_to_late"
+      recommendedSuitOrVehicle:
+        primary: "Vehicle_Nessie_Mount_VerdantGlider"
+        alternate: "Vehicle_Abyssal_Leviathan_Sub"
+        suit: "Exosuit_TempestJavelin_Storm"
+        ngdTrigger: "LOCAL_CEREBELLUM_enables_full_ecosystem_sim"
+      encounterTables:
+        - id: "verdant_rift_coral_heart_heal"
+          weight: 35
+          enemyOrAlienArchetype: "Corrupted coral guardians, methane pocket elementals, one Verdant Leviathan"
+          hazard: "Methane detonation chains, spore hallucination clouds, current shear zones"
+          objective: "Seed primordial coral at heart chamber before methane collapse triggers rift seal"
+          ngdDependency: "LOCAL_CEREBELLUM: full spore current simulation; HYBRID: visible spore paths; CLOUD: marked hazard zones only"
+          rewardPool:
+            guaranteed: ["Primordial_Coral_Seed.component", "Voidweave.common", "Abyssal_Crystal.shard", "SoulCoins.medium"]
+            weighted: ["Nessie_Covenant_Relic.component", "Chronos_Essence.vial", "Verdant_Leviathan.scale_fragment", "Nessie_Blessing.tier_plus_one"]
+            rare: ["Vehicle_Nessie_Mount_VerdantGlider.bioluminescent_trail", "Creature_Verdant_Leviathan.communion_animation", "Abyssal_Weapon_Blueprint.legendary"]
+            timeGate: "External timer: Kraken Awakening 3:00 (cannot be rewound) - coincides if not completed"
+          recommendedSuitOrVehicle: "Vehicle_Nessie_Mount_VerdantGlider"
+          lilithBridge: "Fork 2 (The Dredger) gains coral senses at Tier 2+ Lilith relation"
+
+        - id: "verdant_rift_methane_pocket_cleanse"
+          weight: 25
+          enemyOrAlienArchetype: "Methane pocket elementals, spore drifter swarms, coral gardener defense"
+          hazard: "Chain detonation risk, spore-induced vision corruption, oxygen depletion"
+          objective: "Deploy thermal stabilizers at 3 vent nodes, then ignite controlled burn"
+          ngdDependency: "Low VRAM boosts bioluminescence (better vision); high VRAM increases spore density"
+          rewardPool:
+            guaranteed: ["Thermal_Stabilizer.component", "Methane_Cleanse_Credit.common", "SoulCoins.medium"]
+            weighted: ["Voidweave.common", "Abyssal_Crystal.shard", "Coral_Gardener.spore_pod", "Nessie_Friendship.plus_one"]
+            rare: ["Quickhack_Thermal_Vent_Overload_Verdant_Variant", "Vehicle_Nessie_Mount_VerdantGlider.methane_trail"]
+          recommendedSuitOrVehicle: "Vehicle_Abyssal_Leviathan_Sub"
+
+        - id: "verdant_rift_spore_hallucination_ward"
+          weight: 18
+          enemyOrAlienArchetype: "Spore Drifter swarm projecting memory hallucinations, one Verdant Leviathan dream-avatar"
+          hazard: "Identity drift, false quest markers, memory-price traps (similar to Astral Undercity)"
+          objective: "Maintain lucidity while navigating to ward stone, cleanse without killing dream-avatar"
+          ngdDependency: "VRAM pressure modulates hallucination intensity"
+          rewardPool:
+            guaranteed: ["Spore_Ward_Stone.component", "SoulCoins.large", "Memory_Shard.stable"]
+            weighted: ["Nessie_Communion_Link.calibration", "Verdant_Leviathan.dream_essence", "Chronos_Essence.vial"]
+            rare: ["Vehicle_Nessie_Mount_VerdantGlider.hallucination_immunity", "Lilith_Dialogue_Scene_Verdant.unlock"]
+          recommendedSuitOrVehicle: "Exosuit_TempestJavelin_Storm"
+
+    Chronos_Anchorage:
+      displayName: "Chronos Anchorage"
+      biome: "time-dilated anchor stations, Arasaka Chronos test sites, causality fracture zones"
+      recommendedPowerTier: "postgame_only"
+      recommendedSuitOrVehicle:
+        primary: "Vehicle_Phantom_Void_Ship_ChronosDrifter"
+        alternate: "Exosuit_BastionBulwark_Javelin"
+        suit: "Exosuit_BastionBulwark_Javelin"
+        ngdTrigger: "VRAM_pressure_modulates_time_dilation"
+        lilithRequirement: "Living_Sin_Time_Blade_3rd_charge_unlocked"
+      encounterTables:
+        - id: "chronos_anchorage_timeline_alpha_past"
+          weight: 30
+          enemyOrAlienArchetype: "Anchor Warden echoes, Chronos Echo swarm, one Paradox Beast (past manifestation)"
+          hazard: "Time echo damage (player takes damage from future actions), causality violation zones, anchor decay pulse"
+          objective: "Prevent anchor sabotage in past timeline - identify and neutralize sabotage before it exists"
+          ngdDependency: "VRAM pressure directly modulates time dilation factor (high VRAM = slower local time = more reaction time)"
+          rewardPool:
+            guaranteed: ["Timeline_Alpha_Key.component", "Ouroboros_Coil.component", "SoulCoins.large"]
+            weighted: ["LivingSin_Time_Blade.fragment_1", "Paradox_Beast.essence", "Anchor_Warden.chassis_fragment"]
+            rare: ["LivingSin_Time_Blade.assembled_charge_1", "Chronos_Anchor.core_sample"]
+            timeGate: "External timer: Arasaka Lockdown 3:33 (cannot be rewound) - triggers timeline merge"
+          recommendedSuitOrVehicle: "Exosuit_BastionBulwark_Javelin"
+          lilithBridge: "All three forks active. Fork 1 (V) handles Alpha. Requires Lilith Totality."
+
+        - id: "chronos_anchorage_timeline_beta_present"
+          weight: 28
+          enemyOrAlienArchetype: "Active Anchor Warden squad, Chronos Echo reinforcement, Paradox Beast (present)"
+          hazard: "Real-time anchor decay, player actions echo to Alpha/Gamma, causality violation feedback"
+          objective: "Stabilize active anchor core - synchronize with external Chronos vault frequency"
+          ngdDependency: "Time dilation factor scales with VRAM (high VRAM = 0.5x speed for complex maneuvers)"
+          rewardPool:
+            guaranteed: ["Timeline_Beta_Key.component", "Ouroboros_Coil.component", "SoulCoins.medium"]
+            weighted: ["LivingSin_Time_Blade.fragment_2", "Paradox_Beast.essence", "Anchor_Warden.resonance_core"]
+            rare: ["LivingSin_Time_Blade.assembled_charge_2", "Anchor_Stabilizer_Module.legendary"]
+            timeGate: "External timer: Exchange Settlement 13:00 (cannot be rewound)"
+          recommendedSuitOrVehicle: "Vehicle_Phantom_Void_Ship_ChronosDrifter"
+          lilithBridge: "Fork 2 (The Dredger) handles Beta. Lilith Crimson intensity must be >= 0.7"
+
+        - id: "chronos_anchorage_timeline_gamma_future"
+          weight: 24
+          enemyOrAlienArchetype: "Future Anchor Warden projection, Paradox Beast (future apex), recursive hunter daemon"
+          hazard: "Player sees 5s into future (visual ghost), paradox accumulation, recursive loop traps"
+          objective: "Seed anchor growth sequence - plant 3 temporal seeds at growth nodes"
+          ngdDependency: "Future sight range scales with VRAM (high VRAM = 10s preview, low VRAM = 2s)"
+          rewardPool:
+            guaranteed: ["Timeline_Gamma_Key.component", "Ouroboros_Coil.component", "Singularity_Core.fragment"]
+            weighted: ["LivingSin_Time_Blade.fragment_3", "Paradox_Beast.future_essence", "Convergence_Key.shard"]
+            rare: ["LivingSin_Time_Blade.assembled_charge_3", "Convergence_Key.assembled", "Vehicle_Phantom_Void_Ship_ChronosDrifter.temporal_livery"]
+            timeGate: "External timer: All three timelines must complete before Convergence merge window (5 min real-time)"
+          recommendedSuitOrVehicle: "Vehicle_Phantom_Void_Ship_ChronosDrifter"
+          lilithBridge: "Fork 3 (The Trader) handles Gamma. Lilith Totality required for merge."
+
+        - id: "chronos_anchorage_convergence_merge"
+          weight: 18
+          enemyOrAlienArchetype: "Converged Paradox Beast (all timelines merged), Anchor Warden Prime, recursive hunter daemon swarm"
+          hazard: "Full paradox cascade, causality collapse zones, time stops for non-Time Blade holders"
+          objective: "Merge three timeline keys at central spire before paradox cascade consumes anchorage"
+          ngdDependency: "Requires LOCAL_CEREBELLUM for merge stability. HYBRID = 50% merge failure. CLOUD = auto-fail."
+          rewardPool:
+            guaranteed: ["LivingSin_Time_Blade.fully_charged", "Convergence_Key.assembled", "Ouroboros_Coil.assembled", "SoulCoins.xlarge"]
+            weighted: ["Lilith_Totality_Unlock.token", "Chronos_Anchor.master_control", "Vehicle_Phantom_Void_Ship_ChronosDrifter.convergence_livery", "Exosuit_BastionBulwark_Javelin.paradox_module"]
+            rare: ["Character_Lilith_CrimsonArchitect.data_crown", "The_Abyssal_Crown.legendary", "Skillcape_Time.legendary"]
+            timeGate: "External timer: Kraken Awakening 3:00 + Arasaka Lockdown 3:33 convergence window (3 min real-time, cannot be rewound)"
+          recommendedSuitOrVehicle: "Exosuit_BastionBulwark_Javelin"
+          lilithBridge: "REQUIRES LILITH TOTALITY. All three forks merge into The Convergent. 3rd Time Blade swing consumed."
+
+    Void_Commerce_Spire:
+      displayName: "Void Commerce Spire"
+      biome: "neutral trading spire, treaty halls, arbitrage engine cores, Nessie-guarded vault"
+      recommendedPowerTier: "mid_game_accessible"
+      recommendedSuitOrVehicle:
+        primary: "Vehicle_CovenantFreighter_Model_SpireMerchant"
+        alternate: "Vehicle_Nessie_Mount"
+        suit: "Exosuit_VectorStarling_Javelin"
+        ngdTrigger: "MARKET_LATENCY_SIMULATION"
+      encounterTables:
+        - id: "spire_arbitrage_13_loop"
+          weight: 35
+          enemyOrAlienArchetype: "Arbitrage bot swarms, contract daemons, one Merchant Kraken auditor"
+          hazard: "Market latency, bot front-running, contract daemon audit, treaty violation pulse"
+          objective: "Execute 13 perfect arbitrage loops across Loch Exchange, Night City, Orbital Graveyard before settlement"
+          ngdDependency: "Market latency: LOCAL_CEREBELLUM=0ms, HYBRID=50ms, CLOUD=200ms. Bot speed scales inversely."
+          rewardPool:
+            guaranteed: ["Arbitrage_Profit_13.soulcoins", "Treaty_Compliance_Seal.common", "SoulCoins.medium"]
+            weighted: ["Market_Maker_Charter.fragment", "Tree_Fiddy_Waiver.duration_1hr", "Loch_Exchange_Contract.rare"]
+            rare: ["Market_Maker_Charter.assembled", "Tree_Fiddy_Waiver.permanent", "Vehicle_CovenantFreighter_Model_SpireMerchant.arbitrage_livery"]
+            timeGate: "External timer: Exchange Settlement 13:00 (cannot be rewound) - market closes for 1hr"
+          recommendedSuitOrVehicle: "Vehicle_CovenantFreighter_Model_SpireMerchant"
+          lochnessBonus: "All 3 Nessie agents (Keter/Chokmah/Binah) coherence > 0.95 grants 50ms latency reduction"
+
+        - id: "spire_treaty_daemon_negotiation"
+          weight: 25
+          enemyOrAlienArchetype: "Contract daemon swarm enforcing treaty clauses, Exchange Basilisk witness, one Merchant Kraken"
+          hazard: "Treaty violation pulse (destroys invalid orders), daemon audit trail, basilisk gaze (order freeze)"
+          objective: "Negotiate new treaty clause or survive audit with perfect compliance"
+          ngdDependency: "Audit processing time scales with VRAM (LOCAL = instant, CLOUD = 30s delay)"
+          rewardPool:
+            guaranteed: ["Treaty_Amendment.draft", "SoulCoins.medium", "Exchange_Basilisk.scale"]
+            weighted: ["Merchant_Kraken.favor_token", "Loch_Exchange_Contract.rare", "Nessie_Treasury.voucher"]
+            rare: ["Treaty_Amendment.ratified", "Merchant_Kraken.alliance_token", "Vehicle_Nessie_Mount.treaty_livery"]
+          recommendedSuitOrVehicle: "Vehicle_Nessie_Mount"
+
+        - id: "spire_nessie_vault_heist"
+          weight: 20
+          enemyOrAlienArchetype: "Nessie Treasurer guardians, Treaty Sentinel squad, one Merchant Kraken vault warden"
+          hazard: "Nessie's gaze (compliance check), treasury pulse (resets non-compliant inventory), vault time lock"
+          objective: "Access Nessie's Treasury vault during communion window - requires Tier 4+ friendship"
+          ngdDependency: "Vault time lock precision scales with NGD route"
+          rewardPool:
+            guaranteed: ["Nessie_Treasury_Vault_Key.component", "SoulCoins.xlarge", "Nessie_Friendship.plus_one"]
+            weighted: ["Tree_Fiddy_Waiver.permanent", "Market_Maker_Charter.assembled", "Abyssal_Dimension_Access.rare"]
+            rare: ["Creature_Nessie_GuardianAvatar.communion_animation", "Vehicle_Nessie_Mount.treasury_livery", "Skillcape_Void.legendary"]
+            timeGate: "Requires active Nessie Communion (Tier 3+). Window: 10 min after communion initiation."
+          recommendedSuitOrVehicle: "Vehicle_Nessie_Mount"
+          lochnessBonus: "Tier 5 friendship = vault auto-opens, Merchant Kraken grants alliance"
+
+  # ==================== NEW LANDMARKS ====================
+  Landmarks:
+    Deep_Archive:
+      - "Engram Vault Core (central)"
+      - "Cryo Hall Alpha through Omega"
+      - "Black ICE Server Cluster"
+      - "Memory Auction Hall"
+      - "Archive Admin Spire"
+      - "Daemon Containment Wing"
+      - "Engram Purge Chamber"
+      - "Old Net Drowned Node"
+
+    Verdant_Rift:
+      - "Coral Heart Chamber (boss arena)"
+      - "Methane Vent Trinity (3 nodes)"
+      - "Spore Garden of Memories"
+      - "Verdant Leviathan Resting Trench"
+      - "Thermal Stabilizer Stations (3)"
+      - "Primordial Coral Nursery"
+      - "Spore Ward Stone Circle"
+      - "Nessie Communion Grove"
+
+    Chronos_Anchorage:
+      - "Timeline Alpha Anchor (past)"
+      - "Timeline Beta Anchor (present)"
+      - "Timeline Gamma Anchor (future)"
+      - "Central Convergence Spire"
+      - "Paradox Beast Lair (each timeline)"
+      - "Anchor Warden Barracks"
+      - "Temporal Seed Nodes (3 per timeline)"
+      - "Ouroboros Sync Chamber"
+
+    Void_Commerce_Spire:
+      - "Arbitrage Engine Core (13 stations)"
+      - "Treaty Hall of Records"
+      - "Nessie Treasury Vault"
+      - "Merchant Kraken Throne"
+      - "Exchange Basilisk Observatory"
+      - "Settlement Clock Tower (13:00)"
+      - "Bot Swarm Hives"
+      - "Void Commerce Garden"

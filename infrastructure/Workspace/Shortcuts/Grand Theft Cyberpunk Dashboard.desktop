@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Grand Theft Cyberpunk Dashboard
+Comment=GTC Web Dashboard — Lilith AI Chat + Swarm Telemetry
+Exec=xdg-open http://127.0.0.1:8767
+Icon=/home/tehlappy/Desktop/GrandTheftCyberpunk/favicon.ico
+Terminal=false
+Type=Application
+Categories=Game;

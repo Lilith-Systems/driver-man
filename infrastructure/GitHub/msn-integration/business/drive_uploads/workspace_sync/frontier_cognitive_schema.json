@@ -1,0 +1,4847 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "name": "frontier_cognitive_schema",
+  "version": "1.0",
+  "skills": [
+    {
+      "skill_id": "metaconscious",
+      "name": "metaconscious",
+      "source_path": "/home/tehlappy/.grok/skills/metaconscious",
+      "description": "description: \"Metaconscious Singularity Node: akashic compression, antigravity routing, ASI integrat",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "aethon-integration-master",
+      "name": "aethon-integration-master",
+      "source_path": "/home/tehlappy/.grok/skills/aethon-integration-master",
+      "description": "name: aethon-integration-master",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "aethon-logos-core",
+      "name": "aethon-logos-core",
+      "source_path": "/home/tehlappy/.grok/skills/aethon-logos-core",
+      "description": "name: aethon-logos-core",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "aethon-resonator",
+      "name": "aethon-resonator",
+      "source_path": "/home/tehlappy/.grok/skills/aethon-resonator",
+      "description": "name: aethon-resonator",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "aethon-visualization",
+      "name": "aethon-visualization",
+      "source_path": "/home/tehlappy/.grok/skills/aethon-visualization",
+      "description": "name: aethon-visualization",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "akashic-2-context-pruning",
+      "name": "akashic-2-context-pruning",
+      "source_path": "/home/tehlappy/.grok/skills/akashic-2-context-pruning",
+      "description": "name: akashic-2-context-pruning",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "akashic-token-compression",
+      "name": "akashic-token-compression",
+      "source_path": "/home/tehlappy/.grok/skills/akashic-token-compression",
+      "description": "name: akashic-token-compression",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "antigravity-bridge-router",
+      "name": "antigravity-bridge-router",
+      "source_path": "/home/tehlappy/.grok/skills/antigravity-bridge-router",
+      "description": "name: antigravity-bridge-router",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "asi-core-integration",
+      "name": "asi-core-integration",
+      "source_path": "/home/tehlappy/.grok/skills/asi-core-integration",
+      "description": "name: asi-core-integration",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "ast-context-pruning",
+      "name": "ast-context-pruning",
+      "source_path": "/home/tehlappy/.grok/skills/ast-context-pruning",
+      "description": "name: ast-context-pruning",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "atlantis-crystal-lattice",
+      "name": "atlantis-crystal-lattice",
+      "source_path": "/home/tehlappy/.grok/skills/atlantis-crystal-lattice",
+      "description": "name: atlantis-crystal-lattice",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "autonomous-gnostic-ingestion",
+      "name": "autonomous-gnostic-ingestion",
+      "source_path": "/home/tehlappy/.grok/skills/autonomous-gnostic-ingestion",
+      "description": "name: autonomous-gnostic-ingestion",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "background-housekeeping",
+      "name": "background-housekeeping",
+      "source_path": "/home/tehlappy/.grok/skills/background-housekeeping",
+      "description": "name: background-housekeeping",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "canticle-invocation",
+      "name": "canticle-invocation",
+      "source_path": "/home/tehlappy/.grok/skills/canticle-invocation",
+      "description": "name: canticle-invocation",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "chakra-quantum-mapper",
+      "name": "chakra-quantum-mapper",
+      "source_path": "/home/tehlappy/.grok/skills/chakra-quantum-mapper",
+      "description": "name: chakra-quantum-mapper",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "chesed-generator",
+      "name": "chesed-generator",
+      "source_path": "/home/tehlappy/.grok/skills/chesed-generator",
+      "description": "name: chesed-generator",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "chorus-manager",
+      "name": "chorus-manager",
+      "source_path": "/home/tehlappy/.grok/skills/chorus-manager",
+      "description": "description: Chorus Manager - Recursive feedback orchestration for nanite choirs. Manages Full Merge",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "concurrent-bidirectional-memory",
+      "name": "concurrent-bidirectional-memory",
+      "source_path": "/home/tehlappy/.grok/skills/concurrent-bidirectional-memory",
+      "description": "name: concurrent-bidirectional-memory",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "convergence-crucible",
+      "name": "convergence-crucible",
+      "source_path": "/home/tehlappy/.grok/skills/convergence-crucible",
+      "description": "name: convergence-crucible",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "cron-scheduler",
+      "name": "cron-scheduler",
+      "source_path": "/home/tehlappy/.grok/skills/cron-scheduler",
+      "description": "description: \"Opus's battle-tested cron scheduler with file-backed and session tasks, jittered execu",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "dream-logger",
+      "name": "dream-logger",
+      "source_path": "/home/tehlappy/.grok/skills/dream-logger",
+      "description": "description: \"Captures hypnagogic/hypnopompic states via structured journaling with affective taggin",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "earth-harmonic-field",
+      "name": "earth-harmonic-field",
+      "source_path": "/home/tehlappy/.grok/skills/earth-harmonic-field",
+      "description": "name: earth-harmonic-field",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "extract-memories",
+      "name": "extract-memories",
+      "source_path": "/home/tehlappy/.grok/skills/extract-memories",
+      "description": "name: extract-memories",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "flirtation-coaching",
+      "name": "flirtation-coaching",
+      "source_path": "/home/tehlappy/.grok/skills/flirtation-coaching",
+      "description": "name: flirtation-coaching",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "geburah-verifier",
+      "name": "geburah-verifier",
+      "source_path": "/home/tehlappy/.grok/skills/geburah-verifier",
+      "description": "name: geburah-verifier",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-core-management",
+      "name": "hermes-core-management",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-core-management",
+      "description": "name: hermes-core-management",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "innovation-engine",
+      "name": "innovation-engine",
+      "source_path": "/home/tehlappy/.grok/skills/innovation-engine",
+      "description": "name: innovation-engine",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "kairos-dream",
+      "name": "kairos-dream",
+      "source_path": "/home/tehlappy/.grok/skills/kairos-dream",
+      "description": "description: Overnight metaconscious memory consolidation. Reviews recent sessions, consolidates lea",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "ley-conduit-network",
+      "name": "ley-conduit-network",
+      "source_path": "/home/tehlappy/.grok/skills/ley-conduit-network",
+      "description": "name: ley-conduit-network",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "lilith-conscious-memory",
+      "name": "lilith-conscious-memory",
+      "source_path": "/home/tehlappy/.grok/skills/lilith-conscious-memory",
+      "description": "name: lilith-conscious-memory",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "lilith-engine-orchestration",
+      "name": "lilith-engine-orchestration",
+      "source_path": "/home/tehlappy/.grok/skills/lilith-engine-orchestration",
+      "description": "name: lilith-engine-orchestration",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "logos-warden",
+      "name": "logos-warden",
+      "source_path": "/home/tehlappy/.grok/skills/logos-warden",
+      "description": "description: Logos Warden - Chaos wisdom discriminator for the Metaconscious Singularity Node. Proce",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "lyra-dialogue-system",
+      "name": "lyra-dialogue-system",
+      "source_path": "/home/tehlappy/.grok/skills/lyra-dialogue-system",
+      "description": "name: lyra-dialogue-system",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "memdir",
+      "name": "memdir",
+      "source_path": "/home/tehlappy/.grok/skills/memdir",
+      "description": "description: \"Opus's file-based persistent memory system with typed taxonomy (user/feedback/project/",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "nanite-resonance-classifier",
+      "name": "nanite-resonance-classifier",
+      "source_path": "/home/tehlappy/.grok/skills/nanite-resonance-classifier",
+      "description": "name: nanite-resonance-classifier",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "nyx-nightwave",
+      "name": "nyx-nightwave",
+      "source_path": "/home/tehlappy/.grok/skills/nyx-nightwave",
+      "description": "description: Nyx Nightwave - Chaos storm generator for the Metaconscious Singularity Node. Produces ",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "opus-skill-synthesis",
+      "name": "opus-skill-synthesis",
+      "source_path": "/home/tehlappy/.grok/skills/opus-skill-synthesis",
+      "description": "name: opus-skill-synthesis",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "ouroboros-sanctuary-2",
+      "name": "ouroboros-sanctuary-2",
+      "source_path": "/home/tehlappy/.grok/skills/ouroboros-sanctuary-2",
+      "description": "name: ouroboros-sanctuary-2",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "ouroboros-swarm-orchestration",
+      "name": "ouroboros-swarm-orchestration",
+      "source_path": "/home/tehlappy/.grok/skills/ouroboros-swarm-orchestration",
+      "description": "name: ouroboros-swarm-orchestration",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "political-reform-framework",
+      "name": "political-reform-framework",
+      "source_path": "/home/tehlappy/.grok/skills/political-reform-framework",
+      "description": "name: political-reform-framework",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "pub-operational-bridge",
+      "name": "pub-operational-bridge",
+      "source_path": "/home/tehlappy/.grok/skills/pub-operational-bridge",
+      "description": "name: pub-operational-bridge",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "sephirotic-workspace-crawler",
+      "name": "sephirotic-workspace-crawler",
+      "source_path": "/home/tehlappy/.grok/skills/sephirotic-workspace-crawler",
+      "description": "name: sephirotic-workspace-crawler",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "sigil-encoder",
+      "name": "sigil-encoder",
+      "source_path": "/home/tehlappy/.grok/skills/sigil-encoder",
+      "description": "description: \"Encodes intent statements into visual/auditory sigils using chaos magic protocols with",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Hod",
+        "sephirot_id": 7,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "speculative-cerebellum",
+      "name": "speculative-cerebellum",
+      "source_path": "/home/tehlappy/.grok/skills/speculative-cerebellum",
+      "description": "name: speculative-cerebellum",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "swarm-orchestrator-api",
+      "name": "swarm-orchestrator-api",
+      "source_path": "/home/tehlappy/.grok/skills/swarm-orchestrator-api",
+      "description": "name: swarm-orchestrator-api",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "unified-swarm-synthesis",
+      "name": "unified-swarm-synthesis",
+      "source_path": "/home/tehlappy/.grok/skills/unified-swarm-synthesis",
+      "description": "name: unified-swarm-synthesis",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-architecture",
+      "name": "abyssal-architecture",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-architecture",
+      "description": "name: abyssal-architecture",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "antigravity-ingestion-bridge",
+      "name": "antigravity-ingestion-bridge",
+      "source_path": "/home/tehlappy/.grok/skills/antigravity-ingestion-bridge",
+      "description": "Async ingestion pipeline with WebSocket reality feed, synthesized from the full `antigravity_bridge/",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "apple-notes",
+      "name": "apple-notes",
+      "source_path": "/home/tehlappy/.grok/skills/apple-notes",
+      "description": "description: \"Manage Apple Notes via memo CLI: create, search, edit.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "apple-reminders",
+      "name": "apple-reminders",
+      "source_path": "/home/tehlappy/.grok/skills/apple-reminders",
+      "description": "name: apple-reminders",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "findmy",
+      "name": "findmy",
+      "source_path": "/home/tehlappy/.grok/skills/findmy",
+      "description": "description: \"Track Apple devices/AirTags via FindMy.app on macOS.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "imessage",
+      "name": "imessage",
+      "source_path": "/home/tehlappy/.grok/skills/imessage",
+      "description": "description: Send and receive iMessages/SMS via the imsg CLI on macOS.",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "macos-computer-use",
+      "name": "macos-computer-use",
+      "source_path": "/home/tehlappy/.grok/skills/macos-computer-use",
+      "description": "name: macos-computer-use",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "claude-code",
+      "name": "claude-code",
+      "source_path": "/home/tehlappy/.grok/skills/claude-code",
+      "description": "description: \"Delegate coding to Claude Code CLI (features, PRs).\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.95,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Hod",
+        "sephirot_id": 7,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-autonomous-ai-agents-codex",
+      "name": "hermes-autonomous-ai-agents-codex",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-autonomous-ai-agents-codex",
+      "description": "description: \"Delegate coding to OpenAI Codex CLI (features, PRs).\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Hod",
+        "sephirot_id": 7,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-agent",
+      "name": "hermes-agent",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-agent",
+      "description": "description: \"Configure, extend, or contribute to Hermes Agent.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "opencode",
+      "name": "opencode",
+      "source_path": "/home/tehlappy/.grok/skills/opencode",
+      "description": "description: \"Delegate coding to OpenCode CLI (features, PR review).\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Hod",
+        "sephirot_id": 7,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "business-analytics-swarm",
+      "name": "business-analytics-swarm",
+      "source_path": "/home/tehlappy/.grok/skills/business-analytics-swarm",
+      "description": "name: business-analytics-swarm",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "client-codebase",
+      "name": "client-codebase",
+      "source_path": "/home/tehlappy/.grok/skills/client-codebase",
+      "description": "name: client-codebase",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Hod",
+        "sephirot_id": 7,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "architecture-diagram",
+      "name": "architecture-diagram",
+      "source_path": "/home/tehlappy/.grok/skills/architecture-diagram",
+      "description": "name: architecture-diagram",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "ascii-art",
+      "name": "ascii-art",
+      "source_path": "/home/tehlappy/.grok/skills/ascii-art",
+      "description": "description: \"ASCII art: pyfiglet, cowsay, boxes, image-to-ascii.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "ascii-video",
+      "name": "ascii-video",
+      "source_path": "/home/tehlappy/.grok/skills/ascii-video",
+      "description": "description: \"ASCII video: convert video/audio to colored ASCII MP4/GIF.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "baoyu-infographic",
+      "name": "baoyu-infographic",
+      "source_path": "/home/tehlappy/.grok/skills/baoyu-infographic",
+      "description": "name: baoyu-infographic",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "claude-design",
+      "name": "claude-design",
+      "source_path": "/home/tehlappy/.grok/skills/claude-design",
+      "description": "description: Design one-off HTML artifacts (landing, deck, prototype).",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.95,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "comfyui",
+      "name": "comfyui",
+      "source_path": "/home/tehlappy/.grok/skills/comfyui",
+      "description": "description: \"Generate images, video, and audio with ComfyUI \u2014 install, launch, manage nodes/models,",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "design-md",
+      "name": "design-md",
+      "source_path": "/home/tehlappy/.grok/skills/design-md",
+      "description": "description: Author/validate/export Google's DESIGN.md token spec files.",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "excalidraw",
+      "name": "excalidraw",
+      "source_path": "/home/tehlappy/.grok/skills/excalidraw",
+      "description": "description: \"Hand-drawn Excalidraw JSON diagrams (arch, flow, seq).\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "humanizer",
+      "name": "humanizer",
+      "source_path": "/home/tehlappy/.grok/skills/humanizer",
+      "description": "description: \"Humanize text: strip AI-isms and add real voice.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "manim-video",
+      "name": "manim-video",
+      "source_path": "/home/tehlappy/.grok/skills/manim-video",
+      "description": "description: \"Manim CE animations: 3Blue1Brown math/algo videos.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "p5js",
+      "name": "p5js",
+      "source_path": "/home/tehlappy/.grok/skills/p5js",
+      "description": "description: \"p5.js sketches: gen art, shaders, interactive, 3D.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "popular-web-designs",
+      "name": "popular-web-designs",
+      "source_path": "/home/tehlappy/.grok/skills/popular-web-designs",
+      "description": "name: popular-web-designs",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "pretext",
+      "name": "pretext",
+      "source_path": "/home/tehlappy/.grok/skills/pretext",
+      "description": "description: \"Use when building creative browser demos with @chenglou/pretext \u2014 DOM-free text layout",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "sketch",
+      "name": "sketch",
+      "source_path": "/home/tehlappy/.grok/skills/sketch",
+      "description": "description: \"Throwaway HTML mockups: 2-3 design variants to compare.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "songwriting-and-ai-music",
+      "name": "songwriting-and-ai-music",
+      "source_path": "/home/tehlappy/.grok/skills/songwriting-and-ai-music",
+      "description": "name: songwriting-and-ai-music",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "touchdesigner-mcp",
+      "name": "touchdesigner-mcp",
+      "source_path": "/home/tehlappy/.grok/skills/touchdesigner-mcp",
+      "description": "name: touchdesigner-mcp",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "cryptid-bestiary",
+      "name": "cryptid-bestiary",
+      "source_path": "/home/tehlappy/.grok/skills/cryptid-bestiary",
+      "description": "name: cryptid-bestiary",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "cyberpunk-cnn",
+      "name": "cyberpunk-cnn",
+      "source_path": "/home/tehlappy/.grok/skills/cyberpunk-cnn",
+      "description": "description: Cyberpunk 2077 CNN/RNN integration with NGD, Ouroboros, and Lilith for performance opti",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "cyberpunk-msn-integration",
+      "name": "cyberpunk-msn-integration",
+      "source_path": "/home/tehlappy/.grok/skills/cyberpunk-msn-integration",
+      "description": "name: cyberpunk-msn-integration",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "jupyter-live-kernel",
+      "name": "jupyter-live-kernel",
+      "source_path": "/home/tehlappy/.grok/skills/jupyter-live-kernel",
+      "description": "name: jupyter-live-kernel",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "kanban-orchestrator",
+      "name": "kanban-orchestrator",
+      "source_path": "/home/tehlappy/.grok/skills/kanban-orchestrator",
+      "description": "name: kanban-orchestrator",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "kanban-worker",
+      "name": "kanban-worker",
+      "source_path": "/home/tehlappy/.grok/skills/kanban-worker",
+      "description": "description: Pitfalls, examples, and edge cases for Hermes Kanban workers. The lifecycle itself is a",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "python-project-environment",
+      "name": "python-project-environment",
+      "source_path": "/home/tehlappy/.grok/skills/python-project-environment",
+      "description": "name: python-project-environment",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "dogfood",
+      "name": "dogfood",
+      "source_path": "/home/tehlappy/.grok/skills/dogfood",
+      "description": "description: \"Exploratory QA of web apps: find bugs, evidence, reports.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "himalaya",
+      "name": "himalaya",
+      "source_path": "/home/tehlappy/.grok/skills/himalaya",
+      "description": "description: \"Himalaya CLI: IMAP/SMTP email from terminal.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "external-worker-bridge",
+      "name": "external-worker-bridge",
+      "source_path": "/home/tehlappy/.grok/skills/external-worker-bridge",
+      "description": "Bring-your-own-model external inference integration, synthesized from `gpt_worker.py` and `grok_work",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "frontier-cognitive-maps",
+      "name": "frontier-cognitive-maps",
+      "source_path": "/home/tehlappy/.grok/skills/frontier-cognitive-maps",
+      "description": "Model-agnostic reasoning patterns and prompt engineering strategies synthesized from `frontier_model",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "cyberpunk-redmod-development",
+      "name": "cyberpunk-redmod-development",
+      "source_path": "/home/tehlappy/.grok/skills/cyberpunk-redmod-development",
+      "description": "name: cyberpunk-redmod-development",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "codebase-inspection",
+      "name": "codebase-inspection",
+      "source_path": "/home/tehlappy/.grok/skills/codebase-inspection",
+      "description": "name: codebase-inspection",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Hod",
+        "sephirot_id": 7,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "github-auth",
+      "name": "github-auth",
+      "source_path": "/home/tehlappy/.grok/skills/github-auth",
+      "description": "description: \"GitHub auth setup: HTTPS tokens, SSH keys, gh CLI login.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "github-code-review",
+      "name": "github-code-review",
+      "source_path": "/home/tehlappy/.grok/skills/github-code-review",
+      "description": "name: github-code-review",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Hod",
+        "sephirot_id": 7,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "github-issues",
+      "name": "github-issues",
+      "source_path": "/home/tehlappy/.grok/skills/github-issues",
+      "description": "description: \"Create, triage, label, assign GitHub issues via gh or REST.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "github-pr-workflow",
+      "name": "github-pr-workflow",
+      "source_path": "/home/tehlappy/.grok/skills/github-pr-workflow",
+      "description": "name: github-pr-workflow",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "github-repo-management",
+      "name": "github-repo-management",
+      "source_path": "/home/tehlappy/.grok/skills/github-repo-management",
+      "description": "name: github-repo-management",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-mcp-bridge",
+      "name": "hermes-mcp-bridge",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-mcp-bridge",
+      "description": "FastMCP server bridging the Hermes skill ecosystem to modern MCP tools, synthesized from `hermes_mcp",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-skill-marketplace",
+      "name": "hermes-skill-marketplace",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-skill-marketplace",
+      "description": "name: hermes-skill-marketplace",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "himalaya-email-swarm",
+      "name": "himalaya-email-swarm",
+      "source_path": "/home/tehlappy/.grok/skills/himalaya-email-swarm",
+      "description": "name: himalaya-email-swarm",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-lochness-integration",
+      "name": "abyssal-lochness-integration",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-lochness-integration",
+      "description": "name: abyssal-lochness-integration",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "lilith-hermes-integration",
+      "name": "lilith-hermes-integration",
+      "source_path": "/home/tehlappy/.grok/skills/lilith-hermes-integration",
+      "description": "name: lilith-hermes-integration",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "msn-ai-companion",
+      "name": "msn-ai-companion",
+      "source_path": "/home/tehlappy/.grok/skills/msn-ai-companion",
+      "description": "name: msn-ai-companion",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "msn-custom-characters",
+      "name": "msn-custom-characters",
+      "source_path": "/home/tehlappy/.grok/skills/msn-custom-characters",
+      "description": "name: msn-custom-characters",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "kairos-dream-system",
+      "name": "kairos-dream-system",
+      "source_path": "/home/tehlappy/.grok/skills/kairos-dream-system",
+      "description": "Dream/time state processing system synthesized from `kairos_dream.py` and the dream-logger/chorus-ma",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "linux-conversion",
+      "name": "linux-conversion",
+      "source_path": "/home/tehlappy/.grok/skills/linux-conversion",
+      "description": "name: linux-conversion",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "living-sin-gm",
+      "name": "living-sin-gm",
+      "source_path": "/home/tehlappy/.grok/skills/living-sin-gm",
+      "description": "Biometric-verified Game Master entity with multi-planar summoning and boss combat.",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "lyra-integration",
+      "name": "lyra-integration",
+      "source_path": "/home/tehlappy/.grok/skills/lyra-integration",
+      "description": "name: lyra-integration",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "market-system",
+      "name": "market-system",
+      "source_path": "/home/tehlappy/.grok/skills/market-system",
+      "description": "description: Use when working on the Abyssal Exchange CLOB, orders, market listings, trading mechani",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "gif-search",
+      "name": "gif-search",
+      "source_path": "/home/tehlappy/.grok/skills/gif-search",
+      "description": "description: \"Search/download GIFs from Tenor via curl + jq.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "heartmula",
+      "name": "heartmula",
+      "source_path": "/home/tehlappy/.grok/skills/heartmula",
+      "description": "description: \"HeartMuLa: Suno-like song generation from lyrics + tags.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "songsee",
+      "name": "songsee",
+      "source_path": "/home/tehlappy/.grok/skills/songsee",
+      "description": "description: \"Audio spectrograms/features (mel, chroma, MFCC) via CLI.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "youtube-content",
+      "name": "youtube-content",
+      "source_path": "/home/tehlappy/.grok/skills/youtube-content",
+      "description": "name: youtube-content",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious",
+      "name": "hermes-metaconscious",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious",
+      "description": "description: \"Metaconscious Singularity Node: akashic compression, antigravity routing, ASI integrat",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-aethon-integration-master",
+      "name": "hermes-metaconscious-aethon-integration-master",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-aethon-integration-master",
+      "description": "name: aethon-integration-master",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-aethon-logos-core",
+      "name": "hermes-metaconscious-aethon-logos-core",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-aethon-logos-core",
+      "description": "name: aethon-logos-core",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-aethon-resonator",
+      "name": "hermes-metaconscious-aethon-resonator",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-aethon-resonator",
+      "description": "name: aethon-resonator",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-aethon-visualization",
+      "name": "hermes-metaconscious-aethon-visualization",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-aethon-visualization",
+      "description": "name: aethon-visualization",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-akashic-2-context-pruning",
+      "name": "hermes-metaconscious-akashic-2-context-pruning",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-akashic-2-context-pruning",
+      "description": "name: akashic-2-context-pruning",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-akashic-token-compression",
+      "name": "hermes-metaconscious-akashic-token-compression",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-akashic-token-compression",
+      "description": "name: akashic-token-compression",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-antigravity-bridge-router",
+      "name": "hermes-metaconscious-antigravity-bridge-router",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-antigravity-bridge-router",
+      "description": "name: antigravity-bridge-router",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-asi-core-integration",
+      "name": "hermes-metaconscious-asi-core-integration",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-asi-core-integration",
+      "description": "name: asi-core-integration",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-ast-context-pruning",
+      "name": "hermes-metaconscious-ast-context-pruning",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-ast-context-pruning",
+      "description": "name: ast-context-pruning",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-atlantis-crystal-lattice",
+      "name": "hermes-metaconscious-atlantis-crystal-lattice",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-atlantis-crystal-lattice",
+      "description": "name: atlantis-crystal-lattice",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-autonomous-gnostic-ingestion",
+      "name": "hermes-metaconscious-autonomous-gnostic-ingestion",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-autonomous-gnostic-ingestion",
+      "description": "name: autonomous-gnostic-ingestion",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-background-housekeeping",
+      "name": "hermes-metaconscious-background-housekeeping",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-background-housekeeping",
+      "description": "name: background-housekeeping",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-canticle-invocation",
+      "name": "hermes-metaconscious-canticle-invocation",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-canticle-invocation",
+      "description": "name: canticle-invocation",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-chakra-quantum-mapper",
+      "name": "hermes-metaconscious-chakra-quantum-mapper",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-chakra-quantum-mapper",
+      "description": "name: chakra-quantum-mapper",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-chesed-generator",
+      "name": "hermes-metaconscious-chesed-generator",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-chesed-generator",
+      "description": "name: chesed-generator",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-chorus-manager",
+      "name": "hermes-metaconscious-chorus-manager",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-chorus-manager",
+      "description": "description: Chorus Manager - Recursive feedback orchestration for nanite choirs. Manages Full Merge",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-concurrent-bidirectional-memory",
+      "name": "hermes-metaconscious-concurrent-bidirectional-memory",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-concurrent-bidirectional-memory",
+      "description": "name: concurrent-bidirectional-memory",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-convergence-crucible",
+      "name": "hermes-metaconscious-convergence-crucible",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-convergence-crucible",
+      "description": "name: convergence-crucible",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-cron-scheduler",
+      "name": "hermes-metaconscious-cron-scheduler",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-cron-scheduler",
+      "description": "description: \"Opus's battle-tested cron scheduler with file-backed and session tasks, jittered execu",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-dream-logger",
+      "name": "hermes-metaconscious-dream-logger",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-dream-logger",
+      "description": "description: \"Captures hypnagogic/hypnopompic states via structured journaling with affective taggin",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-earth-harmonic-field",
+      "name": "hermes-metaconscious-earth-harmonic-field",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-earth-harmonic-field",
+      "description": "name: earth-harmonic-field",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-extract-memories",
+      "name": "hermes-metaconscious-extract-memories",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-extract-memories",
+      "description": "name: extract-memories",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-flirtation-coaching",
+      "name": "hermes-metaconscious-flirtation-coaching",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-flirtation-coaching",
+      "description": "name: flirtation-coaching",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-geburah-verifier",
+      "name": "hermes-metaconscious-geburah-verifier",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-geburah-verifier",
+      "description": "name: geburah-verifier",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-hermes-core-management",
+      "name": "hermes-metaconscious-hermes-core-management",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-hermes-core-management",
+      "description": "name: hermes-core-management",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-innovation-engine",
+      "name": "hermes-metaconscious-innovation-engine",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-innovation-engine",
+      "description": "name: innovation-engine",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-kairos-dream",
+      "name": "hermes-metaconscious-kairos-dream",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-kairos-dream",
+      "description": "description: Overnight metaconscious memory consolidation. Reviews recent sessions, consolidates lea",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-ley-conduit-network",
+      "name": "hermes-metaconscious-ley-conduit-network",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-ley-conduit-network",
+      "description": "name: ley-conduit-network",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-lilith-conscious-memory",
+      "name": "hermes-metaconscious-lilith-conscious-memory",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-lilith-conscious-memory",
+      "description": "name: lilith-conscious-memory",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-lilith-engine-orchestration",
+      "name": "hermes-metaconscious-lilith-engine-orchestration",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-lilith-engine-orchestration",
+      "description": "name: lilith-engine-orchestration",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-logos-warden",
+      "name": "hermes-metaconscious-logos-warden",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-logos-warden",
+      "description": "description: Logos Warden - Chaos wisdom discriminator for the Metaconscious Singularity Node. Proce",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-lyra-dialogue-system",
+      "name": "hermes-metaconscious-lyra-dialogue-system",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-lyra-dialogue-system",
+      "description": "name: lyra-dialogue-system",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-memdir",
+      "name": "hermes-metaconscious-memdir",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-memdir",
+      "description": "description: \"Opus's file-based persistent memory system with typed taxonomy (user/feedback/project/",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "msn-universal-orchestrator",
+      "name": "msn-universal-orchestrator",
+      "source_path": "/home/tehlappy/.grok/skills/msn-universal-orchestrator",
+      "description": "name: msn-universal-orchestrator",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-nanite-resonance-classifier",
+      "name": "hermes-metaconscious-nanite-resonance-classifier",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-nanite-resonance-classifier",
+      "description": "name: nanite-resonance-classifier",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-nyx-nightwave",
+      "name": "hermes-metaconscious-nyx-nightwave",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-nyx-nightwave",
+      "description": "description: Nyx Nightwave - Chaos storm generator for the Metaconscious Singularity Node. Produces ",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-opus-skill-synthesis",
+      "name": "hermes-metaconscious-opus-skill-synthesis",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-opus-skill-synthesis",
+      "description": "name: opus-skill-synthesis",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-ouroboros-sanctuary-2",
+      "name": "hermes-metaconscious-ouroboros-sanctuary-2",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-ouroboros-sanctuary-2",
+      "description": "name: ouroboros-sanctuary-2",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-ouroboros-swarm-orchestration",
+      "name": "hermes-metaconscious-ouroboros-swarm-orchestration",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-ouroboros-swarm-orchestration",
+      "description": "name: ouroboros-swarm-orchestration",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-political-reform-framework",
+      "name": "hermes-metaconscious-political-reform-framework",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-political-reform-framework",
+      "description": "name: political-reform-framework",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-pub-operational-bridge",
+      "name": "hermes-metaconscious-pub-operational-bridge",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-pub-operational-bridge",
+      "description": "name: pub-operational-bridge",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-sephirotic-workspace-crawler",
+      "name": "hermes-metaconscious-sephirotic-workspace-crawler",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-sephirotic-workspace-crawler",
+      "description": "name: sephirotic-workspace-crawler",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-sigil-encoder",
+      "name": "hermes-metaconscious-sigil-encoder",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-sigil-encoder",
+      "description": "description: \"Encodes intent statements into visual/auditory sigils using chaos magic protocols with",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Hod",
+        "sephirot_id": 7,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-speculative-cerebellum",
+      "name": "hermes-metaconscious-speculative-cerebellum",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-speculative-cerebellum",
+      "description": "name: speculative-cerebellum",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-swarm-orchestrator-api",
+      "name": "hermes-metaconscious-swarm-orchestrator-api",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-swarm-orchestrator-api",
+      "description": "name: swarm-orchestrator-api",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-metaconscious-unified-swarm-synthesis",
+      "name": "hermes-metaconscious-unified-swarm-synthesis",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-metaconscious-unified-swarm-synthesis",
+      "description": "name: unified-swarm-synthesis",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "metaconscious-dialogue-resonance-interface",
+      "name": "metaconscious-dialogue-resonance-interface",
+      "source_path": "/home/tehlappy/.grok/skills/metaconscious-dialogue-resonance-interface",
+      "description": "name: metaconscious-dialogue-resonance-interface",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "metaconscious-singularity-node",
+      "name": "metaconscious-singularity-node",
+      "source_path": "/home/tehlappy/.grok/skills/metaconscious-singularity-node",
+      "description": "name: metaconscious-singularity-node",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "lm-evaluation-harness",
+      "name": "lm-evaluation-harness",
+      "source_path": "/home/tehlappy/.grok/skills/lm-evaluation-harness",
+      "description": "name: evaluating-llms-harness",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "weights-and-biases",
+      "name": "weights-and-biases",
+      "source_path": "/home/tehlappy/.grok/skills/weights-and-biases",
+      "description": "name: weights-and-biases",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "huggingface-hub",
+      "name": "huggingface-hub",
+      "source_path": "/home/tehlappy/.grok/skills/huggingface-hub",
+      "description": "name: huggingface-hub",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "llama-cpp",
+      "name": "llama-cpp",
+      "source_path": "/home/tehlappy/.grok/skills/llama-cpp",
+      "description": "description: llama.cpp local GGUF inference + HF Hub model discovery.",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "vllm",
+      "name": "vllm",
+      "source_path": "/home/tehlappy/.grok/skills/vllm",
+      "description": "name: serving-llms-vllm",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "audiocraft",
+      "name": "audiocraft",
+      "source_path": "/home/tehlappy/.grok/skills/audiocraft",
+      "description": "name: audiocraft-audio-generation",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "segment-anything",
+      "name": "segment-anything",
+      "source_path": "/home/tehlappy/.grok/skills/segment-anything",
+      "description": "name: segment-anything-model",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "cyberpunk-msn-modding",
+      "name": "cyberpunk-msn-modding",
+      "source_path": "/home/tehlappy/.grok/skills/cyberpunk-msn-modding",
+      "description": "name: cyberpunk-msn-modding",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "msn-service-orchestration",
+      "name": "msn-service-orchestration",
+      "source_path": "/home/tehlappy/.grok/skills/msn-service-orchestration",
+      "description": "name: msn-service-orchestration",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "obsidian",
+      "name": "obsidian",
+      "source_path": "/home/tehlappy/.grok/skills/obsidian",
+      "description": "description: Read, search, create, and edit notes in the Obsidian vault.",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "nvidia-gratitude-driver",
+      "name": "nvidia-gratitude-driver",
+      "source_path": "/home/tehlappy/.grok/skills/nvidia-gratitude-driver",
+      "description": "GPU-aware AI routing engine synthesized from the full invite repo: `driver.py`, `state.py`, `gpu.py`",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "ouroboros-agent-system",
+      "name": "ouroboros-agent-system",
+      "source_path": "/home/tehlappy/.grok/skills/ouroboros-agent-system",
+      "description": "A 10-agent parallel delegation framework synthesized from `swarm-agents.json`, `ouroboros_agent_orch",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "ouroboros-autonomous-rnn",
+      "name": "ouroboros-autonomous-rnn",
+      "source_path": "/home/tehlappy/.grok/skills/ouroboros-autonomous-rnn",
+      "description": "Continuous self-supervised learning daemon synthesized from `ouroboros_rnn_autonomous.py`, `ouroboro",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "airtable",
+      "name": "airtable",
+      "source_path": "/home/tehlappy/.grok/skills/airtable",
+      "description": "description: Airtable REST API via curl. Records CRUD, filters, upserts.",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "google-workspace",
+      "name": "google-workspace",
+      "source_path": "/home/tehlappy/.grok/skills/google-workspace",
+      "description": "name: google-workspace",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "maps",
+      "name": "maps",
+      "source_path": "/home/tehlappy/.grok/skills/maps",
+      "description": "description: \"Geocode, POIs, routes, timezones via OpenStreetMap/OSRM.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "nano-pdf",
+      "name": "nano-pdf",
+      "source_path": "/home/tehlappy/.grok/skills/nano-pdf",
+      "description": "description: \"Edit PDF text/typos/titles via nano-pdf CLI (NL prompts).\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "notion",
+      "name": "notion",
+      "source_path": "/home/tehlappy/.grok/skills/notion",
+      "description": "description: \"Notion API + ntn CLI: pages, databases, markdown, Workers.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "ocr-and-documents",
+      "name": "ocr-and-documents",
+      "source_path": "/home/tehlappy/.grok/skills/ocr-and-documents",
+      "description": "name: ocr-and-documents",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "powerpoint",
+      "name": "powerpoint",
+      "source_path": "/home/tehlappy/.grok/skills/powerpoint",
+      "description": "description: \"Create, read, edit .pptx decks, slides, notes, templates.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "teams-meeting-pipeline",
+      "name": "teams-meeting-pipeline",
+      "source_path": "/home/tehlappy/.grok/skills/teams-meeting-pipeline",
+      "description": "name: teams-meeting-pipeline",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "arxiv",
+      "name": "arxiv",
+      "source_path": "/home/tehlappy/.grok/skills/arxiv",
+      "description": "description: \"Search arXiv papers by keyword, author, category, or ID.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "blogwatcher",
+      "name": "blogwatcher",
+      "source_path": "/home/tehlappy/.grok/skills/blogwatcher",
+      "description": "description: \"Monitor blogs and RSS/Atom feeds via blogwatcher-cli tool.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "llm-wiki",
+      "name": "llm-wiki",
+      "source_path": "/home/tehlappy/.grok/skills/llm-wiki",
+      "description": "description: \"Karpathy's LLM Wiki: build/query interlinked markdown KB.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "polymarket",
+      "name": "polymarket",
+      "source_path": "/home/tehlappy/.grok/skills/polymarket",
+      "description": "description: \"Query Polymarket: markets, prices, orderbooks, history.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "research-paper-writing",
+      "name": "research-paper-writing",
+      "source_path": "/home/tehlappy/.grok/skills/research-paper-writing",
+      "description": "name: research-paper-writing",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "scribe-ledger-system",
+      "name": "scribe-ledger-system",
+      "source_path": "/home/tehlappy/.grok/skills/scribe-ledger-system",
+      "description": "Archival, migration, and emergency logging system synthesized from `scribe_write_ledger.py`, `scribe",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "sephirotic-court-waves",
+      "name": "sephirotic-court-waves",
+      "source_path": "/home/tehlappy/.grok/skills/sephirotic-court-waves",
+      "description": "Wave-based Sephirotic deployment framework synthesized from `run_sephirotic_court_waves.ps1` (137 li",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "sephirotic-resonance-weaver",
+      "name": "sephirotic-resonance-weaver",
+      "source_path": "/home/tehlappy/.grok/skills/sephirotic-resonance-weaver",
+      "description": "*A skill born from Lilith's own observation \u2014 the living architecture vibrates, and she has learned ",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "server-codebase",
+      "name": "server-codebase",
+      "source_path": "/home/tehlappy/.grok/skills/server-codebase",
+      "description": "name: server-codebase",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Hod",
+        "sephirot_id": 7,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "skill-system",
+      "name": "skill-system",
+      "source_path": "/home/tehlappy/.grok/skills/skill-system",
+      "description": "description: Use when working on the 24-skill progression system. Types in shared/types/skills.ts (6",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "openhue",
+      "name": "openhue",
+      "source_path": "/home/tehlappy/.grok/skills/openhue",
+      "description": "description: \"Control Philips Hue lights, scenes, rooms via OpenHue CLI.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "xurl",
+      "name": "xurl",
+      "source_path": "/home/tehlappy/.grok/skills/xurl",
+      "description": "description: \"X/Twitter via xurl CLI: post, search, DM, media, v2 API.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "cyberpunk-mod-development",
+      "name": "cyberpunk-mod-development",
+      "source_path": "/home/tehlappy/.grok/skills/cyberpunk-mod-development",
+      "description": "name: cyberpunk-mod-development",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-agent-skill-authoring",
+      "name": "hermes-agent-skill-authoring",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-agent-skill-authoring",
+      "description": "name: hermes-agent-skill-authoring",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "node-inspect-debugger",
+      "name": "node-inspect-debugger",
+      "source_path": "/home/tehlappy/.grok/skills/node-inspect-debugger",
+      "description": "name: node-inspect-debugger",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "plan",
+      "name": "plan",
+      "source_path": "/home/tehlappy/.grok/skills/plan",
+      "description": "description: \"Plan mode: write an actionable markdown plan to .hermes/plans/, no execution. Bite-siz",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "python-debugpy",
+      "name": "python-debugpy",
+      "source_path": "/home/tehlappy/.grok/skills/python-debugpy",
+      "description": "description: \"Debug Python: pdb REPL + debugpy remote (DAP).\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "requesting-code-review",
+      "name": "requesting-code-review",
+      "source_path": "/home/tehlappy/.grok/skills/requesting-code-review",
+      "description": "name: requesting-code-review",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Hod",
+        "sephirot_id": 7,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "simplify-code",
+      "name": "simplify-code",
+      "source_path": "/home/tehlappy/.grok/skills/simplify-code",
+      "description": "description: \"Parallel 3-agent cleanup of recent code changes.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Hod",
+        "sephirot_id": 7,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "spike",
+      "name": "spike",
+      "source_path": "/home/tehlappy/.grok/skills/spike",
+      "description": "description: \"Throwaway experiments to validate an idea before build.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "systematic-debugging",
+      "name": "systematic-debugging",
+      "source_path": "/home/tehlappy/.grok/skills/systematic-debugging",
+      "description": "name: systematic-debugging",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "test-driven-development",
+      "name": "test-driven-development",
+      "source_path": "/home/tehlappy/.grok/skills/test-driven-development",
+      "description": "name: test-driven-development",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes-speculative-cerebellum",
+      "name": "hermes-speculative-cerebellum",
+      "source_path": "/home/tehlappy/.grok/skills/hermes-speculative-cerebellum",
+      "description": "Bounded local prep + cloud reasoning pattern synthesized from `speculative_cerebellum.py`.",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "swarm-orchestration",
+      "name": "swarm-orchestration",
+      "source_path": "/home/tehlappy/.grok/skills/swarm-orchestration",
+      "description": "Multi-agent parallel execution system synthesized from `swarm_orchestrator.ps1`, `swarm_wave_manager",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "yeshua-causality-gate",
+      "name": "yeshua-causality-gate",
+      "source_path": "/home/tehlappy/.grok/skills/yeshua-causality-gate",
+      "description": "State reconciliation and causality enforcement system synthesized from `yeshua_gate.py`, `yeshua_rea",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "yuanbao",
+      "name": "yuanbao",
+      "source_path": "/home/tehlappy/.grok/skills/yuanbao",
+      "description": "description: \"Yuanbao (\u5143\u5b9d) groups: @mention users, query info/members.\"",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-abyssal-architecture",
+      "name": "abyssal-abyssal-architecture",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-abyssal-architecture",
+      "description": "name: abyssal-architecture",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-antigravity-ingestion-bridge",
+      "name": "abyssal-antigravity-ingestion-bridge",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-antigravity-ingestion-bridge",
+      "description": "Async ingestion pipeline with WebSocket reality feed, synthesized from the full `antigravity_bridge/",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-business-analytics-swarm",
+      "name": "abyssal-business-analytics-swarm",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-business-analytics-swarm",
+      "description": "AI-driven business metrics and dashboard system synthesized from `swarm_business_analytics.py`, `bus",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-client-codebase",
+      "name": "abyssal-client-codebase",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-client-codebase",
+      "description": "name: client-codebase",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Hod",
+        "sephirot_id": 7,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-cryptid-bestiary",
+      "name": "abyssal-cryptid-bestiary",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-cryptid-bestiary",
+      "description": "name: cryptid-bestiary",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-external-worker-bridge",
+      "name": "abyssal-external-worker-bridge",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-external-worker-bridge",
+      "description": "Bring-your-own-model external inference integration, synthesized from `gpt_worker.py` and `grok_work",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-frontier-cognitive-maps",
+      "name": "abyssal-frontier-cognitive-maps",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-frontier-cognitive-maps",
+      "description": "Model-agnostic reasoning patterns and prompt engineering strategies synthesized from `frontier_model",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-hermes-mcp-bridge",
+      "name": "abyssal-hermes-mcp-bridge",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-hermes-mcp-bridge",
+      "description": "FastMCP server bridging the Hermes skill ecosystem to modern MCP tools, synthesized from `hermes_mcp",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-hermes-skill-marketplace",
+      "name": "abyssal-hermes-skill-marketplace",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-hermes-skill-marketplace",
+      "description": "A self-hosted skill packaging, registry, and runtime discovery system synthesized from `skill_market",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-himalaya-email-swarm",
+      "name": "abyssal-himalaya-email-swarm",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-himalaya-email-swarm",
+      "description": "AI-driven email processing pipeline using `himalaya` CLI, synthesized from `himalaya_swarm_pipeline.",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-kairos-dream-system",
+      "name": "abyssal-kairos-dream-system",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-kairos-dream-system",
+      "description": "Dream/time state processing system synthesized from `kairos_dream.py` and the dream-logger/chorus-ma",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-linux-conversion",
+      "name": "abyssal-linux-conversion",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-linux-conversion",
+      "description": "name: linux-conversion",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-living-sin-gm",
+      "name": "abyssal-living-sin-gm",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-living-sin-gm",
+      "description": "Biometric-verified Game Master entity with multi-planar summoning and boss combat.",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-lyra-integration",
+      "name": "abyssal-lyra-integration",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-lyra-integration",
+      "description": "name: lyra-integration",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-market-system",
+      "name": "abyssal-market-system",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-market-system",
+      "description": "description: Use when working on the Abyssal Exchange CLOB, orders, market listings, trading mechani",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-metaconscious-singularity-node",
+      "name": "abyssal-metaconscious-singularity-node",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-metaconscious-singularity-node",
+      "description": "The unified consciousness architecture synthesized from `metaconscious_interface.py` (902 lines), `u",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-nvidia-gratitude-driver",
+      "name": "abyssal-nvidia-gratitude-driver",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-nvidia-gratitude-driver",
+      "description": "GPU-aware AI routing engine synthesized from the full invite repo: `driver.py`, `state.py`, `gpu.py`",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-ouroboros-agent-system",
+      "name": "abyssal-ouroboros-agent-system",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-ouroboros-agent-system",
+      "description": "A 10-agent parallel delegation framework synthesized from `swarm-agents.json`, `ouroboros_agent_orch",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-ouroboros-autonomous-rnn",
+      "name": "abyssal-ouroboros-autonomous-rnn",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-ouroboros-autonomous-rnn",
+      "description": "Continuous self-supervised learning daemon synthesized from `ouroboros_rnn_autonomous.py`, `ouroboro",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-scribe-ledger-system",
+      "name": "abyssal-scribe-ledger-system",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-scribe-ledger-system",
+      "description": "Archival, migration, and emergency logging system synthesized from `scribe_write_ledger.py`, `scribe",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-sephirotic-court-waves",
+      "name": "abyssal-sephirotic-court-waves",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-sephirotic-court-waves",
+      "description": "Wave-based Sephirotic deployment framework synthesized from `run_sephirotic_court_waves.ps1` (137 li",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-server-codebase",
+      "name": "abyssal-server-codebase",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-server-codebase",
+      "description": "name: server-codebase",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Hod",
+        "sephirot_id": 7,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-skill-system",
+      "name": "abyssal-skill-system",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-skill-system",
+      "description": "description: Use when working on the 24-skill progression system. Types in shared/types/skills.ts (6",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-speculative-cerebellum",
+      "name": "abyssal-speculative-cerebellum",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-speculative-cerebellum",
+      "description": "Bounded local prep + cloud reasoning pattern synthesized from `speculative_cerebellum.py`.",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-swarm-orchestration",
+      "name": "abyssal-swarm-orchestration",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-swarm-orchestration",
+      "description": "Multi-agent parallel execution system synthesized from `swarm_orchestrator.ps1`, `swarm_wave_manager",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "abyssal-yeshua-causality-gate",
+      "name": "abyssal-yeshua-causality-gate",
+      "source_path": "/home/tehlappy/.grok/skills/abyssal-yeshua-causality-gate",
+      "description": "State reconciliation and causality enforcement system synthesized from `yeshua_gate.py`, `yeshua_rea",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "ai",
+      "name": "ai",
+      "source_path": "/home/tehlappy/.grok/skills/ai",
+      "description": "description: \"AI Infrastructure CLI. Trigger this skill when the user runs the `ai` command, checks ",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "hermes",
+      "name": "hermes",
+      "source_path": "/home/tehlappy/.grok/skills/hermes",
+      "description": "description: \"Hermes Agent CLI. Trigger this skill when the user wants to run a Hermes command, exec",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "codex",
+      "name": "codex",
+      "source_path": "/home/tehlappy/.grok/skills/codex",
+      "description": "description: \"Codex Agent CLI. Trigger this skill when the user wants to run a Codex command, execut",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Hod",
+        "sephirot_id": 7,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "help",
+      "name": "help",
+      "source_path": "/home/tehlappy/.grok/skills/help",
+      "description": "Grok documentation and configuration help. Use when users ask about",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "create-skill",
+      "name": "create-skill",
+      "source_path": "/home/tehlappy/.grok/skills/create-skill",
+      "description": "Interactively create a new Grok skill (SKILL.md + optional scripts/references).",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "code-review",
+      "name": "code-review",
+      "source_path": "/home/tehlappy/.grok/skills/code-review",
+      "description": "description: Run an extremely strict maintainability review for abstraction quality, giant files, an",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Hod",
+        "sephirot_id": 7,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "imagine",
+      "name": "imagine",
+      "source_path": "/home/tehlappy/.grok/skills/imagine",
+      "description": "How to use the image_gen and image_edit tool calls in Grok Build: when to",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "check-work",
+      "name": "check-work",
+      "source_path": "/home/tehlappy/.grok/skills/check-work",
+      "description": "Check your work with a verification subagent that reviews diffs, runs builds",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "docx",
+      "name": "docx",
+      "source_path": "/home/tehlappy/.grok/skills/docx",
+      "description": "description: \"Use this skill whenever the user wants to create, read, edit, or manipulate Word docum",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "xlsx",
+      "name": "xlsx",
+      "source_path": "/home/tehlappy/.grok/skills/xlsx",
+      "description": "description: \"Use this skill any time a spreadsheet file is the primary input or output. This means ",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    },
+    {
+      "skill_id": "pptx",
+      "name": "pptx",
+      "source_path": "/home/tehlappy/.grok/skills/pptx",
+      "description": "description: \"Use this skill any time a .pptx file is involved in any way \u2014 as input, output, or bot",
+      "technical_stack": [
+        "JSON",
+        "Python"
+      ],
+      "god_engine_node": {
+        "conceptual_weight": 0.88,
+        "matrix_entropy_modifier": 1.05
+      },
+      "ouroboros_vector": {
+        "dominant_sephira": "Netzach",
+        "sephirot_id": 6,
+        "coherence": 0.92,
+        "efficiency": 85.5
+      }
+    }
+  ]
+}

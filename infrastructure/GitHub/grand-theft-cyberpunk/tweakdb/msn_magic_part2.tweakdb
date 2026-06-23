@@ -1,0 +1,239 @@
+// GRAND THEFT CYBERPUNK — MAGIC SYSTEM TWEAKDB (PART 2/3)
+// Remaining Schools, Spells, Cyberware, Items
+// File: r6/tweakdb/msn_magic.tweakdb (continued)
+
+# ENCHANTMENT (Netzach - Victory/Influence)
+Perk:MSN_Enchantment_Novice {
+    displayName: "LocKey#msn_ench_novice_name"
+    description: "LocKey#msn_ench_novice_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "CharmPerson" },
+        { type: "UnlockSpell", spell: "Sleep" },
+        { type: "StatModifier", stat: "EnchantDC", value: 2 }
+    ]
+}
+
+Perk:MSN_Enchantment_Apprentice {
+    displayName: "LocKey#msn_ench_apprentice_name"
+    description: "LocKey#msn_ench_apprentice_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_Enchantment_Novice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "Suggestion" },
+        { type: "UnlockSpell", spell: "HoldPerson" },
+        { type: "StatModifier", stat: "EnchantDC", value: 4, stack: true },
+        { type: "StatModifier", stat: "EnchantDuration", value: 1.5 }
+    ]
+}
+
+Perk:MSN_Enchantment_Adept {
+    displayName: "LocKey#msn_ench_adept_name"
+    description: "LocKey#msn_ench_adept_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_Enchantment_Apprentice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "DominatePerson" },
+        { type: "UnlockSpell", spell: "Feeblemind" },
+        { type: "StatModifier", stat: "EnchantDC", value: 6, stack: true },
+        { type: "StatModifier", stat: "MassEnchantTargets", value: 3 }
+    ]
+}
+
+Perk:MSN_Enchantment_Master {
+    displayName: "LocKey#msn_ench_master_name"
+    description: "LocKey#msn_ench_master_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_Enchantment_Adept"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "MassDominate" },
+        { type: "UnlockSpell", spell: "PowerWordKill" },
+        { type: "StatModifier", stat: "EnchantDC", value: 8, stack: true },
+        { type: "EnablePermanentDominate", limit: 1 }
+    ]
+}
+
+# ILLUSION (Hod - Splendor/Intellect)
+Perk:MSN_Illusion_Novice {
+    displayName: "LocKey#msn_ill_novice_name"
+    description: "LocKey#msn_ill_novice_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "MinorIllusion" },
+        { type: "UnlockSpell", spell: "DisguiseSelf" },
+        { type: "StatModifier", stat: "IllusionDuration", value: 1.5 }
+    ]
+}
+
+Perk:MSN_Illusion_Apprentice {
+    displayName: "LocKey#msn_ill_apprentice_name"
+    description: "LocKey#msn_ill_apprentice_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_Illusion_Novice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "Invisibility" },
+        { type: "UnlockSpell", spell: "MirrorImage" },
+        { type: "StatModifier", stat: "IllusionDuration", value: 2.0, stack: true },
+        { type: "StatModifier", stat: "IllusionDC", value: 3 }
+    ]
+}
+
+Perk:MSN_Illusion_Adept {
+    displayName: "LocKey#msn_ill_adept_name"
+    description: "LocKey#msn_ill_adept_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_Illusion_Apprentice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "GreaterInvisibility" },
+        { type: "UnlockSpell", spell: "MajorImage" },
+        { type: "StatModifier", stat: "IllusionDuration", value: 3.0, stack: true },
+        { type: "StatModifier", stat: "IllusionResistancePenetration", value: 0.5 }
+    ]
+}
+
+Perk:MSN_Illusion_Master {
+    displayName: "LocKey#msn_ill_master_name"
+    description: "LocKey#msn_ill_master_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_Illusion_Adept"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "Simulacrum" },
+        { type: "UnlockSpell", spell: "Weird" },
+        { type: "StatModifier", stat: "IllusionDuration", value: 5.0, stack: true },
+        { type: "EnablePermanentIllusion", limit: 1 }
+    ]
+}
+
+# NECROMANCY (Geburah - Strength/Judgment)
+Perk:MSN_Necromancy_Novice {
+    displayName: "LocKey#msn_nec_novice_name"
+    description: "LocKey#msn_nec_novice_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "FalseLife" },
+        { type: "UnlockSpell", spell: "RayOfSickness" },
+        { type: "StatModifier", stat: "UndeadControl", value: 1 }
+    ]
+}
+
+Perk:MSN_Necromancy_Apprentice {
+    displayName: "LocKey#msn_nec_apprentice_name"
+    description: "LocKey#msn_nec_apprentice_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_Necromancy_Novice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "AnimateDead" },
+        { type: "UnlockSpell", spell: "BlindnessDeafness" },
+        { type: "StatModifier", stat: "UndeadControl", value: 3, stack: true },
+        { type: "StatModifier", stat: "LifeDrainEfficiency", value: 0.25 }
+    ]
+}
+
+Perk:MSN_Necromancy_Adept {
+    displayName: "LocKey#msn_nec_adept_name"
+    description: "LocKey#msn_nec_adept_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_Necromancy_Apprentice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "CreateUndead" },
+        { type: "UnlockSpell", spell: "FingerOfDeath" },
+        { type: "StatModifier", stat: "UndeadControl", value: 6, stack: true },
+        { type: "StatModifier", stat: "LifeDrainEfficiency", value: 0.5, stack: true }
+    ]
+}
+
+Perk:MSN_Necromancy_Master {
+    displayName: "LocKey#msn_nec_master_name"
+    description: "LocKey#msn_nec_master_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_Necromancy_Adept"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "TrueResurrection" },
+        { type: "UnlockSpell", spell: "PowerWordKill" },
+        { type: "StatModifier", stat: "UndeadControl", value: 12, stack: true },
+        { type: "EnableLichTransformation", ritual: true }
+    ]
+}
+
+# TRANSMUTATION (Tiphareth - Beauty/Harmony)
+Perk:MSN_Transmutation_Novice {
+    displayName: "LocKey#msn_trans_novice_name"
+    description: "LocKey#msn_trans_novice_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "FeatherFall" },
+        { type: "UnlockSpell", spell: "EnlargeReduce" },
+        { type: "StatModifier", stat: "TransmutationDuration", value: 1.5 }
+    ]
+}
+
+Perk:MSN_Transmutation_Apprentice {
+    displayName: "LocKey#msn_trans_apprentice_name"
+    description: "LocKey#msn_trans_apprentice_desc"
+    maxLevel: 1
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_Transmutation_Novice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "Polymorph" },
+        { type: "UnlockSpell", spell: "StoneShape" },
+        { type: "StatModifier", stat: "TransmutationDuration", value: 2.0, stack: true },
+        { type: "StatModifier", stat: "ObjectTransmutation", value: true }
+    ]
+}
+
+Perk:MSN_Transmutation_Adept {
+    displayName: "LocKey#msn_trans_adept_name"
+    description: "LocKey#msn_trans_adept_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_Transmutation_Apprentice"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "TruePolymorph" },
+        { type: "UnlockSpell", spell: "TimeStop" },
+        { type: "StatModifier", stat: "TransmutationDuration", value: 3.0, stack: true },
+        { type: "StatModifier", stat: "LivingTransmutation", value: true }
+    ]
+}
+
+Perk:MSN_Transmutation_Master {
+    displayName: "LocKey#msn_trans_master_name"
+    description: "LocKey#msn_trans_master_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_Transmutation_Adept"]
+    type: "Magic"
+    effects: [
+        { type: "UnlockSpell", spell: "Wish" },
+        { type: "UnlockSpell", spell: "TrueResurrection" },
+        { type: "StatModifier", stat: "TransmutationPermanent", value: true },
+        { type: "EnableRealityRewrite", radius: 50.0 }
+    ]
+}

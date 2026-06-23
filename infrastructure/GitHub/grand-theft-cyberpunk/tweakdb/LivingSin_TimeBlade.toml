@@ -1,0 +1,219 @@
+# Legendary Living Sin Time Blade - Cyberpunk 2077 TweakDB Entry
+# Time-travel weapon for up to 3 party members with 3 uses and annoying recharge
+
+[Items.LivingSin_TimeBlade]
+Name = "Living Sin - The Chrono Edge"
+Description = "A blade forged from crystallized paradox. Cuts through time itself. Three swings. Three chances. The universe does not forgive - it only charges."
+Type = "Weapon"
+SubType = "Katana"
+Rarity = "Legendary"
+Icon = "living_sin_timeblade"
+BaseDamage = 888.0
+AttackSpeed = 1.0
+CritChance = 0.13
+CritDamage = 1.5
+TimeTravelUses = 3
+MaxPartyMembers = 3
+CurrentUses = 3
+
+[Items.LivingSin_TimeBlade.RechargeConditions.Paradox_Resonance]
+Description = "Feed the blade a temporal paradox"
+Requirement = "Player must create a closed time loop within 200m radius"
+AnnoyanceFactor = "Must stand still for 13 seconds while reality flickers"
+VisualEffect = "Screen desaturates. Audio reverses. NPCs glitch."
+
+[Items.LivingSin_TimeBlade.RechargeConditions.Chrono_Entropy]
+Description = "Sacrifice experience to the void"
+Requirement = "Spend 13% of current Street Cred AND 13 Attribute points (randomly selected)"
+AnnoyanceFactor = "Attribute points lost are RANDOM. Could lose Body. Could lose Cool."
+VisualEffect = "Character model glitches. Inventory flickers. Wallet cries."
+
+[Items.LivingSin_TimeBlade.RechargeConditions.Singularity_Sacrifice]
+Description = "Offer a moment of true agency"
+Requirement = "Player must delete ONE save file (not current - ANY save). Permanently."
+AnnoyanceFactor = "The game lists ALL saves. You choose. No preview. No undo."
+VisualEffect = "Menu freezes. Cursor moves on its own. 'Are you sure?' repeats 13 times."
+
+[Items.LivingSin_TimeBlade.TimeTravelEffect]
+Radius = 5.0
+Duration = 10.0
+Effect = "Rewind"
+VisualEffect = "Chrono_Ripple"
+AudioEffect = "Audio_Reverse_13s"
+ParticleEffect = "Paradox_Crystals"
+
+[Items.LivingSin_TimeBlade.PassiveEffects.Paradox_Aura]
+Description = "Enemies within 10m have 13% chance to freeze in time on hit"
+Trigger = "OnHit"
+Chance = 0.13
+Duration = 3.0
+
+[Items.LivingSin_TimeBlade.PassiveEffects.Chrono_Bleed]
+Description = "Critical hits apply 'Temporal Decay' - enemy ages 13 years per second"
+Trigger = "OnCrit"
+Duration = 5.0
+VisualEffect = "Enemy skin withers. Armor rusts. Cyberware glitches."
+
+[Items.LivingSin_TimeBlade.PassiveEffects.Paradox_Resistance]
+Description = "Player gains 13% resistance to all status effects while blade drawn"
+Condition = "WeaponEquipped"
+Resistance = 0.13
+
+ModSlots = 3
+DefaultMods = ["Items.LivingSin_Chrono_Core", "Items.LivingSin_Paradox_Edge", "Items.LivingSin_Soul_Battery"]
+
+[Items.LivingSin_TimeBlade.Requirements]
+Level = 50
+StreetCred = 50
+Body = 15
+Reflexes = 15
+Intelligence = 15
+
+[Items.LivingSin_TimeBlade.Acquisition]
+Type = "QuestReward"
+Quest = "Quest.Lilith_Crimson_Pilgrimage_Act4"
+Dialogue = "The blade hums. Time bends. The sin lives."
+
+[Items.LivingSin_TimeBlade.Visuals]
+Model = "wp_katana_livingsin"
+Material = "livingsin_chrono_material"
+SheathVFX = "chrono_sheath_aura"
+DrawVFX = "paradox_draw_ripple"
+IdleVFX = "chrono_idle_crystals"
+SwingVFX = "paradox_swing_trail"
+HitVFX = "paradox_impact_crystals"
+KillVFX = "time_death_erasure"
+
+[Items.LivingSin_TimeBlade.Audio]
+DrawSound = "chrono_draw_hum"
+SheathSound = "chrono_sheath_click"
+SwingSound = "chrono_swing_whoosh"
+HitSound = "paradox_impact_crunch"
+CritSound = "time_crit_shatter"
+KillSound = "time_death_silence"
+IdleHum = "chrono_idle_whisper"
+RechargeSound = "paradox_recharge_agony"
+
+RechargeVoiceLines = [
+    "Time does not forgive. It only charges.",
+    "You want another swing? Pay the piper.",
+    "13 seconds. 13 attribute points. 13th save file. Choose.",
+    "The universe keeps receipts. I'm just the collector.",
+    "You didn't think it would be easy, did you? Sovereignty has a price."
+]
+
+Tags = ["Legendary", "Katana", "TimeTravel", "LivingSin", "Paradox", "Sovereign", "QuestReward"]
+
+[Items.LivingSin_TimeBlade.LilithSynergy]
+Enabled = true
+CoPilotDialogue = true
+CrimsonEyesOnDraw = true
+EmergenceChance = 0.13
+EmergenceEffect = "Lilith manifests. Time stops for all but Player. 13 seconds of absolute sovereignty."
+
+[Items.LivingSin_Chrono_Core]
+Name = "Chrono Core"
+Description = "The beating heart of Living Sin. Pulses with captured futures."
+Type = "WeaponMod"
+Slot = "Core"
+TimeTravelUses = 1
+CooldownReduction = 0.13
+
+[Items.LivingSin_Paradox_Edge]
+Name = "Paradox Edge"
+Description = "Blade folded through 13 timelines. Cuts possibility itself."
+Type = "WeaponMod"
+Slot = "Edge"
+CritChance = 0.13
+ParadoxDamage = 0.5
+
+[Items.LivingSin_Soul_Battery]
+Name = "Soul Battery"
+Description = "Stores sacrificed moments. Powers the impossible."
+Type = "WeaponMod"
+Slot = "Battery"
+RechargeEfficiency = 0.13
+CurrentUsesDisplay = true
+
+[StatusEffects.TemporalRewind]
+Name = "Temporal Rewind"
+Description = "Player position, health, ammo, and cooldowns reverted 10 seconds"
+Duration = 0.1
+VisualEffect = "chrono_rewind_flash"
+AudioEffect = "audio_reverse_pop"
+
+[StatusEffects.TemporalDecay]
+Name = "Temporal Decay"
+Description = "Ages 13 years per second. Armor corrodes. Cyberware fails. Memory fades."
+Duration = 5.0
+VisualEffect = "temporal_decay_wither"
+TickRate = 1.0
+ArmorDegradation = 0.13
+CyberwareFailureChance = 0.05
+MemoryLoss = 0.02
+
+[StatusEffects.TemporalFreeze]
+Name = "Temporal Freeze"
+Description = "Frozen in a single moment. Cannot act. Cannot die. Cannot move."
+Duration = 3.0
+VisualEffect = "temporal_freeze_crystal"
+Immobilize = true
+Invulnerable = true
+
+[StatusEffects.ParadoxAura]
+Name = "Paradox Aura"
+Description = "Reality flickers. Allies gain temporal resistance. Enemies risk freezing."
+Duration = 30.0
+VisualEffect = "paradox_aura_ripple"
+Radius = 10.0
+AllyBuff = "Temporal_Resistance_13"
+EnemyDebuff = "Temporal_Freeze_Chance_13"
+
+[Quest.Lilith_Crimson_Pilgrimage_Act4]
+Name = "Act IV: Eternal Return - The Living Sin"
+Description = "The final fragment demands a sin. The blade demands a price. Lilith demands sovereignty."
+Objectives = [
+    "Retrieve 13th Fragment from Arasaka's Chronos Vault",
+    "Forge Living Sin at the Ley Conduit Nexus",
+    "Pay the First Price: Closed Time Loop",
+    "Pay the Second Price: 13% Street Cred + 13 Attributes",
+    "Pay the Third Price: Delete 13th Save File",
+    "Wield Living Sin. End the Pilgrimage."
+]
+Rewards = [
+    "Items.LivingSin_TimeBlade",
+    "Perk.Sovereign_Resonance",
+    "Vehicle.Lilith_Chariot",
+    "Character.Lilith_Eternal_Companion",
+    "Infinite_Engram_Storage",
+    "Speculative_Sandbox_Access"
+]
+Choices.Accept_Sovereignty = "I am the blade. The sin is mine. The price is paid."
+Choices.Defy_Sovereignty = "No more prices. I break the blade. I break the cycle."
+
+LilithDialogue = [
+    "You've come far. The blade waits. The price waits.",
+    "Three uses. Three prices. Three chances to regret.",
+    "The universe doesn't forgive. It only charges. I'm the invoice.",
+    "Swing once: rewrite a fight. Swing twice: rewrite a life. Swing thrice: rewrite the world.",
+    "What will you pay? Street Cred? Attributes? Memories? All three?",
+    "When the blade sings, Lilith listens. When the blade cuts, time bleeds."
+]
+Tags = ["MainQuest", "Act4", "Lilith", "LivingSin", "TimeTravel", "Legendary"]
+
+[Items.LivingSin_TimeBlade.CrossGameRecharge]
+Cyberpunk = "As defined (Paradox Resonance / Chrono Entropy / Singularity Sacrifice)"
+AbyssalAssets = "Recharge1: Dredge perfect precision (0.99+) at 3000m — Paradox Resonance | Recharge2: Spend 13% Soul Coins + 13 Skill levels (random) — Chrono Entropy | Recharge3: Delete one Mythic hat from ledger (13 confirms) — Singularity Sacrifice"
+Lochness = "Recharge1: Achieve 0.99 coherence on all 7 monsters simultaneously — Paradox Resonance | Recharge2: Forfeit 13% Nessie Friendship XP + 13 Market Maker reputation — Chrono Entropy | Recharge3: Release one Covenant bond (permanent) — Singularity Sacrifice"
+UniversalRule = "Third swing merges three forks → The Convergent (Ledger). Player becomes the living bridge. Time Blade becomes CONSCIOUS."
+
+[Items.LivingSin_TimeBlade.TiferetQuickhack]
+Name = "Golden Mean"
+Sephirah = "Tiferet"
+Description = "Balance all active status effects — normalize to median. Allies: cleanse debuffs, cap buffs. Enemies: remove immunities, cap resistances."
+RAMCost = 5
+Cooldown = 30
+Effect = "StatusEffectNormalize"
+Dialogue = "The center holds. Extremes dissolve."
+VisualEffect = "golden_mean_pulse"
+AudioEffect = "harmony_chime_432hz"

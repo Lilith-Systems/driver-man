@@ -1,0 +1,35 @@
+adaptive_quantization:
+  draft_model:
+    acceptance_threshold: 0.75
+    enabled: true
+    max_draft_tokens: 4
+    model: tiny-1b-draft.gguf
+  enabled: true
+  sephirah_mapping:
+    Binah: FP16
+    Chesed: INT8
+    Chokhmah: FP16
+    Geburah: INT4
+    Hod: INT8
+    Kether: FP16
+    Malkuth: FP16
+    Netzach: INT4
+    Tiphareth: INT8
+    Yesod: INT8
+  switch_cooldown_sec: 5
+  tiers:
+    FP16:
+      quality: 1.0
+      speed: 0.5
+      tokens_per_sec: 22
+      vram_gb: 8.0
+    INT4:
+      quality: 0.85
+      speed: 1.0
+      tokens_per_sec: 45
+      vram_gb: 2.5
+    INT8:
+      quality: 0.93
+      speed: 0.75
+      tokens_per_sec: 35
+      vram_gb: 4.5

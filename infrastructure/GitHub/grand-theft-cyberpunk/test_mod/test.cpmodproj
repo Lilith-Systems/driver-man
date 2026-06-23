@@ -1,0 +1,11 @@
+<Project Sdk="WolvenKit.REDmod.Sdk">
+  <PropertyGroup>
+    <TargetFramework>WolvenKit.REDmod</TargetFramework>
+    <Name>test_mod</Name>
+    <Version>1.0.0</Version>
+    <Author>Test</Author>
+  </PropertyGroup>
+  <ItemGroup>
+    <REDscript Include="scripts/msn_magic_system.reds" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,127 @@
+# Abyssal Assets Skill Tree Quest TweakDB Records
+# Source-of-truth records for Cyberpunk-facing quest and reward integration.
+
+[AbyssalSkillSagas]
+Name = "Abyssal Skill Sagas"
+QuestFile = "quests/abyssal_skill_tree_quests.yaml"
+SkillCount = 24
+TreeCount = 7
+LocalOnly = true
+MSNIntegrated = true
+AbyssalAssetsIntegrated = true
+LochnessIntegrated = true
+NGDPolicy = "LOCAL_CEREBELLUM_GAME_FIRST"
+Economy = ["SoulCoins", "LochExchange", "NessieTreasury"]
+Commands = ["abyssal.skills.trees", "abyssal.skills.quests", "abyssal.skills.unlocks", "abyssal.skills.story"]
+
+[[AbyssalSkillSagas.Trees]]
+Id = "tree_gathering"
+Name = "Gathering"
+Sephirah = "Malkuth"
+Quest = "q_abyssal_gathering_01"
+Skills = ["Dredging", "Salvaging", "Foraging", "Hunting", "Wreck Recovery"]
+Story = "The First Dredge of Night City"
+UnlockFlag = "AbyssalSkillTree_Gathering_Unlocked"
+Rewards = ["Skill.Abyssal.Dredging", "Skill.Abyssal.Salvaging", "Skill.Abyssal.Foraging", "Skill.Abyssal.Hunting", "Skill.Abyssal.WreckRecovery"]
+
+[[AbyssalSkillSagas.Trees]]
+Id = "tree_processing"
+Name = "Processing"
+Sephirah = "Yesod"
+Quest = "q_abyssal_processing_01"
+Skills = ["Salvage Processing", "Fiber Working", "Bone Carving", "Metallurgy"]
+Story = "The Boatwright's Debt"
+UnlockFlag = "AbyssalSkillTree_Processing_Unlocked"
+Rewards = ["Skill.Abyssal.SalvageProcessing", "Skill.Abyssal.FiberWorking", "Skill.Abyssal.BoneCarving", "Skill.Abyssal.Metallurgy"]
+
+[[AbyssalSkillSagas.Trees]]
+Id = "tree_crafting"
+Name = "Crafting"
+Sephirah = "Hod"
+Quest = "q_abyssal_crafting_01"
+Skills = ["Haberdashery", "Enchanting", "Alchemy", "Runecrafting", "Masterwork"]
+Story = "The Kelp Witch's Chrome"
+UnlockFlag = "AbyssalSkillTree_Crafting_Unlocked"
+Rewards = ["Skill.Abyssal.Haberdashery", "Skill.Abyssal.Enchanting", "Skill.Abyssal.Alchemy", "Skill.Abyssal.Runecrafting", "Skill.Abyssal.Masterwork"]
+
+[[AbyssalSkillSagas.Trees]]
+Id = "tree_knowledge"
+Name = "Knowledge"
+Sephirah = "Binah"
+Quest = "q_abyssal_knowledge_01"
+Skills = ["Lore", "Scholarship", "Navigation", "Sonar Tuning"]
+Story = "The Sonar That Remembers"
+UnlockFlag = "AbyssalSkillTree_Knowledge_Unlocked"
+Rewards = ["Skill.Abyssal.Lore", "Skill.Abyssal.Scholarship", "Skill.Abyssal.Navigation", "Skill.Abyssal.SonarTuning"]
+
+[[AbyssalSkillSagas.Trees]]
+Id = "tree_social_economic"
+Name = "Social / Economic"
+Sephirah = "Chesed"
+Quest = "q_abyssal_economy_01"
+Skills = ["Trading", "Negotiation", "Guild Management"]
+Story = "The Eternal Exchange"
+UnlockFlag = "AbyssalSkillTree_Economy_Unlocked"
+Rewards = ["Skill.Abyssal.Trading", "Skill.Abyssal.Negotiation", "Skill.Abyssal.GuildManagement"]
+
+[[AbyssalSkillSagas.Trees]]
+Id = "tree_combat_survival"
+Name = "Combat / Survival"
+Sephirah = "Gevurah"
+Quest = "q_abyssal_survival_01"
+Skills = ["Evasion", "Harpooning", "Survival"]
+Story = "The Kraken Matriarch's Test"
+UnlockFlag = "AbyssalSkillTree_CombatSurvival_Unlocked"
+Rewards = ["Skill.Abyssal.Evasion", "Skill.Abyssal.Harpooning", "Skill.Abyssal.Survival", "Perk.Abyssal_MatriarchMercy"]
+
+[[AbyssalSkillSagas.Trees]]
+Id = "tree_projection"
+Name = "Projection"
+Sephirah = "Tiferet"
+Quest = "q_abyssal_projection_01"
+Skills = ["Teaching", "Virtual Levels", "Skillcape Aura", "Procedural Contract Authoring"]
+Story = "The Skillcape of the Loch"
+UnlockFlag = "AbyssalSkillTree_Projection_Unlocked"
+Rewards = ["Perk.Abyssal_SkillcapeAura", "Board.InfiniteAbyssalContracts", "Nessie_Friendship_Tier4"]
+
+[Quest.q_abyssal_gathering_01]
+DisplayName = "LocKey#q_abyssal_gathering_01_name"
+Description = "LocKey#q_abyssal_gathering_01_desc"
+Type = "Side"
+Tags = ["AbyssalAssets", "SkillSaga", "Gathering", "Malkuth", "Nessie"]
+
+[Quest.q_abyssal_processing_01]
+DisplayName = "LocKey#q_abyssal_processing_01_name"
+Description = "LocKey#q_abyssal_processing_01_desc"
+Type = "Side"
+Tags = ["AbyssalAssets", "SkillSaga", "Processing", "Yesod", "Boatwright"]
+
+[Quest.q_abyssal_crafting_01]
+DisplayName = "LocKey#q_abyssal_crafting_01_name"
+Description = "LocKey#q_abyssal_crafting_01_desc"
+Type = "Side"
+Tags = ["AbyssalAssets", "SkillSaga", "Crafting", "Hod", "KelpWitch"]
+
+[Quest.q_abyssal_knowledge_01]
+DisplayName = "LocKey#q_abyssal_knowledge_01_name"
+Description = "LocKey#q_abyssal_knowledge_01_desc"
+Type = "Side"
+Tags = ["AbyssalAssets", "SkillSaga", "Knowledge", "Binah", "Sonar"]
+
+[Quest.q_abyssal_economy_01]
+DisplayName = "LocKey#q_abyssal_economy_01_name"
+Description = "LocKey#q_abyssal_economy_01_desc"
+Type = "Side"
+Tags = ["AbyssalAssets", "SkillSaga", "Economy", "Chesed", "LochExchange"]
+
+[Quest.q_abyssal_survival_01]
+DisplayName = "LocKey#q_abyssal_survival_01_name"
+Description = "LocKey#q_abyssal_survival_01_desc"
+Type = "Side"
+Tags = ["AbyssalAssets", "SkillSaga", "CombatSurvival", "Geburah", "KrakenMatriarch"]
+
+[Quest.q_abyssal_projection_01]
+DisplayName = "LocKey#q_abyssal_projection_01_name"
+Description = "LocKey#q_abyssal_projection_01_desc"
+Type = "Main"
+Tags = ["AbyssalAssets", "SkillSaga", "Projection", "Kether", "Lilith", "Nessie", "PostGame"]

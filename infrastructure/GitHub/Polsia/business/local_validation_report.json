@@ -1,0 +1,61 @@
+{
+  "checks": [
+    {
+      "missing": [],
+      "ok": true,
+      "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/state/local_skill_index.json"
+    },
+    {
+      "missing": [],
+      "ok": true,
+      "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/state/local_command_index.json"
+    },
+    {
+      "missing": [],
+      "ok": true,
+      "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/state/grok_data_index.json"
+    },
+    {
+      "missing": [],
+      "ok": true,
+      "path": "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/state/bidirectional_memory_index.json"
+    },
+    {
+      "cmd": [
+        "node",
+        "--check",
+        "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/server.js"
+      ],
+      "ok": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "cmd": [
+        "/home/tehlappy/Desktop/AI/venv/bin/python",
+        "-m",
+        "py_compile",
+        "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/lyra_server.py"
+      ],
+      "ok": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "cmd": [
+        "fish",
+        "-n",
+        "/home/tehlappy/Desktop/AI/Pub/00_CORE_SERVICES/lilith-app/scripts/run_lilith_chat_agents_v3.fish"
+      ],
+      "ok": true,
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "local_only": true,
+  "ok": true,
+  "schema": "lilith.local_validation.v1"
+}

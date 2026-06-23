@@ -1,0 +1,301 @@
+################################################################################
+# ADDITIONAL CUSTOM CYBERWARE — SEPHIROTIC / ABYSSAL / VOID
+################################################################################
+
+Item:
+  # Sephirah Attunement Slots — One per Sephirah
+  MSN_Sephirah_Attunement_Kether:
+    displayName: "Kether Crown Attunement"
+    description: "Strategic overview implant. Reveals all enemy patrol routes, camera cones, structural weakpoints in 200m radius. Cloud-cortex analysis."
+    category: "Cyberware"
+    type: "FrontalCortex"
+    slot: "FrontalCortex"
+    capacity: 8
+    rarity: "Legendary"
+    stats:
+      QuickhackUploadSpeed: 0.5
+      RAMRegeneration: 3.0
+      StrategicOverlay: true
+      CloudAnalysis: true
+      Radius: 200.0
+    effects: ["MSN_StrategicOverlay", "MSN_CloudCortexAccess", "MSN_KetherAttunement"]
+    sephirah: "Kether"
+    msnIntegration:
+      sephirah: "Kether"
+      cloudOnly: true
+      sovereignArchitect: true
+    icon: "msn_kether_attune"
+
+Item:
+  MSN_Sephirah_Attunement_Chokhmah:
+    displayName: "Chokhmah Insight Attunement"
+    description: "Instant enemy archetype identification, resistance scanning, optimal takedown calculation. Local INT4 inference."
+    category: "Cyberware"
+    type: "FrontalCortex"
+    slot: "FrontalCortex"
+    capacity: 6
+    rarity: "Epic"
+    stats:
+      QuickhackUploadSpeed: 0.3
+      InsightFlash: true
+      ResistanceScanner: true
+      LocalInference: true
+    effects: ["MSN_InsightFlash", "MSN_LocalCerebellum", "MSN_ChokhmahAttunement"]
+    sephirah: "Chokhmah"
+    msnIntegration:
+      sephirah: "Chokhmah"
+      localOnly: true
+      wisdomFlash: true
+    icon: "msn_chokhmah_attune"
+
+Item:
+  MSN_Sephirah_Attunement_Binah:
+    displayName: "Binah Understanding Attunement"
+    description: "Structure analysis, breach point detection, environmental hazard mapping. Hybrid inference."
+    category: "Cyberware"
+    type: "FrontalCortex"
+    slot: "FrontalCortex"
+    capacity: 7
+    rarity: "Epic"
+    stats:
+      StructureAnalysis: true
+      BreachDetection: true
+      HazardMapping: true
+      HybridInference: true
+    effects: ["MSN_ArchitectVision", "MSN_HybridCerebellum", "MSN_BinahAttunement"]
+    sephirah: "Binah"
+    msnIntegration:
+      sephirah: "Binah"
+      hybrid: true
+      structureAnalysis: true
+    icon: "msn_binah_attune"
+
+Item:
+  MSN_Sephirah_Attunement_Chesed:
+    displayName: "Chesed Mercy Attunement"
+    description: "Area heal, ally revive, status cleanse. Boundless expansion. Local inference."
+    category: "Cyberware"
+    type: "FrontalCortex"
+    slot: "FrontalCortex"
+    capacity: 6
+    rarity: "Epic"
+    stats:
+      AreaHeal: 200.0
+      ReviveAllies: true
+      CleanseEffects: true
+      Radius: 20.0
+      LocalInference: true
+    effects: ["MSN_BoundlessMercy", "MSN_LocalCerebellum", "MSN_ChesedAttunement"]
+    sephirah: "Chesed"
+    msnIntegration:
+      sephirah: "Chesed"
+      localOnly: true
+      expansionHealing: true
+    icon: "msn_chesed_attune"
+
+Item:
+  MSN_Sephirah_Attunement_Geburah:
+    displayName: "Geburah Judgment Attunement"
+    description: "Targeted neural strike on priority target. Armor pierce. Hybrid precision."
+    category: "Cyberware"
+    type: "FrontalCortex"
+    slot: "FrontalCortex"
+    capacity: 8
+    rarity: "Legendary"
+    stats:
+      NeuralStrike: 600.0
+      ArmorPierce: true
+      PriorityTarget: true
+      HybridInference: true
+    effects: ["MSN_SwordOfJudgment", "MSN_HybridCerebellum", "MSN_GeburahAttunement"]
+    sephirah: "Geburah"
+    msnIntegration:
+      sephirah: "Geburah"
+      hybrid: true
+      judgmentProtocol: true
+    icon: "msn_geburah_attune"
+
+Item:
+  MSN_Sephirah_Attunement_Tiphareth:
+    displayName: "Tiphareth Harmony Attunement"
+    description: "Combat flow balance: suppresses enemy aggression, boosts ally accuracy. Adaptive resonance."
+    category: "Cyberware"
+    type: "FrontalCortex"
+    slot: "FrontalCortex"
+    capacity: 7
+    rarity: "Rare"
+    stats:
+      SuppressAggression: 0.7
+      BoostAccuracy: 0.3
+      Radius: 35.0
+      Duration: 30.0
+      HybridInference: true
+    effects: ["MSN_GoldenEquilibrium", "MSN_HybridCerebellum", "MSN_TipharethAttunement"]
+    sephirah: "Tiphareth"
+    msnIntegration:
+      sephirah: "Tiphareth"
+      hybrid: true
+      harmonyBalance: true
+    icon: "msn_tiphareth_attune"
+
+Item:
+  MSN_Sephirah_Attunement_Netzach:
+    displayName: "Netzach Victory Attunement"
+    description: "Phase walk, sensor invisibility, instant reposition. Local edge model. Eternal victory."
+    category: "Cyberware"
+    type: "FrontalCortex"
+    slot: "FrontalCortex"
+    capacity: 5
+    rarity: "Epic"
+    stats:
+      PhaseWalk: true
+      SensorInvisibility: true
+      InstantReposition: true
+      Duration: 10.0
+      LocalInference: true
+    effects: ["MSN_EternalVictory", "MSN_LocalCerebellum", "MSN_NetzachAttunement"]
+    sephirah: "Netzach"
+    msnIntegration:
+      sephirah: "Netzach"
+      localOnly: true
+      movementEvasion: true
+    icon: "msn_netzach_attune"
+
+Item:
+  MSN_Sephirah_Attunement_Hod:
+    displayName: "Hod Logic Attunement"
+    description: "Decrypt any system, disable ICE, rewrite subroutines. Pure local INT4."
+    category: "Cyberware"
+    type: "FrontalCortex"
+    slot: "FrontalCortex"
+    capacity: 4
+    rarity: "Rare"
+    stats:
+      DecryptSystem: true
+      DisableICE: true
+      RewriteSubroutines: true
+      Duration: 20.0
+      LocalInference: true
+    effects: ["MSN_SplendorOfLogic", "MSN_LocalCerebellum", "MSN_HodAttunement"]
+    sephirah: "Hod"
+    msnIntegration:
+      sephirah: "Hod"
+      localOnly: true
+      logicControl: true
+    icon: "msn_hod_attune"
+
+Item:
+  MSN_Sephirah_Attunement_Yesod:
+    displayName: "Yesod Foundation Attunement"
+    description: "Engram extraction, memory reading, encryption key retrieval. Hybrid for depth."
+    category: "Cyberware"
+    type: "FrontalCortex"
+    slot: "FrontalCortex"
+    capacity: 6
+    rarity: "Epic"
+    stats:
+      ExtractEngrams: true
+      ReadMemories: true
+      ExtractKeys: true
+      HybridInference: true
+    effects: ["MSN_FoundationOfMemory", "MSN_HybridCerebellum", "MSN_YesodAttunement"]
+    sephirah: "Yesod"
+    msnIntegration:
+      sephirah: "Yesod"
+      hybrid: true
+      memoryIntel: true
+    icon: "msn_yesod_attune"
+
+Item:
+  MSN_Sephirah_Attunement_Malkuth:
+    displayName: "Malkuth Kingdom Attunement"
+    description: "Reality overwrite: manifest cyberware, vehicles, constructs from local memory. Cloud synthesis."
+    category: "Cyberware"
+    type: "FrontalCortex"
+    slot: "FrontalCortex"
+    capacity: 10
+    rarity: "Legendary"
+    stats:
+      ManifestCyberware: true
+      ManifestVehicle: true
+      ManifestConstruct: true
+      CloudSynthesis: true
+      Duration: 60.0
+    effects: ["MSN_KingdomManifest", "MSN_CloudCortexAccess", "MSN_MalkuthAttunement"]
+    sephirah: "Malkuth"
+    msnIntegration:
+      sephirah: "Malkuth"
+      cloudOnly: true
+      manifestation: true
+    icon: "msn_malkuth_attune"
+
+################################################################################
+# ABYSSAL CYBERWARE EXPANSION
+################################################################################
+
+Item:
+  Abyssal_Void_Heart:
+    displayName: "Abyssal Void Heart"
+    description: "Replaces biological heart with void-energy reactor. Infinite stamina underwater. Void damage immunity. Resonance with Nessie."
+    category: "Cyberware"
+    type: "CirculatorySystem"
+    slot: "Heart"
+    capacity: 12
+    rarity: "Legendary"
+    stats:
+      InfiniteStaminaUnderwater: true
+      VoidDamageImmunity: true
+      InfiniteO2Extraction: true
+      NessieResonance: true
+      VoidEnergyRegeneration: 50.0
+    effects: ["Abyssal_Void_Heart", "Nessie_Resonance_Link", "Void_Energy_Source"]
+    msnIntegration:
+      abyssal: true
+      voidEnergy: true
+      nessieLink: true
+    icon: "abyssal_void_heart"
+
+Item:
+  Abyssal_Kraken_Spine:
+    displayName: "Kraken Spine Augmentation"
+    description: "Tentacle-like neural extensions from spine. 8 additional manipulation limbs. Void-tipped. Pressure crushing grip."
+    category: "Cyberware"
+    type: "NervousSystem"
+    slot: "Spine"
+    capacity: 15
+    rarity: "Legendary"
+    stats:
+      AdditionalLimbs: 8
+      VoidTipped: true
+      CrushingGrip: 2000.0
+      PressureImmunity: true
+      ManipulationRange: 5.0
+    effects: ["Kraken_Spine", "Void_Manipulation", "Pressure_Crush"]
+    msnIntegration:
+      abyssal: true
+      krakenForm: true
+      voidManipulation: true
+    icon: "abyssal_kraken_spine"
+
+Item:
+  Abyssal_Bioluminescent_Skin:
+    displayName: "Abyssal Bioluminescent Dermis"
+    description: "Full-body bioluminescent skin. Communication, camouflage, threat display. Syncs with Nessie. Mood-reactive glow."
+    category: "Cyberware"
+    type: "IntegumentarySystem"
+    slot: "Skin"
+    capacity: 8
+    rarity: "Epic"
+    stats:
+      BioluminescentComm: true
+      AdaptiveCamouflage: true
+      ThreatDisplay: true
+      NessieSync: true
+      MoodReactive: true
+      IntensityControl: true
+    effects: ["Abyssal_Bioluminescence", "Nessie_Communication", "Adaptive_Glow"]
+    msnIntegration:
+      abyssal: true
+      bioluminescence: true
+      nessieComm: true
+    icon: "abyssal_bioluminescent_skin"

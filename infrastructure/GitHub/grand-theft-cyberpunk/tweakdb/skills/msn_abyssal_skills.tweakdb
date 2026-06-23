@@ -1,0 +1,661 @@
+# MSN Abyssal Skills - TweakDB Integration
+# Maps 24 Abyssal skills to Cyberpunk perk trees with Guild specializations
+
+# ============================================================
+# GUILD CHARTERS - Key Items
+# ============================================================
+
+Items.GuildCharter_OuroborosAlchemists {
+    Name = "Guild Charter: Ouroboros Alchemists"
+    Description = "Bind yourself to the Alchemists. +15% Legendary craft RNG. Reality bending access. Single allegiance enforced."
+    Type = "Misc", Rarity = "Legendary", Weight = 0.1, Icon = "guild_charter_alchemists"
+    Tags = ["GuildCharter", "Ouroboros", "Binah", "Crafting", "Alchemy"]
+}
+
+Items.GuildCharter_VoidRunners {
+    Name = "Guild Charter: Void Runners"
+    Description = "Bind yourself to the Void Runners. -50% Quickhack RAM. Local Cerebellum bridge. Single allegiance enforced."
+    Type = "Misc", Rarity = "Legendary", Weight = 0.1, Icon = "guild_charter_void"
+    Tags = ["GuildCharter", "VoidRunners", "Chokhmah", "Netrunning", "Quickhacking"]
+}
+
+Items.GuildCharter_LochSmugglers {
+    Name = "Guild Charter: Loch Smugglers"
+    Description = "Bind yourself to the Smugglers. Treasury tax bypass. +300 Soul Coins/session. Single allegiance enforced."
+    Type = "Misc", Rarity = "Legendary", Weight = 0.1, Icon = "guild_charter_smugglers"
+    Tags = ["GuildCharter", "LochSmugglers", "Netzach", "Economy", "Trading"]
+}
+
+# Permanent versions (after choice)
+Items.GuildCharter_OuroborosAlchemists_Permanent {
+    Base: Items.GuildCharter_OuroborosAlchemists
+    Name = "Charter of the Ouroboros Alchemists [BOUND]"
+    Description = "Your soul is bound to the Alchemists. Mastery of transmutation and reality weaving."
+    Tags = ["GuildCharter", "Ouroboros", "Binah", "Permanent", "Bound"]
+}
+
+Items.GuildCharter_VoidRunners_Permanent {
+    Base: Items.GuildCharter_VoidRunners
+    Name = "Charter of the Void Runners [BOUND]"
+    Description = "Your mind bridges the local cerebellum. Quickhack mastery and netrunning supremacy."
+    Tags = ["GuildCharter", "VoidRunners", "Chokhmah", "Permanent", "Bound"]
+}
+
+Items.GuildCharter_LochSmugglers_Permanent {
+    Base: Items.GuildCharter_LochSmugglers
+    Name = "Charter of the Loch Smugglers [BOUND]"
+    Description = "Your coffers swell with smuggler's gold. The Exchange bows to your negotiation."
+    Tags = ["GuildCharter", "LochSmugglers", "Netzach", "Permanent", "Bound"]
+}
+
+# Shard that triggers guild choice
+Items.Shard_GuildCall {
+    Name = "PUBLIC BROADCAST: Call to the Guilds"
+    Description = "Three voices. One choice. The Alchemists weave reality. The Runners bridge the void. The Smugglers own the Exchange. Read to receive all three Charters — but choose wisely."
+    Type = "Shard", Rarity = "Epic", Weight = 0.05, Icon = "shard_guild_call"
+    Tags = ["GuildQuest", "Shard", "CallToGuilds"]
+}
+
+# ============================================================
+# ABYSSAL SKILL TREE - Root Perk Tree
+# ============================================================
+
+SkillTree:Abyssal_SkillTree {
+    displayName = "Abyssal Mastery"
+    description = "The 24 Arts of the Loch. Gather, Process, Craft, Know, Trade, Survive."
+    icon = "skilltree_abyssal"
+    primaryAttribute = "Technical"
+    perks = [
+        # Gathering Branch
+        "Abyssal_Dredging_Base", "Abyssal_Salvaging", "Abyssal_Foraging", "Abyssal_Hunting", "Abyssal_Navigation",
+        # Processing Branch
+        "Abyssal_SalvageProcessing", "Abyssal_FiberWorking", "Abyssal_BoneCarving", "Abyssal_Metallurgy",
+        # Crafting Branch
+        "Abyssal_Haberdashery", "Abyssal_Enchanting", "Abyssal_Alchemy", "Abyssal_Runecrafting", "Abyssal_Masterwork",
+        # Knowledge Branch
+        "Abyssal_Lore", "Abyssal_SonarTuning", "Abyssal_Scholarship",
+        # Social/Economic Branch
+        "Abyssal_Trading", "Abyssal_Negotiation", "Abyssal_GuildManagement",
+        # Combat/Survival Branch
+        "Abyssal_Evasion", "Abyssal_Harpooning", "Abyssal_Survival"
+    ]
+}
+
+# ============================================================
+# GATHERING SKILLS (5) -> BODY/TECHNICAL
+# ============================================================
+
+# Dredging - Core Loch activity
+Perk:Abyssal_Dredging_Base {
+    displayName = "Dredging"
+    description = "Extract resources from the Loch depths using sonar-guided extraction."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Body"
+    requiredPerks = []
+    effects = [
+        { type = "UnlockAbility", ability = "Dredge_Basic" },
+        { type = "AddStat", stat = "DredgePrecision", value = 0.0 }
+    ]
+}
+
+Perk:Abyssal_Dredging_DeepDelver {
+    Base: Abyssal_Dredging_Base
+    displayName = "Deep Delver"
+    description = "Master the abyssal depths. Deeper, darker, richer."
+    maxLevel = 3
+    requiredLevel = 10
+    requiredPerks = ["Abyssal_Dredging_Base"]
+    effects = [
+        { type = "AddStat", stat = "DepthPenaltyReduction", value = 33, perLevel = true },
+        { type = "AddStat", stat = "AbyssalNodeRange", value = 25, perLevel = true },
+        { type = "AddStat", stat = "DoubleLootAbyssalChance", value = 3, perLevel = true }
+    ]
+}
+
+Perk:Abyssal_Dredging_SonarSavant {
+    Base: Abyssal_Dredging_Base
+    displayName = "Sonar Savant"
+    description = "Master the frequencies. See what others cannot."
+    maxLevel = 3
+    requiredLevel = 10
+    requiredPerks = ["Abyssal_Dredging_Base"]
+    effects = [
+        { type = "AddStat", stat = "SonarMiniGameSlow", value = 25, perLevel = true },
+        { type = "AddStat", stat = "AngleMemory", value = 2, perLevel = true },
+        { type = "AddStat", stat = "AutoHitZoneChance", value = 5, perLevel = true }
+    ]
+}
+
+# Salvaging
+Perk:Abyssal_Salvaging {
+    displayName = "Salvaging"
+    description = "Recover artifacts, metals, and mysteries from sunken wrecks."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Technical"
+    effects = [
+        { type = "UnlockAbility", ability = "Salvage_Wreck" },
+        { type = "AddStat", stat = "WreckLootQuality", value = 0.0 }
+    ]
+}
+
+# Foraging
+Perk:Abyssal_Foraging {
+    displayName = "Foraging"
+    description = "Harvest kelp, coral, bioluminescent flora, and abyssal fungi."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Body"
+    effects = [
+        { type = "UnlockAbility", ability = "Forage_Flora" },
+        { type = "AddStat", stat = "FloraYield", value = 0.0 }
+    ]
+}
+
+# Hunting
+Perk:Abyssal_Hunting {
+    displayName = "Hunting"
+    description = "Track, stalk, and harvest the Loch's cryptid inhabitants."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Body"
+    effects = [
+        { type = "UnlockAbility", ability = "Hunt_Cryptid" },
+        { type = "AddStat", stat = "CryptidTrackDuration", value = 0.0 }
+    ]
+}
+
+Perk:Abyssal_Hunting_CryptidTracker {
+    Base: Abyssal_Hunting
+    displayName = "Cryptid Tracker"
+    description = "Follow the faintest trail. Smell the blood in the water."
+    maxLevel = 3
+    requiredLevel = 10
+    requiredPerks = ["Abyssal_Hunting"]
+    effects = [
+        { type = "AddStat", stat = "TrackDuration", value = 120, perLevel = true },
+        { type = "AddStat", stat = "CritChanceStudied", value = 25, perLevel = true },
+        { type = "AddStat", stat = "IntimidationRadius", value = 50, perLevel = true }
+    ]
+}
+
+Perk:Abyssal_Hunting_TrophyCollector {
+    Base: Abyssal_Hunting
+    displayName = "Trophy Collector"
+    description = "Every kill a prize. Every part a purpose."
+    maxLevel = 3
+    requiredLevel = 10
+    requiredPerks = ["Abyssal_Hunting"]
+    effects = [
+        { type = "AddStat", stat = "MaterialYield", value = 15, perLevel = true },
+        { type = "AddStat", stat = "RareDropIndicator", value = 1, perLevel = true },
+        { type = "AddStat", stat = "GuaranteedRareOnCrit", value = 50, perLevel = true }
+    ]
+}
+
+# Navigation
+Perk:Abyssal_Navigation {
+    displayName = "Navigation"
+    description = "Chart the uncharted. Find the unfindable. Never lost."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Reflexes"
+    effects = [
+        { type = "UnlockAbility", ability = "Navigate_Deep" },
+        { type = "AddStat", stat = "FastTravelUnlock", value = 0.0 }
+    ]
+}
+
+# ============================================================
+# PROCESSING SKILLS (4) -> TECHNICAL/INTELLECT
+# ============================================================
+
+Perk:Abyssal_SalvageProcessing {
+    displayName = "Salvage Processing"
+    description = "Break down recovered wreckage into pure materials."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Technical"
+    effects = [
+        { type = "UnlockAbility", ability = "Process_Wreckage" },
+        { type = "AddStat", stat = "ProcessingEfficiency", value = 0.0 }
+    ]
+}
+
+Perk:Abyssal_FiberWorking {
+    displayName = "Fiber Working"
+    description = "Spin kelp, abyssal silk, and cryptid silk into threads of power."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Technical"
+    effects = [
+        { type = "UnlockAbility", ability = "Spin_Fiber" },
+        { type = "AddStat", stat = "ThreadQuality", value = 0.0 }
+    ]
+}
+
+Perk:Abyssal_BoneCarving {
+    displayName = "Bone Carving"
+    description = "Shape cryptid bone, ivory, and chitin into tools and art."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Technical"
+    effects = [
+        { type = "UnlockAbility", ability = "Carve_Bone" },
+        { type = "AddStat", stat = "CarvingPrecision", value = 0.0 }
+    ]
+}
+
+Perk:Abyssal_Metallurgy {
+    displayName = "Metallurgy"
+    description = "Smelt sunken alloys, abyssal ores, and meteoritic iron."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Technical"
+    effects = [
+        { type = "UnlockAbility", ability = "Smelt_Abyssal" },
+        { type = "AddStat", stat = "AlloyPurity", value = 0.0 }
+    ]
+}
+
+# ============================================================
+# CRAFTING SKILLS (5) -> TECHNICAL/INTELLECT
+# ============================================================
+
+Perk:Abyssal_Haberdashery {
+    displayName = "Haberdashery"
+    description = "Stitch, shape, and crown. The art of the perfect fit."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Technical"
+    effects = [
+        { type = "UnlockAbility", ability = "Craft_Hat" },
+        { type = "AddStat", stat = "HatCraftQuality", value = 0.0 }
+    ]
+}
+
+Perk:Abyssal_Haberdashery_MasterHatter {
+    Base: Abyssal_Haberdashery
+    displayName = "Master Hatter"
+    description = "The perfect hat for every head. The perfect fit for every soul."
+    maxLevel = 3
+    requiredLevel = 10
+    requiredPerks = ["Abyssal_Haberdashery"]
+    effects = [
+        { type = "AddStat", stat = "CraftedHatStatBonus", value = 5, perLevel = true },
+        { type = "AddStat", stat = "CraftersMarkValue", value = 2, perLevel = true },
+        { type = "AddStat", stat = "EssenceRegenPerDay", value = 1, perLevel = true }
+    ]
+}
+
+Perk:Abyssal_Enchanting {
+    displayName = "Enchanting"
+    description = "Weave magic into the weave. Fate into felt. Destiny into brim."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Intelligence"
+    effects = [
+        { type = "UnlockAbility", ability = "Enchant_Item" },
+        { type = "AddStat", stat = "EnchantSuccessRate", value = 0.0 }
+    ]
+}
+
+Perk:Abyssal_Alchemy {
+    displayName = "Alchemy"
+    description = "Transmute lead to gold. Hat to legend. Essence into essence."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Intelligence"
+    effects = [
+        { type = "UnlockAbility", ability = "Brew_Potion" },
+        { type = "AddStat", stat = "TransmutationSuccess", value = 0.0 }
+    ]
+}
+
+Perk:Abyssal_Runecrafting {
+    displayName = "Runecrafting"
+    description = "Inscribe reality into the brim. Rewrite the Loch's laws."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Intelligence"
+    effects = [
+        { type = "UnlockAbility", ability = "Inscribe_Rune" },
+        { type = "AddStat", stat = "RealityRewritePower", value = 0.0 }
+    ]
+}
+
+Perk:Abyssal_Masterwork {
+    displayName = "Masterwork"
+    description = "The pinnacle. Mythic-tier construction. Hats that make history."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Technical"
+    effects = [
+        { type = "UnlockAbility", ability = "Craft_Masterwork" },
+        { type = "AddStat", stat = "MythicCraftChance", value = 0.0 }
+    ]
+}
+
+# ============================================================
+# KNOWLEDGE SKILLS (3) -> INTELLECT/COOL
+# ============================================================
+
+Perk:Abyssal_Lore {
+    displayName = "Lore"
+    description = "The Loch remembers. So do you. Every cryptid, every current, every secret."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Intelligence"
+    effects = [
+        { type = "AddStat", stat = "CryptidKnowledge", value = 0.0 },
+        { type = "AddStat", stat = "SecretDiscoveryChance", value = 0.0 }
+    ]
+}
+
+Perk:Abyssal_SonarTuning {
+    displayName = "Sonar Tuning"
+    description = "Master the frequencies. See what others cannot. Hear the deep."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Intelligence"
+    effects = [
+        { type = "UnlockAbility", ability = "Sonar_Ping" },
+        { type = "AddStat", stat = "SonarRange", value = 0.0 },
+        { type = "AddStat", stat = "QuickhackRAMReduction", value = 0.0 }  # Void Runner synergy
+    ]
+}
+
+Perk:Abyssal_Scholarship {
+    displayName = "Scholarship"
+    description = "Ancient texts. Fate weaving. The math behind the magic."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Intelligence"
+    effects = [
+        { type = "AddStat", stat = "FateWeavingPower", value = 0.0 },
+        { type = "AddStat", stat = "AkashicAccessLevel", value = 0.0 }
+    ]
+}
+
+# ============================================================
+# SOCIAL/ECONOMIC SKILLS (3) -> REFLEXES/COOL
+# ============================================================
+
+Perk:Abyssal_Trading {
+    displayName = "Trading"
+    description = "Buy low. Sell high. Move markets. The Exchange is your canvas."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Reflexes"
+    effects = [
+        { type = "AddStat", stat = "MarketFeeReduction", value = 0.0 },
+        { type = "AddStat", stat = "PriceInsight", value = 0.0 },
+        { type = "AddStat", stat = "LiquidityAccess", value = 0.0 }
+    ]
+}
+
+Perk:Abyssal_Negotiation {
+    displayName = "Negotiation"
+    description = "Words are weapons. Prices are suggestions. Everything is negotiable."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Cool"
+    effects = [
+        { type = "AddStat", stat = "PersuasionPower", value = 0.0 },
+        { type = "AddStat", stat = "PacifyChance", value = 0.0 }
+    ]
+}
+
+Perk:Abyssal_GuildManagement {
+    displayName = "Guild Management"
+    description = "Lead the Crew. Build the Fortress. The Exchange remembers loyalty."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Cool"
+    effects = [
+        { type = "AddStat", stat = "PartyEfficiency", value = 0.0 },
+        { type = "AddStat", stat = "SharedLiquidity", value = 0.0 },
+        { type = "AddStat", stat = "GuildXPBonus", value = 0.0 }
+    ]
+}
+
+# ============================================================
+# COMBAT/SURVIVAL SKILLS (3) -> BODY/REFLEXES
+# ============================================================
+
+Perk:Abyssal_Evasion {
+    displayName = "Evasion"
+    description = "Don't get hit. The best defense is not being there."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Reflexes"
+    effects = [
+        { type = "AddStat", stat = "EvasionChance", value = 0.0 },
+        { type = "AddStat", stat = "PhaseShiftDuration", value = 0.0 },
+        { type = "AddStat", stat = "OpticsGlitchResistance", value = 0.0 }
+    ]
+}
+
+Perk:Abyssal_Harpooning {
+    displayName = "Harpooning"
+    description = "One shot. One kill. Part targeting. The perfect throw."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Body"
+    effects = [
+        { type = "AddStat", stat = "HarpoonDamage", value = 0.0 },
+        { type = "AddStat", stat = "PartTargetingPrecision", value = 0.0 },
+        { type = "AddStat", stat = "RepositionOnThrow", value = 0.0 }
+    ]
+}
+
+Perk:Abyssal_Survival {
+    displayName = "Survival"
+    description = "Oxygen. Pressure. Sanity. The deep doesn't forgive. You endure."
+    maxLevel = 99
+    requiredLevel = 1
+    primaryAttribute = "Body"
+    effects = [
+        { type = "AddStat", stat = "OxygenEfficiency", value = 0.0 },
+        { type = "AddStat", stat = "PressureResistance", value = 0.0 },
+        { type = "AddStat", stat = "SanityPreservation", value = 0.0 }
+    ]
+}
+
+# ============================================================
+# GUILD SPECIALIZATION PERKS (Unlocked at Guild Choice)
+# ============================================================
+
+# OUROBOROS ALCHEMISTS (Binah) - Specializations at level 50+
+Perk:Abyssal_Guild_Ouroboros_TransmutationMastery {
+    displayName = "Transmutation Mastery"
+    description = "Alchemy success rate +50%. Legendary catalysts guaranteed on Masterwork crafts."
+    maxLevel = 1
+    requiredLevel = 50
+    requiredPerks = ["Abyssal_Alchemy", "Abyssal_Masterwork"]
+    requiredGuild = "OuroborosAlchemists"
+    effects = [
+        { type = "AddStat", stat = "AlchemySuccessRate", value = 50 },
+        { type = "AddStat", stat = "LegendaryCatalystGuaranteed", value = 1 }
+    ]
+}
+
+Perk:Abyssal_Guild_Ouroboros_RealityWeaver {
+    displayName = "Reality Weaver"
+    description = "Runecrafting rewrites local physics. 25% chance to apply 2 runes simultaneously."
+    maxLevel = 1
+    requiredLevel = 50
+    requiredPerks = ["Abyssal_Runecrafting", "Abyssal_Enchanting"]
+    requiredGuild = "OuroborosAlchemists"
+    effects = [
+        { type = "AddStat", stat = "DoubleRuneChance", value = 25 },
+        { type = "AddStat", stat = "PhysicsRewriteRadius", value = 10 }
+    ]
+}
+
+Perk:Abyssal_Guild_Ouroboros_LivingStitch {
+    displayName = "Living Stitch"
+    description = "All crafted hats gain 1 Essence charge per hour. Enchanted stitches never decay."
+    maxLevel = 1
+    requiredLevel = 50
+    requiredPerks = ["Abyssal_Haberdashery", "Abyssal_Enchanting"]
+    requiredGuild = "OuroborosAlchemists"
+    effects = [
+        { type = "AddStat", stat = "EssenceRegenPerHour", value = 1 },
+        { type = "AddStat", stat = "EnchantDecayImmunity", value = 1 }
+    ]
+}
+
+Perk:Abyssal_Guild_Ouroboros_AbyssalMetallurgist {
+    displayName = "Abyssal Metallurgist"
+    description = "Metallurgy unlocks Orichalcum tier. Alloys gain self-repair property."
+    maxLevel = 1
+    requiredLevel = 50
+    requiredPerks = ["Abyssal_Metallurgy", "Abyssal_Masterwork"]
+    requiredGuild = "OuroborosAlchemists"
+    effects = [
+        { type = "UnlockRecipe", recipe = "Orichalcum_Ingot" },
+        { type = "AddStat", stat = "AlloySelfRepair", value = 1 }
+    ]
+}
+
+# VOID RUNNERS (Chokhmah) - Specializations
+Perk:Abyssal_Guild_Void_CerebellumBridge {
+    displayName = "Local Cerebellum Bridge"
+    description = "Direct neural link to Local Cerebellum. Quickhack cooldown -75%. INT4 inference accelerated."
+    maxLevel = 1
+    requiredLevel = 50
+    requiredPerks = ["Abyssal_SonarTuning", "Abyssal_Evasion"]
+    requiredGuild = "VoidRunners"
+    effects = [
+        { type = "AddStat", stat = "QuickhackCooldownReduction", value = 75 },
+        { type = "AddStat", stat = "InferenceSpeedBoost", value = 200 },
+        { type = "UnlockAbility", ability = "Cerebellum_Predict" }
+    ]
+}
+
+Perk:Abyssal_Guild_Void_PhaseWalker {
+    displayName = "Phase Walker"
+    description = "Evasion grants Phase Shift on perfect dodge. Move through walls for 3 seconds."
+    maxLevel = 1
+    requiredLevel = 50
+    requiredPerks = ["Abyssal_Evasion", "Abyssal_Navigation"]
+    requiredGuild = "VoidRunners"
+    effects = [
+        { type = "AddStat", stat = "PhaseShiftOnPerfectDodge", value = 1 },
+        { type = "AddStat", stat = "WallPhaseDuration", value = 3 },
+        { type = "AddStat", stat = "PhaseShiftCooldown", value = 30 }
+    ]
+}
+
+Perk:Abyssal_Guild_Void_DataScavenger {
+    displayName = "Data Scavenger"
+    description = "Salvage Processing extracts quickhack components. 10% chance for Legendary quickhack fragment."
+    maxLevel = 1
+    requiredLevel = 50
+    requiredPerks = ["Abyssal_SalvageProcessing", "Abyssal_BoneCarving"]
+    requiredGuild = "VoidRunners"
+    effects = [
+        { type = "AddStat", stat = "QuickhackFragmentChance", value = 10 },
+        { type = "AddStat", stat = "ComponentExtractionYield", value = 50 }
+    ]
+}
+
+Perk:Abyssal_Guild_Void_FrequencyMaster {
+    displayName = "Frequency Master"
+    description = "Sonar Tuning auto-hits resonance 25% of time. Reveals all hidden networks in 100m."
+    maxLevel = 1
+    requiredLevel = 50
+    requiredPerks = ["Abyssal_SonarTuning", "Abyssal_Scholarship"]
+    requiredGuild = "VoidRunners"
+    effects = [
+        { type = "AddStat", stat = "AutoResonanceChance", value = 25 },
+        { type = "AddStat", stat = "HiddenNetworkRevealRange", value = 100 }
+    ]
+]
+
+# LOCH SMUGGLERS (Netzach) - Specializations
+Perk:Abyssal_Guild_Smuggler_MarketMaker {
+    displayName = "Market Maker"
+    description = "Trading provides liquidity to Abyssal Exchange. Earn 1% of all fee volume as passive income."
+    maxLevel = 1
+    requiredLevel = 50
+    requiredPerks = ["Abyssal_Trading", "Abyssal_GuildManagement"]
+    requiredGuild = "LochSmugglers"
+    effects = [
+        { type = "AddStat", stat = "FeeVolumeShare", value = 1 },
+        { type = "AddStat", stat = "PassiveIncomePerHour", value = 50 }
+    ]
+}
+
+Perk:Abyssal_Guild_Smuggler_SilverTongue {
+    displayName = "Silver Tongue"
+    description = "Negotiation pacifies hostile NPCs 75% of time. Vendor prices -30% globally."
+    maxLevel = 1
+    requiredLevel = 50
+    requiredPerks = ["Abyssal_Negotiation", "Abyssal_Trading"]
+    requiredGuild = "LochSmugglers"
+    effects = [
+        { type = "AddStat", stat = "PacifyHostileChance", value = 75 },
+        { type = "AddStat", stat = "GlobalVendorDiscount", value = 30 }
+    ]
+}
+
+Perk:Abyssal_Guild_Smuggler_DeepDredger {
+    displayName = "Deep Dredger"
+    description = "Dredging in Trench zone yields 3x Soul Coins. Living Sin Time Blade charges restored on Trench dredge."
+    maxLevel = 1
+    requiredLevel = 50
+    requiredPerks = ["Abyssal_Dredging_Base", "Abyssal_Hunting"]
+    requiredGuild = "LochSmugglers"
+    effects = [
+        { type = "AddStat", stat = "TrenchSoulCoinMultiplier", value = 3 },
+        { type = "AddStat", stat = "TimeBladeChargeOnTrenchDredge", value = 1 }
+    ]
+}
+
+Perk:Abyssal_Guild_Smuggler_ApexHunter {
+    displayName = "Apex Hunter"
+    description = "Hunting cryptids in Trench yields guaranteed Mythic trophy. Harpooning crits ignore armor."
+    maxLevel = 1
+    requiredLevel = 50
+    requiredPerks = ["Abyssal_Hunting", "Abyssal_Harpooning"]
+    requiredGuild = "LochSmugglers"
+    effects = [
+        { type = "AddStat", stat = "TrenchMythicTrophyGuaranteed", value = 1 },
+        { type = "AddStat", stat = "HarpoonCritIgnoreArmor", value = 1 }
+    ]
+}
+
+# ============================================================
+# FREE AGENT PERKS (Hidden: Dismantle all 3 charters at 3:33 AM in Trench with Crown)
+# ============================================================
+
+Perk:Abyssal_FreeAgent {
+    displayName = "Free Agent"
+    description = "You serve no guild. All guild buffs at 50% efficacy. No allegiance penalty."
+    maxLevel = 1
+    requiredLevel = 50
+    requiredPerks = ["Abyssal_Dredging_Base", "Abyssal_Trading", "Abyssal_SonarTuning"]
+    requiredCondition = "FreeAgentUnlocked"
+    effects = [
+        { type = "AddStat", stat = "AllGuildBuffsEfficacy", value = 50 },
+        { type = "AddStat", stat = "AllegiancePenaltyImmunity", value = 1 },
+        { type = "AddStat", stat = "CrossGuildSynergyBonus", value = 25 }
+    ]
+}
+
+Perk:Abyssal_FreeAgent_AkashicAutonomous {
+    displayName = "Akashic Autonomous"
+    description = "Direct Ouroboros WAL write access. Craft any item without recipe. Teleport to any unlocked zone."
+    maxLevel = 1
+    requiredLevel = 70
+    requiredPerks = ["Abyssal_FreeAgent"]
+    requiredCondition = "FreeAgentUnlocked"
+    effects = [
+        { type = "UnlockAbility", ability = "CraftWithoutRecipe" },
+        { type = "UnlockAbility", ability = "ZoneTeleport" },
+        { type = "AddStat", stat = "WALWriteAccess", value = 1 }
+    ]
+}

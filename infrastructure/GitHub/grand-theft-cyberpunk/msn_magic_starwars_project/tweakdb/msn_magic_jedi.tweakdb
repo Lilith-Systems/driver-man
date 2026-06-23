@@ -1,0 +1,102 @@
+// MSN Magic + Jedi content records
+// Runtime logic: scripts/magic/msn_magic_system.reds and scripts/jedi/msn_jedi_system.reds
+
+Item:MSN_Arcane_Cerebellum {
+    displayName: "LocKey#msn_arcane_cerebellum_name"
+    description: "LocKey#msn_arcane_cerebellum_desc"
+    category: "Cyberware"
+    rarity: "Legendary"
+    scriptClass: "MSNMagicCerebellum"
+    stats: [
+        { type: "ManaPoolBonus", value: 100.0 },
+        { type: "ManaRegenBonus", value: 15.0 },
+        { type: "SpellPowerBonus", value: 0.35 }
+    ]
+}
+
+Item:MSN_Arcane_Focus {
+    displayName: "LocKey#msn_arcane_focus_name"
+    description: "LocKey#msn_arcane_focus_desc"
+    category: "Melee"
+    rarity: "Legendary"
+    damageType: "Energy"
+    stats: [
+        { type: "SpellPowerBonus", value: 0.5 },
+        { type: "ManaRegenBonus", value: 5.0 },
+        { type: "CooldownReduction", value: 0.2 }
+    ]
+}
+
+Item:MSN_Staff_of_Power {
+    displayName: "LocKey#msn_staff_power_name"
+    description: "LocKey#msn_staff_power_desc"
+    category: "Melee"
+    rarity: "Legendary"
+    damageType: "Energy"
+    stats: [
+        { type: "SpellPowerBonus", value: 1.0 },
+        { type: "ManaPoolBonus", value: 100.0 },
+        { type: "AutoCastOnHit", spell: "MagicMissile", chance: 0.2 }
+    ]
+}
+
+Item:MSN_Wand_of_Fireballs {
+    displayName: "LocKey#msn_wand_fireball_name"
+    description: "LocKey#msn_wand_fireball_desc"
+    category: "Ranged"
+    rarity: "Legendary"
+    damageType: "Thermal"
+    stats: [
+        { type: "SpellCast", spell: "Fireball", cost: 0.0 },
+        { type: "MagazineSpellCharges", value: 3.0 }
+    ]
+}
+
+Item:MSN_Force_Discipline_Implant {
+    displayName: "LocKey#msn_force_implant_name"
+    description: "LocKey#msn_force_implant_desc"
+    category: "Cyberware"
+    rarity: "Legendary"
+    scriptClass: "MSNLightsaberDiscipline"
+    stats: [
+        { type: "ForceFocusBonus", value: 75.0 },
+        { type: "ForceFocusRegen", value: 10.0 },
+        { type: "ForceCooldownReduction", value: 0.15 }
+    ]
+}
+
+Item:MSN_Plasma_Saber {
+    displayName: "LocKey#msn_plasma_saber_name"
+    description: "LocKey#msn_plasma_saber_desc"
+    category: "Melee"
+    rarity: "Legendary"
+    damageType: "Thermal"
+    stats: [
+        { type: "SaberForm", form: "ShiiCho", value: 1.0 },
+        { type: "DeflectChance", value: 0.2 },
+        { type: "ForcePowerBonus", value: 0.25 }
+    ]
+}
+
+Ability:MSN_MagicMissile { command = "msn.magic.cast MagicMissile", school = "Evocation", cost = 10.0, cooldown = 3.0 }
+Ability:MSN_Fireball { command = "msn.magic.cast Fireball", school = "Evocation", cost = 30.0, cooldown = 15.0 }
+Ability:MSN_LightningBolt { command = "msn.magic.cast LightningBolt", school = "Evocation", cost = 25.0, cooldown = 10.0 }
+Ability:MSN_MageArmor { command = "msn.magic.cast MageArmor", school = "Abjuration", cost = 15.0, cooldown = 45.0 }
+Ability:MSN_Shield { command = "msn.magic.cast Shield", school = "Abjuration", cost = 10.0, cooldown = 20.0 }
+Ability:MSN_DetectMagic { command = "msn.magic.cast DetectMagic", school = "Divination", cost = 5.0, cooldown = 10.0 }
+Ability:MSN_Teleport { command = "msn.magic.cast Teleport", school = "Conjuration", cost = 40.0, cooldown = 60.0 }
+Ability:MSN_SummonFamiliar { command = "msn.magic.cast SummonFamiliar", school = "Conjuration", cost = 50.0, cooldown = 120.0 }
+Ability:MSN_Heal { command = "msn.magic.cast Heal", school = "Necromancy", cost = 20.0, cooldown = 20.0 }
+Ability:MSN_RaiseDead { command = "msn.magic.cast RaiseDead", school = "Necromancy", cost = 100.0, cooldown = 300.0 }
+Ability:MSN_TimeStop { command = "msn.magic.cast TimeStop", school = "Transmutation", cost = 80.0, cooldown = 300.0 }
+Ability:MSN_Wish { command = "msn.magic.cast Wish", school = "Transmutation", cost = 150.0, cooldown = 900.0 }
+Ability:MSN_ForcePush { command = "msn.jedi.power ForcePush", alignment = "Grey", cost = 15.0, cooldown = 4.0 }
+Ability:MSN_ForcePull { command = "msn.jedi.power ForcePull", alignment = "Grey", cost = 15.0, cooldown = 4.0 }
+Ability:MSN_ForceLeap { command = "msn.jedi.power ForceLeap", alignment = "Light", cost = 20.0, cooldown = 8.0 }
+Ability:MSN_ForceSense { command = "msn.jedi.power ForceSense", alignment = "Light", cost = 10.0, cooldown = 12.0 }
+Ability:MSN_ForceStasis { command = "msn.jedi.power ForceStasis", alignment = "Light", cost = 35.0, cooldown = 20.0 }
+Ability:MSN_ForceChoke { command = "msn.jedi.power ForceChoke", alignment = "Dark", cost = 40.0, cooldown = 20.0 }
+Ability:MSN_ForceHeal { command = "msn.jedi.power ForceHeal", alignment = "Light", cost = 30.0, cooldown = 30.0 }
+Ability:MSN_SaberFormShiiCho { command = "msn.jedi.power SaberFormShiiCho", alignment = "Grey", cost = 5.0, cooldown = 2.0 }
+Ability:MSN_SaberFormMakashi { command = "msn.jedi.power SaberFormMakashi", alignment = "Light", cost = 5.0, cooldown = 2.0 }
+Ability:MSN_SaberFormDjemSo { command = "msn.jedi.power SaberFormDjemSo", alignment = "Dark", cost = 5.0, cooldown = 2.0 }

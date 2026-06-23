@@ -1,0 +1,6 @@
+Records:
+  Items.HellCampaignReward_1:
+    $type: Item_Record
+    displayName: "Demonic Shard of the 1st Circle"
+    quality: Quality.Legendary
+    tags: ["Quest", "HellCampaign"]

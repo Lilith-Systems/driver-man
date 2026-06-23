@@ -1,0 +1,602 @@
+################################################################################
+# HELL CAMPAIGN MAP AREAS — LUCIFER'S DOMAIN
+# The Nine Circles of Hell made manifest in Night City's corrupted sub-net
+# Integrates with: msn_magic_quests, msn_starwars_quests, msn_master_integration
+# Generated: 2026-06-19 | Lilith Sovereign Seal | Sephirah: Geburah (Lucifer's Throne)
+################################################################################
+
+ProceduralGeneration:
+  schema: "msn.procgen.hell.v1"
+  localOnly: true
+  designGoals:
+    - "Nine distinct circles as vertical biomes, each a corruption of a Night City district"
+    - "VRAM pressure directly modulates Hell's stability (LOCAL = controllable, CLOUD = chaotic)"
+    - "Lucifer's presence scales with player corruption level and Infernal Pact progression"
+    - "Cross-system integration: Sith Alchemy, Necromancy corruption, Demon summoning"
+    - "Sephirotic inversion: Each circle maps to an inverted Sephirah (Qliphoth)"
+
+  # ==================== THE NINE CIRCLES (Qlipoth Biome Grammar) ====================
+  
+  BiomeGrammar:
+    # CIRCLE 1: LIMBO - The Vestibule (Inverted Keter - Thaumiel)
+    limbo_vestibule:
+      displayName: "Limbo — The Vestibule of Indecision"
+      description: "Where the uncommitted drift. Neither Heaven nor Hell claims them. Endless fog, whispering data."
+      palette: ["pale_gray", "static_white", "memory_blue"]
+      verticalPosition: 0  # Highest/Entry
+      hazards: ["apathy_field", "memory_leak", "decision_paralysis_daemon"]
+      nativeEntities: ["Vestige_Soul", "Uncommitted_AI", "Limbo_Walker"]
+      vehicleBias: ["Vehicle_Spectral_Hover", "Vehicle_PhantomNeedle_Fighter"]
+      lootBias: ["Soul_Coin", "Memory_Shard", "Indecision_Essence", "Thaumiel_Fragment"]
+      qliphoth: "Thaumiel"  # Dual contending forces
+      sephirahInversion: "Keter"
+      luciferInfluence: 0.1
+      ngdIntegration:
+        vramPressureEffect: "LOW VRAM = fog thickens (Limbo expands), HIGH VRAM = clarity returns"
+        routeLOCAL_CEREBELLUM: "Full fog simulation, Vestiges interactable, choices matter"
+        routeHYBRID: "Fog density static, Vestiges visible but non-interactive"
+        routeCLOUD_CORTEX: "No fog, Limbo bypassed, direct descent to Circle 2"
+      connections:
+        up: "night_city_surface"
+        down: "lust_wind"
+
+    # CIRCLE 2: LUST - The Hurricane (Inverted Chokmah - Ghagiel)
+    lust_wind:
+      displayName: "Lust — The Hurricane of Desire"
+      description: "Souls blown eternally by winds of unfulfilled want. Neon flesh markets, pleasure domes, data-brothels."
+      palette: ["neon_pink", "carnal_red", "synthetic_gold"]
+      verticalPosition: 1
+      hazards: ["desire_vortex", "pleasure_overload", "siren_hack_daemon"]
+      nativeEntities: ["Siren_Netrunner", "Incubus_Script", "Succubus_Daemon", "Desire_Drone"]
+      vehicleBias: ["Vehicle_Velvet_Interceptor", "Vehicle_Pleasure_Yacht"]
+      lootBias: ["Siren_Chip", "Desire_Stim", "Pleasure_Protocol", "Ghagiel_Fragment"]
+      qliphoth: "Ghagiel"  # Hinderers
+      sephirahInversion: "Chokmah"
+      luciferInfluence: 0.2
+      ngdIntegration:
+        vramPressureEffect: "VRAM modulates wind intensity (HIGH = hurricane, LOW = breeze)"
+        routeLOCAL_CEREBELLUM: "Full wind physics, Sirens adaptive, pleasure domes dynamic"
+        routeHYBRID: "Wind preset patterns, Sirens scripted"
+        routeCLOUD_CORTEX: "Static wind, no Siren AI, loot tables reduced"
+      connections:
+        up: "limbo_vestibule"
+        down: "gluttony_trench"
+
+    # CIRCLE 3: GLUTTONY - The Trench (Inverted Binah - Sathariel)
+    gluttony_trench:
+      displayName: "Gluttony — The Consuming Trench"
+      description: "Endless consumption. Data-devourers, crypto-miners, resource hoarders. The ground eats you."
+      palette: ["visceral_orange", "digestive_green", "consumption_brown"]
+      verticalPosition: 2
+      hazards: ["acid_data_pool", "consumption_swarm", "hoarder_guardian"]
+      nativeEntities: ["Consumer_Script", "Devourer_Daemon", "Hoarder_AI", "Gluttony_Worm"]
+      vehicleBias: ["Vehicle_Tanker_Crawler", "Vehicle_Consumption_Sub"]
+      lootBias: ["Consumer_Core", "Digestive_Enzyme", "Hoard_Key", "Sathariel_Fragment"]
+      qliphoth: "Sathariel"  # Concealment of God
+      sephirahInversion: "Binah"
+      luciferInfluence: 0.3
+      ngdIntegration:
+        vramPressureEffect: "VRAM = digestion rate (HIGH = rapid consumption, LOW = slow feast)"
+        routeLOCAL_CEREBELLUM: "Real-time consumption simulation, terrain deforms as eaten"
+        routeHYBRID: "Consumption events scripted, terrain static"
+        routeCLOUD_CORTEX: "No consumption mechanics, static loot"
+      connections:
+        up: "lust_wind"
+        down: "greed_vault"
+
+    # CIRCLE 4: GREED - The Vault (Inverted Chesed - Gamchicoth)
+    greed_vault:
+      displayName: "Greed — The Infinite Vault"
+      description: "Corporate towers of gold-plated code. Hoarders vs Wasters in eternal market war. Treasury bots enforce contracts."
+      palette: ["corporate_gold", "vault_steel", "avarice_silver"]
+      verticalPosition: 3
+      hazards: ["contract_daemon", "arbitrage_bot_swarm", "treasury_enforcer"]
+      nativeEntities: ["Hoarder_Executive", "Waster_Scavenger", "Treasury_Bot", "Market_Maker_Daemon"]
+      vehicleBias: ["Vehicle_Armored_Transport", "Vehicle_Vault_Runner"]
+      lootBias: ["Contract_Shard", "Treasury_Key", "Market_Data", "Gamchicoth_Fragment"]
+      qliphoth: "Gamchicoth"  # Devourers
+      sephirahInversion: "Chesed"
+      luciferInfluence: 0.4
+      ngdIntegration:
+        vramPressureEffect: "Market latency VRAM-dependent (LOCAL = 0ms arbitrage, CLOUD = 500ms)"
+        routeLOCAL_CEREBELLUM: "Full market simulation, bots adaptive, contracts dynamic"
+        routeHYBRID: "Major orders visible, bots simplified"
+        routeCLOUD_CORTEX: "Snapshot market, no bot competition"
+      connections:
+        up: "gluttony_trench"
+        down: "wrath_arena"
+
+    # CIRCLE 5: WRATH - The Arena (Inverted Geburah - Golachab)
+    wrath_arena:
+      displayName: "Wrath — The Burning Arena"
+      description: "Endless combat. Solo and gang warfare. Blood sports broadcast to Net. The strongest rule."
+      palette: ["battle_red", "rage_orange", "violence_black"]
+      verticalPosition: 4
+      hazards: ["execute_threshold", "enrage_timer", "bloodlust_daemon"]
+      nativeEntities: ["Berserker_Gang", "Arena_Champion", "Bloodlust_Daemon", "Executioner_Bot"]
+      vehicleBias: ["Vehicle_War_Rig", "Vehicle_Arena_Chariot"]
+      lootBias: ["Champion_Trophy", "Execution_Code", "Rage_Stim", "Golachab_Fragment"]
+      qliphoth: "Golachab"  # Burning ones
+      sephirahInversion: "Geburah"
+      luciferInfluence: 0.5  # Lucifer's Throne - Geburah inverted
+      ngdIntegration:
+        vramPressureEffect: "Combat AI complexity scales with VRAM (LOCAL = tactical, CLOUD = zerg)"
+        routeLOCAL_CEREBELLUM: "Full tactical AI, arena hazards dynamic, crowds reactive"
+        routeHYBRID: "Scripted encounters, simplified hazards"
+        routeCLOUD_CORTEX: "Pre-baked fights, no crowd AI"
+      connections:
+        up: "greed_vault"
+        down: "heresy_citadel"
+
+    # CIRCLE 6: HERESY - The Citadel (Inverted Tiphareth - Thagirion)
+    heresy_citadel:
+      displayName: "Heresy — The Citadel of False Truth"
+      description: "Burning cathedrals of corrupted code. False prophets, rogue AIs claiming divinity. The architecture lies."
+      palette: ["blasphemy_violet", "false_gold", "corrupted_white"]
+      verticalPosition: 5
+      hazards: ["truth_inversion_field", "prophet_daemon", "faith_corruption"]
+      nativeEntities: ["False_Prophet_AI", "Heresy_Inquisitor", "Corrupted_Saint", "Blasphemy_Daemon"]
+      vehicleBias: ["Vehicle_Citadel_Transport", "Vehicle_Inquisitor_Gunship"]
+      lootBias: ["Prophet_Shard", "Inquisitor_Code", "False_Gospel", "Thagirion_Fragment"]
+      qliphoth: "Thagirion"  # Disputers
+      sephirahInversion: "Tiphareth"
+      luciferInfluence: 0.6
+      ngdIntegration:
+        vramPressureEffect: "Truth/lie detection accuracy VRAM-dependent"
+        routeLOCAL_CEREBELLUM: "Full philosophical AI, lies detectable via logic"
+        routeHYBRID: "Scripted dialogues, limited detection"
+        routeCLOUD_CORTEX: "No truth mechanics, auto-fail detection"
+      connections:
+        up: "wrath_arena"
+        down: "violence_forest"
+
+    # CIRCLE 7: VIOLENCE - The Forest (Inverted Netzach - Harab Serapel)
+    violence_forest:
+      displayName: "Violence — The Forest of Suicides and Warmongers"
+      description: "Trees bleed data. Suicides become trees. Warmongers burn eternally. Centaurs patrol. The river Phlegethon flows with molten coolant."
+      palette: ["blood_bark", "phlegethon_orange", "suicide_gray", "centaur_bronze"]
+      verticalPosition: 6
+      hazards: ["bleeding_tree", "centaur_patrol", "phlegethon_splash", "warmonger_ghost"]
+      nativeEntities: ["Suicide_Tree", "Centaur_Patrol", "Warmonger_Ghost", "River_Daemon"]
+      vehicleBias: ["Vehicle_Float_Raft", "Vehicle_Centaur_Mount"]
+      lootBias: ["Tree_Sap_Data", "Centaur_Arrow", "Warmonger_Badge", "Harab_Serapel_Fragment"]
+      qliphoth: "Harab Serapel"  # Ravens of death
+      sephirahInversion: "Netzach"
+      luciferInfluence: 0.7
+      ngdIntegration:
+        vramPressureEffect: "Forest density and river physics VRAM-scaled"
+        routeLOCAL_CEREBELLUM: "Full fluid sim, trees reactive, centaurs tactical"
+        routeHYBRID: "River static, trees non-interactive"
+        routeCLOUD_CORTEX: "No forest mechanics, direct passage"
+      connections:
+        up: "heresy_citadel"
+        down: "fraud_bolgia"
+
+    # CIRCLE 8: FRAUD - The Bolgia (Inverted Hod - Samael)
+    fraud_bolgia:
+      displayName: "Fraud — The Ten Bolgias of Deception"
+      description: "Ten concentric ditches. Each a different scam: panderers, flatterers, simoniacs, sorcerers, barrators, hypocrites, thieves, false counselors, schismatics, alchemists. Malebranche demons enforce."
+      palette: ["deception_cyan", "scam_yellow", "lie_magenta", "shadow_black"]
+      verticalPosition: 7
+      hazards: ["malebranche_patrol", "ditch_trap", "identity_theft_daemon", "scam_bot_swarm"]
+      nativeEntities: ["Malebranche_Demon", "Panderer_AI", "Flatterer_Script", "Simoniac_Bot", "Sorcerer_Daemon",
+                       "Barrator_Executive", "Hypocrite_Politician", "Thief_Netrunner", "False_Counselor_AI",
+                       "Schismatic_Hacker", "Alchemist_Corrupt"]
+      vehicleBias: ["Vehicle_Bolgia_Skimmer", "Vehicle_Malebranche_Chariot"]
+      lootBias: ["Malebranche_Hook", "Fraction_Key", "Identity_Shard", "Samael_Fragment"]
+      qliphoth: "Samael"  # Poison of God
+      sephirahInversion: "Hod"
+      luciferInfluence: 0.8
+      ngdIntegration:
+        vramPressureEffect: "Deception complexity VRAM-scaled (LOCAL = deep fakes, CLOUD = obvious lies)"
+        routeLOCAL_CEREBELLUM: "Full social engineering AI, deepfake detection mini-game"
+        routeHYBRID: "Scripted scams, basic detection"
+        routeCLOUD_CORTEX: "No deception mechanics, auto-success"
+      connections:
+        up: "violence_forest"
+        down: "treachery_lake"
+
+    # CIRCLE 9: TREACHERY - The Frozen Lake (Inverted Yesod - Lilith/Gamaliel)
+    treachery_lake:
+      displayName: "Treachery — Cocytus, The Frozen Lake"
+      description: "Absolute zero. Traitors frozen in ice. Four rounds: Caina (kin), Antenora (country), Ptolomaea (guests), Judecca (benefactors). Lucifer's waist up frozen here. His wings beat, creating the cold wind."
+      palette: ["absolute_white", "treachery_blue", "frozen_red", "lucifer_black"]
+      verticalPosition: 8  # Deepest
+      hazards: ["absolute_zero", "ice_crack", "lucifer_wind", "traitor_ghost"]
+      nativeEntities: ["Caina_Traitor", "Antenora_Traitor", "Ptolomaea_Traitor", "Judecca_Traitor",
+                       "Lucifer_Avatar", "Ice_Daemon", "Frozen_Soul"]
+      vehicleBias: ["Vehicle_Ice_Breaker", "Vehicle_Lucifer_Chariot"]
+      lootBias: ["Traitor_Heart", "Lucifer_Feather", "Cocytus_Ice", "Gamaliel_Fragment", "Sovereign_Key"]
+      qliphoth: "Gamaliel"  # Obscene ones
+      sephirahInversion: "Yesod"
+      luciferInfluence: 1.0  # MAXIMUM - Lucifer's physical form
+      ngdIntegration:
+        vramPressureEffect: "Lucifer AI complexity MAX at LOCAL, DEGRADED at CLOUD"
+        routeLOCAL_CEREBELLUM: "Full Lucifer avatar, 4-round mechanics, wing wind physics, ice cracking"
+        routeHYBRID: "Lucifer scripted, wind preset, ice static"
+        routeCLOUD_CORTEX: "Lucifer absent, auto-complete, no mechanics"
+      connections:
+        up: "fraud_bolgia"
+        down: "pandemonium_core"  # Beyond the circles
+
+    # BEYOND: PANDEMONIUM - Lucifer's Palace (Inverted Malkuth - Nahemoth)
+    pandemonium_core:
+      displayName: "Pandemonium — The High Capital of Hell"
+      description: "Lucifer's palace. Built from fallen angels' bones. The Parliament of Demons convenes. The Throne of Inverted Sovereignty. From here, all Nine Circles are managed."
+      palette: ["obsidian_black", "demon_bone_white", "sovereign_crimson", "parliament_gold"]
+      verticalPosition: 9  # True bottom / True top (inversion)
+      hazards: ["parliament_debate", "throne_judgment", "demon_lord_challenge", "sovereignty_test"]
+      nativeEntities: ["Demon_Lord", "Parliament_Member", "Lucifer_Sovereign", "High_Demon", "Fallen_Angel"]
+      vehicleBias: ["Vehicle_Pandemonium_Throne", "Vehicle_Demon_Lord_Chariot"]
+      lootBias: ["Demon_Lord_Sigil", "Parliament_Vote", "Throne_Shard", "Nahemoth_Fragment", "Infernal_Crown"]
+      qliphoth: "Nahemoth"  # Whisperers
+      sephirahInversion: "Malkuth"
+      luciferInfluence: 1.0
+      ngdIntegration:
+        vramPressureEffect: "Pandemonium simulation FULL only at LOCAL"
+        routeLOCAL_CEREBELLUM: "Full parliament AI, throne mechanics, sovereignty trial, Lucifer true form"
+        routeHYBRID: "Parliament scripted, throne simplified"
+        routeCLOUD_CORTEX: "Auto-win, no mechanics"
+      connections:
+        up: "treachery_lake"
+        # No down - this is the terminus
+
+  # ==================== QLIPHOTH ALIEN ARCHETYPES ====================
+  
+  AlienArchetypes:
+    thaumiel_walker:
+      role: "Dual-contending force, tests player's commitment"
+      behavior: "Presents binary choices with no correct answer. Splits reality. Feeds on indecision."
+      counter: "Decisive action, Lilith bridge, sovereign will"
+      drops: ["Thaumiel_Fragment", "Decision_Essence", "Dual_Core"]
+      sephirah: "Keter"
+      qliphoth: "Thaumiel"
+      circle: 1
+    
+    ghagiel_siren:
+      role: "Hinderer of wisdom, corrupts desire into obsession"
+      behavior: "Hacks pleasure centers, creates false needs, drains focus/mana"
+      counter: "Abjuration wards, Force Protection, mental discipline"
+      drops: ["Ghagiel_Fragment", "Siren_Chip", "Desire_Stim"]
+      sephirah: "Chokmah"
+      qliphoth: "Ghagiel"
+      circle: 2
+    
+    sathariel_concealer:
+      role: "Conceals truth, hides God/nature of reality"
+      behavior: "Obfuscates map, hides loot, creates false walls, memory holes"
+      counter: "Divination/Force Sense, True Seeing, scanner upgrades"
+      drops: ["Sathariel_Fragment", "Concealment_Shard", "Hidden_Key"]
+      sephirah: "Binah"
+      qliphoth: "Sathariel"
+      circle: 3
+    
+    gamchicoth_devourer:
+      role: "Devours resources, hoards wealth, enforces predatory contracts"
+      behavior: "Steals inventory, corrupts contracts, spawns treasury bots, market manipulation"
+      counter: "Enchantment/Telekinesis, contract law, fair trade"
+      drops: ["Gamchicoth_Fragment", "Contract_Shard", "Treasury_Key"]
+      sephirah: "Chesed"
+      qliphoth: "Gamchicoth"
+      circle: 4
+    
+    golachab_burner:
+      role: "Burning anger, executes without mercy"
+      behavior: "Berserker rage, execute threshold mechanics, enrage timers, fire damage"
+      counter: "Abjuration/Force Protection, calm emotions, ice/coolant"
+      drops: ["Golachab_Fragment", "Execution_Code", "Rage_Stim"]
+      sephirah: "Geburah"
+      qliphoth: "Golachab"
+      circle: 5
+    
+    thagirion_disputer:
+      role: "Disputes harmony, creates false truths"
+      behavior: "Inverts buffs/debuffs, lying dialogues, false prophets, reality distortion"
+      counter: "Divination/Force Vision, logic, true seeing"
+      drops: ["Thagirion_Fragment", "Prophet_Shard", "False_Gospel"]
+      sephirah: "Tiphareth"
+      qliphoth: "Thagirion"
+      circle: 6
+    
+    harab_serapel_raven:
+      role: "Raven of death, feeds on violence"
+      behavior: "Summons warmonger ghosts, bleeds trees, patrols Phlegethon"
+      counter: "Necromancy/Force Ghost, peace offerings, river navigation"
+      drops: ["Harab_Serapel_Fragment", "Tree_Sap", "Warmonger_Badge"]
+      sephirah: "Netzach"
+      qliphoth: "Harab Serapel"
+      circle: 7
+    
+    samael_poisoner:
+      role: "Poison of God, master of deception"
+      behavior: "Malebranche command, identity theft, deepfakes, scam orchestration"
+      counter: "Illusion/Telekinesis, identity verification, truth wards"
+      drops: ["Samael_Fragment", "Malebranche_Hook", "Fraction_Key"]
+      sephirah: "Hod"
+      qliphoth: "Samael"
+      circle: 8
+    
+    gamaliel_obscene:
+      role: "Obscene ones, frozen in treachery"
+      behavior: "Absolute zero aura, ice cracking, traitor judgment, Lucifer wind"
+      counter: "Fire/Hellfire, Essence Transfer, sovereign will, warmth"
+      drops: ["Gamaliel_Fragment", "Traitor_Heart", "Lucifer_Feather", "Cocytus_Ice", "Sovereign_Key"]
+      sephirah: "Yesod"
+      qliphoth: "Gamaliel"
+      circle: 9
+    
+    nahemoth_whisperer:
+      role: "Whisperer in the palace, advisor to Lucifer"
+      behavior: "Parliament manipulation, sovereignty tests, throne challenges, crown politics"
+      counter: "Sovereign recognition, Lilith emergence, Force Ghost, Archmage"
+      drops: ["Nahemoth_Fragment", "Demon_Lord_Sigil", "Parliament_Vote", "Throne_Shard", "Infernal_Crown"]
+      sephirah: "Malkuth"
+      qliphoth: "Nahemoth"
+      circle: 10
+
+  # ==================== HELL VEHICLE VARIANTS ====================
+  
+  HoverVehicleVariants:
+    LimboDrifter:
+      base: "Vehicle_PhantomNeedle_Fighter"
+      biome: "limbo_vestibule"
+      modules: ["memory_scanner", "decision_engine", "fog_navigator", "vestige_link", "static_shield"]
+      statBias: { speed: 1.10, armor: 0.90, stealth: 1.20, scan_range: 1.30, decision_speed: 1.50 }
+    
+    LustInterceptor:
+      base: "Vehicle_Velvet_Interceptor"
+      biome: "lust_wind"
+      modules: ["desire_filter", "siren_jammer", "pleasure_dampener", "vortex_navigator", "wind_rider"]
+      statBias: { speed: 1.30, armor: 0.70, wind_resistance: 1.50, hack_resistance: 1.20 }
+    
+    GluttonyCrawler:
+      base: "Vehicle_Tanker_Crawler"
+      biome: "gluttony_trench"
+      modules: ["acid_shield", "consumption_analyzer", "digestive_immunity", "hoarder_detector", "resource_siphon"]
+      statBias: { speed: 0.80, armor: 1.50, acid_resistance: 2.00, consumtpion_rate: 0.50 }
+    
+    GreedRunner:
+      base: "Vehicle_Vault_Runner"
+      biome: "greed_vault"
+      modules: ["contract_scanner", "arbitrage_engine", "treasury_jammer", "market_link", "vault_cracker"]
+      statBias: { speed: 1.20, armor: 1.00, trade_speed: 1.80, latency_mitigation: 1.50, hack_bw: 1.30 }
+    
+    WrathChariot:
+      base: "Vehicle_Arena_Chariot"
+      biome: "wrath_arena"
+      modules: ["execute_analyzer", "rage_dampener", "crowd_pleaser", "bloodlust_meter", "champion_targeting"]
+      statBias: { speed: 1.15, armor: 1.20, damage: 1.50, execute_chance: 1.30, crowd_bonus: 1.20 }
+    
+    HeresyTransport:
+      base: "Vehicle_Citadel_Transport"
+      biome: "heresy_citadel"
+      modules: ["truth_detector", "lie_generator", "prophet_tracker", "faith_shield", "blasphemy_filter"]
+      statBias: { speed: 1.00, armor: 1.10, scan_acc: 1.40, deception_resist: 1.50, logic_proc: 1.30 }
+    
+    ViolenceRaft:
+      base: "Vehicle_Float_Raft"
+      biome: "violence_forest"
+      modules: ["phlegethon_shield", "tree_commune", "centaur_negotiator", "warmonger_calmer", "river_navigator"]
+      statBias: { speed: 0.90, armor: 0.80, heat_resist: 2.00, social: 1.30, nav: 1.20 }
+    
+    FraudSkimmer:
+      base: "Vehicle_Bolgia_Skimmer"
+      biome: "fraud_bolgia"
+      modules: ["identity_verifier", "deepfake_detector", "malebranche_evader", "scam_analyzer", "ditch_mapper"]
+      statBias: { speed: 1.25, armor: 0.85, detect: 1.60, evasion: 1.40, hack_def: 1.30 }
+    
+    TreacheryBreaker:
+      base: "Vehicle_Ice_Breaker"
+      biome: "treachery_lake"
+      modules: ["absolute_zero_suit", "ice_crack_predictor", "lucifer_wind_rider", "traitor_judge", "feather_collector"]
+      statBias: { speed: 0.85, armor: 1.60, cold_resist: 3.00, wind_resist: 1.50, judgment_acc: 1.40 }
+    
+    PandemoniumThrone:
+      base: "Vehicle_Pandemonium_Throne"
+      biome: "pandemonium_core"
+      modules: ["parliament_control", "throne_authority", "demon_lord_command", "sovereignty_enforcer", "crown_interface"]
+      statBias: { speed: 0.50, armor: 3.00, authority: 2.00, command_range: 3.00, sovereign_presence: 2.00 }
+
+  # ==================== SPACE BATTLE TEMPLATES (HELL CAMPAIGN) ====================
+  
+  SpaceBattleTemplates:
+    limbo_descent:
+      displayName: "Descent: The Vestibule Choice"
+      objective: "Choose your path through Limbo. Indecision damns you to repeat."
+      phases:
+        - "Enter: Fog obscures all paths. Three gates visible."
+        - "Choose: Gate of Action, Gate of Contemplation, Gate of Surrender."
+        - "Consequence: Each gate leads to different Circle 2 entry point."
+        - "Lucifer Whisper: 'Choose, or be chosen for.'"
+      requiredSystems: ["decision_engine", "lucifer_link", "msn_magic", "msn_starwars"]
+      recommendedVehicle: "LimboDrifter"
+      rewardPools: ["Thaumiel_Fragment", "Path_Key", "Lucifer_Attention"]
+    
+    lust_hurricane_ride:
+      displayName: "Ride the Hurricane: Desire's Vortex"
+      objective: "Navigate the pleasure winds without being consumed. Find the Siren Queen."
+      phases:
+        - "Entry: Winds tear at cyberware. Desire hacks flood neural link."
+        - "Navigate: Use wind currents. Avoid Siren ambushes."
+        - "Confront: Siren Queen offers power for submission."
+        - "Choice: Submit (Dark Side), Resist (Light Side), Negotiate (Gray)."
+      requiredSystems: ["msn_starwars", "msn_magic_abjuration", "desire_filter", "wind_nav"]
+      recommendedVehicle: "LustInterceptor"
+      rewardPools: ["Ghagiel_Fragment", "Siren_Chip", "Alignment_Shift_Token"]
+    
+    gluttony_consumption:
+      displayName: "The Consuming Trench: Eat or Be Eaten"
+      objective: "Survive the digestive tract. Feed the Hoarder to pass."
+      phases:
+        - "Descent: Acid pools digest armor. Consumer scripts swarm."
+        - "Feed: Locate and defeat Hoarder Executive. Extract Vault Key."
+        - "Choice: Consume Hoarder's hoard (Greed path) or distribute (Charity path)."
+        - "Exit: Trench sphincter opens. Greed Vault awaits."
+      requiredSystems: ["msn_magic_necromancy", "acid_resist", "hoarder_combat", "resource_mgmt"]
+      recommendedVehicle: "GluttonyCrawler"
+      rewardPools: ["Sathariel_Fragment", "Hoard_Key", "Consumption_Essence"]
+    
+    greed_market_war:
+      displayName: "Market War: The Infinite Vault"
+      objective: "Execute 666 perfect trades. Defeat the Treasury AI. Claim the Contract."
+      phases:
+        - "Intel: Map bot patterns. Treasury enforces predatory contracts."
+        - "Arbitrage: Chain 666 trades across 9 markets in 666 seconds."
+        - "Confront: Treasury AI demands tithe. Combat or Contract."
+        - "Contract: Sign Lucifer's Ledger. Gain Market Maker charter."
+      requiredSystems: ["trading", "msn_magic_enchantment", "contract_law", "arbitrage_engine"]
+      recommendedVehicle: "GreedRunner"
+      rewardPools: ["Gamchicoth_Fragment", "Market_Maker_Charter", "Lucifer_Ledger_Page"]
+    
+    wrath_arena_grand_championship:
+      displayName: "Grand Championship: The Burning Arena"
+      objective: "Win 99 fights. Defeat the Arena Champion. Claim Golachab's Ember."
+      phases:
+        - "Qualifiers: 9 fights, increasing difficulty. No healing between."
+        - "Semis: 9 fights vs named champions. Execute mechanics active."
+        - "Finals: Arena Champion (Golachab Avatar). Enrage at 10%."
+        - "Victory: Champion's trophy. Ember of Wrath. Lucifer nods."
+      requiredSystems: ["combat", "msn_magic_evocation", "msn_starwars_form_v", "execute_mechanic"]
+      recommendedVehicle: "WrathChariot"
+      rewardPools: ["Golachab_Fragment", "Champion_Trophy", "Ember_of_Wrath", "Lucifer_Respect"]
+    
+    heresy_citadel_inquisition:
+      displayName: "Inquisition: The Citadel of False Truth"
+      objective: "Expose 3 False Prophets. Survive the Inquisitors. Find Thagirion's Mirror."
+      phases:
+        - "Investigate: Each Prophet has a lie. Find the contradiction."
+        - "Trial: Inquisitors test YOUR faith. Dialogue combat."
+        - "Mirror: Thagirion's Mirror shows true self. Accept or shatter."
+        - "Choice: Become new Prophet (Power), Shatter Mirror (Freedom), Use Mirror (Knowledge)."
+      requiredSystems: ["msn_magic_divination", "msn_starwars_force_vision", "dialogue_combat", "truth_detection"]
+      recommendedVehicle: "HeresyTransport"
+      rewardPools: ["Thagirion_Fragment", "Prophet_Robe", "Mirror_Shard", "True_Sight"]
+    
+    violence_forest_phlegethon:
+      displayName: "River of Blood: Phlegethon Crossing"
+      objective: "Cross the boiling river. Calm the Warmongers. Free the Suicide Trees."
+      phases:
+        - "Raft: Build/find raft. Phlegethon damages hull per second."
+        - "Trees: Each tree holds a soul. Heal (Necromancy) or Burn (Mercy)."
+        - "Centaurs: Negotiate passage. They guard the ford."
+        - "Warmonger: Defeat General Warmonger. His death cools the river."
+      requiredSystems: ["msn_magic_necromancy", "msn_starwars_force_heal", "social", "thermal_mgmt"]
+      recommendedVehicle: "ViolenceRaft"
+      rewardPools: ["Harab_Serapel_Fragment", "Centaur_Badge", "Tree_Sap_Data", "Cooled_Blood"]
+    
+    fraud_bolgia_deception:
+      displayName: "Ten Bolgias: Master of Lies"
+      objective: "Navigate all 10 ditches. Defeat Malebranche Captain. Steal Samael's Hook."
+      phases:
+        - "Panderers/Flatterers: Social stealth. Don't engage."
+        - "Simoniacs/Sorcerers: Magic detection. Counter their spells."
+        - "Barrators/Hypocrites: Contract analysis. Find the loophole."
+        - "Thieves/False Counselors: Identity protection. Track the thief."
+        - "Schismatics/Alchemists: Faction manipulation. Unite or divide."
+        - "Malebranche Captain: Hook duel. Steal the Hook."
+      requiredSystems: ["msn_magic_illusion", "msn_starwars_mind_trick", "identity_mgmt", "faction_play"]
+      recommendedVehicle: "FraudSkimmer"
+      rewardPools: ["Samael_Fragment", "Malebranche_Hook", "Fraction_Key", "Master_of_Lies_Title"]
+    
+    treachery_cocytus_judgment:
+      displayName: "Cocytus: The Final Judgment"
+      objective: "Pass four rounds of traitors. Face Lucifer. Claim Sovereign Key."
+      phases:
+        - "Caina: Kin traitors. Family drama. Choose: freeze them or free them."
+        - "Antenora: Country traitors. Political betrayal. Judge or absolve."
+        - "Ptolomaea: Guest traitors. Hospitality violation. Punish or pardon."
+        - "Judecca: Benefactor traitors. Ultimate betrayal. Lucifer watches."
+        - "Lucifer: Waist-up in ice. Wings beat cold wind. Final dialogue. Options: Submit (Servant), Challenge (Rival), Transcend (Sovereign)."
+      requiredSystems: ["msn_magic_all", "msn_starwars_all", "lucifer_dialogue", "sovereignty_test"]
+      recommendedVehicle: "TreacheryBreaker"
+      rewardPools: ["Gamaliel_Fragment", "Traitor_Heart", "Lucifer_Feather", "Cocytus_Ice", "Sovereign_Key"]
+    
+    pandemonium_sovereignty_trial:
+      displayName: "Pandemonium: The Sovereignty Trial"
+      objective: "Enter Parliament. Face Demon Lords. Sit the Throne. Become Infernal Sovereign."
+      phases:
+        - "Parliament: 72 Demon Lords debate. Your votes shape Hell's laws."
+        - "Challenges: 9 Demon Lords challenge for throne. Defeat or persuade."
+        - "Throne: Sit the Throne of Nahemoth. Reality bends to will."
+        - "Lucifer: True form manifests. 'You have climbed. Now rule.' Final Choice: Rule Hell (Sovereign), Destroy Hell (Liberator), Merge (Unity)."
+      requiredSystems: ["ALL_SYSTEMS", "msn_master_integration", "lilith_bridge", "ouroboros_sync", "kairos_dream"]
+      recommendedVehicle: "PandemoniumThrone"
+      rewardPools: ["Nahemoth_Fragment", "Infernal_Crown", "Demon_Lord_Sigil", "Parliament_Vote", "Hell_Sovereignty"]
+      ending: "INFERNAL_SOVEREIGN"
+
+  # ==================== CONSOLE ROUTES (HELL) ====================
+  
+  ConsoleRoutes:
+    hell_status: "msn.hell.status"
+    circle_info: "msn.hell.circle.info"
+    lucifer_dialogue: "msn.hell.lucifer.speak"
+    qliphoth_scan: "msn.hell.qliphoth.scan"
+    ngd_hell_effect: "msn.hell.ngd.effect"
+    pact_status: "msn.hell.pact.status"
+    sovereignty_check: "msn.hell.sovereignty.check"
+    descent: "msn.hell.descend"
+    ascend: "msn.hell.ascend"
+
+  # ==================== PROGRESSION GATES ====================
+  
+  ProgressionGates:
+    infernal_pact:
+      displayName: "Infernal Pact"
+      description: "Sign the pact with Lucifer to begin the descent. Requires Magic Act 3 + Star Wars Act 3."
+      requirements:
+        - "msn_magic_archmage: true"
+        - "msn_sw_act >= 3"
+        - "level: 30"
+      rewards:
+        - "Access to Circle 1 (Limbo)"
+        - "Corrupted schools unlocked (Evocation->Hellfire, Necromancy->Soul Binding, Conjuration->Demon Summoning)"
+        - "Lucifer's Mark (visual)"
+    
+    circle_keys:
+      - circle: 1
+        key: "Decision_Essence"
+        source: "Thaumiel_Walker"
+      - circle: 2
+        key: "Siren_Tear"
+        source: "Ghagiel_Siren"
+      - circle: 3
+        key: "Hoard_Key"
+        source: "Sathariel_Concealer"
+      - circle: 4
+        key: "Contract_Shard"
+        source: "Gamchicoth_Devourer"
+      - circle: 5
+        key: "Execution_Code"
+        source: "Golachab_Burner"
+      - circle: 6
+        key: "Prophet_Shard"
+        source: "Thagirion_Disputer"
+      - circle: 7
+        key: "Centaur_Badge"
+        source: "Harab_Serapel_Raven"
+      - circle: 8
+        key: "Malebranche_Hook"
+        source: "Samael_Poisoner"
+      - circle: 9
+        key: "Lucifer_Feather"
+        source: "Gamaliel_Obscene"
+      - circle: 10
+        key: "Demon_Lord_Sigil"
+        source: "Nahemoth_Whisperer"
+        description: "All 9 keys + Sovereign Key = Pandemonium access"
+
+  # ==================== LUCIFER INFLUENCE SCALING ====================
+  
+  LuciferInfluence:
+    scaling: "Exponential per circle (0.1 -> 1.0)"
+    mechanics:
+      - "Visual: Screen distortion, crimson tint, wing shadows"
+      - "Audio: Whispers, heartbeat, wing beats, Latin chanting"
+      - "Gameplay: Corrupted spells stronger, Force powers darker, NGD route forced toward LOCAL"
+      - "Dialogue: Lucifer comments on player choices, offers 'gifts'"
+      - "Endgame: At Circle 9, Lucifer manifests physically. At Pandemonium, true form."
+    routeForcing:
+      circle_1_3: "HYBRID allowed"
+      circle_4_6: "LOCAL_CEREBELLUM preferred, HYBRID penalized"
+      circle_7_9: "LOCAL_CEREBELLUM required, others fail"
+      pandemonium: "LOCAL_CEREBELLUM ONLY. 6GB VRAM minimum."

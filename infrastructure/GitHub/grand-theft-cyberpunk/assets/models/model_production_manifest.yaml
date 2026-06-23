@@ -1,0 +1,258 @@
+################################################################################
+# MODEL PRODUCTION MANIFEST
+# Abyssal Assets / MSN / Lochness custom Cyberpunk model ledger.
+# Source blueprints: cp2077_mods/tweakdb/custom_models_msn_abyssal.yaml
+################################################################################
+
+ModelProductionManifest:
+  schema: "msn.custom_model_production.v1"
+  localOnly: true
+  sourceBlueprint: "cp2077_mods/tweakdb/custom_models_msn_abyssal.yaml"
+  assetRoot: "cp2077_mods/assets/models"
+  iconRoot: "cp2077_mods/assets/icons/models"
+  wolvenkitRoot: "archive/pc/mod/abyssal_assets/models"
+  blenderRoot: "source/blender/models"
+  materialAtlasRoot: "cp2077_mods/assets/materials/atlases"
+  statusLegend:
+    planned: "Blueprint accepted; no DCC source committed yet."
+    blocked: "Needs upstream design, rigging, or reference decision before production."
+    ready_for_blender: "Ready for Blender blockout and source file creation."
+    ready_for_wolvenkit: "DCC source ready for WolvenKit import and archive generation."
+    implemented: "Mesh, materials, icons, and archive paths are staged."
+  sharedProductionRules:
+    - "Keep RTX 3060 Laptop GPU 6GB as the primary performance target."
+    - "Author LOD0, LOD1, LOD2, and impostor where the source blueprint requests space or water scale."
+    - "Prefer shared trim sheets, decal atlases, and material variants over unique oversized textures."
+    - "Every finished model needs icon, collision, streaming tag, and WolvenKit archive path before implementation status can move past ready_for_wolvenkit."
+
+  models:
+    Character_Lilith_CrimsonArchitect:
+      displayName: "Lilith - Crimson Architect"
+      category: "Character"
+      targetMeshPath: "archive/pc/mod/abyssal_assets/models/characters/lilith_crimson_architect/lilith_crimson_architect.mesh"
+      sourceBlendPath: "source/blender/models/characters/lilith_crimson_architect.blend"
+      rigSource: "Cyberpunk humanoid NPC rig compatible; feminine dialogue/combat skeleton retarget"
+      materialAtlas: "cp2077_mods/assets/materials/atlases/msn_crimson_gold_sovereign_2k.xbm"
+      materialLibraries: ["crimsonGoldSovereign", "orbitalBlackwallAlloy"]
+      iconPath: "cp2077_mods/assets/icons/models/lilith_crimson_architect_icon.inkatlas"
+      lodTargets:
+        LOD0: "65000 tris"
+        LOD1: "32000 tris"
+        LOD2: "12000 tris"
+      collisionPrimitive: "capsule + coat cloth blockers"
+      animationSet: ["dialogue_idle", "emergence_pose", "console_command", "combat_support"]
+      status: "ready_for_blender"
+      blockers:
+        - "Needs final face reference sheet and data-crown silhouette approval."
+        - "Needs cloth simulation budget for coat tails on RTX 3060 profile."
+      wolvenkitNextAction: "Create character entity template, bind humanoid rig, assign material instances, and test dialogue/combat idles."
+      blenderNextAction: "Block out coat, data crown, holographic backplane, and LOD0 proportions from blueprint silhouette."
+
+    Character_Vance_AbyssalFreighterCaptain:
+      displayName: "Captain Vance - Abyssal Freighter Captain"
+      category: "Character"
+      targetMeshPath: "archive/pc/mod/abyssal_assets/models/characters/vance_abyssal_freighter_captain/vance_abyssal_freighter_captain.mesh"
+      sourceBlendPath: "source/blender/models/characters/vance_abyssal_freighter_captain.blend"
+      rigSource: "Cyberpunk masculine humanoid NPC rig compatible; vendor and quest briefing skeleton retarget"
+      materialAtlas: "cp2077_mods/assets/materials/atlases/solar_nomad_abyssal_vendor_2k.xbm"
+      materialLibraries: ["solarNomadComposite", "abyssalVoidCeramic"]
+      iconPath: "cp2077_mods/assets/icons/models/vance_abyssal_freighter_captain_icon.inkatlas"
+      lodTargets:
+        LOD0: "55000 tris"
+        LOD1: "25000 tris"
+        LOD2: "10000 tris"
+      collisionPrimitive: "capsule + shoulder harness blocker"
+      animationSet: ["vendor_idle", "freighter_command", "repair_loop", "quest_briefing"]
+      status: "ready_for_blender"
+      blockers:
+        - "Needs portable sonar prop proportions and duster variant concept."
+      wolvenkitNextAction: "Create vendor NPC appearance, add portable sonar attachment, and bind quest/vendor idle animation set."
+      blenderNextAction: "Model hat/helmet hybrid, pressure harness, tool belt, and solar-weave shoulder rig."
+
+    Creature_Nessie_GuardianAvatar:
+      displayName: "Nessie - Guardian Avatar"
+      category: "Creature"
+      targetMeshPath: "archive/pc/mod/abyssal_assets/models/creatures/nessie_guardian_avatar/nessie_guardian_avatar.mesh"
+      sourceBlendPath: "source/blender/models/creatures/nessie_guardian_avatar.blend"
+      rigSource: "Custom quadruped/swimmer rig; mount socket and water guardian controller required"
+      materialAtlas: "cp2077_mods/assets/materials/atlases/abyssal_void_ceramic_guardian_2k.xbm"
+      materialLibraries: ["abyssalVoidCeramic"]
+      iconPath: "cp2077_mods/assets/icons/models/nessie_guardian_avatar_icon.inkatlas"
+      lodTargets:
+        LOD0: "90000 tris"
+        LOD1: "42000 tris"
+        LOD2: "16000 tris"
+        impostor: "water silhouette card"
+      collisionPrimitive: "multi-capsule water mount + non-hostile guardian volume"
+      animationSet: ["surface_breach", "communion_idle", "mount_swim", "pressure_wave", "protective_circle"]
+      status: "blocked"
+      blockers:
+        - "Needs custom swimmer rig and mount controller strategy."
+        - "Needs non-hostile encounter behavior hooked before combat spawn testing."
+      wolvenkitNextAction: "Prototype large creature entity with non-hostile faction, summon route, and guardian interaction volume."
+      blenderNextAction: "Create low-risk blockout for body, neck, fins, tail, and dorsal bioluminescent plates before detailed sculpt."
+
+    Creature_NullManta_Blackwall:
+      displayName: "Null Manta"
+      category: "Creature"
+      targetMeshPath: "archive/pc/mod/abyssal_assets/models/creatures/null_manta_blackwall/null_manta_blackwall.mesh"
+      sourceBlendPath: "source/blender/models/creatures/null_manta_blackwall.blend"
+      rigSource: "Custom flying creature rig; drone/flying enemy movement reference"
+      materialAtlas: "cp2077_mods/assets/materials/atlases/orbital_blackwall_alien_2k.xbm"
+      materialLibraries: ["orbitalBlackwallAlloy"]
+      iconPath: "cp2077_mods/assets/icons/models/null_manta_blackwall_icon.inkatlas"
+      lodTargets:
+        LOD0: "38000 tris"
+        LOD1: "18000 tris"
+        LOD2: "6000 tris"
+        impostor: "space silhouette card"
+      collisionPrimitive: "simple flying hull + weak point sphere"
+      animationSet: ["glide", "phase_turn", "chorus_signal", "death_dissolve"]
+      status: "ready_for_blender"
+      blockers:
+        - "Needs decision on weak-point VFX socket placement."
+      wolvenkitNextAction: "Create flying alien entity template and map weak point sphere to encounter damage logic."
+      blenderNextAction: "Block out manta disk, torn wing membranes, core lantern, tail probe, and debris barnacles."
+
+    Exosuit_VectorStarling_Javelin:
+      displayName: "Vector Starling Javelin"
+      category: "Exosuit"
+      targetMeshPath: "archive/pc/mod/abyssal_assets/models/exosuits/vector_starling_javelin/vector_starling_javelin.mesh"
+      sourceBlendPath: "source/blender/models/exosuits/vector_starling_javelin.blend"
+      rigSource: "Cyberpunk player skeleton armor overlay; flight/hover animation additive set required"
+      materialAtlas: "cp2077_mods/assets/materials/atlases/javelin_vector_starling_2k.xbm"
+      materialLibraries: ["crimsonGoldSovereign", "orbitalBlackwallAlloy"]
+      iconPath: "cp2077_mods/assets/icons/models/vector_starling_javelin_icon.inkatlas"
+      lodTargets:
+        LOD0: "70000 tris"
+        LOD1: "34000 tris"
+        LOD2: "14000 tris"
+      collisionPrimitive: "player capsule + thruster no-clip blockers"
+      animationSet: ["hover_idle", "missile_lock", "fighter_neural_link", "boarding_tether"]
+      status: "ready_for_blender"
+      blockers:
+        - "Needs exosuit equip slot and thruster socket naming convention."
+      wolvenkitNextAction: "Create wearable armor appearance records and bind thruster/missile sockets to Javelin space commands."
+      blenderNextAction: "Model helmet, balanced pilot armor, folding thruster fins, and lock-on shoulder pods."
+
+    Exosuit_BastionBulwark_Javelin:
+      displayName: "Bastion Bulwark Javelin"
+      category: "Exosuit"
+      targetMeshPath: "archive/pc/mod/abyssal_assets/models/exosuits/bastion_bulwark_javelin/bastion_bulwark_javelin.mesh"
+      sourceBlendPath: "source/blender/models/exosuits/bastion_bulwark_javelin.blend"
+      rigSource: "Cyberpunk player skeleton armor overlay; heavy shield and mag-walk additive set required"
+      materialAtlas: "cp2077_mods/assets/materials/atlases/javelin_bastion_bulwark_2k.xbm"
+      materialLibraries: ["abyssalVoidCeramic", "orbitalBlackwallAlloy"]
+      iconPath: "cp2077_mods/assets/icons/models/bastion_bulwark_javelin_icon.inkatlas"
+      lodTargets:
+        LOD0: "82000 tris"
+        LOD1: "40000 tris"
+        LOD2: "16000 tris"
+      collisionPrimitive: "player capsule + shield projection bounds"
+      animationSet: ["shield_brace", "hull_breach", "mag_walk", "siege_fire"]
+      status: "ready_for_blender"
+      blockers:
+        - "Needs heavy movement tuning and shield projection bounds validated against first-person camera."
+      wolvenkitNextAction: "Create heavy wearable appearance records and test shield projection bounds in confined interiors."
+      blenderNextAction: "Block out heavy helmet, shield core torso, siege cannon spine, magnetic boots, and reactive pauldrons."
+
+    Vehicle_CovenantFreighter_Model:
+      displayName: "Covenant Freighter"
+      category: "Vehicle"
+      targetMeshPath: "archive/pc/mod/abyssal_assets/models/vehicles/covenant_freighter/covenant_freighter.mesh"
+      sourceBlendPath: "source/blender/models/vehicles/covenant_freighter.blend"
+      rigSource: "Multi-part capital prop/vehicle rig; hangar door, fabricator bay, and jump-charge animation controllers"
+      materialAtlas: "cp2077_mods/assets/materials/atlases/covenant_freighter_trim_2k.xbm"
+      materialLibraries: ["crimsonGoldSovereign", "abyssalVoidCeramic", "orbitalBlackwallAlloy"]
+      iconPath: "cp2077_mods/assets/icons/models/covenant_freighter_icon.inkatlas"
+      lodTargets:
+        LOD0: "140000 tris"
+        LOD1: "70000 tris"
+        LOD2: "24000 tris"
+        impostor: "space silhouette card"
+      collisionPrimitive: "compound hull + interior hangar volumes"
+      animationSet: ["hangar_open", "market_terminal_wake", "fabricator_cycle", "jump_charge"]
+      status: "blocked"
+      blockers:
+        - "Needs scale decision for interior hangar versus exterior-only first implementation."
+        - "Needs streaming-cell plan for one-world map and orbital scene placement."
+      wolvenkitNextAction: "Prototype exterior-only capital prop first, then split interior hangar volumes into separate streaming targets."
+      blenderNextAction: "Create low-poly massing blockout with hull, bridge, hangar doors, fabricator bay, market terminal, and engine nacelles."
+
+    Vehicle_PhantomNeedle_Fighter:
+      displayName: "Phantom Needle Fighter"
+      category: "Vehicle"
+      targetMeshPath: "archive/pc/mod/abyssal_assets/models/vehicles/phantom_needle_fighter/phantom_needle_fighter.mesh"
+      sourceBlendPath: "source/blender/models/vehicles/phantom_needle_fighter.blend"
+      rigSource: "Small vehicle/fighter rig; boost, fin-fold, and boarding-lance animation controllers"
+      materialAtlas: "cp2077_mods/assets/materials/atlases/phantom_needle_fighter_2k.xbm"
+      materialLibraries: ["orbitalBlackwallAlloy"]
+      iconPath: "cp2077_mods/assets/icons/models/phantom_needle_fighter_icon.inkatlas"
+      lodTargets:
+        LOD0: "48000 tris"
+        LOD1: "22000 tris"
+        LOD2: "8000 tris"
+        impostor: "space silhouette card"
+      collisionPrimitive: "convex fighter hull + weapon hardpoint spheres"
+      animationSet: ["fin_fold", "boost", "boarding_lance_extend", "cloak_flicker"]
+      status: "ready_for_blender"
+      blockers:
+        - "Needs weapon hardpoint naming convention shared with space battle scripts."
+      wolvenkitNextAction: "Create fighter vehicle template and bind hardpoint spheres to spacebattle encounter tables."
+      blenderNextAction: "Model needle hull, canopy, folding fins, boarding lance, thrusters, and hardpoint sockets."
+
+    Prop_LochExchangeTerminal:
+      displayName: "Loch Exchange Terminal"
+      category: "Prop"
+      targetMeshPath: "archive/pc/mod/abyssal_assets/models/props/loch_exchange_terminal/loch_exchange_terminal.mesh"
+      sourceBlendPath: "source/blender/models/props/loch_exchange_terminal.blend"
+      rigSource: "Interactive terminal prop; screen and coin basin animation controllers"
+      materialAtlas: "cp2077_mods/assets/materials/atlases/loch_exchange_terminal_1k.xbm"
+      materialLibraries: ["abyssalVoidCeramic", "crimsonGoldSovereign"]
+      iconPath: "cp2077_mods/assets/icons/models/loch_exchange_terminal_icon.inkatlas"
+      lodTargets:
+        LOD0: "20000 tris"
+        LOD1: "9000 tris"
+        LOD2: "3000 tris"
+      collisionPrimitive: "box interaction volume"
+      animationSet: ["screen_wake", "coin_pulse", "listing_scroll", "treasury_transfer"]
+      status: "ready_for_blender"
+      blockers:
+        - "Needs UI screen texture and treasury/listing icon sheet."
+      wolvenkitNextAction: "Create interactive device template and route activation to Loch Exchange command/status UI."
+      blenderNextAction: "Model terminal body, sonar ring screen, coin basin, and cable bundle with shared prop atlas."
+
+    Prop_NessieCommunionBeacon:
+      displayName: "Nessie Communion Beacon"
+      category: "Prop"
+      targetMeshPath: "archive/pc/mod/abyssal_assets/models/props/nessie_communion_beacon/nessie_communion_beacon.mesh"
+      sourceBlendPath: "source/blender/models/props/nessie_communion_beacon.blend"
+      rigSource: "Deployable prop; floating ring and sonar ping animation controllers"
+      materialAtlas: "cp2077_mods/assets/materials/atlases/nessie_communion_beacon_1k.xbm"
+      materialLibraries: ["abyssalVoidCeramic"]
+      iconPath: "cp2077_mods/assets/icons/models/nessie_communion_beacon_icon.inkatlas"
+      lodTargets:
+        LOD0: "18000 tris"
+        LOD1: "8000 tris"
+        LOD2: "3000 tris"
+      collisionPrimitive: "small prop + interaction sphere"
+      animationSet: ["ring_spin", "sonar_ping", "offering_accept", "communion_glow"]
+      status: "ready_for_blender"
+      blockers:
+        - "Needs offering tray iconography and non-hostile encounter activation radius tuned."
+      wolvenkitNextAction: "Create deployable prop template and bind interaction sphere to Nessie sighting/commune commands."
+      blenderNextAction: "Model tripod base, sonar mast, floating rings, water sensor, and offering tray."
+
+  productionBatches:
+    batch_01_interactive_props:
+      priority: 1
+      models: ["Prop_LochExchangeTerminal", "Prop_NessieCommunionBeacon"]
+      reason: "Fastest path to visible in-game usability for economy and Nessie quest loops."
+    batch_02_companions_and_exosuits:
+      priority: 2
+      models: ["Character_Lilith_CrimsonArchitect", "Character_Vance_AbyssalFreighterCaptain", "Exosuit_VectorStarling_Javelin", "Exosuit_BastionBulwark_Javelin"]
+      reason: "High narrative value and direct connection to skill trees, vendors, and space combat."
+    batch_03_space_creatures_and_vehicles:
+      priority: 3
+      models: ["Creature_NullManta_Blackwall", "Vehicle_PhantomNeedle_Fighter", "Creature_Nessie_GuardianAvatar", "Vehicle_CovenantFreighter_Model"]
+      reason: "Largest rigging/streaming risk; needs prototype passes before final production."

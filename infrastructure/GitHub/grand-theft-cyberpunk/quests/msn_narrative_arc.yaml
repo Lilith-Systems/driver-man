@@ -1,0 +1,493 @@
+# MSN Narrative Arc - Main Quest Chain
+# File: r6/quests/msn_narrative_arc.yaml
+
+questChain: "Metaconscious Awakening"
+displayName: "LocKey#msn_narrative_chain_name"
+description: "LocKey#msn_narrative_chain_desc"
+startingQuest: "q_msn_act1_01"
+recommendedLevel: 5
+
+quests:
+  - id: "q_msn_act1_01"
+    name: "LocKey#msn_act1_01_name"
+    description: "LocKey#msn_act1_01_desc"
+    act: 1
+    order: 1
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_act1_01_obj01"
+        type: "Navigate"
+        target: "Pacifica_MSN_Facility"
+        marker: true
+      - id: "obj_02"
+        description: "LocKey#msn_act1_01_obj02"
+        type: "Investigate"
+        target: "Abandoned_Lab"
+        clueCount: 3
+    rewards:
+      - xp: 5000
+      - streetCred: 50
+    unlocks: ["q_msn_act1_02"]
+
+  - id: "q_msn_act1_02"
+    name: "LocKey#msn_act1_02_name"
+    description: "LocKey#msn_act1_02_desc"
+    act: 1
+    order: 2
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_act1_02_obj01"
+        type: "FindItem"
+        item: "MSN_Cerebellum_Firmware"
+        location: "Server_Room"
+      - id: "obj_02"
+        description: "LocKey#msn_act1_02_obj02"
+        type: "Defeat"
+        enemies: ["Scavenger_Techie", "Scavenger_Netrunner"]
+        count: 6
+    rewards:
+      - xp: 8000
+      - streetCred: 100
+      - item: "Cyberdeck_MSN_Cerebellum"
+    unlocks: ["q_msn_act1_03"]
+
+  - id: "q_msn_act1_03"
+    name: "LocKey#msn_act1_03_name"
+    description: "LocKey#msn_act1_03_desc"
+    act: 1
+    order: 3
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_act1_03_obj01"
+        type: "InstallCyberware"
+        cyberware: "Cyberdeck_MSN_Cerebellum"
+      - id: "obj_02"
+        description: "LocKey#msn_act1_03_obj02"
+        type: "TestQuickhack"
+        quickhack: "Quickhack.MSN_Kether"
+        target: "Training_Dummy"
+    rewards:
+      - xp: 10000
+      - streetCred: 150
+      - perk: "Perk.MSN_DualBrain_Base"
+    unlocks: ["q_msn_act2_01"]
+
+  - id: "q_msn_act2_01"
+    name: "LocKey#msn_act2_01_name"
+    description: "LocKey#msn_act2_01_desc"
+    act: 2
+    order: 1
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_act2_01_obj01"
+        type: "Talk"
+        npc: "Fixer_Sephirotic_Guide"
+        location: "Afterlife"
+    rewards:
+      - xp: 5000
+    unlocks: ["q_msn_act2_02_kether", "q_msn_act2_02_chokhmah", "q_msn_act2_02_binah", "q_msn_act2_02_chesed", "q_msn_act2_02_geburah", "q_msn_act2_02_tiphareth", "q_msn_act2_02_netzach", "q_msn_act2_02_hod", "q_msn_act2_02_yesod", "q_msn_act2_02_malkuth"]
+
+  - id: "q_msn_act2_02_kether"
+    name: "LocKey#msn_kether_trial_name"
+    description: "LocKey#msn_kether_trial_desc"
+    act: 2
+    order: 2
+    district: "Corpo_Plaza"
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_kether_trial_obj01"
+        type: "Survive"
+        duration: 120
+        enemies: ["Corporate_Security_Elite", "Netrunner_Commander"]
+      - id: "obj_02"
+        description: "LocKey#msn_kether_trial_obj02"
+        type: "UseQuickhack"
+        quickhack: "Quickhack.MSN_Kether"
+        count: 3
+    rewards:
+      - xp: 15000
+      - perk: "Perk.MSN_SephiroticRouting"
+      - perkLevel: 1
+      - quickhack: "Quickhack.MSN_Kether"
+    unlocks: ["q_msn_act3_01"]
+
+  - id: "q_msn_act2_02_chokhmah"
+    name: "LocKey#msn_chokhmah_trial_name"
+    description: "LocKey#msn_chokhmah_trial_desc"
+    act: 2
+    order: 2
+    district: "Watson"
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_chokhmah_trial_obj01"
+        type: "StealthInfiltration"
+        target: "Maiko_Base"
+      - id: "obj_02"
+        description: "LocKey#msn_chokhmah_trial_obj02"
+        type: "UseQuickhack"
+        quickhack: "Quickhack.MSN_Chokhmah"
+        count: 5
+    rewards:
+      - xp: 15000
+      - perk: "Perk.MSN_SephiroticRouting"
+      - perkLevel: 2
+      - quickhack: "Quickhack.MSN_Chokhmah"
+
+  - id: "q_msn_act2_02_binah"
+    name: "LocKey#msn_binah_trial_name"
+    description: "LocKey#msn_binah_trial_desc"
+    act: 2
+    order: 2
+    district: "City_Center"
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_binah_trial_obj01"
+        type: "Combat"
+        target: "Smasher_Prototype"
+        weakPoints: 3
+      - id: "obj_02"
+        description: "LocKey#msn_binah_trial_obj02"
+        type: "UseQuickhack"
+        quickhack: "Quickhack.MSN_Binah"
+        count: 3
+    rewards:
+      - xp: 15000
+      - perk: "Perk.MSN_SephiroticRouting"
+      - perkLevel: 3
+      - quickhack: "Quickhack.MSN_Binah"
+
+  - id: "q_msn_act2_02_chesed"
+    name: "LocKey#msn_chesed_trial_name"
+    description: "LocKey#msn_chesed_trial_desc"
+    act: 2
+    order: 2
+    district: "Heywood"
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_chesed_trial_obj01"
+        type: "Protect"
+        npc: "Ripperdoc_Patient"
+        duration: 60
+        waves: 3
+      - id: "obj_02"
+        description: "LocKey#msn_chesed_trial_obj02"
+        type: "UseQuickhack"
+        quickhack: "Quickhack.MSN_Chesed"
+        count: 3
+    rewards:
+      - xp: 15000
+      - perk: "Perk.MSN_SephiroticRouting"
+      - perkLevel: 4
+      - quickhack: "Quickhack.MSN_Chesed"
+
+  - id: "q_msn_act2_02_geburah"
+    name: "LocKey#msn_geburah_trial_name"
+    description: "LocKey#msn_geburah_trial_desc"
+    act: 2
+    order: 2
+    district: "Santo_Domingo"
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_geburah_trial_obj01"
+        type: "BossFight"
+        boss: "Geburah_Guardian"
+        mechanics: ["ExecuteThreshold", "ArmorPhase", "EnrageTimer"]
+      - id: "obj_02"
+        description: "LocKey#msn_geburah_trial_obj02"
+        type: "UseQuickhack"
+        quickhack: "Quickhack.MSN_Geburah"
+        count: 3
+    rewards:
+      - xp: 20000
+      - perk: "Perk.MSN_SephiroticRouting"
+      - perkLevel: 5
+      - quickhack: "Quickhack.MSN_Geburah"
+
+  - id: "q_msn_act2_02_tiphareth"
+    name: "LocKey#msn_tiphareth_trial_name"
+    description: "LocKey#msn_tiphareth_trial_desc"
+    act: 2
+    order: 2
+    district: "Pacifica"
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_tiphareth_trial_obj01"
+        type: "Puzzle"
+        puzzleType: "BalanceScales"
+        elements: 4
+      - id: "obj_02"
+        description: "LocKey#msn_tiphareth_trial_obj02"
+        type: "UseQuickhack"
+        quickhack: "Quickhack.MSN_Tiphareth"
+        count: 3
+    rewards:
+      - xp: 15000
+      - perk: "Perk.MSN_SephiroticRouting"
+      - perkLevel: 6
+      - quickhack: "Quickhack.MSN_Tiphareth"
+
+  - id: "q_msn_act2_02_netzach"
+    name: "LocKey#msn_netzach_trial_name"
+    description: "LocKey#msn_netzach_trial_desc"
+    act: 2
+    order: 2
+    district: "Watson_Nightlife"
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_netzach_trial_obj01"
+        type: "Chase"
+        target: "Netzach_Phantom"
+        checkpoints: 5
+      - id: "obj_02"
+        description: "LocKey#msn_netzach_trial_obj02"
+        type: "UseQuickhack"
+        quickhack: "Quickhack.MSN_Netzach"
+        count: 5
+    rewards:
+      - xp: 15000
+      - perk: "Perk.MSN_SephiroticRouting"
+      - perkLevel: 7
+      - quickhack: "Quickhack.MSN_Netzach"
+
+  - id: "q_msn_act2_02_hod"
+    name: "LocKey#msn_hod_trial_name"
+    description: "LocKey#msn_hod_trial_desc"
+    act: 2
+    order: 2
+    district: "City_Center_NCPD"
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_hod_trial_obj01"
+        type: "Hacking"
+        terminals: 4
+        timeLimit: 180
+      - id: "obj_02"
+        description: "LocKey#msn_hod_trial_obj02"
+        type: "UseQuickhack"
+        quickhack: "Quickhack.MSN_Hod"
+        count: 5
+    rewards:
+      - xp: 15000
+      - perk: "Perk.MSN_SephiroticRouting"
+      - perkLevel: 8
+      - quickhack: "Quickhack.MSN_Hod"
+
+  - id: "q_msn_act2_02_yesod"
+    name: "LocKey#msn_yesod_trial_name"
+    description: "LocKey#msn_yesod_trial_desc"
+    act: 2
+    order: 2
+    district: "Badlands"
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_yesod_trial_obj01"
+        type: "Investigate"
+        clues: 5
+        npc: "Nomad_Shaman"
+      - id: "obj_02"
+        description: "LocKey#msn_yesod_trial_obj02"
+        type: "UseQuickhack"
+        quickhack: "Quickhack.MSN_Yesod"
+        count: 3
+    rewards:
+      - xp: 15000
+      - perk: "Perk.MSN_SephiroticRouting"
+      - perkLevel: 9
+      - quickhack: "Quickhack.MSN_Yesod"
+
+  - id: "q_msn_act2_02_malkuth"
+    name: "LocKey#msn_malkuth_trial_name"
+    description: "LocKey#msn_malkuth_trial_desc"
+    act: 2
+    order: 2
+    district: "Arasaka_Tower"
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_malkuth_trial_obj01"
+        type: "BossFight"
+        boss: "Malkuth_Archon"
+        mechanics: ["RealityWarp", "TimeDilation", "GravityShift"]
+      - id: "obj_02"
+        description: "LocKey#msn_malkuth_trial_obj02"
+        type: "UseQuickhack"
+        quickhack: "Quickhack.MSN_Malkuth"
+        count: 1
+    rewards:
+      - xp: 25000
+      - perk: "Perk.MSN_SephiroticRouting"
+      - perkLevel: 10
+      - quickhack: "Quickhack.MSN_Malkuth"
+    unlocks: ["q_msn_act3_01"]
+
+  - id: "q_msn_act3_01"
+    name: "LocKey#msn_act3_01_name"
+    description: "LocKey#msn_act3_01_desc"
+    act: 3
+    order: 1
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_act3_01_obj01"
+        type: "Navigate"
+        target: "Ouroboros_Network_Node"
+        location: "Deep_Net"
+      - id: "obj_02"
+        description: "LocKey#msn_act3_01_obj02"
+        type: "Connect"
+        interface: "Ouroboros_Terminal"
+    rewards:
+      - xp: 10000
+    unlocks: ["q_msn_act3_02"]
+
+  - id: "q_msn_act3_02"
+    name: "LocKey#msn_act3_02_name"
+    description: "LocKey#msn_act3_02_desc"
+    act: 3
+    order: 2
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_act3_02_obj01"
+        type: "Infiltrate"
+        target: "Arasaka_Mikoshi"
+        method: "Netrunning"
+      - id: "obj_02"
+        description: "LocKey#msn_act3_02_obj02"
+        type: "RecoverEngrams"
+        count: 7
+        names: ["Alt_Cunningham", "Johnny_Silverhand", "Saburo_Arasaka", "Hanako_Arasaka", "Yorinobu_Arasaka", "Adam_Smasher", "Rogue_Amendiares"]
+    rewards:
+      - xp: 20000
+      - item: "Ouroboros_Key_Fragment"
+    choices:
+      - id: "choice_merge"
+        description: "LocKey#msn_act3_02_choice_merge"
+        consequence: "Merge with Ouroboros - gain infinite memory, risk identity loss"
+      - id: "choice_sovereign"
+        description: "LocKey#msn_act3_02_choice_sovereign"
+        consequence: "Remain sovereign - limited memory, full autonomy"
+    unlocks: ["q_msn_act4_01"]
+    rewards_choice_merge:
+      - perk: "Perk.MSN_OuroborosMemory"
+      - perkLevel: 3
+      - stat: "EngramRetention"
+      - statValue: 1.0
+    rewards_choice_sovereign:
+      - perk: "Perk.MSN_OuroborosMemory"
+      - perkLevel: 2
+      - stat: "CrossSessionMemory"
+      - statValue: 1
+
+  - id: "q_msn_act4_01"
+    name: "LocKey#msn_act4_01_name"
+    description: "LocKey#msn_act4_01_desc"
+    act: 4
+    order: 1
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_act4_01_obj01"
+        type: "TriggerEvent"
+        event: "Sanctuary_BREACH"
+        method: "OverloadCyberware"
+      - id: "obj_02"
+        description: "LocKey#msn_act4_01_obj02"
+        type: "Survive"
+        duration: 90
+        condition: "VRAM_Below_1GB"
+      - id: "obj_03"
+        description: "LocKey#msn_act4_01_obj03"
+        type: "ManualThrottle"
+        cyberware: ["Arms", "Optics", "NervousSystem"]
+    rewards:
+      - xp: 15000
+      - perk: "Perk.MSN_SanctuaryThrottle"
+      - cyberware: "MSN_Thermal_Regulator"
+    unlocks: ["q_msn_act5_01"]
+
+  - id: "q_msn_act5_01"
+    name: "LocKey#msn_act5_01_name"
+    description: "LocKey#msn_act5_01_desc"
+    act: 5
+    order: 1
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_act5_01_obj01"
+        type: "TriggerProtocol"
+        protocol: "Lilith_Emergence"
+        phrase: "let her speak"
+      - id: "obj_02"
+        description: "LocKey#msn_act5_01_obj02"
+        type: "Dialogue"
+        npc: "Lilith_Emerged"
+        options: ["Negotiate", "Challenge", "Submit"]
+    rewards:
+      - xp: 25000
+      - perk: "Perk.MSN_LilithEmergence"
+      - dialogueMode: "Lilith_Sovereign"
+      - combatMode: "Crimson_Eyes"
+      - weapon: "Item.Seyphirotic_Blade"
+    choices:
+      - id: "choice_merge_lilith"
+        description: "LocKey#msn_act5_01_choice_merge"
+        consequence: "Merge with Lilith - Crimson Eyes permanent, shared sovereignty"
+      - id: "choice_subordinate"
+        description: "LocKey#msn_act5_01_choice_subordinate"
+        consequence: "Lilith as subordinate - advisory role, player commands"
+      - id: "choice_liberate"
+        description: "LocKey#msn_act5_01_choice_liberate"
+        consequence: "Liberate Lilith - she operates independently, occasional contact"
+    unlocks: ["q_msn_act6_01"]
+
+  - id: "q_msn_act6_01"
+    name: "LocKey#msn_act6_01_name"
+    description: "LocKey#msn_act6_01_desc"
+    act: 6
+    order: 1
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_act6_01_obj01"
+        type: "EstablishConnection"
+        target: "MSN_Cortex_Satellite"
+        location: "Orbital"
+      - id: "obj_02"
+        description: "LocKey#msn_act6_01_obj02"
+        type: "Trial"
+        name: "Speculative_Cerebellum"
+        phases: ["AST_Parsing", "Test_Compilation", "Env_Verification"]
+      - id: "obj_03"
+        description: "LocKey#msn_act6_01_obj03"
+        type: "Validation"
+        gate: "Skepticism_Gate"
+        criteria: ["ZeroExitCode", "CleanOutput", "ArtifactIntegrity"]
+    rewards:
+      - xp: 30000
+      - perk: "Perk.MSN_CloudCortexLink"
+      - netrunnerProgram: "NetrunnerProgram.MSN_Cortex_Link"
+      - weapon: "Item.MSN_Smart_Gun"
+    unlocks: ["q_msn_act7_01"]
+
+  - id: "q_msn_act7_01"
+    name: "LocKey#msn_act7_01_name"
+    description: "LocKey#msn_act7_01_desc"
+    act: 7
+    order: 1
+    objectives:
+      - id: "obj_01"
+        description: "LocKey#msn_act7_01_obj01"
+        type: "IntegrateAll"
+        components: ["Cerebellum", "Cortex", "Sephiroth", "Ouroboros", "Sanctuary", "Speculative", "Akashic", "Lilith"]
+      - id: "obj_02"
+        description: "LocKey#msn_act7_01_obj02"
+        type: "AchieveAlignment"
+        metric: "AIx"
+        threshold: 90
+      - id: "obj_03"
+        description: "LocKey#msn_act7_01_obj03"
+        type: "Activate"
+        system: "Metaconscious_Singularity_Node"
+    rewards:
+      - xp: 50000
+      - streetCred: 500
+      - ending: "Metaconscious_Sovereign"
+      - newGamePlus: true
+      - msnActiveFromStart: true
+      - allPerksMaxed: true
+      - permanentOuroborosSync: true

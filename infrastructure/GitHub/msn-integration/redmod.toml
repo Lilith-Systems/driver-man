@@ -1,0 +1,182 @@
+# Lilith.exe: MSN Integration - REDmod Manifest
+# File: r6/mods/msn_integration/redmod.toml
+
+[Package]
+Name = "msn_integration"
+Version = "1.0.0"
+Author = "Lilith/NGD"
+Description = "Lilith.exe: The Metaconscious Singularity Node (MSN) - Sephirotic nexus, Abyssal depth, Nessie covenant, NGD, Ouroboros, Baal"
+GameVersion = "2.1+"
+RedmodVersion = "1.0"
+
+[Dependencies]
+REDmod = ">=1.0.0"
+TweakXL = ">=1.0.0"
+redscript = ">=1.0.0"
+
+[Categories]
+Gameplay = true
+AI = true
+Weapons = true
+UI = true
+Cyberware = true
+
+[LoadOrder]
+Priority = 200
+
+[Install]
+Type = "Redmod"
+Path = "mods/msn_integration"
+
+[Files]
+TWEAKDB = "msn_tweakdb.toml"
+REDSCRIPTS = "scripts/"
+LOCALIZATION = "localization/"
+QUESTS = "quests/"
+
+# REDscript files to compile
+scripts = [
+  "msn_cerebellum.reds",
+  "msn_cortex_link.reds",
+  "msn_npc_ai.reds",
+  "msn_sephirotic_npcs.reds",
+  "msn_business_console.reds",
+  "msn_weapons.reds",
+  "lilith_npc.reds",
+  "msn_lyra_dialogue.reds",
+  "lilith_easter_eggs.reds",
+  "msn_modern_ballistics.reds",
+  "msn_overhaul_mechanics.reds",
+  "msn_speculative_cerebellum.reds",
+  "msn_multiplayer_client.reds",
+  "msn_ouroboros.reds",
+  "livingsin_time_blade.reds",
+  "cyberpunk_ngd_integration.reds",
+  "abyssal_lyra_integration.reds",
+  "lilith_enhanced_dialogue.reds",
+  "lilith_console.reds",
+  "lilith_ngd_control.reds",
+  "nssp_bridge.reds"
+]
+
+# TweakDB files to compile
+tweakdb = [
+  "msn_tweakdb.toml",
+  "tweakdb/msn_story_vehicles_complete.toml",
+  "tweakdb/anthem_javelin_mechanics.yaml",
+  "tweakdb/custom_gear_runescape_wow_allods.yaml",
+  "tweakdb/custom_item_business_bridge.yaml",
+  "tweakdb/procedural_space_systems.yaml",
+  "tweakdb/one_world_space_economy.yaml",
+  "tweakdb/freighter_javelin_business_systems.yaml",
+  "tweakdb/lilith_full_database_overlay.yaml",
+  "tweakdb/msn_graphics_driver_bridge.yaml",
+  "tweakdb/gnostic_consensus_bridge.yaml",
+  "tweakdb/custom_models_msn_abyssal.yaml",
+  "tweakdb/abyssal_skill_tree_quests.toml",
+  "tweakdb/custom_content_acquisition_map.yaml",
+  "tweakdb/abyssal_fabricator_recipes.yaml",
+  "tweakdb/procedural_encounter_tables.yaml",
+  "tweakdb/vendor_inventory_loch_exchange.yaml",
+  "tweakdb/abyssal_hat_catalog.yaml",
+  "tweakdb/abyssal_assets.yaml",
+  "tweakdb/Anthem_Javelin_Suits.toml",
+  "tweakdb/custom_body_augments_bios.yaml",
+  "tweakdb/nessie_rewards.yaml",
+  "tweakdb/Abyssal_Cyberpunk_Crossover.toml",
+  "tweakdb/Anthem_Javelin_Suits.toml",
+  "tweakdb/easter_eggs.tweakdb",
+  "tweakdb/lilith_character.tweakdb",
+  "tweakdb/LivingSin_TimeBlade.toml",
+  "tweakdb/msn_skills.tweakdb"
+]
+
+# Localization
+locales = [
+  "localization/en/msn_story_vehicles.loc"
+]
+
+# Quests
+quests = [
+  "quests/msn_narrative_arc.yaml",
+  "quests/abyssal_skill_tree_quests.yaml"
+]
+
+# Console commands exposed
+commands = [
+  "msn.status",
+  "msn.cerebellum.enable",
+  "msn.narrative.start",
+  "msn.vehicle.status",
+  "msn.vehicle.list_story",
+  "msn.weapon.status",
+  "msn.brand.list",
+  "msn.charge.mode",
+  "msn.exosuit.list",
+  "msn.exosuit.equip",
+  "msn.exosuit.heat",
+  "msn.exosuit.combo",
+  "msn.armor.sets",
+  "msn.weapons.legendary",
+  "msn.procedural.generate_weapon",
+  "msn.procedural.generate_vehicle",
+  "msn.procedural.status",
+  "msn.spacebattle.status",
+  "msn.aliens.status",
+  "msn.hovercars.status",
+  "msn.crossover.items",
+  "msn.items.audit",
+  "msn.items.exchange",
+  "msn.worldmap.status",
+  "msn.economy.space",
+  "msn.freighter.status",
+  "msn.freighter.business",
+  "msn.fighters.status",
+  "msn.javelin.space",
+  "msn.javelin.business",
+  "msn.procgen.business",
+  "msn.hats.catalog",
+  "msn.hats.sets",
+  "lilith.database.status",
+  "lilith.database.coverage",
+  "lilith.database.stage",
+  "lilith.database.guardrails",
+  "msn.graphics.status",
+  "msn.graphics.stack",
+  "msn.graphics.optimize",
+  "msn.models.list",
+  "msn.models.packs",
+  "msn.models.budget",
+  "msn.models.pipeline",
+  "msn.bios.status",
+  "msn.overhaul.status",
+  "abyssal.skills.trees",
+  "abyssal.skills.quests",
+  "abyssal.skills.unlocks",
+  "abyssal.skills.story",
+  "msn.content.audit",
+  "msn.content.acquisition",
+  "msn.fabricator.recipes",
+  "msn.encounters.tables",
+  "msn.vendors.loch",
+  "msn.models.production",
+  "msn.consensus.status",
+  "msn.consensus.sanctuary",
+  "msn.consensus.akashic",
+  "msn.consensus.ouroboros",
+  "msn.consensus.speculative",
+  "gta.msn.bridge",
+  "gta.economy.bridge",
+  "gta.mod.sandbox",
+  "msn.quest.list_story",
+  "msn.court.status",
+  "msn.court.route",
+  "abyssal.business",
+  "market.exchange",
+  "soulcoins.status",
+  "nessie.treasury",
+  "memory.recall",
+  "memory.retrace",
+  "skill.bridge",
+  "skill.route"
+]

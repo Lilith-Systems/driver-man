@@ -1,0 +1,163 @@
+################################################################################
+# CUSTOM VEHICLES — ABYSSAL / SEPHIROTIC / NESSIE MOUNTS
+################################################################################
+
+Item:
+  # Abyssal Vehicles
+  Vehicle_Abyssal_Leviathan_Sub:
+    displayName: "Leviathan-Class Abyssal Submersible"
+    description: "Capital-class deep-sea vessel. 6 crew. 11km depth. Void-core reactor. Kraken-class armaments. Mobile Abyssal Fabricator."
+    category: "Vehicle"
+    type: "Submersible"
+    rarity: "Legendary"
+    crew: 6
+    depthRating: 11000
+    propulsion: "Void-Core Magnetohydrodynamic"
+    speed: 60
+    armament:
+      - "4x Void Torpedo Tubes"
+      - "2x Kraken Grappler Arms"
+      - "1x Pressure Cannon Turret"
+      - "2x Abyssal Creature Deployment Bays"
+    sensors: ["Void Sonar", "Magnetic Anomaly", "Thermal Vent Scanner", "Nessie Resonance Tracker"]
+    specialFeatures:
+      - MobileFabricator: true
+      - VoidCoreReactor: true
+      - KrakenForm: true
+      - AbyssalCreatureBay: true
+      - MobileCitadel: true
+    msnIntegration:
+      abyssal: true
+      leviathanClass: true
+      mobileFabricator: true
+      tier5Reward: true
+    icon: "vehicle_leviathan_sub"
+
+Item:
+  Vehicle_Nessie_Mount:
+    displayName: "Nessie — The Guardian Mount"
+    description: "Ride the Guardian of Night City's waters. 200 km/h underwater. Breach for air travel. Void Shield. Summoned by communion."
+    category: "Vehicle"
+    type: "Mount"
+    rarity: "Unique"
+    crew: 1
+    summonable: true
+    summonCooldown: 600
+    speedUnderwater: 200
+    speedAir: 150
+    breachCapable: true
+    abilities:
+      - "Void Shield (90% damage reduction)"
+      - "Pressure Wave (AoE knockback)"
+      - "Hydrothermal Blast (Armor melt)"
+      - "Abyssal Creature Summon (Tier 4+)"
+      - "Territorial Rage (+200% damage)"
+    bondRequired:
+      - NessieFriendship: 3
+    msnIntegration:
+      nessie: true
+      mount: true
+      communion: true
+      tier3Reward: true
+    icon: "vehicle_nessie_mount"
+
+Item:
+  Vehicle_Abyssal_Kraken_Walker:
+    displayName: "Kraken-Class Abyssal Walker"
+    description: "8-legged seabed walker. Void-tipped manipulator arms. Pressure hull. Mobile hydrothermal vent harvester."
+    category: "Vehicle"
+    type: "Walker"
+    rarity: "Legendary"
+    crew: 3
+    legs: 8
+    depthRating: 6000
+    propulsion: "Hydraulic Legs + Micro-Thrusters"
+    speed: 30
+    tools:
+      - "8x Void-Tipped Manipulator Arms"
+      - "2x Diamond Drill Arms"
+      - "Core Sampler"
+      - "Hydrothermal Vent Harvester"
+      - "Mineral Refinery"
+    specialFeatures:
+      - SeabedAnchoring: true
+      - VentHarvesting: true
+      - MobileRefinery: true
+      - PressureHull: true
+    msnIntegration:
+      abyssal: true
+      krakenClass: true
+      ventHarvesting: true
+    icon: "vehicle_kraken_walker"
+
+Item:
+  Vehicle_Phantom_Void_Ship:
+    displayName: "Phantom Void Ship"
+    description: "Anti-grav void-ship. Phase-shift hull. Stealth. Void jump. The sky is not the limit."
+    category: "Vehicle"
+    type: "AV"
+    rarity: "Legendary"
+    crew: 4
+    propulsion: "Void-Core Anti-Grav"
+    speedAtmosphere: 400
+    speedSpace: 2000
+    ceiling: 100000
+    armament:
+      - "2x Void Cannons"
+      - "Phase-Shift Missile Bay"
+      - "Chaff/Flare/Reality Anchors"
+    specialFeatures:
+      - PhaseShift: true
+      - VoidJump: true
+      - ActiveCamo: true
+      - RealityAnchor: true
+    msnIntegration:
+      abyssal: true
+      voidShip: true
+      phaseShift: true
+    icon: "vehicle_phantom_void_ship"
+
+Item:
+  Vehicle_Sophia_Synthesis_Carrier:
+    displayName: "Sophia's Synthesis Carrier"
+    description: "Mobile synthesis platform. Adapts to any terrain. Manifests constructs. The Kingdom moving."
+    category: "Vehicle"
+    type: "GroundVehicle"
+    rarity: "Legendary"
+    crew: 8
+    wheels: 8
+    propulsion: "Resonance Drive"
+    speed: 120
+    specialFeatures:
+      - MobileSynthesis: true
+      - ConstructManifestation: true
+      - SephirahAttunementBay: 10
+      - OmegaFabricator: true
+      - RealityEditing: true
+    msnIntegration:
+      sephirah: "Sophia"
+      synthesisCarrier: true
+      omegaTier: true
+    icon: "vehicle_sophia_carrier"
+
+Item:
+  Vehicle_Lucifer_Solar_Chariot:
+    displayName: "Lucifer's Solar Chariot"
+    description: "Solar-flare propelled vehicle. Blinds enemies. Reveals all. The Light Bringer rides."
+    category: "Vehicle"
+    type: "GroundVehicle"
+    rarity: "Legendary"
+    crew: 2
+    wheels: 4
+    propulsion: "Solar Flare Drive"
+    speed: 300
+    specialFeatures:
+      - SolarFlareAura: true
+      - BlindingTrail: true
+      - StrategicReveal: 500
+      - CloudCortexLink: true
+    msnIntegration:
+      sephirah: "Lucifer"
+      solarChariot: true
+      lightBringer: true
+    icon: "vehicle_lucifer_chariot"

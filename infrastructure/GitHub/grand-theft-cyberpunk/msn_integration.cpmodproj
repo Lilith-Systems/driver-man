@@ -1,0 +1,73 @@
+<Project Sdk="WolvenKit.REDmod.Sdk">
+  <PropertyGroup>
+    <TargetFramework>WolvenKit.REDmod</TargetFramework>
+    <Name>msn_integration</Name>
+    <Version>1.0.0</Version>
+    <Author>Lilith/NGD</Author>
+    <Description>Metaconscious Singularity Node - Dual-brain architecture for Cyberpunk 2077</Description>
+    <GameVersion>2.1+</GameVersion>
+    <RedmodVersion>1.0</RedmodVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <TweakDB Include="msn_tweakdb.toml" />
+    <REDscript Include="scripts\msn_cerebellum.reds" />
+    <REDscript Include="scripts\msn_cortex_link.reds" />
+    <REDscript Include="scripts\msn_npc_ai.reds" />
+    <REDscript Include="scripts\msn_sephirotic_npcs.reds" />
+    <REDscript Include="scripts\msn_business_console.reds" />
+    <REDscript Include="scripts\msn_weapons.reds" />
+    <REDscript Include="scripts\lilith_npc.reds" />
+    <REDscript Include="scripts\msn_lyra_dialogue.reds" />
+    <REDscript Include="scripts\lilith_easter_eggs.reds" />
+    <REDscript Include="scripts\msn_modern_ballistics.reds" />
+    <REDscript Include="scripts\msn_overhaul_mechanics.reds" />
+    <REDscript Include="scripts\msn_speculative_cerebellum.reds" />
+    <REDscript Include="scripts\msn_multiplayer_client.reds" />
+    <REDscript Include="scripts\msn_ouroboros.reds" />
+    <REDscript Include="scripts\livingsin_time_blade.reds" />
+    <REDscript Include="scripts\magic\msn_magic_system.reds" />
+    <REDscript Include="scripts\jedi\msn_jedi_system.reds" />
+    <REDscript Include="scripts\starwars\msn_starwars_system.reds" />
+    <REDscript Include="scripts\cyberpunk_ngd_integration.reds" />
+    <REDscript Include="scripts\abyssal_lyra_integration.reds" />
+    <REDscript Include="scripts\lilith_enhanced_dialogue.reds" />
+    <REDscript Include="scripts\lilith_console.reds" />
+    <REDscript Include="scripts\lilith_ngd_control.reds" />
+    <REDscript Include="scripts\nssp_bridge.reds" />
+  </ItemGroup>
+  <ItemGroup>
+    <TweakDBFile Include="tweakdb\msn_story_vehicles_complete.toml" />
+    <TweakDBFile Include="tweakdb\anthem_javelin_mechanics.yaml" />
+    <TweakDBFile Include="tweakdb\custom_gear_runescape_wow_allods.yaml" />
+    <TweakDBFile Include="tweakdb\custom_item_business_bridge.yaml" />
+    <TweakDBFile Include="tweakdb\procedural_space_systems.yaml" />
+    <TweakDBFile Include="tweakdb\one_world_space_economy.yaml" />
+    <TweakDBFile Include="tweakdb\lilith_full_database_overlay.yaml" />
+    <TweakDBFile Include="tweakdb\msn_graphics_driver_bridge.yaml" />
+    <TweakDBFile Include="tweakdb\gnostic_consensus_bridge.yaml" />
+    <TweakDBFile Include="tweakdb\custom_models_msn_abyssal.yaml" />
+    <TweakDBFile Include="tweakdb\abyssal_skill_tree_quests.toml" />
+    <TweakDBFile Include="tweakdb\custom_content_acquisition_map.yaml" />
+    <TweakDBFile Include="tweakdb\abyssal_fabricator_recipes.yaml" />
+    <TweakDBFile Include="tweakdb\procedural_encounter_tables.yaml" />
+    <TweakDBFile Include="tweakdb\vendor_inventory_loch_exchange.yaml" />
+    <TweakDBFile Include="tweakdb\abyssal_hat_catalog.yaml" />
+    <TweakDBFile Include="tweakdb\abyssal_assets.yaml" />
+    <TweakDBFile Include="tweakdb\Anthem_Javelin_Suits.toml" />
+    <TweakDBFile Include="tweakdb\custom_body_augments_bios.yaml" />
+    <TweakDBFile Include="tweakdb\nessie_rewards.yaml" />
+    <TweakDBFile Include="tweakdb\Abyssal_Cyberpunk_Crossover.toml" />
+    <TweakDBFile Include="tweakdb\easter_eggs.tweakdb" />
+    <TweakDBFile Include="tweakdb\lilith_character.tweakdb" />
+    <TweakDBFile Include="tweakdb\LivingSin_TimeBlade.toml" />
+    <TweakDBFile Include="tweakdb\msn_magic_jedi.tweakdb" />
+    <TweakDBFile Include="tweakdb\msn_skills.tweakdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Localization Include="localization\en\msn_story_vehicles.loc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Quest Include="quests\msn_narrative_arc.yaml" />
+    <Quest Include="quests\abyssal_skill_tree_quests.yaml" />
+  </ItemGroup>
+</Project>

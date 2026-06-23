@@ -1,0 +1,34 @@
+{
+  "schema": "lilith.cd_organization.v1",
+  "generated": "2026-06-21T13:16:32.290636+00:00",
+  "layout": {
+    "C_runtime": {
+      "lilith_root": "/home/tehlappy/Desktop/Lilith",
+      "ai_root": "/home/tehlappy/Desktop/Lilith/Core_Systems/AI",
+      "cp2077_mods": "/home/tehlappy/Desktop/Lilith/Core_Systems/AI/abyssal-assets/cp2077_mods",
+      "pub": "/mnt/d/Pub (via Desktop/AI/Pub + Pub.orig symlink)",
+      "ram_staging": "/dev/shm/ai_staging",
+      "golem_db": "/dev/shm/grok_ram_cache/golem_diary.db"
+    },
+    "D_storage": {
+      "pub": "/mnt/d/Pub",
+      "cyberpunk": "/mnt/d/Cyberpunk",
+      "lilith": "/mnt/d/Lilith",
+      "ai_telemetry": "/mnt/d/AI",
+      "games": "/mnt/d/Games"
+    }
+  },
+  "counts": {
+    "gtc_shards": 100
+  },
+  "sizes": {
+    "gtc_shards_active": "?",
+    "cp2077_mods": "386M",
+    "d_pub": "13G",
+    "d_cyberpunk_source": "520M",
+    "d_lilith": "18G",
+    "ram_staging": "15G"
+  },
+  "pub_orig_is_symlink": true,
+  "desktop_ai_is_symlink": true
+}

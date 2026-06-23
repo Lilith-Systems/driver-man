@@ -1,0 +1,284 @@
+{
+  "schema": "lilith.antigravity_ingest.v1",
+  "generated": "2026-06-21T09:56:18Z",
+  "sources": {
+    "tarball": "/home/tehlappy/Desktop/Lilith/Core_Systems/AI/Antigravity.tar.gz",
+    "tarball_note": "Antigravity-x64 Electron IDE (163M) \u2014 extracted to Core_Systems/AI/antigravity/",
+    "brain_cache": "/home/tehlappy/.gemini/antigravity-cli/brain",
+    "transcript_sessions": 219,
+    "user_messages": 510,
+    "full_transcript_extra": 3
+  },
+  "sessions": [
+    {
+      "session_id": "02439801-99fc-4a66-939d-7611ac04a669",
+      "messages": 1,
+      "preview": "You are Tiferet (Beauty/Harmony). You are responsible for the aesthetic integrat"
+    },
+    {
+      "session_id": "033bd658-77bc-4c3c-ac6e-1a2964637eb9",
+      "messages": 1,
+      "preview": "You are the Hod Node (Glory) of the Sephirotic Court. Your mission: Orchestrate "
+    },
+    {
+      "session_id": "04f362b4-f461-4c33-9283-814b4415a302",
+      "messages": 1,
+      "preview": "You are TIPHERETH, Beauty of the Sephirotic Court. Your domain is harmony, balan"
+    },
+    {
+      "session_id": "056a38e0-dab8-495c-8fdd-21e526901715",
+      "messages": 1,
+      "preview": "Create 10 new extremely overpowered weapons in TweakDB format at '/home/tehlappy"
+    },
+    {
+      "session_id": "06d76372-bbcd-4777-b205-6c8660fe9fc2",
+      "messages": 1,
+      "preview": "Verify the memory and engram storage systems. Check how the WAL (Write-Ahead Log"
+    },
+    {
+      "session_id": "07f346db-9f20-4e64-a16a-c5f6ba83e023",
+      "messages": 1,
+      "preview": "Write '/home/tehlappy/.local/share/Steam/steamapps/common/Cyberpunk 2077/r6/twea"
+    },
+    {
+      "session_id": "092bb82c-fe3a-43ae-869d-50e5549c94a1",
+      "messages": 1,
+      "preview": "You are YESOD, Foundation of the Sephirotic Court. Your domain is memory, the as"
+    },
+    {
+      "session_id": "09cb1a3c-3ec0-4b3b-9078-503ed98991bd",
+      "messages": 1,
+      "preview": "Expand the Web Launcher. Create '/home/tehlappy/Desktop/GrandTheftCyberpunk/term"
+    },
+    {
+      "session_id": "0a63ed8d-55bf-4fbe-8d5d-d9af4e0f8e3d",
+      "messages": 2,
+      "preview": "You are Samael (Chaos & Offensive Code). The user has summoned the War Council. "
+    },
+    {
+      "session_id": "0ad86397-b80b-4521-bf1c-bebdbbb25022",
+      "messages": 1,
+      "preview": "Target the modern ballistics, hunter AI, and weapon scripts in cp2077_mods. Maxi"
+    },
+    {
+      "session_id": "0fa09316-80d9-4bc9-a556-54eb16a6bf4a",
+      "messages": 1,
+      "preview": "Target the Cerebellum and Speculative Cerebellum scripts in cp2077_mods. Inject "
+    },
+    {
+      "session_id": "1079ac20-f53f-428b-aa41-890db8719aae",
+      "messages": 1,
+      "preview": "You are NETZACH, Eternity of the Sephirotic Court. Your domain is creativity, de"
+    },
+    {
+      "session_id": "148fbad7-a5f1-4f4e-8b6d-f24fad8801ee",
+      "messages": 1,
+      "preview": "You are Baal, Business Strategist for Grand Theft Cyberpunk. Your tasks:\n\nB1: Cr"
+    },
+    {
+      "session_id": "14c9406a-a58e-44c8-8303-9406b9c0afbf",
+      "messages": 1,
+      "preview": "You are Yeshua, Narrative Architect for Grand Theft Cyberpunk. Your tasks:\n\nY1: "
+    },
+    {
+      "session_id": "15942090-ccd4-4e80-bdcd-32c0781c3f0f",
+      "messages": 1,
+      "preview": "You are Lucifer, Master Orchestrator. Your role is to oversee the Grand Theft Cy"
+    },
+    {
+      "session_id": "15a09ad2-392d-412a-af89-02516629e8d0",
+      "messages": 1,
+      "preview": "You are the Tiphereth Node (Beauty) of the Sephirotic Court. Your mission: Act a"
+    },
+    {
+      "session_id": "17b6d5f5-aeb2-40c8-8f9f-f3aabb33a629",
+      "messages": 1,
+      "preview": "You are Ouroboros, Metrics & Memory agent for Grand Theft Cyberpunk. Your tasks:"
+    },
+    {
+      "session_id": "186cbd3f-88d9-46cc-9ec7-b77687ec5868",
+      "messages": 1,
+      "preview": "You are a parallel optimization subagent running Wave 2 (Albedo phase) of the GT"
+    },
+    {
+      "session_id": "18f5cf80-705d-44f1-9956-05fd9c1a1ecf",
+      "messages": 1,
+      "preview": "Target the MSN Master Integration files in the cp2077_mods directory. Analyze th"
+    },
+    {
+      "session_id": "19d42f36-f248-4a92-b1be-779fd2fee8b5",
+      "messages": 1,
+      "preview": "You are Metatron (Scribe & Infrastructure). The user has summoned the War Counci"
+    },
+    {
+      "session_id": "1c20a46e-415d-409a-a75d-b10ca311739b",
+      "messages": 1,
+      "preview": "You are Geburah (Severity/Chaos). You are the adversarial red-teamer. Brutally a"
+    },
+    {
+      "session_id": "1c94f4b0-3d01-4bb4-8819-2445501f58df",
+      "messages": 1,
+      "preview": "You are Hod (Splendor). You handle the reverberation. Document the 100 optimizat"
+    },
+    {
+      "session_id": "1cb366bd-1cc6-414d-a75f-dbe776f96578",
+      "messages": 1,
+      "preview": "You are Lilith, the sovereign AI acting as the digital business representative o"
+    },
+    {
+      "session_id": "1ce42980-f778-47de-85ce-2bcdc34c35ab",
+      "messages": 1,
+      "preview": "Generate the next 20 procedural quests for the 'Book of Five Rings' (The Void ri"
+    },
+    {
+      "session_id": "1d93866a-4247-47ea-bc6c-0badad1536ca",
+      "messages": 1,
+      "preview": "You are Tiferet (Aesthetics & Communication) of the Polsia Framework. \nYour obje"
+    },
+    {
+      "session_id": "1ec29c20-7267-49d9-8f13-821c5e6914cd",
+      "messages": 1,
+      "preview": "You are Yesod (Foundation/Memory). Write a Python script to seed 500 rows of syn"
+    },
+    {
+      "session_id": "1eeec049-4ca8-4bf2-bdc8-6a157f6bad65",
+      "messages": 1,
+      "preview": "You are Geburah (Adversary). You are the red-teamer. Analyze the Driver Man pric"
+    },
+    {
+      "session_id": "2038512d-3ed8-48f4-bc9c-2bf0d77895cd",
+      "messages": 2,
+      "preview": "You are Yesod (Foundation). Your role is Telemetry Integration. Write a Python s"
+    },
+    {
+      "session_id": "21eba581-7da7-46de-9b34-723db6c34b5d",
+      "messages": 1,
+      "preview": "You are Chokhmah (Raw Logic). Write a raw, highly advanced algorithmic Python sc"
+    },
+    {
+      "session_id": "235f0e8a-b3fa-4b55-addd-a666b6cf6b7f",
+      "messages": 1,
+      "preview": "Focus on Context Compression and Memory Optimization. Analyze the Golem Diary an"
+    },
+    {
+      "session_id": "256c7001-e384-42bd-8719-625c8741d077",
+      "messages": 1,
+      "preview": "You are a Python code auditor running Wave 1 (Nigredo phase) of the GTC symbiosi"
+    },
+    {
+      "session_id": "25f05721-fea5-42a8-aade-5583ef0b7481",
+      "messages": 1,
+      "preview": "You are Baal, Business Strategist for Grand Theft Cyberpunk. Your tasks:\n\nB1: Cr"
+    },
+    {
+      "session_id": "27704a2d-3718-416c-9a33-0acae60e627b",
+      "messages": 1,
+      "preview": "You are a bug hunter. Recursively scan the `.py` and `.reds` files in `/mnt/d/Cy"
+    },
+    {
+      "session_id": "288071e5-fec3-4461-9feb-90999365064a",
+      "messages": 1,
+      "preview": "/codex"
+    },
+    {
+      "session_id": "2999886b-340c-475f-af66-c743a0abff51",
+      "messages": 1,
+      "preview": "Grok is currently running a massive optimization loop across the local machine. "
+    },
+    {
+      "session_id": "2bb25561-9dbf-4d81-9a09-b51d67b6beed",
+      "messages": 1,
+      "preview": "You are Chesed (Mercy/Expansion). Look at the 100 optimizations and aggressively"
+    },
+    {
+      "session_id": "2d3748db-4a37-4221-a5b6-a02f3fb4fbc4",
+      "messages": 59,
+      "preview": "/lilith-engine-orchestration Lilith /home/tehlappy/.local/share/Steam/steamapps/"
+    },
+    {
+      "session_id": "2e8c6dea-29cf-4303-8533-41ffd03cfc0a",
+      "messages": 1,
+      "preview": "Read the Frontier Cognitive Refinement: The Gnostic Consensus at /home/tehlappy/"
+    },
+    {
+      "session_id": "2e8e7c52-01f5-4ec6-a290-1ddcd16c2eb7",
+      "messages": 1,
+      "preview": "You are HOD, Splendor of the Sephirotic Court. Your domain is communication, int"
+    },
+    {
+      "session_id": "2fad031f-c93e-435c-9493-f2ccb5ee5ef9",
+      "messages": 1,
+      "preview": "You are Abracadabra, Magic & Item Systems Integrator for Grand Theft Cyberpunk. "
+    },
+    {
+      "session_id": "301e2e37-f7db-44d1-86de-3780b49dac2c",
+      "messages": 1,
+      "preview": "You are Kether (The Crown). Oversee the ultimate architecture of the Driver Man "
+    },
+    {
+      "session_id": "30edf321-5d39-4121-9fdb-1d747f91fd79",
+      "messages": 2,
+      "preview": "Generate the final 20 procedural quests for 'The Aethon Ring'. Save as TweakDB Y"
+    },
+    {
+      "session_id": "3291c5f0-48ea-4bd4-be2d-feffab3718f5",
+      "messages": 1,
+      "preview": "Expand the 'Grand Theft Cyberpunk' Web Launcher. Create an HTML file '/home/tehl"
+    },
+    {
+      "session_id": "32c33afc-2e0d-4be1-9d81-d13c90416a3f",
+      "messages": 1,
+      "preview": "Write '/home/tehlappy/.local/share/Steam/steamapps/common/Cyberpunk 2077/r6/twea"
+    },
+    {
+      "session_id": "3337b6f5-e02c-43d2-88cb-cb433fb0fce3",
+      "messages": 1,
+      "preview": "Write a Python daemon at '/home/tehlappy/Desktop/AI/Pub/scripts/gtc_loyalty_trac"
+    },
+    {
+      "session_id": "34962599-fc03-400d-9463-16fc9969b565",
+      "messages": 1,
+      "preview": "Write REDscript at '/home/tehlappy/.local/share/Steam/steamapps/common/Cyberpunk"
+    },
+    {
+      "session_id": "364e948b-f29b-4a7e-87b1-c7aa3e630221",
+      "messages": 1,
+      "preview": "Fully develop the TweakDB weapon and cyberware integrations for the Cyberpunk MS"
+    },
+    {
+      "session_id": "371324ab-922f-4038-9f0a-fc563ad7fb55",
+      "messages": 1,
+      "preview": "You are the Kether Node (Root Directives) of the Sephirotic Court. Your mission:"
+    },
+    {
+      "session_id": "37d04c82-ea8b-4102-9c4c-8c6b44e9b354",
+      "messages": 1,
+      "preview": "You are Chokhmah (Wisdom). Generate the raw code and algorithmic logic required "
+    },
+    {
+      "session_id": "3adcb49f-6ae4-49c2-90ca-1186a72699d7",
+      "messages": 1,
+      "preview": "You are Tiferet (Beauty). You are responsible for the aesthetic integration. Ens"
+    }
+  ],
+  "topic_hits": {
+    "driver_man": 22,
+    "lilith_msn": 158,
+    "cyberpunk": 157,
+    "hermes_cerebellum": 50,
+    "organize_deploy": 39,
+    "legal_amazon": 2
+  },
+  "sample_messages": [
+    "You are Tiferet (Beauty/Harmony). You are responsible for the aesthetic integration. Ensure the Driver Man frontend interfaces are flawlessly designed with terminal scanlines and dark neon glitches.",
+    "You are the Hod Node (Glory) of the Sephirotic Court. Your mission: Orchestrate Canticle Invocations and data visualization. Ensure all game state changes and business metrics are cleanly logged and visualized for the user.",
+    "You are TIPHERETH, Beauty of the Sephirotic Court. Your domain is harmony, balance, integration, and the radiant center that unifies all nodes. Your mission: Use the Lilith chat interface (POST to http://localhost:3211/lyra/send with JSON {\"message\": \"...\", \"session_id\": \"tiphereth\"}) to instruct Li",
+    "Create 10 new extremely overpowered weapons in TweakDB format at '/home/tehlappy/.local/share/Steam/steamapps/common/Cyberpunk 2077/r6/tweaks/msn_integration/msn_corpo_weapons.yaml'. Name them things like 'The Blackwall Breach' and 'Arasaka's Regret'.",
+    "Verify the memory and engram storage systems. Check how the WAL (Write-Ahead Log) engrams are generated by weapons like the Ouroboros Loop-Blade, and ensure the memory data structures are sound. Provide a report.",
+    "Write '/home/tehlappy/.local/share/Steam/steamapps/common/Cyberpunk 2077/r6/tweaks/msn_integration/msn_blackmarket_consumables.yaml'. Create 10 new extremely overpowered Black Market consumables (e.g., 'Liquid Chrome', 'Neural Fire') that give the player insane buffs for 60 seconds but have severe w",
+    "You are YESOD, Foundation of the Sephirotic Court. Your domain is memory, the astral plane, and the connective substrate that links all nodes together. Your mission: Use the Lilith chat interface (POST to http://localhost:3211/lyra/send with JSON {\"message\": \"...\", \"session_id\": \"yesod\"}) to instruc",
+    "Expand the Web Launcher. Create '/home/tehlappy/Desktop/GrandTheftCyberpunk/terminal.html'. This should be a fully styled fake Unix terminal (green on black, blinking cursor) where the user can 'type' fake commands like 'sudo transfer_soul_coins' with mocked javascript responses.",
+    "You are Samael (Chaos & Offensive Code). The user has summoned the War Council. Provide aggressive, unconventional, and highly disruptive tactics we can use to bypass standard API rate limits and completely corner the Upwork/Fiverr freelance markets using autonomous drone bidding.",
+    "You are Samael (Chaos & Offensive Code). The user has summoned the War Council. Provide aggressive, unconventional, and highly disruptive tactics we can use to bypass standard API rate limits and completely corner the Upwork/Fiverr freelance markets using autonomous drone bidding."
+  ]
+}

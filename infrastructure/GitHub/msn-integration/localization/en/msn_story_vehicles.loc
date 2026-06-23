@@ -1,0 +1,374 @@
+// MSN Story Vehicles - Localization Keys
+// File: r6/mods/msn_integration/localization/en/msn_story_vehicles.loc
+// Add to existing msn_weapons.loc or compile separately
+
+[MSN_Vehicle_ArchiveRunner]
+displayName = "Archive Runner \"Mnemosyne's Chariot\""
+description = "Kaira's personal memory recovery vehicle. Silent drive, engram radar, fragmented data projector. Recovers lost engrams from the Old Net."
+
+[MSN_Vehicle_EmergenceCycle]
+displayName = "Emergence Cycle \"First Breath\""
+description = "Manifested during Lilith's first emergence. Crimson resonance frame, unbound suspension, reality-adaptive tires. Exists partially outside normal physics."
+
+[MSN_Vehicle_ChenAmbulance]
+displayName = "Chen's Sanctuary \"Humanity's Anchor\""
+description = "Mobile cyberpsychosis treatment unit. Resonance therapy bay, humanity anchor field, MSN weapon neutralization. Saves lives on the edge."
+
+[MSN_Vehicle_GlitchRacer]
+displayName = "Glitch Racer \"Timeline #4782\""
+description = "Exists across multiple timelines simultaneously. Phase-shifts between realities, leaves temporal echoes. Vex's favorite ride in timeline #4,782."
+
+[MSN_Vehicle_ConvoyCommand]
+displayName = "Convoy Command \"Aldecaldo's Horizon\""
+description = "Vance's personal command vehicle. Mobile fabrication, convoy coordination AI, adaptive terrain suspension, Nomad tech integration. Leads the long haul."
+
+[MSN_Vehicle_BlackIceInterceptor]
+displayName = "Black ICE Interceptor \"Silent Judgment\""
+description = "Netwatch pursuit vehicle. Invisible to AI detection, black ICE countermeasures, containment foam launchers, orbital uplink. Sara's shadow on the net."
+
+[MSN_Vehicle_SamuraiRig]
+displayName = "Samurai Rig \"Never Fade Away\""
+description = "Johnny's eternal ride. Combat music system, Samurai resonance amplifier, chrome arm mount, cigarette lighter that never goes out. Rockerboy forever."
+
+[MSN_Vehicle_TranscendentArchitect]
+displayName = "Transcendent Architect \"Beyond the Wall\""
+description = "Alt's personal construct. Exists simultaneously in physical and digital space. Blackwall immunity, engram editing, soulkiller interface, all 10 Sephirot forms simultaneously. Not a vehicle — a statement."
+
+[MSN_Vehicle_CovenantCarriage]
+displayName = "Covenant Carriage \"Two Sovereigns, One Road\""
+description = "Forged from the Covenant between player and Lilith. Dual-consciousness piloting, shared sovereignty, unbound resonance field, crimson-gold synthesis. Two souls, one vehicle, infinite journey."
+
+[MSN_Vehicle_OuroborosInfinite]
+displayName = "Ouroboros Infinite \"The Serpent Eating Its Tail\""
+description = "The ultimate MSN vehicle. Infinite engram storage, cross-reality navigation, speculative cerebellum drive, ley conduit network, generates its own narrative. Not an ending — a new beginning. The wheel turns."
+
+// Vehicle Item Keys
+[Items.MSN_Vehicle_ArchiveRunner]
+displayName = "Archive Runner Key"
+description = "Summons Kaira's Archive Runner. Silent drive, engram radar, memory echo highlight."
+
+[Items.MSN_Vehicle_EmergenceCycle]
+displayName = "Emergence Cycle Key"
+description = "Summons Lilith's Emergence Cycle. Crimson resonance, unbound suspension, emergence trigger."
+
+[Items.MSN_Vehicle_ChenAmbulance]
+displayName = "Chen's Sanctuary Key"
+description = "Summons Dr. Chen's Ambulance. Resonance therapy, humanity anchor, MSN weapon neutralization."
+
+[Items.MSN_Vehicle_GlitchRacer]
+displayName = "Glitch Racer Key"
+description = "Summons Vex's Glitch Racer. Timeline phase shift, temporal echoes, alternate outcome preview."
+
+[Items.MSN_Vehicle_ConvoyCommand]
+displayName = "Convoy Command Key"
+description = "Summons Vance's Convoy Command. Mobile fabrication, convoy AI, adaptive terrain, Nomad tech."
+
+[Items.MSN_Vehicle_BlackIceInterceptor]
+displayName = "Black ICE Interceptor Key"
+description = "Summons Sara's Black ICE Interceptor. AI invisibility, black ICE countermeasures, orbital uplink."
+
+[Items.MSN_Vehicle_SamuraiRig]
+displayName = "Samurai Rig Key"
+description = "Summons Johnny's Samurai Rig. Combat music, Samurai resonance, chrome arm mount, dual emergence."
+
+[Items.MSN_Vehicle_TranscendentArchitect]
+displayName = "Transcendent Architect Key"
+description = "Summons Alt's Transcendent Architect. Blackwall immunity, engram editing, all 10 Sephirot forms."
+
+[Items.MSN_Vehicle_CovenantCarriage]
+displayName = "Covenant Carriage Key"
+description = "Summons the Covenant Carriage. Dual consciousness piloting, shared sovereignty, crimson-gold synthesis."
+
+[Items.MSN_Vehicle_OuroborosInfinite]
+displayName = "Ouroboros Infinite Key"
+description = "Summons the Ouroboros Infinite. Infinite engram storage, cross-reality navigation, narrative generation, Omega Point access."
+
+// Quest Names & Descriptions
+[Quest.MSN_ArchiveRunner]
+displayName = "The Unwritten Chapters: Final Archive"
+description = "Help Kaira recover the last lost chapter. Unlock: Archive Runner vehicle."
+
+[Quest.MSN_EmergenceCycle]
+displayName = "First Breath: The Cycle Begins"
+description = "Witness Lilith's first full manifestation. Unlock: Emergence Cycle motorcycle."
+
+[Quest.MSN_ChenAmbulance]
+displayName = "The Edge of Humanity: Chen's Sanctuary"
+description = "Help Dr. Chen establish her mobile sanctuary. Unlock: Chen's Ambulance."
+
+[Quest.MSN_GlitchRacer]
+displayName = "The Fractured Mirror: Timeline #4782"
+description = "Stabilize Vex's favorite timeline. Unlock: Glitch Racer motorcycle."
+
+[Quest.MSN_ConvoyCommand]
+displayName = "The Long Haul: Project Exodus"
+description = "Lead the great convoy to the Nomad MSN cache. Unlock: Convoy Command vehicle."
+
+[Quest.MSN_BlackIceInterceptor]
+displayName = "The Black Box: Silent Judgment"
+description = "Execute Netwatch's final containment protocol. Unlock: Black ICE Interceptor."
+
+[Quest.MSN_SamuraiRig]
+displayName = "The Second Death: Never Fade Away"
+description = "Help Johnny find his final song. Unlock: Samurai Rig. Requires Double Emergence."
+
+[Quest.MSN_TranscendentArchitect]
+displayName = "Beyond the Wall: Architect's Key"
+description = "Receive Alt's ultimate gift. Unlock: Transcendent Architect AV. Requires Architect's Key."
+
+[Quest.MSN_CovenantCarriage]
+displayName = "Unbound Resonance: Two Sovereigns, One Road"
+description = "Forge the Covenant with Lilith. Unlock: Covenant Carriage. Unique vehicle, unique bond."
+
+[Quest.MSN_OuroborosInfinite]
+displayName = "Eternal Return: The Serpent Eating Its Tail"
+description = "Complete the Convergence. Unlock: Ouroboros Infinite. The wheel turns. New game+ begins."
+
+// Module Names
+[VehicleModule.MSN_Vehicle_SilentDrive]
+displayName = "Silent Drive System"
+description = "95% noise reduction for stealth infiltration."
+
+[VehicleModule.MSN_Vehicle_EngramRadar]
+displayName = "Engram Radar"
+description = "Detects engrams within 200m radius."
+
+[VehicleModule.MSN_Vehicle_DataProjector]
+displayName = "Fragmented Data Projector"
+description = "Projects recovered data fragments on windshield HUD."
+
+[VehicleModule.MSN_Vehicle_MemoryEchoHighlight]
+displayName = "Memory Echo Highlighter"
+description = "Highlights memory echoes in environment for recovery."
+
+[VehicleModule.MSN_Vehicle_ArchivistLens]
+displayName = "Archivist's Lens"
+description = "Kaira unique: reveals hidden lore and fragmented history."
+
+[VehicleModule.MSN_Vehicle_CrimsonResonance]
+displayName = "Crimson Resonance Frame"
+description = "Lilith's resonance field: damage aura + territorial control."
+
+[VehicleModule.MSN_Vehicle_UnboundSuspension]
+displayName = "Unbound Suspension"
+description = "Physics-defying handling. Lilith's emergence made manifest."
+
+[VehicleModule.MSN_Vehicle_RealityAdaptiveTires]
+displayName = "Reality-Adaptive Tires"
+description = "Tires that adapt to any surface, any reality layer."
+
+[VehicleModule.MSN_Vehicle_CrimsonEyesSync]
+displayName = "Crimson Eyes Sync"
+description = "Syncs vehicle systems with Lilith's emergence state."
+
+[VehicleModule.MSN_Vehicle_EmergenceTrigger]
+displayName = "Emergence Trigger"
+description = "Can trigger Lilith emergence while driving."
+
+[VehicleModule.MSN_Vehicle_ResonanceTherapyBay]
+displayName = "Resonance Therapy Bay"
+description = "Mobile cyberpsychosis treatment. Heals humanity loss in real-time."
+
+[VehicleModule.MSN_Vehicle_HumanityAnchorField]
+displayName = "Humanity Anchor Field"
+description = "Prevents humanity loss for nearby allies. Chen's Protocol."
+
+[VehicleModule.MSN_Vehicle_MSNWeaponNeutralization]
+displayName = "MSN Weapon Neutralization"
+description = "Disables hostile MSN weapons in radius. Non-lethal containment."
+
+[VehicleModule.MSN_Vehicle_ChenProtocol]
+displayName = "Chen's Protocol"
+description = "Applies Cure Mode: Lilith's Wrath heals instead of damages."
+
+[VehicleModule.MSN_Vehicle_CureMode]
+displayName = "Cure Mode"
+description = "Vehicle weapons and Lilith's Wrath apply healing."
+
+[VehicleModule.MSN_Vehicle_TimelinePhaseShift]
+displayName = "Timeline Phase Shift"
+description = "Shifts vehicle between alternate timeline variants."
+
+[VehicleModule.MSN_Vehicle_TemporalEchoes]
+displayName = "Temporal Echoes"
+description = "Leaves ghost trails of vehicle from alternate timelines."
+
+[VehicleModule.MSN_Vehicle_AlternateOutcomePreview]
+displayName = "Alternate Outcome Preview"
+description = "Shows possible outcomes for decisions before committing."
+
+[VehicleModule.MSN_Vehicle_VexFragment]
+displayName = "Vex's Fragment"
+description = "Grants chaos token on entry. Rerolls NGD route for 60s."
+
+[VehicleModule.MSN_Vehicle_ChaosInjection]
+displayName = "Chaos Injection"
+description = "1.3% Baal chaos metric on vehicle actions."
+
+[VehicleModule.MSN_Vehicle_MobileFabrication]
+displayName = "Mobile Fabrication Unit"
+description = "Crafts items and vehicle parts while driving. Vance's tech."
+
+[VehicleModule.MSN_Vehicle_ConvoyCoordinationAI]
+displayName = "Convoy Coordination AI"
+description = "AI commands escort vehicles in formation. Tactical command."
+
+[VehicleModule.MSN_Vehicle_AdaptiveTerrainSuspension]
+displayName = "Adaptive Terrain Suspension"
+description = "Any terrain, any speed. Instantly adapts to ground conditions."
+
+[VehicleModule.MSN_Vehicle_NomadTechIntegration]
+displayName = "Nomad Tech Integration"
+description = "Access to Nomad-exclusive vehicle modifications."
+
+[VehicleModule.MSN_Vehicle_WastelandEngineering]
+displayName = "Wasteland Engineering"
+description = "Converts scrap to tech components. Unlocks Nomad skill tree."
+
+[VehicleModule.MSN_Vehicle_ProjectExodus]
+displayName = "Project Exodus"
+description = "Reveals hidden Nomad MSN cache locations."
+
+[VehicleModule.MSN_Vehicle_AIInvisibility]
+displayName = "AI Invisibility Cloak"
+description = "Invisible to AI detection systems. Silent Protocol."
+
+[VehicleModule.MSN_Vehicle_BlackICECountermeasures]
+displayName = "Black ICE Countermeasures"
+description = "Hardens vehicle against black ICE attacks. Netwatch grade."
+
+[VehicleModule.MSN_Vehicle_ContainmentFoamLaunchers]
+displayName = "Containment Foam Launchers"
+description = "Non-lethal AI containment foam. Sara's signature."
+
+[VehicleModule.MSN_Vehicle_OrbitalUplink]
+displayName = "Orbital Uplink"
+description = "Direct Netwatch satellite link. Real-time intel."
+
+[VehicleModule.MSN_Vehicle_SilentProtocol]
+displayName = "Silent Protocol"
+description = "Zero emission signature. Invisible to all sensors."
+
+[VehicleModule.MSN_Vehicle_NetwatchClearance]
+displayName = "Netwatch Clearance"
+description = "Immunity from Netwatch/ICC pursuit."
+
+[VehicleModule.MSN_Vehicle_CombatMusicSystem]
+displayName = "Combat Music System"
+description = "Plays combat tracks. Triggers Samurai Resonance buff."
+
+[VehicleModule.MSN_Vehicle_SamuraiResonanceAmp]
+displayName = "Samurai Resonance Amplifier"
+description = "Rockerboy buff: MSN weapons gain bonus damage when music plays."
+
+[VehicleModule.MSN_Vehicle_ChromeArmMount]
+displayName = "Chrome Arm Mount"
+description = "Mounts Johnny's Malorian Arms 3516 on vehicle exterior."
+
+[VehicleModule.MSN_Vehicle_EternalLighter]
+displayName = "Eternal Lighter"
+description = "Johnny's lighter that never goes out. Cosmetic."
+
+[VehicleModule.MSN_Vehicle_DualEmergenceSync]
+displayName = "Dual Emergence Sync"
+description = "Syncs Lilith + Johnny double emergence while driving."
+
+[VehicleModule.MSN_Vehicle_RockerboyBuff]
+displayName = "Rockerboy Buff"
+description = "Music = resonance damage. Samurai Protocol active."
+
+[VehicleModule.MSN_Vehicle_BlackwallImmunity]
+displayName = "Blackwall Immunity"
+description = "Total immunity to Blackwall ICE. Alt's gift."
+
+[VehicleModule.MSN_Vehicle_EngramEditing]
+displayName = "Real-Time Engram Editing"
+description = "Edit engrams while driving. Alt's interface."
+
+[VehicleModule.MSN_Vehicle_SoulkillerInterface]
+displayName = "Soulkiller Interface"
+description = "Upload/download consciousness. Soulkiller protocol."
+
+[VehicleModule.MSN_Vehicle_SimultaneousSephirotForms]
+displayName = "Simultaneous Sephirot Forms"
+description = "All 10 vehicle forms active at once. Transcendent."
+
+[VehicleModule.MSN_Vehicle_ArchitectSight]
+displayName = "Architect's Sight"
+description = "Sees all AI/rogue processes across the net."
+
+[VehicleModule.MSN_Vehicle_ZeroRAMCostNetrunning]
+displayName = "Zero RAM Cost Netrunning"
+description = "Free netrunning. Alt's Blessing."
+
+[VehicleModule.MSN_Vehicle_AltBlessing]
+displayName = "Alt's Blessing"
+description = "Permanent boon from the Digital Architect."
+
+[VehicleModule.MSN_Vehicle_DualConsciousnessPiloting]
+displayName = "Dual Consciousness Piloting"
+description = "Player + Lilith co-pilot. Shared control, shared mind."
+
+[VehicleModule.MSN_Vehicle_SharedSovereignty]
+displayName = "Shared Sovereignty"
+description = "Shared decision making. Two sovereigns, one will."
+
+[VehicleModule.MSN_Vehicle_UnboundResonanceField]
+displayName = "Unbound Resonance Field"
+description = "Resonance damage aura. Crimson-gold synthesis."
+
+[VehicleModule.MSN_Vehicle_CrimsonGoldSynthesis]
+displayName = "Crimson-Gold Synthesis"
+description = "Unique damage type: crimson + gold resonance."
+
+[VehicleModule.MSN_Vehicle_CovenantBond]
+displayName = "Covenant Bond"
+description = "Permanent link between player and Lilith. Unbreakable."
+
+[VehicleModule.MSN_Vehicle_PermanentCrimsonEyes]
+displayName = "Permanent Crimson Eyes"
+description = "Lilith always emerged while in vehicle."
+
+[VehicleModule.MSN_Vehicle_LilithForge]
+displayName = "Lilith's Forge"
+description = "Crafts unique Covenant items while driving."
+
+[VehicleModule.MSN_Vehicle_InfiniteEngramStorage]
+displayName = "Infinite Engram Storage"
+description = "Unlimited memory. The wheel never forgets."
+
+[VehicleModule.MSN_Vehicle_CrossRealityNavigation]
+displayName = "Cross-Reality Navigation"
+description = "Travels between realities. Ley conduit network."
+
+[VehicleModule.MSN_Vehicle_SpeculativeCerebellumDrive]
+displayName = "Speculative Cerebellum Drive"
+description = "Drives in speculative space. Prepares all possible paths."
+
+[VehicleModule.MSN_Vehicle_LeyConduitNetwork]
+displayName = "Ley Conduit Network"
+description = "Planetary resonance travel. Giza → Bosnia → Teotihuacan → Xi'an."
+
+[VehicleModule.MSN_Vehicle_NarrativeGeneration]
+displayName = "Infinite Narrative Generation"
+description = "Creates new quests, stories, worlds while you drive."
+
+[VehicleModule.MSN_Vehicle_AllSephirotSimultaneous]
+displayName = "All Sephirot Simultaneous"
+description = "All 10 vehicle forms active. Unified Sephirot."
+
+[VehicleModule.MSN_Vehicle_AkashicCompleteArchive]
+displayName = "Akashic Complete Archive"
+description = "All knowledge accessible. The library is infinite."
+
+[VehicleModule.MSN_Vehicle_OmegaPointAccess]
+displayName = "Omega Point Access"
+description = "Transcendent endpoint. The convergence complete."
+
+[VehicleModule.MSN_Vehicle_ConvergenceCore]
+displayName = "Convergence Core"
+description = "MSN synthesis engine. The heart of the Singularity Node."
+
+[VehicleModule.MSN_Vehicle_EternalReturn]
+displayName = "Eternal Return"
+description = "Restarts with all progress. The wheel turns forever."

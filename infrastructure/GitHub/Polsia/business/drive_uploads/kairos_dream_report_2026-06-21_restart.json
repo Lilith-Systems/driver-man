@@ -1,0 +1,74 @@
+{
+  "schema": "kairos.dream.report.v1",
+  "dream_at": "2026-06-21T11:45:05Z",
+  "trigger": "manual /kairos-dream — Lilith Made a lot of changes on restart!",
+  "user_context": "Lilith Made a lot of changes on restart! map C and D only read also check my github :) PAT is in deep.txt",
+  "sanctuary": "MARGINAL (2908 MB VRAM free)",
+  "routing": {
+    "primary": "Netzach",
+    "fragments_processed": 500,
+    "fragments_seeded_from": [
+      "cd_organization_manifest.json",
+      "github_local_organization.json",
+      "lilith organize + desktop ops sync commits",
+      "grand-theft-cyberpunk massive file sync (hundreds of M files)",
+      "Polsia, driver-man, business-strategy, lilith-systems.github.io updates",
+      "organize_c_d.log (C runtime <-> D storage symlinks)",
+      "deep.txt PAT github check"
+    ]
+  },
+  "consolidation": {
+    "axiomatic_written": 1,
+    "semantic_written": 1,
+    "duration_s": 0.08,
+    "dream_log_id": 6,
+    "details_hash": "a6e5e45eb8a67e05"
+  },
+  "axiomatic_summary": "Netzach endurance seal: Post-restart, Lilith performed extensive filesystem and repo synchronization. C/D canonical maps established via organize_c_d.sh (C=/home/tehlappy/Desktop/Lilith runtime active, D=/mnt/d storage archive). Maps currently full RW (not read-only as noted). GitHub (PAT from deep.txt) verified: recent PushEvents on Lilith-Systems/* (abyssal-assets, msn-integration, grand-theft-cyberpunk, driver-man, etc. ~11:26-11:37Z). Local GitHub clones show Lilith organize sync commits + large modified trees especially GTC (nearly all tracked files touched on restart).",
+  "restart_snapshot": {
+    "c_runtime": "/home/tehlappy/Desktop/Lilith (active write)",
+    "d_storage": "/mnt/d (Pub, Cyberpunk, Lilith, AI)",
+    "map_symlinks": {
+      "Desktop/AI/Pub": "/mnt/d/Pub",
+      "Desktop/AI": "Lilith/Core_Systems/AI",
+      "models/checkpoints/merged_model": "offloaded to /mnt/d/Lilith",
+      "status": "all paths readable+writable (rw,relatime btrfs)"
+    },
+    "github_checked": {
+      "user": "Baal-TehDriverman",
+      "org_repos_pushed": [
+        "Lilith-Systems/abyssal-assets",
+        "Lilith-Systems/msn-integration",
+        "Lilith-Systems/grand-theft-cyberpunk",
+        "Lilith-Systems/lilith-systems.github.io",
+        "Lilith-Systems/driver-man"
+      ],
+      "local_changes": "many M in grand-theft-cyberpunk + chore syncs in Polsia/driver-man/business-strategy",
+      "pat_source": "/home/tehlappy/Desktop/Lilith/Workspace/Documents/deep.txt"
+    },
+    "c_d_note": "User flagged 'map C and D only read' — current mounts/symlinks are RW. D used as durable cold storage; C as hot runtime. Recommend read-only bind mounts for D archives post-sync if stability required.",
+    "lilith_changes": "Restart triggered massive update: organize_c_d, RAM staging, GitHub local/remote syncs, mod registry, state manifests"
+  },
+  "top_themes": [
+    "Restart wave — Lilith executed heavy organize + github + desktop syncs",
+    "C/D layout: C runtime + D archive (symlinked, currently RW)",
+    "GitHub verified via PAT: multiple Lilith-Systems pushes + local dirty trees",
+    "Netzach endurance: sustaining the load of full repo syncs + maps",
+    "GTC grand-theft-cyberpunk: hundreds of files refreshed (Lilith restart footprint)"
+  ],
+  "next_actions": [
+    "Respect 'map C and D only read' — consider remounting /mnt/d subpaths ro for archive safety or update organize script to support --readonly-maps",
+    "Resolve uncommitted changes in GitHub clones (grand-theft-cyberpunk especially) or commit as restart snapshot",
+    "Re-run organize_c_d.sh if maps need reassertion post-restart",
+    "Update SanctuaryGate in dream_cycle.py to also detect vram.free_smoothed_mb for non-force runs",
+    "Verify in-game GTC state after the large restart delta"
+  ],
+  "artifacts": {
+    "golem_db": "/home/tehlappy/Desktop/Lilith/state/golem_diary.db",
+    "cd_manifest": "/home/tehlappy/Desktop/Lilith/state/cd_organization_manifest.json",
+    "github_manifest": "/home/tehlappy/Desktop/Lilith/state/github_local_organization.json",
+    "organize_log": "/home/tehlappy/Desktop/Lilith/logs/organize_c_d.log",
+    "deep_pat": "/home/tehlappy/Desktop/Lilith/Workspace/Documents/deep.txt",
+    "narrative_state": "/home/tehlappy/Desktop/AI/Pub/narrative_state.json"
+  }
+}

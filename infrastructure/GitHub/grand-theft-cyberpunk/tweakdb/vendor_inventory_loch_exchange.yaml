@@ -1,0 +1,230 @@
+################################################################################
+# LOCH EXCHANGE VENDOR INVENTORY — ABYSSAL / MSN / NESSIE ECONOMY
+# Worker batch 2 ownership file. Keep YAML valid and data-only.
+################################################################################
+
+VendorInventoryLochExchange:
+  schema: "msn.vendor_inventory_loch_exchange.v1"
+  localOnly: true
+  economy:
+    exchange: "The Loch Exchange"
+    primaryCurrency: "Soul Coins"
+    secondaryCurrencies:
+      - "Orbital Salvage Credits"
+      - "Nessie Treasury Vouchers"
+      - "Launch Clearance Tokens"
+    fees:
+      buyFeePercent: 3
+      burnPercent: 1
+      nessieTreasuryPercent: 2
+    restockPolicy: "Quest-gated weekly restock with first-discovery unlocks"
+    safetyRules:
+      - "Nessie and guardian items are covenant rewards, not farmable loot."
+      - "Hero models and finished mythic items remain quest-bound unless explicitly listed as cosmetic or blueprint fragments."
+      - "All listings remain local-only and route through MSN status commands."
+
+  vendors:
+    Captain_Vance:
+      displayName: "Captain Vance"
+      role: "Abyssal freighter captain and convoy logistics vendor"
+      locationHint: "Neon Badlands Launch Corridor"
+      unlockCondition: "Complete badlands_launch_convoy_breakout or earn CaptainVance.vendor_trust."
+      inventoryTheme: "freighter parts, convoy contracts, launch corridor survival"
+      commands: ["msn.freighter.status", "msn.economy.space"]
+      inventory:
+        - id: "vance_covenant_engine_nacelle"
+          item: "Vehicle_CovenantFreighter_Model.engine_nacelle_part"
+          category: "VehiclePart"
+          rarity: "Epic"
+          priceSoulCoins: 90
+          stock: 1
+          restock: "weekly"
+          requirements: ["CaptainVance.vendor_trust"]
+        - id: "vance_solar_weave_bundle"
+          item: "solar_weave.bundle"
+          category: "CraftingMaterial"
+          rarity: "Rare"
+          priceSoulCoins: 18
+          stock: 6
+          restock: "daily"
+          requirements: []
+        - id: "vance_launch_clearance_token"
+          item: "launch_clearance.token"
+          category: "ContractKey"
+          rarity: "Uncommon"
+          priceSoulCoins: 12
+          stock: 3
+          restock: "daily"
+          requirements: []
+        - id: "vance_vector_lock_on_pod"
+          item: "VectorStarling_Javelin.lock_on_pod"
+          category: "ExosuitModule"
+          rarity: "Epic"
+          priceSoulCoins: 76
+          stock: 1
+          restock: "weekly"
+          requirements: ["badlands_solar_chariot_trial"]
+
+    Kelp_Witch:
+      displayName: "Kelp Witch"
+      role: "Abyssal fabricator mystic and pressure-material vendor"
+      locationHint: "Pacifica Trench access shrine"
+      unlockCondition: "Complete Pacifica Trench guardian parley or reach Abyssal crafting tier 2."
+      inventoryTheme: "abyssal materials, deep armor catalysts, communion-safe reagents"
+      commands: ["abyssal.skills.trees", "abyssal.skills.unlocks"]
+      inventory:
+        - id: "kelp_pressure_steel_ingot"
+          item: "pressure_steel.ingot"
+          category: "CraftingMaterial"
+          rarity: "Rare"
+          priceSoulCoins: 24
+          stock: 5
+          restock: "daily"
+          requirements: []
+        - id: "kelp_abyssal_crystal_shard"
+          item: "abyssal_crystal.shard"
+          category: "CraftingMaterial"
+          rarity: "Epic"
+          priceSoulCoins: 42
+          stock: 3
+          restock: "weekly"
+          requirements: ["AbyssalCrafting.tier2"]
+        - id: "kelp_bastion_pressure_module"
+          item: "Exosuit_BastionBulwark_Javelin.pressure_module"
+          category: "ExosuitModule"
+          rarity: "Legendary"
+          priceSoulCoins: 160
+          stock: 1
+          restock: "quest_limited"
+          requirements: ["pacifica_trench_kraken_test"]
+        - id: "kelp_nessie_communion_calibration"
+          item: "NessieCommunionLink.calibration"
+          category: "QuickhackCalibration"
+          rarity: "Epic"
+          priceSoulCoins: 58
+          stock: 1
+          restock: "weekly"
+          requirements: ["NessieFriendship.tier2"]
+
+    Dr_Chen:
+      displayName: "Dr. Chen"
+      role: "Cyberware surgeon for sonar, pressure, and Old Net interfaces"
+      locationHint: "Hidden clinic between Kabuki and the Pacifica floodline"
+      unlockCondition: "Bring a stable memory shard or complete old_net_drowned_node stabilization."
+      inventoryTheme: "cyberware catalysts, scan modules, safe neural links"
+      commands: ["msn.items.audit", "msn.items.exchange"]
+      inventory:
+        - id: "chen_sonar_lens_rare"
+          item: "sonar_lens.rare"
+          category: "CyberwareComponent"
+          rarity: "Rare"
+          priceSoulCoins: 35
+          stock: 2
+          restock: "daily"
+          requirements: []
+        - id: "chen_old_net_fragment"
+          item: "old_net_fragment.common"
+          category: "QuickhackComponent"
+          rarity: "Uncommon"
+          priceSoulCoins: 14
+          stock: 8
+          restock: "daily"
+          requirements: []
+        - id: "chen_memory_shard_stable"
+          item: "memory_shard.stable"
+          category: "NeuralComponent"
+          rarity: "Epic"
+          priceSoulCoins: 66
+          stock: 2
+          restock: "weekly"
+          requirements: ["astral_undercity_memory_bazaar"]
+        - id: "chen_nyx_stealth_field"
+          item: "Nyx_Whisper_Monowire.stealth_field"
+          category: "WeaponMod"
+          rarity: "Legendary"
+          priceSoulCoins: 140
+          stock: 1
+          restock: "quest_limited"
+          requirements: ["DrChen.trust", "OldNet.safe_handling"]
+
+    Nessie_Treasury_Broker:
+      displayName: "Nessie Treasury Broker"
+      role: "Guardian covenant broker and treasury-backed reward vendor"
+      locationHint: "Loch Exchange communion terminal"
+      unlockCondition: "Reach NessieFriendship tier 2 and complete one non-hostile guardian encounter."
+      inventoryTheme: "vouchers, covenant cosmetics, guardian-safe rewards"
+      commands: ["nessie.treasury", "nessie.friendship", "nessie.call"]
+      inventory:
+        - id: "broker_treasury_voucher"
+          item: "NessieTreasury.voucher"
+          category: "TreasuryVoucher"
+          rarity: "Rare"
+          priceSoulCoins: 50
+          stock: 2
+          restock: "weekly"
+          requirements: ["NessieFriendship.tier2"]
+        - id: "broker_nessie_mount_cooldown"
+          item: "Vehicle_Nessie_Mount.summon_cooldown_reduction"
+          category: "MountUpgrade"
+          rarity: "Epic"
+          priceSoulCoins: 110
+          stock: 1
+          restock: "quest_limited"
+          requirements: ["NessieFriendship.tier3"]
+        - id: "broker_guardian_constellation_skin"
+          item: "source:custom-model-pack.Creature_Nessie_GuardianAvatar.skin_dorsal_constellation"
+          category: "Cosmetic"
+          rarity: "Legendary"
+          priceSoulCoins: 180
+          stock: 1
+          restock: "never"
+          requirements: ["NessieFriendship.tier4", "pacifica_trench_guardian_parley"]
+        - id: "broker_communion_animation"
+          item: "Creature_Nessie_GuardianAvatar.communion_animation"
+          category: "AnimationUnlock"
+          rarity: "Legendary"
+          priceSoulCoins: 150
+          stock: 1
+          restock: "never"
+          requirements: ["astral_undercity_loch_gate"]
+
+    Orbital_Salvage_Clerk:
+      displayName: "Orbital Salvage Clerk"
+      role: "Space salvage registrar and fighter/freighter parts vendor"
+      locationHint: "Covenant Freighter market terminal"
+      unlockCondition: "Complete any Orbital Graveyard encounter or register one freighter manifest."
+      inventoryTheme: "orbital salvage, fighter parts, Blackwall-safe ship components"
+      commands: ["msn.spacebattle.status", "msn.fighters.status", "msn.models.packs"]
+      inventory:
+        - id: "clerk_void_touched_salvage"
+          item: "void_touched_salvage.bundle"
+          category: "CraftingMaterial"
+          rarity: "Rare"
+          priceSoulCoins: 28
+          stock: 6
+          restock: "daily"
+          requirements: []
+        - id: "clerk_phantom_needler_weapon_mount"
+          item: "Vehicle_PhantomNeedle_Fighter.weapon_mount"
+          category: "FighterPart"
+          rarity: "Epic"
+          priceSoulCoins: 95
+          stock: 1
+          restock: "weekly"
+          requirements: ["badlands_smuggler_starfighter_cache"]
+        - id: "clerk_blackwall_alloy_sample"
+          item: "blackwall_alloy.sample"
+          category: "CraftingMaterial"
+          rarity: "Epic"
+          priceSoulCoins: 48
+          stock: 3
+          restock: "weekly"
+          requirements: ["orbital_graveyard_blackwall_meteor"]
+        - id: "clerk_fabricator_bay_unlock"
+          item: "CovenantFreighter.fabricator_bay_unlock"
+          category: "FreighterUpgrade"
+          rarity: "Legendary"
+          priceSoulCoins: 220
+          stock: 1
+          restock: "quest_limited"
+          requirements: ["orbital_graveyard_corpse_freighter_boarding"]

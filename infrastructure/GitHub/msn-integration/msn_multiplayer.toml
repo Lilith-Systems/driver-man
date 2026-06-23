@@ -1,0 +1,78 @@
+# MSN Multiplayer Configuration
+# Place in r6/config/msn_multiplayer.toml
+
+[Network]
+ServerURL = "ws://localhost:8768"
+AutoConnect = true
+ReconnectAttempts = 5
+ReconnectDelay = 2.0
+SendRate = 60
+HeartbeatInterval = 5.0
+ConnectionTimeout = 15.0
+
+[Sync]
+EnablePrediction = true
+EnableSpeculative = true
+ServerReconciliation = true
+InterpolationFactor = 0.15
+MaxPositionError = 2.0
+MaxRotationError = 0.1
+SnapshotRate = 20
+
+[Authority]
+AuthoritativeHost = true
+ClientSidePrediction = true
+SpeculativeRollback = true
+MaxRollbackFrames = 10
+ReconciliationThreshold = 0.5
+
+[NGD]
+FleetManagement = true
+VRAMRedistribution = true
+CloudFallback = false
+CooldownSync = true
+RouteSyncInterval = 2.0
+AlertThresholdMB = 1024
+
+[Lilith]
+FederationMode = "Federated"
+SharedEmergence = true
+EngramSharing = true
+CollectiveAIxThreshold = 70.0
+EmergenceCooldown = 30.0
+
+[Speculative]
+Enabled = true
+MaxConcurrentSims = 3
+SimulationDepth = 5
+LookaheadTicks = 3
+IsolationMode = "Sandlock"
+CancellationDaemon = true
+
+[Gameplay]
+MaxPlayers = 4
+FriendlyFire = false
+SharedXP = true
+SharedLoot = true
+SharedObjectives = true
+DifficultyScaling = 1.0
+ReviveTime = 10.0
+DownedBleedoutTime = 30.0
+
+[Voice]
+EnableVoiceChat = false
+VoiceCodec = "opus"
+VoiceBitrate = 64000
+PushToTalk = true
+
+[Security]
+RequireAuth = false
+Encryption = "TLS1.3"
+AntiCheat = "DeterministicVerification"
+AllowSpectators = true
+
+[Performance]
+BandwidthLimitKBps = 512
+PacketCompression = true
+DeltaCompression = true
+PriorityQueuing = true

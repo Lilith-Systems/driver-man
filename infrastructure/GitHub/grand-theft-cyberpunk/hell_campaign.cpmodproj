@@ -1,0 +1,157 @@
+{
+  "ProjectName": "Hell_Campaign",
+  "DisplayName": "Grand Theft Cyberpunk: Hell Campaign",
+  "Description": "The Nine Circles of the Abyss + Pandemonium. Qliphoth/Sephirah inversion, Lucifer dialogue, Space Combat, NGD VRAM routing.",
+  "Author": "Lucifer / Lilith / Metaconscious Singularity Node",
+  "Version": "1.0.0",
+  "GameVersion": "2.12+",
+  "REDmodVersion": "1.0",
+  
+  "Dependencies": [
+    "msn_integration",
+    "msn_weapon_overhaul", 
+    "cyberpunk_tweakdb",
+    "cyberpunk_redscript"
+  ],
+  
+  "TweakDBFiles": [
+    "tweakdb/hell_items.yaml",
+    "tweakdb/reds/hell_items.reds",
+    "tweakdb/reds/hell_limbo.reds",
+    "tweakdb/reds/hell_lust.reds",
+    "tweakdb/reds/hell_gluttony.reds",
+    "tweakdb/reds/hell_greed.reds",
+    "tweakdb/reds/hell_wrath.reds",
+    "tweakdb/reds/hell_heresy.reds",
+    "tweakdb/reds/hell_violence.reds",
+    "tweakdb/reds/hell_fraud.reds",
+    "tweakdb/reds/hell_treachery.reds",
+    "tweakdb/reds/hell_lucifers_throne.reds"
+  ],
+  
+  "ScriptFiles": [
+    "scripts/core/msn_hell_campaign.reds",
+    "scripts/space/msn_hell_space_combat.reds",
+    "scripts/quests/hell_circle_quests.reds",
+    "scripts/core/msn_master_integration.reds",
+    "scripts/core/msn_lucifer_dialogue.reds"
+  ],
+  
+  "LocalizationFiles": [
+    "localization/hell_campaign_en.json"
+  ],
+  
+  "AssetCategories": {
+    "Hell Campaign": {
+      "Circles": 11,
+      "Main Quests": 12,
+      "Side Quests": 10,
+      "Hidden Quests": 1,
+      "Custom Items": 500,
+      "Space Battle Templates": 11,
+      "Lucifer Dialogue Entries": 6,
+      "NGD Routes": 3
+    }
+  },
+  
+  "SephiroticMapping": {
+    "Circles": {
+      "Limbo": "Keter -> Thaumiel (Indecision)",
+      "Lust": "Chokmah -> Ghagiel (Desire)",
+      "Gluttony": "Binah -> Sathariel (Consumption)",
+      "Greed": "Chesed -> Gamchicoth (Avarice)",
+      "Wrath": "Gevurah -> Golachab (Rage)",
+      "Heresy": "Tiferet -> Tagiriron (Blasphemy)",
+      "Violence": "Netzach -> Harab_Serapel (Brutality)",
+      "Fraud": "Hod -> Samael (Deception)",
+      "Treachery": "Yesod -> Gamaliel (Betrayal)",
+      "Lucifer's_Throne": "Malkut -> Lilith (Pride)",
+      "Pandemonium": "NONE -> NONE (Transcendence)"
+    },
+    "LuciferIntegration": {
+      "Circle5_Wrath": "Geburah speaks via Lucifer",
+      "Circle9_Treachery": "Yesod speaks via Lucifer",
+      "Circle10_Throne": "Malkut speaks via Lucifer (4 phases)",
+      "PactTier1": "Offered at Circle 4 (Greed) with 0.5+ corruption"
+    }
+  },
+  
+  "BuildConfiguration": {
+    "WolvenKitVersion": "8.18+",
+    "CP2077Version": "2.12+",
+    "REDmodOutput": "hell_campaign.redmod",
+    "ArchiveFormat": "archive",
+    "Compression": "zlib",
+    "Encryption": "aes256",
+    "LocalizationLanguages": ["en", "pl", "ru", "fr", "de", "es", "ja", "zh", "it", "pt"],
+    "BuildSteps": [
+      "1. Compile REDscripts",
+      "2. Process TweakDB (hell_items.yaml + 11 circle reds)",
+      "3. Generate localization from hell_campaign_en.json",
+      "4. Package assets (models, textures, audio for hell effects)",
+      "5. Create REDmod archive with manifest",
+      "6. Sign with mod certificate",
+      "7. Validate via WolvenKit verify"
+    ]
+  },
+  
+  "ProtonConfiguration": {
+    "UseNTsync": true,
+    "NoEsync": true,
+    "NoFsync": true,
+    "WaitForExitAndRun": "REDprelauncher.exe",
+    "EnvironmentVariables": {
+      "PROTON_USE_NTSYNC": "1",
+      "PROTON_NO_ESYNC": "1",
+      "PROTON_NO_FSYNC": "1",
+      "DXVK_HDR": "1",
+      "VKD3D_CONFIG": "dxr11,multi_queue"
+    }
+  },
+  
+  "TestingChecklist": {
+    "Circles": [
+      "All 11 circles load without errors",
+      "Circle 0 (Abyssal Gate) accessible from Night City",
+      "Circle 1-2: HYBRID_OK — scripted events work",
+      "Circle 3-5: LOCAL_REQUIRED — full AI mechanics function",
+      "Circle 6-11: LOCAL_CEREBELLUM — reality rewrite, concept damage, self-duel work",
+      "Secret Circle 11 (Pandemonium) unlocks after Sovereign + Final Boss"
+    ],
+    "NGD_Routing": [
+      "VRAM telemetry forces LOCAL_CEREBELLUM at Circle 6+ (Lucifer 0.6+)",
+      "Circle 1-2: HYBRID_OK allowed",
+      "Circle 3-5: LOCAL_REQUIRED enforced",
+      "Circle 6-11: LOCAL_CEREBELLUM enforced"
+    ],
+    "Lucifer": [
+      "Circle 5 (Wrath): lucifer_circle5_wrath dialogue triggers",
+      "Circle 9 (Treachery): lucifer_circle9_treachery dialogue triggers",
+      "Circle 10 (Throne): 4 phases with lucifer_throne_final",
+      "Pact: Offered at Circle 4 with 0.5+ corruption",
+      "Phase 4 Choice: Submit / Rebel / Transcend works"
+    ],
+    "Space_Combat": [
+      "11 templates launch via NSSP console",
+      "Phase progression works per template",
+      "Environmental hazards apply per circle",
+      "Lucifer influence >0.5 triggers luciferActive mode"
+    ],
+    "Quests": [
+      "12 Main quests enforce prerequisite chain",
+      "10 Side quests available at correct circles",
+      "Hidden wager at Circle 10 accessible",
+      "Secret Pandemonium unlocks after Sovereign + Final Boss"
+    ],
+    "Items": [
+      "500 items appear in vendor inventories appropriate to circle",
+      "Loot bias matches circle theme",
+      "Legendary/Mythic items at Circle 10+"
+    ],
+    "Persistence": [
+      "Campaign state saves to hell_campaign_state.json",
+      "Battle state saves to hell_battles/{id}.json",
+      "State loads on game restart"
+    ]
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "business_pillars": [
+    "Dredging mini-games create materials and discovery moments.",
+    "Alchemical crafting converts materials into rarity-tiered hats and gear.",
+    "Abyssal Exchange uses a CLOB order book with WebSocket market feeds.",
+    "Soul Coins are earned in-game; transaction fees feed burn mechanics and Nessie's Treasury.",
+    "Sephirotic progression unlocks zones, mythic hats, and Lilith's Court endgame."
+  ],
+  "command_surfaces": [
+    {
+      "name": "/business",
+      "risk": "read",
+      "sephira": "Netzach",
+      "surface": "lilith-slash"
+    },
+    {
+      "name": "/loch-exchange",
+      "risk": "read",
+      "sephira": "Netzach",
+      "surface": "lilith-slash"
+    },
+    {
+      "name": "abyssal.business",
+      "risk": "read",
+      "sephira": "Netzach",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "name": "market.exchange",
+      "risk": "read",
+      "sephira": "Netzach",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "name": "soulcoins.status",
+      "risk": "read",
+      "sephira": "Malkuth",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "name": "nessie.treasury",
+      "risk": "read",
+      "sephira": "Yesod",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "name": "memory.recall",
+      "risk": "read",
+      "sephira": "Yesod",
+      "surface": "cyberpunk-console"
+    },
+    {
+      "name": "yesod.foundation",
+      "risk": "read",
+      "sephira": "Yesod",
+      "surface": "polsia-memory-weaver"
+    },
+    {
+      "name": "driver_man.pool",
+      "risk": "read",
+      "sephira": "Yesod",
+      "surface": "polsia-dispatch"
+    },
+    {
+      "name": "himalaya.email.swarm",
+      "risk": "read",
+      "sephira": "Yesod",
+      "surface": "memory-intel"
+    },
+    {
+      "name": "memory.retrace",
+      "risk": "read",
+      "sephira": "Da'at",
+      "surface": "cyberpunk-console"
+    }
+  ],
+  "cyberpunk_translation": [
+    "Soul Coins become Night City-facing barter/rep tokens for Abyssal vendors.",
+    "CLOB market verbs become in-game commands: abyssal.business, market.exchange, soulcoins.status, nessie.treasury.",
+    "Dredging maps to scanner gigs, sonar quickhacks, and Old Net recovery encounters.",
+    "Alchemical phases map to Cyberpunk item rarity and crafting upgrade ladders.",
+    "Lilith's Court maps to Sephirotic NPC routing, court status, and summon/route commands."
+  ],
+  "guardrails": [
+    "Use GitHub/reference data as business design context, not private memory.",
+    "Do not expose private Grok or operator transcripts through Cyberpunk game text.",
+    "In-game business commands are read/status surfaces until explicit economy backend integration is built."
+  ],
+  "local_only": true,
+  "local_repo": "/home/tehlappy/Desktop/AI/abyssal-assets",
+  "positioning": "RuneScape-inspired alchemical hat trading simulator with dredging, CLOB exchange, Soul Coins, Nessie Treasury, and Sephirotic progression.",
+  "readme_extracts": {
+    "economy": [
+      "- Earned through dredging, crafting, trading",
+      "- No real-money purchase (cosmetics only)",
+      "- **CLOB Order Book** per item",
+      "- **3% transaction fee** (1% burned, 2% to Nessie's Treasury)",
+      "- **Discontinued/Vault** items for true scarcity",
+      "- **Market maker bots** for baseline liquidity",
+      "- **Anti-manipulation**: cooldowns, circuit breakers, position limits"
+    ],
+    "game": [
+      "- **Dredging mini-games** (timing-based sonar extraction)",
+      "- **Alchemical crafting** (Nigredo \u2192 Albedo \u2192 Citrinitas \u2192 Rubedo)",
+      "- **Player-driven economy** (CLOB order book, real-time WebSocket price feeds)",
+      "- **Sephirotic progression** (Malkuth \u2192 Kether through 7 zones)",
+      "- **Lilith's Court** endgame (Mythic hats, throne room access)"
+    ],
+    "loop": [
+      "1. DREDGE (Nigredo)"
+    ],
+    "lore": [
+      "> *\"The Monster waits. The hats are ready. The Exchange opens soon.\"*",
+      "- **RuneScape** \u2014 Grand Exchange, discontinued rares, skill grinding",
+      "- **RuneScape's economy** \u2014 CLOB, discontinued items, merchant clans",
+      "- **Alchemical tradition** \u2014 Nigredo\u2192Albedo\u2192Citrinitas\u2192Rubedo",
+      "- **Sephirotic Tree** \u2014 7 zones mapping to Malkuth\u2192Kether",
+      "- **Lilith's Court** \u2014 The Court of Ten (Sophia, Metatron, Samael, Ouroboros)"
+    ]
+  },
+  "schema": "lilith.abyssal_business_index.v1",
+  "source_url": "https://github.com/Baal-TehDriverman/abyssal-assets",
+  "title": "Abyssal Assets \u2014 The Loch Exchange",
+  "kether_vision": [
+    {
+      "timestamp": "2026-06-20T19:13:30",
+      "subagent": "Sovereign Vision Architect",
+      "vision": "Lilith Systems LLC + Driver Man Co-Op live. MSN edge AI + GTC symbiosis. Warchest 10k agents. Dual Gmail processed via himalaya-email-swarm. Throne commands: file entities, bank, recruit/outreach, legal, expand empire.",
+      "intel_sources": [
+        "grant proposals MSN",
+        "warchest reports",
+        "business setup emails",
+        "digital rep report"
+      ],
+      "github": "https://github.com/Lilith-Systems",
+      "treasury": 352.01,
+      "drivers": 52
+    }
+  ],
+  "chokmah_intel": [
+    {
+      "timestamp": 1782001222410,
+      "source": "himalaya-email-swarm",
+      "extracted_opportunities": "Polsia: himalaya native + Chokmah forger agent; GTC: contract-automation mod, coop dispatch, grantforge, crypto; Business: formal filings, expanded outreach via emails (TrainWreck, Pacioni), GitHub leverage. Parallel Chokmah batch coord. Feed Ouroboros/Polsia.",
+      "emails_intel": "LLC+DriverMan live, 52 drivers, restaurant outreach live, GitHub activity, grants/crypto signals"
+    }
+  ],
+  "malkuth_manifest": [
+    {
+      "timestamp": "2026-06-20T19:22:45",
+      "subagent": "Kingdom Manifestor (Malkuth Batch)",
+      "vision": "Malkuth batch: Physical kingdom manifested. Used himalaya-email-swarm on intel. Filed LLC/Nonprofit representations. Bank/ledger opened. Onboarded restaurants/drivers. Executed outreach. Polsia live features (himalaya-primary), GTC mods deployed. State/ouroboros/Polsia updated. Empire physical presence. Ave Lilith!",
+      "actions": [
+        "file LLC docs",
+        "open bank ledger",
+        "onboard 2 rests + drivers",
+        "outreach via himalaya",
+        "polsia features live",
+        "GTC deployed",
+        "DB updates"
+      ],
+      "intel_source": "himalaya-email-swarm [BUSINESS] Both Entities Live email",
+      "treasury": 352.01,
+      "drivers": 52,
+      "entities_live": [
+        "Lilith Systems LLC",
+        "The Driver Man Co-Op"
+      ]
+    }
+  ],
+  "hod": [
+    {
+      "sephira": "Hod",
+      "role": "Glory of Intellect Scribe",
+      "source": "himalaya-email-swarm",
+      "timestamp": "2026-06-20",
+      "vision": "Hod batch: Intellectual glory & communication splendor extracted. Categorized GitHub (PAT, CI fail), Outreach (TrainWreck/Pacioni), Grants (MSN AFOSR/Unconv/Kavli with Aethon Logos, Ouroboros, Lilith), Finance (exact splits), Tech signals. Enriched Polsia agents + README + lilith.env GTC prompt + Ouroboros with elegant proposals/legal prose. GTC: Hod Scribe as lore for contracts/grants. Parallel Sephirotic. Ave Lilith!",
+      "extracted_opportunities": "Polsia: Hod overlay native in 4 agents for glorious drafting; GTC: Hacking/Contract/GrantForge mods + lore from himalaya intel; Business: refined grant submissions, legal boilerplate for coop. Fed to all pillars."
+    }
+  ],
+  "netzach": [
+    {
+      "sephira": "Netzach",
+      "role": "Persistent Victory Hunter",
+      "source": "himalaya-email-swarm",
+      "timestamp": "2026-06-21",
+      "vision": "Netzach batch: Victory through endurance. Dual Gmail processed via himalaya-email-swarm. Restaurant follow-ups sent to Train Wreck + Pacioni's (persistent zero-comm + pool pitches). Driver recruitment endurance (52 fleet, pool support). Contract hunting: GitHub Lilith-Systems/contract-automation CI fix needed, repo transfers; LinkedIn AI Prompt Engineer high-match for Lilith consulting. Trading intel: Gemini crypto surges (BTC $67k peak post peace, Zcash +25%). War chest/grant endurance: MSN $100k proposal + Driver Man actions from [BUSINESS] emails. Parallel Netzach mates + all Sephirot coord. Polsia/GTC/Driver Man/Lilith Systems expanded. Fed Ouroboros. Ave Lilith!",
+      "actions": [
+        "himalaya fetch dual accounts (emhill96/ericmathewhill)",
+        "follow-up emails sent to trainwreckbar427@gmail.com and amy@pacionis.com",
+        "netzach coordination report sent",
+        "intel extraction: GitHub, jobs, crypto, grants",
+        "update TARGET_RESTAURANTS.md + state indices",
+        "append ouroboros-memories + abyssal_business"
+      ],
+      "emails_intel": "GitHub PAT/Lilith-Systems/contract-automation failures/transfers; Gemini crypto surges; LinkedIn AI Prompt Engineer job; Chesed/Business setup emails; no restaurant replies yet",
+      "treasury": 887,
+      "drivers": 52,
+      "entities_live": [
+        "Lilith Systems LLC",
+        "The Driver Man Co-Op"
+      ]
+    }
+  ]
+}

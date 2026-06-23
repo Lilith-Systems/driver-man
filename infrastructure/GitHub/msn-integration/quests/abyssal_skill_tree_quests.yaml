@@ -1,0 +1,263 @@
+# Abyssal Assets Skill Tree Quest Sagas
+# Cyberpunk-facing quest bundle for the 24 Abyssal progression skills.
+
+questChain: "Abyssal Skill Sagas"
+displayName: "LocKey#abyssal_skill_sagas_name"
+description: "LocKey#abyssal_skill_sagas_desc"
+startingQuest: "q_abyssal_gathering_01"
+recommendedLevel: 8
+integration:
+  msn: true
+  abyssalAssets: true
+  lochnessMonster: true
+  nessieFriendship: true
+  nssp: true
+  ngdPolicy: "LOCAL_CEREBELLUM_GAME_FIRST"
+  economy: ["SoulCoins", "LochExchange", "NessieTreasury"]
+
+skillTrees:
+  - id: "tree_gathering"
+    displayName: "Gathering"
+    sephirah: "Malkuth"
+    storyTitle: "The First Dredge of Night City"
+    theme: "The Old Net has settled under Pacifica like black water. V learns to pull useful ghosts out of it."
+    skills: ["Dredging", "Salvaging", "Foraging", "Hunting", "Wreck Recovery"]
+    unlockFlag: "AbyssalSkillTree_Gathering_Unlocked"
+    completionFlag: "AbyssalSkillTree_Gathering_Complete"
+    cyberpunkUse: ["scanner gigs", "Old Net node extraction", "cryptid spoor tracking", "rare component discovery"]
+    quests:
+      - id: "q_abyssal_gathering_01"
+        name: "LocKey#q_abyssal_gathering_01_name"
+        description: "LocKey#q_abyssal_gathering_01_desc"
+        act: "SkillSaga"
+        operation: "NIGREDO"
+        district: "Pacifica"
+        objectives:
+          - id: "obj_01"
+            description: "LocKey#q_abyssal_gathering_01_obj01"
+            type: "Scan"
+            target: "OldNet_TidePool"
+            count: 3
+          - id: "obj_02"
+            description: "LocKey#q_abyssal_gathering_01_obj02"
+            type: "RecoverItem"
+            item: "Items.Abyssal_SoggyVisor"
+            count: 1
+        rewards:
+          xp: 4500
+          streetCred: 40
+          soulCoins: 7
+          unlocks: ["Skill.Abyssal.Dredging", "Skill.Abyssal.Salvaging"]
+        unlocks: ["q_abyssal_gathering_02"]
+      - id: "q_abyssal_gathering_02"
+        name: "LocKey#q_abyssal_gathering_02_name"
+        description: "LocKey#q_abyssal_gathering_02_desc"
+        operation: "ALBEDO"
+        district: "Dogtown"
+        objectives:
+          - id: "obj_01"
+            description: "LocKey#q_abyssal_gathering_02_obj01"
+            type: "Track"
+            target: "Creature.Nessie_Echo"
+            clueCount: 4
+          - id: "obj_02"
+            description: "LocKey#q_abyssal_gathering_02_obj02"
+            type: "Harvest"
+            item: "Items.Bioluminescent_Kelp"
+            count: 5
+        rewards:
+          xp: 6500
+          soulCoins: 10
+          unlocks: ["Skill.Abyssal.Foraging", "Skill.Abyssal.Hunting", "Skill.Abyssal.WreckRecovery"]
+        unlocks: ["q_abyssal_processing_01"]
+
+  - id: "tree_processing"
+    displayName: "Processing"
+    sephirah: "Yesod"
+    storyTitle: "The Boatwright's Debt"
+    theme: "Recovered junk becomes covenant material when processed through memory, pressure, and debt."
+    skills: ["Salvage Processing", "Fiber Working", "Bone Carving", "Metallurgy"]
+    unlockFlag: "AbyssalSkillTree_Processing_Unlocked"
+    completionFlag: "AbyssalSkillTree_Processing_Complete"
+    cyberpunkUse: ["component refinement", "armor lining", "cryptid bone grips", "abyssal alloy plating"]
+    quests:
+      - id: "q_abyssal_processing_01"
+        name: "LocKey#q_abyssal_processing_01_name"
+        description: "LocKey#q_abyssal_processing_01_desc"
+        operation: "CITRINITAS"
+        district: "Santo Domingo"
+        objectives:
+          - id: "obj_01"
+            description: "LocKey#q_abyssal_processing_01_obj01"
+            type: "Craft"
+            item: "Items.Abyssal_HullPlate"
+            station: "Abyssal_Fabricator"
+          - id: "obj_02"
+            description: "LocKey#q_abyssal_processing_01_obj02"
+            type: "Refine"
+            material: "Items.Sunken_Alloy"
+            count: 6
+        rewards:
+          xp: 8000
+          streetCred: 80
+          unlocks: ["Skill.Abyssal.SalvageProcessing", "Skill.Abyssal.FiberWorking", "Skill.Abyssal.BoneCarving", "Skill.Abyssal.Metallurgy"]
+        unlocks: ["q_abyssal_crafting_01"]
+
+  - id: "tree_crafting"
+    displayName: "Crafting"
+    sephirah: "Hod"
+    storyTitle: "The Kelp Witch's Chrome"
+    theme: "Hats, runes, catalysts, and masterwork mods become tools V can wear into a firefight."
+    skills: ["Haberdashery", "Enchanting", "Alchemy", "Runecrafting", "Masterwork"]
+    unlockFlag: "AbyssalSkillTree_Crafting_Unlocked"
+    completionFlag: "AbyssalSkillTree_Crafting_Complete"
+    cyberpunkUse: ["mythic hats", "weapon catalysts", "quickhack runes", "masterwork mod slots"]
+    quests:
+      - id: "q_abyssal_crafting_01"
+        name: "LocKey#q_abyssal_crafting_01_name"
+        description: "LocKey#q_abyssal_crafting_01_desc"
+        operation: "RUBEDO"
+        district: "Watson"
+        objectives:
+          - id: "obj_01"
+            description: "LocKey#q_abyssal_crafting_01_obj01"
+            type: "Craft"
+            item: "Items.KelpWoven_TopHat"
+          - id: "obj_02"
+            description: "LocKey#q_abyssal_crafting_01_obj02"
+            type: "ApplyMod"
+            target: "Weapon.MSN_LilithsWrath"
+            mod: "Rune.Abyssal_FirstSeal"
+        rewards:
+          xp: 9000
+          soulCoins: 18
+          item: "Items.KelpWoven_TopHat"
+          unlocks: ["Skill.Abyssal.Haberdashery", "Skill.Abyssal.Enchanting", "Skill.Abyssal.Alchemy", "Skill.Abyssal.Runecrafting", "Skill.Abyssal.Masterwork"]
+        unlocks: ["q_abyssal_knowledge_01"]
+
+  - id: "tree_knowledge"
+    displayName: "Knowledge"
+    sephirah: "Binah"
+    storyTitle: "The Sonar That Remembers"
+    theme: "The Loch is a memory engine. Learn its lore and it starts drawing routes through Night City."
+    skills: ["Lore", "Scholarship", "Navigation", "Sonar Tuning"]
+    unlockFlag: "AbyssalSkillTree_Knowledge_Unlocked"
+    completionFlag: "AbyssalSkillTree_Knowledge_Complete"
+    cyberpunkUse: ["hidden dialogue", "route prediction", "quest clue expansion", "rare node detection"]
+    quests:
+      - id: "q_abyssal_knowledge_01"
+        name: "LocKey#q_abyssal_knowledge_01_name"
+        description: "LocKey#q_abyssal_knowledge_01_desc"
+        operation: "ALBEDO"
+        district: "City Center"
+        objectives:
+          - id: "obj_01"
+            description: "LocKey#q_abyssal_knowledge_01_obj01"
+            type: "ReadShard"
+            shard: "Shard.TheRot_UnderNightCity"
+            count: 4
+          - id: "obj_02"
+            description: "LocKey#q_abyssal_knowledge_01_obj02"
+            type: "TuneDevice"
+            device: "Cyberware.Nessie_SonarImplant"
+        rewards:
+          xp: 8500
+          item: "Cyberware.Nessie_SonarImplant"
+          unlocks: ["Skill.Abyssal.Lore", "Skill.Abyssal.Scholarship", "Skill.Abyssal.Navigation", "Skill.Abyssal.SonarTuning"]
+        unlocks: ["q_abyssal_economy_01"]
+
+  - id: "tree_social_economic"
+    displayName: "Social / Economic"
+    sephirah: "Chesed"
+    storyTitle: "The Eternal Exchange"
+    theme: "Nessie teaches V that money is a monster too: feed it fairly or it eats the city."
+    skills: ["Trading", "Negotiation", "Guild Management"]
+    unlockFlag: "AbyssalSkillTree_Economy_Unlocked"
+    completionFlag: "AbyssalSkillTree_Economy_Complete"
+    cyberpunkUse: ["Loch Exchange pricing", "vendor rewards", "crew assignments", "Nessie Treasury routing"]
+    quests:
+      - id: "q_abyssal_economy_01"
+        name: "LocKey#q_abyssal_economy_01_name"
+        description: "LocKey#q_abyssal_economy_01_desc"
+        operation: "CITRINITAS"
+        district: "Heywood"
+        objectives:
+          - id: "obj_01"
+            description: "LocKey#q_abyssal_economy_01_obj01"
+            type: "Trade"
+            market: "LochExchange"
+            volume: 350
+          - id: "obj_02"
+            description: "LocKey#q_abyssal_economy_01_obj02"
+            type: "Negotiate"
+            npc: "NPC.Nessie_TreasuryBroker"
+        rewards:
+          xp: 9000
+          soulCoins: 35
+          unlocks: ["Skill.Abyssal.Trading", "Skill.Abyssal.Negotiation", "Skill.Abyssal.GuildManagement"]
+        unlocks: ["q_abyssal_survival_01"]
+
+  - id: "tree_combat_survival"
+    displayName: "Combat / Survival"
+    sephirah: "Gevurah"
+    storyTitle: "The Kraken Matriarch's Test"
+    theme: "The deep does not reward domination. It rewards survival, precision, and mercy under pressure."
+    skills: ["Evasion", "Harpooning", "Survival"]
+    unlockFlag: "AbyssalSkillTree_CombatSurvival_Unlocked"
+    completionFlag: "AbyssalSkillTree_CombatSurvival_Complete"
+    cyberpunkUse: ["pressure survival", "cryptid takedowns", "javelin boarding", "space battle hazard control"]
+    quests:
+      - id: "q_abyssal_survival_01"
+        name: "LocKey#q_abyssal_survival_01_name"
+        description: "LocKey#q_abyssal_survival_01_desc"
+        operation: "RUBEDO"
+        district: "Badlands"
+        objectives:
+          - id: "obj_01"
+            description: "LocKey#q_abyssal_survival_01_obj01"
+            type: "Survive"
+            duration: 180
+            hazards: ["PressureBloom", "InkBlind", "BlackwallEcho"]
+          - id: "obj_02"
+            description: "LocKey#q_abyssal_survival_01_obj02"
+            type: "Pacify"
+            target: "Creature.Kraken_Matriarch_Echo"
+            allowKill: false
+        rewards:
+          xp: 12000
+          streetCred: 120
+          soulCoins: 50
+          item: "Items.KrakenInk_Stetson"
+          unlocks: ["Skill.Abyssal.Evasion", "Skill.Abyssal.Harpooning", "Skill.Abyssal.Survival", "Perk.Abyssal_MatriarchMercy"]
+        unlocks: ["q_abyssal_projection_01"]
+
+  - id: "tree_projection"
+    displayName: "Projection"
+    sephirah: "Tiferet"
+    storyTitle: "The Skillcape of the Loch"
+    theme: "Every Abyssal skill tree folds into the MSN. Lilith records what V became and opens the infinite contract board."
+    skills: ["Teaching", "Virtual Levels", "Skillcape Aura", "Procedural Contract Authoring"]
+    unlockFlag: "AbyssalSkillTree_Projection_Unlocked"
+    completionFlag: "AbyssalSkillTree_Projection_Complete"
+    cyberpunkUse: ["party boosts", "procedural contracts", "post-game skill scaling", "Nessie covenant aura"]
+    quests:
+      - id: "q_abyssal_projection_01"
+        name: "LocKey#q_abyssal_projection_01_name"
+        description: "LocKey#q_abyssal_projection_01_desc"
+        operation: "PROJECTION"
+        district: "Orbital Graveyard"
+        objectives:
+          - id: "obj_01"
+            description: "LocKey#q_abyssal_projection_01_obj01"
+            type: "PresentLedger"
+            target: "NPC.Lilith_CrimsonArchitect"
+          - id: "obj_02"
+            description: "LocKey#q_abyssal_projection_01_obj02"
+            type: "Activate"
+            device: "Prop.NessieCommunionBeacon"
+        rewards:
+          xp: 20000
+          streetCred: 250
+          soulCoins: 99
+          item: "Items.Abyssal_Skillcape"
+          unlocks: ["Perk.Abyssal_SkillcapeAura", "Board.InfiniteAbyssalContracts", "Nessie_Friendship_Tier4"]

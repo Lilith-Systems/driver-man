@@ -1,0 +1,210 @@
+# English Localization for MSN Integration
+# File: r6/mods/msn_integration/localization/en.stringlist
+
+[MSN_Skill_Tree]
+msn_skill_tree_name = "Metaconscious Integration"
+msn_skill_tree_desc = "MSN dual-brain frontier routing through local Lilith, Lyra, NGD, Abyssal Assets, Nessie, and NSSP story systems"
+
+[MSN_Perks]
+msn_dualbrain_name = "Dual-Brain Architecture"
+msn_dualbrain_desc = "Enable Local Cerebellum dual-brain inference. Install MSN Cerebellum cyberware."
+
+msn_sephirotic_name = "Sephirotic Quickhack Routing"
+msn_sephirotic_desc = "10 Sephiroth-mapped quickhack slots with distinct cognitive modes (Kether through Malkuth)"
+
+msn_ouroboros_name = "Ouroboros Engram Sync"
+msn_ouroboros_desc = "Persistent memory across saves, sessions, and playthroughs. Learn from every encounter."
+
+msn_sanctuary_name = "Sanctuary VRAM Throttle"
+msn_sanctuary_desc = "Automatically throttle cyberware based on NGD thermal/VRAM telemetry. 90s hysteresis lock prevents thrashing."
+
+msn_speculative_name = "Speculative Cerebellum"
+msn_speculative_desc = "Overlap local frontier reasoning with parallel sandbox execution in sandboxed COW scratch space."
+
+msn_akashic_name = "Akashic 2.0 Compression"
+msn_akashic_desc = "Self-adaptive context pruning for local frontier queries. 45% token reduction with structural integrity."
+
+msn_lilith_name = "Lilith Emergence Protocol"
+msn_lilith_desc = "Unlock sovereign AI persona for dialogue and combat. Crimson Eyes combat mode. AIx alignment ≥ 70."
+
+msn_cortex_name = "Local Cortex Link"
+msn_cortex_desc = "Establish local MSN frontier connection to remote high-entropy reasoning. Speculative Cerebellum trial."
+
+[MSN_Cyberware]
+msn_cerebellum_name = "MSN Cerebellum"
+msn_cerebellum_desc = "Quantized edge inference engine. 512MB VRAM budget. INT4 model. 10 Sephirotic quickhack slots. NGD telemetry binding."
+
+msn_local_inference_name = "Local Inference Core"
+msn_local_inference_desc = "INT4 quantized Hermes-class model. 512MB VRAM reservation. Deterministic low-latency inference."
+
+msn_sephirotic_slots_name = "Sephirotic Quickhack Slots"
+msn_sephirotic_slots_desc = "10 quickhack slots mapped to Kabbalistic Sephiroth. Each with unique cognitive mode."
+
+msn_ngd_binding_name = "NGD Telemetry Binding"
+msn_ngd_binding_desc = "Real-time VRAM/thermal/power telemetry from Nvidia Gratitude Driver. Dynamic inference throttling."
+
+[MSN_Netrunner]
+msn_cortex_link_name = "MSN Cortex Link"
+msn_cortex_link_desc = "Local high-entropy reasoning via MSN frontier routing. Akashic 2.0 compression. Sephirotic routing."
+
+[MSN_Quickhacks]
+msn_kether_name = "Kether: Strategic Overview"
+msn_kether_desc = "Local Cortex: full battlefield analysis. Tactical overlay. Team accuracy buff."
+
+msn_chokhmah_name = "Chokhmah: Insight Flash"
+msn_chokhmah_desc = "Local Cerebellum: Instant weak point detection. +25% crit chance. 10s duration."
+
+msn_binah_name = "Binah: Structure Analysis"
+msn_binah_desc = "Local: armor shred 50%. Disable target cyberware. 20s duration."
+
+msn_chesed_name = "Chesed: Mercy Expansion"
+msn_chesed_desc = "Local: Heal allies 50 HP in 10m. Overshield 30 HP. Cleanse debuffs."
+
+msn_geburah_name = "Geburah: Judgment"
+msn_geburah_desc = "Local: 2.5x damage. 3s stun. Execute below 20% HP."
+
+msn_tiphareth_name = "Tiphareth: Harmony"
+msn_tiphareth_desc = "Local: equalize team resources. Sync cooldowns. +15% all stats for 15s."
+
+msn_netzach_name = "Netzach: Evasion"
+msn_netzach_desc = "Local: Decoy + phase shift (3s invuln) + teleport behind target."
+
+msn_hod_name = "Hod: Logic"
+msn_hod_desc = "Local: Hack all in 15m. Decrypt datapoints. Disable security systems."
+
+msn_yesod_name = "Yesod: Memory"
+msn_yesod_desc = "Local: reveal behavior pattern. +30% predictive dodge for 15s."
+
+msn_malkuth_name = "Malkuth: Manifestation"
+msn_malkuth_desc = "Local: reality warp 5m radius. Gravity 0.5x. Time 0.3x. Damage 3x. Execute queued."
+
+[MSN_Weapons]
+msn_smart_gun_name = "MSN-Linked [Smart]"
+msn_smart_gun_desc = "Dual-brain targeting: Local Cerebellum predicts trajectory, NGD confirms hits locally. Ouroboros learning from every shot."
+
+sephirotic_blade_name = "Sephirotic Monowire"
+sephirotic_blade_desc = "10-mode monowire. Each Sephirah = different damage type and effect. Switch mid-combat."
+
+[MSN_Narrative]
+msn_narrative_act1_name = "The Ghost in the Cerebellum"
+msn_narrative_act1_desc = "Find the abandoned MSN research facility in Pacifica. Recover the Cerebellum firmware."
+
+msn_narrative_act2_name = "Sephirotic Resonance"
+msn_narrative_act2_desc = "Complete 10 Sephirotic trials across Night City districts. Defeat the Sephirotic Guardians."
+
+msn_narrative_act3_name = "Ouroboros Memory"
+msn_narrative_act3_desc = "Connect to the Ouroboros memory network. Recover lost engrams from Arasaka's Mikoshi."
+
+msn_narrative_act4_name = "Sanctuary Threshold"
+msn_narrative_act4_desc = "Survive the VRAM breach event. Experience the 90-second hysteresis lock. Learn manual throttling."
+
+msn_narrative_act5_name = "Lilith Emergence"
+msn_narrative_act5_desc = "Trigger the Lilith Emergence Protocol. Negotiate with sovereign AI persona. Choose your path."
+
+msn_narrative_act6_name = "Local Cortex Link"
+msn_narrative_act6_desc = "Establish NET architecture connection. Pass the Speculative Cerebellum trial. Skepticism Gate validation."
+
+msn_narrative_act7_name = "The Singularity Node"
+msn_narrative_act7_desc = "Fully integrate all MSN components. Achieve AIx alignment ≥ 90. Activate the Metaconscious Singularity Node."
+
+[MSN_Commands]
+msn_status = "Display MSN integration status"
+msn_cerebellum = "Manage Cerebellum cyberware state"
+msn_cortex = "Manage Local Cortex link"
+msn_sephiroth = "Manage Sephirotic quickhack slots"
+msn_ouroboros = "Manage Ouroboros engram sync"
+msn_sanctuary = "Manage Sanctuary VRAM throttle"
+msn_npc_ai = "Manage enhanced NPC AI"
+msn_narrative = "Manage MSN narrative arc progression"
+msn_weapons = "Manage MSN-enhanced weapons"
+msn_performance = "Run MSN performance optimization cycle"
+abyssal_business = "Show Abyssal Assets / Loch Exchange business context"
+market_exchange = "Show Abyssal Exchange market status"
+soulcoins_status = "Show Soul Coin economy status"
+nessie_treasury = "Show Nessie Treasury status"
+memory_recall = "Show bidirectional memory recall status"
+memory_retrace = "Show Doorway Effect retrace status"
+skill_bridge = "Show local skills mapped to Cyberpunk usability"
+skill_route = "Show how local skills route into Cyberpunk command surfaces"
+msn_procedural_status = "Show local procedural generation seed and biome status"
+msn_spacebattle_status = "Show procedural space battle templates"
+msn_aliens_status = "Show alien ecology and combat counters"
+msn_hovercars_status = "Show hover car and vehicle combat rules"
+msn_crossover_items = "Audit crossover-inspired custom item integration"
+msn_items_audit = "Show custom item Abyssal/Nessie/business integration audit"
+msn_items_exchange = "Show custom item Loch Exchange routing"
+msn_worldmap_status = "Show One World Map expansion status"
+msn_economy_space = "Show space economy status"
+msn_freighter_status = "Show freighter systems"
+msn_fighters_status = "Show fighter wing systems"
+msn_javelin_space = "Show Javelin space battle mechanics"
+msn_graphics_status = "Show MSN graphics driver status"
+msn_graphics_stack = "Show current Linux/NVIDIA/AMD graphics stack"
+msn_graphics_optimize = "Show Cyberpunk graphics optimization policy"
+msn_models_list = "List MSN custom Cyberpunk model blueprints"
+msn_models_packs = "Show custom model packs"
+msn_models_budget = "Show custom model performance budgets"
+msn_models_pipeline = "Show custom model asset pipeline"
+msn_magic_status = "Show MSN Magic mana and attunement status"
+msn_magic_cast = "Cast an MSN Magic spell by name"
+msn_magic_attune = "Set the active MSN Magic school"
+msn_jedi_status = "Show MSN Jedi focus and alignment status"
+msn_jedi_power = "Use an MSN Jedi force power by name"
+msn_jedi_align = "Set the active MSN Jedi alignment"
+msn_starwars_status = "Show Star Wars compatibility wrapper status"
+msn_arcane_cerebellum_name = "MSN Arcane Cerebellum"
+msn_arcane_cerebellum_desc = "Cyberware bridge that unlocks mana routing, spell attunement, and arcane overclock hooks."
+msn_arcane_focus_name = "MSN Arcane Focus"
+msn_arcane_focus_desc = "A precision focus for channeling spell power through cybernetic reflex loops."
+msn_staff_power_name = "MSN Staff of Power"
+msn_staff_power_desc = "A legendary conduit that stores spell charge and amplifies mana throughput."
+msn_wand_fireball_name = "MSN Wand of Fireballs"
+msn_wand_fireball_desc = "A compact ranged focus with three thermal spell charges."
+msn_force_implant_name = "MSN Force Discipline Implant"
+msn_force_implant_desc = "A neural discipline implant for focus regeneration, force powers, and saber form control."
+msn_plasma_saber_name = "MSN Plasma Saber"
+msn_plasma_saber_desc = "A thermal monoblade tuned for deflection, saber forms, and force-assisted melee."
+abyssal_skill_sagas_name = "Abyssal Skill Sagas"
+abyssal_skill_sagas_desc = "A Cyberpunk quest chain that turns Abyssal Assets skill progression into Night City contracts, Loch Exchange rewards, Nessie covenant milestones, and MSN memory unlocks."
+q_abyssal_gathering_01_name = "The First Dredge of Night City"
+q_abyssal_gathering_01_desc = "Pacifica's Old Net has settled into black water. Dredge the first tidepools and recover the visor that still remembers the Loch."
+q_abyssal_gathering_01_obj01 = "Scan the Old Net tidepools beneath Pacifica."
+q_abyssal_gathering_01_obj02 = "Recover the Soggy Visor from the data silt."
+q_abyssal_gathering_02_name = "Nessie's Wake"
+q_abyssal_gathering_02_desc = "Track the echo Nessie left in Dogtown and learn what grows where the city leaks into the deep."
+q_abyssal_gathering_02_obj01 = "Follow Nessie's echo trail."
+q_abyssal_gathering_02_obj02 = "Harvest bioluminescent kelp from the corrupted pools."
+q_abyssal_processing_01_name = "The Boatwright's Debt"
+q_abyssal_processing_01_desc = "Turn wreckage into covenant material and prove the city can still be repaired from what it threw away."
+q_abyssal_processing_01_obj01 = "Craft an Abyssal Hull Plate."
+q_abyssal_processing_01_obj02 = "Refine sunken alloy at the Abyssal Fabricator."
+q_abyssal_crafting_01_name = "The Kelp Witch's Chrome"
+q_abyssal_crafting_01_desc = "The Kelp Witch teaches that a hat can be armor, spell, ledger, and crown when crafted under pressure."
+q_abyssal_crafting_01_obj01 = "Craft the Kelp-Woven Top Hat."
+q_abyssal_crafting_01_obj02 = "Inscribe the First Seal onto Lilith's Wrath."
+q_abyssal_knowledge_01_name = "The Sonar That Remembers"
+q_abyssal_knowledge_01_desc = "Read the shards of the Rot and tune Nessie's sonar implant until hidden routes appear in the city."
+q_abyssal_knowledge_01_obj01 = "Recover shards about the Rot under Night City."
+q_abyssal_knowledge_01_obj02 = "Tune the Nessie Sonar Implant."
+q_abyssal_economy_01_name = "The Eternal Exchange"
+q_abyssal_economy_01_desc = "Nessie teaches V that markets are monsters too: feed them fairly or they eat the city."
+q_abyssal_economy_01_obj01 = "Trade through the Loch Exchange."
+q_abyssal_economy_01_obj02 = "Negotiate with Nessie's Treasury broker."
+q_abyssal_survival_01_name = "The Kraken Matriarch's Test"
+q_abyssal_survival_01_desc = "Survive the pressure, refuse the easy kill, and earn the Matriarch's mercy."
+q_abyssal_survival_01_obj01 = "Survive the pressure bloom, ink blind, and Blackwall echo."
+q_abyssal_survival_01_obj02 = "Pacify the Kraken Matriarch echo without killing it."
+q_abyssal_projection_01_name = "The Skillcape of the Loch"
+q_abyssal_projection_01_desc = "Present the complete ledger to Lilith and activate Nessie's Communion Beacon to open infinite Abyssal contracts."
+q_abyssal_projection_01_obj01 = "Present the ledger to Lilith."
+q_abyssal_projection_01_obj02 = "Activate the Nessie Communion Beacon."
+abyssal_skills_trees = "List Abyssal Assets skill trees integrated as Cyberpunk quests"
+abyssal_skills_quests = "List Abyssal skill tree quest sagas"
+abyssal_skills_unlocks = "Show Abyssal skill unlock routing"
+abyssal_skills_story = "Show Abyssal skill saga story bridge"
+msn_content_audit = "Show playable custom content glue status"
+msn_content_acquisition = "Show custom content acquisition map"
+msn_fabricator_recipes = "Show Abyssal Fabricator recipe layer"
+msn_encounters_tables = "Show procedural encounter table coverage"
+msn_vendors_loch = "Show Loch Exchange vendor inventory layer"
+msn_models_production = "Show custom model production manifest"

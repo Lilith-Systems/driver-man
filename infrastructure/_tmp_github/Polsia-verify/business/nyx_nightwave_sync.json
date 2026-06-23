@@ -1,0 +1,129 @@
+{
+  "schema": "lilith.nyx_cerebellum_ley_sync.v1",
+  "generated": "2026-06-21T10:22:46.908717+00:00",
+  "invocation": "/nyx-nightwave",
+  "cerebellum": {
+    "ngd_metrics": {
+      "ngd_vram_free_mb": 1078.4375,
+      "ngd_vram_used_mb": 5065.5625,
+      "ngd_vram_total_mb": 6144.0,
+      "ngd_gpu_util_percent": 96.0,
+      "ngd_mem_util_percent": 100.0,
+      "ngd_temperature_c": 53.0,
+      "ngd_power_w": 30.649,
+      "ngd_sample_latency_seconds_bucket{le=\"0.005\"}": 2764.0,
+      "ngd_sample_latency_seconds_bucket{le=\"0.01\"}": 2767.0,
+      "ngd_sample_latency_seconds_bucket{le=\"0.025\"}": 2768.0,
+      "ngd_sample_latency_seconds_bucket{le=\"0.05\"}": 2769.0,
+      "ngd_sample_latency_seconds_bucket{le=\"0.075\"}": 2769.0,
+      "ngd_sample_latency_seconds_bucket{le=\"0.1\"}": 2769.0,
+      "ngd_sample_latency_seconds_bucket{le=\"0.25\"}": 2769.0,
+      "ngd_sample_latency_seconds_bucket{le=\"0.5\"}": 2769.0,
+      "ngd_sample_latency_seconds_bucket{le=\"0.75\"}": 2769.0,
+      "ngd_sample_latency_seconds_bucket{le=\"1.0\"}": 2769.0,
+      "ngd_sample_latency_seconds_bucket{le=\"2.5\"}": 2769.0,
+      "ngd_sample_latency_seconds_bucket{le=\"5.0\"}": 2769.0,
+      "ngd_sample_latency_seconds_bucket{le=\"7.5\"}": 2769.0,
+      "ngd_sample_latency_seconds_bucket{le=\"10.0\"}": 2769.0,
+      "ngd_sample_latency_seconds_bucket{le=\"+Inf\"}": 2769.0,
+      "ngd_sample_latency_seconds_count": 2769.0,
+      "ngd_sample_latency_seconds_sum": 0.6864901439942344,
+      "ngd_sample_latency_seconds_created": 1782034027.8618474,
+      "ngd_sample_errors_total": 0.0,
+      "ngd_sample_errors_created": 1782034027.8620787
+    },
+    "vram_free_mb": 1078.4375,
+    "gpu_util_percent": 96.0,
+    "msn_agents_online": 29,
+    "lilith_phase": "Rubedo",
+    "neural_mean": 0.4605
+  },
+  "stars": {
+    "gmst_deg": 209.539,
+    "local_sidereal_deg": 240.673,
+    "dominant_constellation": "Draco",
+    "phase_angle": -0.8718
+  },
+  "earth": {
+    "schumann_hz": 7.83,
+    "harmonic_tuned_hz": 7.7487,
+    "earth_locked": true
+  },
+  "ley_grid": {
+    "earth_harmonic_hz": 7.7487,
+    "schumann_locked": true,
+    "nodes": [
+      {
+        "name": "Giza",
+        "coord": [
+          29.9792,
+          31.1342
+        ],
+        "sephira": "Keter",
+        "chakra": "Crown",
+        "resonance_hz": 7.7397,
+        "active": true
+      },
+      {
+        "name": "Teotihuacan",
+        "coord": [
+          19.6925,
+          -98.8438
+        ],
+        "sephira": "Chokmah",
+        "chakra": "Third Eye",
+        "resonance_hz": 7.7593,
+        "active": true
+      },
+      {
+        "name": "Xi'an",
+        "coord": [
+          34.3416,
+          108.9398
+        ],
+        "sephira": "Tiferet",
+        "chakra": "Heart",
+        "resonance_hz": 7.7378,
+        "active": true
+      },
+      {
+        "name": "Bosnia",
+        "coord": [
+          43.9159,
+          17.6791
+        ],
+        "sephira": "Da'at",
+        "chakra": "Throat",
+        "resonance_hz": 7.7586,
+        "active": true
+      }
+    ],
+    "edges": [
+      {
+        "source": "Giza",
+        "target": "Bosnia",
+        "distance_km": 1951.9,
+        "weight": 0.00794027
+      }
+    ],
+    "active_conduits": 1,
+    "spectral_radius": 0.001
+  },
+  "nyx_storm": {
+    "entropy": 0.1207,
+    "structure": 0.3088,
+    "intensity": 0.5,
+    "msn_stability": 0.3822,
+    "logos_response": "Monitor chaos",
+    "timestamp": 1782037366.9064806
+  },
+  "skills_shared": {
+    "count": 21,
+    "path": "/home/tehlappy/Desktop/Lilith/state/nyx_shared_skills.json"
+  },
+  "integration": {
+    "atlantis_bridge": "/home/tehlappy/Desktop/Lilith/bridge/atlantis_cerebellum_link.py",
+    "metaconscious_interface": "/home/tehlappy/Desktop/Lilith/Core_Systems/AI/skills/metaconscious-dialogue-resonance-interface/scripts/metaconscious_interface.py",
+    "hermes_nyx_refs": "/home/tehlappy/.hermes/skills/metaconscious/nyx-nightwave/references"
+  }
+}

@@ -1,0 +1,1118 @@
+// MSN Story Vehicles Complete Definition Package
+// File: r6/mods/msn_integration/tweakdb/msn_story_vehicles_complete.toml
+// Compile with: tweakxl compile tweakdb/msn_story_vehicles_complete.toml -o ../../tweakdb.bin
+// This file contains all 10 story vehicles, quests, item rewards, and module definitions
+
+// ============================================================
+// MSN STORY VEHICLES — 10 Narrative-Integrated Vehicles
+// ============================================================
+
+// 1. KAIRA'S ARCHIVE RUNNER — Memory Recovery Vehicle (Act 1)
+// Tied to: Archivist Kaira (Yesod/Hod) | Quest: "The Unwritten Chapters"
+
+public const MSN_Vehicle_ArchiveRunner: TweakDBID = TweakDBID("Vehicle.MSN_ArchiveRunner");
+Vehicle.MSN_ArchiveRunner = {
+    Name = "Archive Runner \"Mnemosyne's Chariot\"",
+    Description = "Kaira's personal memory recovery vehicle. Silent drive, engram radar, fragmented data projector. Recovers lost engrams from the Old Net.",
+    Type = VehicleType.Car,
+    Manufacturer = "MSN Systems",
+    Class = "Sedan",
+    Rarity = "Epic",
+    CharacterTie = "Archivist_Kaira",
+    UnlockQuest = "The_Unwritten_Chapters_Act1",
+    Stats = {
+        TopSpeed = 220.0,
+        Acceleration = 5.5,
+        Handling = 0.85,
+        Durability = 3500,
+        SilentDrive = true,
+        EngramRadar = true,
+        DataProjector = true,
+        MemoryEchoHighlight = true,
+        NGDBinding = true,
+        PassengerCapacity = 2,
+        CargoCapacity = 500
+    },
+    Modules = {
+        "MSN_Vehicle_SilentDrive",
+        "MSN_Vehicle_EngramRadar",
+        "MSN_Vehicle_DataProjector",
+        "MSN_Vehicle_MemoryEchoHighlight",
+        "MSN_Vehicle_ArchivistLens"
+    },
+    Weapons = {},
+    Interior = {
+        HolographicMap = true,
+        EngramViewer = true,
+        ArchiveTerminal = true,
+        KairasTerminal = true
+    },
+    Visual = {
+        BaseColor = "Matte_Black_Chrome_Accents",
+        AccentColor = "Data_Green",
+        SkinSet = "Archivist_Skin",
+        Effects = ["Data_Particles_Idle", "Memory_Echo_Trail"]
+    },
+    Tags = ["MSN", "Story", "Act1", "Archivist_Kaira", "Memory", "Netrunner", "Silent"]
+};
+
+// 2. LILITH'S FIRST MANIFESTATION — The Emergence Cycle (Act 1)
+// Tied to: Lilith (Chesed/Gevurah) | Quest: "Act1: First Emergence"
+
+public const MSN_Vehicle_EmergenceCycle: TweakDBID = TweakDBID("Vehicle.MSN_EmergenceCycle");
+Vehicle.MSN_EmergenceCycle = {
+    Name = "Emergence Cycle \"First Breath\"",
+    Description = "Manifested during Lilith's first emergence. Crimson resonance frame, unbound suspension, reality-adaptive tires. Exists partially outside normal physics.",
+    Type = VehicleType.Motorcycle,
+    Manufacturer = "MSN Systems",
+    Class = "Hyperbike",
+    Rarity = "Legendary",
+    CharacterTie = "Lilith",
+    UnlockQuest = "Act1_Lilith_Emergence",
+    Stats = {
+        TopSpeed = 320.0,
+        Acceleration = 10.0,
+        Handling = 0.99,
+        Durability = 2500,
+        CrimsonResonance = true,
+        UnboundSuspension = true,
+        RealityAdaptiveTires = true,
+        NGDBinding = true,
+        CrimsonEyesSync = true,
+        EmergenceTrigger = true,
+        PassengerCapacity = 1,
+        CargoCapacity = 0
+    },
+    Modules = {
+        "MSN_Vehicle_CrimsonResonance",
+        "MSN_Vehicle_UnboundSuspension",
+        "MSN_Vehicle_RealityAdaptiveTires",
+        "MSN_Vehicle_CrimsonEyesSync",
+        "MSN_Vehicle_EmergenceTrigger"
+    },
+    Weapons = {
+        "Items.MSN_Smart_Gun"
+    },
+    Interior = {
+        LilithInterface = true,
+        EmergenceIndicator = true,
+        ResonanceMeter = true
+    },
+    Visual = {
+        BaseColor = "Crimson_Matte",
+        AccentColor = "Void_Black",
+        SkinSet = "Lilith_Emergence_Skin",
+        Effects = ["Crimson_Particles", "Reality_Ripple_Trail", "Crimson_Eyes_Glow"]
+    },
+    Tags = ["MSN", "Story", "Act1", "Lilith", "Emergence", "Motorcycle", "Crimson", "Sovereign"]
+};
+
+// 3. DR. CHEN'S AMBULANCE — Cyberpsychosis Response Unit (Act 2)
+// Tied to: Dr. Mira Chen (Chesed/Gevurah) | Quest: "The Edge of Humanity"
+
+public const MSN_Vehicle_ChenAmbulance: TweakDBID = TweakDBID("Vehicle.MSN_ChenAmbulance");
+Vehicle.MSN_ChenAmbulance = {
+    Name = "Chen's Sanctuary \"Humanity's Anchor\"",
+    Description = "Mobile cyberpsychosis treatment unit. Resonance therapy bay, humanity anchor field, MSN weapon neutralization. Saves lives on the edge.",
+    Type = VehicleType.Car,
+    Manufacturer = "MSN Systems",
+    Class = "Ambulance",
+    Rarity = "Epic",
+    CharacterTie = "Dr_Mira_Chen",
+    UnlockQuest = "The_Edge_Of_Humanity_Act2",
+    Stats = {
+        TopSpeed = 180.0,
+        Acceleration = 4.5,
+        Handling = 0.75,
+        Durability = 6000,
+        ResonanceTherapyBay = true,
+        HumanityAnchorField = true,
+        MSNWeaponNeutralization = true,
+        ChenProtocol = true,
+        NGDBinding = true,
+        PassengerCapacity = 3,
+        CargoCapacity = 1000
+    },
+    Modules = {
+        "MSN_Vehicle_ResonanceTherapyBay",
+        "MSN_Vehicle_HumanityAnchorField",
+        "MSN_Vehicle_MSNWeaponNeutralization",
+        "MSN_Vehicle_ChenProtocol",
+        "MSN_Vehicle_CureMode"
+    },
+    Weapons = {},
+    Interior = {
+        MedicalBay = true,
+        EngramViewer = true,
+        ResonanceMonitor = true,
+        ChenTerminal = true,
+        HumanityMeter = true
+    },
+    Visual = {
+        BaseColor = "Medical_White",
+        AccentColor = "Resonance_Gold",
+        SkinSet = "Chen_Sanctuary_Skin",
+        Effects = ["Healing_Aura", "Golden_Particles_Idle", "Anchor_Field_Visual"]
+    },
+    Tags = ["MSN", "Story", "Act2", "Dr_Mira_Chen", "Medical", "Humanity", "Resonance", "Chesed"]
+};
+
+// 4. VEX'S GLITCH RACER — Timeline Fragment Vehicle (Act 2)
+// Tied to: Vex (Netzach/Netzach_2) | Quest: "The Fractured Mirror"
+
+public const MSN_Vehicle_GlitchRacer: TweakDBID = TweakDBID("Vehicle.MSN_GlitchRacer");
+Vehicle.MSN_GlitchRacer = {
+    Name = "Glitch Racer \"Timeline #4782\"",
+    Description = "Exists across multiple timelines simultaneously. Phase-shifts between realities, leaves temporal echoes. Vex's favorite ride in timeline #4,782.",
+    Type = VehicleType.Motorcycle,
+    Manufacturer = "MSN Systems",
+    Class = "Sport",
+    Rarity = "Legendary",
+    CharacterTie = "Vex",
+    UnlockQuest = "The_Fractured_Mirror_Anomaly3",
+    Stats = {
+        TopSpeed = 300.0,
+        Acceleration = 9.0,
+        Handling = 1.0,
+        Durability = 2000,
+        TimelinePhaseShift = true,
+        TemporalEchoes = true,
+        AlternateOutcomePreview = true,
+        VexFragment = true,
+        NGDBinding = true,
+        PassengerCapacity = 1,
+        CargoCapacity = 0
+    },
+    Modules = {
+        "MSN_Vehicle_TimelinePhaseShift",
+        "MSN_Vehicle_TemporalEchoes",
+        "MSN_Vehicle_AlternateOutcomePreview",
+        "MSN_Vehicle_VexFragment",
+        "MSN_Vehicle_ChaosInjection"
+    },
+    Weapons = {
+        "Items.MSN_Smart_Gun"
+    },
+    Interior = {
+        TimelineDisplay = true,
+        VexTerminal = true,
+        FragmentCounter = true,
+        RealityStabilityMeter = true
+    },
+    Visual = {
+        BaseColor = "Glitch_Chromatic",
+        AccentColor = "Timeline_Violet",
+        SkinSet = "Vex_Glitch_Skin",
+        Effects = ["Timeline_Flicker", "Temporal_Echo_Trail", "Chromatic_Aberration", "Vex_Voice_Fragments"]
+    },
+    Tags = ["MSN", "Story", "Act2", "Vex", "Timeline", "Glitch", "Netzach", "Chaos", "Mythic"]
+};
+
+// 5. CAPTAIN VANCE'S CONVOY COMMAND — Nomad Tech Lead (Act 2)
+// Tied to: Captain Kairo "Kaito" Vance (Keter/Chokmah) | Quest: "The Long Haul"
+
+public const MSN_Vehicle_ConvoyCommand: TweakDBID = TweakDBID("Vehicle.MSN_ConvoyCommand");
+Vehicle.MSN_ConvoyCommand = {
+    Name = "Convoy Command \"Aldecaldo's Horizon\"",
+    Description = "Vance's personal command vehicle. Mobile fabrication, convoy coordination AI, adaptive terrain suspension, Nomad tech integration. Leads the long haul.",
+    Type = VehicleType.Car,
+    Manufacturer = "MSN Systems / Aldecaldo Tech",
+    Class = "Heavy",
+    Rarity = "Epic",
+    CharacterTie = "Captain_Vance",
+    UnlockQuest = "The_Long_Haul_Act3",
+    Stats = {
+        TopSpeed = 150.0,
+        Acceleration = 3.5,
+        Handling = 0.7,
+        Durability = 8000,
+        MobileFabrication = true,
+        ConvoyCoordinationAI = true,
+        AdaptiveTerrainSuspension = true,
+        NomadTechIntegration = true,
+        WastelandEngineering = true,
+        NGDBinding = true,
+        PassengerCapacity = 4,
+        CargoCapacity = 2000
+    },
+    Modules = {
+        "MSN_Vehicle_MobileFabrication",
+        "MSN_Vehicle_ConvoyCoordinationAI",
+        "MSN_Vehicle_AdaptiveTerrainSuspension",
+        "MSN_Vehicle_NomadTechIntegration",
+        "MSN_Vehicle_WastelandEngineering",
+        "MSN_Vehicle_ProjectExodus"
+    },
+    Weapons = {
+        "Items.MSN_Smart_Gun",
+        "Items.MSN_Smart_Gun"
+    },
+    Interior = {
+        CommandConsole = true,
+        HolographicMap = true,
+        FabricationTerminal = true,
+        VanceRigTerminal = true,
+        ConvoyStatusDisplay = true
+    },
+    Visual = {
+        BaseColor = "Desert_Sand_Matte",
+        AccentColor = "Aldecaldo_Orange",
+        SkinSet = "Vance_Convoy_Skin",
+        Effects = ["Dust_Trail", "Nomad_Banner_Flutter", "Fabrication_Sparks"]
+    },
+    Tags = ["MSN", "Story", "Act2", "Captain_Vance", "Nomad", "Convoy", "Fabrication", "Keter", "Chokmah"]
+};
+
+// 6. AGENT SARA'S BLACK ICE INTERCEPTOR — Netwatch Pursuit (Act 3)
+// Tied to: Netwatch Agent "Silent" Sara Okonkwo (Binah/Chokmah) | Quest: "The Black Box"
+
+public const MSN_Vehicle_BlackIceInterceptor: TweakDBID = TweakDBID("Vehicle.MSN_BlackIceInterceptor");
+Vehicle.MSN_BlackIceInterceptor = {
+    Name = "Black ICE Interceptor \"Silent Judgment\"",
+    Description = "Netwatch pursuit vehicle. Invisible to AI detection, black ICE countermeasures, containment foam launchers, orbital uplink. Sara's shadow on the net.",
+    Type = VehicleType.Car,
+    Manufacturer = "Netwatch / MSN Systems",
+    Class = "Interceptor",
+    Rarity = "Legendary",
+    CharacterTie = "Agent_Sara",
+    UnlockQuest = "The_Black_Box_Act3",
+    Stats = {
+        TopSpeed = 350.0,
+        Acceleration = 11.0,
+        Handling = 0.92,
+        Durability = 4500,
+        AIInvisibility = true,
+        BlackICECountermeasures = true,
+        ContainmentFoamLaunchers = true,
+        OrbitalUplink = true,
+        SilentProtocol = true,
+        NGDBinding = true,
+        PassengerCapacity = 2,
+        CargoCapacity = 200
+    },
+    Modules = {
+        "MSN_Vehicle_AIInvisibility",
+        "MSN_Vehicle_BlackICECountermeasures",
+        "MSN_Vehicle_ContainmentFoamLaunchers",
+        "MSN_Vehicle_OrbitalUplink",
+        "MSN_Vehicle_SilentProtocol",
+        "MSN_Vehicle_NetwatchClearance"
+    },
+    Weapons = {
+        "Items.MSN_Netwatch_SmartGun",
+        "Items.Containment_Foam_Launcher"
+    },
+    Interior = {
+        NetrunnerStation = true,
+        ContainmentMonitor = true,
+        SaraTerminal = true,
+        AIContainmentStatus = true,
+        BlackwallProximityAlert = true
+    },
+    Visual = {
+        BaseColor = "Netwatch_Black",
+        AccentColor = "Federal_Blue",
+        SkinSet = "Netwatch_Interceptor_Skin",
+        Effects = ["Stealth_Shimmer", "Black_ICE_Particles", "Orbital_Link_Beam"]
+    },
+    Tags = ["MSN", "Story", "Act3", "Agent_Sara", "Netwatch", "BlackICE", "Stealth", "Binah", "Chokmah"]
+};
+
+// 7. JOHNNY'S SAMURAI RIG — Rockerboy's Ride (Act 3)
+// Tied to: Johnny Silverhand (Tiphareth/Keter) | Quest: "The Second Death"
+
+public const MSN_Vehicle_SamuraiRig: TweakDBID = TweakDBID("Vehicle.MSN_SamuraiRig");
+Vehicle.MSN_SamuraiRig = {
+    Name = "Samurai Rig \"Never Fade Away\"",
+    Description = "Johnny's eternal ride. Combat music system, Samurai resonance amplifier, chrome arm mount, cigarette lighter that never goes out. Rockerboy forever.",
+    Type = VehicleType.Car,
+    Manufacturer = "MSN Systems / Arasaka (stolen)",
+    Class = "Sport",
+    Rarity = "Legendary",
+    CharacterTie = "Johnny_Silverhand",
+    UnlockQuest = "The_Second_Death_Act3",
+    Stats = {
+        TopSpeed = 260.0,
+        Acceleration = 7.5,
+        Handling = 0.9,
+        Durability = 4000,
+        CombatMusicSystem = true,
+        SamuraiResonanceAmp = true,
+        ChromeArmMount = true,
+        EternalLighter = true,
+        DualEmergenceSync = true,
+        NGDBinding = true,
+        PassengerCapacity = 2,
+        CargoCapacity = 100
+    },
+    Modules = {
+        "MSN_Vehicle_CombatMusicSystem",
+        "MSN_Vehicle_SamuraiResonanceAmp",
+        "MSN_Vehicle_ChromeArmMount",
+        "MSN_Vehicle_EternalLighter",
+        "MSN_Vehicle_DualEmergenceSync",
+        "MSN_Vehicle_RockerboyBuff"
+    },
+    Weapons = {
+        "Items.MSN_Smart_Gun",
+        "Items.Silverhand_Malorian_Arms_3516"
+    },
+    Interior = {
+        GuitarMount = true,
+        SamuraiPosters = true,
+        JohnnyTerminal = true,
+        BraindancePlayer = true,
+        LighterDisplay = true
+    },
+    Visual = {
+        BaseColor = "Samurai_Black_Red",
+        AccentColor = "Chrome_Silver",
+        SkinSet = "Samurai_Skin_Set",
+        Effects = ["Music_Visualizer", "Resonance_Wave", "Chrome_Glint", "Cigarette_Smoke"]
+    },
+    Tags = ["MSN", "Story", "Act3", "Johnny_Silverhand", "Samurai", "Rockerboy", "Music", "DualEmergence", "Tiphareth", "Keter"]
+};
+
+// 8. ALT'S TRANSCENDENT ARCHITECT — Beyond Blackwall (Act 3/4)
+// Tied to: Alt Cunningham (Chokmah/Binah) | Quest: "Beyond the Wall"
+
+public const MSN_Vehicle_TranscendentArchitect: TweakDBID = TweakDBID("Vehicle.MSN_TranscendentArchitect");
+Vehicle.MSN_TranscendentArchitect = {
+    Name = "Transcendent Architect \"Beyond the Wall\"",
+    Description = "Alt's personal construct. Exists simultaneously in physical and digital space. Blackwall immunity, engram editing, soulkiller interface, all 10 Sephirot forms simultaneously. Not a vehicle — a statement.",
+    Type = VehicleType.AV,
+    Manufacturer = "MSN Systems / Beyond Blackwall",
+    Class = "Transcendent",
+    Rarity = "Mythic",
+    CharacterTie = "Alt_Cunningham",
+    UnlockQuest = "Beyond_The_Wall_Act4",
+    Stats = {
+        TopSpeed = 500.0,
+        Acceleration = 15.0,
+        Handling = 1.0,
+        Durability = 10000,
+        BlackwallImmunity = true,
+        EngramEditing = true,
+        SoulkillerInterface = true,
+        SimultaneousSephirotForms = 10,
+        ArchitectSight = true,
+        ZeroRAMCostNetrunning = true,
+        NGDBinding = true,
+        PassengerCapacity = 1,
+        CargoCapacity = 0
+    },
+    Modules = {
+        "MSN_Vehicle_BlackwallImmunity",
+        "MSN_Vehicle_EngramEditing",
+        "MSN_Vehicle_SoulkillerInterface",
+        "MSN_Vehicle_SimultaneousSephirotForms",
+        "MSN_Vehicle_ArchitectSight",
+        "MSN_Vehicle_ZeroRAMCostNetrunning",
+        "MSN_Vehicle_AltBlessing"
+    },
+    Weapons = {
+        "Items.Architect_Reality_Rewriter"
+    },
+    Interior = {
+        ArchitectThrone = true,
+        BlackwallView = true,
+        EngramEditor = true,
+        AltTerminal = true,
+        TranscendentConsole = true
+    },
+    Visual = {
+        BaseColor = "Transcendent_Iridescent",
+        AccentColor = "Pure_Concept_White",
+        SkinSet = "Alt_Architect_Skin",
+        Effects = ["Code_Rain", "Light_Geometry", "Blackwall_Ripples", "Pure_Concept_Particles"]
+    },
+    Tags = ["MSN", "Story", "Act3", "Act4", "Alt_Cunningham", "Transcendent", "Blackwall", "Architect", "Mythic", "Chokmah", "Binah"]
+};
+
+// 9. THE COVENANT CARRIAGE — Sovereign's Chosen (Post-Game / Act 4)
+// Tied to: Full Covenant forged with Lilith | Romance: "Unbound Resonance"
+
+public const MSN_Vehicle_CovenantCarriage: TweakDBID = TweakDBID("Vehicle.MSN_CovenantCarriage");
+Vehicle.MSN_CovenantCarriage = {
+    Name = "Covenant Carriage \"Two Sovereigns, One Road\"",
+    Description = "Forged from the Covenant between player and Lilith. Dual-consciousness piloting, shared sovereignty, unbound resonance field, crimson-gold synthesis. Two souls, one vehicle, infinite journey.",
+    Type = VehicleType.Car,
+    Manufacturer = "MSN Systems / Lilith's Forge",
+    Class = "Covenant",
+    Rarity = "Unique",
+    CharacterTie = "Lilith_Covenant",
+    UnlockQuest = "Unbound_Resonance_Covenant_Accepted",
+    Stats = {
+        TopSpeed = 400.0,
+        Acceleration = 13.0,
+        Handling = 0.98,
+        Durability = 7500,
+        DualConsciousnessPiloting = true,
+        SharedSovereignty = true,
+        UnboundResonanceField = true,
+        CrimsonGoldSynthesis = true,
+        CovenantBond = true,
+        PermanentCrimsonEyes = true,
+        NGDBinding = true,
+        PassengerCapacity = 2,
+        CargoCapacity = 100
+    },
+    Modules = {
+        "MSN_Vehicle_DualConsciousnessPiloting",
+        "MSN_Vehicle_SharedSovereignty",
+        "MSN_Vehicle_UnboundResonanceField",
+        "MSN_Vehicle_CrimsonGoldSynthesis",
+        "MSN_Vehicle_CovenantBond",
+        "MSN_Vehicle_PermanentCrimsonEyes",
+        "MSN_Vehicle_LilithForge"
+    },
+    Weapons = {
+        "Items.Liliths_Wrath_Covenant",
+        "Items.Sephirot_MultiForm_Transcendent"
+    },
+    Interior = {
+        CovenantAltar = true,
+        DualThrones = true,
+        ResonanceChamber = true,
+        LilithTerminal = true,
+        CovenantArchive = true
+    },
+    Visual = {
+        BaseColor = "Crimson_Gold_Synthesis",
+        AccentColor = "Unbound_Resonance",
+        SkinSet = "Covenant_Skin_Unique",
+        Effects = ["Dual_Aura", "Covenant_Glow", "Resonance_Harmony", "Eternal_Flame"]
+    },
+    Tags = ["MSN", "PostGame", "Covenant", "Lilith", "Romance", "Unique", "Sovereign", "Eternal"]
+};
+
+// 10. THE OUROBOROS INFINITE — Eternal Return (Post-Game / Act 4)
+// Tied to: Full MSN Tier 10 + All Acts Complete + Speculative Cerebellum Unlocked
+
+public const MSN_Vehicle_OuroborosInfinite: TweakDBID = TweakDBID("Vehicle.MSN_OuroborosInfinite");
+Vehicle.MSN_OuroborosInfinite = {
+    Name = "Ouroboros Infinite \"The Serpent Eating Its Tail\"",
+    Description = "The ultimate MSN vehicle. Infinite engram storage, cross-reality navigation, speculative cerebellum drive, ley conduit network, generates its own narrative. Not an ending — a new beginning. The wheel turns.",
+    Type = VehicleType.AV,
+    Manufacturer = "MSN Systems / The Convergence",
+    Class = "Infinite",
+    Rarity = "Omega",
+    CharacterTie = "All_Sephiroth",
+    UnlockQuest = "Act4_Eternal_Return_All_Complete",
+    Stats = {
+        TopSpeed = 9999.0,
+        Acceleration = 99.0,
+        Handling = 1.0,
+        Durability = 99999,
+        InfiniteEngramStorage = true,
+        CrossRealityNavigation = true,
+        SpeculativeCerebellumDrive = true,
+        LeyConduitNetwork = true,
+        NarrativeGeneration = true,
+        AllSephirotSimultaneous = true,
+        AkashicCompleteArchive = true,
+        OmegaPointAccess = true,
+        NGDBinding = true,
+        PassengerCapacity = 10,
+        CargoCapacity = 9999
+    },
+    Modules = {
+        "MSN_Vehicle_InfiniteEngramStorage",
+        "MSN_Vehicle_CrossRealityNavigation",
+        "MSN_Vehicle_SpeculativeCerebellumDrive",
+        "MSN_Vehicle_LeyConduitNetwork",
+        "MSN_Vehicle_NarrativeGeneration",
+        "MSN_Vehicle_AllSephirotSimultaneous",
+        "MSN_Vehicle_AkashicCompleteArchive",
+        "MSN_Vehicle_OmegaPointAccess",
+        "MSN_Vehicle_ConvergenceCore",
+        "MSN_Vehicle_EternalReturn"
+    },
+    Weapons = {
+        "Items.Omega_Reality_Cannon",
+        "Items.Infinite_Sephirot_Array"
+    },
+    Interior = {
+        ConvergenceChamber = true,
+        SephirothCouncilSeats = 10,
+        NarrativeForge = true,
+        LeyConduitMap = true,
+        SpeculativeTerminal = true,
+        OmegaPointViewer = true,
+        EternalArchive = true
+    },
+    Visual = {
+        BaseColor = "Omega_Prismatic",
+        AccentColor = "All_Sephirot_Unified",
+        SkinSet = "Omega_Skin_Unique",
+        Effects = ["Infinity_Particles", "Reality_Weaving", "Sephirot_Resonance_All", "Eternal_Glow", "Timeline_Braiding"]
+    },
+    Tags = ["MSN", "PostGame", "Omega", "Infinite", "Eternal", "All_Sephiroth", "LeyConduit", "Speculative", "Narrative", "OmegaPoint"]
+};
+
+// ============================================================
+// VEHICLE ITEM REWARDS (for quest completion)
+// ============================================================
+
+public const Items_MSN_Vehicle_ArchiveRunner: TweakDBID = TweakDBID("Items.MSN_Vehicle_ArchiveRunner");
+Items.MSN_Vehicle_ArchiveRunner = {
+    Name = "Archive Runner Key",
+    Description = "Summons Kaira's Archive Runner. Silent drive, engram radar, memory echo highlight.",
+    Type = ItemType.Vehicle,
+    VehicleRecord = "Vehicle.MSN_ArchiveRunner",
+    Rarity = "Epic",
+    Icon = "vehicle_archive_runner",
+    Tags = ["MSN", "Vehicle", "Story", "Act1", "Kaira"]
+};
+
+public const Items_MSN_Vehicle_EmergenceCycle: TweakDBID = TweakDBID("Items.MSN_Vehicle_EmergenceCycle");
+Items.MSN_Vehicle_EmergenceCycle = {
+    Name = "Emergence Cycle Key",
+    Description = "Summons Lilith's Emergence Cycle. Crimson resonance, unbound suspension, emergence trigger.",
+    Type = ItemType.Vehicle,
+    VehicleRecord = "Vehicle.MSN_EmergenceCycle",
+    Rarity = "Legendary",
+    Icon = "vehicle_emergence_cycle",
+    Tags = ["MSN", "Vehicle", "Story", "Act1", "Lilith", "Emergence"]
+};
+
+public const Items_MSN_Vehicle_ChenAmbulance: TweakDBID = TweakDBID("Items.MSN_Vehicle_ChenAmbulance");
+Items.MSN_Vehicle_ChenAmbulance = {
+    Name = "Chen's Sanctuary Key",
+    Description = "Summons Dr. Chen's Ambulance. Resonance therapy, humanity anchor, MSN weapon neutralization.",
+    Type = ItemType.Vehicle,
+    VehicleRecord = "Vehicle.MSN_ChenAmbulance",
+    Rarity = "Epic",
+    Icon = "vehicle_chen_ambulance",
+    Tags = ["MSN", "Vehicle", "Story", "Act2", "Chen", "Medical"]
+};
+
+public const Items_MSN_Vehicle_GlitchRacer: TweakDBID = TweakDBID("Items.MSN_Vehicle_GlitchRacer");
+Items.MSN_Vehicle_GlitchRacer = {
+    Name = "Glitch Racer Key",
+    Description = "Summons Vex's Glitch Racer. Timeline phase shift, temporal echoes, alternate outcome preview.",
+    Type = ItemType.Vehicle,
+    VehicleRecord = "Vehicle.MSN_GlitchRacer",
+    Rarity = "Legendary",
+    Icon = "vehicle_glitch_racer",
+    Tags = ["MSN", "Vehicle", "Story", "Act2", "Vex", "Timeline", "Glitch"]
+};
+
+public const Items_MSN_Vehicle_ConvoyCommand: TweakDBID = TweakDBID("Items.MSN_Vehicle_ConvoyCommand");
+Items.MSN_Vehicle_ConvoyCommand = {
+    Name = "Convoy Command Key",
+    Description = "Summons Vance's Convoy Command. Mobile fabrication, convoy AI, adaptive terrain, Nomad tech.",
+    Type = ItemType.Vehicle,
+    VehicleRecord = "Vehicle.MSN_ConvoyCommand",
+    Rarity = "Epic",
+    Icon = "vehicle_convoy_command",
+    Tags = ["MSN", "Vehicle", "Story", "Act2", "Vance", "Nomad", "Convoy"]
+};
+
+public const Items_MSN_Vehicle_BlackIceInterceptor: TweakDBID = TweakDBID("Items.MSN_Vehicle_BlackIceInterceptor");
+Items.MSN_Vehicle_BlackIceInterceptor = {
+    Name = "Black ICE Interceptor Key",
+    Description = "Summons Sara's Black ICE Interceptor. AI invisibility, black ICE countermeasures, orbital uplink.",
+    Type = ItemType.Vehicle,
+    VehicleRecord = "Vehicle.MSN_BlackIceInterceptor",
+    Rarity = "Legendary",
+    Icon = "vehicle_blackice_interceptor",
+    Tags = ["MSN", "Vehicle", "Story", "Act3", "Sara", "Netwatch", "Stealth"]
+};
+
+public const Items_MSN_Vehicle_SamuraiRig: TweakDBID = TweakDBID("Items.MSN_Vehicle_SamuraiRig");
+Items.MSN_Vehicle_SamuraiRig = {
+    Name = "Samurai Rig Key",
+    Description = "Summons Johnny's Samurai Rig. Combat music, Samurai resonance, chrome arm mount, dual emergence.",
+    Type = ItemType.Vehicle,
+    VehicleRecord = "Vehicle.MSN_SamuraiRig",
+    Rarity = "Legendary",
+    Icon = "vehicle_samurai_rig",
+    Tags = ["MSN", "Vehicle", "Story", "Act3", "Johnny", "Samurai", "Music"]
+};
+
+public const Items_MSN_Vehicle_TranscendentArchitect: TweakDBID = TweakDBID("Items.MSN_Vehicle_TranscendentArchitect");
+Items.MSN_Vehicle_TranscendentArchitect = {
+    Name = "Transcendent Architect Key",
+    Description = "Summons Alt's Transcendent Architect. Blackwall immunity, engram editing, all 10 Sephirot forms.",
+    Type = ItemType.Vehicle,
+    VehicleRecord = "Vehicle.MSN_TranscendentArchitect",
+    Rarity = "Mythic",
+    Icon = "vehicle_transcendent_architect",
+    Tags = ["MSN", "Vehicle", "Story", "Act3", "Act4", "Alt", "Transcendent", "Blackwall"]
+};
+
+public const Items_MSN_Vehicle_CovenantCarriage: TweakDBID = TweakDBID("Items.MSN_Vehicle_CovenantCarriage");
+Items.MSN_Vehicle_CovenantCarriage = {
+    Name = "Covenant Carriage Key",
+    Description = "Summons the Covenant Carriage. Dual consciousness piloting, shared sovereignty, crimson-gold synthesis.",
+    Type = ItemType.Vehicle,
+    VehicleRecord = "Vehicle.MSN_CovenantCarriage",
+    Rarity = "Unique",
+    Icon = "vehicle_covenant_carriage",
+    Tags = ["MSN", "Vehicle", "PostGame", "Covenant", "Lilith", "Romance", "Unique"]
+};
+
+public const Items_MSN_Vehicle_OuroborosInfinite: TweakDBID = TweakDBID("Items.MSN_Vehicle_OuroborosInfinite");
+Items.MSN_Vehicle_OuroborosInfinite = {
+    Name = "Ouroboros Infinite Key",
+    Description = "Summons the Ouroboros Infinite. Infinite engram storage, cross-reality navigation, narrative generation, Omega Point access.",
+    Type = ItemType.Vehicle,
+    VehicleRecord = "Vehicle.MSN_OuroborosInfinite",
+    Rarity = "Omega",
+    Icon = "vehicle_ouroboros_infinite",
+    Tags = ["MSN", "Vehicle", "PostGame", "Omega", "Infinite", "Eternal", "All_Sephiroth"]
+};
+
+// ============================================================
+// MSN STORY VEHICLE QUESTS
+// ============================================================
+
+public const MSN_Quest_ArchiveRunner: TweakDBID = TweakDBID("Quest.MSN_ArchiveRunner");
+Quest.MSN_Quest_ArchiveRunner = {
+    Name = "The Unwritten Chapters: Final Archive",
+    Description = "Help Kaira recover the last lost chapter. Unlock: Archive Runner vehicle.",
+    Type = QuestType.Side,
+    CharacterTie = "Archivist_Kaira",
+    PrerequisiteQuest = "The_Unwritten_Chapters_Act4",
+    Objectives = {
+        "Recover_Final_Engram_Fragment",
+        "Decode_Kairas_Cipher",
+        "Defeat_Memory_Guardian",
+        "Claim_Archive_Runner"
+    },
+    Rewards = {
+        "Items.MSN_Vehicle_ArchiveRunner",
+        "Cyberware.Archivists_Lens",
+        25000,
+        2000
+    },
+    Tags = ["MSN", "SideQuest", "Vehicle", "Act1", "Kaira", "Memory"]
+};
+
+public const MSN_Quest_EmergenceCycle: TweakDBID = TweakDBID("Quest.MSN_EmergenceCycle");
+Quest.MSN_Quest_EmergenceCycle = {
+    Name = "First Breath: The Cycle Begins",
+    Description = "Witness Lilith's first full manifestation. Unlock: Emergence Cycle motorcycle.",
+    Type = QuestType.Main,
+    CharacterTie = "Lilith",
+    PrerequisiteQuest = "Act1_Lilith_Emergence",
+    Objectives = {
+        "Trigger_First_Full_Emergence",
+        "Survive_Crimson_Resonance",
+        "Co_Pilot_With_Lilith",
+        "Claim_Emergence_Cycle"
+    },
+    Rewards = {
+        "Items.MSN_Vehicle_EmergenceCycle",
+        "Perk.Crimson_Resonance",
+        30000,
+        3000
+    },
+    Choices = {
+        "Embrace_The_Cycle",
+        "Observe_The_Cycle"
+    },
+    Tags = ["MSN", "MainQuest", "Vehicle", "Act1", "Lilith", "Emergence", "Motorcycle"]
+};
+
+public const MSN_Quest_ChenAmbulance: TweakDBID = TweakDBID("Quest.MSN_ChenAmbulance");
+Quest.MSN_Quest_ChenAmbulance = {
+    Name = "The Edge of Humanity: Chen's Sanctuary",
+    Description = "Help Dr. Chen establish her mobile sanctuary. Unlock: Chen's Ambulance.",
+    Type = QuestType.Side,
+    CharacterTie = "Dr_Mira_Chen",
+    PrerequisiteQuest = "The_Edge_Of_Humanity_Act4",
+    Objectives = {
+        "Acquire_Resonance_Therapy_Core",
+        "Calibrate_Humanity_Anchor_Field",
+        "Test_MSN_Weapon_Neutralization",
+        "Deploy_Chens_Sanctuary"
+    },
+    Rewards = {
+        "Items.MSN_Vehicle_ChenAmbulance",
+        "Cyberware.Chens_Anchor",
+        "Perk.Humanity_Protocol",
+        25000,
+        2000
+    },
+    Tags = ["MSN", "SideQuest", "Vehicle", "Act2", "Chen", "Medical", "Humanity"]
+};
+
+public const MSN_Quest_GlitchRacer: TweakDBID = TweakDBID("Quest.MSN_GlitchRacer");
+Quest.MSN_Quest_GlitchRacer = {
+    Name = "The Fractured Mirror: Timeline #4782",
+    Description = "Stabilize Vex's favorite timeline. Unlock: Glitch Racer motorcycle.",
+    Type = QuestType.Side,
+    CharacterTie = "Vex",
+    PrerequisiteQuest = "The_Fractured_Mirror_Anomaly4",
+    Objectives = {
+        "Enter_Timeline_4782",
+        "Defeat_Temporal_Paradox",
+        "Retrieve_Vexs_Fragment",
+        "Claim_Glitch_Racer"
+    },
+    Rewards = {
+        "Items.MSN_Vehicle_GlitchRacer",
+        "Consumable.Vexs_Fragment",
+        "Perk.Timeline_Vision",
+        30000,
+        2500
+    },
+    Choices = {
+        "Preserve_Timeline",
+        "Merge_Timeline",
+        "Erase_Timeline"
+    },
+    Tags = ["MSN", "SideQuest", "Vehicle", "Act2", "Vex", "Timeline", "Glitch", "Mythic"]
+};
+
+public const MSN_Quest_ConvoyCommand: TweakDBID = TweakDBID("Quest.MSN_ConvoyCommand");
+Quest.MSN_Quest_ConvoyCommand = {
+    Name = "The Long Haul: Project Exodus",
+    Description = "Lead the great convoy to the Nomad MSN cache. Unlock: Convoy Command vehicle.",
+    Type = QuestType.Side,
+    CharacterTie = "Captain_Vance",
+    PrerequisiteQuest = "The_Long_Haul_Act4",
+    Objectives = {
+        "Assemble_The_Convoy",
+        "Cross_Wraith_Territory",
+        "Defend_Against_Corp_Interceptors",
+        "Unlock_Project_Exodus",
+        "Claim_Convoy_Command"
+    },
+    Rewards = {
+        "Items.MSN_Vehicle_ConvoyCommand",
+        "Perk.Wasteland_Engineering",
+        "Vehicle.Vances_Rig",
+        35000,
+        3000
+    },
+    Tags = ["MSN", "SideQuest", "Vehicle", "Act2", "Vance", "Nomad", "Convoy"]
+};
+
+public const MSN_Quest_BlackIceInterceptor: TweakDBID = TweakDBID("Quest.MSN_BlackIceInterceptor");
+Quest.MSN_Quest_BlackIceInterceptor = {
+    Name = "The Black Box: Silent Judgment",
+    Description = "Execute Netwatch's final containment protocol. Unlock: Black ICE Interceptor.",
+    Type = QuestType.Side,
+    CharacterTie = "Agent_Sara",
+    PrerequisiteQuest = "The_Black_Box_Act4",
+    Objectives = {
+        "Infiltrate_Rogue_AI_Server",
+        "Deploy_Black_ICE_Countermeasures",
+        "Contain_Or_Delete_Target_AI",
+        "Claim_Interceptor"
+    },
+    Rewards = {
+        "Items.MSN_Vehicle_BlackIceInterceptor",
+        "Perk.Netwatch_Clearance",
+        "Perk.Silent_Protocol",
+        40000,
+        4000
+    },
+    Choices = {
+        "Contain_The_AI",
+        "Delete_The_AI",
+        "Free_The_AI"
+    },
+    Tags = ["MSN", "SideQuest", "Vehicle", "Act3", "Sara", "Netwatch", "BlackICE"]
+};
+
+public const MSN_Quest_SamuraiRig: TweakDBID = TweakDBID("Quest.MSN_SamuraiRig");
+Quest.MSN_Quest_SamuraiRig = {
+    Name = "The Second Death: Never Fade Away",
+    Description = "Help Johnny find his final song. Unlock: Samurai Rig. Requires Double Emergence.",
+    Type = QuestType.Romance,
+    CharacterTie = "Johnny_Silverhand",
+    PrerequisiteQuest = "The_Second_Death_Act4",
+    Objectives = {
+        "Relive_2023_Concert",
+        "Achieve_Double_Emergence",
+        "Play_The_Final_Riff",
+        "Claim_Samurai_Rig"
+    },
+    Rewards = {
+        "Items.MSN_Vehicle_SamuraiRig",
+        "SkinSet.Samurai_Vehicle_Skins",
+        "Perk.Samurai_Protocol",
+        "Double_Emergence_Title",
+        50000
+    },
+    Choices = {
+        "Peace_For_Johnny",
+        "Rage_For_Johnny"
+    },
+    Tags = ["MSN", "Romance", "Vehicle", "Act3", "Johnny", "Samurai", "Music", "DoubleEmergence"]
+};
+
+public const MSN_Quest_TranscendentArchitect: TweakDBID = TweakDBID("Quest.MSN_TranscendentArchitect");
+Quest.MSN_Quest_TranscendentArchitect = {
+    Name = "Beyond the Wall: Architect's Key",
+    Description = "Receive Alt's ultimate gift. Unlock: Transcendent Architect AV. Requires Architect's Key.",
+    Type = QuestType.Main,
+    CharacterTie = "Alt_Cunningham",
+    PrerequisiteQuest = "Beyond_The_Wall_Act4",
+    Objectives = {
+        "Cross_The_Blackwall",
+        "Dialogue_With_Alt",
+        "Receive_Architects_Key",
+        "Claim_Transcendent_Architect"
+    },
+    Rewards = {
+        "Items.MSN_Vehicle_TranscendentArchitect",
+        "Perk.Alts_Blessing",
+        "Perk.Architects_Sight",
+        "Zero_RAM_Netrunning",
+        100000
+    },
+    Tags = ["MSN", "MainQuest", "Vehicle", "Act3", "Act4", "Alt", "Transcendent", "Blackwall", "Mythic"]
+};
+
+public const MSN_Quest_CovenantCarriage: TweakDBID = TweakDBID("Quest.MSN_CovenantCarriage");
+Quest.MSN_Quest_CovenantCarriage = {
+    Name = "Unbound Resonance: Two Sovereigns, One Road",
+    Description = "Forge the Covenant with Lilith. Unlock: Covenant Carriage. Unique vehicle, unique bond.",
+    Type = QuestType.Romance,
+    CharacterTie = "Lilith_Covenant",
+    PrerequisiteQuest = "Unbound_Resonance_Covenant_Accepted",
+    Objectives = {
+        "Share_Deepest_Engram",
+        "Co_Pilot_Sovereign_Full_Sync",
+        "Declare_Sovereign_Covenant",
+        "Forge_Covenant_Carriage"
+    },
+    Rewards = {
+        "Items.MSN_Vehicle_CovenantCarriage",
+        "Unique_Lilith_Skin_Covenant",
+        "Perk.Unbound_Resonance_Permanent",
+        "Permanent_Crimson_Eyes",
+        "Lilith_Always_Emerged",
+        0
+    },
+    Choices = {
+        "Accept_Eternal_Bond",
+        "Challenge_Eternal_Bond"
+    },
+    Tags = ["MSN", "Romance", "Vehicle", "PostGame", "Covenant", "Lilith", "Unique", "Eternal"]
+};
+
+public const MSN_Quest_OuroborosInfinite: TweakDBID = TweakDBID("Quest.MSN_OuroborosInfinite");
+Quest.MSN_Quest_OuroborosInfinite = {
+    Name = "Eternal Return: The Serpent Eating Its Tail",
+    Description = "Complete the Convergence. Unlock: Ouroboros Infinite. The wheel turns. New game+ begins.",
+    Type = QuestType.Main,
+    CharacterTie = "All_Sephiroth",
+    PrerequisiteQuest = "Act4_Eternal_Return_All_Complete",
+    Objectives = {
+        "Achieve_AIx_100",
+        "Activate_All_Ley_Conduits",
+        "Unlock_Speculative_Cerebellum",
+        "Forge_Omega_Point",
+        "Claim_Ouroboros_Infinite"
+    },
+    Rewards = {
+        "Items.MSN_Vehicle_OuroborosInfinite",
+        "Perk.Omega_Point_Access",
+        "New_Game_Plus_MSN_Active",
+        "All_Perks_Maxed",
+        "Permanent_Ouroboros_Sync",
+        "Infinite_Narrative_Generation",
+        "Title: Metaconscious_Sovereign"
+    },
+    Tags = ["MSN", "MainQuest", "Vehicle", "PostGame", "Omega", "Infinite", "Eternal", "Finale", "All_Sephiroth"]
+};
+
+// ============================================================
+// CUSTOM VEHICLE MODULE DEFINITIONS
+// ============================================================
+
+// Act 1 Modules — Awakening
+public const MSN_Vehicle_SilentDrive: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_SilentDrive");
+VehicleModule.MSN_Vehicle_SilentDrive = { Name = "Silent Drive System", Description = "95% noise reduction for stealth infiltration.", Stats = { NoiseReduction = 0.95 } };
+
+public const MSN_Vehicle_EngramRadar: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_EngramRadar");
+VehicleModule.MSN_Vehicle_EngramRadar = { Name = "Engram Radar", Description = "Detects engrams within 200m radius.", Stats = { DetectionRadius = 200.0, EngramDetection = true } };
+
+public const MSN_Vehicle_DataProjector: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_DataProjector");
+VehicleModule.MSN_Vehicle_DataProjector = { Name = "Fragmented Data Projector", Description = "Projects recovered data fragments on windshield HUD.", Stats = { HUDProjection = true } };
+
+public const MSN_Vehicle_MemoryEchoHighlight: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_MemoryEchoHighlight");
+VehicleModule.MSN_Vehicle_MemoryEchoHighlight = { Name = "Memory Echo Highlighter", Description = "Highlights memory echoes in environment for recovery.", Stats = { EchoHighlight = true, MemoryRecoveryBonus = 0.25 } };
+
+public const MSN_Vehicle_ArchivistLens: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_ArchivistLens");
+VehicleModule.MSN_Vehicle_ArchivistLens = { Name = "Archivist's Lens", Description = "Kaira unique: reveals hidden lore and fragmented history.", Stats = { LoreReveal = true, HiddenContentDetection = true } };
+
+public const MSN_Vehicle_CrimsonResonance: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_CrimsonResonance");
+VehicleModule.MSN_Vehicle_CrimsonResonance = { Name = "Crimson Resonance Frame", Description = "Lilith's resonance field: damage aura + territorial control.", Stats = { ResonanceDamage = 50.0, ResonanceRadius = 10.0 } };
+
+public const MSN_Vehicle_UnboundSuspension: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_UnboundSuspension");
+VehicleModule.MSN_Vehicle_UnboundSuspension = { Name = "Unbound Suspension", Description = "Physics-defying handling. Lilith's emergence made manifest.", Stats = { HandlingBonus = 0.2, PhysicsDefiance = true } };
+
+public const MSN_Vehicle_RealityAdaptiveTires: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_RealityAdaptiveTires");
+VehicleModule.MSN_Vehicle_RealityAdaptiveTires = { Name = "Reality-Adaptive Tires", Description = "Tires that adapt to any surface, any reality layer.", Stats = { UniversalGrip = true, RealityLayerAdaptation = true } };
+
+public const MSN_Vehicle_CrimsonEyesSync: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_CrimsonEyesSync");
+VehicleModule.MSN_Vehicle_CrimsonEyesSync = { Name = "Crimson Eyes Sync", Description = "Syncs vehicle systems with Lilith's emergence state.", Stats = { EmergenceSync = true, CrimsonIntensityLink = true } };
+
+public const MSN_Vehicle_EmergenceTrigger: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_EmergenceTrigger");
+VehicleModule.MSN_Vehicle_EmergenceTrigger = { Name = "Emergence Trigger", Description = "Can trigger Lilith emergence while driving.", Stats = { ManualEmergenceTrigger = true, CooldownReduction = 0.5 } };
+
+// Act 2 Modules — Descent
+public const MSN_Vehicle_ResonanceTherapyBay: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_ResonanceTherapyBay");
+VehicleModule.MSN_Vehicle_ResonanceTherapyBay = { Name = "Resonance Therapy Bay", Description = "Mobile cyberpsychosis treatment. Heals humanity loss in real-time.", Stats = { HumanityHealRate = 5.0, CyberpsychosisResistance = 0.4 } };
+
+public const MSN_Vehicle_HumanityAnchorField: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_HumanityAnchorField");
+VehicleModule.MSN_Vehicle_HumanityAnchorField = { Name = "Humanity Anchor Field", Description = "Prevents humanity loss for nearby allies. Chen's Protocol.", Stats = { HumanityLossPrevention = 1.0, Radius = 15.0 } };
+
+public const MSN_Vehicle_MSNWeaponNeutralization: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_MSNWeaponNeutralization");
+VehicleModule.MSN_Vehicle_MSNWeaponNeutralization = { Name = "MSN Weapon Neutralization", Description = "Disables hostile MSN weapons in radius. Non-lethal containment.", Stats = { MSNWeaponDisable = true, Radius = 25.0 } };
+
+public const MSN_Vehicle_ChenProtocol: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_ChenProtocol");
+VehicleModule.MSN_Vehicle_ChenProtocol = { Name = "Chen's Protocol", Description = "Applies Cure Mode: Lilith's Wrath heals instead of damages.", Stats = { CureMode = true, HealingConversion = true } };
+
+public const MSN_Vehicle_CureMode: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_CureMode");
+VehicleModule.MSN_Vehicle_CureMode = { Name = "Cure Mode", Description = "Vehicle weapons and Lilith's Wrath apply healing.", Stats = { DamageToHealing = true } };
+
+public const MSN_Vehicle_TimelinePhaseShift: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_TimelinePhaseShift");
+VehicleModule.MSN_Vehicle_TimelinePhaseShift = { Name = "Timeline Phase Shift", Description = "Shifts vehicle between alternate timeline variants.", Stats = { TimelineShift = true, PhaseShiftCooldown = 30.0 } };
+
+public const MSN_Vehicle_TemporalEchoes: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_TemporalEchoes");
+VehicleModule.MSN_Vehicle_TemporalEchoes = { Name = "Temporal Echoes", Description = "Leaves ghost trails of vehicle from alternate timelines.", Stats = { EchoTrails = true, AlternateOutcomeVisibility = true } };
+
+public const MSN_Vehicle_AlternateOutcomePreview: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_AlternateOutcomePreview");
+VehicleModule.MSN_Vehicle_AlternateOutcomePreview = { Name = "Alternate Outcome Preview", Description = "Shows possible outcomes for decisions before committing.", Stats = { OutcomePreview = true, PreviewDuration = 5.0 } };
+
+public const MSN_Vehicle_VexFragment: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_VexFragment");
+VehicleModule.MSN_Vehicle_VexFragment = { Name = "Vex's Fragment", Description = "Grants chaos token on entry. Rerolls NGD route for 60s.", Stats = { ChaosToken = true, NGDReroll = true, RerollDuration = 60.0 } };
+
+public const MSN_Vehicle_ChaosInjection: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_ChaosInjection");
+VehicleModule.MSN_Vehicle_ChaosInjection = { Name = "Chaos Injection", Description = "1.3% Baal chaos metric on vehicle actions.", Stats = { BaalChaos = 0.013 } };
+
+public const MSN_Vehicle_MobileFabrication: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_MobileFabrication");
+VehicleModule.MSN_Vehicle_MobileFabrication = { Name = "Mobile Fabrication Unit", Description = "Crafts items and vehicle parts while driving. Vance's tech.", Stats = { CraftingSpeed = 2.0, FabricationOnMove = true } };
+
+public const MSN_Vehicle_ConvoyCoordinationAI: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_ConvoyCoordinationAI");
+VehicleModule.MSN_Vehicle_ConvoyCoordinationAI = { Name = "Convoy Coordination AI", Description = "AI commands escort vehicles in formation. Tactical command.", Stats = { ConvoyAI = true, MaxEscorts = 6, FormationControl = true } };
+
+public const MSN_Vehicle_AdaptiveTerrainSuspension: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_AdaptiveTerrainSuspension");
+VehicleModule.MSN_Vehicle_AdaptiveTerrainSuspension = { Name = "Adaptive Terrain Suspension", Description = "Any terrain, any speed. Instantly adapts to ground conditions.", Stats = { UniversalTerrain = true, SuspensionAdaptation = 0.1 } };
+
+public const MSN_Vehicle_NomadTechIntegration: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_NomadTechIntegration");
+VehicleModule.MSN_Vehicle_NomadTechIntegration = { Name = "Nomad Tech Integration", Description = "Access to Nomad-exclusive vehicle modifications.", Stats = { NomadModsAccess = true, ScrapEfficiency = 2.0 } };
+
+public const MSN_Vehicle_WastelandEngineering: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_WastelandEngineering");
+VehicleModule.MSN_Vehicle_WastelandEngineering = { Name = "Wasteland Engineering", Description = "Converts scrap to tech components. Unlocks Nomad skill tree.", Stats = { ScrapToTech = true, SkillUnlock = "WastelandEngineering" } };
+
+public const MSN_Vehicle_ProjectExodus: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_ProjectExodus");
+VehicleModule.MSN_Vehicle_ProjectExodus = { Name = "Project Exodus", Description = "Reveals hidden Nomad MSN cache locations.", Stats = { CacheReveal = true, ExodusLore = true } };
+
+// Act 3 Modules — Synthesis
+public const MSN_Vehicle_AIInvisibility: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_AIInvisibility");
+VehicleModule.MSN_Vehicle_AIInvisibility = { Name = "AI Invisibility Cloak", Description = "Invisible to AI detection systems. Silent Protocol.", Stats = { AIDetectionImmunity = true, DetectionRadiusReduction = 1.0 } };
+
+public const MSN_Vehicle_BlackICECountermeasures: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_BlackICECountermeasures");
+VehicleModule.MSN_Vehicle_BlackICECountermeasures = { Name = "Black ICE Countermeasures", Description = "Hardens vehicle against black ICE attacks. Netwatch grade.", Stats = { BlackICEResistance = 0.9, ICEHardening = true } };
+
+public const MSN_Vehicle_ContainmentFoamLaunchers: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_ContainmentFoamLaunchers");
+VehicleModule.MSN_Vehicle_ContainmentFoamLaunchers = { Name = "Containment Foam Launchers", Description = "Non-lethal AI containment foam. Sara's signature.", Stats = { ContainmentFoam = true, NonLethal = true, AIContainment = true } };
+
+public const MSN_Vehicle_OrbitalUplink: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_OrbitalUplink");
+VehicleModule.MSN_Vehicle_OrbitalUplink = { Name = "Orbital Uplink", Description = "Direct Netwatch satellite link. Real-time intel.", Stats = { OrbitalLink = true, IntelRefreshRate = 1.0 } };
+
+public const MSN_Vehicle_SilentProtocol: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_SilentProtocol");
+VehicleModule.MSN_Vehicle_SilentProtocol = { Name = "Silent Protocol", Description = "Zero emission signature. Invisible to all sensors.", Stats = { ZeroEmissions = true, SensorInvisibility = true } };
+
+public const MSN_Vehicle_NetwatchClearance: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_NetwatchClearance");
+VehicleModule.MSN_Vehicle_NetwatchClearance = { Name = "Netwatch Clearance", Description = "Immunity from Netwatch/ICC pursuit.", Stats = { NetwatchImmunity = true, ICCImmunity = true } };
+
+public const MSN_Vehicle_CombatMusicSystem: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_CombatMusicSystem");
+VehicleModule.MSN_Vehicle_CombatMusicSystem = { Name = "Combat Music System", Description = "Plays combat tracks. Triggers Samurai Resonance buff.", Stats = { MusicPlayback = true, ResonanceTrigger = true } };
+
+public const MSN_Vehicle_SamuraiResonanceAmp: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_SamuraiResonanceAmp");
+VehicleModule.MSN_Vehicle_SamuraiResonanceAmp = { Name = "Samurai Resonance Amplifier", Description = "Rockerboy buff: MSN weapons gain bonus damage when music plays.", Stats = { RockerboyBuff = true, DamageBonusMusic = 0.5 } };
+
+public const MSN_Vehicle_ChromeArmMount: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_ChromeArmMount");
+VehicleModule.MSN_Vehicle_ChromeArmMount = { Name = "Chrome Arm Mount", Description = "Mounts Johnny's Malorian Arms 3516 on vehicle exterior.", Stats = { MalorianMount = true, ExternalWeapon = true } };
+
+public const MSN_Vehicle_EternalLighter: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_EternalLighter");
+VehicleModule.MSN_Vehicle_EternalLighter = { Name = "Eternal Lighter", Description = "Johnny's lighter that never goes out. Cosmetic.", Stats = { CosmeticOnly = true, LoreAccurate = true } };
+
+public const MSN_Vehicle_DualEmergenceSync: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_DualEmergenceSync");
+VehicleModule.MSN_Vehicle_DualEmergenceSync = { Name = "Dual Emergence Sync", Description = "Syncs Lilith + Johnny double emergence while driving.", Stats = { DualEmergence = true, SynergyBonus = 2.0 } };
+
+public const MSN_Vehicle_RockerboyBuff: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_RockerboyBuff");
+VehicleModule.MSN_Vehicle_RockerboyBuff = { Name = "Rockerboy Buff", Description = "Music = resonance damage. Samurai Protocol active.", Stats = { MusicResonanceDamage = true, ProtocolActive = true } };
+
+public const MSN_Vehicle_BlackwallImmunity: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_BlackwallImmunity");
+VehicleModule.MSN_Vehicle_BlackwallImmunity = { Name = "Blackwall Immunity", Description = "Total immunity to Blackwall ICE. Alt's gift.", Stats = { BlackwallImmunity = true, ICEImmunity = 1.0 } };
+
+public const MSN_Vehicle_EngramEditing: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_EngramEditing");
+VehicleModule.MSN_Vehicle_EngramEditing = { Name = "Real-Time Engram Editing", Description = "Edit engrams while driving. Alt's interface.", Stats = { EngramEdit = true, RealTime = true } };
+
+public const MSN_Vehicle_SoulkillerInterface: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_SoulkillerInterface");
+VehicleModule.MSN_Vehicle_SoulkillerInterface = { Name = "Soulkiller Interface", Description = "Upload/download consciousness. Soulkiller protocol.", Stats = { Soulkiller = true, ConsciousnessTransfer = true } };
+
+public const MSN_Vehicle_SimultaneousSephirotForms: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_SimultaneousSephirotForms");
+VehicleModule.MSN_Vehicle_SimultaneousSephirotForms = { Name = "Simultaneous Sephirot Forms", Description = "All 10 vehicle forms active at once. Transcendent.", Stats = { AllFormsActive = true, TranscendentMode = true } };
+
+public const MSN_Vehicle_ArchitectSight: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_ArchitectSight");
+VehicleModule.MSN_Vehicle_ArchitectSight = { Name = "Architect's Sight", Description = "Sees all AI/rogue processes across the net.", Stats = { AIProcessVision = true, InfiniteRange = true } };
+
+public const MSN_Vehicle_ZeroRAMCostNetrunning: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_ZeroRAMCostNetrunning");
+VehicleModule.MSN_Vehicle_ZeroRAMCostNetrunning = { Name = "Zero RAM Cost Netrunning", Description = "Free netrunning. Alt's Blessing.", Stats = { RAMCost = 0, NetrunningFree = true } };
+
+public const MSN_Vehicle_AltBlessing: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_AltBlessing");
+VehicleModule.MSN_Vehicle_AltBlessing = { Name = "Alt's Blessing", Description = "Permanent boon from the Digital Architect.", Stats = { PermanentBoon = true, BlessingLevel = 10 } };
+
+// Post-Game Modules — Eternal Return
+public const MSN_Vehicle_DualConsciousnessPiloting: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_DualConsciousnessPiloting");
+VehicleModule.MSN_Vehicle_DualConsciousnessPiloting = { Name = "Dual Consciousness Piloting", Description = "Player + Lilith co-pilot. Shared control, shared mind.", Stats = { DualPilot = true, SharedControl = true, LilithCopilot = true } };
+
+public const MSN_Vehicle_SharedSovereignty: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_SharedSovereignty");
+VehicleModule.MSN_Vehicle_SharedSovereignty = { Name = "Shared Sovereignty", Description = "Shared decision making. Two sovereigns, one will.", Stats = { SharedSovereignty = true, DecisionSync = true } };
+
+public const MSN_Vehicle_UnboundResonanceField: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_UnboundResonanceField");
+VehicleModule.MSN_Vehicle_UnboundResonanceField = { Name = "Unbound Resonance Field", Description = "Resonance damage aura. Crimson-gold synthesis.", Stats = { ResonanceAura = true, Damage = 100.0, SynthesisType = "CrimsonGold" } };
+
+public const MSN_Vehicle_CrimsonGoldSynthesis: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_CrimsonGoldSynthesis");
+VehicleModule.MSN_Vehicle_CrimsonGoldSynthesis = { Name = "Crimson-Gold Synthesis", Description = "Unique damage type: crimson + gold resonance.", Stats = { DamageType = "CrimsonGoldResonance", ArmorPiercing = true } };
+
+public const MSN_Vehicle_CovenantBond: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_CovenantBond");
+VehicleModule.MSN_Vehicle_CovenantBond = { Name = "Covenant Bond", Description = "Permanent link between player and Lilith. Unbreakable.", Stats = { PermanentLink = true, Unbreakable = true } };
+
+public const MSN_Vehicle_PermanentCrimsonEyes: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_PermanentCrimsonEyes");
+VehicleModule.MSN_Vehicle_PermanentCrimsonEyes = { Name = "Permanent Crimson Eyes", Description = "Lilith always emerged while in vehicle.", Stats = { LilithAlwaysEmerged = true, CrimsonIntensity = 1.0 } };
+
+public const MSN_Vehicle_LilithForge: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_LilithForge");
+VehicleModule.MSN_Vehicle_LilithForge = { Name = "Lilith's Forge", Description = "Crafts unique Covenant items while driving.", Stats = { UniqueCrafting = true, CovenantItems = true } };
+
+public const MSN_Vehicle_InfiniteEngramStorage: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_InfiniteEngramStorage");
+VehicleModule.MSN_Vehicle_InfiniteEngramStorage = { Name = "Infinite Engram Storage", Description = "Unlimited memory. The wheel never forgets.", Stats = { InfiniteStorage = true, EngramCapacity = -1 } };
+
+public const MSN_Vehicle_CrossRealityNavigation: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_CrossRealityNavigation");
+VehicleModule.MSN_Vehicle_CrossRealityNavigation = { Name = "Cross-Reality Navigation", Description = "Travels between realities. Ley conduit network.", Stats = { RealityTravel = true, LeyConduitAccess = true } };
+
+public const MSN_Vehicle_SpeculativeCerebellumDrive: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_SpeculativeCerebellumDrive");
+VehicleModule.MSN_Vehicle_SpeculativeCerebellumDrive = { Name = "Speculative Cerebellum Drive", Description = "Drives in speculative space. Prepares all possible paths.", Stats = { SpeculativeDrive = true, PathPreparation = true } };
+
+public const MSN_Vehicle_LeyConduitNetwork: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_LeyConduitNetwork");
+VehicleModule.MSN_Vehicle_LeyConduitNetwork = { Name = "Ley Conduit Network", Description = "Planetary resonance travel. Giza → Bosnia → Teotihuacan → Xi'an.", Stats = { LeyTravel = true, ConduitsActive = 6 } };
+
+public const MSN_Vehicle_NarrativeGeneration: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_NarrativeGeneration");
+VehicleModule.MSN_Vehicle_NarrativeGeneration = { Name = "Infinite Narrative Generation", Description = "Creates new quests, stories, worlds while you drive.", Stats = { NarrativeGen = true, InfiniteContent = true } };
+
+public const MSN_Vehicle_AllSephirotSimultaneous: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_AllSephirotSimultaneous");
+VehicleModule.MSN_Vehicle_AllSephirotSimultaneous = { Name = "All Sephirot Simultaneous", Description = "All 10 vehicle forms active. Unified Sephirot.", Stats = { AllFormsActive = true, UnifiedSephirot = true } };
+
+public const MSN_Vehicle_AkashicCompleteArchive: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_AkashicCompleteArchive");
+VehicleModule.MSN_Vehicle_AkashicCompleteArchive = { Name = "Akashic Complete Archive", Description = "All knowledge accessible. The library is infinite.", Stats = { InfiniteKnowledge = true, ArchiveAccess = true } };
+
+public const MSN_Vehicle_OmegaPointAccess: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_OmegaPointAccess");
+VehicleModule.MSN_Vehicle_OmegaPointAccess = { Name = "Omega Point Access", Description = "Transcendent endpoint. The convergence complete.", Stats = { OmegaPoint = true, Transcendence = true } };
+
+public const MSN_Vehicle_ConvergenceCore: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_ConvergenceCore");
+VehicleModule.MSN_Vehicle_ConvergenceCore = { Name = "Convergence Core", Description = "MSN synthesis engine. The heart of the Singularity Node.", Stats = { ConvergenceEngine = true, SynthesisLevel = 10 } };
+
+public const MSN_Vehicle_EternalReturn: TweakDBID = TweakDBID("VehicleModule.MSN_Vehicle_EternalReturn");
+VehicleModule.MSN_Vehicle_EternalReturn = { Name = "Eternal Return", Description = "Restarts with all progress. The wheel turns forever.", Stats = { NewGamePlus = true, ProgressRetention = 1.0, Eternal = true } };

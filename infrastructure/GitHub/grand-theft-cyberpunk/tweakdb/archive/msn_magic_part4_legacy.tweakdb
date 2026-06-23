@@ -1,0 +1,287 @@
+// GRAND THEFT CYBERPUNK — MAGIC SYSTEM TWEAKDB (PART 4/4)
+// Cyberware, Items, Armor, Consumables, Shards, Quests
+// File: r6/tweakdb/msn_magic_part4.tweakdb
+
+# ============================================================
+# CYBERWARE — ARCANE CEREBELLUM
+# ============================================================
+
+Cyberdeck:MSN_Arcane_Cerebellum {
+    displayName: "LocKey#msn_arcane_cerebellum_name"
+    description: "LocKey#msn_arcane_cerebellum_desc"
+    category: "Cyberdeck"
+    rarity: "Legendary"
+    stats: [
+        { type: "RAM", value: 24 },
+        { type: "Buffer", value: 8 },
+        { type: "CooldownReduction", value: 0.3 },
+        { type: "QuickhackDamage", value: 1.5 }
+    ]
+    mods: [
+        "MSN_Arcane_LocalInference",
+        "MSN_Arcane_ManaPool",
+        "MSN_Arcane_SchoolAffinity",
+        "MSN_Arcane_Overcharge",
+        "MSN_Arcane_RitualCasting"
+    ]
+}
+
+Item:MSN_Arcane_LocalInference {
+    displayName: "LocKey#msn_arcane_local_name"
+    description: "LocKey#msn_arcane_local_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "LocalInferenceEnabled", value: true },
+        { type: "ModelQuantization", value: "INT4" },
+        { type: "VRAMBudgetMB", value: 1024 }
+    ]
+}
+
+Item:MSN_Arcane_ManaPool {
+    displayName: "LocKey#msn_arcane_manapool_name"
+    description: "LocKey#msn_arcane_manapool_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "ManaPoolBonus", value: 200.0 },
+        { type: "ManaRegenBonus", value: 10.0 },
+        { type: "OverchargeCapacity", value: 100.0 }
+    ]
+}
+
+Item:MSN_Arcane_SchoolAffinity {
+    displayName: "LocKey#msn_arcane_school_name"
+    description: "LocKey#msn_arcane_school_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "SchoolSpecialization", schools: "All", bonus: 0.25 },
+        { type: "OppositionSchoolPenalty", value: 0.0 }
+    ]
+}
+
+Item:MSN_Arcane_Overcharge {
+    displayName: "LocKey#msn_arcane_overcharge_name"
+    description: "LocKey#msn_arcane_overcharge_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "OverchargeEnabled", value: true },
+        { type: "OverchargeDamageBonus", value: 1.0 },
+        { type: "OverchargeHealthCost", value: 0.1 }
+    ]
+}
+
+Item:MSN_Arcane_RitualCasting {
+    displayName: "LocKey#msn_arcane_ritual_name"
+    description: "LocKey#msn_arcane_ritual_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "RitualCastingEnabled", value: true },
+        { type: "RitualSpellSlots", value: 3 },
+        { type: "RitualManaCostReduction", value: 0.5 }
+    ]
+}
+
+# ============================================================
+# WEAPONS — ARCANE FOCI & STAVES
+# ============================================================
+
+Item:MSN_Arcane_Focus {
+    displayName: "LocKey#msn_arcane_focus_name"
+    description: "LocKey#msn_arcane_focus_desc"
+    category: "Melee"
+    rarity: "Legendary"
+    damage: 50
+    damageType: "Energy"
+    attackSpeed: 1.2
+    stats: [
+        { type: "SpellPowerBonus", value: 0.5 },
+        { type: "ManaRegenBonus", value: 5.0 },
+        { type: "CooldownReduction", value: 0.2 }
+    ]
+}
+
+Item:MSN_Staff_of_Power {
+    displayName: "LocKey#msn_staff_power_name"
+    description: "LocKey#msn_staff_power_desc"
+    category: "Melee"
+    rarity: "Legendary"
+    damage: 80
+    damageType: "Energy"
+    attackSpeed: 1.0
+    stats: [
+        { type: "SpellPowerBonus", value: 1.0 },
+        { type: "ManaPoolBonus", value: 100.0 },
+        { type: "AutoCastOnHit", spell: "MagicMissile", chance: 0.2 }
+    ]
+}
+
+Item:MSN_Wand_of_Fireballs {
+    displayName: "LocKey#msn_wand_fireball_name"
+    description: "LocKey#msn_wand_fireball_desc"
+    category: "Ranged"
+    rarity: "Legendary"
+    damage: 0
+    damageType: "Fire"
+    fireRate: 1.0
+    magazineSize: 3
+    reloadTime: 3.0
+    stats: [
+        { type: "SpellCast", spell: "Fireball", cost: 0 },
+        { type: "ManaCost", value: 0 }
+    ]
+}
+
+# ============================================================
+# ARMOR — ROBES & VESTMENTS
+# ============================================================
+
+Item:Armor.MSN_Robes_of_the_Archmage {
+    displayName: "LocKey#msn_archmage_robes_name"
+    description: "LocKey#msn_archmage_robes_desc"
+    category: "OuterTorso"
+    rarity: "Legendary"
+    armor: 150
+    stats: [
+        { type: "SpellPowerBonus", value: 0.5 },
+        { type: "ManaRegenBonus", value: 10.0 },
+        { type: "SchoolMastery", all: true },
+        { type: "CounterspellAura", range: 10.0 }
+    ]
+}
+
+Item:Armor.MSN_Robes_of_Evocation {
+    displayName: "LocKey#msn_evoc_robes_name"
+    description: "LocKey#msn_evoc_robes_desc"
+    category: "OuterTorso"
+    rarity: "Legendary"
+    armor: 120
+    stats: [
+        { type: "SchoolSpecialization", school: "Evocation", bonus: 1.0 },
+        { type: "ElementalResistance", all: 0.3 },
+        { type: "OverchargeCapacity", value: 50.0 }
+    ]
+}
+
+Item:Armor.MSN_Robes_of_Abjuration {
+    displayName: "LocKey#msn_abjur_robes_name"
+    description: "LocKey#msn_abjur_robes_desc"
+    category: "OuterTorso"
+    rarity: "Legendary"
+    armor: 180
+    stats: [
+        { type: "SchoolSpecialization", school: "Abjuration", bonus: 1.0 },
+        { type: "WardStrength", value: 1.0 },
+        { type: "SpellReflection", chance: 0.1 }
+    ]
+}
+
+# ============================================================
+# CONSUMABLES
+# ============================================================
+
+Item:Consumable.MSN_Mana_Potion {
+    displayName: "LocKey#msn_mana_potion_name"
+    description: "LocKey#msn_mana_potion_desc"
+    category: "Consumable"
+    rarity: "Common"
+    effects: [
+        { type: "ManaRestore", value: 50.0 }
+    ]
+    cooldown: 5.0
+}
+
+Item:Consumable.MSN_Mana_Potion_Greater {
+    displayName: "LocKey#msn_mana_potion_greater_name"
+    description: "LocKey#msn_mana_potion_greater_desc"
+    category: "Consumable"
+    rarity: "Rare"
+    effects: [
+        { type: "ManaRestore", value: 200.0 }
+    ]
+    cooldown: 5.0
+}
+
+Item:Consumable.MSN_Elixir_of_Arcane_Power {
+    displayName: "LocKey#msn_elixir_power_name"
+    description: "LocKey#msn_elixir_power_desc"
+    category: "Consumable"
+    rarity: "Legendary"
+    effects: [
+        { type: "SpellPowerBonus", value: 1.0, duration: 300.0 },
+        { type: "ManaRegenBonus", value: 20.0, duration: 300.0 },
+        { type: "CooldownReduction", value: 0.5, duration: 300.0 }
+    ]
+    cooldown: 60.0
+}
+
+Item:Consumable.MSN_Potion_of_Spell_Recall {
+    displayName: "LocKey#msn_spell_recall_name"
+    description: "LocKey#msn_spell_recall_desc"
+    category: "Consumable"
+    rarity: "Rare"
+    effects: [
+        { type: "SpellCooldownReset", all: true }
+    ]
+    cooldown: 300.0
+}
+
+Item:Consumable.MSN_Scroll_of_Identify {
+    displayName: "LocKey#msn_identify_name"
+    description: "LocKey#msn_identify_desc"
+    category: "Consumable"
+    rarity: "Uncommon"
+    effects: [
+        { type: "CastSpell", spell: "Identify", cost: 0 }
+    ]
+    cooldown: 0.0
+}
+
+# ============================================================
+# SHARDS
+# ============================================================
+
+Shard:Abyssal_Magic_Intro {
+    Name: "The Arcane Codex: Magic in the Age of Chrome"
+    Description: "A leather-bound tome recovered from a NetWatch dead drop. The pages shimmer."
+    Category: "World"
+    Text: [
+        "Magic returns to Night City. Not the parlor tricks of media stars — true Art.",
+        "",
+        "Eight Schools. Eight paths to power:",
+        "  EVOCATION (Geburah) — Fire, lightning, force. Destruction made art.",
+        "  ABJURATION (Chesed) — Shields, wards, protection. The unbreakable wall.",
+        "  CONJURATION (Netzach) — Summon, bind, call. Allies from beyond.",
+        "  DIVINATION (Chokmah) — See all. Know all. The trap never springs.",
+        "  ENCHANTMENT (Netzach) — Command. Dominate. The will is yours.",
+        "  ILLUSION (Hod) — Deceive. Hide. Reality bends to your will.",
+        "  NECROMANCY (Geburah) — Life and death. The boundary erased.",
+        "  TRANSMUTATION (Tiphareth) — Change. Adapt. Become anything.",
+        "",
+        "Mana flows through the Net. Cyberdecks channel it. Cerebellums store it.",
+        "The Corporations fear what they cannot buy. The NetWatch hunts Artificers.",
+        "",
+        "Your spellbook awaits. The Schools call. Choose your path.",
+        "",
+        "— Anonymous Artificer, Δ∞ Sector"
+    ]
+}
+
+# ============================================================
+# QUESTS
+# ============================================================
+
+Quest:MSN_Artificer_Path {
+    Name: "The Artificer's Path"
+    Description: "Master the Eight Schools. Craft the ultimate focus. Become Archmage."
+    Type: "Main"
+    Acts: 8
+    Objectives: [
+        "Choose your primary School (Evocation/Abjuration/Conjuration/Divination/Enchantment/Illusion/Necromancy/Transmutation)",
+        "Craft your Arcane Focus (Focus/Staff/Wand)",
+        "Master all 4 tiers of your chosen School",
+        "Learn a spell from each of the other 7 Schools",
+        "Craft a Legendary cyberdeck: Arcane Cerebellum",
+        "Defeat a Corporate Artificer in magical duel",
+        "Cast a 9th-level spell (Meteor Swarm / Wish / Time Stop / Power Word Kill)",
+        "Achieve Archmage status: All Schools at Master tier"
+    ]
+}

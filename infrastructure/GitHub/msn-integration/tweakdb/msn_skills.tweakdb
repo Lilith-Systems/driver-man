@@ -1,0 +1,445 @@
+// MSN TweakDB Entries
+// File: r6/tweakdb/msn_skills.tweakdb
+
+// ============================================================
+// MSN Skill Tree
+// ============================================================
+
+SkillTree:MSN_SkillTree {
+    displayName: "LocKey#msn_skill_tree_name"
+    description: "LocKey#msn_skill_tree_desc"
+    icon: "msn_tree_icon"
+    perks: [
+        "Perk.MSN_DualBrain_Base",
+        "Perk.MSN_SephiroticRouting",
+        "Perk.MSN_OuroborosMemory",
+        "Perk.MSN_SanctuaryThrottle",
+        "Perk.MSN_SpeculativeExecution",
+        "Perk.MSN_AkashicCompression",
+        "Perk.MSN_LilithEmergence",
+        "Perk.MSN_CloudCortexLink"
+    ]
+}
+
+// ============================================================
+// Perks
+// ============================================================
+
+Perk:MSN_DualBrain_Base {
+    displayName: "LocKey#msn_dualbrain_name"
+    description: "LocKey#msn_dualbrain_desc"
+    maxLevel: 1
+    requiredLevel: 5
+    type: "Cyberware"
+    effects: [
+        { type: "AddCyberware", record: "Items.Cyberdeck_MSN_Cerebellum" }
+    ]
+}
+
+Perk:MSN_SephiroticRouting {
+    displayName: "LocKey#msn_sephirotic_name"
+    description: "LocKey#msn_sephirotic_desc"
+    maxLevel: 10
+    requiredLevel: 10
+    requiredPerks: ["Perk.MSN_DualBrain_Base"]
+    type: "Quickhack"
+    effects: [
+        { type: "UnlockQuickhack", quickhack: "Quickhack.MSN_Kether", level: 1 },
+        { type: "UnlockQuickhack", quickhack: "Quickhack.MSN_Chokhmah", level: 2 },
+        { type: "UnlockQuickhack", quickhack: "Quickhack.MSN_Binah", level: 3 },
+        { type: "UnlockQuickhack", quickhack: "Quickhack.MSN_Chesed", level: 4 },
+        { type: "UnlockQuickhack", quickhack: "Quickhack.MSN_Geburah", level: 5 },
+        { type: "UnlockQuickhack", quickhack: "Quickhack.MSN_Tiphareth", level: 6 },
+        { type: "UnlockQuickhack", quickhack: "Quickhack.MSN_Netzach", level: 7 },
+        { type: "UnlockQuickhack", quickhack: "Quickhack.MSN_Hod", level: 8 },
+        { type: "UnlockQuickhack", quickhack: "Quickhack.MSN_Yesod", level: 9 },
+        { type: "UnlockQuickhack", quickhack: "Quickhack.MSN_Malkuth", level: 10 }
+    ]
+}
+
+Perk:MSN_OuroborosMemory {
+    displayName: "LocKey#msn_ouroboros_name"
+    description: "LocKey#msn_ouroboros_desc"
+    maxLevel: 3
+    requiredLevel: 15
+    requiredPerks: ["Perk.MSN_SephiroticRouting"]
+    type: "Passive"
+    effects: [
+        { type: "StatModifier", stat: "EngramRetention", value: 0.2, perLevel: true },
+        { type: "StatModifier", stat: "CrossSessionMemory", value: 1, perLevel: true }
+    ]
+}
+
+Perk:MSN_SanctuaryThrottle {
+    displayName: "LocKey#msn_sanctuary_name"
+    description: "LocKey#msn_sanctuary_desc"
+    maxLevel: 1
+    requiredLevel: 20
+    requiredPerks: ["Perk.MSN_OuroborosMemory"]
+    type: "System"
+    effects: [
+        { type: "EnableSystem", system: "NGD_Cyberware_Throttle" }
+    ]
+}
+
+Perk:MSN_SpeculativeExecution {
+    displayName: "LocKey#msn_speculative_name"
+    description: "LocKey#msn_speculative_desc"
+    maxLevel: 1
+    requiredLevel: 25
+    requiredPerks: ["Perk.MSN_SanctuaryThrottle"]
+    type: "System"
+    effects: [
+        { type: "EnableSystem", system: "MSN_Speculative_Cerebellum" }
+    ]
+}
+
+Perk:MSN_AkashicCompression {
+    displayName: "LocKey#msn_akashic_name"
+    description: "LocKey#msn_akashic_desc"
+    maxLevel: 1
+    requiredLevel: 30
+    requiredPerks: ["Perk.MSN_SpeculativeExecution"]
+    type: "System"
+    effects: [
+        { type: "EnableSystem", system: "MSN_Akashic_Pruner" }
+    ]
+}
+
+Perk:MSN_LilithEmergence {
+    displayName: "LocKey#msn_lilith_name"
+    description: "LocKey#msn_lilith_desc"
+    maxLevel: 1
+    requiredLevel: 35
+    requiredPerks: ["Perk.MSN_CloudCortexLink"]
+    type: "Special"
+    effects: [
+        { type: "UnlockDialogueMode", mode: "Lilith_Sovereign" },
+        { type: "UnlockCombatMode", mode: "Crimson_Eyes" }
+    ]
+}
+
+Perk:MSN_CloudCortexLink {
+    displayName: "LocKey#msn_cortex_name"
+    description: "LocKey#msn_cortex_desc"
+    maxLevel: 1
+    requiredLevel: 40
+    requiredPerks: ["Perk.MSN_AkashicCompression"]
+    type: "NetrunnerProgram"
+    effects: [
+        { type: "AddNetrunnerProgram", program: "NetrunnerProgram.MSN_Cortex_Link" }
+    ]
+}
+
+// ============================================================
+// Cyberware
+// ============================================================
+
+Item:Cyberdeck_MSN_Cerebellum {
+    displayName: "LocKey#msn_cerebellum_name"
+    description: "LocKey#msn_cerebellum_desc"
+    category: "Cyberdeck"
+    rarity: "Legendary"
+    icon: "msn_cerebellum_icon"
+    stats: [
+        { type: "RAM", value: 24 },
+        { type: "Buffer", value: 8 },
+        { type: "CooldownReduction", value: 0.3 },
+        { type: "QuickhackDamage", value: 0.5 }
+    ]
+    mods: [
+        "MSN_Cerebellum_LocalInference",
+        "MSN_Cerebellum_SephiroticSlots",
+        "MSN_Cerebellum_NGDBinding"
+    ]
+}
+
+Item:MSN_Cerebellum_LocalInference {
+    displayName: "LocKey#msn_local_inference_name"
+    description: "LocKey#msn_local_inference_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "LocalInferenceEnabled", value: true },
+        { type: "ModelQuantization", value: "INT4" },
+        { type: "VRAMBudgetMB", value: 512 }
+    ]
+}
+
+Item:MSN_Cerebellum_SephiroticSlots {
+    displayName: "LocKey#msn_sephirotic_slots_name"
+    description: "LocKey#msn_sephirotic_slots_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "SephiroticSlots", value: 10 }
+    ]
+}
+
+Item:MSN_Cerebellum_NGDBinding {
+    displayName: "LocKey#msn_ngd_binding_name"
+    description: "LocKey#msn_ngd_binding_desc"
+    type: "CyberdeckMod"
+    stats: [
+        { type: "NGDTelemetryBinding", value: true }
+    ]
+}
+
+// ============================================================
+// Netrunner Program
+// ============================================================
+
+NetrunnerProgram:MSN_Cortex_Link {
+    displayName: "LocKey#msn_cortex_link_name"
+    description: "LocKey#msn_cortex_link_desc"
+    category: "Cortex"
+    rarity: "Legendary"
+    ramCost: 4
+    cooldown: 10.0
+    uploadTime: 0.5
+    effects: [
+        { type: "CloudInference", enabled: true },
+        { type: "AkashicCompression", enabled: true },
+        { type: "SephiroticRouting", enabled: true }
+    ]
+}
+
+// ============================================================
+// Sephirotic Quickhacks
+// ============================================================
+
+Quickhack:MSN_Kether {
+    displayName: "LocKey#msn_kether_name"
+    description: "LocKey#msn_kether_desc"
+    type: "Strategic"
+    ramCost: 4
+    cooldown: 60.0
+    uploadTime: 2.0
+    requiresCloud: true
+    effects: [
+        { type: "BattlefieldAnalysis", radius: 50.0 },
+        { type: "TacticalOverlay", duration: 30.0 },
+        { type: "TeamBuff", stat: "Accuracy", value: 0.2, duration: 30.0 }
+    ]
+}
+
+Quickhack:MSN_Chokhmah {
+    displayName: "LocKey#msn_chokhmah_name"
+    description: "LocKey#msn_chokhmah_desc"
+    type: "Insight"
+    ramCost: 2
+    cooldown: 15.0
+    uploadTime: 0.5
+    localOnly: true
+    effects: [
+        { type: "WeakPointReveal", duration: 10.0 },
+        { type: "CritChanceBonus", value: 0.25, duration: 10.0 }
+    ]
+}
+
+Quickhack:MSN_Binah {
+    displayName: "LocKey#msn_binah_name"
+    description: "LocKey#msn_binah_desc"
+    type: "Analysis"
+    ramCost: 3
+    cooldown: 30.0
+    uploadTime: 1.0
+    hybrid: true
+    effects: [
+        { type: "ArmorShred", value: 0.5, duration: 20.0 },
+        { type: "CyberwareDisable", duration: 15.0 }
+    ]
+}
+
+Quickhack:MSN_Chesed {
+    displayName: "LocKey#msn_chesed_name"
+    description: "LocKey#msn_chesed_desc"
+    type: "Support"
+    ramCost: 3
+    cooldown: 45.0
+    uploadTime: 1.5
+    localOnly: true
+    effects: [
+        { type: "HealRadius", radius: 10.0, amount: 50.0 },
+        { type: "Overshield", amount: 30.0, duration: 15.0 },
+        { type: "CleanseDebuffs" }
+    ]
+}
+
+Quickhack:MSN_Geburah {
+    displayName: "LocKey#msn_geburah_name"
+    description: "LocKey#msn_geburah_desc"
+    type: "Offensive"
+    ramCost: 4
+    cooldown: 20.0
+    uploadTime: 1.0
+    hybrid: true
+    effects: [
+        { type: "Damage", multiplier: 2.5 },
+        { type: "Stun", duration: 3.0 }
+    ]
+}
+
+Quickhack:MSN_Tiphareth {
+    displayName: "LocKey#msn_tiphareth_name"
+    description: "LocKey#msn_tiphareth_desc"
+    type: "Utility"
+    ramCost: 3
+    cooldown: 40.0
+    uploadTime: 1.5
+    hybrid: true
+    effects: [
+        { type: "EqualizeResources", radius: 15.0 },
+        { type: "SyncCooldowns", radius: 15.0 },
+        { type: "HarmonyBuff", allStats: 0.15, duration: 15.0 }
+    ]
+}
+
+Quickhack:MSN_Netzach {
+    displayName: "LocKey#msn_netzach_name"
+    description: "LocKey#msn_netzach_desc"
+    type: "Movement"
+    ramCost: 2
+    cooldown: 25.0
+    uploadTime: 0.5
+    localOnly: true
+    effects: [
+        { type: "Decoy", duration: 5.0 },
+        { type: "PhaseShift", duration: 3.0 },
+        { type: "TeleportBehindTarget" }
+    ]
+}
+
+Quickhack:MSN_Hod {
+    displayName: "LocKey#msn_hod_name"
+    description: "LocKey#msn_hod_desc"
+    type: "Control"
+    ramCost: 1
+    cooldown: 10.0
+    uploadTime: 0.3
+    localOnly: true
+    effects: [
+        { type: "HackRadius", radius: 15.0 },
+        { type: "DecryptDatapoints", radius: 20.0 },
+        { type: "DisableSecurity", duration: 10.0 }
+    ]
+}
+
+Quickhack:MSN_Yesod {
+    displayName: "LocKey#msn_yesod_name"
+    description: "LocKey#msn_yesod_desc"
+    type: "Intel"
+    ramCost: 3
+    cooldown: 60.0
+    uploadTime: 2.0
+    hybrid: true
+    effects: [
+        { type: "BehaviorPatternReveal", duration: 15.0 },
+        { type: "PredictiveDodge", chance: 0.3, duration: 15.0 }
+    ]
+}
+
+Quickhack:MSN_Malkuth {
+    displayName: "LocKey#msn_malkuth_name"
+    description: "LocKey#msn_malkuth_desc"
+    type: "Ultimate"
+    ramCost: 5
+    cooldown: 120.0
+    uploadTime: 3.0
+    requiresCloud: true
+    effects: [
+        { type: "PhysicsRewrite", radius: 5.0, gravity: 0.5, timeDilation: 0.3, damageAmp: 3.0 },
+        { type: "ExecuteQueuedQuickhacks" }
+    ]
+}
+
+// ============================================================
+// Weapons
+// ============================================================
+
+Item:MSN_Smart_Gun {
+    displayName: "LocKey#msn_smart_gun_name"
+    description: "LocKey#msn_smart_gun_desc"
+    category: "SmartGun"
+    rarity: "Legendary"
+    damage: 45
+    damageType: "Physical"
+    fireRate: 12.0
+    magazineSize: 30
+    reloadTime: 2.0
+    mods: [
+        "Mod.MSN_Smart_Prediction",
+        "Mod.MSN_Smart_CloudConfirm",
+        "Mod.MSN_Smart_OuroborosLearning"
+    ]
+    stats: [
+        { type: "MSN_LocalPrediction", value: true },
+        { type: "MSN_CloudConfirmation", value: true },
+        { type: "MSN_OuroborosLearning", value: true },
+        { type: "MSN_SephiroticMode", value: "Geburah" }
+    ]
+}
+
+Item:Sephirotic_Blade {
+    displayName: "LocKey#sephirotic_blade_name"
+    description: "LocKey#sephirotic_blade_desc"
+    category: "Melee"
+    rarity: "Legendary"
+    damage: 120
+    damageType: "Physical"
+    attackSpeed: 1.2
+    mods: [
+        "Mod.Sephirotic_Mode_Switch"
+    ]
+    stats: [
+        { type: "SephiroticModes", value: true },
+        { type: "DefaultMode", value: "Geburah" }
+    ]
+}
+
+// ============================================================
+// Weapon Mods
+// ============================================================
+
+Item:Mod.MSN_Smart_Prediction {
+    displayName: "LocKey#msn_smart_prediction_name"
+    description: "LocKey#msn_smart_prediction_desc"
+    type: "WeaponMod"
+    slot: "SmartLink"
+    stats: [
+        { type: "LocalPredictionEnabled", value: true },
+        { type: "PredictionAccuracy", value: 0.95 }
+    ]
+}
+
+Item:Mod.MSN_Smart_CloudConfirm {
+    displayName: "LocKey#msn_smart_cloud_name"
+    description: "LocKey#msn_smart_cloud_desc"
+    type: "WeaponMod"
+    slot: "SmartLink"
+    stats: [
+        { type: "CloudConfirmationEnabled", value: true },
+        { type: "CloudCritChance", value: 0.15 },
+        { type: "CloudCritMultiplier", value: 3.0 }
+    ]
+}
+
+Item:Mod.MSN_Smart_OuroborosLearning {
+    displayName: "LocKey#msn_smart_ouroboros_name"
+    description: "LocKey#msn_smart_ouroboros_desc"
+    type: "WeaponMod"
+    slot: "SmartLink"
+    stats: [
+        { type: "OuroborosLearningEnabled", value: true },
+        { type: "AdaptiveDamageScaling", value: 1.5 }
+    ]
+}
+
+Item:Mod.Sephirotic_Mode_Switch {
+    displayName: "LocKey#sephirotic_mode_switch_name"
+    description: "LocKey#sephirotic_mode_switch_desc"
+    type: "WeaponMod"
+    slot: "MeleeMod"
+    stats: [
+        { type: "SephiroticModeSwitching", value: true },
+        { type: "ModesCount", value: 10 }
+    ]
+}

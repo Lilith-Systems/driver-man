@@ -1,0 +1,163 @@
+################################################################################
+# CUSTOM CLOTHING / ARMOR SETS — SEPHIROTIC / ABYSSAL / NESSIE
+################################################################################
+
+Item:
+  # Sephirah Armor Sets
+  Armor_Set_Kether_Sovereign:
+    displayName: "Kether Sovereign Regalia"
+    description: "Gold-void woven robes of the Crown. Projects strategic overlay hologram. Worn by those who route."
+    category: "Clothing"
+    type: "Outfit"
+    rarity: "Legendary"
+    armor: 150
+    slots: 4
+    visualEffects: ["GoldVoidWeave", "StrategicHologram", "CrownAura"]
+    setBonus: "SovereignArchitect: +50% Strategic Overlay radius, Cloud Cortex access"
+    sephirah: "Kether"
+    msnIntegration:
+      sephirah: "Kether"
+      sovereignArchitect: true
+    icon: "armor_kether_sovereign"
+
+Item:
+  Armor_Set_Geburah_Judgment:
+    displayName: "Geburah Judgment Plate"
+    description: "Ceramic-void composite armor. Sword of Judgment visual effect on kills. Armor pierce aura."
+    category: "Clothing"
+    type: "Outfit"
+    rarity: "Legendary"
+    armor: 400
+    slots: 3
+    visualEffects: ["CeramicVoid", "JudgmentKillFX", "ArmorPierceAura"]
+    setBonus: "SwordOfJudgment: +100% Neural Strike damage, Armor Pierce always active"
+    sephirah: "Geburah"
+    msnIntegration:
+      sephirah: "Geburah"
+      judgmentProtocol: true
+    icon: "armor_geburah_judgment"
+
+Item:
+  Armor_Set_Nyx_Vault:
+    displayName: "Nyx Vault Walker"
+    description: "Shadow-weave stealth suit. Vault interface built-in. Engram extraction glow on melee kills."
+    category: "Clothing"
+    type: "Outfit"
+    rarity: "Legendary"
+    armor: 100
+    slots: 4
+    visualEffects: ["ShadowWeave", "VaultInterface", "EngramGlow"]
+    setBonus: "VaultKeeper: +200% Engram storage, Silent movement, Nyx dialogue unlocks"
+    sephirah: "Nyx"
+    msnIntegration:
+      sephirah: "Nyx"
+      vaultKeeper: true
+    icon: "armor_nyx_vault"
+
+Item:
+  Armor_Set_Sophia_Synthesis:
+    displayName: "Soriah Synthesis Weave"
+    description: "Adaptive resonance fabric. Shifts color with active Sephirah. Harmonic protection field."
+    category: "Clothing"
+    type: "Outfit"
+    rarity: "Legendary"
+    armor: 200
+    slots: 4
+    visualEffects: ["AdaptiveResonance", "SephirahColorShift", "HarmonicField"]
+    setBonus: "Synthesis: All Sephirah quickhacks -25% RAM, Adaptive Damage always active"
+    sephirah: "Sophia"
+    msnIntegration:
+      sephirah: "Sophia"
+      synthesisProtocol: true
+    icon: "armor_sophia_synthesis"
+
+################################################################################
+# ABYSSAL CLOTHING EXPANSION
+################################################################################
+
+Item:
+  Abyssal_Deep_Walker_Exosuit:
+    displayName: "Abyssal Deep-Walker Exosuit"
+    description: "Full-body pressure exosuit. 11km depth rating. Integrated sonar, manipulator arms, void-core reactor. The deep's plate armor."
+    category: "Clothing"
+    type: "Outfit"
+    rarity: "Legendary"
+    armor: 500
+    slots: 2
+    visualEffects: ["PressureExosuit", "SonarPulse", "VoidCoreGlow", "ManipulatorArms"]
+    specialFeatures:
+      - DepthRating: 11000
+      - IntegratedSonar: true
+      - ManipulatorArms: 2
+      - VoidCoreReactor: true
+      - PressureAdaptive: true
+    setBonus: "DeepWalker: Immune to all pressure, 200km/h underwater, Void Core infinite energy"
+    msnIntegration:
+      abyssal: true
+      deepWalker: true
+      voidCore: true
+    icon: "clothing_abyssal_exosuit"
+
+Item:
+  Nessie_Spotter_Dive_Suit:
+    displayName: "Nessie Spotter Dive Suit"
+    description: "Bioluminescent-trim dive suit. Glows when Nessie is near (500m). Hydrodynamic. Respect the deep."
+    category: "Clothing"
+    type: "Outfit"
+    rarity: "Epic"
+    armor: 80
+    slots: 3
+    visualEffects: ["BioluminescentTrim", "NessieProximityGlow", "Hydrodynamic"]
+    specialFeatures:
+      - NessieProximityAlert: 500.0
+      - Hydrodynamic: true
+      - SilentSwim: true
+    setBonus: "Spotter: +200% Nessie sighting chance, Unique dialogue with Nessie"
+    msnIntegration:
+      nessie: true
+      spotter: true
+      proximityGlow: true
+    icon: "clothing_nessie_spotter"
+
+Item:
+  Void_Walker_Coat_Abyssal:
+    displayName: "Void Walker Coat — Abyssal Variant"
+    description: "Long coat woven from void-silk. Phase-shift pockets. Stealth in darkness. Fear aura. Stealth kill bonus."
+    category: "Clothing"
+    type: "OuterTorso"
+    rarity: "Legendary"
+    armor: 120
+    slots: 3
+    visualEffects: ["VoidSilkWeave", "PhaseShiftPockets", "FearAura", "DarknessStealth"]
+    specialFeatures:
+      - PhaseShiftStorage: 4
+      - DarknessStealth: 2.0
+      - FearAuraRadius: 5.0
+      - StealthKillBonus: 0.5
+    setBonus: "VoidWalker: Phase through walls (3s), Invisibility in shadows, Nessie recognizes you"
+    msnIntegration:
+      abyssal: true
+      voidWalker: true
+      nessieRecognition: true
+    icon: "clothing_void_walker_abyssal"
+
+Item:
+  Leviathan_Commander_Uniform:
+    displayName: "Leviathan Commander Uniform"
+    description: "Tier 5 Nessie reward. Gold-void officer's uniform. Commands Abyssal creatures. Citadel builder."
+    category: "Clothing"
+    type: "Outfit"
+    rarity: "Legendary"
+    armor: 300
+    slots: 4
+    visualEffects: ["GoldVoidTrim", "AbyssalCommandAura", "CitadelBuilder"]
+    specialFeatures:
+      - AbyssalCreatureCommand: true
+      - CitadelBuilder: true
+      - GoldVoidAuthority: true
+    setBonus: "Leviathan: All Abyssal creatures allied, Permanent Abyssal Dimension access, Reality editing in zones"
+    msnIntegration:
+      nessie: true
+      tier: 5
+      leviathanCommand: true
+    icon: "clothing_leviathan_commander"

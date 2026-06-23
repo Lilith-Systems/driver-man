@@ -1,0 +1,192 @@
+{
+  "schema": "lilith.boot_map.v1",
+  "generated": "2026-06-21T13:17:05.490935+00:00",
+  "entrypoint": "/home/tehlappy/Desktop/Lilith/scripts/lilith_boot.sh",
+  "nexus": {
+    "1_Core_AI": "/home/tehlappy/Desktop/AI",
+    "2_Cyberpunk_Source": "/mnt/d/Cyberpunk/source",
+    "3_Cyberpunk_Live_Scripts": "/mnt/d/Cyberpunk/r6/scripts",
+    "4_MSN_Engine": "/home/tehlappy/Desktop/MSN_Engine",
+    "5_GrandTheftCyberpunk": "/home/tehlappy/Desktop/GrandTheftCyberpunk",
+    "6_Business_Empire": "/home/tehlappy/Desktop/AI/business"
+  },
+  "canonical": {
+    "lilith_root": "/home/tehlappy/Desktop/Lilith",
+    "ai_root": "/home/tehlappy/Desktop/Lilith/Core_Systems/AI",
+    "pub": "/mnt/d/Pub",
+    "cp2077_mods_source": "/home/tehlappy/Desktop/Lilith/Core_Systems/AI/abyssal-assets/cp2077_mods",
+    "cp2077_d_source": "/mnt/d/Cyberpunk/source",
+    "golem_db": "/home/tehlappy/Desktop/Lilith/state/golem_diary.db",
+    "invite": "/home/tehlappy/Desktop/Lilith/Core_Systems/AI/invite",
+    "hermes": "/home/tehlappy/.hermes",
+    "antigravity_brain": "/home/tehlappy/.gemini/antigravity-cli/brain"
+  },
+  "agents": {
+    "grok": "/home/tehlappy/.grok",
+    "hermes": "/home/tehlappy/.hermes",
+    "gemini_antigravity": "/home/tehlappy/.gemini",
+    "codex": "/home/tehlappy/.codex"
+  },
+  "email": {
+    "himalaya_accounts": [
+      "emhill96",
+      "ericmathewhill"
+    ],
+    "swarm_inbox": "ericmathewhill@gmail.com",
+    "notes": "Netzach/Malkuth batch reports land in ericmathewhill inbox"
+  },
+  "github": [
+    {
+      "local": "/home/tehlappy/Desktop/Lilith/GitHub/business-strategy",
+      "remote": "https://github.com/Lilith-Systems/business-strategy",
+      "purpose": "LLC ops, pricing, dispatch",
+      "exists": true,
+      "branch": "main"
+    },
+    {
+      "local": "/home/tehlappy/Desktop/Lilith/GitHub/driver-man",
+      "remote": "https://github.com/Lilith-Systems/driver-man",
+      "purpose": "Driver Man API + ops",
+      "exists": true,
+      "branch": "main"
+    },
+    {
+      "local": "/home/tehlappy/Desktop/Lilith/GitHub/Polsia",
+      "remote": "https://github.com/Lilith-Systems/Polsia",
+      "purpose": "Polsia business automation",
+      "exists": true,
+      "branch": "main"
+    },
+    {
+      "local": "/home/tehlappy/Desktop/Lilith/GitHub/lilith-systems.github.io",
+      "remote": "https://github.com/Lilith-Systems/lilith-systems.github.io",
+      "purpose": "Public site",
+      "exists": true,
+      "branch": "main"
+    }
+  ],
+  "services": [
+    {
+      "name": "lilith-api",
+      "port": 3210,
+      "health": "http://127.0.0.1:3210/api/health",
+      "state": "active"
+    },
+    {
+      "name": "lilith-desktop",
+      "port": 3213,
+      "health": "http://127.0.0.1:3213/api/health",
+      "state": "active"
+    },
+    {
+      "name": "lilith-proxy",
+      "port": 8888,
+      "health": "http://127.0.0.1:8888/health",
+      "state": "active"
+    },
+    {
+      "name": "lyra-api",
+      "port": 3211,
+      "health": null,
+      "state": "active"
+    },
+    {
+      "name": "hermes-bridge",
+      "port": 4242,
+      "health": "http://127.0.0.1:4242/health",
+      "state": "active"
+    },
+    {
+      "name": "msn-router",
+      "port": 8007,
+      "health": null,
+      "state": "active"
+    },
+    {
+      "name": "antigravity-bridge",
+      "port": 8002,
+      "health": "http://127.0.0.1:8002/health",
+      "state": "active"
+    },
+    {
+      "name": "swarm-orchestrator",
+      "port": 8003,
+      "health": "http://127.0.0.1:8003/health",
+      "state": "active"
+    },
+    {
+      "name": "gtc-bridge",
+      "port": 8766,
+      "health": "http://127.0.0.1:8766/health",
+      "state": "active"
+    },
+    {
+      "name": "gtc-dashboard",
+      "port": 5173,
+      "health": "http://127.0.0.1:5173/",
+      "state": "active"
+    },
+    {
+      "name": "ngd-cerebellum",
+      "port": 9091,
+      "health": "http://127.0.0.1:9091/health",
+      "state": "active"
+    },
+    {
+      "name": "ollama",
+      "port": 11434,
+      "health": "http://127.0.0.1:11434/api/tags",
+      "state": "inactive"
+    }
+  ],
+  "cyberpunk": {
+    "deploy_dir": "/home/tehlappy/.local/share/Steam/steamapps/common/Cyberpunk 2077/r6/mods",
+    "bundles": 113,
+    "reds": 544,
+    "names": [
+      "MSNWeaponOverhaul",
+      "MSN_MoralityAndStory",
+      "YoloModeEngaged",
+      "abyssal_assets",
+      "gta_mods",
+      "gtc_aethon_sync_001_chokmah_space_travel",
+      "gtc_aethon_sync_002_binah_invention",
+      "gtc_aethon_sync_003_chesed_orbital",
+      "gtc_aethon_sync_004_geburah_javelin",
+      "gtc_aethon_sync_005_tiphereth_memory_engram",
+      "gtc_aethon_sync_006_netzach_lilith_head",
+      "gtc_aethon_sync_007_hod_agy_working",
+      "gtc_aethon_sync_008_yesod_ngd_optimize",
+      "gtc_aethon_sync_009_malkuth_ouroboros",
+      "gtc_aethon_sync_010_kether_business_transaction",
+      "gtc_aethon_sync_011_chokmah_gang_war",
+      "gtc_aethon_sync_012_binah_law_enforcement",
+      "gtc_aethon_sync_013_chesed_employee_management",
+      "gtc_aethon_sync_014_geburah_espionage",
+      "gtc_aethon_sync_015_tiphereth_weapon_fire"
+    ]
+  },
+  "cd_manifest": {
+    "C_runtime": {
+      "lilith_root": "/home/tehlappy/Desktop/Lilith",
+      "ai_root": "/home/tehlappy/Desktop/Lilith/Core_Systems/AI",
+      "cp2077_mods": "/home/tehlappy/Desktop/Lilith/Core_Systems/AI/abyssal-assets/cp2077_mods",
+      "pub": "/mnt/d/Pub (via Desktop/AI/Pub + Pub.orig symlink)",
+      "ram_staging": "/dev/shm/ai_staging",
+      "golem_db": "/dev/shm/grok_ram_cache/golem_diary.db"
+    },
+    "D_storage": {
+      "pub": "/mnt/d/Pub",
+      "cyberpunk": "/mnt/d/Cyberpunk",
+      "lilith": "/mnt/d/Lilith",
+      "ai_telemetry": "/mnt/d/AI",
+      "games": "/mnt/d/Games"
+    }
+  },
+  "boot_commands": [
+    "bash ~/Desktop/Lilith/scripts/lilith_boot.sh",
+    "ai status",
+    "systemctl --user start lilith-api lyra-api msn-router gtc-bridge",
+    "bash ~/Desktop/Lilith/Core_Systems/AI/abyssal-assets/cp2077_mods/deploy_all_mods.sh"
+  ]
+}

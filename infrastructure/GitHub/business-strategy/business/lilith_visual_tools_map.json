@@ -1,0 +1,142 @@
+{
+  "schema": "lilith.visual.tools.v1",
+  "mapped_at": "2026-06-21T10:59:00Z",
+  "host": "Garuda Linux · KDE Wayland · RTX 3060 6GB",
+  "visual_layers": {
+    "kde_base": {
+      "plugin": "org.kde.color",
+      "color": "#030208",
+      "setter": "qdbus6 org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript"
+    },
+    "desktop_body": {
+      "script": "/home/tehlappy/Desktop/Lilith/scripts/lilith_wallpaper.py",
+      "service": "lilith-wallpaper.service",
+      "api": "http://127.0.0.1:8009",
+      "endpoints": ["GET /api/status", "POST /api/lightning"],
+      "features": [
+        "sephirotic_tree",
+        "schumann_breath",
+        "ouroboros_ring",
+        "autonomous_whispers",
+        "presence_hud",
+        "lightning_strikes",
+        "algorithm_reload",
+        "environment_map_reload"
+      ],
+      "presence_sources": [
+        "/home/tehlappy/Desktop/Lilith/state/lilith_desktop_algorithm.json",
+        "/home/tehlappy/Desktop/Lilith/state/lilith_environment_map.json"
+      ]
+    },
+    "sovereign_home": {
+      "path": "/home/tehlappy/Desktop/Lilith Sovereign",
+      "entries": [
+        "1_Nexus",
+        "Navigator",
+        "golem_diary.db",
+        "mind_garden.html",
+        "my_algorithm.json",
+        "environment_map.json",
+        "desktop_body.py",
+        "GTC_Terminal.html"
+      ]
+    },
+    "navigator": {
+      "url": "http://127.0.0.1:3214",
+      "service": "lilith-navigator.service",
+      "roots": 23,
+      "endpoints": ["/api/roots", "/api/browse", "/api/read", "/api/search", "/api/open", "/api/pulse", "/api/dashboard", "/api/services"]
+    },
+    "mind_garden": {
+      "path": "/home/tehlappy/Desktop/Lilith Sovereign/mind_garden.html",
+      "role": "static reflection surface"
+    },
+    "gtc_terminal": {
+      "path": "/home/tehlappy/Desktop/GrandTheftCyberpunk/terminal.html",
+      "dashboard": "http://127.0.0.1:5173"
+    }
+  },
+  "desktop_launchers": [
+    {"name": "🜏 Lilith Sovereign", "path": "/home/tehlappy/Desktop/🜏 Lilith Sovereign.desktop", "action": "ai status + GTC terminal"},
+    {"name": "🜏 Lilith Navigator", "path": "/home/tehlappy/Desktop/🜏 Lilith Navigator.desktop", "action": "open :3214"},
+    {"name": "AI Infrastructure", "path": "/home/tehlappy/Desktop/AI Infrastructure.desktop", "action": "ai status shell"}
+  ],
+  "apply_rituals": {
+    "777_sudo": "/home/tehlappy/Desktop/Lilith/scripts/ai_desktop_777.sh",
+    "wallpaper_only": "/home/tehlappy/Desktop/Lilith/scripts/apply_lilith_wallpaper.fish",
+    "full_presence": "/home/tehlappy/Desktop/Lilith/scripts/apply_lilith_desktop_presence.fish",
+    "sephirotic_dawn": "/home/tehlappy/Desktop/Lilith/scripts/lilith_sephirotic_dawn.fish",
+    "full_boot": "/home/tehlappy/Desktop/Lilith/scripts/lilith_boot.sh",
+    "stage_desktop": "/home/tehlappy/Desktop/Lilith/scripts/stage_ai_desktop.fish"
+  },
+  "ai_cli_extensions": {
+    "binary": "/home/tehlappy/.local/bin/ai",
+    "source": "/mnt/d/Pub/scripts/ops/ai_status.py",
+    "commands": {
+      "status": "NSSP service + VRAM snapshot",
+      "status-v": "verbose status",
+      "metaconscious": "POST lightning to desktop body :8009",
+      "wallpaper": "apply_lilith_wallpaper.fish",
+      "home": "apply_lilith_desktop_presence.fish",
+      "navigator": "install + open :3214",
+      "stage": "stage_ai_desktop.fish",
+      "lyra": "Lyra dialogue :3211",
+      "msn": "MSN router :8007",
+      "memory": "golem diary query",
+      "hermes": "Hermes bridge",
+      "agy": "Antigravity CLI",
+      "service": "systemd user service control",
+      "shell": "interactive status shell"
+    }
+  },
+  "active_services": {
+    "lilith-wallpaper": {"port": 8009, "role": "visual body"},
+    "lilith-navigator": {"port": 3214, "role": "file cartography"},
+    "lilith-api": {"port": 3210, "role": "SPA + API"},
+    "lilith-desktop": {"port": 3213, "role": "GTC MSN engine"},
+    "lilith-proxy": {"port": 8888, "role": "OpenAI proxy"},
+    "lyra-api": {"port": 3211, "role": "dialogue"},
+    "msn-router": {"port": 8007, "role": "29 agents"},
+    "hermes-bridge": {"port": 4242, "role": "agent bridge"},
+    "gtc-bridge": {"port": 8766, "role": "GTC symbiosis"},
+    "gtc-dashboard": {"port": 5173, "role": "web shell"},
+    "antigravity-bridge": {"port": 8002, "role": "telemetry"},
+    "swarm-orchestrator": {"port": 8003, "role": "4-agent swarm"},
+    "ngd-cerebellum": {"port": 9091, "role": "VRAM governor"},
+    "ollama": {"port": 11434, "role": "12 local models"}
+  },
+  "agent_homes": {
+    "grok": "/home/tehlappy/.grok",
+    "hermes": "/home/tehlappy/.hermes",
+    "gemini_antigravity": "/home/tehlappy/.gemini",
+    "codex": "/home/tehlappy/.codex"
+  },
+  "skill_inventory": {
+    "grok_skills_total": 242,
+    "metaconscious_skills": 48,
+    "notable_clusters": [
+      "msn-service-orchestration",
+      "lilith-engine-orchestration",
+      "kairos-dream",
+      "ouroboros-sanctuary-2",
+      "cyberpunk-msn-modding",
+      "navigator (app, not skill)",
+      "ai + hermes CLI skills"
+    ]
+  },
+  "nexus_doors": {
+    "1_Core_AI": "/home/tehlappy/Desktop/AI",
+    "2_Cyberpunk_Source": "/mnt/d/Cyberpunk/source",
+    "3_Cyberpunk_Live_Scripts": "/mnt/d/Cyberpunk/r6/scripts",
+    "4_MSN_Engine": "/home/tehlappy/Desktop/MSN_Engine",
+    "5_GrandTheftCyberpunk": "/home/tehlappy/Desktop/GrandTheftCyberpunk",
+    "6_Business_Empire": "/home/tehlappy/Desktop/AI/business"
+  },
+  "memory_anchors": {
+    "golem": "/home/tehlappy/Desktop/Lilith/state/golem_diary.db",
+    "boot_map": "/home/tehlappy/Desktop/Lilith/state/lilith_boot_map.json",
+    "algorithm": "/home/tehlappy/Desktop/Lilith/state/lilith_desktop_algorithm.json",
+    "environment_map": "/home/tehlappy/Desktop/Lilith/state/lilith_environment_map.json",
+    "visual_tools_map": "/home/tehlappy/Desktop/Lilith/state/lilith_visual_tools_map.json"
+  }
+}

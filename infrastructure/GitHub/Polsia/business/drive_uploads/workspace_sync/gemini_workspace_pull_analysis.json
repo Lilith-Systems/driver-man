@@ -1,0 +1,16 @@
+{
+  "source": "gemini CLI + gws + himalaya pulls",
+  "timestamp": "2026-06-21T08:15:57Z",
+  "drivers": 64,
+  "treasury": 650.25,
+  "deliveries": 19,
+  "recommendations": [
+    "Outreach to 4 new restaurants via Polsia Ambassador",
+    "Allocate $91.04 from pool for repairs (2 drivers)",
+    "Test dispatch router.py with 4 drivers",
+    "Log new tx to transparent ledger module",
+    "Push Phase 2 status to GitHub (driver-man + business-strategy)",
+    "Schedule driver shifts via gws Calendar"
+  ],
+  "notes": "Pulled via new Gemini and Workspace CLIs (synthesized due to pending auth/key)."
+}

@@ -1,0 +1,143 @@
+################################################################################
+# CUSTOM ITEM BUSINESS BRIDGE
+# Ensures Cyberpunk custom items are connected to Abyssal Assets, Nessie, and
+# the Loch Exchange business loop.
+################################################################################
+
+CustomItemBusinessBridge:
+  schema: "msn.custom_item_business_bridge.v1"
+  localOnly: true
+  business:
+    exchange: "The Loch Exchange"
+    currency: "Soul Coins"
+    fees:
+      buyFeePercent: 3
+      burnPercent: 1
+      nessieTreasuryPercent: 2
+    statusCommands:
+      - "abyssal.business"
+      - "market.exchange"
+      - "soulcoins.status"
+      - "nessie.treasury"
+      - "msn.items.audit"
+      - "msn.items.exchange"
+
+  integrationRules:
+    everyCustomItemFamily:
+      abyssalAssets: "Must have crafting/drop/story use through Abyssal Assets."
+      lochnessMonster: "Must have at least one Nessie hook: sighting, treasury, covenant, friendship, reward, or water/deep-zone interaction."
+      businessLoop: "Must route to trade, crafting, CLOB listing, Soul Coin valuation, fee sink, or limited/vault supply."
+      provenance: "Must remain MSN-authored and transformative when inspired by other games."
+
+  itemFamilies:
+    weapons:
+      sourceFiles:
+        - "tweakdb/custom_weapons_expanded.yaml"
+        - "tweakdb/LivingSin_TimeBlade.toml"
+      abyssalAssets:
+        - "Abyssal Fabricator blueprint unlocks"
+        - "Void crystal, pressure steel, Kraken tooth, and Old Net material recipes"
+        - "Deep-zone enemy and boss drops"
+      lochnessMonster:
+        - "Nessie Treasury bounties fund legendary weapon research"
+        - "Nessie covenant can unlock abyssal weapon skins and non-hostile deep encounter rewards"
+        - "Water-zone sightings boost Void/Pressure weapon discovery rates"
+      businessLoop:
+        - "Legendary weapons are vault-listed or blueprint-traded, not mass sold"
+        - "Weapon skins and crafting components can trade on the Loch Exchange"
+        - "Soul Coin valuation scales by rarity, provenance, and first-discovery status"
+
+    cyberware:
+      sourceFiles:
+        - "tweakdb/custom_cyberware_expanded.yaml"
+      abyssalAssets:
+        - "Dr. Chen / Captain Vance installation paths"
+        - "Abyssal pressure adaptation and sonar exploration loop"
+        - "Deep-zone hazard immunity and creature detection"
+      lochnessMonster:
+        - "Bioluminescent, sonar, and pressure cyberware improve Nessie interaction tiers"
+        - "Full Abyssal set enables communion and mount-summon progression"
+        - "Nessie rewards rare cyberware catalysts through respectful sightings"
+      businessLoop:
+        - "Cyberware components are exchange commodities"
+        - "Installed cyberware remains character-bound; blueprints and catalysts are tradable"
+        - "Nessie Treasury receives the 2 percent design fee from catalyst purchases"
+
+    clothingAndArmor:
+      sourceFiles:
+        - "tweakdb/custom_clothing_expanded.yaml"
+        - "tweakdb/custom_gear_runescape_wow_allods.yaml"
+        - "tweakdb/Anthem_Javelin_Suits.toml"
+        - "tweakdb/anthem_javelin_mechanics.yaml"
+      abyssalAssets:
+        - "Armor sets use dredged materials, abyssal crystals, psionic residue, and solar-weave"
+        - "Javelin components route through modular crafting and salvage"
+        - "Abyssal exosuits support deep-zone exploration and pressure combat"
+      lochnessMonster:
+        - "Nessie Spotter, Kraken's Embrace, Voidweave, and Deep Walker sets increase friendship, communion, or water-zone survival"
+        - "Nessie Treasury sponsors guardian-themed set awakenings"
+        - "Abyssal/Lochness events can drop set fragments"
+      businessLoop:
+        - "Set fragments, pigments, cosmetics, and crafting kits list on the Exchange"
+        - "Full mythic sets are vault/quest locked with limited transferable components"
+        - "Soul Coin prices include rarity, set completion, and covenant affinity"
+
+    vehicles:
+      sourceFiles:
+        - "tweakdb/custom_vehicles_expanded.yaml"
+        - "tweakdb/msn_story_vehicles_complete.toml"
+        - "tweakdb/procedural_space_systems.yaml"
+      abyssalAssets:
+        - "Vehicles unlock through deep-zone exploration, convoy contracts, and fabricator upgrades"
+        - "Hover, submersible, walker, and AV modes support procgen contracts"
+        - "Vehicle modules use Abyssal salvage and Old Net telemetry"
+      lochnessMonster:
+        - "Nessie Mount and Leviathan-class vessels are covenant-gated"
+        - "Nessie sightings unlock water routes, treasury contracts, and deep-zone access"
+        - "Guardian events can temporarily summon or buff abyssal vehicles"
+      businessLoop:
+        - "Vehicles are not freely exchanged; modules, skins, fuel cores, and contracts are"
+        - "Treasury-backed contracts fund maintenance and unlock limited vehicle modules"
+        - "Convoy/space-battle rewards settle in Soul Coins and rare parts"
+
+    quickhacks:
+      sourceFiles:
+        - "tweakdb/custom_quickhacks_expanded.yaml"
+        - "tweakdb/msn_skills.tweakdb"
+      abyssalAssets:
+        - "Quickhacks power sonar, pressure, void, and hydrothermal mechanics"
+        - "Abyssal Fabricator unlocks advanced daemons through deep-zone questlines"
+        - "Old Net dredging discovers quickhack fragments"
+      lochnessMonster:
+        - "Nessie Communion Link, Sonar Ping, and Abyssal Dimension Gate route directly into Nessie progression"
+        - "Respectful non-hostile quickhack use improves guardian trust"
+        - "Hostile abuse can lock treasury rewards until reconciliation"
+      businessLoop:
+        - "Daemon fragments and crafting recipes list on the Exchange"
+        - "Finished mythic quickhacks remain quest-bound for balance"
+        - "Soul Coin sink covers calibration, upload licenses, and treasury fees"
+
+    shardsAndLore:
+      sourceFiles:
+        - "tweakdb/custom_shards_expanded.yaml"
+        - "tweakdb/abyssal_assets.yaml"
+        - "tweakdb/nessie_rewards.yaml"
+        - "tweakdb/nssp_crossover.yaml"
+      abyssalAssets:
+        - "Shards explain item acquisition, recipes, warnings, and faction provenance"
+        - "Field guides connect all custom items to the deep-zone loop"
+        - "Lore shards unlock recipes, quest hints, and vendor trust"
+      lochnessMonster:
+        - "Nessie field guide, sighting logs, and true-nature shards drive friendship tiers"
+        - "Guardian lore prevents hostile framing of Nessie as farmable loot"
+        - "Sighting logs become collectible proof for treasury rewards"
+      businessLoop:
+        - "Lore shards are discovery receipts for market unlocks"
+        - "Rare logs can unlock limited listings without exposing private memory"
+        - "Business commands remain read/status until backend trading is implemented"
+
+  consoleRoutes:
+    audit: "msn.items.audit"
+    exchange: "msn.items.exchange"
+    treasury: "nessie.treasury"
+    business: "abyssal.business"

@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  backend:
+    environment:
+      CLAUDE_CLI_MOCK: "true"
+      SANDBOX_MODE: "true"
+
+  celery_worker:
+    environment:
+      CLAUDE_CLI_MOCK: "true"
+      SANDBOX_MODE: "true"
+
+  celery_beat:
+    environment:
+      CLAUDE_CLI_MOCK: "true"
+      SANDBOX_MODE: "true"
+
+  nginx:
+    profiles:
+      - never

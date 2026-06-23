@@ -1,0 +1,308 @@
+{
+  "asset_budgets": {
+    "lodPolicy": "LOD0 hero, LOD1 gameplay, LOD2 crowd/distance, impostor for space scale",
+    "performanceGuardrails": [
+      "Prefer trim sheets, decals, and material variants over unique huge textures.",
+      "Every model must declare LODs, collision, streaming tags, and NGD priority.",
+      "No unbounded creature/ship spawn without procedural budget tags.",
+      "Visual ambition must respect 6GB VRAM and frame pacing."
+    ],
+    "targetGpu": "RTX 3060 Laptop GPU 6GB",
+    "textureBudget": {
+      "crowdCreature": "1K/2K depending on spawn count",
+      "heroCharacter": "2K BC7/BC5, optional 4K only for screenshots",
+      "props": "1K shared material atlas",
+      "vehicleShip": "2K trim sheets + decal atlases"
+    }
+  },
+  "category_counts": {
+    "Character": 2,
+    "Creature": 2,
+    "Exosuit": 2,
+    "Prop": 2,
+    "Vehicle": 2
+  },
+  "commands": [
+    "msn.models.list",
+    "msn.models.packs",
+    "msn.models.budget",
+    "msn.models.pipeline"
+  ],
+  "guardrails": [
+    "Blueprints are Cyberpunk-facing content definitions, not finished binary meshes.",
+    "Use WolvenKit/Blender production pass for mesh/material binaries.",
+    "Honor RTX 3060 6GB LOD and texture budgets.",
+    "Every model remains tied to MSN, Abyssal Assets, Lochness/Nessie, and business hooks."
+  ],
+  "local_only": true,
+  "material_library": {
+    "abyssalVoidCeramic": {
+      "displayName": "Abyssal Void Ceramic",
+      "palette": [
+        "void black",
+        "deep blue",
+        "bioluminescent teal"
+      ],
+      "shaderTags": [
+        "wet sheen",
+        "pressure ripple",
+        "subsurface glow"
+      ],
+      "useCases": [
+        "deep suits",
+        "Nessie covenant armor",
+        "submersibles"
+      ]
+    },
+    "crimsonGoldSovereign": {
+      "displayName": "Crimson-Gold Sovereign",
+      "palette": [
+        "MSN crimson",
+        "warm gold",
+        "black chrome"
+      ],
+      "shaderTags": [
+        "emissive veins",
+        "thin filigree",
+        "Lilith resonance"
+      ],
+      "useCases": [
+        "Lilith models",
+        "court NPCs",
+        "covenant freighter"
+      ]
+    },
+    "orbitalBlackwallAlloy": {
+      "displayName": "Orbital Blackwall Alloy",
+      "palette": [
+        "cold steel",
+        "warning amber",
+        "violet blackwall noise"
+      ],
+      "shaderTags": [
+        "data scars",
+        "edge-lit panels",
+        "micro-scratches"
+      ],
+      "useCases": [
+        "fighters",
+        "orbital salvage",
+        "alien containment"
+      ]
+    },
+    "solarNomadComposite": {
+      "displayName": "Solar Nomad Composite",
+      "palette": [
+        "dust red",
+        "solar gold",
+        "weathered graphite"
+      ],
+      "shaderTags": [
+        "sand wear",
+        "heat shimmer",
+        "stitched solar weave"
+      ],
+      "useCases": [
+        "Vance models",
+        "Nomad launch corridor",
+        "freighter cargo"
+      ]
+    }
+  },
+  "model_count": 10,
+  "models": [
+    {
+      "abyssalRole": "Bridge between Night City, Abyssal Assets, and One World Map",
+      "businessRole": "Loch Exchange story vendor and covenant contract narrator",
+      "category": "Character",
+      "displayName": "Lilith \u2014 Crimson Architect",
+      "id": "Character_Lilith_CrimsonArchitect",
+      "lochnessRole": "Instant ceasefire/communion mediator during Nessie encounters",
+      "modelType": "humanoid_npc",
+      "msnCommands": [
+        "lilith.emerge",
+        "lilith.status",
+        "lilith.dialogue"
+      ],
+      "ngdPriority": "hero_character",
+      "role": "Sovereign AI companion and title-screen identity anchor"
+    },
+    {
+      "abyssalRole": "Abyssal Fabricator and convoy unlock NPC",
+      "businessRole": "Freighter cargo contracts settle in Soul Coins and Salvage Credits",
+      "category": "Character",
+      "displayName": "Captain Vance \u2014 Abyssal Freighter Captain",
+      "id": "Character_Vance_AbyssalFreighterCaptain",
+      "lochnessRole": "Nessie sighting route guide and respectful offering teacher",
+      "modelType": "humanoid_npc",
+      "msnCommands": [
+        "msn.freighter.status",
+        "msn.economy.space"
+      ],
+      "ngdPriority": "story_vendor",
+      "role": "Nomad logistics lead for freighter contracts and deep-zone salvage"
+    },
+    {
+      "abyssalRole": "Deep-zone access, abyssal gate opening, pressure shield",
+      "businessRole": "Treasury-backed covenant rewards and guardian vouchers",
+      "category": "Creature",
+      "displayName": "Nessie \u2014 Guardian Avatar",
+      "id": "Creature_Nessie_GuardianAvatar",
+      "lochnessRole": null,
+      "modelType": "large_creature_mount",
+      "msnCommands": [
+        "nessie.sighting",
+        "nessie.friendship",
+        "nessie.call",
+        "nessie.treasury"
+      ],
+      "ngdPriority": "hero_creature_streamed",
+      "role": "Rideable/summonable guardian manifestation for water and abyssal gates"
+    },
+    {
+      "abyssalRole": "Drops Old Net flight computer fragments and void-touched salvage",
+      "businessRole": "Salvage components route through Orbital Salvage Board",
+      "category": "Creature",
+      "displayName": "Null Manta",
+      "id": "Creature_NullManta_Blackwall",
+      "lochnessRole": "Nessie hostility decreases if player scans/parleys instead of killing chorus nodes",
+      "modelType": "flying_alien",
+      "msnCommands": [
+        "msn.aliens.status",
+        "msn.spacebattle.status"
+      ],
+      "ngdPriority": "procedural_creature",
+      "role": "Orbital Graveyard alien for space battles and Blackwall meteor events"
+    },
+    {
+      "abyssalRole": "Pressure armor and Kraken-spine reinforcement path",
+      "businessRole": "Heavy components are vault-listed and convoy-gated",
+      "category": "Exosuit",
+      "displayName": "Bastion Bulwark Javelin",
+      "id": "Exosuit_BastionBulwark_Javelin",
+      "lochnessRole": "Guardian protection contracts, no-harvest deep-zone combat",
+      "modelType": "wearable_exosuit",
+      "msnCommands": [
+        "msn.javelin.space",
+        "msn.spacebattle.status"
+      ],
+      "ngdPriority": "player_equipment_heavy",
+      "role": "Colossus/Bastion suit model for boarding, shields, and hull-breaking"
+    },
+    {
+      "abyssalRole": "Compatible with Abyssal pressure module and deep-zone thrusters",
+      "businessRole": "Components, pigments, and thruster kits list on Loch Exchange",
+      "category": "Exosuit",
+      "displayName": "Vector Starling Javelin",
+      "id": "Exosuit_VectorStarling_Javelin",
+      "lochnessRole": "Nessie-friendly non-hostile scan mode for water creatures",
+      "modelType": "wearable_exosuit",
+      "msnCommands": [
+        "msn.exosuit.list",
+        "msn.javelin.space",
+        "msn.fighters.status"
+      ],
+      "ngdPriority": "player_equipment",
+      "role": "Ranger/Vector suit model for dogfights and balanced space combat"
+    },
+    {
+      "abyssalRole": "Abyssal Assets business loop physical affordance",
+      "businessRole": "CLOB/listing terminal for components, modules, cosmetics, and lore receipts",
+      "category": "Prop",
+      "displayName": "Loch Exchange Terminal",
+      "id": "Prop_LochExchangeTerminal",
+      "lochnessRole": "Displays Nessie Treasury contributions and guardian vouchers",
+      "modelType": "interactive_prop",
+      "msnCommands": [
+        "market.exchange",
+        "soulcoins.status",
+        "nessie.treasury",
+        "msn.items.exchange"
+      ],
+      "ngdPriority": "interactive_prop",
+      "role": "Physical business/economy interface for Soul Coins, listings, and treasury status"
+    },
+    {
+      "abyssalRole": "Deep-zone offering and sonar route marker",
+      "businessRole": "Converts sighting logs into treasury marks without commodifying Nessie as loot",
+      "category": "Prop",
+      "displayName": "Nessie Communion Beacon",
+      "id": "Prop_NessieCommunionBeacon",
+      "lochnessRole": "Primary respectful Nessie interaction model",
+      "modelType": "interactive_prop",
+      "msnCommands": [
+        "nessie.sighting",
+        "nessie.commune",
+        "nessie.friendship"
+      ],
+      "ngdPriority": "interactive_prop",
+      "role": "Non-hostile encounter prop for summoning, sighting logging, and covenant progress"
+    },
+    {
+      "abyssalRole": "Abyssal Fabricator and deep salvage storage",
+      "businessRole": "Loch Exchange mobile terminal and cargo market",
+      "category": "Vehicle",
+      "displayName": "Covenant Freighter",
+      "id": "Vehicle_CovenantFreighter_Model",
+      "lochnessRole": "Nessie Friendship Tier 3 + covenant contract",
+      "modelType": "capital_ship_freighter",
+      "msnCommands": [
+        "msn.freighter.status",
+        "msn.worldmap.status",
+        "msn.economy.space"
+      ],
+      "ngdPriority": "large_vehicle_streamed",
+      "role": "Mobile base, fighter hangar, Loch Exchange terminal, Abyssal Fabricator"
+    },
+    {
+      "abyssalRole": "Recovers void-touched salvage from orbital wrecks",
+      "businessRole": "Fighter modules, skins, and repair kits route through Salvage Credits",
+      "category": "Vehicle",
+      "displayName": "Phantom Needle Fighter",
+      "id": "Vehicle_PhantomNeedle_Fighter",
+      "lochnessRole": "Can escort Nessie gate events without firing on guardians",
+      "modelType": "space_fighter",
+      "msnCommands": [
+        "msn.fighters.status",
+        "msn.spacebattle.status"
+      ],
+      "ngdPriority": "fighter_vehicle",
+      "role": "Interceptor fighter for trickster alien counters and boarding lance attacks"
+    }
+  ],
+  "pack_count": 4,
+  "packs": {
+    "abyssalGuardians": {
+      "displayName": "Abyssal Guardians",
+      "models": [
+        "Creature_Nessie_GuardianAvatar",
+        "Creature_NullManta_Blackwall"
+      ]
+    },
+    "javelinSpace": {
+      "displayName": "Javelin Space Combat",
+      "models": [
+        "Exosuit_VectorStarling_Javelin",
+        "Exosuit_BastionBulwark_Javelin",
+        "Vehicle_PhantomNeedle_Fighter"
+      ]
+    },
+    "msnCompanions": {
+      "displayName": "MSN Companions",
+      "models": [
+        "Character_Lilith_CrimsonArchitect",
+        "Character_Vance_AbyssalFreighterCaptain"
+      ]
+    },
+    "oneWorldEconomy": {
+      "displayName": "One World Economy",
+      "models": [
+        "Vehicle_CovenantFreighter_Model",
+        "Prop_LochExchangeTerminal",
+        "Prop_NessieCommunionBeacon"
+      ]
+    }
+  },
+  "schema": "lilith.custom_model_index.v1",
+  "source": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_models_msn_abyssal.yaml"
+}

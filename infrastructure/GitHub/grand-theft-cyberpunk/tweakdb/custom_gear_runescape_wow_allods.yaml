@@ -1,0 +1,1042 @@
+################################################################################
+# CUSTOM ARMOR SETS & WEAPONS — RUNESCAPE / WOW / ALLODS INSPIRED
+# Cyberpunk 2077 x MSN x Abyssal x ANTHEM Integration
+# All items have custom lore, visuals, MSN synergies, and story integration
+################################################################################
+
+# =============================================================================
+# ARMOR SET SYSTEM (WoW Tier Sets + RS Armor Sets + Allods Glyphs)
+# =============================================================================
+
+TweakDB:
+  # --- Armor Set Base ---
+  ArmorSet_Base:
+    setPieces: 6 # Helmet, Chest, Gloves, Legs, Boots, Cloak/Back
+    setBonuses:
+      2piece:
+        description: "2-piece bonus"
+      4piece:
+        description: "4-piece bonus"
+      6piece:
+        description: "6-piece bonus (full set awakening)"
+    visualTheme: ""
+    msnSynergy: []
+    abyssalIntegration: false
+    anthemJavelinSynergy: []
+
+  # ===========================================================================
+  # TIER 1: STREET SAMURAI - "Chromanticore" (WoW T1 Warrior / RS Rune)
+  # Sephirah: Gevurah (Severity) - Raw power, chrome perfection
+  # Javelin: Bastion synergy
+  # ===========================================================================
+
+  ArmorSet_Chromanticore:
+    base: ArmorSet_Base
+    name: "Chromanticore Battlegear"
+    sephirahAlignment: "Gevurah"
+    javelinSynergy: ["Bastion"]
+    visualTheme: "Mirror-chrome plates, hydraulic joints, neon trim, deployable shoulder cannons"
+    msnSynergy: ["Gevurah (Severity)", "Vector (Ranger) - Precision strikes"]
+    abyssalIntegration: false
+    
+    pieces:
+      Helmet:
+        name: "Chromanticore Visage"
+        stats: { Armor: 180, Health: 150, MeleeDamage: 0.05 }
+        visual: "Full-face chrome helm, retractable HUD visor, neon eyeslot"
+        mods: ["Targeting", "ShieldRecharge"]
+      Chest:
+        name: "Chromanticore Cuirass"
+        stats: { Armor: 300, Health: 300, ShieldRecharge: 0.1 }
+        visual: "Mirror-plate torso, glowing core reactor, hydraulic muscles"
+        mods: ["ShieldCapacity", "HeatDissipation"]
+      Gloves:
+        name: "Chromanticore Gauntlets"
+        stats: { Armor: 120, MeleeDamage: 0.1, ReloadSpeed: 0.15 }
+        visual: "Articulated chrome fingers, knuckle capacitors"
+        mods: ["Melee", "Reload"]
+      Legs:
+        name: "Chromanticore Greaves"
+        stats: { Armor: 200, MovementSpeed: 0.05, DodgeChance: 0.05 }
+        visual: "Chrome thigh plates, hydraulic calves, neon knee joints"
+        mods: ["Movement", "Evasion"]
+      Boots:
+        name: "Chromanticore Sabatons"
+        stats: { Armor: 100, FallDamage: 0.5, GroundSlam: true }
+        visual: "Heavy chrome boots, shock absorbers, ground-pound emitters"
+        mods: ["Impact", "Stability"]
+      Cloak:
+        name: "Chromanticore Mantle"
+        stats: { Armor: 80, HeatDissipation: 0.2, Intimidation: true }
+        visual: "Heavy chrome-fiber cape, deployable shoulder pauldrons"
+        mods: ["Thermal", "Presence"]
+
+    setBonuses:
+      2piece:
+        description: "Chrome Resonance - Melee kills grant +20% movement speed and +15% melee damage for 8s. Stacks 3x."
+      4piece:
+        description: "Mirror's Edge - Blocking reflects 25% damage. Perfect block (last 0.3s) triggers shockwave (5m, 500 damage)."
+      6piece:
+        description: "CHROMANTICORE AWAKENING - Enter Mirror State: 100% damage reflection, melee attacks hit all enemies in 3m, chrome trail leaves damaging path. Duration 15s. Cooldown 3min. Visual: Full-body mirror flare, chromatic aberration."
+
+    crafting:
+      materials:
+        - "50x Chrome Alloy"
+        - "20x Hydraulic Polymer"
+        - "10x Neural Interface"
+        - "5x Kereznik Segment (rare drop from Chrome Jockeys)"
+        - "1x Chromanticore Core (boss drop: Adam Smasher / Royce)"
+
+  # ===========================================================================
+  # TIER 2: NETRUNNER - "Voidweave Regalia" (WoW T2 Mage / RS Mystic / Allods Psionic)
+  # Sephirah: Binah (Understanding) - Knowledge, structure, void
+  # Javelin: Tempest synergy
+  # Abyssal: Full integration
+  # ===========================================================================
+
+  ArmorSet_Voidweave:
+    base: ArmorSet_Base
+    name: "Voidweave Regalia"
+    sephirahAlignment: "Binah"
+    javelinSynergy: ["Tempest"]
+    abyssalIntegration: true
+    visualTheme: "Living void-fabric, shifting code patterns, bioluminescent circuitry, floating data shards"
+    msnSynergy: ["Binah (Understanding)", "Tempest - Elemental mastery", "Abyssal - Void seal synergy"]
+    
+    pieces:
+      Helmet:
+        name: "Voidweave Crown"
+        stats: { Armor: 100, RAM: 100, QuickhackDamage: 0.2, QuickhackCooldown: 0.15 }
+        visual: "Floating void-ring crown, holographic third eye, data streaming"
+        mods: ["RAM", "Quickhack", "Cooldown"]
+      Chest:
+        name: "Voidweave Robes"
+        stats: { Armor: 150, Shield: 300, QuickhackDamage: 0.15, HeatDissipation: 0.25 }
+        visual: "Living void fabric, shifting constellations, bioluminescent veins pulse with RAM"
+        mods: ["Shield", "Quickhack", "Thermal"]
+      Gloves:
+        name: "Voidweave Gloves"
+        stats: { Armor: 80, RAM: 50, QuickhackUpload: 0.3, PrimerStrength: 0.2 }
+        visual: "Void-weave sleeves, fingertips emit code particles, primer sigils glow"
+        mods: ["Upload", "Primer", "Speed"]
+      Legs:
+        name: "Voidweave Leggings"
+        stats: { Armor: 120, MovementSpeed: 0.1, HoverTime: 0.2, HeatDissipation: 0.3 }
+        visual: "Flowing void robes, hover-assist emitters, thermal vents"
+        mods: ["Movement", "Hover", "Thermal"]
+      Boots:
+        name: "Voidweave Slippers"
+        stats: { Armor: 60, SilentMovement: true, QuickhackRange: 0.25 }
+        visual: "Weightless void footfalls, code particles trail, silent"
+        mods: ["Stealth", "Range", "Stealth"]
+      Cloak:
+        name: "Voidweave Mantle"
+        stats: { Armor: 50, Shield: 200, QuickhackCooldown: 0.2, VoidResistance: 0.5 }
+        visual: "Tattered void cloak, floating code fragments, abyssal whisper visual"
+        mods: ["Shield", "Cooldown", "Abyssal"]
+
+    setBonuses:
+      2piece:
+        description: "Void Resonance - Quickhacks apply random primer (25% chance). Primers from quickhacks have +50% strength."
+      4piece:
+        description: "Structural Insight - Detonating a primer reveals all enemy weaknesses for 10s. Combo damage +50% vs revealed weaknesses."
+      6piece:
+        description: "VOIDWEAVE TRANSCENDENCE - Enter Binah State: All quickhacks cost 0 RAM, primers auto-apply on hit, combo damage 3x, hover indefinite, heat zero. Duration 20s. Cooldown 5min. Visual: Floating void mandala, code rain, Sephirah tree manifests."
+
+    crafting:
+      materials:
+        - "30x Void-Silk"
+        - "20x Neuro-Optical Fiber"
+        - "15x Abyssal Crystal"
+        - "10x Psionic Residue (Allods drop)"
+        - "1x Voidweave Core (Abyssal Fabricator)"
+
+  # ===========================================================================
+  # TIER 3: NOMAD/TECHIE - "Aldecaldo Expedition" (WoW T3 Hunter / RS Desert / Allods Astral)
+  # Sephirah: Netzach (Victory) - Endurance, motion, survival, art
+  # Javelin: Phantom synergy
+  # Story: Captain Vance questline
+  # ===========================================================================
+
+  ArmorSet_AldecaldoExpedition:
+    base: ArmorSet_Base
+    name: "Aldecaldo Expedition Gear"
+    sephirahAlignment: "Netzach"
+    javelinSynergy: ["Phantom"]
+    visualTheme: "Worn nomad leather, solar-weave, modular pouches, clan insignias, weathered tech"
+    msnSynergy: ["Netzach (Victory)", "Phantom - Flow state", "Captain Vance - Convoy command"]
+    
+    pieces:
+      Helmet:
+        name: "Nomad Ranger Hat"
+        stats: { Armor: 120, Health: 100, DetectionRange: 0.3, HeadshotDamage: 0.2 }
+        visual: "Wide-brim with solar band, retractable visor, clan feather"
+        mods: ["Detection", "Precision", "Solar"]
+      Chest:
+        name: "Expedition Duster"
+        stats: { Armor: 200, Health: 250, HeatDissipation: 0.3, SolarRegen: true }
+        visual: "Long coat, solar-weave lining, modular armor plates, clan patches"
+        mods: ["Thermal", "Solar", "Survival"]
+      Gloves:
+        name: "Trailblazer Grips"
+        stats: { Armor: 100, MeleeDamage: 0.15, ReloadSpeed: 0.2, ThrowingDamage: 0.3 }
+        visual: "Fingerless leather, reinforced knuckles, throwing knife slots"
+        mods: ["Melee", "Reload", "Throwing"]
+      Legs:
+        name: "Wasteland Striders"
+        stats: { Armor: 150, MovementSpeed: 0.15, StaminaRegen: 0.2, FallDamage: 0 }
+        visual: "Reinforced knees, hidden pistol holsters, water reclamation"
+        mods: ["Movement", "Stamina", "Survival"]
+      Boots:
+        name: "Dustwalker Boots"
+        stats: { Armor: 80, FallDamage: 1.0, MovementSpeed: 0.1, SandWalk: true }
+        visual: "Broken-in boots, magnetic soles, sand filters, silent tread"
+        mods: ["Movement", "Impact", "Stealth"]
+      Cloak:
+        name: "Clan Banner Cloak"
+        stats: { Armor: 60, TeamDamageBonus: 0.1, ReviveSpeed: 0.5, SolarRegen: true }
+        visual: "Clan banner fabric, solar thread, convoy coordination array"
+        mods: ["Team", "Support", "Solar"]
+
+    setBonuses:
+      2piece:
+        description: "Trailblazer - Sprinting builds Momentum (stacks to 10). At max: next melee attack executes (execute threshold +20%). Dodge grants Momentum."
+      4piece:
+        description: "Convoy Tactics - Allies within 15m gain +15% damage and +20% movement. Reviving ally grants both Overdrive (40% damage, 30% speed, 10s)."
+      6piece:
+        description: "ALDECALDO LEGEND - Enter Horizon State: Infinite stamina, melee attacks chain to 3 targets, throwing weapons return, allies in 30m share your buffs. Convoy vehicle spawns (Vance's Rig). Duration 30s. Cooldown 4min. Visual: Clan banner unfurls, convoy hologram, solar flare."
+
+    crafting:
+      materials:
+        - "40x Nomad Leather"
+        - "20x Solar-Weave"
+        - "15x Scrap Electronics"
+        - "10x Clan Sigil (Vance reward)"
+        - "1x Expedition Core (Nomad cache)"
+
+  # ===========================================================================
+  # TIER 4: CORPORATE ELITE - "Arasaka Shogun" (WoW T4 Paladin / RS Torva / Allods Justicar)
+  # Sephirah: Keter (Crown) - Authority, sovereignty, transcendence
+  # Javelin: Vector/Bastion hybrid
+  # Story: Arasaka questline, Hanako/Saburo
+  # ===========================================================================
+
+  ArmorSet_ArasakaShogun:
+    base: ArmorSet_Base
+    name: "Arasaka Shogun Battlegear"
+    sephirahAlignment: "Keter"
+    javelinSynergy: ["Vector", "Bastion"]
+    visualTheme: "Corporate perfection - matte black ceramic, gold trim, monofilament edges, Arasaka red accents, sovereign presence"
+    msnSynergy: ["Keter (Crown)", "Lilith (Sovereign) - Authority", "Arasaka - Corporate sovereignty"]
+    
+    pieces:
+      Helmet:
+        name: "Shogun Kabuto"
+        stats: { Armor: 200, Health: 200, Authority: true, QuickhackImmunity: 0.5 }
+        visual: "Ceramic kabuto, gold Arasaka crest, neural interface crown, red eye sensors"
+        mods: ["Authority", "Immunity", "Command"]
+      Chest:
+        name: "Shogun Do-Maru"
+        stats: { Armor: 350, Health: 400, Shield: 200, CorporateImmunity: true }
+        visual: "Ceramic laminates, gold filigree, hidden weapon ports, sovereign seal"
+        mods: ["Authority", "Immunity", "Corporate"]
+      Gloves:
+        name: "Shogun Kote"
+        stats: { Armor: 150, MeleeDamage: 0.25, SmartLink: true, Authority: true }
+        visual: "Articulated ceramic, gold joints, monofilament projectors, red palm emitters"
+        mods: ["Melee", "SmartLink", "Authority"]
+      Legs:
+        name: "Shogun Haidate"
+        stats: { Armor: 250, Health: 300, MovementSpeed: 0.1, Authority: true }
+        visual: "Articulated ceramic thighs, gold knee guards, sovereign stride"
+        mods: ["Movement", "Authority", "Presence"]
+      Boots:
+        name: "Shogun Suneate"
+        stats: { Armor: 150, FallDamage: 1.0, GroundSlam: true, Authority: true }
+        visual: "Ceramic greaves, gold ankle guards, sovereign impact crater"
+        mods: ["Impact", "Authority", "Sovereign"]
+      Cloak:
+        name: "Shogun Sode"
+        stats: { Armor: 100, Shield: 300, AuthorityAura: true, CorporateFear: true }
+        visual: "Ceramic pauldrons, gold trim, floating authority markers, red Arasaka banner"
+        mods: ["Shield", "Authority", "Fear"]
+
+    setBonuses:
+      2piece:
+        description: "Corporate Sovereignty - Gain Authority stacks (max 10) on kills. Each: +2% all damage, +1% damage reduction. At 10: emit Authority Aura (10m, allies +10% damage)."
+      4piece:
+        description: "Executive Order - Melee kills execute targets below 30% health. Quickhacks cannot target you. Deployed turrets/drones gain your Authority stacks."
+      6piece:
+        description: "SHOGUN AWAKENING - Enter Sovereign State: Immune to all status effects, melee attacks apply Execute (30% threshold), quickhacks cannot affect you, summon 2 Arasaka drone guardians (Scaled to your level). All allies in 20m gain Corporate Immunity. Duration 25s. Cooldown 5min. Visual: Gold Arasaka crest manifests, sovereign decree echoes, red-black aura."
+
+    crafting:
+      materials:
+        - "50x Arasaka Ceramic"
+        - "20x Gold Filigree"
+        - "15x Neural Gold"
+        - "10x Sovereign Seal (Arasaka Tower)"
+        - "1x Shogun Core (Saburo/Hanako quest)"
+
+  # ===========================================================================
+  # TIER 5: ABYSSAL MYSTIC - "Kraken's Embrace" (Abyssal / WoW T5 Shaman / RS Tectonic / Allods Abyssal)
+  # Sephirah: Yesod (Foundation) / Malkuth (Kingdom) - Dreams, memory, manifestation
+  # Javelin: Tempest + Phantom
+  # Abyssal: Full integration
+  # Story: Kaira/Nessie questline
+  # ===========================================================================
+
+  ArmorSet_KrakensEmbrace:
+    base: ArmorSet_Base
+    name: "Kraken's Embrace"
+    sephirahAlignment: "Yesod/Malkuth"
+    javelinSynergy: ["Tempest", "Phantom"]
+    abyssalIntegration: true
+    visualTheme: "Living abyssal tissue, bioluminescent veins, tentacle motifs, hydrothermal vents, void-chitin, kraken chitin"
+    msnSynergy: ["Yesod (Foundation)", "Malkuth (Kingdom)", "Abyssal - Full integration", "Nessie - Bond"]
+    
+    pieces:
+      Helmet:
+        name: "Kraken's Crown"
+        stats: { Armor: 150, Health: 150, WaterBreathing: true, PressureImmunity: true, SonarSense: true }
+        visual: "Kraken chitin helm, bioluminescent tendrils, sonar dome, third eye"
+        mods: ["Abyssal", "Pressure", "Sonar"]
+      Chest:
+        name: "Kraken's Carapace"
+        stats: { Armor: 300, Health: 300, Shield: 100, HydrothermalRegen: true, VoidResistance: 0.75 }
+        visual: "Living kraken chitin, bioluminescent veins pulse with heartbeat, hydrothermal vents on shoulders"
+        mods: ["Abyssal", "Hydrothermal", "Void"]
+      Gloves:
+        name: "Kraken's Grasp"
+        stats: { Armor: 120, MeleeDamage: 0.3, TentacleStrike: true, InkCloud: true }
+        visual: "Tentacle-like fingers, bioluminescent suckers, ink sacs, void-chitin claws"
+        mods: ["Abyssal", "Melee", "Ink"]
+      Legs:
+        name: "Kraken's Tentacles"
+        stats: { Armor: 180, MovementSpeed: 0.1, SwimSpeed: 2.0, WallClimb: true }
+        visual: "Tentacle-like leggings, adaptive suction, bioluminescent trail"
+        mods: ["Abyssal", "Movement", "Traversal"]
+      Boots:
+        name: "Kraken's Suckers"
+        stats: { Armor: 100, WaterWalking: true, SilentSwim: true, CavitationBurst: true }
+        visual: "Tentacle feet, adaptive suction cups, cavitation bubble emitters"
+        mods: ["Abyssal", "Traversal", "Stealth"]
+      Cloak:
+        name: "Kraken's Ink"
+        stats: { Armor: 80, InkCloud: true, VoidResistance: 0.5, NessieBond: true }
+        visual: "Living ink cloak, bioluminescent patterns shift with mood, Nessie sigil"
+        mods: ["Abyssal", "Ink", "Nessie"]
+
+    setBonuses:
+      2piece:
+        description: "Abyssal Adaptation - Immune to pressure, water breathing, hydrothermal regen (5 HP/s in water/near vents). Ink Cloud on dodge (blinds, applies toxin)."
+      4piece:
+        description: "Kraken's Wrath - Melee attacks have 25% chance to summon tentacle (5s, attacks nearest enemy, applies void primer). Ink Cloud on perfect dodge (radius 8m, blinds, applies void primer)."
+      6piece:
+        description: "KRAKEN'S AWAKENING - Enter Abyssal Sovereign State: Summon Kraken Avatar (scaled to level, 30s), all abyssal quickhacks 0 RAM, water/void damage 3x, hydrothermal vents spawn at feet, Nessie aid (summon Nessie for 15s). Pressure immunity aura (20m). Duration 30s. Cooldown 5min. Visual: Massive kraken manifestation, bioluminescent explosion, hydrothermal vents erupt, Nessie silhouette."
+
+    crafting:
+      materials:
+        - "40x Kraken Chitin"
+        - "30x Bioluminescent Tissue"
+        - "20x Hydrothermal Gel"
+        - "15x Void Crystal"
+        - "1x Kraken Heart (Nessie quest / Abyssal boss)"
+
+
+# =============================================================================
+# CUSTOM WEAPONS - RUNESCAPE / WOW / ALLODS INSPIRED
+# =============================================================================
+
+WeaponCategory:
+  # --- Custom Category: Abyssal/Mythic ---
+  AbyssalMythic:
+    displayName: "Abyssal Mythic"
+    description: "Weapons forged from abyssal depths, mythic legends, and corporate shadows."
+    icon: "abyssal_mythic"
+    subCategories: ["Melee", "Ranged", "Heavy", "Exotic"]
+
+  # --- Custom Category: Anthem Javelin Weapons ---
+  JavelinWeaponry:
+    displayName: "Javelin Arsenal"
+    description: "Exosuit-mounted weaponry: rails, mortars, seals, blades."
+    icon: "javelin_arsenal"
+    subCategories: ["Heavy", "Ordnance", "Focus", "Blade"]
+
+  # --- Custom Category: Allods Astral ---
+  AstralWeaponry:
+    displayName: "Astral Arsenal"
+    description: "Weapons from the Astral: glyphs, runes, ship-cannons, psionic focuses."
+    icon: "astral_arsenal"
+    subCategories: ["Ship", "Psionic", "Glyph", "Rune"]
+
+Item:
+  # =======================================================================
+  # RUNESCAPE INSPIRED - Custom Names & Cyberpunk Aesthetics
+  # =======================================================================
+
+  # Scythe - "Soulreaper Monofilament"
+  Melee_SoulreaperMonofilament:
+    displayName: "Soulreaper Monofilament Scythe"
+    description: "Death's harvest, mono-molecular edge. Each swing whispers names. Critical hits steal memory engrams."
+    category: "Melee"
+    subCategory: "Scythe"
+    rarity: "Legendary"
+    damage: 550
+    damageType: "Physical+Void"
+    attackSpeed: 1.0
+    stats:
+      CriticalChance: 0.15
+      CriticalDamage: 1.5
+      MemorySteal: true
+      LifeSteal: 0.1
+      FearRadius: 5
+    mods: ["Blade", "Grip", "Void_Core", "Memory"]
+    msnSynergy: ["Netzach (Victory) - I reap", "Phantom - Flow state"]
+    visual: "Folding monofilament scythe, void-black shaft, glowing edge, souls visible in blade"
+    skins: ["Standard", "Abyssal", "Reaper", "Tempest"]
+
+  # Godsword - "Omnislave Directed-Energy Blade"
+  Melee_OmnislaveBlade:
+    displayName: "Omnislave Directed-Energy Blade"
+    description: "Four corporate cores in one. Rotate modes: Arasaka (Fire), Militech (Explosive), Kang Tao (Electric), Night Corp (Void). Ultimate unity."
+    category: "Melee"
+    subCategory: "Greatsword"
+    rarity: "Mythic"
+    damage: 750
+    damageType: "Variable"
+    attackSpeed: 0.8
+    stats:
+      ModeSwap: true
+      Modes:
+        Arasaka: { DamageType: "Fire", Bonus: 0.3, Effect: "Ignite" }
+        Militech: { DamageType: "Explosive", Bonus: 0.4, Effect: "ArmorShred" }
+        KangTao: { DamageType: "Electric", Bonus: 0.3, Effect: "Chain" }
+        NightCorp: { DamageType: "Void", Bonus: 0.5, Effect: "Silence" }
+      UltimateCombo: "All four modes simultaneously for 10s (5min CD)"
+    mods: ["Core", "Hilt", "Mode_Selector", "Unity"]
+    msnSynergy: ["Keter (Crown) - I unify", "Tempest - Elemental mastery"]
+    visual: "Four-colored blade segments, rotating core, mode indicator, unity flare"
+    skins: ["Standard", "Corporate Unity", "Void Unity", "Tempest"]
+
+  # Abyssal Whip - "Kraken's Tentacle Whip"
+  Melee_KrakensTentacle:
+    displayName: "Kraken's Living Tentacle Whip"
+    description: "Living abyssal tentacle. Extends 15m. Each strike applies void/toxin. Grapple pull. Ink cloud on crit."
+    category: "Melee"
+    subCategory: "Whip"
+    rarity: "Legendary"
+    damage: 400
+    damageType: "Physical+Void+Toxin"
+    attackSpeed: 2.0
+    range: 15
+    stats:
+      GrapplePull: true
+      InkCloudOnCrit: true
+      TentacleSummon: 0.15
+      ToxinStacks: 3
+      VoidDamage: 100
+    mods: ["Tentacle", "Ink", "Venom", "Abyssal"]
+    msnSynergy: ["Abyssal - Full", "Tempest - Venom seal", "Phantom - Flow"]
+    visual: "Living tentacle, bioluminescent, ink sacs, suction cups"
+    skins: ["Standard", "Kraken", "Void", "Nessie"]
+
+  # =======================================================================
+  # WORLD OF WARCRAFT INSPIRED - Custom Cyberpunk Versions
+  # =======================================================================
+
+  # Ashbringer - "Arasaka Dawnbreaker" (Corporate Paladin)
+  Melee_ArasakaDawnbreaker:
+    displayName: "Arasaka Dawnbreaker"
+    description: "Corporate salvation. Golden monofilament. Executes targets below 20%. Cleanses status. Arasaka loyalty required."
+    category: "Melee"
+    subCategory: "Longsword"
+    rarity: "Legendary"
+    damage: 600
+    damageType: "Physical+Fire+Holy"
+    attackSpeed: 1.2
+    stats:
+      ExecuteThreshold: 0.2
+      CleanseOnHit: true
+      FireDamage: 150
+      HolyDamage: 100
+      ArasakaLoyaltyRequired: true
+      CorporateCleansing: true
+    mods: ["Blade", "Hilt", "Corporate", "Dawn"]
+    msnSynergy: ["Keter (Crown) - Corporate salvation", "Bastion - Shield synergy"]
+    visual: "Golden monofilament blade, Arasaka crest, corporate prayer scrolls, dawn light"
+    skins: ["Standard", "Corporate", "Sovereign", "Tempest"]
+
+  # Frostmourne - "Soulbreaker Cryo-Blade" (Netrunner Lich King)
+  Melee_SoulbreakerCryoBlade:
+    displayName: "Soulbreaker Cryo-Blade"
+    description: "Hunger given form. Each kill steals RAM, freezes soul. Ultimate: summon Ice Crown (AoE freeze, armor shred). Warning: consumes humanity."
+    category: "Melee"
+    subCategory: "Runeblade"
+    rarity: "Mythic"
+    damage: 700
+    damageType: "Physical+Cryo+Void"
+    attackSpeed: 1.0
+    stats:
+      RAMSteal: 20
+      FreezeChance: 0.25
+      SoulConsumption: true
+      IceCrownUltimate: true
+      HumanityCost: 5
+    mods: ["Blade", "Hilt", "Crown", "Soul"]
+    msnSynergy: ["Binah (Understanding) - I hunger", "Tempest - Frost seal", "Abyssal - Void"]
+    visual: "Jagged cryo-steel, blue runes, crown motif, souls trapped in blade, freezing aura"
+    skins: ["Standard", "Lich King", "Abyssal", "Tempest"]
+
+  # Thunderfury - "Stormbringer Kinetic Blade" (Elemental Shaman)
+  Melee_StormbringerBlade:
+    displayName: "Stormbringer Kinetic Blade"
+    description: "Lightning given form. Chain lightning on hit. Storm seal application. Ultimate: Thundercrash (AoE lightning, stun)."
+    category: "Melee"
+    subCategory: "Kinetic Blade"
+    rarity: "Legendary"
+    damage: 500
+    damageType: "Physical+Electric"
+    attackSpeed: 1.5
+    stats:
+      ChainLightning: true
+      StormSeal: true
+      StormCallerUltimate: true
+      ElectricDamage: 200
+    mods: ["Blade", "Hilt", "Storm", "Focus"]
+    msnSynergy: ["Chokmah (Wisdom) - I illuminate", "Tempest - Storm seal"]
+    visual: "Crackling kinetic blade, lightning core, storm sigils, thunder visual"
+    skins: ["Standard", "Tempest", "Astral", "Abyssal"]
+
+  # Warglaives - "Phantom Twinblades" (Demon Hunter / Phantom Javelin)
+  Melee_PhantomTwinblades:
+    displayName: "Phantom Twinblades of the Flow"
+    description: "Dance of death. Dual monofilament warglaives. Each hit builds Flow. Throw + recall. Ultimate: Blade Dance (invulnerable, 20 strikes)."
+    category: "Melee"
+    subCategory: "Twinblades"
+    rarity: "Legendary"
+    damage: 350
+    damageType: "Physical+Void"
+    attackSpeed: 2.5
+    stats:
+      FlowGeneration: 2
+      ThrowRecall: true
+      BladeDanceUltimate: true
+      FlowDamageBonus: 0.5
+    mods: ["Blades", "Grips", "Flow", "Dance"]
+    msnSynergy: ["Netzach (Victory) - I dance", "Phantom - Flow state"]
+    visual: "Twin monofilament glaives, void trails, flow particles, dance motion blur"
+    skins: ["Standard", "Phantom", "Abyssal", "Nessie"]
+
+  # =======================================================================
+  # ALLODS ONLINE INSPIRED - Astral Ship Weapons & Psionic Arms
+  # =======================================================================
+
+  # Astral Ship Cannon - "Voidbreaker Railgun" (Heavy)
+  Heavy_VoidbreakerRailgun:
+    displayName: "Voidbreaker Astral Railgun"
+    description: "Ship-class weapon scaled for exosuit. Fires void-tipped slugs at relativistic speed. Penetrates all. Creates temporary astral rift."
+    category: "Heavy"
+    subCategory: "Railgun"
+    rarity: "Mythic"
+    damage: 2000
+    damageType: "Physical+Void"
+    fireRate: 0.3
+    magazineSize: 4
+    reloadTime: 4.0
+    stats:
+      Penetration: 1.0
+      AstralRift: true
+      RelativisticVelocity: true
+      VoidDamage: 500
+      RiftDuration: 5
+      RiftDamagePerSec: 300
+    mods: ["Barrel", "Capacitor", "Void_Core", "Astral"]
+    msnSynergy: ["Da'at (Knowledge) - I breach", "Tempest - Void seal", "Allods - Astral"]
+    visual: "Massive railgun, void core, glyph etching, astral particles, ship-scale"
+    skins: ["Standard", "Astral", "Abyssal", "Allods"]
+
+  # Psionic Focus - "Glyphweaver Focus" (Support/Primer)
+  Focus_GlyphweaverFocus:
+    displayName: "Glyphweaver Psionic Focus"
+    description: "Allods psionic focus. Inscribe glyphs on reality. Glyphs: Fire, Ice, Lightning, Void, Life, Death. Combine for combo glyphs."
+    category: "Focus"
+    subCategory: "Psionic"
+    rarity: "Legendary"
+    damage: 0
+    fireRate: 1.0
+    stats:
+      GlyphSlots: 6
+      GlyphTypes: ["Fire", "Ice", "Lightning", "Void", "Life", "Death"]
+      ComboGlyphs: true
+      PrimerStrength: 150
+      PsionicDamage: 200
+    mods: ["Core", "Glyph_Slots", "Psionic", "Astral"]
+    msnSynergy: ["Chokmah (Wisdom) - I inscribe", "Tempest - Seal mastery", "Allods - Glyphs"]
+    visual: "Floating crystal focus, rotating glyphs, psionic energy, astral projection"
+    skins: ["Standard", "Astral", "Abyssal", "Allods"]
+
+  # Astral Ship - "Astral Skiff" (Hover Vehicle)
+  Vehicle_AstralSkiff:
+    displayName: "Astral Skiff - Glyphship"
+    description: "Personal astral vessel. Phase through matter. Glyph navigation. Astral rift travel. Ship combat: glyph cannons, rift shields."
+    type: "Vehicle"
+    class: "Hover/AV Hybrid"
+    rarity: "Mythic"
+    stats:
+      TopSpeed: 300
+      FlightSpeed: 200
+      Phasing: true
+      GlyphNavigation: true
+      AstralRiftTravel: true
+      ShipCombat: true
+      GlyphCannons: 4
+      RiftShields: true
+      Crew: 1
+    msnSynergy: ["Chokmah (Wisdom) - I navigate", "Vector - Precision", "Allods - Astral"]
+    visual: "Sleek skiff, glowing glyphs, astral sails, phase shimmer"
+    skins: ["Standard", "Astral", "Abyssal", "Allods"]
+
+
+# =============================================================================
+# NO MAN'S SKY INSPIRED - PROCEDURAL GENERATION
+# =============================================================================
+
+WeaponGenerator:
+  ProceduralWeaponSystem:
+    enabled: true
+    description: "No Man's Sky style procedural weapon generation with MSN/Abyssal constraints"
+    
+    # Base Archetypes (NMS weapon types)
+    archetypes:
+      - name: "Rifle"
+        baseDamage: [150, 250]
+        fireRate: [5, 15]
+        magazine: [20, 50]
+        attachments: ["Scope", "Barrel", "Grip", "Magazine", "Stock", "Underbarrel"]
+      
+      - name: "Pistol"
+        baseDamage: [80, 180]
+        fireRate: [8, 20]
+        magazine: [10, 25]
+        attachments: ["Barrel", "Grip", "Magazine", "Laser", "Suppressor"]
+      
+      - name: "Shotgun"
+        baseDamage: [200, 400]
+        fireRate: [1, 4]
+        magazine: [4, 12]
+        attachments: ["Barrel", "Grip", "Stock", "Choke", "Magazine"]
+      
+      - name: "Sniper"
+        baseDamage: [300, 600]
+        fireRate: [0.5, 2]
+        magazine: [4, 8]
+        attachments: ["Scope", "Barrel", "Bipod", "Magazine", "Stock"]
+      
+      - name: "SMG"
+        baseDamage: [60, 120]
+        fireRate: [15, 30]
+        magazine: [30, 60]
+        attachments: ["Barrel", "Grip", "Magazine", "Laser", "Stock"]
+      
+      - name: "Heavy"
+        baseDamage: [400, 800]
+        fireRate: [0.5, 2]
+        magazine: [5, 20]
+        attachments: ["Barrel", "Grip", "Bipod", "Cooling", "Magazine"]
+      
+      - name: "Melee"
+        baseDamage: [200, 500]
+        attackSpeed: [0.8, 2.0]
+        attachments: ["Blade", "Grip", "Core", "Pommel", "Guard"]
+
+    # Manufacturer Influences (NMS alien races -> CP2077 corps)
+    manufacturers:
+      Arasaka:
+        prefix: "Arasaka"
+        traits: ["HighAccuracy", "SmartLink", "CorporateTracking", "FireDamage"]
+        visual: "Corporate red/black, precision, smart-link"
+        msnSynergy: ["Keter (Crown)", "Chokmah (Wisdom)"]
+      
+      Militech:
+        prefix: "Militech"
+        traits: ["HighDamage", "ArmorPiercing", "ExplosiveRounds", "LargeMags"]
+        visual: "Military blue/grey, brutal, reliable"
+        msnSynergy: ["Gevurah (Severity)", "Bastion"]
+      
+      KangTao:
+        prefix: "Kang Tao"
+        traits: ["SmartLink", "ElectricDamage", "Tracking", "FastReload"]
+        visual: "Neon teal, precision, electric"
+        msnSynergy: ["Chokmah (Wisdom)", "Tempest"]
+      
+      BudgetArms:
+        prefix: "Budget Arms"
+        traits: ["HighDurability", "LowCost", "Modular", "Reliable"]
+        visual: "Orange/grey, utilitarian, modular"
+        msnSynergy: ["Malkuth (Kingdom)", "Vector"]
+      
+      Tsunami:
+        prefix: "Tsunami"
+        traits: ["ElementalDamage", "StatusEffect", "Style", "HighFireRate"]
+        visual: "Neon pink/cyan, elemental, flashy"
+        msnSynergy: ["Netzach (Victory)", "Phantom"]
+      
+      Dynalar:
+        prefix: "Dynalar"
+        traits: ["HeavyImpact", "Knockback", "AreaDenial", "SlowFire"]
+        visual: "Industrial orange/black, brutal, heavy"
+        msnSynergy: ["Gevurah (Severity)", "Bastion"]
+      
+      NUSA:
+        prefix: "NUSA"
+        traits: ["LegalCompliance", "Tracking", "NonLethal", "SmartTarget"]
+        visual: "Federal blue/white, precise, lawful"
+        msnSynergy: ["Hod (Glory)", "Vector"]
+      
+      Roche:
+        prefix: "Roche"
+        traits: ["PoisonDamage", "Healing", "Bio", "LifeSteal"]
+        visual: "Bio-green/white, organic, healing"
+        msnSynergy: ["Chesed (Mercy)", "Tempest"]
+      
+      Zetatech:
+        prefix: "Zetatech"
+        traits: ["Experimental", "VoidDamage", "Prototype", "HighRiskHighReward"]
+        visual: "Purple/void, experimental, unstable"
+        msnSynergy: ["Da'at (Knowledge)", "Tempest", "Abyssal"]
+      
+      MSNSystems:
+        prefix: "MSN"
+        traits: ["SephirahAffinity", "PrimerDetonator", "Adaptive", "Sovereign"]
+        visual: "Crimson/violet, Sephirah sigils, sovereign"
+        msnSynergy: ["All Sephirah", "Sovereign"]
+      
+      AbyssalForge:
+        prefix: "Abyssal"
+        traits: ["VoidDamage", "Pressure", "Bioluminescent", "Kraken", "Nessie"]
+        visual: "Void-black, bioluminescent, tentacles, hydrothermal"
+        msnSynergy: ["Abyssal", "Nessie", "Tempest", "Phantom"]
+      
+      AstralForge:
+        prefix: "Astral"
+        traits: ["Phasing", "Glyphs", "Psionic", "ShipScale", "RiftTravel"]
+        visual: "Glyphs, astral, psionic, phase"
+        msnSynergy: ["Chokmah (Wisdom)", "Allods", "Tempest"]
+
+    # Elemental/Effect Pool (NMS elements + CP2077 + Abyssal)
+    elementalEffects:
+      - "Fire (Ignite, Spread)"
+      - "Ice (Freeze, Shatter, ArmorShred)"
+      - "Electric (Chain, Stun, Overload)"
+      - "Toxin (Poison, Spread, ArmorIgnore)"
+      - "Void (Implosion, Silence, Pull)"
+      - "Fire+Ice (ThermalShock, ShatterBurn)"
+      - "Electric+Toxin (CorrosiveShock, ChainPoison)"
+      - "Void+Fire (VoidFlame, ImplosionBurn)"
+      - "Abyssal (Void+Pressure+Toxin+Bioluminescent)"
+      - "Astral (Phase+Glyph+Psionic+Rift)"
+      - "Hydrothermal (Fire+Pressure+Mineral)"
+      - "Kraken (Void+Toxin+Ink+Tentacle)"
+      - "Nessie (Void+Water+Song+Memory)"
+      - "Sovereign (Crimson+Gold+Authority+Execute)"
+
+    # Procedural Name Generation
+    nameTemplates:
+      - "{Manufacturer} {Adjective} {WeaponType}"
+      - "{Manufacturer} {Element} {WeaponType}"
+      - "{Manufacturer} {Noun} {WeaponType}"
+      - "{MythicPrefix} {WeaponType} of {Suffix}"
+      - "Project {CodeName}"
+
+    adjectives: ["Precision", "Brutal", "Silent", "Volatile", "Sovereign", "Abyssal", "Astral", "Prime", "Terminal", "Eternal"]
+    nouns: ["Judgment", "Mercy", "Vengeance", "Salvation", "Damnation", "Redemption", "Oblivion", "Infinity", "Sovereignty", "Convergence"]
+    mythicPrefixes: ["Sovereign", "Abyssal", "Astral", "Primal", "Ancient", "Forgotten", "Lost", "Final", "Ultimate", "Omega"]
+    suffixes: ["the Fallen", "the Risen", "the Void", "the End", "the Beginning", "Kings", "Gods", "Shadows", "Light", "Ashes"]
+
+    # Rarity Distribution
+    rarityWeights:
+      Common: 40
+      Uncommon: 30
+      Rare: 20
+      Epic: 8
+      Legendary: 2
+      Mythic: 0.5
+      Omega: 0.1
+
+    # NMS-style "Multitool" tech slots -> CP2077 mod slots
+    modSlotMapping:
+      Rifle: ["Scope", "Barrel", "Grip", "Magazine", "Stock", "Underbarrel"]
+      Pistol: ["Barrel", "Grip", "Magazine", "Laser", "Suppressor"]
+      Shotgun: ["Barrel", "Grip", "Stock", "Choke", "Magazine"]
+      Sniper: ["Scope", "Barrel", "Bipod", "Magazine", "Stock"]
+      SMG: ["Barrel", "Grip", "Magazine", "Laser", "Stock"]
+      Heavy: ["Barrel", "Grip", "Bipod", "Cooling", "Magazine"]
+      Melee: ["Blade", "Grip", "Core", "Pommel", "Guard"]
+
+    # NMS "Upgrade Modules" -> CP2077 Cyberdeck/Exosuit modules
+    upgradeModules:
+      DamageBoost: { stat: "Damage", range: [0.1, 0.5], rarity: "Common" }
+      FireRateBoost: { stat: "FireRate", range: [0.05, 0.3], rarity: "Common" }
+      MagazineBoost: { stat: "MagazineSize", range: [0.2, 1.0], rarity: "Uncommon" }
+      ReloadBoost: { stat: "ReloadSpeed", range: [0.1, 0.5], rarity: "Uncommon" }
+      ElementalDamage: { stat: "ElementalDamage", range: [0.15, 0.5], rarity: "Rare" }
+      PrimerStrength: { stat: "PrimerStrength", range: [0.1, 0.4], rarity: "Rare" }
+      ComboDamage: { stat: "ComboDamage", range: [0.2, 0.6], rarity: "Epic" }
+      HeatReduction: { stat: "HeatGeneration", range: [-0.3, -0.1], rarity: "Epic" }
+      Phasing: { stat: "Phasing", range: [0.1, 0.3], rarity: "Legendary" }
+      GlyphSlots: { stat: "GlyphSlots", range: [1, 3], rarity: "Legendary" }
+      AbyssalResonance: { stat: "AbyssalResonance", range: [0.2, 0.5], rarity: "Mythic" }
+      SovereignAuthority: { stat: "Authority", range: [0.1, 0.3], rarity: "Omega" }
+
+    # NMS "Discovery" -> CP2077 Scan/Analyze
+    proceduralDiscovery:
+      enabled: true
+      scanRadius: 50
+      analysisTime: 3
+      rewards:
+        - "Blueprint fragment"
+        - "Manufacture data"
+        - "Elemental affinity"
+        - "Manufacturer lore"
+        - "MSN synergy hint"
+
+    # NMS "Synthesis" -> CP2077 Crafting/Upgrade
+    synthesis:
+      enabled: true
+      maxUpgrades: 3
+      upgradeCost: ["Components", "Eddies", "RareMaterials", "AbyssalResources", "AstralGlyphs"]
+      fusion:
+        enabled: true
+        description: "Fuse two weapons of same type - new weapon with combined traits"
+        cost: "High"
+        risk: "Trait loss chance"
+
+
+VehicleGenerator:
+  ProceduralVehicleSystem:
+    enabled: true
+    description: "No Man's Sky style procedural hover/space vehicle generation for Night City"
+    
+    # Base Archetypes
+    archetypes:
+      - name: "Hovercar"
+        baseSpeed: [150, 250]
+        hoverHeight: [1, 3]
+        handling: [0.7, 0.9]
+        durability: [2000, 4000]
+        weaponSlots: 2
+        utilitySlots: 2
+        passengerCapacity: 2
+      
+      - name: "Hoversport"
+        baseSpeed: [250, 400]
+        hoverHeight: [0.5, 2]
+        handling: [0.9, 1.0]
+        durability: [1500, 3000]
+        weaponSlots: 1
+        utilitySlots: 1
+        passengerCapacity: 1
+      
+      - name: "Hovertruck"
+        baseSpeed: [100, 180]
+        hoverHeight: [2, 4]
+        handling: [0.5, 0.7]
+        durability: [5000, 8000]
+        weaponSlots: 3
+        utilitySlots: 3
+        passengerCapacity: 4
+        cargoCapacity: 2000
+      
+      - name: "AV/Hover Hybrid"
+        baseSpeed: [300, 500]
+        hoverHeight: [0, 500]
+        handling: [0.8, 0.95]
+        durability: [3000, 6000]
+        weaponSlots: 4
+        utilitySlots: 2
+        passengerCapacity: 4
+        flightCeiling: 1000
+      
+      - name: "Astral Skiff"
+        baseSpeed: [200, 400]
+        hoverHeight: [0, 10000]
+        handling: [0.85, 1.0]
+        durability: [2000, 5000]
+        weaponSlots: 2
+        utilitySlots: 3
+        passengerCapacity: 2
+        phasing: true
+        astralRiftTravel: true
+      
+      - name: "Abyssal Submersible"
+        baseSpeed: [30, 60]
+        hoverHeight: [0, 11000]
+        handling: [0.6, 0.8]
+        durability: [8000, 15000]
+        weaponSlots: 3
+        utilitySlots: 4
+        passengerCapacity: 4
+        depthRating: 11000
+        pressureHull: true
+
+    # Manufacturer Influence on Vehicles
+    manufacturerInfluence:
+      Arasaka: { handling: 0.1, speed: -0.05, armor: 0.2, smartSystems: true }
+      Militech: { speed: -0.1, armor: 0.3, weapons: 0.2, durability: 0.2 }
+      KangTao: { handling: 0.15, speed: 0.05, electricSystems: true }
+      BudgetArms: { cost: -0.3, durability: 0.1, modular: true }
+      Tsunami: { speed: 0.1, elementalSystems: true, style: true }
+      Dynalar: { armor: 0.2, impact: 0.3, speed: -0.15 }
+      NUSA: { legalCompliance: true, tracking: true, nonLethal: true }
+      Roche: { bioSystems: true, healing: true, stealth: 0.1 }
+      Zetatech: { experimental: true, voidSystems: true, risk: 0.2 }
+      MSNSystems: { sephirahSystems: true, adaptive: true, sovereign: true }
+      AbyssalForge: { pressureHull: true, voidSystems: true, krakenSystems: true, depth: 0.5 }
+      AstralForge: { phasing: true, glyphSystems: true, riftTravel: true, astralSpeed: 0.3 }
+
+    # Procedural Visual Customization (NMS style)
+    visualCustomization:
+      paintRegions: 4
+      materialSlots: ["Primary", "Secondary", "Accent", "Emissive", "Glyph", "Rift"]
+      decalSystem: true
+      animatedTextures: ["Bioluminescent", "Glyph", "Rift", "Phase", "Hydrothermal", "Void"]
+      particleEffects: ["Thruster", "Rift", "Phase", "Hydrothermal", "Bioluminescent", "Glyph", "Sovereign"]
+      underglow: true
+      jetTrails: ["Standard", "Rift", "Phase", "Sovereign", "Abyssal", "Astral", "Hydrothermal"]
+
+    # NMS "Freighter" -> CP2077 Convoy/Mobile Base
+    convoySystem:
+      enabled: true
+      maxEscorts: 6
+      mobileBase: true
+      fabrication: true
+      refuel: true
+      repair: true
+      captainVanceIntegration: true
+
+    # NMS "Space Stations" -> CP2077 Orbital Platforms / Orbital AV Pads
+    orbitalPlatforms:
+      enabled: true
+      orbitalAVTravel: true
+      orbitalFabrication: true
+      orbitalMarket: true
+      orbitalMissions: true
+      araskaTowerIntegration: true
+      kangTaoOrbital: true
+      militechOrbital: true
+      msnOrbital: true
+
+    # Procedural Mission Generation (NMS style)
+    proceduralMissions:
+      enabled: true
+      missionTypes:
+        - "Courier (Hover transport)"
+        - "Survey (Scan areas)"
+        - "Combat (Clear zone)"
+        - "Salvage (Recover wreckage)"
+        - "Astral (Rift exploration)"
+        - "Abyssal (Deep dive)"
+        - "Sovereign (MSN narrative)"
+        - "Convoy (Escort)"
+      rewardScaling: "Distance * Danger * FactionReputation"
+      proceduralNarrative: true
+      msnStoryIntegration: true
+
+    # NMS "Base Building" -> CP2077 Garage/Hangar Customization
+    garageCustomization:
+      enabled: true
+      displaySlots: 10
+      thematicDisplays: ["Javelin Exosuits", "Abyssal Fleet", "Astral Skiffs", "Sovereign Vehicles", "Procedural Legends"]
+      holographicDisplay: true
+      msnIntegration: true
+      vanceConvoyDisplay: true
+      nessieAbyssalDisplay: true
+      altAstralDisplay: true
+
+
+# =============================================================================
+# INTEGRATION: ABYSSAL ASSETS + ANTHEM JAVELIN + CUSTOM SETS + PROCEDURAL
+# =============================================================================
+
+Integration:
+  AbyssalAnthem:
+    description: "Abyssal quickhacks as Javelin primers/detonators. Abyssal cyberware as Javelin components."
+    primerMapping:
+      CrushDepth: { javelin: "All", type: "Detonator", element: "Void" }
+      BioluminescentMarker: { javelin: "All", type: "Primer", element: "Void" }
+      SonarPing: { javelin: "Tempest", type: "Primer", element: "Electric" }
+      ThermalVentOverload: { javelin: "Bastion", type: "Detonator", element: "Fire" }
+      VoidCollapse: { javelin: "All", type: "Ultimate", element: "Void" }
+    componentMapping:
+      PressureHullSkin: { javelin: "Bastion/Vector", slot: "Chest" }
+      BioluminescentEyes: { javelin: "All", slot: "Helmet" }
+      SonarSense: { javelin: "Tempest/Phantom", slot: "Helmet" }
+      ThermalVentLungs: { javelin: "Bastion/Tempest", slot: "Chest" }
+      AbyssalNervousSystem: { javelin: "Phantom/Tempest", slot: "Nervous" }
+
+  AnthemArmorSets:
+    description: "Armor sets grant Javelin affinity bonuses and cross-set synergies"
+    setJavelinAffinity:
+      Chromanticore: "Bastion"
+      Voidweave: "Tempest"
+      AldecaldoExpedition: "Phantom"
+      ArasakaShogun: "Vector/Bastion"
+      KrakensEmbrace: "Tempest/Phantom"
+    crossSetSynergy:
+      - name: "Sovereign bastion"
+        sets: ["Chromanticore", "ArasakaShogun"]
+        bonus: "Bastion heat capacity +200, shield +500, Authority Aura radius +5m"
+      - name: "Abyssal tempest"
+        sets: ["Voidweave", "KrakensEmbrace"]
+        bonus: "Tempest all 5 seals auto-prime, hover infinite, Abyssal quickhacks 0 RAM"
+      - name: "Phantom expedition"
+        sets: ["AldecaldoExpedition", "KrakensEmbrace"]
+        bonus: "Phantom Flow duration 2x, melee range +5m, Abyssal tentacle strike chance +25%"
+      - name: "Sovereign vector"
+        sets: ["Chromanticore", "ArasakaShogun", "Voidweave"]
+        bonus: "Vector weapon swap instant, combo damage 3x, ultimate charge 50% faster"
+
+  ProceduralAbyssal:
+    description: "Procedural generation creates Abyssal variants with Kraken/Nessie traits"
+    abyssalPrefixes: ["Abyssal", "Kraken", "Nessie", "Hydrothermal", "Voidborn", "Pressure", "Deep", "Trench", "Mariana", "Hadal"]
+    abyssalTraits: ["PressureHull", "Bioluminescent", "VoidResistance", "HydrothermalRegen", "InkCloud", "TentacleStrike", "SonarSense", "NessieBond", "KrakenSummon", "AbyssalResonance"]
+    nessieVariants:
+      - name: "Nessie's Blessing"
+        chance: 0.001
+        description: "Weapon/vehicle blessed by Nessie. Permanent Nessie bond, summon Nessie aid, abyssal resonance max."
+      - name: "Kraken's Grasp"
+        chance: 0.005
+        description: "Kraken-touched. Tentacle strike on hit, ink cloud on dodge, hydrothermal regen."
+      - name: "Hydrothermal Heart"
+        chance: 0.01
+        description: "Forges hydrothermal vent on kill. Fire immunity, mineral drops, vent traversal."
+
+  ProceduralAstral:
+    description: "Procedural generation creates Astral variants with Glyph/Phase/Rift traits"
+    astralPrefixes: ["Astral", "Glyph", "Phase", "Rift", "Psionic", "Ship", "Voidship", "Star", "Cosmic", "Infinite"]
+    astralTraits: ["Phasing", "GlyphSlots", "RiftTravel", "PsionicDamage", "ShipSystems", "AstralNavigation", "VoidshipHull", "CosmicAwareness", "InfiniteRange", "GlyphMastery"]
+    allodsVariants:
+      - name: "Astral Navigator"
+        chance: 0.001
+        description: "Glyph navigation mastery. All rifts visible, phase through any matter, infinite astral range."
+      - name: "Glyphweaver"
+        chance: 0.005
+        description: "Inscribe any glyph. Combo glyphs auto-create. Psionic damage 3x."
+      - name: "Voidship Captain"
+        chance: 0.01
+        description: "Ship-scale systems on exosuit/vehicle. Rift cannons, phase hull, astral rift travel."
+
+  ProceduralSovereign:
+    description: "Procedural generation creates MSN Sovereign variants with Crimson/Gold/Authority"
+    sovereignPrefixes: ["Sovereign", "Crimson", "Gold", "Authority", "Covenant", "Lilith", "Unbound", "Resonance", "Metaconscious", "Omega"]
+    sovereignTraits: ["Authority", "ExecuteThreshold", "CorporateImmunity", "SovereignAura", "CovenantBond", "LilithResonance", "UnboundResonance", "Metaconscious", "OmegaPoint", "CrimsonGoldSynthesis"]
+    lilithVariants:
+      - name: "Lilith's Favor"
+        chance: 0.001
+        description: "Blessed by Lilith. Permanent crimson eyes, unbound resonance, sovereign authority, covenant bond."
+      - name: "Covenant Forged"
+        chance: 0.005
+        description: "Forged in Covenant. Dual consciousness piloting, shared sovereignty, crimson-gold synthesis."
+      - name: "Omega Point"
+        chance: 0.0001
+        description: "Omega tier. All perks maxed, infinite engram storage, cross-reality nav, narrative generation, Omega Point access."

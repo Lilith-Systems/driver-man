@@ -1,0 +1,18 @@
+{
+  "last_pull": "2026-06-21T07:52:51Z",
+  "source": "gemini CLI + gws + himalaya",
+  "metrics": {
+    "drivers": 61,
+    "treasury": 611.36,
+    "deliveries": 16
+  },
+  "recs_applied": [
+    "Outreach to 4 new restaurants via Polsia Ambassador",
+    "Allocate $91.7 from pool for repairs (2 drivers)",
+    "Test dispatch router with live simulation",
+    "Log recent tx to transparent ledger",
+    "Push Phase 2 status to GitHub driver-man + business-strategy",
+    "Schedule driver shifts via gws Calendar"
+  ],
+  "notes": "Updates applied to state, plans, GitHub. CLIs integrated for business ops."
+}

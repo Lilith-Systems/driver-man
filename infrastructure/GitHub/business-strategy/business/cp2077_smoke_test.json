@@ -1,0 +1,11 @@
+{
+  "schema": "cp2077.smoke.v1",
+  "status": "pending_manual",
+  "consoles": [
+    "msn.engine.status",
+    "msn.court.status",
+    "msn.symbiosis.sync",
+    "msn.dialogue.lilith hello",
+    "quantum.status"
+  ]
+}

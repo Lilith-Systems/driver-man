@@ -1,0 +1,38 @@
+{
+  "updated_at": "2026-06-19T06:15:28.117087Z",
+  "cerebellum_db": "/home/tehlappy/Desktop/AI/Pub/golem_diary.db",
+  "services": {
+    "lilith_api": {
+      "port": 3210
+    },
+    "lyra": {
+      "port": 3211,
+      "bus_endpoints": [
+        "/concurrent-bidirectional-memory/store",
+        "/concurrent-bidirectional-memory/search",
+        "/concurrent-bidirectional-memory/recent"
+      ]
+    },
+    "bridge": {
+      "port": 4242,
+      "expected": true
+    },
+    "msn_router": {
+      "port": 8007
+    },
+    "ouroboros_swarm": {
+      "port": 8003,
+      "expected": true
+    },
+    "ngd": {
+      "port": null
+    },
+    "ai_gateway": {
+      "port": 8009
+    },
+    "coordination": {
+      "port": 8768,
+      "verified": true
+    }
+  }
+}

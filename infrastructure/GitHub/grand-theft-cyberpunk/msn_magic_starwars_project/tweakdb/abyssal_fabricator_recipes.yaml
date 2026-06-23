@@ -1,0 +1,518 @@
+################################################################################
+# ABYSSAL FABRICATOR RECIPES
+# Playable crafting and exchange progression for Abyssal Assets, Loch Exchange,
+# Nessie Treasury, Soul Coins, space combat, Javelin suits, quickhacks, and
+# clothing/armor fragments.
+################################################################################
+
+AbyssalFabricatorRecipes:
+  schema: "msn.abyssal_fabricator_recipes.v1"
+  localOnly: true
+  sourceOfTruth: "Cyberpunk-facing recipe bridge for Abyssal Fabricator and Loch Exchange"
+  economy:
+    exchange: "The Loch Exchange"
+    fabricator: "Abyssal Fabricator"
+    feeModel:
+      buyFeePercent: 3
+      burnPercent: 1
+      nessieTreasuryPercent: 2
+    currencies:
+      eddies: "Night City retail and fixer cash"
+      soulCoins: "Abyssal Exchange crafting, listing, covenant, and calibration fees"
+      salvageCredits: "Freighter maintenance, fighter repairs, orbital salvage settlement"
+      nessieTreasuryMarks: "Guardian-backed vouchers earned through respectful Nessie and restoration actions"
+
+  progressionTiers:
+    tidepool:
+      displayName: "Tidepool Access"
+      unlockFlags: ["q_abyssal_gathering_01_complete"]
+      description: "Entry recipes for Watson canals, Pacifica coast, and first Old Net dredges."
+    trench:
+      displayName: "Trench Access"
+      unlockFlags: ["q_abyssal_processing_01_complete", "NessieFriendship_Tier2"]
+      description: "Pressure alloys, sonar tools, cyberware catalysts, and exchange-grade components."
+    hadal:
+      displayName: "Hadal Access"
+      unlockFlags: ["q_abyssal_crafting_01_complete", "NessieFriendship_Tier3"]
+      description: "Kraken, void, and Javelin recipes for deep-zone survival and advanced combat."
+    orbital:
+      displayName: "Orbital Access"
+      unlockFlags: ["msn_space_expansion_unlocked", "CovenantFreighter_Acquired"]
+      description: "Freighter, fighter, space-battle, and vacuum-rated Javelin module fabrication."
+    sovereign:
+      displayName: "Sovereign Access"
+      unlockFlags: ["q_abyssal_skillcape_01_complete", "NessieFriendship_Tier5"]
+      description: "Mythic covenant recipes with Treasury review and high Soul Coin burns."
+
+  materials:
+    void_crystal:
+      displayName: "Void Crystal"
+      category: "abyssal_mineral"
+      rarity: "Epic"
+      sources: ["Void Collapse residue", "Pacifica Trench vents", "Blackwall meteor fragments"]
+      exchangeListing: true
+    refined_void_crystal:
+      displayName: "Refined Void Crystal"
+      category: "abyssal_mineral"
+      rarity: "Legendary"
+      sources: ["Abyssal Fabricator refinement", "Nessie Treasury bounty crates"]
+      exchangeListing: true
+    pressure_steel:
+      displayName: "Pressure Steel"
+      category: "alloy"
+      rarity: "Rare"
+      sources: ["Trench salvage", "Vance convoy contracts", "submersible hull plates"]
+      exchangeListing: true
+    hadal_pressure_steel:
+      displayName: "Hadal Pressure Steel"
+      category: "alloy"
+      rarity: "Epic"
+      sources: ["Pressure Steel tempering", "Hadal crawler salvage"]
+      exchangeListing: true
+    kraken_tooth:
+      displayName: "Kraken Tooth"
+      category: "abyssal_biology"
+      rarity: "Legendary"
+      sources: ["Kraken Matriarch trial reward", "non-lethal shed-tooth offerings"]
+      exchangeListing: false
+      treasuryBound: true
+    kraken_ink:
+      displayName: "Kraken Ink"
+      category: "abyssal_biology"
+      rarity: "Epic"
+      sources: ["Kraken pacification gift", "ink cloud residue harvest"]
+      exchangeListing: true
+    old_net_telemetry:
+      displayName: "Old Net Telemetry"
+      category: "data_salvage"
+      rarity: "Rare"
+      sources: ["Watson canal dredges", "Kaira memory vehicle scans", "Orbital Graveyard flight computers"]
+      exchangeListing: true
+    old_net_blackbox:
+      displayName: "Old Net Blackbox"
+      category: "data_salvage"
+      rarity: "Legendary"
+      sources: ["Engram debris", "Blackwall quarantine caches", "Nyx Silent Ark contracts"]
+      exchangeListing: false
+    soul_coin:
+      displayName: "Soul Coin"
+      category: "currency"
+      rarity: "Uncommon"
+      sources: ["Loch Exchange settlement", "Abyssal contracts", "skill saga rewards"]
+      exchangeListing: false
+    nessie_treasury_mark:
+      displayName: "Nessie Treasury Mark"
+      category: "guardian_voucher"
+      rarity: "Epic"
+      sources: ["Respectful sightings", "restoration donations", "guardian bounties"]
+      exchangeListing: false
+      treasuryBound: true
+    salvage_credit:
+      displayName: "Salvage Credit"
+      category: "currency"
+      rarity: "Uncommon"
+      sources: ["Orbital salvage board", "freighter defense contracts", "fighter recovery payouts"]
+      exchangeListing: false
+    javelin_servo_bundle:
+      displayName: "Javelin Servo Bundle"
+      category: "javelin_module"
+      rarity: "Rare"
+      sources: ["Aldecaldo machine shops", "fabricator assembly", "combat salvage"]
+      exchangeListing: true
+    javelin_reaction_thruster:
+      displayName: "Javelin Reaction Thruster"
+      category: "javelin_module"
+      rarity: "Epic"
+      sources: ["space-battle salvage", "fighter retrofit benches", "Mass Driver Dock"]
+      exchangeListing: true
+    fighter_capacitor:
+      displayName: "Fighter Capacitor"
+      category: "fighter_module"
+      rarity: "Epic"
+      sources: ["PhantomNeedle salvage", "VectorStarling repairs", "Orbital Graveyard wrecks"]
+      exchangeListing: true
+    freighter_hull_plate:
+      displayName: "Freighter Hull Plate"
+      category: "freighter_module"
+      rarity: "Rare"
+      sources: ["Covenant Freighter maintenance", "convoy defense", "shipyard scraps"]
+      exchangeListing: true
+    quickhack_fragment:
+      displayName: "Quickhack Fragment"
+      category: "daemon_fragment"
+      rarity: "Uncommon"
+      sources: ["Old Net dredging", "enemy netrunner drops", "Loch Exchange daemon lots"]
+      exchangeListing: true
+    abyssal_daemon_core:
+      displayName: "Abyssal Daemon Core"
+      category: "daemon_fragment"
+      rarity: "Legendary"
+      sources: ["Void quickhack refinement", "Nessie Communion Link", "Da'at caches"]
+      exchangeListing: false
+    clothing_fragment:
+      displayName: "Clothing Fragment"
+      category: "armor_fragment"
+      rarity: "Uncommon"
+      sources: ["set salvage", "Pacifica vendors", "Abyssal wardrobe dismantling"]
+      exchangeListing: true
+    voidweave_thread:
+      displayName: "Voidweave Thread"
+      category: "armor_fragment"
+      rarity: "Epic"
+      sources: ["Void Walker Coat salvage", "Binah quest caches", "fabricator synthesis"]
+      exchangeListing: true
+    bioluminescent_tissue:
+      displayName: "Bioluminescent Tissue"
+      category: "abyssal_biology"
+      rarity: "Rare"
+      sources: ["non-lethal creature scans", "hydrothermal gardens", "Nessie-friendly recovery"]
+      exchangeListing: true
+    hydrothermal_gel:
+      displayName: "Hydrothermal Gel"
+      category: "chemical"
+      rarity: "Rare"
+      sources: ["vent harvesting", "Thermal Vent Overload residue", "Badlands reservoir contracts"]
+      exchangeListing: true
+    sonar_lens:
+      displayName: "Sonar Lens"
+      category: "sensor"
+      rarity: "Rare"
+      sources: ["Sonar Sense calibration", "Nessie sighting rewards", "submersible salvage"]
+      exchangeListing: true
+    covenant_relay:
+      displayName: "Covenant Relay"
+      category: "guardian_module"
+      rarity: "Legendary"
+      sources: ["Nessie Friendship Tier 3", "Hermes bridge calibration", "Loch Exchange reputation"]
+      exchangeListing: false
+      treasuryBound: true
+    abyssal_blueprint_shard:
+      displayName: "Abyssal Blueprint Shard"
+      category: "blueprint"
+      rarity: "Epic"
+      sources: ["Abyssal skill sagas", "field guides", "Loch Exchange limited listings"]
+      exchangeListing: true
+
+  recipes:
+    pressure_steel_batch:
+      displayName: "Pressure Steel Batch"
+      station: "Abyssal Fabricator"
+      tier: "tidepool"
+      category: "material_refinement"
+      output: { item: "pressure_steel", quantity: 8 }
+      inputs:
+        - { item: "freighter_hull_plate", quantity: 1 }
+        - { item: "hydrothermal_gel", quantity: 2 }
+      fees: { soulCoins: 12, salvageCredits: 3 }
+      unlock: ["q_abyssal_gathering_01_complete"]
+      notes: "Entry alloy for weapons, dive gear, vehicle hulls, and fabricator upgrades."
+    refined_void_crystal:
+      displayName: "Refined Void Crystal"
+      station: "Abyssal Fabricator"
+      tier: "trench"
+      category: "material_refinement"
+      output: { item: "refined_void_crystal", quantity: 1 }
+      inputs:
+        - { item: "void_crystal", quantity: 5 }
+        - { item: "old_net_telemetry", quantity: 2 }
+      fees: { soulCoins: 35, nessieTreasuryMarks: 1 }
+      unlock: ["NessieFriendship_Tier2", "q_abyssal_processing_01_complete"]
+      notes: "Required for mythic quickhack and void weapon recipes."
+    hadal_pressure_steel:
+      displayName: "Hadal Pressure Steel"
+      station: "Abyssal Fabricator"
+      tier: "hadal"
+      category: "material_refinement"
+      output: { item: "hadal_pressure_steel", quantity: 4 }
+      inputs:
+        - { item: "pressure_steel", quantity: 12 }
+        - { item: "kraken_ink", quantity: 2 }
+        - { item: "sonar_lens", quantity: 1 }
+      fees: { soulCoins: 55, salvageCredits: 10 }
+      unlock: ["q_abyssal_crafting_01_complete"]
+      notes: "Deep armor, pressure cyberware, and Bastion hull module alloy."
+
+    abyssal_trident:
+      displayName: "Abyssal Trident"
+      station: "Abyssal Fabricator"
+      tier: "hadal"
+      category: "weapon"
+      output: { item: "Items.AbyssalTrident", quantity: 1 }
+      inputs:
+        - { item: "pressure_steel", quantity: 50 }
+        - { item: "void_crystal", quantity: 20 }
+        - { item: "kraken_tooth", quantity: 3 }
+        - { item: "abyssal_blueprint_shard", quantity: 2 }
+      fees: { soulCoins: 250, nessieTreasuryMarks: 2 }
+      unlock: ["AbyssalWeaponBlueprints_Unlocked", "NessieFriendship_Tier3"]
+      exchangeRules: { listingAllowed: false, blueprintTradeAllowed: true, treasuryReview: true }
+      notes: "Pressure-forged polearm. Full item spec lives in Abyssal Assets field guide."
+    void_harpoon_tether:
+      displayName: "Void Harpoon Tether Assembly"
+      station: "Abyssal Fabricator"
+      tier: "trench"
+      category: "weapon_component"
+      output: { item: "Items.VoidHarpoon_TetherAssembly", quantity: 1 }
+      inputs:
+        - { item: "pressure_steel", quantity: 24 }
+        - { item: "void_crystal", quantity: 12 }
+        - { item: "old_net_telemetry", quantity: 4 }
+      fees: { soulCoins: 90, salvageCredits: 12 }
+      unlock: ["abyssal.fabricator", "q_abyssal_processing_01_complete"]
+      exchangeRules: { listingAllowed: true, blueprintTradeAllowed: true }
+      notes: "Turns salvaged rail hardware into a void-tether anchor system."
+    krakens_living_tentacle:
+      displayName: "Kraken's Living Tentacle Whip"
+      station: "Abyssal Fabricator"
+      tier: "sovereign"
+      category: "weapon"
+      output: { item: "Items.Melee_KrakensTentacle", quantity: 1 }
+      inputs:
+        - { item: "kraken_tooth", quantity: 5 }
+        - { item: "kraken_ink", quantity: 8 }
+        - { item: "refined_void_crystal", quantity: 4 }
+        - { item: "covenant_relay", quantity: 1 }
+      fees: { soulCoins: 500, nessieTreasuryMarks: 5 }
+      unlock: ["NessieFriendship_Tier5", "q_abyssal_skillcape_01_complete"]
+      exchangeRules: { listingAllowed: false, blueprintTradeAllowed: false, treasuryReview: true }
+      notes: "Covenant-bound mythic weapon. No hostile harvesting path."
+
+    pressure_hull_skin_catalyst:
+      displayName: "Pressure Hull Skin Catalyst"
+      station: "Abyssal Fabricator"
+      tier: "trench"
+      category: "cyberware_component"
+      output: { item: "Cyberware.PressureHullSkin_Catalyst", quantity: 1 }
+      inputs:
+        - { item: "hadal_pressure_steel", quantity: 2 }
+        - { item: "bioluminescent_tissue", quantity: 6 }
+        - { item: "hydrothermal_gel", quantity: 4 }
+      fees: { soulCoins: 120, nessieTreasuryMarks: 1 }
+      unlock: ["AbyssalCyberwareAccess", "q_abyssal_processing_01_complete"]
+      notes: "Catalyst is tradable; installed cyberware remains character-bound."
+    sonar_sense_calibrator:
+      displayName: "Sonar Sense Calibrator"
+      station: "Abyssal Fabricator"
+      tier: "tidepool"
+      category: "cyberware_component"
+      output: { item: "Cyberware.SonarSense_Calibrator", quantity: 1 }
+      inputs:
+        - { item: "sonar_lens", quantity: 2 }
+        - { item: "old_net_telemetry", quantity: 3 }
+        - { item: "quickhack_fragment", quantity: 5 }
+      fees: { soulCoins: 45 }
+      unlock: ["q_abyssal_gathering_01_complete"]
+      notes: "Improves Nessie detection, Old Net mapping, and respectful approach prompts."
+
+    voidweave_panel:
+      displayName: "Voidweave Armor Panel"
+      station: "Abyssal Fabricator"
+      tier: "trench"
+      category: "clothing_component"
+      output: { item: "Clothing.Voidweave_ArmorPanel", quantity: 1 }
+      inputs:
+        - { item: "clothing_fragment", quantity: 12 }
+        - { item: "voidweave_thread", quantity: 4 }
+        - { item: "void_crystal", quantity: 3 }
+      fees: { soulCoins: 60 }
+      unlock: ["ArmorSet_Voidweave_Blueprint"]
+      exchangeRules: { listingAllowed: true, setBoundWhenInstalled: true }
+      notes: "Used by Voidweave set repairs and mid-tier stealth upgrades."
+    krakens_embrace_plate:
+      displayName: "Kraken's Embrace Plate"
+      station: "Abyssal Fabricator"
+      tier: "hadal"
+      category: "clothing_component"
+      output: { item: "Clothing.KrakensEmbrace_Plate", quantity: 1 }
+      inputs:
+        - { item: "hadal_pressure_steel", quantity: 3 }
+        - { item: "bioluminescent_tissue", quantity: 8 }
+        - { item: "kraken_ink", quantity: 4 }
+        - { item: "voidweave_thread", quantity: 3 }
+      fees: { soulCoins: 140, nessieTreasuryMarks: 2 }
+      unlock: ["ArmorSet_KrakensEmbrace_Blueprint", "NessieFriendship_Tier3"]
+      exchangeRules: { listingAllowed: true, treasuryReview: true }
+      notes: "Fragment path for Kraken's Embrace without farming Nessie or hostile guardian loot."
+
+    sonar_ping_daemon:
+      displayName: "Sonar Ping Daemon"
+      station: "Abyssal Fabricator"
+      tier: "tidepool"
+      category: "quickhack"
+      output: { item: "Quickhack.SonarPing_Abyssal", quantity: 1 }
+      inputs:
+        - { item: "quickhack_fragment", quantity: 10 }
+        - { item: "sonar_lens", quantity: 1 }
+        - { item: "old_net_telemetry", quantity: 2 }
+      fees: { soulCoins: 35 }
+      unlock: ["q_abyssal_gathering_01_complete"]
+      notes: "Non-hostile utility daemon for mapping and Nessie sighting progression."
+    void_collapse_daemon_core:
+      displayName: "Void Collapse Daemon Core"
+      station: "Abyssal Fabricator"
+      tier: "hadal"
+      category: "quickhack_component"
+      output: { item: "abyssal_daemon_core", quantity: 1 }
+      inputs:
+        - { item: "quickhack_fragment", quantity: 30 }
+        - { item: "refined_void_crystal", quantity: 3 }
+        - { item: "old_net_blackbox", quantity: 1 }
+      fees: { soulCoins: 220, nessieTreasuryMarks: 2 }
+      unlock: ["Quickhack_VoidCollapse_Blueprint", "NessieFriendship_Tier3"]
+      exchangeRules: { listingAllowed: false, blueprintTradeAllowed: true }
+      notes: "Late-game daemon core with Treasury friction to discourage spam crafting."
+
+    vector_starling_avionics:
+      displayName: "Vector Starling Avionics Module"
+      station: "Covenant Freighter Fabricator"
+      tier: "orbital"
+      category: "fighter_module"
+      output: { item: "Vehicle.VectorStarling_Avionics", quantity: 1 }
+      inputs:
+        - { item: "fighter_capacitor", quantity: 2 }
+        - { item: "old_net_telemetry", quantity: 5 }
+        - { item: "javelin_reaction_thruster", quantity: 1 }
+      fees: { soulCoins: 130, salvageCredits: 45 }
+      unlock: ["CovenantFreighter_Acquired", "msn.fighters.status"]
+      notes: "Dogfight commander upgrade tied to Vector Javelin neural sync."
+    bastion_bulwark_hull:
+      displayName: "Bastion Bulwark Siege Hull"
+      station: "Covenant Freighter Fabricator"
+      tier: "orbital"
+      category: "fighter_module"
+      output: { item: "Vehicle.BastionBulwark_SiegeHull", quantity: 1 }
+      inputs:
+        - { item: "freighter_hull_plate", quantity: 6 }
+        - { item: "hadal_pressure_steel", quantity: 4 }
+        - { item: "fighter_capacitor", quantity: 1 }
+      fees: { soulCoins: 160, salvageCredits: 60 }
+      unlock: ["CovenantFreighter_Acquired", "msn.javelin.space"]
+      notes: "Boarding shield and hull-breaker platform for Bastion Javelin pilots."
+    phantom_needle_tether:
+      displayName: "Phantom Needle Boarding Tether"
+      station: "Covenant Freighter Fabricator"
+      tier: "orbital"
+      category: "fighter_module"
+      output: { item: "Vehicle.PhantomNeedle_BoardingTether", quantity: 1 }
+      inputs:
+        - { item: "javelin_reaction_thruster", quantity: 2 }
+        - { item: "void_crystal", quantity: 6 }
+        - { item: "old_net_blackbox", quantity: 1 }
+      fees: { soulCoins: 180, salvageCredits: 55 }
+      unlock: ["NyxSilentArk_RouteKnown", "msn.fighters.status"]
+      notes: "Interceptor boarding tool for stealth approaches and weak-point assaults."
+    tempest_halo_ion_crown:
+      displayName: "Tempest Halo Ion Crown"
+      station: "Covenant Freighter Fabricator"
+      tier: "orbital"
+      category: "fighter_module"
+      output: { item: "Vehicle.TempestHalo_IonCrown", quantity: 1 }
+      inputs:
+        - { item: "fighter_capacitor", quantity: 3 }
+        - { item: "quickhack_fragment", quantity: 18 }
+        - { item: "refined_void_crystal", quantity: 2 }
+      fees: { soulCoins: 170, salvageCredits: 50 }
+      unlock: ["msn_space_expansion_unlocked", "msn.javelin.space"]
+      notes: "Shield-stripper module for swarm clearing and chain-lightning detonations."
+
+    vacuum_javelin_kit:
+      displayName: "Vacuum Javelin Kit"
+      station: "Abyssal Fabricator"
+      tier: "orbital"
+      category: "javelin_module"
+      output: { item: "Javelin.VacuumSealKit", quantity: 1 }
+      inputs:
+        - { item: "javelin_servo_bundle", quantity: 3 }
+        - { item: "javelin_reaction_thruster", quantity: 2 }
+        - { item: "pressure_steel", quantity: 20 }
+        - { item: "hydrothermal_gel", quantity: 6 }
+      fees: { soulCoins: 140, salvageCredits: 35 }
+      unlock: ["msn.javelin.space", "CovenantFreighter_Acquired"]
+      notes: "Adds vacuum sealing, mag boots, RCS, boarding tether, and oxygen heat loop."
+    abyssal_fabricator_upgrade:
+      displayName: "Abyssal Fabricator Upgrade: Hadal Matrix"
+      station: "Abyssal Fabricator"
+      tier: "trench"
+      category: "station_upgrade"
+      output: { item: "Station.AbyssalFabricator_HadalMatrix", quantity: 1 }
+      inputs:
+        - { item: "pressure_steel", quantity: 40 }
+        - { item: "old_net_telemetry", quantity: 15 }
+        - { item: "abyssal_blueprint_shard", quantity: 5 }
+        - { item: "sonar_lens", quantity: 3 }
+      fees: { soulCoins: 300, nessieTreasuryMarks: 2 }
+      unlock: ["q_abyssal_processing_01_complete", "LochExchange_Reputation_Trusted"]
+      notes: "Unlocks Hadal recipes and reduces material loss on failed fabrications."
+    loch_exchange_terminal:
+      displayName: "Loch Exchange Terminal"
+      station: "Abyssal Fabricator"
+      tier: "trench"
+      category: "base_prop"
+      output: { item: "Prop.LochExchangeTerminal", quantity: 1 }
+      inputs:
+        - { item: "old_net_telemetry", quantity: 10 }
+        - { item: "quickhack_fragment", quantity: 12 }
+        - { item: "pressure_steel", quantity: 10 }
+        - { item: "covenant_relay", quantity: 1 }
+      fees: { soulCoins: 220, nessieTreasuryMarks: 3 }
+      unlock: ["LochExchange_Reputation_Trusted", "NessieFriendship_Tier3"]
+      notes: "Deployable exchange terminal for hideouts, freighters, and story hubs."
+    nessie_communion_beacon:
+      displayName: "Nessie Communion Beacon"
+      station: "Abyssal Fabricator"
+      tier: "sovereign"
+      category: "guardian_prop"
+      output: { item: "Prop.NessieCommunionBeacon", quantity: 1 }
+      inputs:
+        - { item: "covenant_relay", quantity: 2 }
+        - { item: "refined_void_crystal", quantity: 5 }
+        - { item: "bioluminescent_tissue", quantity: 20 }
+        - { item: "abyssal_daemon_core", quantity: 1 }
+      fees: { soulCoins: 650, nessieTreasuryMarks: 8 }
+      unlock: ["NessieFriendship_Tier5", "q_abyssal_skillcape_01_complete"]
+      exchangeRules: { listingAllowed: false, treasuryReview: true, respectfulUseOnly: true }
+      notes: "Late-game covenant object for peaceful guardian communion and story scenes."
+
+  lochExchangeOffers:
+    weeklyMaterialLot:
+      displayName: "Weekly Abyssal Material Lot"
+      costs: { soulCoins: 75 }
+      grants:
+        - { item: "void_crystal", quantity: 2 }
+        - { item: "pressure_steel", quantity: 6 }
+        - { item: "quickhack_fragment", quantity: 8 }
+      limits: { perWeek: 1 }
+      unlock: ["LochExchange_Reputation_Known"]
+    guardianRestorationVoucher:
+      displayName: "Guardian Restoration Voucher"
+      costs: { nessieTreasuryMarks: 1 }
+      grants:
+        - { item: "bioluminescent_tissue", quantity: 6 }
+        - { item: "sonar_lens", quantity: 1 }
+      limits: { perWeek: 2 }
+      unlock: ["NessieFriendship_Tier2"]
+    orbitalSalvageLot:
+      displayName: "Orbital Salvage Lot"
+      costs: { salvageCredits: 60, soulCoins: 30 }
+      grants:
+        - { item: "fighter_capacitor", quantity: 1 }
+        - { item: "freighter_hull_plate", quantity: 3 }
+        - { item: "old_net_telemetry", quantity: 4 }
+      limits: { perWeek: 1 }
+      unlock: ["msn_space_expansion_unlocked"]
+    clothingFragmentBundle:
+      displayName: "Abyssal Clothing Fragment Bundle"
+      costs: { soulCoins: 45 }
+      grants:
+        - { item: "clothing_fragment", quantity: 15 }
+        - { item: "voidweave_thread", quantity: 1 }
+      limits: { perWeek: 3 }
+      unlock: ["ArmorSet_Voidweave_Blueprint"]
+
+  consoleRoutes:
+    fabricator: "abyssal.fabricator"
+    business: "abyssal.business"
+    exchange: "market.exchange"
+    treasury: "nessie.treasury"
+    spaceEconomy: "msn.economy.space"
+    javelinSpace: "msn.javelin.space"

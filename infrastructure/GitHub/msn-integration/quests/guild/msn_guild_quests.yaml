@@ -1,0 +1,563 @@
+# Guild Initiation & Progression Quests
+# Integrates Abyssal Skills with Guild Charters
+
+# ============================================================
+# GUILD CALL SHARD QUEST - Entry Point
+# ============================================================
+
+Quest:MSN_Quest_GuildCall {
+    displayName = "The Call to the Guilds"
+    description = "A shard washed ashore: 'Three voices. One choice.' Read it to receive the Guild Charters."
+    type = "SideQuest"
+    difficulty = "Easy"
+    recommendedLevel = 5
+    objectives = [
+        {
+            id = "read_shard",
+            description = "Read the shard 'PUBLIC BROADCAST: Call to the Guilds'",
+            type = "InventoryCheck",
+            item = "Items.Shard_GuildCall",
+            count = 1
+        },
+        {
+            id = "choose_guild",
+            description = "Choose your allegiance within 60 seconds (or face the penalty)",
+            type = "GUILDSYSTEM",
+            action = "GuildChoice"
+        }
+    ]
+    rewards = {
+        items = [
+            { item = "Items.GuildCharter_OuroborosAlchemists", count = 1 },
+            { item = "Items.GuildCharter_VoidRunners", count = 1 },
+            { item = "Items.GuildCharter_LochSmugglers", count = 1 }
+        ],
+        xp = 5000,
+        streetCred = 100
+    }
+    onComplete = "UnlockGuildSystem"
+}
+
+# ============================================================
+# OUROBOROS ALCHEMISTS QUESTLINE (Binah Path)
+# ============================================================
+
+Quest:MSN_Quest_Alchemists_Initiation {
+    displayName = "Initiation: The First Transmutation"
+    description = "Prove your worth to the Ouroboros Alchemists. Transmute base matter into essence."
+    type = "MainQuest"
+    difficulty = "Normal"
+    recommendedLevel = 10
+    requiredGuild = "OuroborosAlchemists"
+    prerequisites = ["MSN_Quest_GuildCall"]
+    objectives = [
+        {
+            id = "gather_materials",
+            description = "Gather: 10x Abyssal Ore, 5x Cryptid Essence, 1x Meteorite Fragment",
+            type = "CollectItems",
+            items = [
+                { item = "Items.AbyssalOre", count = 10 },
+                { item = "Items.CryptidEssence", count = 5 },
+                { item = "Items.MeteoriteFragment", count = 1 }
+            ]
+        },
+        {
+            id = "craft_catalyst",
+            description = "Craft a Legendary Catalyst at the Alchemy Station",
+            type = "CraftItem",
+            item = "Items.LegendaryCatalyst",
+            count = 1
+        },
+        {
+            id = "transmute",
+            description = "Use the Catalyst to transmute Iron into Orichalcum",
+            type = "UseAbility",
+            ability = "Transmute_Material",
+            target = "Iron",
+            result = "Orichalcum"
+        }
+    ]
+    rewards = {
+        skillXP = { "alchemy": 10000, "metallurgy": 5000, "masterwork": 3000 },
+        items = [{ item = "Items.OuroborosAlchemist_Robe", count = 1 }],
+        perks = ["Abyssal_Guild_Ouroboros_TransmutationMastery"],
+        xp = 15000
+    }
+}
+
+Quest:MSN_Quest_Alchemists_RealityWeaver {
+    displayName = "The Reality Loom"
+    description = "Inscribe a rune that rewrites local physics. The Alchemists test your mastery of Runecrafting."
+    type = "SideQuest"
+    difficulty = "Hard"
+    recommendedLevel = 30
+    requiredGuild = "OuroborosAlchemists"
+    prerequisites = ["MSN_Quest_Alchemists_Initiation"]
+    objectives = [
+        {
+            id = "find_loom",
+            description = "Locate the Reality Loom in the Throne Room (requires Trench access)",
+            type = "GoToLocation",
+            location = "ThroneRoom_RealityLoom"
+        },
+        {
+            id = "inscribe_rune",
+            description = "Inscribe the 'Gravity Well' rune - increases local gravity 3x for 30s",
+            type = "CraftItem",
+            item = "Items.Rune_GravityWell",
+            count = 1
+        },
+        {
+            id = "test_rune",
+            description = "Test the rune on a Kraken Matriarch spawn",
+            type = "UseItem",
+            item = "Items.Rune_GravityWell",
+            target = "Kraken_Matriarch"
+        }
+    ]
+    rewards = {
+        skillXP = { "runecrafting": 25000, "enchanting": 15000, "scholarship": 10000 },
+        perks = ["Abyssal_Guild_Ouroboros_RealityWeaver"],
+        xp = 30000,
+        streetCred = 500
+    }
+}
+
+Quest:MSN_Quest_Alchemists_LivingStitch {
+    displayName = "The Living Stitch"
+    description = "Craft a hat that never decays. The stitches pulse with essence."
+    type = "SideQuest"
+    difficulty = "Hard"
+    recommendedLevel = 40
+    requiredGuild = "OuroborosAlchemists"
+    prerequisites = ["MSN_Quest_Alchemists_Initiation"]
+    objectives = [
+        {
+            id = "gather_silk",
+            description = "Gather 50x Abyssal Silk from Deep Foraging",
+            type = "CollectItems",
+            items = [{ item = "Items.AbyssalSilk", count = 50 }]
+        },
+        {
+            id = "enchant_thread",
+            description = "Enchant the thread with Essence Regeneration",
+            type = "UseAbility",
+            ability = "Enchant_Item",
+            target = "AbyssalThread"
+        },
+        {
+            id = "craft_hat",
+            description = "Craft the Living Stitch Hat (Mythic)",
+            type = "CraftItem",
+            item = "Items.Hat_LivingStitch",
+            count = 1
+        }
+    ]
+    rewards = {
+        skillXP = { "haberdashery": 30000, "enchanting": 20000, "alchemy": 10000 },
+        items = [{ item = "Items.Hat_LivingStitch", count = 1 }],
+        perks = ["Abyssal_Guild_Ouroboros_LivingStitch"],
+        xp = 40000
+    }
+}
+
+# ============================================================
+# VOID RUNNERS QUESTLINE (Chokhmah Path)
+# ============================================================
+
+Quest:MSN_Quest_Void_Initiation {
+    displayName = "Initiation: The Neural Bridge"
+    description = "Bridge your cyberdeck to the Local Cerebellum. Survive the inference flood."
+    type = "MainQuest"
+    difficulty = "Normal"
+    recommendedLevel = 10
+    requiredGuild = "VoidRunners"
+    prerequisites = ["MSN_Quest_GuildCall"]
+    objectives = [
+        {
+            id = "install_bridge",
+            description = "Install the Cerebellum Bridge cyberware at a Ripperdoc",
+            type = "InstallCyberware",
+            cyberware = "Items.Cyberware_CerebellumBridge"
+        },
+        {
+            id = "surge_test",
+            description = "Survive 3 inference surges without neural overload",
+            type = "Survive",
+            duration = 60,
+            waves = 3
+        },
+        {
+            id = "quickhack_demo",
+            description = "Execute 5 quickhacks in 10 seconds using RAM reduction",
+            type = "UseAbility",
+            ability = "Quickhack_Any",
+            count = 5,
+            timeLimit = 10
+        }
+    ]
+    rewards = {
+        skillXP = { "sonar_tuning": 10000, "evasion": 5000, "salvage_processing": 3000 },
+        items = [{ item = "Items.VoidRunner_Suit", count = 1 }],
+        perks = ["Abyssal_Guild_Void_CerebellumBridge"],
+        xp = 15000
+    }
+}
+
+Quest:MSN_Quest_Void_PhaseWalker {
+    displayName = "Walking Through Walls"
+    description = "Master the Phase Shift. Infiltrate the Arasaka Netwatch Black Site without triggering alarms."
+    type = "SideQuest"
+    difficulty = "VeryHard"
+    recommendedLevel = 35
+    requiredGuild = "VoidRunners"
+    prerequisites = ["MSN_Quest_Void_Initiation"]
+    objectives = [
+        {
+            id = "infiltrate",
+            description = "Enter the Black Site using Phase Shift on perfect dodge",
+            type = "Infiltrate",
+            location = "Arasaka_Netwatch_BlackSite",
+            method = "PhaseShift"
+        },
+        {
+            id = "extract_data",
+            description = "Extract the 'Neural Architecture' datashard from the core server",
+            type = "Datamine",
+            target = "NeuralArchitecture_Datashard"
+        },
+        {
+            id = "exit_clean",
+            description = "Exit without triggering alarms (Phase Shift through walls)",
+            type = "Escape",
+            method = "PhaseShift"
+        }
+    ]
+    rewards = {
+        skillXP = { "evasion": 30000, "navigation": 20000, "sonar_tuning": 15000 },
+        perks = ["Abyssal_Guild_Void_PhaseWalker"],
+        xp = 50000,
+        streetCred = 1000
+    }
+}
+
+Quest:MSN_Quest_Void_FrequencyMaster {
+    displayName = "The Perfect Frequency"
+    description = "Tune sonar to reveal all hidden networks in Night City. Find the Rogue AI."
+    type = "SideQuest"
+    difficulty = "Hard"
+    recommendedLevel = 30
+    requiredGuild = "VoidRunners"
+    prerequisites = ["MSN_Quest_Void_Initiation"]
+    objectives = [
+        {
+            id = "scan_city",
+            description = "Run City-Wide Sonar Scan from the highest tower (Korusaki Tower)",
+            type = "UseAbility",
+            ability = "Sonar_CityScan",
+            location = "Korusaki_Tower"
+        },
+        {
+            id = "find_rogue",
+            description = "Locate the Rogue AI signal in 3 hidden networks",
+            type = "LocateSignals",
+            count = 3,
+            skill = "sonar_tuning"
+        },
+        {
+            id = "contain_or_free",
+            description = "Choose: Contain the Rogue AI (Alchemists favor) or Free it (Smugglers favor)",
+            type = "Choice",
+            options = ["Contain", "Free", "Study"]
+        }
+    ]
+    rewards = {
+        skillXP = { "sonar_tuning": 40000, "scholarship": 20000, "lore": 15000 },
+        perks = ["Abyssal_Guild_Void_FrequencyMaster"],
+        xp = 40000
+    }
+}
+
+# ============================================================
+# LOCH SMUGGLERS QUESTLINE (Netzach Path)
+# ============================================================
+
+Quest:MSN_Quest_Smugglers_Initiation {
+    displayName = "Initiation: The First Smuggling Run"
+    description = "Move contraband from the Trench to the Exchange without Treasury's cut."
+    type = "MainQuest"
+    difficulty = "Normal"
+    recommendedLevel = 10
+    requiredGuild = "LochSmugglers"
+    prerequisites = ["MSN_Quest_GuildCall"]
+    objectives = [
+        {
+            id = "accept_contract",
+            description = "Accept the 'Midnight Run' contract from the Smuggler's Contact",
+            type = "TalkToNPC",
+            npc = "SmugglerContact_Vance"
+        },
+        {
+            id = "dredge_contraband",
+            description = "Dredge 5x Banned Cyberware in Trench zone",
+            type = "Dredge",
+            zone = "trench",
+            item = "Items.BannedCyberware",
+            count = 5
+        },
+        {
+            id = "deliver_avoiding_patrols",
+            description = "Deliver to the Exchange contact avoiding NCPD patrols",
+            type = "Deliver",
+            destination = "Exchange_SmugglerContact",
+            avoidFactions = ["NCPD", "TraumaTeam", "MaxTac"]
+        }
+    ]
+    rewards = {
+        skillXP = { "trading": 10000, "dredging": 5000, "negotiation": 3000 },
+        items = [{ item = "Items.Smuggler_Coat", count = 1 }],
+        perks = ["Abyssal_Guild_Smuggler_MarketMaker"],
+        xp = 15000,
+        soulCoins = 50000
+    }
+}
+
+Quest:MSN_Quest_Smugglers_SilverTongue {
+    displayName = "Words Are Weapons"
+    description = "Talk your way into the High-Roller Suite at the Casino. Negotiate a 50% discount on a Mythic hat."
+    type = "SideQuest"
+    difficulty = "Hard"
+    recommendedLevel = 30
+    requiredGuild = "LochSmugglers"
+    prerequisites = ["MSN_Quest_Smugglers_Initiation"]
+    objectives = [
+        {
+            id = "enter_casino",
+            description = "Gain entry to the High-Roller Suite (persuade/stealth/bribe)",
+            type = "Infiltrate",
+            location = "NightCity_Casino_HighRollerSuite",
+            methods = ["Persuasion", "Stealth", "Bribe"]
+        },
+        {
+            id = "negotiate_mythic",
+            description = "Negotiate the 'Crown of the Deep' hat from the seller",
+            type = "Dialogue",
+            npc = "MythicHatSeller",
+            targetPrice = "50_percent_off"
+        },
+        {
+            id = "close_deal",
+            description = "Seal the deal without alerting security",
+            type = "CompleteTrade",
+            item = "Items.Hat_CrownOfTheDeep"
+        }
+    ]
+    rewards = {
+        skillXP = { "negotiation": 35000, "trading": 20000, "guild_management": 15000 },
+        items = [{ item = "Items.Hat_CrownOfTheDeep", count = 1 }],
+        perks = ["Abyssal_Guild_Smuggler_SilverTongue"],
+        xp = 40000
+    }
+}
+
+Quest:MSN_Quest_Smugglers_ApexHunter {
+    displayName = "The Apex Hunt"
+    description = "Hunt the Adult Nessie in the Trench. Return with its Mythic trophy."
+    type = "MainQuest"
+    difficulty = "VeryHard"
+    recommendedLevel = 50
+    requiredGuild = "LochSmugglers"
+    prerequisites = ["MSN_Quest_Smugglers_Initiation"]
+    objectives = [
+        {
+            id = "track_nessie",
+            description = "Use Sonar Tuning + Hunting to track Adult Nessie in Trench",
+            type = "TrackTarget",
+            target = "Nessie_Adult",
+            skills = ["sonar_tuning", "hunting"]
+        },
+        {
+            id = "harpoon_kill",
+            description = "Land a perfect harpoon throw on Nessie's weak point",
+            type = "Combat",
+            target = "Nessie_Adult",
+            requiredWeapon = "Harpoon",
+            requiredCondition = "CritWeakPoint"
+        },
+        {
+            id = "claim_trophy",
+            description = "Claim the Mythic Trophy - auto-grants Crown of Living Sin if not owned",
+            type = "CollectItems",
+            items = [{ item = "Items.Nessie_MythicTrophy", count = 1 }]
+        }
+    ]
+    rewards = {
+        skillXP = { "hunting": 50000, "harpooning": 40000, "survival": 30000 },
+        items = [
+            { item = "Items.Nessie_MythicTrophy", count = 1 },
+            { item = "Items.Hat_CrownOfLivingSin", count = 1 }
+        ],
+        perks = ["Abyssal_Guild_Smuggler_ApexHunter", "Abyssal_Guild_Smuggler_DeepDredger"],
+        xp = 100000,
+        streetCred = 2000,
+        soulCoins = 1000000
+    }
+}
+
+# ============================================================
+# CROSS-GUILD ACTIVITIES (Available to all, bonuses for aligned)
+# ============================================================
+
+Activity:Abyssal_Daily_Dredge {
+    displayName = "Daily Dredge"
+    description = "Dredge in any zone. Bonus XP for zone-appropriate depth."
+    type = "Repeatable"
+    resetPeriod = "Daily"
+    requiredSkills = ["dredging"]
+    objectives = [
+        { type = "Dredge", zone = "any", count = 10 }
+    ]
+    rewards = {
+        baseXP = 5000,
+        skillXP = { "dredging": 2000, "navigation": 500 },
+        currency = { "soulCoins": 2000 },
+        guildBonuses = {
+            "LochSmugglers": { "skillXP": { "dredging": 1000 }, "currency": { "soulCoins": 1000 } },
+            "OuroborosAlchemists": { "skillXP": { "metallurgy": 500 } },
+            "VoidRunners": { "skillXP": { "salvage_processing": 500 } }
+        }
+    }
+}
+
+Activity:Abyssal_Weekly_CryptidHunt {
+    displayName = "Weekly Cryptid Hunt"
+    description = "Hunt a specific cryptid species. Target rotates weekly."
+    type = "Repeatable"
+    resetPeriod = "Weekly"
+    requiredSkills = ["hunting", "harpooning", "survival"]
+    objectives = [
+        { type = "HuntCryptid", target = "WeeklyTarget", count = 1 }
+    ]
+    rewards = {
+        baseXP = 25000,
+        skillXP = { "hunting": 10000, "harpooning": 5000, "survival": 3000 },
+        items = [{ item = "Items.CryptidTrophy_Weekly", count = 1 }],
+        guildBonuses = {
+            "LochSmugglers": { "skillXP": { "hunting": 5000, "harpooning": 3000 } },
+            "OuroborosAlchemists": { "skillXP": { "bone_carving": 3000, "alchemy": 2000 } },
+            "VoidRunners": { "skillXP": { "evasion": 3000, "sonar_tuning": 2000 } }
+        }
+    }
+}
+
+Activity:Abyssal_Monthly_MarketDay {
+    displayName = "Monthly Market Day"
+    description = "Participate in the Grand Market. Trade volume determines rewards."
+    type = "Repeatable"
+    resetPeriod = "Monthly"
+    requiredSkills = ["trading", "negotiation", "guild_management"]
+    objectives = [
+        { type = "TradeVolume", target = 1000000 }
+    ]
+    rewards = {
+        baseXP = 100000,
+        skillXP = { "trading": 30000, "negotiation": 20000, "guild_management": 15000 },
+        currency = { "soulCoins": 500000 },
+        items = [{ item = "Items.MarketDayToken", count = 1 }],
+        guildBonuses = {
+            "LochSmugglers": { "skillXP": { "trading": 15000, "negotiation": 10000 }, "currency": { "soulCoins": 250000 } },
+            "OuroborosAlchemists": { "skillXP": { "alchemy": 10000, "masterwork": 5000 } },
+            "VoidRunners": { "skillXP": { "salvage_processing": 10000, "fiber_working": 5000 } }
+        }
+    }
+}
+
+# ============================================================
+# GUILD WAR PENALTY QUEST (If player fails single allegiance)
+# ============================================================
+
+Quest:MSN_Quest_GuildWarPenance {
+    displayName = "Penance: The Broken Pact"
+    description = "You violated the single-allegiance law. The Guilds demand penance. Survive the trial to regain favor."
+    type = "PenaltyQuest"
+    difficulty = "Nightmare"
+    requiredCondition = "GuildWarPenaltyActive"
+    objectives = [
+        {
+            id = "survive_overheating",
+            description = "Survive 5 minutes of Critical Overheating without healing items",
+            type = "Survive",
+            duration = 300,
+            restrictions = ["NoHealingItems", "NoCyberwareCooldowns"]
+        },
+        {
+            id = "navigate_blind",
+            description = "Navigate the Trench with Optics Glitched (no minimap, distorted vision)",
+            type = "Navigate",
+            location = "Trench_BlindPath",
+            condition = "OpticsGlitched"
+        },
+        {
+            id = "offer_penance",
+            description = "Offer 50% of Soul Coins and dismantle all Guild Charters at the Altar",
+            type = "OfferAtAltar",
+            location = "Trench_AltarOfPenance",
+            cost = { "soulCoinsPercent": 50, "items": ["GuildCharter_All"] }
+        }
+    ]
+    rewards = {
+        skillXP = {},
+        currency = {},
+        effect = "GuildWarPenaltyCleared"
+    }
+    onComplete = "ClearGuildWarPenalty"
+}
+
+# ============================================================
+# FREE AGENT UNLOCK QUEST (Hidden)
+# ============================================================
+
+Quest:MSN_Quest_FreeAgentAwakening {
+    displayName = "The Unbound Path"
+    description = "You stand in the Trench at 3:33 AM, Crown equipped, all charters dismantled. The Loch recognizes your sovereignty."
+    type = "HiddenQuest"
+    difficulty = "Mythic"
+    requiredCondition = "FreeAgentConditionsMet"
+    requiredItems = ["Items.Hat_CrownOfLivingSin"]
+    requiredTime = "03:33"
+    requiredLocation = "Trench_AltarOfSovereignty"
+    requiredState = "NoGuildCharters"
+    objectives = [
+        {
+            id = "stand_in_blood",
+            description = "Stand in your own blood at the Altar (self-inflicted)",
+            type = "SelfHarm",
+            location = "AltarOfSovereignty"
+        },
+        {
+            id = "speak_sin",
+            description = "Scream your greatest sin into the Crown",
+            type = "VoiceInput",
+            prompt = "Confess your greatest sin"
+        },
+        {
+            id = "dismantle_charters",
+            description = "Dismantle all three Guild Charters simultaneously",
+            type = "DismantleItems",
+            items = [
+                "Items.GuildCharter_OuroborosAlchemists",
+                "Items.GuildCharter_VoidRunners",
+                "Items.GuildCharter_LochSmugglers"
+            ],
+            simultaneous = true
+        }
+    ]
+    rewards = {
+        skillXP = { "all": 100000 },
+        perks = ["Abyssal_FreeAgent", "Abyssal_FreeAgent_AkashicAutonomous"],
+        xp = 500000,
+        streetCred = 5000,
+        title = "The Unbound"
+    }
+    onComplete = "UnlockFreeAgent"
+}

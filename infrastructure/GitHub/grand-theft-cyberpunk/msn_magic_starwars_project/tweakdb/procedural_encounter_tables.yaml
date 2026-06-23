@@ -1,0 +1,185 @@
+################################################################################
+# PROCEDURAL ENCOUNTER TABLES — ABYSSAL / MSN / LOCHNESS SPACE EXPANSION
+# Worker batch 2 ownership file. Keep YAML valid and data-only.
+################################################################################
+
+ProceduralEncounterTables:
+  schema: "msn.procedural_encounters.v1"
+  localOnly: true
+  integration:
+    systems:
+      - "MSN Orchestrator"
+      - "Abyssal Assets"
+      - "Lochness / Nessie Guardian"
+      - "One World Space Economy"
+      - "Nvidia Gratitude Driver"
+    rewardRouting:
+      exchange: "The Loch Exchange"
+      currency: "Soul Coins"
+      treasurySink: "Nessie Treasury"
+    spawnBudget:
+      targetGpu: "RTX 3060 Laptop GPU 6GB"
+      maxHeroCreaturesPerEncounter: 1
+      maxVehiclesPerEncounter: 6
+      preferImpostorsBeyondMeters: 220
+
+  regions:
+    Pacifica_Trench:
+      displayName: "Pacifica Trench"
+      biome: "flooded Pacifica undercity, pressure vents, ruined data pylons"
+      recommendedPowerTier: "mid_to_late"
+      recommendedSuitOrVehicle:
+        primary: "Vehicle_Abyssal_Leviathan_Sub"
+        alternate: "Exosuit_BastionBulwark_Javelin"
+        nessieAssist: "Vehicle_Nessie_Mount"
+      encounterTables:
+        - id: "pacifica_trench_guardian_parley"
+          weight: 25
+          enemyOrAlienArchetype: "Abyssal Scavenger Divers with one Nessie-shadow guardian echo"
+          hazard: "Crushing pressure pulses and low-visibility sonar blackout"
+          objective: "Recover drowned shipment tags without harming guardian-marked fauna."
+          rewardPool:
+            guaranteed: ["SoulCoins.small", "abyssal_salvage.bundle"]
+            weighted: ["NessieFriendship.plus_one", "pressure_steel.ingot", "sonar_lens.rare"]
+            rare: ["Vehicle_Nessie_Mount.covenant_progress"]
+          recommendedSuitOrVehicle: "Vehicle_Abyssal_Leviathan_Sub"
+        - id: "pacifica_trench_kraken_test"
+          weight: 20
+          enemyOrAlienArchetype: "Kraken Brood Matriarch and armored Maelstrom dredge crew"
+          hazard: "Thermal vent eruptions, magnetic mine kelp, pressure-zone knockback"
+          objective: "Break the dredge engines, scan the matriarch, and extract the vent core."
+          rewardPool:
+            guaranteed: ["kraken_tooth.component", "SoulCoins.medium"]
+            weighted: ["Krakens_Wrath_Launcher.blueprint_fragment", "abyssal_crystal.shard"]
+            rare: ["Exosuit_BastionBulwark_Javelin.pressure_module"]
+          recommendedSuitOrVehicle: "Exosuit_BastionBulwark_Javelin"
+        - id: "pacifica_trench_old_net_drowned_node"
+          weight: 18
+          enemyOrAlienArchetype: "Corrupted Old Net eels and autonomous netrunner husks"
+          hazard: "Black ICE sonar echoes and flooded access corridors"
+          objective: "Stabilize the drowned node long enough for MSN memory extraction."
+          rewardPool:
+            guaranteed: ["old_net_fragment.common", "quickhack_fragment.sonar_ping"]
+            weighted: ["Nyx_Whisper_Monowire.mod_fragment", "NessieCommunionLink.calibration"]
+            rare: ["source:custom-model-pack.Creature_Nessie_GuardianAvatar.skin_dorsal_constellation"]
+          recommendedSuitOrVehicle: "Exosuit_VectorStarling_Javelin"
+
+    Orbital_Graveyard:
+      displayName: "Orbital Graveyard"
+      biome: "derelict satellite reef, broken corpo stations, Blackwall meteor dust"
+      recommendedPowerTier: "late"
+      recommendedSuitOrVehicle:
+        primary: "Vehicle_PhantomNeedle_Fighter"
+        alternate: "Vehicle_CovenantFreighter_Model"
+        suit: "Exosuit_VectorStarling_Javelin"
+      encounterTables:
+        - id: "orbital_graveyard_null_manta_chorus"
+          weight: 30
+          enemyOrAlienArchetype: "Null Manta chorus with phase-torn wing drones"
+          hazard: "Radiation pockets, oxygen bleed, false target locks"
+          objective: "Disable chorus nodes or perform non-lethal signal parley."
+          rewardPool:
+            guaranteed: ["void_touched_salvage.bundle", "SoulCoins.medium"]
+            weighted: ["Creature_NullManta_Blackwall.scan_data", "OldNetFlightComputer.fragment"]
+            rare: ["Vehicle_PhantomNeedle_Fighter.blackwall_livery"]
+          recommendedSuitOrVehicle: "Vehicle_PhantomNeedle_Fighter"
+        - id: "orbital_graveyard_corpse_freighter_boarding"
+          weight: 24
+          enemyOrAlienArchetype: "Militech ghost-boarders and autonomous cargo turrets"
+          hazard: "Rotating debris fields, hull breach timers, gravity shear"
+          objective: "Board the corpse freighter, save the manifest, and claim legal salvage."
+          rewardPool:
+            guaranteed: ["orbital_salvage_credit.medium", "freighter_manifest.recovered"]
+            weighted: ["Vehicle_CovenantFreighter_Model.hangar_part", "Sophias_Symphony_Cannon.capacitor"]
+            rare: ["CovenantFreighter.fabricator_bay_unlock"]
+          recommendedSuitOrVehicle: "Vehicle_CovenantFreighter_Model"
+        - id: "orbital_graveyard_blackwall_meteor"
+          weight: 16
+          enemyOrAlienArchetype: "Blackwall meteor parasite and corrupted maintenance spiders"
+          hazard: "Signal hallucinations, EMP storms, unstable meteor core"
+          objective: "Anchor the meteor core and prevent it from falling into Night City."
+          rewardPool:
+            guaranteed: ["blackwall_alloy.sample", "SoulCoins.large"]
+            weighted: ["Voidsplitter_Railgun.phase_core_fragment", "orbitalBlackwallAlloy.material_unlock"]
+            rare: ["msn.spacebattle.status.unique_debrief"]
+          recommendedSuitOrVehicle: "Exosuit_BastionBulwark_Javelin"
+
+    Neon_Badlands_Launch_Corridor:
+      displayName: "Neon Badlands Launch Corridor"
+      biome: "nomad launch rails, solar farms, smuggler runways, dust-lit neon pylons"
+      recommendedPowerTier: "early_to_late"
+      recommendedSuitOrVehicle:
+        primary: "Vehicle_Phantom_Void_Ship"
+        alternate: "Vehicle_Lucifer_Solar_Chariot"
+        freighterSupport: "Vehicle_CovenantFreighter_Model"
+      encounterTables:
+        - id: "badlands_launch_convoy_breakout"
+          weight: 30
+          enemyOrAlienArchetype: "Raffen Shiv interceptors and hacked launch drones"
+          hazard: "Dust whiteout, railgun targeting cones, unstable launch fuel"
+          objective: "Escort Captain Vance's launch convoy to the corridor gate."
+          rewardPool:
+            guaranteed: ["SoulCoins.small", "solar_weave.bundle"]
+            weighted: ["Vehicle_Phantom_Void_Ship.reality_anchor", "CaptainVance.vendor_trust"]
+            rare: ["Vehicle_CovenantFreighter_Model.engine_nacelle_part"]
+          recommendedSuitOrVehicle: "Vehicle_Lucifer_Solar_Chariot"
+        - id: "badlands_solar_chariot_trial"
+          weight: 22
+          enemyOrAlienArchetype: "Kang Tao pursuit bikes and drone snipers"
+          hazard: "Solar glare, heat mirage decoys, timed launch-window gates"
+          objective: "Win the launch corridor trial while keeping civilian haulers intact."
+          rewardPool:
+            guaranteed: ["launch_clearance.token", "SoulCoins.medium"]
+            weighted: ["Lucifers_Dawn_Pistol.solar_core", "Vehicle_Lucifer_Solar_Chariot.blinding_trail_tune"]
+            rare: ["VectorStarling_Javelin.lock_on_pod"]
+          recommendedSuitOrVehicle: "Vehicle_Lucifer_Solar_Chariot"
+        - id: "badlands_smuggler_starfighter_cache"
+          weight: 18
+          enemyOrAlienArchetype: "Nomad smugglers, rogue AVs, and one Old Net cache guardian"
+          hazard: "Sand-buried mines, comms spoofing, launch rail surge"
+          objective: "Negotiate or raid the cache, then register the fighter parts with the Loch Exchange."
+          rewardPool:
+            guaranteed: ["fighter_part.common", "orbital_salvage_credit.small"]
+            weighted: ["Vehicle_PhantomNeedle_Fighter.weapon_mount", "Nyx_Whisper_Monowire.stealth_field"]
+            rare: ["msn.fighters.status.prototype_unlock"]
+          recommendedSuitOrVehicle: "Exosuit_VectorStarling_Javelin"
+
+    Astral_Undercity:
+      displayName: "Astral Undercity"
+      biome: "dreamlike tunnels below Night City, memory markets, impossible canals"
+      recommendedPowerTier: "late_postgame"
+      recommendedSuitOrVehicle:
+        primary: "Exosuit_VectorStarling_Javelin"
+        alternate: "Vehicle_Nessie_Mount"
+        support: "Character_Lilith_CrimsonArchitect"
+      encounterTables:
+        - id: "astral_undercity_memory_bazaar"
+          weight: 26
+          enemyOrAlienArchetype: "Memory thieves, mirror vendors, and one oath-bound Lilith echo"
+          hazard: "Identity drift, false quest markers, memory-price traps"
+          objective: "Recover stolen skill memories without selling core identity shards."
+          rewardPool:
+            guaranteed: ["memory_shard.stable", "SoulCoins.medium"]
+            weighted: ["lilith.dialogue.scene_unlock", "abyssal_skill_point.knowledge"]
+            rare: ["Character_Lilith_CrimsonArchitect.data_crown_variant"]
+          recommendedSuitOrVehicle: "Exosuit_VectorStarling_Javelin"
+        - id: "astral_undercity_loch_gate"
+          weight: 24
+          enemyOrAlienArchetype: "Abyssal gate wardens and non-hostile Nessie dream avatar"
+          hazard: "Tidal gravity, oath failure backlash, dark-water maze loops"
+          objective: "Solve the gate rite and open a safe route between the Loch and Night City."
+          rewardPool:
+            guaranteed: ["NessieFriendship.plus_one", "gate_pearl.component"]
+            weighted: ["Vehicle_Nessie_Mount.summon_cooldown_reduction", "NessieTreasury.voucher"]
+            rare: ["Creature_Nessie_GuardianAvatar.communion_animation"]
+          recommendedSuitOrVehicle: "Vehicle_Nessie_Mount"
+        - id: "astral_undercity_ouroboros_hunt"
+          weight: 18
+          enemyOrAlienArchetype: "Recursive hunter daemons and armored dream constructs"
+          hazard: "Looping arenas, skill inversion, mirrored loadouts"
+          objective: "Break three recursion anchors and return with a usable skill-tree fragment."
+          rewardPool:
+            guaranteed: ["abyssal_skill_point.combat", "SoulCoins.large"]
+            weighted: ["Sophias_Symphony_Cannon.resonance_core", "Voidsplitter_Railgun.phase_core_fragment"]
+            rare: ["Skillcape_Loch.legendary_cosmetic_unlock"]
+          recommendedSuitOrVehicle: "Exosuit_BastionBulwark_Javelin"

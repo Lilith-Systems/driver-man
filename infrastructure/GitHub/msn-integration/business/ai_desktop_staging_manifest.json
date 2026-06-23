@@ -1,0 +1,31 @@
+{
+  "schema": "lilith.ai_desktop_staging.v1",
+  "generated": "2026-06-21T14:51:11.915563+00:00",
+  "ai_root": "/home/tehlappy/Desktop/Lilith/Core_Systems/AI",
+  "loose_files_remaining": [
+    "golem_diary.db"
+  ],
+  "top_dirs": [
+    ".git",
+    ".github",
+    "Evidence",
+    "Pub.orig.bak.20260621",
+    "__pycache__",
+    "abyssal-agents",
+    "abyssal-assets",
+    "aethon",
+    "antigravity",
+    "business",
+    "gtc_items",
+    "gtc_quests",
+    "gtc_rebuild",
+    "gtc_space",
+    "invite",
+    "memory",
+    "public",
+    "scripts",
+    "server",
+    "skills",
+    "venv"
+  ]
+}

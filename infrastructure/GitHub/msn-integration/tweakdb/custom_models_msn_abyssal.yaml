@@ -1,0 +1,317 @@
+################################################################################
+# CUSTOM MODELS — MSN / ABYSSAL ASSETS / LOCHNESS / SPACE EXPANSION
+# Cyberpunk-facing model blueprints derived from local AI project outputs.
+# These are source-of-truth model definitions for REDmod/WolvenKit asset work.
+################################################################################
+
+CustomModels:
+  schema: "msn.custom_models.v1"
+  localOnly: true
+  integrationSources:
+    - "Aethon-Logos 28-agent swarm status"
+    - "Sephirotic Root deployment status"
+    - "NSSP Cyberpunk telemetry bridge"
+    - "Abyssal Assets / Loch Exchange"
+    - "Nessie Guardian progression"
+    - "One World Space Economy"
+    - "Nvidia Gratitude Driver RTX 3060 profile"
+
+  assetBudgets:
+    targetGpu: "RTX 3060 Laptop GPU 6GB"
+    lodPolicy: "LOD0 hero, LOD1 gameplay, LOD2 crowd/distance, impostor for space scale"
+    textureBudget:
+      heroCharacter: "2K BC7/BC5, optional 4K only for screenshots"
+      vehicleShip: "2K trim sheets + decal atlases"
+      crowdCreature: "1K/2K depending on spawn count"
+      props: "1K shared material atlas"
+    performanceGuardrails:
+      - "Prefer trim sheets, decals, and material variants over unique huge textures."
+      - "Every model must declare LODs, collision, streaming tags, and NGD priority."
+      - "No unbounded creature/ship spawn without procedural budget tags."
+      - "Visual ambition must respect 6GB VRAM and frame pacing."
+
+  materialLibrary:
+    abyssalVoidCeramic:
+      displayName: "Abyssal Void Ceramic"
+      palette: ["void black", "deep blue", "bioluminescent teal"]
+      shaderTags: ["wet sheen", "pressure ripple", "subsurface glow"]
+      useCases: ["deep suits", "Nessie covenant armor", "submersibles"]
+    crimsonGoldSovereign:
+      displayName: "Crimson-Gold Sovereign"
+      palette: ["MSN crimson", "warm gold", "black chrome"]
+      shaderTags: ["emissive veins", "thin filigree", "Lilith resonance"]
+      useCases: ["Lilith models", "court NPCs", "covenant freighter"]
+    solarNomadComposite:
+      displayName: "Solar Nomad Composite"
+      palette: ["dust red", "solar gold", "weathered graphite"]
+      shaderTags: ["sand wear", "heat shimmer", "stitched solar weave"]
+      useCases: ["Vance models", "Nomad launch corridor", "freighter cargo"]
+    orbitalBlackwallAlloy:
+      displayName: "Orbital Blackwall Alloy"
+      palette: ["cold steel", "warning amber", "violet blackwall noise"]
+      shaderTags: ["data scars", "edge-lit panels", "micro-scratches"]
+      useCases: ["fighters", "orbital salvage", "alien containment"]
+
+  models:
+    Character_Lilith_CrimsonArchitect:
+      category: "Character"
+      displayName: "Lilith — Crimson Architect"
+      role: "Sovereign AI companion and title-screen identity anchor"
+      modelType: "humanoid_npc"
+      silhouette: "elegant netrunner coat, crimson eyes, halo-like data crown"
+      meshPlan:
+        base: "Cyberpunk humanoid rig compatible"
+        parts: ["head", "hair/data-crown", "coat", "hands", "boots", "holographic backplane"]
+        lods: ["LOD0 65k tris", "LOD1 32k tris", "LOD2 12k tris"]
+        collision: "capsule + coat cloth blockers"
+      materials: ["crimsonGoldSovereign", "orbitalBlackwallAlloy"]
+      animations: ["dialogue_idle", "emergence_pose", "console_command", "combat_support"]
+      msnIntegration:
+        sephira: "Tiphereth"
+        commands: ["lilith.emerge", "lilith.status", "lilith.dialogue"]
+        memoryHooks: ["Ouroboros companion memory", "Lyra mode shift"]
+      abyssalIntegration:
+        role: "Bridge between Night City, Abyssal Assets, and One World Map"
+        unlock: "MSN narrative Act 5"
+      lochnessIntegration:
+        role: "Instant ceasefire/communion mediator during Nessie encounters"
+      businessIntegration:
+        role: "Loch Exchange story vendor and covenant contract narrator"
+      ngdPriority: "hero_character"
+
+    Character_Vance_AbyssalFreighterCaptain:
+      category: "Character"
+      displayName: "Captain Vance — Abyssal Freighter Captain"
+      role: "Nomad logistics lead for freighter contracts and deep-zone salvage"
+      modelType: "humanoid_npc"
+      silhouette: "weathered duster, pressure collar, solar-weave shoulder rig"
+      meshPlan:
+        base: "Cyberpunk masculine humanoid rig compatible"
+        parts: ["hat/helmet hybrid", "duster", "pressure harness", "tool belt", "portable sonar"]
+        lods: ["LOD0 55k tris", "LOD1 25k tris", "LOD2 10k tris"]
+        collision: "capsule + shoulder harness blocker"
+      materials: ["solarNomadComposite", "abyssalVoidCeramic"]
+      animations: ["vendor_idle", "freighter_command", "repair_loop", "quest_briefing"]
+      msnIntegration:
+        sephira: "Netzach"
+        commands: ["msn.freighter.status", "msn.economy.space"]
+      abyssalIntegration:
+        role: "Abyssal Fabricator and convoy unlock NPC"
+      lochnessIntegration:
+        role: "Nessie sighting route guide and respectful offering teacher"
+      businessIntegration:
+        role: "Freighter cargo contracts settle in Soul Coins and Salvage Credits"
+      ngdPriority: "story_vendor"
+
+    Creature_Nessie_GuardianAvatar:
+      category: "Creature"
+      displayName: "Nessie — Guardian Avatar"
+      role: "Rideable/summonable guardian manifestation for water and abyssal gates"
+      modelType: "large_creature_mount"
+      silhouette: "long-neck guardian, luminous dorsal constellations, calm ancient eyes"
+      meshPlan:
+        base: "custom quadruped/swimmer rig"
+        parts: ["head", "neck", "body", "four fins", "tail", "bioluminescent dorsal plates"]
+        lods: ["LOD0 90k tris", "LOD1 42k tris", "LOD2 16k tris", "impostor water silhouette"]
+        collision: "multi-capsule water mount, non-hostile guardian volume"
+      materials: ["abyssalVoidCeramic"]
+      animations: ["surface_breach", "communion_idle", "mount_swim", "pressure_wave", "protective_circle"]
+      msnIntegration:
+        sephira: "Yesod"
+        commands: ["nessie.sighting", "nessie.friendship", "nessie.call", "nessie.treasury"]
+      abyssalIntegration:
+        role: "Deep-zone access, abyssal gate opening, pressure shield"
+      lochnessIntegration:
+        friendshipTiers: [1, 2, 3, 4, 5]
+        guardrail: "Guardian model is not farmable loot; hostile encounters should route toward disengage or reconciliation."
+      businessIntegration:
+        role: "Treasury-backed covenant rewards and guardian vouchers"
+      ngdPriority: "hero_creature_streamed"
+
+    Creature_NullManta_Blackwall:
+      category: "Creature"
+      displayName: "Null Manta"
+      role: "Orbital Graveyard alien for space battles and Blackwall meteor events"
+      modelType: "flying_alien"
+      silhouette: "flat manta body, data-torn wing edges, amber core lantern"
+      meshPlan:
+        base: "custom flying creature rig"
+        parts: ["body disk", "wing membranes", "tail probe", "core lantern", "debris barnacles"]
+        lods: ["LOD0 38k tris", "LOD1 18k tris", "LOD2 6k tris", "space impostor"]
+        collision: "simple flying hull + weak point sphere"
+      materials: ["orbitalBlackwallAlloy"]
+      animations: ["glide", "phase_turn", "chorus_signal", "death_dissolve"]
+      msnIntegration:
+        sephira: "Nyx"
+        commands: ["msn.aliens.status", "msn.spacebattle.status"]
+      abyssalIntegration:
+        role: "Drops Old Net flight computer fragments and void-touched salvage"
+      lochnessIntegration:
+        role: "Nessie hostility decreases if player scans/parleys instead of killing chorus nodes"
+      businessIntegration:
+        role: "Salvage components route through Orbital Salvage Board"
+      ngdPriority: "procedural_creature"
+
+    Exosuit_VectorStarling_Javelin:
+      category: "Exosuit"
+      displayName: "Vector Starling Javelin"
+      role: "Ranger/Vector suit model for dogfights and balanced space combat"
+      modelType: "wearable_exosuit"
+      silhouette: "balanced pilot armor, folding thruster fins, lock-on shoulder pods"
+      meshPlan:
+        base: "Cyberpunk player skeleton armor overlay"
+        parts: ["helmet", "chest", "arms", "legs", "back thrusters", "missile pods"]
+        lods: ["LOD0 70k tris", "LOD1 34k tris", "LOD2 14k tris"]
+        collision: "player capsule + thruster no-clip blockers"
+      materials: ["crimsonGoldSovereign", "orbitalBlackwallAlloy"]
+      animations: ["hover_idle", "missile_lock", "fighter_neural_link", "boarding_tether"]
+      msnIntegration:
+        sephira: "Tiphereth"
+        commands: ["msn.exosuit.list", "msn.javelin.space", "msn.fighters.status"]
+      abyssalIntegration:
+        role: "Compatible with Abyssal pressure module and deep-zone thrusters"
+      lochnessIntegration:
+        role: "Nessie-friendly non-hostile scan mode for water creatures"
+      businessIntegration:
+        role: "Components, pigments, and thruster kits list on Loch Exchange"
+      ngdPriority: "player_equipment"
+
+    Exosuit_BastionBulwark_Javelin:
+      category: "Exosuit"
+      displayName: "Bastion Bulwark Javelin"
+      role: "Colossus/Bastion suit model for boarding, shields, and hull-breaking"
+      modelType: "wearable_exosuit"
+      silhouette: "heavy shielded armor, siege cannon spine, magnetic boots"
+      meshPlan:
+        base: "Cyberpunk player skeleton armor overlay"
+        parts: ["heavy helmet", "torso shield core", "siege cannon", "mag boots", "reactive pauldrons"]
+        lods: ["LOD0 82k tris", "LOD1 40k tris", "LOD2 16k tris"]
+        collision: "player capsule + shield projection bounds"
+      materials: ["abyssalVoidCeramic", "orbitalBlackwallAlloy"]
+      animations: ["shield_brace", "hull_breach", "mag_walk", "siege_fire"]
+      msnIntegration:
+        sephira: "Gevurah"
+        commands: ["msn.javelin.space", "msn.spacebattle.status"]
+      abyssalIntegration:
+        role: "Pressure armor and Kraken-spine reinforcement path"
+      lochnessIntegration:
+        role: "Guardian protection contracts, no-harvest deep-zone combat"
+      businessIntegration:
+        role: "Heavy components are vault-listed and convoy-gated"
+      ngdPriority: "player_equipment_heavy"
+
+    Vehicle_CovenantFreighter_Model:
+      category: "Vehicle"
+      displayName: "Covenant Freighter"
+      role: "Mobile base, fighter hangar, Loch Exchange terminal, Abyssal Fabricator"
+      modelType: "capital_ship_freighter"
+      silhouette: "long cathedral-hull freighter with manta-like side wings and crimson-gold command spine"
+      meshPlan:
+        base: "multi-part vehicle/capital prop"
+        parts: ["hull", "bridge", "hangar doors", "fabricator bay", "market terminal", "engine nacelles"]
+        lods: ["LOD0 140k tris", "LOD1 70k tris", "LOD2 24k tris", "space impostor"]
+        collision: "compound hull + interior hangar volumes"
+      materials: ["crimsonGoldSovereign", "abyssalVoidCeramic", "orbitalBlackwallAlloy"]
+      animations: ["hangar_open", "market_terminal_wake", "fabricator_cycle", "jump_charge"]
+      msnIntegration:
+        sephira: "Chesed"
+        commands: ["msn.freighter.status", "msn.worldmap.status", "msn.economy.space"]
+      abyssalIntegration:
+        role: "Abyssal Fabricator and deep salvage storage"
+      lochnessIntegration:
+        unlock: "Nessie Friendship Tier 3 + covenant contract"
+      businessIntegration:
+        role: "Loch Exchange mobile terminal and cargo market"
+      ngdPriority: "large_vehicle_streamed"
+
+    Vehicle_PhantomNeedle_Fighter:
+      category: "Vehicle"
+      displayName: "Phantom Needle Fighter"
+      role: "Interceptor fighter for trickster alien counters and boarding lance attacks"
+      modelType: "space_fighter"
+      silhouette: "needle-nose stealth fighter, folding black fins, violet engine line"
+      meshPlan:
+        base: "small vehicle/fighter rig"
+        parts: ["hull", "canopy", "folding fins", "boarding lance", "thrusters", "weapon hardpoints"]
+        lods: ["LOD0 48k tris", "LOD1 22k tris", "LOD2 8k tris", "space impostor"]
+        collision: "convex fighter hull + weapon hardpoint spheres"
+      materials: ["orbitalBlackwallAlloy"]
+      animations: ["fin_fold", "boost", "boarding_lance_extend", "cloak_flicker"]
+      msnIntegration:
+        sephira: "Nyx"
+        commands: ["msn.fighters.status", "msn.spacebattle.status"]
+      abyssalIntegration:
+        role: "Recovers void-touched salvage from orbital wrecks"
+      lochnessIntegration:
+        role: "Can escort Nessie gate events without firing on guardians"
+      businessIntegration:
+        role: "Fighter modules, skins, and repair kits route through Salvage Credits"
+      ngdPriority: "fighter_vehicle"
+
+    Prop_LochExchangeTerminal:
+      category: "Prop"
+      displayName: "Loch Exchange Terminal"
+      role: "Physical business/economy interface for Soul Coins, listings, and treasury status"
+      modelType: "interactive_prop"
+      silhouette: "wet black market terminal with sonar ring screen and coin basin"
+      meshPlan:
+        base: "interactive terminal prop"
+        parts: ["terminal body", "screen", "coin basin", "sonar ring", "cable bundle"]
+        lods: ["LOD0 20k tris", "LOD1 9k tris", "LOD2 3k tris"]
+        collision: "box interaction volume"
+      materials: ["abyssalVoidCeramic", "crimsonGoldSovereign"]
+      animations: ["screen_wake", "coin_pulse", "listing_scroll", "treasury_transfer"]
+      msnIntegration:
+        sephira: "Netzach"
+        commands: ["market.exchange", "soulcoins.status", "nessie.treasury", "msn.items.exchange"]
+      abyssalIntegration:
+        role: "Abyssal Assets business loop physical affordance"
+      lochnessIntegration:
+        role: "Displays Nessie Treasury contributions and guardian vouchers"
+      businessIntegration:
+        role: "CLOB/listing terminal for components, modules, cosmetics, and lore receipts"
+      ngdPriority: "interactive_prop"
+
+    Prop_NessieCommunionBeacon:
+      category: "Prop"
+      displayName: "Nessie Communion Beacon"
+      role: "Non-hostile encounter prop for summoning, sighting logging, and covenant progress"
+      modelType: "interactive_prop"
+      silhouette: "portable sonar obelisk with floating bioluminescent rings"
+      meshPlan:
+        base: "deployable prop"
+        parts: ["tripod base", "sonar mast", "floating rings", "water sensor", "offering tray"]
+        lods: ["LOD0 18k tris", "LOD1 8k tris", "LOD2 3k tris"]
+        collision: "small prop + interaction sphere"
+      materials: ["abyssalVoidCeramic"]
+      animations: ["ring_spin", "sonar_ping", "offering_accept", "communion_glow"]
+      msnIntegration:
+        sephira: "Yesod"
+        commands: ["nessie.sighting", "nessie.commune", "nessie.friendship"]
+      abyssalIntegration:
+        role: "Deep-zone offering and sonar route marker"
+      lochnessIntegration:
+        role: "Primary respectful Nessie interaction model"
+      businessIntegration:
+        role: "Converts sighting logs into treasury marks without commodifying Nessie as loot"
+      ngdPriority: "interactive_prop"
+
+  modelPacks:
+    msnCompanions:
+      displayName: "MSN Companions"
+      models: ["Character_Lilith_CrimsonArchitect", "Character_Vance_AbyssalFreighterCaptain"]
+    abyssalGuardians:
+      displayName: "Abyssal Guardians"
+      models: ["Creature_Nessie_GuardianAvatar", "Creature_NullManta_Blackwall"]
+    javelinSpace:
+      displayName: "Javelin Space Combat"
+      models: ["Exosuit_VectorStarling_Javelin", "Exosuit_BastionBulwark_Javelin", "Vehicle_PhantomNeedle_Fighter"]
+    oneWorldEconomy:
+      displayName: "One World Economy"
+      models: ["Vehicle_CovenantFreighter_Model", "Prop_LochExchangeTerminal", "Prop_NessieCommunionBeacon"]
+
+  consoleRoutes:
+    list: "msn.models.list"
+    packs: "msn.models.packs"
+    budget: "msn.models.budget"
+    pipeline: "msn.models.pipeline"

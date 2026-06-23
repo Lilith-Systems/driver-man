@@ -1,0 +1,38 @@
+{
+  "boost": {
+    "sephirah_mapping": {
+      "Geburah": "INT4",
+      "Netzach": "INT4",
+      "Hod": "INT8",
+      "Chesed": "INT8",
+      "Tiphareth": "INT8",
+      "Kether": "FP16",
+      "Chokhmah": "FP16",
+      "Binah": "FP16",
+      "Yesod": "INT8",
+      "Malkuth": "FP16"
+    },
+    "quant_tiers": {
+      "INT4": {
+        "speed": 1.0,
+        "quality": 0.85,
+        "vram_gb": 2.5,
+        "tokens_per_sec": 45
+      },
+      "INT8": {
+        "speed": 0.75,
+        "quality": 0.93,
+        "vram_gb": 4.5,
+        "tokens_per_sec": 35
+      },
+      "FP16": {
+        "speed": 0.5,
+        "quality": 1.0,
+        "vram_gb": 8.0,
+        "tokens_per_sec": 22
+      }
+    },
+    "avg_boost": 1.3405714285714285,
+    "config_path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/adaptive_quantization.yaml"
+  }
+}

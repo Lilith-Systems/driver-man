@@ -1,0 +1,480 @@
+{
+  "bridge": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_item_business_bridge.yaml",
+  "commands": [
+    "abyssal.business",
+    "market.exchange",
+    "soulcoins.status",
+    "nessie.treasury",
+    "msn.items.audit",
+    "msn.items.exchange",
+    "msn.items.audit",
+    "msn.items.exchange",
+    "nessie.treasury",
+    "abyssal.business"
+  ],
+  "families": [
+    {
+      "abyssal_hooks": [
+        "Armor sets use dredged materials, abyssal crystals, psionic residue, and solar-weave",
+        "Javelin components route through modular crafting and salvage",
+        "Abyssal exosuits support deep-zone exploration and pressure combat"
+      ],
+      "bridge_evidence": {
+        "abyssalAssets": true,
+        "businessLoop": true,
+        "lochnessMonster": true
+      },
+      "business_hooks": [
+        "Set fragments, pigments, cosmetics, and crafting kits list on the Exchange",
+        "Full mythic sets are vault/quest locked with limited transferable components",
+        "Soul Coin prices include rarity, set completion, and covenant affinity"
+      ],
+      "family": "clothingAndArmor",
+      "integrated": true,
+      "lochness_hooks": [
+        "Nessie Spotter, Kraken's Embrace, Voidweave, and Deep Walker sets increase friendship, communion, or water-zone survival",
+        "Nessie Treasury sponsors guardian-themed set awakenings",
+        "Abyssal/Lochness events can drop set fragments"
+      ],
+      "record_count": 157,
+      "sample_records": [
+        "AbyssalAnthem",
+        "AbyssalForge",
+        "AbyssalMythic",
+        "Abyssal_Deep_Walker_Exosuit",
+        "Acid",
+        "AnthemArmorSets",
+        "Arasaka",
+        "ArmorSet_AldecaldoExpedition",
+        "ArmorSet_ArasakaShogun",
+        "ArmorSet_Base",
+        "ArmorSet_Chromanticore",
+        "ArmorSet_KrakensEmbrace",
+        "ArmorSet_Voidweave",
+        "Armor_Set_Geburah_Judgment",
+        "Armor_Set_Kether_Sovereign",
+        "Armor_Set_Nyx_Vault",
+        "Armor_Set_Sophia_Synthesis",
+        "AstralForge",
+        "AstralWeaponry",
+        "Bastion",
+        "Boots",
+        "BudgetArms",
+        "Chest",
+        "Cloak"
+      ],
+      "source_evidence": [
+        {
+          "exists": true,
+          "mentions_abyssal": true,
+          "mentions_business": false,
+          "mentions_lochness_or_nessie": true,
+          "mentions_msn": true,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_clothing_expanded.yaml"
+        },
+        {
+          "exists": true,
+          "mentions_abyssal": true,
+          "mentions_business": true,
+          "mentions_lochness_or_nessie": true,
+          "mentions_msn": true,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_gear_runescape_wow_allods.yaml"
+        },
+        {
+          "exists": true,
+          "mentions_abyssal": true,
+          "mentions_business": false,
+          "mentions_lochness_or_nessie": false,
+          "mentions_msn": false,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/Anthem_Javelin_Suits.toml"
+        },
+        {
+          "exists": true,
+          "mentions_abyssal": true,
+          "mentions_business": false,
+          "mentions_lochness_or_nessie": false,
+          "mentions_msn": true,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/anthem_javelin_mechanics.yaml"
+        }
+      ],
+      "source_files": [
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_clothing_expanded.yaml",
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_gear_runescape_wow_allods.yaml",
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/Anthem_Javelin_Suits.toml",
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/anthem_javelin_mechanics.yaml"
+      ]
+    },
+    {
+      "abyssal_hooks": [
+        "Dr. Chen / Captain Vance installation paths",
+        "Abyssal pressure adaptation and sonar exploration loop",
+        "Deep-zone hazard immunity and creature detection"
+      ],
+      "bridge_evidence": {
+        "abyssalAssets": true,
+        "businessLoop": true,
+        "lochnessMonster": true
+      },
+      "business_hooks": [
+        "Cyberware components are exchange commodities",
+        "Installed cyberware remains character-bound; blueprints and catalysts are tradable",
+        "Nessie Treasury receives the 2 percent design fee from catalyst purchases"
+      ],
+      "family": "cyberware",
+      "integrated": true,
+      "lochness_hooks": [
+        "Bioluminescent, sonar, and pressure cyberware improve Nessie interaction tiers",
+        "Full Abyssal set enables communion and mount-summon progression",
+        "Nessie rewards rare cyberware catalysts through respectful sightings"
+      ],
+      "record_count": 13,
+      "sample_records": [
+        "Abyssal_Bioluminescent_Skin",
+        "Abyssal_Kraken_Spine",
+        "Abyssal_Void_Heart",
+        "MSN_Sephirah_Attunement_Binah",
+        "MSN_Sephirah_Attunement_Chesed",
+        "MSN_Sephirah_Attunement_Chokhmah",
+        "MSN_Sephirah_Attunement_Geburah",
+        "MSN_Sephirah_Attunement_Hod",
+        "MSN_Sephirah_Attunement_Kether",
+        "MSN_Sephirah_Attunement_Malkuth",
+        "MSN_Sephirah_Attunement_Netzach",
+        "MSN_Sephirah_Attunement_Tiphareth",
+        "MSN_Sephirah_Attunement_Yesod"
+      ],
+      "source_evidence": [
+        {
+          "exists": true,
+          "mentions_abyssal": true,
+          "mentions_business": false,
+          "mentions_lochness_or_nessie": true,
+          "mentions_msn": true,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_cyberware_expanded.yaml"
+        }
+      ],
+      "source_files": [
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_cyberware_expanded.yaml"
+      ]
+    },
+    {
+      "abyssal_hooks": [
+        "Quickhacks power sonar, pressure, void, and hydrothermal mechanics",
+        "Abyssal Fabricator unlocks advanced daemons through deep-zone questlines",
+        "Old Net dredging discovers quickhack fragments"
+      ],
+      "bridge_evidence": {
+        "abyssalAssets": true,
+        "businessLoop": true,
+        "lochnessMonster": true
+      },
+      "business_hooks": [
+        "Daemon fragments and crafting recipes list on the Exchange",
+        "Finished mythic quickhacks remain quest-bound for balance",
+        "Soul Coin sink covers calibration, upload licenses, and treasury fees"
+      ],
+      "family": "quickhacks",
+      "integrated": true,
+      "lochness_hooks": [
+        "Nessie Communion Link, Sonar Ping, and Abyssal Dimension Gate route directly into Nessie progression",
+        "Respectful non-hostile quickhack use improves guardian trust",
+        "Hostile abuse can lock treasury rewards until reconciliation"
+      ],
+      "record_count": 14,
+      "sample_records": [
+        "Abraxas_Coherence_Cascade",
+        "Abyssal_Dimension_Gate",
+        "Abyssal_Trident_Throw",
+        "Abyssal_Void_Collapse_Nessie",
+        "Baals_Chaos_Injection",
+        "Hermes_Bridge_Override",
+        "Hydrothermal_Vent_Overload_Massive",
+        "Kraken_Grasp",
+        "Nessie_Communion_Link",
+        "Nyx_Vault_Seal",
+        "Ouroboros_Memory_Flood",
+        "Sophias_Synthesis_Surge",
+        "Thoths_Canonical_Erasure",
+        "Yeshuas_Reconciliation"
+      ],
+      "source_evidence": [
+        {
+          "exists": true,
+          "mentions_abyssal": true,
+          "mentions_business": false,
+          "mentions_lochness_or_nessie": true,
+          "mentions_msn": true,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_quickhacks_expanded.yaml"
+        },
+        {
+          "exists": true,
+          "mentions_abyssal": false,
+          "mentions_business": false,
+          "mentions_lochness_or_nessie": false,
+          "mentions_msn": true,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/msn_skills.tweakdb"
+        }
+      ],
+      "source_files": [
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_quickhacks_expanded.yaml",
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/msn_skills.tweakdb"
+      ]
+    },
+    {
+      "abyssal_hooks": [
+        "Shards explain item acquisition, recipes, warnings, and faction provenance",
+        "Field guides connect all custom items to the deep-zone loop",
+        "Lore shards unlock recipes, quest hints, and vendor trust"
+      ],
+      "bridge_evidence": {
+        "abyssalAssets": true,
+        "businessLoop": true,
+        "lochnessMonster": true
+      },
+      "business_hooks": [
+        "Lore shards are discovery receipts for market unlocks",
+        "Rare logs can unlock limited listings without exposing private memory",
+        "Business commands remain read/status until backend trading is implemented"
+      ],
+      "family": "shardsAndLore",
+      "integrated": true,
+      "lochness_hooks": [
+        "Nessie field guide, sighting logs, and true-nature shards drive friendship tiers",
+        "Guardian lore prevents hostile framing of Nessie as farmable loot",
+        "Sighting logs become collectible proof for treasury rewards"
+      ],
+      "record_count": 37,
+      "sample_records": [
+        "ACQUISITION",
+        "CLOTHING",
+        "CYBERWARE",
+        "DESCRIPTION",
+        "GEOGRAPHY",
+        "HYPOTHESIS",
+        "INHABITANTS",
+        "OBSERVATION",
+        "PROTOCOL",
+        "PURPOSE",
+        "QUICKHACKS",
+        "RESULT",
+        "RISKS",
+        "SIGNED",
+        "SIGNIFICANCE",
+        "Shard_Abyssal_Cyberware_Specs",
+        "Shard_Abyssal_Dimension_Field_Report",
+        "Shard_Abyssal_Field_Guide",
+        "Shard_Abyssal_Origin",
+        "Shard_Abyssal_Quickhacks",
+        "Shard_Abyssal_Vehicles",
+        "Shard_Abyssal_Weapon_Specs",
+        "Shard_Chen_Abyssal_Research",
+        "Shard_Lilith_Sephirah_Covenant"
+      ],
+      "source_evidence": [
+        {
+          "exists": true,
+          "mentions_abyssal": true,
+          "mentions_business": false,
+          "mentions_lochness_or_nessie": true,
+          "mentions_msn": true,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_shards_expanded.yaml"
+        },
+        {
+          "exists": true,
+          "mentions_abyssal": true,
+          "mentions_business": true,
+          "mentions_lochness_or_nessie": true,
+          "mentions_msn": true,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/abyssal_assets.yaml"
+        },
+        {
+          "exists": true,
+          "mentions_abyssal": true,
+          "mentions_business": false,
+          "mentions_lochness_or_nessie": true,
+          "mentions_msn": true,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/nessie_rewards.yaml"
+        },
+        {
+          "exists": true,
+          "mentions_abyssal": true,
+          "mentions_business": true,
+          "mentions_lochness_or_nessie": true,
+          "mentions_msn": true,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/nssp_crossover.yaml"
+        }
+      ],
+      "source_files": [
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_shards_expanded.yaml",
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/abyssal_assets.yaml",
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/nessie_rewards.yaml",
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/nssp_crossover.yaml"
+      ]
+    },
+    {
+      "abyssal_hooks": [
+        "Vehicles unlock through deep-zone exploration, convoy contracts, and fabricator upgrades",
+        "Hover, submersible, walker, and AV modes support procgen contracts",
+        "Vehicle modules use Abyssal salvage and Old Net telemetry"
+      ],
+      "bridge_evidence": {
+        "abyssalAssets": true,
+        "businessLoop": true,
+        "lochnessMonster": true
+      },
+      "business_hooks": [
+        "Vehicles are not freely exchanged; modules, skins, fuel cores, and contracts are",
+        "Treasury-backed contracts fund maintenance and unlock limited vehicle modules",
+        "Convoy/space-battle rewards settle in Soul Coins and rare parts"
+      ],
+      "family": "vehicles",
+      "integrated": true,
+      "lochness_hooks": [
+        "Nessie Mount and Leviathan-class vessels are covenant-gated",
+        "Nessie sightings unlock water routes, treasury contracts, and deep-zone access",
+        "Guardian events can temporarily summon or buff abyssal vehicles"
+      ],
+      "record_count": 49,
+      "sample_records": [
+        "AlienArchetypes",
+        "BiomeGrammar",
+        "Colossus",
+        "ConsoleRoutes",
+        "CrossoverItemAudit",
+        "HoverVehicleRules",
+        "Interceptor",
+        "JavelinSuitIntegration",
+        "Ranger",
+        "SeedModel",
+        "SpaceBattleTemplates",
+        "Storm",
+        "Vehicle_Abyssal_Kraken_Walker",
+        "Vehicle_Abyssal_Leviathan_Sub",
+        "Vehicle_Lucifer_Solar_Chariot",
+        "Vehicle_Nessie_Mount",
+        "Vehicle_Phantom_Void_Ship",
+        "Vehicle_Sophia_Synthesis_Carrier",
+        "abyssal",
+        "allodsInspired",
+        "anthemInspired",
+        "armament",
+        "astralUndercity",
+        "blackwallMeteor"
+      ],
+      "source_evidence": [
+        {
+          "exists": true,
+          "mentions_abyssal": true,
+          "mentions_business": false,
+          "mentions_lochness_or_nessie": true,
+          "mentions_msn": true,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_vehicles_expanded.yaml"
+        },
+        {
+          "exists": true,
+          "mentions_abyssal": true,
+          "mentions_business": false,
+          "mentions_lochness_or_nessie": false,
+          "mentions_msn": true,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/msn_story_vehicles_complete.toml"
+        },
+        {
+          "exists": true,
+          "mentions_abyssal": true,
+          "mentions_business": true,
+          "mentions_lochness_or_nessie": true,
+          "mentions_msn": true,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/procedural_space_systems.yaml"
+        }
+      ],
+      "source_files": [
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_vehicles_expanded.yaml",
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/msn_story_vehicles_complete.toml",
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/procedural_space_systems.yaml"
+      ]
+    },
+    {
+      "abyssal_hooks": [
+        "Abyssal Fabricator blueprint unlocks",
+        "Void crystal, pressure steel, Kraken tooth, and Old Net material recipes",
+        "Deep-zone enemy and boss drops"
+      ],
+      "bridge_evidence": {
+        "abyssalAssets": true,
+        "businessLoop": true,
+        "lochnessMonster": true
+      },
+      "business_hooks": [
+        "Legendary weapons are vault-listed or blueprint-traded, not mass sold",
+        "Weapon skins and crafting components can trade on the Loch Exchange",
+        "Soul Coin valuation scales by rarity, provenance, and first-discovery status"
+      ],
+      "family": "weapons",
+      "integrated": true,
+      "lochness_hooks": [
+        "Nessie Treasury bounties fund legendary weapon research",
+        "Nessie covenant can unlock abyssal weapon skins and non-hostile deep encounter rewards",
+        "Water-zone sightings boost Void/Pressure weapon discovery rates"
+      ],
+      "record_count": 26,
+      "sample_records": [
+        "Items.LivingSin_Chrono_Core",
+        "Items.LivingSin_Paradox_Edge",
+        "Items.LivingSin_Soul_Battery",
+        "Items.LivingSin_TimeBlade",
+        "Items.LivingSin_TimeBlade.Acquisition",
+        "Items.LivingSin_TimeBlade.Audio",
+        "Items.LivingSin_TimeBlade.LilithSynergy",
+        "Items.LivingSin_TimeBlade.PassiveEffects.Chrono_Bleed",
+        "Items.LivingSin_TimeBlade.PassiveEffects.Paradox_Aura",
+        "Items.LivingSin_TimeBlade.PassiveEffects.Paradox_Resistance",
+        "Items.LivingSin_TimeBlade.RechargeConditions.Chrono_Entropy",
+        "Items.LivingSin_TimeBlade.RechargeConditions.Paradox_Resonance",
+        "Items.LivingSin_TimeBlade.RechargeConditions.Singularity_Sacrifice",
+        "Items.LivingSin_TimeBlade.Requirements",
+        "Items.LivingSin_TimeBlade.TimeTravelEffect",
+        "Items.LivingSin_TimeBlade.Visuals",
+        "Krakens_Wrath_Launcher",
+        "Lucifers_Dawn_Pistol",
+        "Nyx_Whisper_Monowire",
+        "Quest.Lilith_Crimson_Pilgrimage_Act4",
+        "Sophias_Symphony_Cannon",
+        "StatusEffects.ParadoxAura",
+        "StatusEffects.TemporalDecay",
+        "StatusEffects.TemporalFreeze"
+      ],
+      "source_evidence": [
+        {
+          "exists": true,
+          "mentions_abyssal": true,
+          "mentions_business": false,
+          "mentions_lochness_or_nessie": true,
+          "mentions_msn": true,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_weapons_expanded.yaml"
+        },
+        {
+          "exists": true,
+          "mentions_abyssal": true,
+          "mentions_business": false,
+          "mentions_lochness_or_nessie": false,
+          "mentions_msn": true,
+          "path": "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/LivingSin_TimeBlade.toml"
+        }
+      ],
+      "source_files": [
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/custom_weapons_expanded.yaml",
+        "/home/tehlappy/Desktop/AI/abyssal-assets/cp2077_mods/tweakdb/LivingSin_TimeBlade.toml"
+      ]
+    }
+  ],
+  "family_count": 6,
+  "guardrails": [
+    "Custom items are integrated through local manifests and read/status console routes.",
+    "Do not expose private operator memory through market listings or lore shards.",
+    "Crossover-inspired items must remain transformative MSN-authored designs."
+  ],
+  "integrated_family_count": 6,
+  "local_only": true,
+  "schema": "lilith.custom_item_integration_audit.v1",
+  "total_record_count": 296
+}
